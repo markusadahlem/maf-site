@@ -3,13 +3,7 @@ date: "2025-04-05T18:41:01+02:00"
 title: "Über uns"
 ---
 
-![](/images/maf-entstehungsgeschichte.png)
-
-A
-
-<img src="/images/maf-entstehungsgeschichte.png" alt="Alt text" width="400" />
 
 
-B
 
-{{< figure src="/images/example.jpg" alt="Alt text" width="400" >}}
+{{< figure src="/images/maf-entstehungsgeschichte.png" alt="Alt text" width="200" >}}
