@@ -54,7 +54,7 @@ params:
       path: images/logo.svg
       dark: images/logo-dark.svg
       link: /
-      width: 10
+      width: 20
       height: 20
 
 defaultContentLanguage: en
