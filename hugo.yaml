@@ -12,46 +12,38 @@ menu:
       name: Home
       pageRef: /
       weight: 1
-    - identifier: learn
-      name: Learn
-      pageRef: /learn
+    - identifier: symptoms
+      name: Symptoms
+      pageRef: /symptoms
       weight: 2
-
-    - identifier: living
-      name: Living With Aura
-      pageRef: /living
-      weight: 3
-
     - identifier: stories
       name: Patient Voices
       pageRef: /voices
-      weight: 4
-
+      weight: 3
     - identifier: research
       name: Research
       pageRef: /research
+      weight: 4
+    - identifier: aura-o-mat
+      name: Aura-o-mat
+      pageRef: /aura-o-mat
       weight: 5
-
-    - identifier: resources
-      name: Tools & Resources
-      pageRef: /resources
+    - identifier: art
+      name: Migraine art
+      pageRef: /art
       weight: 6
-
     - identifier: blog
-      name: News & Blog
+      name: Blog
       pageRef: /blog
       weight: 7
-
     - identifier: get-involved
       name: Get Involved
       pageRef: /get-involved
       weight: 8
-
     - identifier: about
-      name: About
+      name: About us
       pageRef: /about
       weight: 9
-
     - identifier: search
       name: Search
       weight: 10
@@ -66,7 +58,7 @@ params:
       path: images/logo.svg
       dark: images/logo-dark.svg
       link: /
-      width: 20
+      width: 10
       height: 20
 
 defaultContentLanguage: en
