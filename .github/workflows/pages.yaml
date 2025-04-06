@@ -57,6 +57,7 @@ jobs:
         run: |
           hugo \
             --gc --minify \
+            --config "hugo.yaml" \
             --baseURL "https://migraine-aura-foundation.org/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
