@@ -5,4 +5,11 @@ title: "Über uns"
 
 ![](/images/maf-entstehungsgeschichte.png)
 
+A
+
 <img src="/images/maf-entstehungsgeschichte.png" alt="Alt text" width="400" />
+
+
+B
+
+{{< figure src="/images/example.jpg" alt="Alt text" width="400" >}}
