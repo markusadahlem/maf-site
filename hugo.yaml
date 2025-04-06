@@ -49,6 +49,9 @@ menu:
       weight: 10
       params:
         type: search
+    - identifier: impressum
+      name: Impressum
+      weight: 11
 
 params:
   navbar:
