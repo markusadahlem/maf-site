@@ -4,3 +4,5 @@ title: "Über uns"
 ---
 
 ![](/images/maf-entstehungsgeschichte.png)
+
+<img src="/images/maf-entstehungsgeschichte.png" alt="Alt text" width="400" />
