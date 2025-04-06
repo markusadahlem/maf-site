@@ -5,4 +5,4 @@ title: "Aura-O-Mat"
 
 [Website im Aufbau]
 
-![](/images/aura-o-mat.png)
+{{< figure src="aura-o-mat.png" alt="Alt text" width="200" >}}

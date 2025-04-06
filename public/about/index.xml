@@ -1,0 +1,19 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Migraine Aura Foundation – About us</title>
+    <link>http://localhost:1313/about/</link>
+    <description>Recent content in About us on Migraine Aura Foundation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 05 Apr 2025 18:40:56 +0200</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+  </channel>
+</rss>
