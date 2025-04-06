@@ -4,4 +4,4 @@ draft: false
 title: "You are not alone"
 ---
 
-![](/images/migraine-computer.png)
+![]()
