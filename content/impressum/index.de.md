@@ -1,23 +1,32 @@
 ---
-date: "2025-04-06T15:30:37+02:00"
+date: "2025-04-06T15:30:41+02:00"
 title: "Impressum"
 ---
 
 # Angaben gemäß § 5 TMG
 
-Markus A. Dahlem<br>
-Bachestraße 9<br>
-12161 Berlin<br>
+Markus A. Dahlem
 
-Vertreten durch:<br>
-Markus Dahlem<br>
-Kontakt:<br>
-Telefon: 0172 -1973 680<br>
+Bachestraße 9
+
+12161 Berlin
+
+Vertreten durch:
+
+Markus Dahlem
+
+Kontakt:
+
+Telefon: 0172 -1973 680
+
 E-Mail: dahlem@digital-prism.com
 
-Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:<br>
-Markus Dahlem<br>
-Bachestraße 9<br>
+Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
+
+Markus Dahlem
+
+Bachestraße 9
+
 12161 Berlin
 
 # Haftungsausschluss:
