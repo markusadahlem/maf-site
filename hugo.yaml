@@ -51,6 +51,7 @@ menu:
         type: search
     - identifier: impressum
       name: Impressum
+      pageRef: /impressum
       weight: 11
 
 params:
