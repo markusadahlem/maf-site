@@ -2,3 +2,5 @@
 date: "2025-04-05T18:41:01+02:00"
 title: "Über uns"
 ---
+
+![](maf-entstehungsgeschichte.png)

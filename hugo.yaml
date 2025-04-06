@@ -20,39 +20,31 @@ menu:
       name: Patient Voices
       pageRef: /voices
       weight: 3
-    - identifier: research
-      name: Research
-      pageRef: /research
-      weight: 4
     - identifier: aura-o-mat
       name: Aura-o-mat
       pageRef: /aura-o-mat
-      weight: 5
+      weight: 4
     - identifier: art
       name: Migraine art
       pageRef: /art
-      weight: 6
-    - identifier: blog
-      name: Blog
-      pageRef: /blog
-      weight: 7
+      weight: 5
     - identifier: get-involved
       name: Get Involved
       pageRef: /get-involved
-      weight: 8
+      weight: 6
     - identifier: about
       name: About us
       pageRef: /about
-      weight: 9
+      weight: 7
     - identifier: search
       name: Search
-      weight: 10
+      weight: 8
       params:
         type: search
     - identifier: impressum
       name: Impressum
       pageRef: /impressum
-      weight: 11
+      weight: 9
 
 params:
   navbar:
