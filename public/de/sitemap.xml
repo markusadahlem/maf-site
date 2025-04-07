@@ -28,6 +28,19 @@
                 href="http://localhost:1313/de/art/"
                 />
   </url><url>
+    <loc>http://localhost:1313/de/test-folder/</loc>
+    <lastmod>2025-04-06T12:48:26+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/test-folder/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/test-folder/"
+                />
+  </url><url>
     <loc>http://localhost:1313/de/about/voices/</loc>
     <lastmod>2025-04-06T12:45:54+02:00</lastmod>
     <xhtml:link

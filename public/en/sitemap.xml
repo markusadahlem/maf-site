@@ -54,6 +54,19 @@
                 href="http://localhost:1313/art/"
                 />
   </url><url>
+    <loc>http://localhost:1313/test-folder/</loc>
+    <lastmod>2025-04-06T12:48:32+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/test-folder/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/test-folder/"
+                />
+  </url><url>
     <loc>http://localhost:1313/research/</loc>
     <lastmod>2025-04-06T12:45:03+02:00</lastmod>
     <xhtml:link
