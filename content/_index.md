@@ -32,9 +32,9 @@ width: normal
     title="Diagnosis"
     subtitle="ICHD 3 ...."
     link="doc/reference/reference-environment-variables"
-    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
-    image="/images/Picture1.png"
-    imageClass="hx-top-[40%] hx-left-[24px] hx-w-[180%] sm:hx-w-[110%] dark:hx-opacity-80"
+    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[240px]"
+    image="/images/aura-o-mat.png"
+    imageClass="hx-top-[10%] hx-left-[20px]  dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(58, 56, 113, 0.1),hsla(0,0%,100%,0));"
   >}}
   {{< hextra/feature-card
@@ -81,7 +81,7 @@ width: normal
     subtitle="Migraine runs in families ...."
     link="doc/cli"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[140px]"
-    image="/images/Picture1.png"
+    image="/images/Aura-Science-Small.jpeg"
     imageClass="hx-top-[0%] hx-left-[0px]  hx-w-[100%] sm:hx-w-[20%] dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(245, 116, 97, 0.1),hsla(0,0%,100%,0));"
   >}}
