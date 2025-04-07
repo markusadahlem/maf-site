@@ -28,17 +28,17 @@
                 href="http://localhost:1313/de/art/"
                 />
   </url><url>
-    <loc>http://localhost:1313/de/voices/</loc>
+    <loc>http://localhost:1313/de/about/voices/</loc>
     <lastmod>2025-04-06T12:45:54+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/voices/"
+                href="http://localhost:1313/about/voices/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:1313/de/voices/"
+                href="http://localhost:1313/de/about/voices/"
                 />
   </url><url>
     <loc>http://localhost:1313/de/aura-o-mat/</loc>
@@ -54,17 +54,17 @@
                 href="http://localhost:1313/de/aura-o-mat/"
                 />
   </url><url>
-    <loc>http://localhost:1313/de/get-involved/</loc>
+    <loc>http://localhost:1313/de/about/get-involved/</loc>
     <lastmod>2025-04-06T12:45:08+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/get-involved/"
+                href="http://localhost:1313/about/get-involved/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:1313/de/get-involved/"
+                href="http://localhost:1313/de/about/get-involved/"
                 />
   </url><url>
     <loc>http://localhost:1313/de/research/</loc>

@@ -1,27 +1,83 @@
-backToTop: "Nach oben"
-changeLanguage: "Sprache ändern"
-changeTheme: "Darstellung ändern"
-copyCode: "Code kopieren"
-copyright: "© 2025 Migräne Aura Stiftung"
-dark: "Dunkel"
-editThisPage: "Diese Seite auf GitHub bearbeiten →"
-lastUpdated: "Zuletzt aktualisiert am"
-light: "Hell"
-noResultsFound: "Keine Ergebnisse gefunden."
-onThisPage: "Auf dieser Seite"
-poweredBy: "Unterstützt durch Hextra"
-readMore: "Mehr lesen →"
-searchPlaceholder: "Suchen..."
-documentation: "Dokumentation"
-blog: "Blog"
-art: "Migränekunst"
-symptoms: "Symptome"
-about: "Über uns"
-search: "Suche"
-home: "Home"
-learn: "Lerne"
-living: "Leben mit Aura"
-stories: "Patienten Stimmen"
-research: "Forschung"
-aura-o-mat: "Aura-o-mat"
-get-involved: "Mache mit"
+- id: backToTop
+  translation: "Nach oben"
+
+- id: changeLanguage
+  translation: "Sprache ändern"
+
+- id: changeTheme
+  translation: "Darstellung ändern"
+
+- id: copyCode
+  translation: "Code kopieren"
+
+- id: copyright
+  translation: "© 2025 Migräne Aura Stiftung"
+
+- id: dark
+  translation: "Dunkel"
+
+- id: editThisPage
+  translation: "Diese Seite auf GitHub bearbeiten →"
+
+- id: lastUpdated
+  translation: "Zuletzt aktualisiert am"
+
+- id: light
+  translation: "Hell"
+
+- id: noResultsFound
+  translation: "Keine Ergebnisse gefunden."
+
+- id: onThisPage
+  translation: "Auf dieser Seite"
+
+- id: poweredBy
+  translation: "© 2025 Migraine Aura Foundation ——— Unterstützt durch Hextra"
+
+- id: readMore
+  translation: "Mehr lesen →"
+
+- id: searchPlaceholder
+  translation: "Suchen..."
+
+- id: documentation
+  translation: "Dokumentation"
+
+- id: blog
+  translation: "Blog"
+
+- id: art
+  translation: "Migränekunst"
+
+- id: symptoms
+  translation: "Symptome"
+
+- id: about
+  translation: "Über uns"
+
+- id: search
+  translation: "Suche"
+
+- id: home
+  translation: "Home"
+
+- id: learn
+  translation: "Lerne"
+
+- id: living
+  translation: "Leben mit Aura"
+
+- id: stories
+  translation: "Patienten Stimmen"
+
+- id: research
+  translation: "Forschung"
+
+- id: aura-o-mat
+  translation: "Aura-o-mat"
+
+- id: get-involved
+  translation: "Mache mit"
+
+- id: maf-name
+  translation: "Migräne-Aura-Stiftung"

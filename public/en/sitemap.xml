@@ -15,17 +15,17 @@
                 href="http://localhost:1313/impressum/"
                 />
   </url><url>
-    <loc>http://localhost:1313/voices/</loc>
+    <loc>http://localhost:1313/about/voices/</loc>
     <lastmod>2025-04-06T12:51:29+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:1313/de/voices/"
+                href="http://localhost:1313/de/about/voices/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/voices/"
+                href="http://localhost:1313/about/voices/"
                 />
   </url><url>
     <loc>http://localhost:1313/art/</loc>
@@ -67,17 +67,17 @@
                 href="http://localhost:1313/aura-o-mat/"
                 />
   </url><url>
-    <loc>http://localhost:1313/get-involved/</loc>
+    <loc>http://localhost:1313/about/get-involved/</loc>
     <lastmod>2025-04-06T12:45:02+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:1313/de/get-involved/"
+                href="http://localhost:1313/de/about/get-involved/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/get-involved/"
+                href="http://localhost:1313/about/get-involved/"
                 />
   </url><url>
     <loc>http://localhost:1313/symptoms/</loc>

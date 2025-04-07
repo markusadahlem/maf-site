@@ -5,28 +5,25 @@ title: "Impressum"
 
 # Angaben gemäß § 5 TMG
 
-Markus A. Dahlem
+Migraine Aura Foundation  
+c/o Markus Dahlem
 
-Bachestraße 9
-
+Bachestraße 9  
 12161 Berlin
 
-Vertreten durch:
+**Vertreten durch:**
 
 Markus Dahlem
 
-Kontakt:
+**Kontakt:**
 
-Telefon: 0172 -1973 680
-
+Telefon: 0172 -1973 680  
 E-Mail: dahlem@digital-prism.com
 
-Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
+**Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:**
 
-Markus Dahlem
-
-Bachestraße 9
-
+Markus Dahlem  
+Bachestraße 9  
 12161 Berlin
 
 # Haftungsausschluss:
