@@ -106,19 +106,6 @@
                 href="http://localhost:1313/de/about/"
                 />
   </url><url>
-    <loc>http://localhost:1313/de/blog/first-blog-post/</loc>
-    <lastmod>2025-04-05T17:55:11+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/blog/first-blog-post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/de/blog/first-blog-post/"
-                />
-  </url><url>
     <loc>http://localhost:1313/de/blog/</loc>
     <lastmod>2025-04-05T17:53:50+02:00</lastmod>
     <xhtml:link

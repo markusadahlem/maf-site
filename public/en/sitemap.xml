@@ -2,6 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-04-06T15:30:41+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/"
+                />
+  </url><url>
     <loc>http://localhost:1313/impressum/</loc>
     <lastmod>2025-04-06T15:30:41+02:00</lastmod>
     <xhtml:link
@@ -67,19 +80,6 @@
                 href="http://localhost:1313/aura-o-mat/"
                 />
   </url><url>
-    <loc>http://localhost:1313/about/get-involved/</loc>
-    <lastmod>2025-04-06T12:45:02+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/de/about/get-involved/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/about/get-involved/"
-                />
-  </url><url>
     <loc>http://localhost:1313/symptoms/</loc>
     <lastmod>2025-04-06T12:45:02+02:00</lastmod>
     <xhtml:link
@@ -91,6 +91,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/symptoms/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/about/get-involved/</loc>
+    <lastmod>2025-04-06T12:45:02+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/about/get-involved/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/about/get-involved/"
                 />
   </url><url>
     <loc>http://localhost:1313/about/</loc>
@@ -106,19 +119,6 @@
                 href="http://localhost:1313/about/"
                 />
   </url><url>
-    <loc>http://localhost:1313/blog/first-blog-post/</loc>
-    <lastmod>2025-04-05T17:55:04+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/de/blog/first-blog-post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/blog/first-blog-post/"
-                />
-  </url><url>
     <loc>http://localhost:1313/blog/</loc>
     <lastmod>2025-04-05T17:53:43+02:00</lastmod>
     <xhtml:link
@@ -130,19 +130,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/blog/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-04-05T17:30:06+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/de/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/"
                 />
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
