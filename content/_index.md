@@ -16,17 +16,25 @@ width: normal
 {{< /hextra/hero-headline >}}
 </div>
 
+
+
+
+{{< hextra/hero-badge link="aura-o-mat">}}
+  <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400"></div>
+  <span class="hx-text-lg">Check your symptoms</span>
+  {{< icon name="arrow-circle-right" attributes="height=32" >}}
+{{< /hextra/hero-badge >}}
+
+
 <div class="hx-mb-12">
-{{< hextra/hero-subtitle style="margin:.3rem 0 2rem 0">}}
-
-
-Our focus is on the less well researched neurological symptoms called aura.
-
-Aura symptoms often start and end before the headache, but they can extend into the headache phase, start after the onset of headache, and even appear without any headaches. 
-
-
-{{< /hextra/hero-subtitle >}}
+{{< hextra/hero-subtitle style="margin:.3rem 0 2rem 0">}}Migraine aura is often overlooked or misdiagnosed. We’re here to help you recognize it.
+    {{< /hextra/hero-subtitle >}}
+    </div>
 </div>
+
+
+Our focus is on the less well researched neurological symptoms called aura. Aura symptoms often start and end before the headache, but they can extend into the headache phase, start after the onset of headache, and even appear without any headaches. 
+
 
 
 
