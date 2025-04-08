@@ -42,23 +42,25 @@ Our focus is on the less well researched neurological symptoms called aura. Aura
 
 
 {{< hextra/feature-grid >}}
+
+ 
+  
   {{< hextra/feature-card
     title="Diagnosis"
-    subtitle="Our goal is to characterize all migraine symptoms by involving patients."
-    link="symptoms"
-    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[240px]"
-    image="/images/aura-o-mat.png"
-    imageClass="hx-top-[10%] hx-left-[20px]  dark:hx-opacity-80"
-    style="background: radial-gradient(ellipse at 50% 80%,rgba(58, 56, 113, 0.1),hsla(0,0%,100%,0));"
-  >}}
-  
+    subtitle="Our mission is to characterize all migraine symptoms by involving patients.."
+    link="art"
+    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
+    image="/images/teaser/aura-o-mat-app.png"
+    imageClass="hx-top-[0%] hx-left-[0px]  dark:hx-opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(203, 28, 66, 0.1),hsla(0,0%,100%,0));"
+  >}}  
   
   {{< hextra/feature-card
     title="Art Competitions"
     subtitle="Art may provide an adequate medium to express and communicate migraine experiences."
     link="art"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
-    image="/images/Derek_Robinson_and_Oliver_Sacks_November_1991_en.jpg"
+    image="/images/teaser/robinson_sacks-nov-1991.jpg"
     imageClass="hx-top-[0%] hx-left-[0px]  dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(203, 28, 66, 0.1),hsla(0,0%,100%,0));"
   >}}
@@ -68,10 +70,10 @@ Our focus is on the less well researched neurological symptoms called aura. Aura
 
   {{< hextra/feature-card
     title="Quantified Self"
-    subtitle="Simple ways to measure you migraine"
+    subtitle="Simple ways to measure you migraine aura and learn about your brain."
     link="doc/reference/reference-environment-variables"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
-    image="/images/Hassenstein_Messkurven.jpg"
+    image="/images/teaser/hassenstein-measurements.jpg"
     imageClass="hx-top-[0%] hx-left-[0px] dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(58, 56, 113, 0.1),hsla(0,0%,100%,0));"
   >}}
@@ -82,50 +84,51 @@ Our focus is on the less well researched neurological symptoms called aura. Aura
   {{< hextra/feature-card
     title="Treatment"
     subtitle="Drugs, neuromodulation, and digital therapeutics, many options are available."
-    link="api"
+    link="tx"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
-    image="/images/Picture1.png"
-    imageClass="hx-top-[40%] hx-left-[36px] hx-w-[180%] sm:hx-w-[110%] dark:hx-opacity-80"
+    image="/images/teaser/elektrisches-kopfbad.png"
+    imageClass="hx-top-[0%] hx-left-[0px]  dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(203, 28, 66, 0.1),hsla(0,0%,100%,0));"
   >}}
 
   
   {{< hextra/feature-card
     title="Genetics"
-    subtitle="MIgraine runs in families ...."
-    link="doc/cli"
+    subtitle="Is migraine inherited? Partly—but not entirely, even in identical twins. It's more than just Mendelian genetics."
+    link="genetics"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
-    image="/images/Migraine_Art_Genetics_small_400_en.jpg"
+    image="/images/teaser/migraine-art-genetics.jpg"
     imageClass="hx-top-[0%] hx-left-[0px] hx-w-[100%] sm:hx-w-[100%] dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(245, 116, 97, 0.1),hsla(0,0%,100%,0));"
   >}}
   
   {{< hextra/feature-card
     title="Science"
-    subtitle="Migraine runs in families ...."
+    subtitle="The migraine brain ..."
     link=""
-    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[140px]"
-    image="/images/Aura-Science-Small.jpeg"
+    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
+    image="/images/teaser/aura-science.png"
     imageClass="hx-top-[0%] hx-left-[0px]  hx-w-[100%] sm:hx-w-[20%] dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(245, 116, 97, 0.1),hsla(0,0%,100%,0));"
   >}}
   
-  
-  
   {{< hextra/feature-card
-    title="Visual Snow"
-    subtitle=""
+    title="Visual Snow Syndrome"
+    subtitle="(From: Metzler & Robertson (2018). Current neurology and neuroscience reports.)"
     link="symptoms/#visual-snow"
+    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
+    image="/images/teaser/visual-snow-syndrom.png"
+    imageClass="hx-top-[0%] hx-left-[0px]  hx-w-[100%] sm:hx-w-[20%] dark:hx-opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(245, 116, 97, 0.1),hsla(0,0%,100%,0));"
   >}}
-  
-  {{< hextra/feature-card
-    title="Diagnostic Criteria"
-    subtitle=""
-    link="diagnosits/diagnostic-criteria"
-  >}}
+    
+ 
+
+
   {{< hextra/feature-card
     title="In Memoriam"
-    subtitle="Without the incredible energy and enthusiasm of Klaus Podoll (1958-2019) none of the same would have been possible."
+    image="/images/teaser/klaus-podoll.png"
+    subtitle="Klaus Podoll (1958-2019)."
     link="doc/addons"
   >}}
   

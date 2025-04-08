@@ -24,8 +24,13 @@
       <description>
         
         
-        &lt;h1&gt;Which aura symptoms have you experienced?&lt;/h1&gt;&lt;p&gt;These symptom types are called &lt;strong&gt;modalities&lt;/strong&gt; — reversible neurological disturbances that may occur before or during a migraine.&lt;/p&gt;
-&lt;p&gt;Please check all aura symptoms that you have experienced. Select &#34;Other&#34; if no symptom modality apply or in addtion to thoese that applay, you experience other types.&lt;/p&gt;
+        &lt;h3&gt;Which aura symptoms have you experienced?&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;which-aura-symptoms-have-you-experienced&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#which-aura-symptoms-have-you-experienced&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;We’re first checking for one or more fully reversible aura symptoms, as defined by clinical guidelines.&lt;/p&gt;
+&lt;p&gt;Aura symptoms affect different sensory or functional modalities — such as vision, sensation, speech, or movement.&lt;/p&gt;
+&lt;p&gt;Please select all symptoms you’ve experienced during your aura.&lt;br&gt;
+Choose “Other” if you’ve had additional modalities not listed here.&lt;br&gt;
+Choose “None” if none of these apply.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Modalities&lt;/strong&gt;&lt;/p&gt;
 &lt;form id=&#34;criterionBForm&#34;&gt;
     &lt;div&gt;
         &lt;label
@@ -241,7 +246,7 @@
                 nextLinkB.style.display = &#34;inline-block&#34;;
                 nextLinkB.textContent = &#34;Next: Mixed Aura Path&#34;;
             } else if (hasCoreAura) {
-                resultB.textContent = &#34;✅ Aura symptoms identified.&#34;;
+                resultB.textContent = &#34;✅ Aura modality identified.&#34;;
                 resultB.style.color = &#34;green&#34;;
                 nextLinkB.href = &#34;/aura-o-mat/aura-characteristics/&#34;;
                 nextLinkB.style.display = &#34;inline-block&#34;;
@@ -284,7 +289,8 @@
       <description>
         
         
-        &lt;h1&gt;What were your aura symptoms like?&lt;/h1&gt;&lt;div id=&#34;quizContainer&#34;&gt;&lt;/div&gt;
+        &lt;h3&gt;What were your aura symptoms like?&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;what-were-your-aura-symptoms-like&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#what-were-your-aura-symptoms-like&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div id=&#34;quizContainer&#34;&gt;&lt;/div&gt;
 &lt;p id=&#34;resultC&#34; style=&#34;font-weight: bold; margin-top: 1rem&#34;&gt;&lt;/p&gt;
 
 &lt;style&gt;

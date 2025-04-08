@@ -1,11 +1,12 @@
 ---
 title: ""
 description: "Evaluate if your symptoms meet necessary criterion for migraine aura."
+toc: false
 sidebar:
-  exclude: tru
+  exclude: true
 ---
 
-# What were your aura symptoms like?
+### What were your aura symptoms like?
 
 
 {{< criterionC >}}
