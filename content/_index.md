@@ -12,7 +12,7 @@ width: normal
 
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-headline >}}
-    You are not alone
+    No diagnosis lost
 {{< /hextra/hero-headline >}}
 </div>
 
