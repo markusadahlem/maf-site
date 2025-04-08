@@ -1,7 +1,7 @@
 ---
 date: "2025-04-06T15:30:41+02:00"
 title: "Impressum"
-weight: 2
+weight: 9
 ---
 
 ## Angaben gemäß § 5 TMG

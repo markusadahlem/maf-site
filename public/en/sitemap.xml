@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-04-06T15:30:41+02:00</lastmod>
+    <loc>http://localhost:1313/symptoms/</loc>
+    <lastmod>2025-04-06T12:45:02+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:1313/de/"
+                href="http://localhost:1313/de/symptoms/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/"
+                href="http://localhost:1313/symptoms/"
                 />
   </url><url>
     <loc>http://localhost:1313/impressum/</loc>
@@ -28,19 +28,6 @@
                 href="http://localhost:1313/impressum/"
                 />
   </url><url>
-    <loc>http://localhost:1313/about/voices/</loc>
-    <lastmod>2025-04-06T12:51:29+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/de/about/voices/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/about/voices/"
-                />
-  </url><url>
     <loc>http://localhost:1313/art/</loc>
     <lastmod>2025-04-06T12:48:32+02:00</lastmod>
     <xhtml:link
@@ -54,17 +41,43 @@
                 href="http://localhost:1313/art/"
                 />
   </url><url>
-    <loc>http://localhost:1313/test-folder/</loc>
+    <loc>http://localhost:1313/diagnosis/</loc>
     <lastmod>2025-04-06T12:48:32+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:1313/de/test-folder/"
+                href="http://localhost:1313/de/diagnosis/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/test-folder/"
+                href="http://localhost:1313/diagnosis/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-04-06T15:30:41+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/about/voices/</loc>
+    <lastmod>2025-04-06T12:51:29+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/about/voices/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/about/voices/"
                 />
   </url><url>
     <loc>http://localhost:1313/research/</loc>
@@ -91,19 +104,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/aura-o-mat/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/symptoms/</loc>
-    <lastmod>2025-04-06T12:45:02+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/de/symptoms/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/symptoms/"
                 />
   </url><url>
     <loc>http://localhost:1313/about/get-involved/</loc>

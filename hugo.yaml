@@ -17,7 +17,7 @@ menu:
       pageRef: /symptoms
       weight: 2
     - identifier: art
-      name: Migraine art
+      name: Migraine Art
       pageRef: /art
       weight: 3
     - identifier: about
