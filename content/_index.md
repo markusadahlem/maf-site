@@ -121,16 +121,20 @@ Our focus is on the less well researched neurological symptoms called aura. Aura
     imageClass="hx-top-[0%] hx-left-[0px]  hx-w-[100%] sm:hx-w-[20%] dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(245, 116, 97, 0.1),hsla(0,0%,100%,0));"
   >}}
+  
+  {{< hextra/feature-card
+    title="In Memoriam"
+    subtitle="Klaus Podoll (1958-2019).)"
+    link="symptoms/#visual-snow"
+    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
+    image="/images/teaser/klaus-podoll.png"
+    imageClass="hx-top-[0%] hx-left-[0px]  hx-w-[100%] sm:hx-w-[20%] dark:hx-opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(245, 116, 97, 0.1),hsla(0,0%,100%,0));"
+  >}}
     
  
 
 
-  {{< hextra/feature-card
-    title="In Memoriam"
-    image="/images/teaser/klaus-podoll.png"
-    subtitle="Klaus Podoll (1958-2019)."
-    link="doc/addons"
-  >}}
   
   
 

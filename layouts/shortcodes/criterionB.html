@@ -207,11 +207,11 @@
 
             if (hasCoreAura && hasOther) {
                 resultB.textContent =
-                    "ℹ️ You selected a known aura symptom and another type.";
+                    "ℹ️ You selected a known aura modality and an additional symptom type — please check it further to make sure it fits.";
                 resultB.style.color = "darkorange";
                 nextLinkB.href = "/aura-o-mat/mixed-aura/";
                 nextLinkB.style.display = "inline-block";
-                nextLinkB.textContent = "Next: Mixed Aura Path";
+                nextLinkB.textContent = "Next: Describe Characteristics";
             } else if (hasCoreAura) {
                 resultB.textContent = "✅ Aura modality identified.";
                 resultB.style.color = "green";
@@ -219,9 +219,9 @@
                 nextLinkB.style.display = "inline-block";
                 nextLinkB.textContent = "Next: Describe Characteristics";
             } else if (onlyOther) {
-                resultB.textContent = "ℹ️ Unclassified aura symptom selected.";
+                resultB.textContent = "ℹ️ Unclassified aura modality selected.";
                 resultB.style.color = "darkorange";
-                nextLinkB.href = "/aura-o-mat/other-symptom/";
+                nextLinkB.href = "/aura-o-mat/other-modality/";
                 nextLinkB.style.display = "inline-block";
                 nextLinkB.textContent = "Next: Other Symptoms";
             } else if (onlyNone) {

@@ -30,7 +30,7 @@ menu:
       params:
         type: search
     - identifier: impressum
-      name: Impressusm
+      name: Impressum
       pageRef: /impressum
       weight: 6
 

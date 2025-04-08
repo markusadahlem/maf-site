@@ -1,0 +1,48 @@
+<button class="btn" onclick="handleOtherCheck(true)">Yes</button>
+<button class="btn btn-outline" onclick="handleOtherCheck(false)">No</button>
+
+<div id="followUpResponse" style="margin-top: 1rem"></div>
+
+<style>
+    .btn {
+        display: inline-block;
+        margin: 0.1rem 0.5rem 0 0;
+        padding: 0.2rem 1.2rem;
+        font-size: 1rem;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        background-color: #007bff;
+        color: white;
+    }
+    .btn-outline {
+        background-color: transparent;
+        border: 2px solid #007bff;
+        color: #007bff;
+    }
+    .btn:hover,
+    .btn-outline:hover {
+        background-color: #0056b3;
+        color: white;
+    }
+</style>
+
+<script>
+    function handleOtherCheck(isSimilar) {
+        const output = document.getElementById("followUpResponse");
+
+        if (isSimilar) {
+            output.innerHTML = `
+      ✅ Thanks for clarifying. You can now continue.
+      <br><br>
+      <a href="/aura-o-mat/aura-characteristics/" class="btn">Continue</a>
+    `;
+        } else {
+            output.innerHTML = `
+      ⚠️ Your symptom does not resemble any known aura modality.
+      <br><br>
+      This may fall outside the scope of this tool. We recommend speaking with a healthcare professional for further evaluation.
+    `;
+        }
+    }
+</script>

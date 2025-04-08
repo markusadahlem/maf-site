@@ -82,12 +82,21 @@
         result.textContent = ""; // Clear result if user goes back
 
         if (current === questions.length) {
+            let summaryHTML = "<ul>";
+            questions.forEach((q, index) => {
+                const response = answers[index] === true ? "✅ Yes" : "❌ No";
+                summaryHTML += `<li>${q.text} <strong>${response}</strong></li>`;
+            });
+            summaryHTML += "</ul>";
+
             container.innerHTML = `
-      <p><strong>All questions answered.</strong></p>
-      <p>Are you ready to see your result?</p>
-      <button class="btn" onclick="showResult()">✅ Yes, show my result</button>
-      <button class="btn btn-secondary" onclick="goBack()">← Go Back</button>
-    `;
+              <p><strong>You’ve completed the section on aura characteristics.</strong></p>
+              <p>Here’s a summary of your responses:</p>
+              ${summaryHTML}
+              <p>Click below to see whether your responses meet the clinical threshold for this part.</p>
+              <button class="btn" onclick="showResult()">✅ Yes, show my result</button>
+              <button class="btn btn-secondary" onclick="goBack()">← Go Back</button>
+            `;
             return;
         }
 
@@ -127,11 +136,24 @@
         const passed = score >= 3;
 
         container.innerHTML = "";
+
         result.textContent = passed
             ? "✅ You meet Criterion C: at least three characteristics apply."
             : "⚠️ You do not meet Criterion C.";
         result.style.color = passed ? "green" : "darkorange";
-    }
 
+        // Add linked button
+        const button = document.createElement("a");
+        button.href = passed
+            ? "/aura-o-mat/symptom-check-summary/"
+            : "/aura-o-mat/symptom-check-summary-n/";
+        button.textContent = passed ? "View Results" : "View Explanation";
+        button.className = "btn"; // reuses previous .btn class
+        button.style.display = "inline-block";
+        button.style.marginTop = "1rem";
+
+        result.appendChild(document.createElement("br"));
+        result.appendChild(button);
+    }
     showQuestion(); // Start
 </script>
