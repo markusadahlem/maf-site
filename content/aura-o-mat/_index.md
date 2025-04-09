@@ -1,11 +1,32 @@
 ---
 date: "2025-04-06T12:45:02+02:00"
-title: "⚠️ Important Disclaimer"
+title: "Understanding Migraine Aura"
 linkTitle: "Test"
 sidebar:
   exclude: true
 ---
 
+
+##  Beyond the Typical Visual Zigzags
+
+**Migraine aura isn’t only visual** —
+for some it is, but many experience effects on speech, sensation, or thinking.
+
+**Migraine aura isn’t always temporary** —
+conditions like visual snow syndrome can persist well beyond the typical episode.
+
+**Migraine aura isn’t always followed by a headache** —
+sometimes, the aura stands alone.
+
+
+
+
+We’re here to help you understand the broader spectrum of migraine aura —
+beyond what most people (and even many doctors) expect.
+
+<p>&nbsp;</p>
+
+# ⚠️ Important Disclaimer
 
 This tool is not a medical diagnosis. It’s based on internationally recognized criteria for migraine aura (ICHD-3), and is intended for informational purposes only.
 

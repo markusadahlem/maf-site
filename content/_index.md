@@ -27,28 +27,17 @@ width: normal
 
 
 <div class="hx-mb-12">
-{{< hextra/hero-subtitle style="margin:.3rem 0 2rem 0">}}Understanding Migraine Aura: Beyond the Typical Visual Zigzags.
+{{< hextra/hero-subtitle style="margin:.3rem 0 2rem 0">}}Understanding Migraine Aura.
     {{< /hextra/hero-subtitle >}}
     </div>
 </div>
 
-**Migraine aura isn’t only visual** —
-for some it is, but many experience effects on speech, sensation, or thinking.
-
-**Migraine aura isn’t always temporary** —
-conditions like visual snow syndrome can persist well beyond the typical episode.
-
-**Migraine aura isn’t always followed by a headache** —
-sometimes, the aura stands alone.
-
-<p>&nbsp;</p>
-
-We’re here to help you understand the broader spectrum of migraine aura —
-beyond what most people (and even many doctors) expect.
 
 
-<!-- Our focus is on the less well researched neurological symptoms called aura. Aura symptoms often start and end before the headache, but they can extend into the headache phase, start after the onset of headache, and even appear without any headaches.
--->
+
+
+Our focus is on the less well researched neurological symptoms called aura. Aura symptoms often start and end before the headache, but they can extend into the headache phase, start after the onset of headache, and even appear without any headaches.
+
 
 
 
