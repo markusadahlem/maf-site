@@ -27,14 +27,25 @@ width: normal
 
 
 <div class="hx-mb-12">
-{{< hextra/hero-subtitle style="margin:.3rem 0 2rem 0">}}Migraine aura is often overlooked or misdiagnosed. We’re here to help you recognize it.
+{{< hextra/hero-subtitle style="margin:.3rem 0 2rem 0">}}Understanding Migraine Aura: Beyond the Typical Visual Zigzags.
     {{< /hextra/hero-subtitle >}}
     </div>
 </div>
 
+**Migraine aura isn’t only visual** —
+for some it is, but many experience effects on speech, sensation, or thinking.
 
-Our focus is on the less well researched neurological symptoms called aura. Aura symptoms often start and end before the headache, but they can extend into the headache phase, start after the onset of headache, and even appear without any headaches. 
+**Migraine aura isn’t always temporary** —
+conditions like visual snow syndrome can persist well beyond the typical episode.
 
+** Migraine aura isn’t always followed by a headache** —
+sometimes, the aura stands alone.
+
+We’re here to help you understand the broader spectrum of migraine aura—beyond what most people (and even many doctors) expect.
+
+
+<!-- Our focus is on the less well researched neurological symptoms called aura. Aura symptoms often start and end before the headache, but they can extend into the headache phase, start after the onset of headache, and even appear without any headaches.
+-->
 
 
 
@@ -43,8 +54,8 @@ Our focus is on the less well researched neurological symptoms called aura. Aura
 
 {{< hextra/feature-grid >}}
 
- 
-  
+
+
   {{< hextra/feature-card
     title="Diagnosis"
     subtitle="Our mission is to characterize all migraine symptoms by involving patients.."
@@ -53,8 +64,8 @@ Our focus is on the less well researched neurological symptoms called aura. Aura
     image="/images/teaser/aura-o-mat-app.png"
     imageClass="hx-top-[0%] hx-left-[0px]  dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(203, 28, 66, 0.1),hsla(0,0%,100%,0));"
-  >}}  
-  
+  >}}
+
   {{< hextra/feature-card
     title="Art Competitions"
     subtitle="Art may provide an adequate medium to express and communicate migraine experiences."
@@ -64,8 +75,8 @@ Our focus is on the less well researched neurological symptoms called aura. Aura
     imageClass="hx-top-[0%] hx-left-[0px]  dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(203, 28, 66, 0.1),hsla(0,0%,100%,0));"
   >}}
-  
-  
+
+
 
 
   {{< hextra/feature-card
@@ -77,10 +88,10 @@ Our focus is on the less well researched neurological symptoms called aura. Aura
     imageClass="hx-top-[0%] hx-left-[0px] dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(58, 56, 113, 0.1),hsla(0,0%,100%,0));"
   >}}
-  
-  
 
-  
+
+
+
   {{< hextra/feature-card
     title="Treatment"
     subtitle="Drugs, neuromodulation, and digital therapeutics, many options are available."
@@ -91,7 +102,7 @@ Our focus is on the less well researched neurological symptoms called aura. Aura
     style="background: radial-gradient(ellipse at 50% 80%,rgba(203, 28, 66, 0.1),hsla(0,0%,100%,0));"
   >}}
 
-  
+
   {{< hextra/feature-card
     title="Genetics"
     subtitle="Is migraine inherited? Partly—but not entirely, even in identical twins. It's more than just Mendelian genetics."
@@ -101,7 +112,7 @@ Our focus is on the less well researched neurological symptoms called aura. Aura
     imageClass="hx-top-[0%] hx-left-[0px] hx-w-[100%] sm:hx-w-[100%] dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(245, 116, 97, 0.1),hsla(0,0%,100%,0));"
   >}}
-  
+
   {{< hextra/feature-card
     title="Science"
     subtitle="The migraine brain ..."
@@ -111,7 +122,7 @@ Our focus is on the less well researched neurological symptoms called aura. Aura
     imageClass="hx-top-[0%] hx-left-[0px]  hx-w-[100%] sm:hx-w-[20%] dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(245, 116, 97, 0.1),hsla(0,0%,100%,0));"
   >}}
-  
+
   {{< hextra/feature-card
     title="Visual Snow Syndrome"
     subtitle="(From: Metzler & Robertson (2018). Current neurology and neuroscience reports.)"
@@ -121,7 +132,7 @@ Our focus is on the less well researched neurological symptoms called aura. Aura
     imageClass="hx-top-[0%] hx-left-[0px]  hx-w-[100%] sm:hx-w-[20%] dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(245, 116, 97, 0.1),hsla(0,0%,100%,0));"
   >}}
-  
+
   {{< hextra/feature-card
     title="In Memoriam"
     subtitle="Klaus Podoll (1958-2019).)"
@@ -131,12 +142,12 @@ Our focus is on the less well researched neurological symptoms called aura. Aura
     imageClass="hx-top-[0%] hx-left-[0px]  hx-w-[100%] sm:hx-w-[20%] dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(245, 116, 97, 0.1),hsla(0,0%,100%,0));"
   >}}
-    
- 
 
 
-  
-  
 
-  
+
+
+
+
+
 {{< /hextra/feature-grid >}}
