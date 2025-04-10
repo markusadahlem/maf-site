@@ -238,9 +238,42 @@
   </url><url>
     <loc>http://localhost:1313/aura-o-mat/symptom-check-summary-n/</loc>
     <lastmod>2025-04-06T12:45:02+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/aura-o-mat/symptom-check-summary-n/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/aura-o-mat/symptom-check-summary-n/"
+                />
   </url><url>
     <loc>http://localhost:1313/aura-o-mat/other-modality/</loc>
     <lastmod>2025-04-06T12:45:02+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/aura-o-mat/other-modality/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/aura-o-mat/other-modality/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/aura-o-mat/plus-other-modality/</loc>
+    <lastmod>2025-04-06T12:45:02+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/aura-o-mat/plus-other-modality/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/aura-o-mat/plus-other-modality/"
+                />
   </url><url>
     <loc>http://localhost:1313/about/get-involved/</loc>
     <lastmod>2025-04-06T12:45:02+02:00</lastmod>
@@ -277,9 +310,29 @@
   </url><url>
     <loc>http://localhost:1313/aura-o-mat/modality/</loc>
     <lastmod>2025-04-06T12:45:02+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/aura-o-mat/modality/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/aura-o-mat/modality/"
+                />
   </url><url>
     <loc>http://localhost:1313/aura-o-mat/symptom-check-summary/</loc>
     <lastmod>2025-04-06T12:45:02+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/aura-o-mat/symptom-check-summary/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/aura-o-mat/symptom-check-summary/"
+                />
   </url><url>
     <loc>http://localhost:1313/aura-o-mat/</loc>
     <lastmod>2025-04-06T12:45:02+02:00</lastmod>

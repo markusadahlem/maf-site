@@ -120,6 +120,74 @@ sometimes, the aura stands alone.&lt;/p&gt;
     
     <item>
       <title></title>
+      <link>http://localhost:1313/aura-o-mat/plus-other-modality/</link>
+      <pubDate>Sun, 06 Apr 2025 12:45:02 +0200</pubDate>
+      
+      <guid>http://localhost:1313/aura-o-mat/plus-other-modality/</guid>
+      <description>
+        
+        
+        &lt;h3&gt;Check Other Modalities&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;check-other-modalities&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#check-other-modalities&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h2&gt;Clarifying Your “Other” Symptom&lt;/h2&gt;
+&lt;p&gt;
+    Does the additional symptom you experienced resemble a known aura modality
+    (e.g., visual, sensory, speech, motor, brainstem, or retinal)?
+&lt;/p&gt;
+&lt;button class=&#34;btn&#34; onclick=&#34;handleOtherCheck(true)&#34;&gt;Yes&lt;/button&gt;
+&lt;button class=&#34;btn btn-outline&#34; onclick=&#34;handleOtherCheck(false)&#34;&gt;No&lt;/button&gt;
+
+&lt;div id=&#34;followUpResponse&#34; style=&#34;margin-top: 1rem&#34;&gt;&lt;/div&gt;
+
+&lt;style&gt;
+    .btn {
+        display: inline-block;
+        margin: 0.1rem 0.5rem 0 0;
+        padding: 0.2rem 1.2rem;
+        font-size: 1rem;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        background-color: #007bff;
+        color: white;
+    }
+    .btn-outline {
+        background-color: transparent;
+        border: 2px solid #007bff;
+        color: #007bff;
+    }
+    .btn:hover,
+    .btn-outline:hover {
+        background-color: #0056b3;
+        color: white;
+    }
+&lt;/style&gt;
+
+&lt;script&gt;
+    function handleOtherCheck(isSimilar) {
+        const output = document.getElementById(&#34;followUpResponse&#34;);
+
+        if (isSimilar) {
+            output.innerHTML = `
+      ✅ Thanks for clarifying. You can now continue.
+      &lt;br&gt;&lt;br&gt;
+      &lt;a href=&#34;http://localhost:1313/aura-o-mat/aura-characteristics/&#34; class=&#34;btn&#34;&gt;Continue&lt;/a&gt;
+    `;
+        } else {
+            output.innerHTML = `
+      ⚠️ Your symptom does not resemble any known aura modality.
+      &lt;br&gt;&lt;br&gt;
+      This may fall outside the scope of this tool. We recommend speaking with a healthcare professional for further evaluation.
+    `;
+        }
+    }
+&lt;/script&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>http://localhost:1313/aura-o-mat/modality/</link>
       <pubDate>Sun, 06 Apr 2025 12:45:02 +0200</pubDate>
       
@@ -345,7 +413,7 @@ Choose “None” if none of these apply.&lt;/p&gt;
                 resultB.textContent =
                     &#34;ℹ️ You selected a known aura modality and an additional symptom type — please check it further to make sure it fits.&#34;;
                 resultB.style.color = &#34;darkorange&#34;;
-                nextLinkB.href = &#34;/aura-o-mat/mixed-aura/&#34;;
+                nextLinkB.href = &#34;/aura-o-mat/plus-other-modality/&#34;;
                 nextLinkB.style.display = &#34;inline-block&#34;;
                 nextLinkB.textContent = &#34;Next: Describe Characteristics&#34;;
             } else if (hasCoreAura) {

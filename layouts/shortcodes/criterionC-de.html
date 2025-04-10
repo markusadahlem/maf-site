@@ -1,0 +1,159 @@
+<div id="quizContainer"></div>
+<p id="resultC" style="font-weight: bold; margin-top: 1rem"></p>
+
+<style>
+    .btn {
+        display: inline-block;
+        margin: 0.1rem 0.5rem 0 0;
+        padding: 0.2rem 1.2rem;
+        font-size: 1rem;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        background-color: #007bff;
+        color: white;
+    }
+    .btn:hover {
+        background-color: #0056b3;
+    }
+    .btn-outline {
+        background-color: transparent;
+        border: 2px solid #007bff;
+        color: #007bff;
+    }
+    .btn-outline:hover {
+        background-color: #007bff;
+        color: white;
+    }
+    .btn-secondary {
+        background-color: #6c757d;
+    }
+    .btn-secondary:hover {
+        background-color: #565e64;
+    }
+    .info-icon {
+        border: none;
+        background: none;
+        font-size: 1.1rem;
+        margin-left: 0.4rem;
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    const questions = [
+        {
+            text: "Did at least one aura symptom spread gradually over ≥5 minutes?",
+            explanation:
+                "E.g., a flickering spot in your visual field that slowly expands.",
+        },
+        {
+            text: "Did two or more aura symptoms occur in succession?",
+            explanation: "E.g., visual aura followed by tingling.",
+        },
+        {
+            text: "Did each individual aura symptom last between 5–60 minutes?",
+            explanation: "Shorter or longer durations are less typical.",
+        },
+        {
+            text: "Was at least one aura symptom unilateral (on one side only)?",
+            explanation:
+                "E.g., vision affected in only one eye, or tingling only on one side.",
+        },
+        {
+            text: "Was at least one aura symptom positive (e.g., flashing lights or pins and needles)?",
+            explanation:
+                "Positive means an added sensation (not loss of function).",
+        },
+        {
+            text: "Was the aura accompanied or followed within 60 minutes by headache?",
+            explanation:
+                "Timing matters — headache should be within 1 hour of aura.",
+        },
+    ];
+
+    let current = 0;
+    let answers = [];
+
+    const container = document.getElementById("quizContainer");
+    const result = document.getElementById("resultC");
+
+    function showQuestion() {
+        result.textContent = ""; // Clear result if user goes back
+
+        if (current === questions.length) {
+            let summaryHTML = "<ul>";
+            questions.forEach((q, index) => {
+                const response = answers[index] === true ? "✅ Yes" : "❌ No";
+                summaryHTML += `<li>${q.text} <strong>${response}</strong></li>`;
+            });
+            summaryHTML += "</ul>";
+
+            container.innerHTML = `
+              <p><strong>You’ve completed the section on aura characteristics.</strong></p>
+              <p>Here’s a summary of your responses:</p>
+              ${summaryHTML}
+              <p>Click below to see whether your responses meet the clinical threshold for this part.</p>
+              <button class="btn" onclick="showResult()">✅ Yes, show my result</button>
+              <button class="btn btn-secondary" onclick="goBack()">← Go Back</button>
+            `;
+            return;
+        }
+
+        const q = questions[current];
+        container.innerHTML = `
+    <p><strong>Question ${current + 1} of ${questions.length}</strong></p>
+    <p>${q.text}
+      <button onclick="showExplanation()" title="More info" class="info-icon">ⓘ</button>
+    </p>
+    <button class="btn" onclick="answer(true)">Yes</button>
+    <button class="btn btn-outline" onclick="answer(false)">No</button>
+    ${current > 0 ? `<br><br><button class="btn btn-secondary" onclick="goBack()">← Go Back</button>` : ""}
+    <div id="explanation" style="display:none; margin-top: 0.5rem; font-style: italic;"></div>
+  `;
+    }
+
+    function answer(choice) {
+        answers[current] = choice;
+        current++;
+        showQuestion();
+    }
+
+    function goBack() {
+        if (current > 0) current--;
+        showQuestion();
+    }
+
+    function showExplanation() {
+        const explanation = questions[current].explanation;
+        const explEl = document.getElementById("explanation");
+        explEl.textContent = explanation;
+        explEl.style.display = "block";
+    }
+
+    function showResult() {
+        const score = answers.filter((a) => a === true).length;
+        const passed = score >= 3;
+
+        container.innerHTML = "";
+
+        result.textContent = passed
+            ? "✅ You meet Criterion C: at least three characteristics apply."
+            : "⚠️ You do not meet Criterion C.";
+        result.style.color = passed ? "green" : "darkorange";
+
+        // Add linked button
+        const button = document.createElement("a");
+        button.href = passed
+            ? "/aura-o-mat/symptom-check-summary/"
+            : "/aura-o-mat/symptom-check-summary-n/";
+        button.textContent = passed ? "View Results" : "View Explanation";
+        button.className = "btn"; // reuses previous .btn class
+        button.style.display = "inline-block";
+        button.style.marginTop = "1rem";
+
+        result.appendChild(document.createElement("br"));
+        result.appendChild(button);
+    }
+    showQuestion(); // Start
+</script>

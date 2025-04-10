@@ -27,10 +27,10 @@ width: normal
 
 
 <div class="hx-mb-12">
-{{< hextra/hero-subtitle style="margin:.3rem 0 2rem 0">}}Migraine aura isn’t always what people expect — flickering zigzags are just one way the migraine brain can create unreal experiences.
+{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Migraine aura isn’t always what people expect — flickering zigzags are just one way the migraine brain can create unreal experiences.
     {{< /hextra/hero-subtitle >}}
-    </div>
 </div>
+
 
 
 Aura is a set of neurological symptoms that can affect vision, speech, sensation, or even how clearly you can think—occasionally, it can also involve movement or weakness. Since 1998, we’ve drawn on over 7,000 patient accounts to build one of the world’s most comprehensive sources of distilled knowledge on migraine aura.

@@ -1,0 +1,247 @@
+<form id="criterionBForm">
+    <div>
+        <label
+            ><input type="checkbox" name="symptom" value="visual" />
+            visuell</label
+        >
+        <button
+            class="info-btn"
+            type="button"
+            onclick="toggleExplanation('visual')"
+        >
+            ⓘ
+        </button>
+        <div id="explain-visual" class="info-text">
+            Visuelle Aura umfasst oft flackernde Lichter, Zickzacklinien oder
+            Gesichtsfeldausfälle.
+        </div>
+    </div>
+    <div>
+        <label
+            ><input type="checkbox" name="symptom" value="sensory" />
+            sensorisch</label
+        >
+        <button
+            class="info-btn"
+            type="button"
+            onclick="toggleExplanation('sensory')"
+        >
+            ⓘ
+        </button>
+        <div id="explain-sensory" class="info-text">
+            Sensible Aura kann Kribbeln oder Taubheitsgefühle verursachen, meist
+            beginnend in einer Hand und sich über den Arm ausbreitend.
+        </div>
+    </div>
+    <div>
+        <label
+            ><input type="checkbox" name="symptom" value="speech" /> Sprechen
+            und/oder Sprache</label
+        >
+        <button
+            class="info-btn"
+            type="button"
+            onclick="toggleExplanation('speech')"
+        >
+            ⓘ
+        </button>
+        <div id="explain-speech" class="info-text">
+            Sprachliche Aura kann zu Wortfindungsstörungen oder undeutlichem
+            Sprechen (Dysphasie) führen.
+        </div>
+    </div>
+    <div>
+        <label
+            ><input type="checkbox" name="symptom" value="motor" />
+            motorisch</label
+        >
+        <button
+            class="info-btn"
+            type="button"
+            onclick="toggleExplanation('motor')"
+        >
+            ⓘ
+        </button>
+        <div id="explain-motor" class="info-text">
+            Motorische Aura kann Schwäche oder Lähmung verursachen,
+            typischerweise einseitig.
+        </div>
+    </div>
+    <div>
+        <label
+            ><input type="checkbox" name="symptom" value="brainstem" />
+            Hirnstamm (z.B. Schwindel, s. Info)</label
+        >
+        <button
+            class="info-btn"
+            type="button"
+            onclick="toggleExplanation('brainstem')"
+        >
+            ⓘ
+        </button>
+        <div id="explain-brainstem" class="info-text">
+            Hirnstammaura umfasst Schwindel, Doppeltsehen oder unsicheren Gang
+            ohne motorische Schwäche.
+        </div>
+    </div>
+    <div>
+        <label
+            ><input type="checkbox" name="symptom" value="retinal" />
+            retinal</label
+        >
+        <button
+            class="info-btn"
+            type="button"
+            onclick="toggleExplanation('retinal')"
+        >
+            ⓘ
+        </button>
+        <div id="explain-retinal" class="info-text">
+            Retinale Aura verursacht wiederholte Sehstörungen auf einem Auge
+            (monokular).
+        </div>
+    </div>
+    <div>
+        <label
+            ><input type="checkbox" name="symptom" value="other" />
+            andere</label
+        >
+        <button
+            class="info-btn"
+            type="button"
+            onclick="toggleExplanation('other')"
+        >
+            ⓘ
+        </button>
+        <div id="explain-other" class="info-text">
+            Andere neurologische Symptome, die hier nicht aufgeführt sind, aber
+            reversibel und aura-ähnlich sind.
+        </div>
+    </div>
+    <div>
+        <label
+            ><input type="checkbox" name="symptom" value="none" />keine</label
+        >
+    </div>
+</form>
+
+<a id="nextLinkB" class="btn" style="display: none">Weiter</a>
+<p id="resultB" style="font-weight: bold; margin-top: 1rem"></p>
+
+<style>
+    .btn {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+    }
+    .btn:hover {
+        background-color: #0056b3;
+    }
+    .info-btn {
+        font-size: 1rem;
+        background: none;
+        border: none;
+        color: #007bff;
+        cursor: pointer;
+        margin-left: 0.4rem;
+    }
+    .info-text {
+        display: none;
+        font-style: italic;
+        margin: 0.3rem 0 0.8rem 1.5rem;
+        color: #444;
+        max-width: 600px;
+    }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const formB = document.getElementById("criterionBForm");
+        const resultB = document.getElementById("resultB");
+        const nextLinkB = document.getElementById("nextLinkB");
+
+        const allBoxes = formB.querySelectorAll('input[name="symptom"]');
+
+        allBoxes.forEach((cb) => {
+            cb.addEventListener("change", () => {
+                const isNone = cb.value === "none";
+
+                if (isNone && cb.checked) {
+                    allBoxes.forEach((other) => {
+                        if (other !== cb) other.checked = false;
+                    });
+                } else if (!isNone && cb.checked) {
+                    const noneBox = formB.querySelector('input[value="none"]');
+                    noneBox.checked = false;
+                }
+
+                evaluateCriterionB();
+            });
+        });
+
+        function evaluateCriterionB() {
+            const selected = Array.from(allBoxes)
+                .filter((cb) => cb.checked)
+                .map((cb) => cb.value);
+
+            const hasCoreAura = selected.some((v) =>
+                [
+                    "visual",
+                    "sensory",
+                    "speech",
+                    "motor",
+                    "brainstem",
+                    "retinal",
+                ].includes(v),
+            );
+            const hasOther = selected.includes("other");
+            const hasNone = selected.includes("none");
+
+            const onlyOther = selected.length === 1 && hasOther;
+            const onlyNone = selected.length === 1 && hasNone;
+
+            if (hasCoreAura && hasOther) {
+                resultB.textContent =
+                    "ℹ️ Du hast eine bekannte Auramodalität und zusätzliche Symptome ausgewählt – bitte prüfe, ob dies zusammenpasst.";
+                resultB.style.color = "darkorange";
+                nextLinkB.href = "/de/aura-o-mat/plus-other-modality/";
+                nextLinkB.style.display = "inline-block";
+                nextLinkB.textContent = "Weiter: Merkmale beschreiben";
+            } else if (hasCoreAura) {
+                resultB.textContent = "✅ Auramodalität erkannt.";
+                resultB.style.color = "green";
+                nextLinkB.href = "/de/aura-o-mat/aura-characteristics/";
+                nextLinkB.style.display = "inline-block";
+                nextLinkB.textContent = "Weiter: Merkmale beschreiben";
+            } else if (onlyOther) {
+                resultB.textContent =
+                    "ℹ️ Nicht klassifizierte Auramodalität ausgewählt.";
+                resultB.style.color = "darkorange";
+                nextLinkB.href = "/de/aura-o-mat/other-modality/";
+                nextLinkB.style.display = "inline-block";
+                nextLinkB.textContent = "Weiter: Andere Symptome";
+            } else if (onlyNone) {
+                resultB.textContent = "❌ Keine Aurabeschwerden angegeben.";
+                resultB.style.color = "red";
+                nextLinkB.href = "/de/aura-o-mat/no-aura/";
+                nextLinkB.style.display = "inline-block";
+                nextLinkB.textContent = "Weiter ohne Aura";
+            } else {
+                resultB.textContent = "";
+                nextLinkB.style.display = "none";
+            }
+        }
+
+        window.toggleExplanation = function (symptomKey) {
+            const el = document.getElementById("explain-" + symptomKey);
+            el.style.display = el.style.display === "block" ? "none" : "block";
+        };
+    });
+</script>
