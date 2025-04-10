@@ -27,16 +27,15 @@ width: normal
 
 
 <div class="hx-mb-12">
-{{< hextra/hero-subtitle style="margin:.3rem 0 2rem 0">}}Understanding Migraine Aura.
+{{< hextra/hero-subtitle style="margin:.3rem 0 2rem 0">}}Migraine aura isn’t always what people expect — flickering zigzags are just one way the migraine brain can create unreal experiences.
     {{< /hextra/hero-subtitle >}}
     </div>
 </div>
 
 
+Aura is a set of neurological symptoms that can affect vision, speech, sensation, or even how clearly you can think—occasionally, it can also involve movement or weakness. Since 2000, we’ve drawn on over 7,000 patient accounts to build one of the world’s most comprehensive sources of distilled knowledge on migraine aura.
 
 
-
-Our focus is on the less well researched neurological symptoms called aura. Aura symptoms often start and end before the headache, but they can extend into the headache phase, start after the onset of headache, and even appear without any headaches.
 
 
 
