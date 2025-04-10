@@ -1,11 +1,7 @@
 ---
 date: "2025-04-06T12:48:26+02:00"
-title: "Migräne Art"
+title: "Forbedring af aura-diagnostik"
 ---
+Migræne diagnosticeres typisk ud fra sygehistorien og ved at udelukke andre alvorlige årsager. Migræne med Aura Fonden fremhæver dog de særlige diagnostiske udfordringer, som auraen medfører. Der findes ingen blodprøve, billeddiagnostik eller procedure, der definitivt kan bekræfte migræne — selvom sådanne værktøjer kan være nyttige til at udelukke andre tilstande. Nøglen ligger stadig i en grundig anamnese, støttet af strukturerede screeningsværktøjer.
 
-[Website im Aufbau]
-
-In den 1970er Jahren wurde das Konzept der “Migräne-Kunst" entwickelt. Es bezeichnet die Idee, dass die abbildende Kunst ein angemessenes und manchmal das bestgeeignete Medium ist, um die
-eigenartigen Erfahrungen der Migränebetroffenen auszudrücken und zu kommunizieren.
-
-{{< figure src="/images/migraine-computer.png" alt="Alt text" width="350" >}}
+Vi arbejder for at forbedre denne proces – især for aura – hvor tidlig og præcis genkendelse med hjælp fra digitale biomarkører kunne revolutionere både diagnosticering og behandling.

@@ -1,11 +1,7 @@
 ---
 date: "2025-04-06T12:48:26+02:00"
-title: "Migräne Art"
+title: "Aura-diagnostiek verbeteren"
 ---
+Migraine wordt meestal gediagnosticeerd op basis van de medische voorgeschiedenis en het uitsluiten van andere ernstige oorzaken. De Stichting Migraine met Aura wijst echter op de unieke diagnostische uitdagingen die aura met zich meebrengt. Er bestaat geen bloedtest, beeldvorming of procedure die migraine definitief kan bevestigen — al kunnen dergelijke middelen helpen om andere aandoeningen uit te sluiten. De kern blijft het verzamelen van een gedetailleerde voorgeschiedenis, ondersteund door gestructureerde screeningsinstrumenten.
 
-[Website im Aufbau]
-
-In den 1970er Jahren wurde das Konzept der “Migräne-Kunst" entwickelt. Es bezeichnet die Idee, dass die abbildende Kunst ein angemessenes und manchmal das bestgeeignete Medium ist, um die
-eigenartigen Erfahrungen der Migränebetroffenen auszudrücken und zu kommunizieren.
-
-{{< figure src="/images/migraine-computer.png" alt="Alt text" width="350" >}}
+Wij pleiten voor een verfijning van dit proces, vooral bij aura’s, waarbij vroege en nauwkeurige herkenning met behulp van digitale biomarkers zowel de diagnose als de zorg zou kunnen transformeren.

@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Migraine Aura Foundation – Stichting Migraine met Aura</title>
+    <title>Migraine Aura Foundation – </title>
     <link>http://localhost:1313/nl/</link>
-    <description>Recent content in Stichting Migraine met Aura on Migraine Aura Foundation</description>
+    <description>Recent content on Migraine Aura Foundation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>nl</language>
-    <lastBuildDate>Sat, 05 Apr 2025 17:40:40 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 06 Apr 2025 15:30:41 +0200</lastBuildDate>
     
 	  <atom:link href="http://localhost:1313/nl/index.xml" rel="self" type="application/rss+xml" />
     

@@ -6,4 +6,4 @@ title: "Über uns"
 
 
 
-{{< figure src="/images/maf-entstehungsgeschichte.png" alt="Alt text" width="200" >}}
+{{< figure src="/images/maf-entstehungsgeschichte.png" alt="Alt text" width="600" >}}

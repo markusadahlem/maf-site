@@ -1,6 +1,6 @@
 ---
 type: docs
-title: Clever Cloud Documentation
+title: ""
 layout: hextra-home
 disableSidebar: false
 type: default
@@ -33,7 +33,7 @@ width: normal
 </div>
 
 
-Aura is a set of neurological symptoms that can affect vision, speech, sensation, or even how clearly you can think—occasionally, it can also involve movement or weakness. Since 2000, we’ve drawn on over 7,000 patient accounts to build one of the world’s most comprehensive sources of distilled knowledge on migraine aura.
+Aura is a set of neurological symptoms that can affect vision, speech, sensation, or even how clearly you can think—occasionally, it can also involve movement or weakness. Since 1998, we’ve drawn on over 7,000 patient accounts to build one of the world’s most comprehensive sources of distilled knowledge on migraine aura.
 
 
 
@@ -49,8 +49,8 @@ Aura is a set of neurological symptoms that can affect vision, speech, sensation
 
   {{< hextra/feature-card
     title="Diagnosis"
-    subtitle="Our mission is to characterize all migraine symptoms by involving patients.."
-    link="art"
+    subtitle="Our mission is to characterize all migraine symptoms by involving patients."
+    link="Diagnosis"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
     image="/images/teaser/aura-o-mat-app.png"
     imageClass="hx-top-[0%] hx-left-[0px]  dark:hx-opacity-80"
@@ -68,7 +68,7 @@ Aura is a set of neurological symptoms that can affect vision, speech, sensation
   >}}
 
 
-
+<!--
 
   {{< hextra/feature-card
     title="Quantified Self"
@@ -93,6 +93,18 @@ Aura is a set of neurological symptoms that can affect vision, speech, sensation
     style="background: radial-gradient(ellipse at 50% 80%,rgba(203, 28, 66, 0.1),hsla(0,0%,100%,0));"
   >}}
 
+-->
+
+
+  {{< hextra/feature-card
+    title="Science"
+    subtitle="Migraine aura is more than a symptom — it's a window into how the brain normally works."
+    link=""
+    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
+    image="/images/teaser/aura-science.png"
+    imageClass="hx-top-[0%] hx-left-[0px]  hx-w-[100%] sm:hx-w-[20%] dark:hx-opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(245, 116, 97, 0.1),hsla(0,0%,100%,0));"
+  >}}
 
   {{< hextra/feature-card
     title="Genetics"
@@ -104,19 +116,10 @@ Aura is a set of neurological symptoms that can affect vision, speech, sensation
     style="background: radial-gradient(ellipse at 50% 80%,rgba(245, 116, 97, 0.1),hsla(0,0%,100%,0));"
   >}}
 
-  {{< hextra/feature-card
-    title="Science"
-    subtitle="The migraine brain ..."
-    link=""
-    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
-    image="/images/teaser/aura-science.png"
-    imageClass="hx-top-[0%] hx-left-[0px]  hx-w-[100%] sm:hx-w-[20%] dark:hx-opacity-80"
-    style="background: radial-gradient(ellipse at 50% 80%,rgba(245, 116, 97, 0.1),hsla(0,0%,100%,0));"
-  >}}
 
   {{< hextra/feature-card
     title="Visual Snow Syndrome"
-    subtitle="(From: Metzler & Robertson (2018). Current neurology and neuroscience reports.)"
+    subtitle="Visual snow is a neurological condition, not just a visual disturbance. (From: Metzler & Robertson (2018). Current neurology and neuroscience reports.)"
     link="symptoms/#visual-snow"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
     image="/images/teaser/visual-snow-syndrom.png"

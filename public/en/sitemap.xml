@@ -68,39 +68,6 @@
                 href="http://localhost:1313/impressum/"
                 />
   </url><url>
-    <loc>http://localhost:1313/art/</loc>
-    <lastmod>2025-04-06T12:48:32+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/de/art/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/art/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/art/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="http://localhost:1313/nl/art/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="da"
-                href="http://localhost:1313/da/art/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/art/"
-                />
-  </url><url>
     <loc>http://localhost:1313/diagnosis/</loc>
     <lastmod>2025-04-06T12:48:32+02:00</lastmod>
     <xhtml:link
@@ -134,8 +101,38 @@
                 href="http://localhost:1313/diagnosis/"
                 />
   </url><url>
-    <loc>http://localhost:1313/aura-o-mat/three-donts/</loc>
-    <lastmod>2025-04-09T12:45:02+02:00</lastmod>
+    <loc>http://localhost:1313/art/</loc>
+    <lastmod>2025-04-06T12:48:32+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/art/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/art/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/art/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/nl/art/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="http://localhost:1313/da/art/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/art/"
+                />
   </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2025-04-09T12:45:02+02:00</lastmod>
@@ -170,6 +167,9 @@
                 href="http://localhost:1313/"
                 />
   </url><url>
+    <loc>http://localhost:1313/aura-o-mat/three-donts/</loc>
+    <lastmod>2025-04-09T12:45:02+02:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/about/voices/</loc>
     <lastmod>2025-04-06T12:51:29+02:00</lastmod>
     <xhtml:link
@@ -202,9 +202,6 @@
                 hreflang="en"
                 href="http://localhost:1313/about/voices/"
                 />
-  </url><url>
-    <loc>http://localhost:1313/aura-o-mat/_index.dk/</loc>
-    <lastmod>2025-04-06T12:45:08+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/research/</loc>
     <lastmod>2025-04-06T12:45:03+02:00</lastmod>
@@ -317,9 +314,6 @@
                 href="http://localhost:1313/aura-o-mat/"
                 />
   </url><url>
-    <loc>http://localhost:1313/about/_index.dk/</loc>
-    <lastmod>2025-04-05T18:41:01+02:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/about/</loc>
     <lastmod>2025-04-05T18:40:56+02:00</lastmod>
     <xhtml:link
@@ -353,9 +347,6 @@
                 href="http://localhost:1313/about/"
                 />
   </url><url>
-    <loc>http://localhost:1313/blog/_index.dk/</loc>
-    <lastmod>2025-04-05T17:53:50+02:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/blog/</loc>
     <lastmod>2025-04-05T17:53:43+02:00</lastmod>
     <xhtml:link
@@ -388,9 +379,6 @@
                 hreflang="en"
                 href="http://localhost:1313/blog/"
                 />
-  </url><url>
-    <loc>http://localhost:1313/_index.dk/</loc>
-    <lastmod>2025-04-05T17:40:40+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/aura-o-mat/aura-characteristics/</loc>
   </url><url>

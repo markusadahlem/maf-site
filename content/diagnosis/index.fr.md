@@ -1,11 +1,7 @@
 ---
 date: "2025-04-06T12:48:26+02:00"
-title: "Migräne Art"
+title: "Améliorer le diagnostic de l’aura"
 ---
+La migraine est généralement diagnostiquée sur la base de l’histoire clinique et de l’exclusion d'autres causes graves. Cependant, la Fondation Migraine avec Aura souligne les défis diagnostiques spécifiques que pose l’aura migraineuse. Aucun test sanguin, aucune imagerie ni procédure ne permet de confirmer de manière définitive une migraine – bien que ces outils puissent aider à écarter d'autres pathologies. L’élément clé reste une anamnèse détaillée, soutenue par des outils de dépistage structurés.
 
-[Website im Aufbau]
-
-In den 1970er Jahren wurde das Konzept der “Migräne-Kunst" entwickelt. Es bezeichnet die Idee, dass die abbildende Kunst ein angemessenes und manchmal das bestgeeignete Medium ist, um die
-eigenartigen Erfahrungen der Migränebetroffenen auszudrücken und zu kommunizieren.
-
-{{< figure src="/images/migraine-computer.png" alt="Alt text" width="350" >}}
+Nous plaidons pour l’amélioration de ce processus, en particulier pour l’aura, dont la reconnaissance précoce et précise, rendue possible grâce aux biomarqueurs numériques, pourrait transformer le diagnostic comme la prise en charge.
