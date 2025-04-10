@@ -113,7 +113,7 @@
 &lt;p&gt;Please select all symptoms you’ve experienced during your aura.&lt;br&gt;
 Choose “Other” if you’ve had additional modalities not listed here.&lt;br&gt;
 Choose “None” if none of these apply.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Modalities&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Modalities&lt;/strong&gt;
 &lt;form id=&#34;criterionBForm&#34;&gt;
     &lt;div&gt;
         &lt;label
@@ -358,7 +358,7 @@ Choose “None” if none of these apply.&lt;/p&gt;
         };
     });
 &lt;/script&gt;
-
+&lt;/p&gt;
 
       </description>
     </item>

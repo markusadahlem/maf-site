@@ -22,5 +22,4 @@ Choose “None” if none of these apply.
 
 
 **Modalities**
-
 {{< criterionB >}}
