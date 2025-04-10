@@ -1,0 +1,83 @@
+- id: backToTop
+  translation: "Tilbage til toppen"
+
+- id: changeLanguage
+  translation: "Skift sprog"
+
+- id: changeTheme
+  translation: "Skift tema"
+
+- id: copyCode
+  translation: "Kopiér kode"
+
+- id: copyright
+  translation: "© 2025 Migræne med Aura Fonden"
+
+- id: dark
+  translation: "Mørk"
+
+- id: editThisPage
+  translation: "Redigér denne side på GitHub →"
+
+- id: lastUpdated
+  translation: "Sidst opdateret den"
+
+- id: light
+  translation: "Lys"
+
+- id: noResultsFound
+  translation: "Ingen resultater fundet."
+
+- id: onThisPage
+  translation: "På denne side"
+
+- id: poweredBy
+  translation: "© 2025 Migræne med Aura Fonden ——— Drevet af Hextra"
+
+- id: readMore
+  translation: "Læs mere →"
+
+- id: searchPlaceholder
+  translation: "Søg..."
+
+- id: documentation
+  translation: "Dokumentation"
+
+- id: blog
+  translation: "Blog"
+
+- id: art
+  translation: "Migrænekunst"
+
+- id: symptoms
+  translation: "Symptomer"
+
+- id: about
+  translation: "Om os"
+
+- id: search
+  translation: "Søg"
+
+- id: home
+  translation: "Hjem"
+
+- id: learn
+  translation: "Lær"
+
+- id: living
+  translation: "Leve med aura"
+
+- id: stories
+  translation: "Patienthistorier"
+
+- id: research
+  translation: "Forskning"
+
+- id: aura-o-mat
+  translation: "Aura-o-mat"
+
+- id: get-involved
+  translation: "Vær med"
+
+- id: maf-name
+  translation: "Migræne med Aura Fonden"

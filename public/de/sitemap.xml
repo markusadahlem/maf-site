@@ -11,6 +11,26 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/impressum/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/impressum/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/nl/impressum/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="http://localhost:1313/da/impressum/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="de"
                 href="http://localhost:1313/de/impressum/"
                 />
@@ -21,6 +41,26 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/art/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/art/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/art/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/nl/art/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="http://localhost:1313/da/art/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -37,6 +77,26 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/diagnosis/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/diagnosis/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/nl/diagnosis/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="http://localhost:1313/da/diagnosis/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="de"
                 href="http://localhost:1313/de/diagnosis/"
                 />
@@ -47,6 +107,26 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/about/voices/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/about/voices/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/about/voices/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/nl/about/voices/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="http://localhost:1313/da/about/voices/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -63,6 +143,26 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/aura-o-mat/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/aura-o-mat/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/nl/aura-o-mat/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="http://localhost:1313/da/aura-o-mat/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="de"
                 href="http://localhost:1313/de/aura-o-mat/"
                 />
@@ -73,6 +173,26 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/about/get-involved/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/about/get-involved/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/about/get-involved/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/nl/about/get-involved/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="http://localhost:1313/da/about/get-involved/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -89,6 +209,26 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/research/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/research/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/nl/research/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="http://localhost:1313/da/research/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="de"
                 href="http://localhost:1313/de/research/"
                 />
@@ -99,6 +239,26 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/symptoms/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/symptoms/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/symptoms/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/nl/symptoms/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="http://localhost:1313/da/symptoms/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -115,6 +275,26 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/nl/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="http://localhost:1313/da/about/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="de"
                 href="http://localhost:1313/de/about/"
                 />
@@ -125,6 +305,26 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/nl/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="http://localhost:1313/da/blog/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -141,6 +341,26 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/nl/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="http://localhost:1313/da/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="de"
                 href="http://localhost:1313/de/"
                 />
@@ -153,6 +373,26 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/nl/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="http://localhost:1313/da/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="de"
                 href="http://localhost:1313/de/categories/"
                 />
@@ -162,6 +402,26 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/nl/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="http://localhost:1313/da/tags/"
                 />
     <xhtml:link
                 rel="alternate"

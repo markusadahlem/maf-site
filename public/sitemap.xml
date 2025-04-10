@@ -4,12 +4,40 @@
   <sitemap>
     <loc>http://localhost:1313/en/sitemap.xml</loc>
     
-      <lastmod>2025-04-06T15:30:41+02:00</lastmod>
+      <lastmod>2025-04-09T12:45:02+02:00</lastmod>
     
   </sitemap>
   
   <sitemap>
     <loc>http://localhost:1313/de/sitemap.xml</loc>
+    
+      <lastmod>2025-04-06T15:30:41+02:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>http://localhost:1313/fr/sitemap.xml</loc>
+    
+      <lastmod>2025-04-06T15:30:41+02:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>http://localhost:1313/es/sitemap.xml</loc>
+    
+      <lastmod>2025-04-06T15:30:41+02:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>http://localhost:1313/nl/sitemap.xml</loc>
+    
+      <lastmod>2025-04-06T15:30:41+02:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>http://localhost:1313/da/sitemap.xml</loc>
     
       <lastmod>2025-04-06T15:30:41+02:00</lastmod>
     

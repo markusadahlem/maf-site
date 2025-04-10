@@ -1,0 +1,83 @@
+- id: backToTop
+  translation: "Volver arriba"
+
+- id: changeLanguage
+  translation: "Cambiar idioma"
+
+- id: changeTheme
+  translation: "Cambiar tema"
+
+- id: copyCode
+  translation: "Copiar código"
+
+- id: copyright
+  translation: "© 2025 Fundación Migraña con Aura"
+
+- id: dark
+  translation: "Oscuro"
+
+- id: editThisPage
+  translation: "Editar esta página en GitHub →"
+
+- id: lastUpdated
+  translation: "Última actualización el"
+
+- id: light
+  translation: "Claro"
+
+- id: noResultsFound
+  translation: "No se encontraron resultados."
+
+- id: onThisPage
+  translation: "En esta página"
+
+- id: poweredBy
+  translation: "© 2025 Fundación Migraña con Aura ——— Desarrollado por Hextra"
+
+- id: readMore
+  translation: "Leer más →"
+
+- id: searchPlaceholder
+  translation: "Buscar..."
+
+- id: documentation
+  translation: "Documentación"
+
+- id: blog
+  translation: "Blog"
+
+- id: art
+  translation: "Arte de la migraña"
+
+- id: symptoms
+  translation: "Síntomas"
+
+- id: about
+  translation: "Sobre nosotros"
+
+- id: search
+  translation: "Buscar"
+
+- id: home
+  translation: "Inicio"
+
+- id: learn
+  translation: "Aprender"
+
+- id: living
+  translation: "Vivir con aura"
+
+- id: stories
+  translation: "Testimonios"
+
+- id: research
+  translation: "Investigación"
+
+- id: aura-o-mat
+  translation: "Aura-o-mat"
+
+- id: get-involved
+  translation: "Involúcrate"
+
+- id: maf-name
+  translation: "Fundación Migraña con Aura"

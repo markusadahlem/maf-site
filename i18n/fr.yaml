@@ -1,0 +1,83 @@
+- id: backToTop
+  translation: "Revenir en haut"
+
+- id: changeLanguage
+  translation: "Changer de langue"
+
+- id: changeTheme
+  translation: "Changer le thème"
+
+- id: copyCode
+  translation: "Copier le code"
+
+- id: copyright
+  translation: "© 2025 Fondation Migraine avec Aura"
+
+- id: dark
+  translation: "Sombre"
+
+- id: editThisPage
+  translation: "Modifier cette page sur GitHub →"
+
+- id: lastUpdated
+  translation: "Dernière mise à jour le"
+
+- id: light
+  translation: "Clair"
+
+- id: noResultsFound
+  translation: "Aucun résultat trouvé."
+
+- id: onThisPage
+  translation: "Sur cette page"
+
+- id: poweredBy
+  translation: "© 2025 Fondation Migraine avec Aura ——— Propulsé par Hextra"
+
+- id: readMore
+  translation: "En savoir plus →"
+
+- id: searchPlaceholder
+  translation: "Rechercher..."
+
+- id: documentation
+  translation: "Documentation"
+
+- id: blog
+  translation: "Blog"
+
+- id: art
+  translation: "Art de la migraine"
+
+- id: symptoms
+  translation: "Symptômes"
+
+- id: about
+  translation: "À propos"
+
+- id: search
+  translation: "Recherche"
+
+- id: home
+  translation: "Accueil"
+
+- id: learn
+  translation: "Apprendre"
+
+- id: living
+  translation: "Vivre avec l’aura"
+
+- id: stories
+  translation: "Témoignages"
+
+- id: research
+  translation: "Recherche"
+
+- id: aura-o-mat
+  translation: "Aura-o-mat"
+
+- id: get-involved
+  translation: "Participez"
+
+- id: maf-name
+  translation: "Fondation Migraine avec Aura"

@@ -68,6 +68,18 @@ languages:
   de:
     languageName: Deutsch
     weight: 2
+  fr:
+    languageName: Français
+    weight: 3
+  es:
+    languageName: Español
+    weight: 4
+  nl:
+    languageName: Nederlands
+    weight: 5
+  da:
+    languageName: Dansk
+    weight: 6
 
 markup:
   goldmark:

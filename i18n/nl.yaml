@@ -1,0 +1,83 @@
+- id: backToTop
+  translation: "Terug naar boven"
+
+- id: changeLanguage
+  translation: "Taal wijzigen"
+
+- id: changeTheme
+  translation: "Thema wijzigen"
+
+- id: copyCode
+  translation: "Code kopiëren"
+
+- id: copyright
+  translation: "© 2025 Stichting Migraine met Aura"
+
+- id: dark
+  translation: "Donker"
+
+- id: editThisPage
+  translation: "Bewerk deze pagina op GitHub →"
+
+- id: lastUpdated
+  translation: "Laatst bijgewerkt op"
+
+- id: light
+  translation: "Licht"
+
+- id: noResultsFound
+  translation: "Geen resultaten gevonden."
+
+- id: onThisPage
+  translation: "Op deze pagina"
+
+- id: poweredBy
+  translation: "© 2025 Stichting Migraine met Aura ——— Mogelijk gemaakt door Hextra"
+
+- id: readMore
+  translation: "Lees meer →"
+
+- id: searchPlaceholder
+  translation: "Zoeken..."
+
+- id: documentation
+  translation: "Documentatie"
+
+- id: blog
+  translation: "Blog"
+
+- id: art
+  translation: "Migrainekunst"
+
+- id: symptoms
+  translation: "Symptomen"
+
+- id: about
+  translation: "Over ons"
+
+- id: search
+  translation: "Zoeken"
+
+- id: home
+  translation: "Home"
+
+- id: learn
+  translation: "Leer"
+
+- id: living
+  translation: "Leven met aura"
+
+- id: stories
+  translation: "Patiëntverhalen"
+
+- id: research
+  translation: "Onderzoek"
+
+- id: aura-o-mat
+  translation: "Aura-o-mat"
+
+- id: get-involved
+  translation: "Doe mee"
+
+- id: maf-name
+  translation: "Stichting Migraine met Aura"

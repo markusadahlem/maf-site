@@ -42,5 +42,22 @@
       </description>
     </item>
     
+    <item>
+      <title>Über uns</title>
+      <link>http://localhost:1313/about/_index.dk/</link>
+      <pubDate>Sat, 05 Apr 2025 18:41:01 +0200</pubDate>
+      
+      <guid>http://localhost:1313/about/_index.dk/</guid>
+      <description>
+        
+        
+        &lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/maf-entstehungsgeschichte.png&#34;
+    alt=&#34;Alt text&#34; width=&#34;200&#34;&gt;
+&lt;/figure&gt;
+
+
+      </description>
+    </item>
+    
   </channel>
 </rss>
