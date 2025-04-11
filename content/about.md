@@ -4,6 +4,6 @@ title: ""
 ---
 
 
-# Milestones in the Story of the Migraine Aura Foundation
+# Milestones of the Migraine Aura Foundation
 
 {{< timeline >}}
