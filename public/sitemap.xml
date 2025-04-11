@@ -30,6 +30,27 @@
   </sitemap>
   
   <sitemap>
+    <loc>http://localhost:1313/it/sitemap.xml</loc>
+    
+      <lastmod>2025-04-06T12:45:08+02:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>http://localhost:1313/uk/sitemap.xml</loc>
+    
+      <lastmod>2025-04-06T12:45:08+02:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>http://localhost:1313/ru/sitemap.xml</loc>
+    
+      <lastmod>2025-04-06T12:45:08+02:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
     <loc>http://localhost:1313/nl/sitemap.xml</loc>
     
       <lastmod>2025-04-06T15:30:41+02:00</lastmod>

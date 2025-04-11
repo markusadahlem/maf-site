@@ -1,0 +1,83 @@
+- id: backToTop
+  translation: "Torna su"
+
+- id: changeLanguage
+  translation: "Cambia lingua"
+
+- id: changeTheme
+  translation: "Cambia tema"
+
+- id: copyCode
+  translation: "Copia codice"
+
+- id: copyright
+  translation: "© 2025 Fondazione Emicrania con Aura"
+
+- id: dark
+  translation: "Scuro"
+
+- id: editThisPage
+  translation: "Modifica questa pagina su GitHub →"
+
+- id: lastUpdated
+  translation: "Ultimo aggiornamento il"
+
+- id: light
+  translation: "Chiaro"
+
+- id: noResultsFound
+  translation: "Nessun risultato trovato."
+
+- id: onThisPage
+  translation: "In questa pagina"
+
+- id: poweredBy
+  translation: "© 2025 Fondazione Emicrania con Aura ——— Realizzato con Hextra"
+
+- id: readMore
+  translation: "Leggi di più →"
+
+- id: searchPlaceholder
+  translation: "Cerca..."
+
+- id: documentation
+  translation: "Documentazione"
+
+- id: blog
+  translation: "Blog"
+
+- id: art
+  translation: "Arte dell'emicrania"
+
+- id: symptoms
+  translation: "Sintomi"
+
+- id: about
+  translation: "Chi siamo"
+
+- id: search
+  translation: "Cerca"
+
+- id: home
+  translation: "Home"
+
+- id: learn
+  translation: "Imparare"
+
+- id: living
+  translation: "Vivere con l'aura"
+
+- id: stories
+  translation: "Testimonianze"
+
+- id: research
+  translation: "Ricerca"
+
+- id: aura-o-mat
+  translation: "Aura-o-mat"
+
+- id: get-involved
+  translation: "Partecipa"
+
+- id: maf-name
+  translation: "Fondazione Emicrania con Aura"

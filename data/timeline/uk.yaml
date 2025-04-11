@@ -1,0 +1,66 @@
+- date: "2026"
+  title: "Ritorno digitale"
+  text: "Rilancio del sito web con un nuovo concetto e una presenza digitale più ampia."
+
+- date: "2022"
+  title: "Lancio su Instagram"
+  text: "Nuova presenza sui social media in tedesco e inglese – il primo passo verso il ritorno al pubblico."
+  image: "/images/timeline/2022.png"
+
+- date: "2019"
+  title: "Perdita di un pioniere"
+  text: "La scomparsa del Dr. Klaus Podoll ha ritardato il rilancio previsto e lasciato un vuoto significativo."
+
+- date: "2016"
+  title: "Sospensione forzata per GDPR"
+  text: "Il sito è stato disattivato a causa di incertezze legali relative a migliaia di comunicazioni archiviate."
+
+- date: "2011"
+  title: "Riconoscimento letterario"
+  text: "Nel suo libro *La donna che trema*, Siri Hustvedt riflette su come le testimonianze sull’aura pubblicate sul sito abbiano aperto nuove prospettive – incluso il racconto di Carl von Linné che vide il proprio doppio. Il libro è stato pubblicato per la prima volta in tedesco."
+  image: "/images/timeline/2011.png"
+
+- date: "2009"
+  title: "Dalla sezione al blog: fisiopatologia dell'emicrania"
+  text: "Markus Dahlem lancia il blog scientifico *Graue Substanz* sulla piattaforma SciLogs di Spektrum. Oltre 400 articoli hanno offerto nuove prospettive sull'emicrania, fino al suo passaggio al mondo imprenditoriale."
+  image: "/images/timeline/2009-blog.png"
+
+- date: "2009"
+  title: "Migraine Art: dalla sezione al libro"
+  text: "Grazie al materiale raccolto da Derek Robinson e dal Dr. Klaus Podoll – e scoperto attraverso il sito – viene pubblicata la raccolta ‘Migraine Art’, una potente testimonianza dell’esperienza vissuta dell’aura."
+  image: "/images/timeline/2009-book.png"
+
+- date: "2006"
+  title: "Nuovo design per il sito"
+  text: "Restyling completo con CMS e struttura bilingue – reso possibile da premi e investimenti privati."
+  image: "/images/timeline/2006.png"
+
+- date: "2005"
+  title: "Consapevolezza premiata"
+  text: "Nominato al Premio Internazionale dei Media per la Scienza e l’Arte."
+  image: "/images/timeline/2005.png"
+
+- date: "2004"
+  title: "Fondazione istituita"
+  text: "Nasce la Fondazione Aura Emicranica, con una rete in espansione, libro degli ospiti e la sezione ‘Migraine Art’."
+  image: "/images/timeline/2004.png"
+
+- date: "11/2000"
+  title: "Forum per pazienti online"
+  text: "Prima piattaforma interattiva online con forum, libro degli ospiti e accesso per i medici – per pazienti e professionisti."
+  image: "/images/timeline/2000-forum.png"
+
+- date: "08/2000"
+  title: "Risonanza mediatica"
+  text: "*DIE WELT* pubblica: ‘Come appaiono le immagini fantasma nel cervello’. Molti pazienti rispondono con lettere personali."
+  image: "/images/timeline/2000-presse.png"
+
+- date: "03/2000"
+  title: "Una lettera da Oliver Sacks"
+  text: "Dopo una pubblicazione scientifica, Oliver Sacks invia una lettera personale per elogiare il lavoro teorico – un raro riconoscimento nel campo."
+  image: "/images/timeline/2000-sacks.png"
+
+- date: "1998"
+  title: "Comprendere l'aura – solo attraverso la teoria"
+  text: "Fisico teorico e non soggetto all’emicrania, Markus Dahlem crea la prima simulazione al computer dell’aura emicranica, basandosi esclusivamente su ipotesi sull’architettura neuronale del cervello."
+  image: "/images/timeline/1998.png"

@@ -1,0 +1,83 @@
+- id: backToTop
+  translation: "Назад угору"
+
+- id: changeLanguage
+  translation: "Змінити мову"
+
+- id: changeTheme
+  translation: "Змінити тему"
+
+- id: copyCode
+  translation: "Скопіювати код"
+
+- id: copyright
+  translation: "© 2025 Фундація Мігрень з Аурою"
+
+- id: dark
+  translation: "Темна"
+
+- id: editThisPage
+  translation: "Редагувати цю сторінку на GitHub →"
+
+- id: lastUpdated
+  translation: "Останнє оновлення"
+
+- id: light
+  translation: "Світла"
+
+- id: noResultsFound
+  translation: "Результатів не знайдено."
+
+- id: onThisPage
+  translation: "На цій сторінці"
+
+- id: poweredBy
+  translation: "© 2025 Фундація Мігрень з Аурою ——— Працює на базі Hextra"
+
+- id: readMore
+  translation: "Дізнатися більше →"
+
+- id: searchPlaceholder
+  translation: "Пошук..."
+
+- id: documentation
+  translation: "Документація"
+
+- id: blog
+  translation: "Блог"
+
+- id: art
+  translation: "Мистецтво мігрені"
+
+- id: symptoms
+  translation: "Симптоми"
+
+- id: about
+  translation: "Про нас"
+
+- id: search
+  translation: "Пошук"
+
+- id: home
+  translation: "Головна"
+
+- id: learn
+  translation: "Вивчати"
+
+- id: living
+  translation: "Жити з аурою"
+
+- id: stories
+  translation: "Історії пацієнтів"
+
+- id: research
+  translation: "Дослідження"
+
+- id: aura-o-mat
+  translation: "Аура-о-мат"
+
+- id: get-involved
+  translation: "Долучитися"
+
+- id: maf-name
+  translation: "Фундація Мігрень з Аурою"

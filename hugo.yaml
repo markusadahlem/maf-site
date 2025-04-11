@@ -74,12 +74,21 @@ languages:
   es:
     languageName: Español
     weight: 4
+  it:
+    languageName: Italiano
+    weight: 5
+  uk:
+    languageName: Українська
+    weight: 6
+  ru:
+    languageName: Русский
+    weight: 7
   nl:
     languageName: Nederlands
-    weight: 5
+    weight: 8
   da:
     languageName: Dansk
-    weight: 6
+    weight: 9
 
 markup:
   goldmark:
