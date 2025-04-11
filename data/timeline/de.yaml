@@ -1,0 +1,66 @@
+- date: "2026"
+  title: "Digitales Comeback"
+  text: "Relaunch der Webseite mit neuem Konzept und breiterem digitalen Auftritt."
+
+- date: "2022"
+  title: "Start auf Instagram"
+  text: "Neue Social-Media-Präsenz auf Deutsch und Englisch – der erste Schritt zurück in die Öffentlichkeit."
+  image: "/images/timeline/2022.png"
+
+- date: "2019"
+  title: "Verlust eines Pioniers"
+  text: "Tod von Dr. Klaus Podoll verzögert den geplanten Relaunch und hinterlässt eine große Lücke."
+
+- date: "2016"
+  title: "Zwangspause wegen DSGVO"
+  text: "Die Website wird offline genommen – rechtliche Unsicherheiten wegen tausender E-Mail-Dokumentationen."
+
+- date: "2011"
+  title: "Literarische Würdigung"
+  text: "In ihrem Buch `Die zitternde Frau` beschreibt Siri Hustvedt, wie die Aura-Erfahrungen auf der Website neue Perspektiven eröffnen – etwa durch die Geschichte von Carl von Linné, der seinen Doppelgänger sah. Das Buch erscheint überraschend zuerst auf Deutsch."
+  image: "/images/timeline/2011.png"
+
+- date: "2009"
+  title: "Migräne Pathophysiologie: Aus der Sektion wird ein Blog"
+  text: "Markus Dahlem startet das Wissenschaftsblog *Graue Substanz* auf dem Spektrum-Portal SciLogs. In über 400 Beiträgen vermittelt er neue Sichtweisen auf Migräne – bis zur Gründung seines Unternehmens."
+  image: "/images/timeline/2009-blog.png"
+
+- date: "2009"
+  title: "Migraine Art: Aus der Sketion wird ein Buch"
+  text: "Mit dem langjährigen Material, gemeinsam gesammelt von Derek Robinson und Dr. Klaus Podoll, und vermittelt durch die Website findet sich ein Verleger – die Sammlung ‘Migraine Art’ erscheint als beeindruckendes Dokument gelebter Aura-Erfahrung."
+  image: "/images/timeline/2009-book.png"
+
+- date: "2006"
+  title: "Website im neuen Gewand"
+  text: "Komplettes Redesign mit CMS und zweisprachiger Struktur – ermöglicht durch Preisgeld und private Investitionen."
+  image: "/images/timeline/2006.png"
+
+- date: "2005"
+  title: "Ausgezeichnete Aufklärung"
+  text: "Nominierung für den internationalen Medienpreis für Wissenschaft und Kunst."
+  image: "/images/timeline/2005.png"
+
+- date: "2004"
+  title: "Gründung der Stiftung"
+  text: "Die Migräne-Aura Stiftung entsteht – mit wachsendem Netzwerk, Gästebuch und ‘Migränekunst’-Sektion."
+  image: "/images/timeline/2004.png"
+
+- date: "11/2000"
+  title: "Patientenforum geht live"
+  text: "Erste interaktive Onlineplattform mit Forum, Gästebuch und Ärztebereich für Betroffene und Fachleute."
+  image: "/images/timeline/2000-forum.png"
+
+- date: "08/2000"
+  title: "Mediale Aufmerksamkeit"
+  text: "DIE WELT berichtet: 'Wie im Gehirn Geisterbilder entstehen'. Es folgen zahlreiche Zuschriften von Patienten."
+  image: "/images/timeline/2000-presse.png"
+
+- date: "03/2000"
+  title: "Brief von Oliver Sacks"
+  text: "Nach der Veröffentlichung in einer Fachzeitschrift würdigt ein persönlicher Brief von Oliver Sacks diese theoretische Facharbeit – ein Ritterschlag aus der Fachwelt."
+  image: "/images/timeline/2000-sacks.png"
+
+- date: "1998"
+  title: "Aura verstehen – aus der Theorie heraus"
+  text: "Als theoretischer Physiker entwickelt Markus Dahlem die erste Computersimulation der Migräneaura – ohne selbst betroffen zu sein. Grundlage ist allein die neuronale Architektur des Gehirns."
+  image: "/images/timeline/1998.png"

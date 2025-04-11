@@ -1,8 +1,11 @@
 ---
 date: "2025-04-06T12:45:08+02:00"
-title: "Aura-O-Mat"
+title: ""
 ---
+# Dette værktøj er ikke tilgængeligt på dit sprog
 
-[Website im Aufbau]
+Symptomtjekværktøjet er i øjeblikket kun tilgængeligt på engelsk og tysk.  
+Prøv det her:  
 
-{{< figure src="aura-o-mat.png" alt="Alt text" width="200" >}}
+👉 [Engelsk version](/aura-o-mat/)  
+👉 [Tysk version](/de/aura-o-mat/)

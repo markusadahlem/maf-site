@@ -1,8 +1,10 @@
 ---
 date: "2025-04-06T12:45:08+02:00"
-title: "Aura-O-Mat"
+title: ""
 ---
+# Deze tool is nog niet beschikbaar in jouw taal
+De symptoomchecktool is momenteel alleen beschikbaar in het Engels en Duits.  
+Probeer het hier:  
 
-[Website im Aufbau]
-
-{{< figure src="aura-o-mat.png" alt="Alt text" width="200" >}}
+👉 [Engelse versie](/aura-o-mat/)  
+👉 [Duitse versie](/de/aura-o-mat/)

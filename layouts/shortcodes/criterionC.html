@@ -130,30 +130,15 @@
         explEl.textContent = explanation;
         explEl.style.display = "block";
     }
-
     function showResult() {
         const score = answers.filter((a) => a === true).length;
         const passed = score >= 3;
 
-        container.innerHTML = "";
-
-        result.textContent = passed
-            ? "✅ You meet Criterion C: at least three characteristics apply."
-            : "⚠️ You do not meet Criterion C.";
-        result.style.color = passed ? "green" : "darkorange";
-
-        // Add linked button
-        const button = document.createElement("a");
-        button.href = passed
-            ? "/aura-o-mat/symptom-check-summary/"
-            : "/aura-o-mat/symptom-check-summary-n/";
-        button.textContent = passed ? "View Results" : "View Explanation";
-        button.className = "btn"; // reuses previous .btn class
-        button.style.display = "inline-block";
-        button.style.marginTop = "1rem";
-
-        result.appendChild(document.createElement("br"));
-        result.appendChild(button);
+        // Redirect directly to the new page based on the result.
+        window.location.href = passed
+            ? "/aura-o-mat/criterionCmeet/"
+            : "/aura-o-mat/criterionCnotMeet/";
     }
+
     showQuestion(); // Start
 </script>

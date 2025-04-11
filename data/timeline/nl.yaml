@@ -1,0 +1,66 @@
+- date: "2026"
+  title: "Digitale comeback"
+  text: "Herlancering van de website met een nieuw concept en een bredere digitale aanwezigheid."
+
+- date: "2022"
+  title: "Lancering op Instagram"
+  text: "Nieuwe aanwezigheid op sociale media in het Duits en Engels – de eerste stap terug in de openbaarheid."
+  image: "/images/timeline/2022.png"
+
+- date: "2019"
+  title: "Verlies van een pionier"
+  text: "Het overlijden van Dr. Klaus Podoll vertraagde de geplande herlancering en liet een grote leegte achter."
+
+- date: "2016"
+  title: "Offline door AVG"
+  text: "De website werd offline gehaald vanwege juridische onzekerheden rond duizenden gearchiveerde patiëntberichten."
+
+- date: "2011"
+  title: "Literaire erkenning"
+  text: "In haar boek *De bevende vrouw* beschrijft Siri Hustvedt hoe de ervaringsverhalen op de website nieuwe perspectieven bieden – onder andere via het verhaal van Carl von Linné, die zijn eigen dubbelganger zag. Het boek verscheen verrassend genoeg eerst in het Duits."
+  image: "/images/timeline/2011.png"
+
+- date: "2009"
+  title: "Van sectie naar blog: Migrainefysiologie"
+  text: "Markus Dahlem start de wetenschapsblog *Graue Substanz* op het SciLogs-platform van Spektrum. In meer dan 400 bijdragen deelt hij nieuwe inzichten over migraine – tot aan de oprichting van zijn bedrijf."
+  image: "/images/timeline/2009-blog.png"
+
+- date: "2009"
+  title: "Migraine Art: Van sectie naar boek"
+  text: "Met materiaal verzameld door Derek Robinson en Dr. Klaus Podoll – en ontdekt via de website – vindt de collectie ‘Migraine Art’ een uitgever en verschijnt als krachtig document van doorleefde aura-ervaringen."
+  image: "/images/timeline/2009-book.png"
+
+- date: "2006"
+  title: "Website in een nieuw jasje"
+  text: "Volledige herontwerp met CMS en tweetalige structuur – mogelijk gemaakt door prijzengeld en privé-investeringen."
+  image: "/images/timeline/2006.png"
+
+- date: "2005"
+  title: "Bekroonde voorlichting"
+  text: "Genomineerd voor de Internationale Media Prijs voor Wetenschap en Kunst."
+  image: "/images/timeline/2005.png"
+
+- date: "2004"
+  title: "Oprichting van de stichting"
+  text: "De Migraine Aura Stichting wordt opgericht – met een groeiend netwerk, gastenboek en de sectie ‘Migrainekunst’."
+  image: "/images/timeline/2004.png"
+
+- date: "11/2000"
+  title: "Patiëntenforum gaat live"
+  text: "Eerste interactieve onlineplatform met forum, gastenboek en artsensectie – voor zowel patiënten als professionals."
+  image: "/images/timeline/2000-forum.png"
+
+- date: "08/2000"
+  title: "Media-aandacht"
+  text: "*DIE WELT* publiceert: ‘Hoe geestbeelden in de hersenen ontstaan’. Veel patiënten reageren met persoonlijke brieven."
+  image: "/images/timeline/2000-presse.png"
+
+- date: "03/2000"
+  title: "Brief van Oliver Sacks"
+  text: "Na publicatie in een vakblad ontvangt Markus Dahlem een persoonlijke brief van Oliver Sacks als waardering – een zeldzame eer uit het vakgebied."
+  image: "/images/timeline/2000-sacks.png"
+
+- date: "1998"
+  title: "Aura begrijpen – puur theoretisch"
+  text: "Als theoretisch natuurkundige en niet-migrainepatiënt ontwikkelt Markus Dahlem de eerste computersimulatie van een migraine-aura – uitsluitend gebaseerd op aannames over de neurale architectuur van de hersenen."
+  image: "/images/timeline/1998.png"

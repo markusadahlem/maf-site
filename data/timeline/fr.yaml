@@ -1,0 +1,66 @@
+- date: "2026"
+  title: "Retour numérique"
+  text: "Relancement du site web avec un nouveau concept et une présence digitale élargie."
+
+- date: "2022"
+  title: "Lancement sur Instagram"
+  text: "Nouvelle présence sur les réseaux sociaux en allemand et en anglais – première étape vers un retour public."
+  image: "/images/timeline/2022.png"
+
+- date: "2019"
+  title: "Perte d'un pionnier"
+  text: "Le décès du Dr Klaus Podoll retarde le relancement prévu et laisse un vide important."
+
+- date: "2016"
+  title: "Pause forcée due au RGPD"
+  text: "Le site est mis hors ligne en raison d'incertitudes juridiques concernant des milliers de communications archivées."
+
+- date: "2011"
+  title: "Reconnaissance littéraire"
+  text: "Dans son livre *La femme qui tremble*, Siri Hustvedt évoque comment les témoignages sur l'aura publiés sur le site ouvrent de nouvelles perspectives – notamment l'histoire de Carl von Linné, qui a vu son propre double. Le livre a été publié d'abord en allemand."
+  image: "/images/timeline/2011.png"
+
+- date: "2009"
+  title: "De la section au blog : Pathophysiologie de la migraine"
+  text: "Markus Dahlem lance le blog scientifique *Graue Substanz* sur le portail SciLogs de Spektrum. Plus de 400 articles offrent de nouvelles perspectives sur la migraine – jusqu'à son départ du monde académique pour créer son entreprise."
+  image: "/images/timeline/2009-blog.png"
+
+- date: "2009"
+  title: "Migraine Art : De la section au livre"
+  text: "Avec le matériel compilé par Derek Robinson et le Dr Klaus Podoll – et découvert via le site – un éditeur publie la collection ‘Migraine Art’ comme un puissant document d'expérience vécue de l'aura."
+  image: "/images/timeline/2009-book.png"
+
+- date: "2006"
+  title: "Nouveau look pour le site"
+  text: "Refonte complète avec CMS et structure bilingue – financée par des prix et des investissements privés."
+  image: "/images/timeline/2006.png"
+
+- date: "2005"
+  title: "Sensibilisation primée"
+  text: "Nommé pour le Prix international des médias pour la science et l'art."
+  image: "/images/timeline/2005.png"
+
+- date: "2004"
+  title: "Fondation établie"
+  text: "La Fondation Migraine Aura est créée – avec un réseau croissant, un livre d'or et la section ‘Migraine Art’."
+  image: "/images/timeline/2004.png"
+
+- date: "11/2000"
+  title: "Forum des patients en ligne"
+  text: "Première plateforme interactive en ligne avec forum, livre d'or et accès pour les médecins – pour les patients et les professionnels."
+  image: "/images/timeline/2000-forum.png"
+
+- date: "08/2000"
+  title: "Projecteur médiatique"
+  text: "*DIE WELT* publie : ‘Comment des images fantômes apparaissent dans le cerveau’. De nombreux patients répondent par des lettres personnelles."
+  image: "/images/timeline/2000-presse.png"
+
+- date: "03/2000"
+  title: "Une lettre d'Oliver Sacks"
+  text: "Suite à une publication scientifique, une lettre personnelle d'Oliver Sacks loue le travail théorique – une rare distinction dans le domaine."
+  image: "/images/timeline/2000-sacks.png"
+
+- date: "1998"
+  title: "Comprendre l'aura – uniquement par la théorie"
+  text: "En tant que physicien théoricien et non migraineux, Markus Dahlem crée la première simulation informatique de l'aura migraineuse – basée uniquement sur des hypothèses sur l'architecture neuronale du cerveau."
+  image: "/images/timeline/1998.png"

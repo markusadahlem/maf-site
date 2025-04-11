@@ -249,6 +249,32 @@
                 href="http://localhost:1313/aura-o-mat/symptom-check-summary-n/"
                 />
   </url><url>
+    <loc>http://localhost:1313/aura-o-mat/criterioncmeet/</loc>
+    <lastmod>2025-04-06T12:45:02+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/aura-o-mat/criterioncmeet/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/aura-o-mat/criterioncmeet/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/aura-o-mat/criterioncnotmeet/</loc>
+    <lastmod>2025-04-06T12:45:02+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/aura-o-mat/criterioncnotmeet/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/aura-o-mat/criterioncnotmeet/"
+                />
+  </url><url>
     <loc>http://localhost:1313/aura-o-mat/other-modality/</loc>
     <lastmod>2025-04-06T12:45:02+02:00</lastmod>
     <xhtml:link
@@ -434,6 +460,16 @@
                 />
   </url><url>
     <loc>http://localhost:1313/aura-o-mat/aura-characteristics/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/aura-o-mat/aura-characteristics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/aura-o-mat/aura-characteristics/"
+                />
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
     <xhtml:link

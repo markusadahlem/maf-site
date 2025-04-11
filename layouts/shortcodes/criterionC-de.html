@@ -43,32 +43,32 @@
 <script>
     const questions = [
         {
-            text: "Did at least one aura symptom spread gradually over ≥5 minutes?",
+            text: "Hat sich wenigstens ein Aurasymptom allmählich über ≥5 Minuten hinweg entwickelt?",
             explanation:
-                "E.g., a flickering spot in your visual field that slowly expands.",
+                "Beispiel: Ein flackernder Fleck im Sichtfeld, der sich langsam ausdehnt.",
         },
         {
-            text: "Did two or more aura symptoms occur in succession?",
-            explanation: "E.g., visual aura followed by tingling.",
+            text: "Sind zwei oder mehr Aurasymptome nacheinander aufgetreten?",
+            explanation: "Beispiel: Eine visuelle Aura gefolgt von Kribbeln.",
         },
         {
-            text: "Did each individual aura symptom last between 5–60 minutes?",
-            explanation: "Shorter or longer durations are less typical.",
+            text: "Hat jedes einzelne Aurasymptom zwischen 5–60 Minuten gedauert?",
+            explanation: "Kürzere oder längere Dauer ist weniger typisch.",
         },
         {
-            text: "Was at least one aura symptom unilateral (on one side only)?",
+            text: "War mindestens ein Auraphänomen einseitig (nur auf einer Körper- oder Gesichtshälfte)?",
             explanation:
-                "E.g., vision affected in only one eye, or tingling only on one side.",
+                "Beispiel: Sehstörung nur auf einer Seite des Gesichtsfeldes oder Kribbeln nur auf einer Körperseite.",
         },
         {
-            text: "Was at least one aura symptom positive (e.g., flashing lights or pins and needles)?",
+            text: "War mindestens ein Auraphänomen positiv (z. B. Lichtblitze oder Kribbeln)?",
             explanation:
-                "Positive means an added sensation (not loss of function).",
+                "Positiv bedeutet, dass etwas hinzugefügt wird (nicht ein Funktionsverlust, z.B. blinddr Fleck oder Taubheit).",
         },
         {
-            text: "Was the aura accompanied or followed within 60 minutes by headache?",
+            text: "Trat die Aura zusammen mit oder innerhalb von 60 Minuten nach dem Kopfschmerz auf?",
             explanation:
-                "Timing matters — headache should be within 1 hour of aura.",
+                "Das Timing ist wichtig – der Kopfschmerz sollte innerhalb einer Stunde nach der Aura einsetzen.",
         },
     ];
 
@@ -79,36 +79,36 @@
     const result = document.getElementById("resultC");
 
     function showQuestion() {
-        result.textContent = ""; // Clear result if user goes back
+        result.textContent = ""; // Ergebnis löschen, wenn der Nutzer zurückgeht
 
         if (current === questions.length) {
             let summaryHTML = "<ul>";
             questions.forEach((q, index) => {
-                const response = answers[index] === true ? "✅ Yes" : "❌ No";
+                const response = answers[index] === true ? "✅ Ja" : "❌ Nein";
                 summaryHTML += `<li>${q.text} <strong>${response}</strong></li>`;
             });
             summaryHTML += "</ul>";
 
             container.innerHTML = `
-              <p><strong>You’ve completed the section on aura characteristics.</strong></p>
-              <p>Here’s a summary of your responses:</p>
+              <p><strong>Du hast den Abschnitt zu den Auracharakteristika abgeschlossen.</strong></p>
+              <p>Hier ist eine Zusammenfassung deiner Antworten:</p>
               ${summaryHTML}
-              <p>Click below to see whether your responses meet the clinical threshold for this part.</p>
-              <button class="btn" onclick="showResult()">✅ Yes, show my result</button>
-              <button class="btn btn-secondary" onclick="goBack()">← Go Back</button>
+              <p>Klicke unten, um zu sehen, ob deine Angaben das klinische Kriterium erfüllen.</p>
+              <button class="btn" onclick="showResult()">✅ Ja, zeige mein Ergebnis</button>
+              <button class="btn btn-secondary" onclick="goBack()">← Zurück</button>
             `;
             return;
         }
 
         const q = questions[current];
         container.innerHTML = `
-    <p><strong>Question ${current + 1} of ${questions.length}</strong></p>
+    <p><strong>Frage ${current + 1} von ${questions.length}</strong></p>
     <p>${q.text}
-      <button onclick="showExplanation()" title="More info" class="info-icon">ⓘ</button>
+      <button onclick="showExplanation()" title="Mehr Info" class="info-icon">ⓘ</button>
     </p>
-    <button class="btn" onclick="answer(true)">Yes</button>
-    <button class="btn btn-outline" onclick="answer(false)">No</button>
-    ${current > 0 ? `<br><br><button class="btn btn-secondary" onclick="goBack()">← Go Back</button>` : ""}
+    <button class="btn" onclick="answer(true)">Ja</button>
+    <button class="btn btn-outline" onclick="answer(false)">Nein</button>
+    ${current > 0 ? `<br><br><button class="btn btn-secondary" onclick="goBack()">← Zurück</button>` : ""}
     <div id="explanation" style="display:none; margin-top: 0.5rem; font-style: italic;"></div>
   `;
     }
@@ -135,25 +135,11 @@
         const score = answers.filter((a) => a === true).length;
         const passed = score >= 3;
 
-        container.innerHTML = "";
-
-        result.textContent = passed
-            ? "✅ You meet Criterion C: at least three characteristics apply."
-            : "⚠️ You do not meet Criterion C.";
-        result.style.color = passed ? "green" : "darkorange";
-
-        // Add linked button
-        const button = document.createElement("a");
-        button.href = passed
-            ? "/aura-o-mat/symptom-check-summary/"
-            : "/aura-o-mat/symptom-check-summary-n/";
-        button.textContent = passed ? "View Results" : "View Explanation";
-        button.className = "btn"; // reuses previous .btn class
-        button.style.display = "inline-block";
-        button.style.marginTop = "1rem";
-
-        result.appendChild(document.createElement("br"));
-        result.appendChild(button);
+        // Direktweiterleitung auf die entsprechende neue Seite
+        window.location.href = passed
+            ? "/de/aura-o-mat/criterionCmeet/"
+            : "/de/aura-o-mat/criterionCnotMeet/";
     }
+
     showQuestion(); // Start
 </script>

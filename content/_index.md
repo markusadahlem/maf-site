@@ -5,6 +5,8 @@ layout: hextra-home
 disableSidebar: false
 type: default
 width: normal
+images:
+  - "/images/logo.svg"
 ---
 
 

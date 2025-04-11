@@ -1,8 +1,11 @@
 ---
 date: "2025-04-06T12:45:08+02:00"
-title: "Aura-O-Mat"
+title: ""
 ---
+# Cet outil n'est pas encore disponible dans votre langue
 
-[Website im Aufbau]
+L'outil de vérification des symptômes est actuellement disponible uniquement en anglais et en allemand.  
+Essayez-le ici :  
 
-{{< figure src="aura-o-mat.png" alt="Alt text" width="200" >}}
+👉 [Version anglaise](/aura-o-mat/)  
+👉 [Version allemande](/de/aura-o-mat/)

@@ -1,0 +1,66 @@
+- date: "2026"
+  title: "Digitalt comeback"
+  text: "Relancering af hjemmesiden med et nyt koncept og en bredere digital tilstedeværelse."
+
+- date: "2022"
+  title: "Lancering på Instagram"
+  text: "Ny tilstedeværelse på sociale medier på både tysk og engelsk – første skridt tilbage i offentligheden."
+  image: "/images/timeline/2022.png"
+
+- date: "2019"
+  title: "Et pioners farvel"
+  text: "Dr. Klaus Podolls død forsinkede den planlagte relancering og efterlod et stort tomrum."
+
+- date: "2016"
+  title: "Nedlukning pga. GDPR"
+  text: "Hjemmesiden blev taget offline grundet juridisk usikkerhed omkring tusindvis af arkiverede patientbeskeder."
+
+- date: "2011"
+  title: "Litterær anerkendelse"
+  text: "I bogen *Den rystende kvinde* beskriver Siri Hustvedt, hvordan aura-beretningerne på hjemmesiden skaber nye perspektiver – blandt andet historien om Carl von Linné, der så sin egen dobbeltgænger. Bogen udkom først på tysk."
+  image: "/images/timeline/2011.png"
+
+- date: "2009"
+  title: "Fra sektion til blog: Migrænefysiologi"
+  text: "Markus Dahlem lancerer videnskabsbloggen *Graue Substanz* på Spektrums SciLogs-portal. Gennem over 400 indlæg deler han nye indsigter i migræne – indtil han forlader forskningsverdenen og grundlægger sit firma."
+  image: "/images/timeline/2009-blog.png"
+
+- date: "2009"
+  title: "Migraine Art: Fra sektion til bog"
+  text: "Materiale samlet af Derek Robinson og Dr. Klaus Podoll – fundet via hjemmesiden – bliver udgivet som ‘Migraine Art’, et stærkt vidnesbyrd om oplevede auraer."
+  image: "/images/timeline/2009-book.png"
+
+- date: "2006"
+  title: "Nyt design til hjemmesiden"
+  text: "Komplet redesign med CMS og tosproget struktur – muliggjort af præmiepenge og private investeringer."
+  image: "/images/timeline/2006.png"
+
+- date: "2005"
+  title: "Prisværdig oplysning"
+  text: "Nomineret til den Internationale Mediepris for Videnskab og Kunst."
+  image: "/images/timeline/2005.png"
+
+- date: "2004"
+  title: "Stiftelsen bliver grundlagt"
+  text: "Migræne-Aura Stiftelsen bliver etableret – med voksende netværk, gæstebog og sektionen ‘Migrænekunst’."
+  image: "/images/timeline/2004.png"
+
+- date: "11/2000"
+  title: "Patientforum går online"
+  text: "Første interaktive onlineplatform med forum, gæstebog og lægeområde – for både patienter og fagpersoner."
+  image: "/images/timeline/2000-forum.png"
+
+- date: "08/2000"
+  title: "Medieopmærksomhed"
+  text: "*DIE WELT* udgiver: ‘Hvordan spøgelsesbilleder opstår i hjernen’. Mange patienter svarer med personlige breve."
+  image: "/images/timeline/2000-presse.png"
+
+- date: "03/2000"
+  title: "Et brev fra Oliver Sacks"
+  text: "Efter en videnskabelig publikation modtager Markus Dahlem et personligt brev fra Oliver Sacks – en sjælden anerkendelse fra en kapacitet i feltet."
+  image: "/images/timeline/2000-sacks.png"
+
+- date: "1998"
+  title: "Aura forstået – gennem teori alene"
+  text: "Som teoretisk fysiker og ikke selv migræneramt skaber Markus Dahlem den første computersimulering af migræneaura – baseret udelukkende på antagelser om hjernens neurale arkitektur."
+  image: "/images/timeline/1998.png"
