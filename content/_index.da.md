@@ -12,9 +12,10 @@ width: normal
 
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-headline >}}
-Ingen diagnose går tabt
-{{< /hextra/hero-headline >}}
+Hvert migrænesymptom tæller{{< /hextra/hero-headline >}}
 </div>
+
+Migræne er ikke bare hovedpine – det er en kompleks lidelse, hvor alle symptomer er vigtige for diagnose, behandling og livskvalitet.
 
 
 

@@ -12,11 +12,12 @@ width: normal
 
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-headline >}}
-Geen enkele diagnose gaat verloren
+Elk migrainekenmerk telt
 {{< /hextra/hero-headline >}}
 </div>
 
 
+Migraine is meer dan hoofdpijn – het is een complexe aandoening waarbij elk symptoom telt voor diagnose, behandeling en levenskwaliteit.
 
 
 {{< hextra/hero-badge link="aura-o-mat">}}

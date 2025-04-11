@@ -12,9 +12,12 @@ width: normal
 
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-headline >}}
-    Aucun diagnostic n’est perdu
+Chaque signe de migraine compte
 {{< /hextra/hero-headline >}}
 </div>
+
+
+La migraine n’est pas qu’un mal de tête – c’est une maladie complexe dont les symptômes influencent le diagnostic, le traitement et la qualité de vie.
 
 
 

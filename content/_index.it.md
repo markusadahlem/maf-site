@@ -11,9 +11,10 @@ width: normal
 
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-headline >}}
-    Жоден діагноз не втрачається
-{{< /hextra/hero-headline >}}
+    Ogni segno di emicrania conta{{< /hextra/hero-headline >}}
 </div>
+
+L’emicrania non è solo un mal di testa: è una condizione complessa in cui ogni sintomo conta per la diagnosi, la cura e la qualità della vita.
 
 {{< hextra/hero-badge link="aura-o-mat">}}
   <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400"></div>

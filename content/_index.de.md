@@ -12,7 +12,7 @@ width: normal
 
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-headline >}}
-Keine Diagnose verpassen
+Jedes Migränezeichen zählt
 {{< /hextra/hero-headline >}}
 </div>
 
@@ -26,7 +26,7 @@ Keine Diagnose verpassen
 
 <div class="hx-mb-12">
 {{< hextra/hero-subtitle style="margin:1rem 0 0 0">}}
-Migräneaura ist mehr als flackernde Zickzacklinien im Gesichtsfeld – sie kann ganz anders aussehen und andere Sinne betreffen und eine Diagnose kann insbesondere bei atypischen Kopfschmerzen oder fehlenden anderen Begleitsymtomen, wie Übelkeit, dann übersehen werden.“
+    Migräne ist nicht nur Kopfschmerz – sie ist eine komplexe Erkrankung, bei der alle Symptome für Diagnose, Behandlung und Lebensqualität entscheidend sind.
     {{< /hextra/hero-subtitle >}}
 </div>
 

@@ -12,11 +12,12 @@ width: normal
 
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-headline >}}
-    Ningún diagnóstico se pierde
+Cada signo de migraña cuenta
 {{< /hextra/hero-headline >}}
 </div>
 
 
+La migraña no es solo dolor de cabeza: es una afección compleja cuyos síntomas son clave para el diagnóstico, el tratamiento y tu calidad de vida.
 
 
 {{< hextra/hero-badge link="aura-o-mat">}}
