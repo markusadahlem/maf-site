@@ -423,6 +423,39 @@
                 href="http://localhost:1313/aura-o-mat/"
                 />
   </url><url>
+    <loc>http://localhost:1313/about-bak/</loc>
+    <lastmod>2025-04-05T18:40:56+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/about-bak/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/about-bak/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/about-bak/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/nl/about-bak/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="http://localhost:1313/da/about-bak/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/about-bak/"
+                />
+  </url><url>
     <loc>http://localhost:1313/about/</loc>
     <lastmod>2025-04-05T18:40:56+02:00</lastmod>
     <xhtml:link
@@ -469,39 +502,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/about/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/about-bak/</loc>
-    <lastmod>2025-04-05T18:40:56+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/de/about-bak/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/about-bak/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/about-bak/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="http://localhost:1313/nl/about-bak/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="da"
-                href="http://localhost:1313/da/about-bak/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/about-bak/"
                 />
   </url><url>
     <loc>http://localhost:1313/blog/</loc>

@@ -4,8 +4,9 @@ title: "Über uns"
 ---
 
 
-
-Die Migräne-Aura Stiftung wurde 2004 gegründet, um das Verständnis für die oft missverstandenen Symptome der Migräne – insbesondere der Aura – zu fördern. Ihr Ursprung liegt in der neurophysikalischen Forschung: Markus Dahlem entwickelte bereits 1998 die erste Computersimulation der Migräneaura. In enger Zusammenarbeit mit dem Neurologen Klaus Podoll und dem Konzept der Migraine Art entstand ein einzigartiges, patientennahes Wissensarchiv. Durch mediale Aufmerksamkeit, wissenschaftliche Auszeichnungen und zahlreiche Beiträge in Blog und Presse wurde die Stiftung zu einer wegweisenden Plattform für Aufklärung, Austausch und Forschung – an der Schnittstelle von Wissenschaft, Betroffenenperspektive und digitaler Translation.
+Die Migräne-Aura Stiftung wurde 2004 gegründet, um die Versorgung von Menschen mit Migräne durch patientennahe Aufklärung und digitale Innovation zu verbessern.
+Ausgehend von der ersten neurophysikalischen Simulation der Aura (1998) und Tausenden ausgewerteten Erfahrungsberichten entstand eine der weltweit führenden Wissensplattformen zu neurologischen Migränesymptomen.
+Als Schnittstelle zwischen Wissenschaft, Betroffenen und Versorgung treiben wir translational ausgerichtete Projekte voran – digital, evidenzbasiert, konsequent patientenzentriert.
 
 ## Unsere Ziele
 
