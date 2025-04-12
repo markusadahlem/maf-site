@@ -5,7 +5,7 @@
 
 - date: "03/2000"
   title: "Brief von Oliver Sacks"
-  text: "Nach der Veröffentlichung der Computersimulation auch in einer Fachzeitschrift würdigt ein persönlicher Brief von Oliver Sacks diese theoretische Facharbeit. Sacks – der stets die Persönlichkeit des Patienten ins Zentrum einer evidenzbasierten Medizin stellte – motiviert Markus Dahlem, selbst über Migräne im Sinne eines Public Understanding of Science weitere Informatioen allgemeinverständlich zu publizieren."
+  text: "Nach der Veröffentlichung der Computersimulation auch in einer Fachzeitschrift würdigt ein persönlicher Brief von Oliver Sacks diese theoretische Facharbeit. Sacks – der stets die Persönlichkeit des Patienten ins Zentrum einer evidenzbasierten Medizin stellte – motiviert Markus Dahlem, weiter über Migräne im Sinne eines Public Understanding of Science allgemeinverständlich und patientenzentriert zu publizieren."
   image: "/images/timeline/2000-sacks.png"
 
 - date: "08/2000"
@@ -15,8 +15,12 @@
 
 - date: "11/2000"
   title: "Patientenforum geht live"
-  text: "Erste interaktive Onlineplattform mit Forum, Gästebuch und Ärztebereich für Betroffene und Fachleute."
+  text: "Motiviert duch die vorangegangen Eriegnisse im Jahr, wird die erste interaktive Onlineplattform mit Forum, Gästebuch und Ärztebereich für Betroffene und Fachleute erstellt."
   image: "/images/timeline/2000-forum.png"
+
+- date: "2003"
+  title: "Beginn der Zusammenarbeit mit Klaus Podoll"
+  text: "Markus Dahlem kontaktiert den Neurologen Klaus Podoll mit der Idee, Inhalte zum Alice-im-Wunderland-Syndrom beizusteuern. Innerhalb eines Jahres tauschen sie über 1000 E-Mails aus. Podoll bringt einen enorm reichen Fundus an Material ein."
 
 - date: "2004"
   title: "Gründung der Stiftung"
@@ -38,14 +42,23 @@
   image: "/images/timeline/2006.png"
 
 - date: "2009"
+  title: "Migraine Art: Aus der Sketion wird ein Buch"
+  text: "Mit dem langjährigen Material, gemeinsam gesammelt von Derek Robinson und Dr. Klaus Podoll, und vermittelt durch die Website findet sich ein Verleger – die Sammlung ‘Migraine Art’ erscheint als beeindruckendes Dokument gelebter Aura-Erfahrung."
+  image: "/images/timeline/2009-book.png"
+
+- date: "2009"
   title: "Migräne Pathophysiologie: Aus der Sektion wird ein Blog"
   text: "Markus Dahlem startet das Wissenschaftsblog `Graue Substanz` auf dem Spektrum der Wissenschaft-Portal SciLogs. In über 400 Beiträgen vermittelt er allgemeinverständlich neue Sichtweisen auf Migräne – bis zur Gründung seines Unternehmens, dass später die bekannte Migräne-DiGA M-sense herausbringen wird."
   image: "/images/timeline/2009-blog.png"
 
-- date: "2009"
-  title: "Migraine Art: Aus der Sketion wird ein Buch"
-  text: "Mit dem langjährigen Material, gemeinsam gesammelt von Derek Robinson und Dr. Klaus Podoll, und vermittelt durch die Website findet sich ein Verleger – die Sammlung ‘Migraine Art’ erscheint als beeindruckendes Dokument gelebter Aura-Erfahrung."
-  image: "/images/timeline/2009-book.png"
+- date: "2010"
+  title: "Migräne ganzheitlich im Fernsehen"
+  text: "Im Januar 2010 widmen sich nano (3sat) und drehscheibe Deutschland (ZDF) in einem Themenschwerpunkt der Migräne. Auch Markus Dahlems physikalischer Ansatz zur Erklärung der Migräneaura findet darin Platz – und zeigt, wie sich naturwissenschaftliche Modelle in eine umfassende und patientennahe Darstellung der Erkrankung integrieren lassen."
+
+- date: "2011"
+  title: "YouTube sperrt Aufklärungsvideo"
+  text: "YouTube entfernt die Simulation einer Migräneaura – mutmaßlich, weil sie selbst Migräne auslösen könnte. Dabei war das Video nicht nur wissenschaftlich fundiert und – versehen mit Warnhinweis – über 40.000 Mal aufgerufen worden, sondern die Forschung legt zudem nahe, dass gezielte visuelle Reize eher zur Desensibilisierung beitragen könnten. Letztlich ist ein YouTube-Kanal zwar kein Medizinprodukt, und doch stand er in gewissem Sinne Pate für den späteren Weg zur Migräne-DiGA – einer vom BfArM gelisteten digitalen Gesundheitsanwendung zur digitalen Behandlung."
+  image: "2011-youtube.png"
 
 - date: "2011"
   title: "Literarische Würdigung"
