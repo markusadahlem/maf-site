@@ -1,16 +1,16 @@
 - date: "1998"
   title: "Migränegehirn verstehen – aus der Theorie heraus"
-  text: "Als theoretischer Physiker entwickelt Markus Dahlem die erste Computersimulation der Migräneaura – ohne selbst betroffen zu sein. Grundlage ist allein die neuronale Architektur des Gehirns."
+  text: "Als theoretischer Physiker entwickelt Markus Dahlem die erste Computersimulation der Migräneaura – ohne selbst betroffen zu sein. Grundlage ist allein die neuronale Architektur des Gehirns. Er veröffentlicht annimierte Simmulationen auf der Universitätswebsite."
   image: "/images/timeline/1998.png"
 
 - date: "03/2000"
   title: "Brief von Oliver Sacks"
-  text: "Nach der Veröffentlichung der Computersimulation in einer Fachzeitschrift würdigt ein persönlicher Brief von Oliver Sacks – der stets die Persönlichkeit des Patienten ins Zentrum einer evidenzbasierten Medizin stellte – diese theoretische Facharbeit. Für Markus Dahlem wird dies zur Motivation, selbst über Migräne im Sinne eines Public Understanding of Science zu publizieren."
+  text: "Nach der Veröffentlichung der Computersimulation auch in einer Fachzeitschrift würdigt ein persönlicher Brief von Oliver Sacks diese theoretische Facharbeit. Sacks – der stets die Persönlichkeit des Patienten ins Zentrum einer evidenzbasierten Medizin stellte – motiviert Markus Dahlem, selbst über Migräne im Sinne eines Public Understanding of Science weitere Informatioen allgemeinverständlich zu publizieren."
   image: "/images/timeline/2000-sacks.png"
 
 - date: "08/2000"
   title: "Mediale Aufmerksamkeit"
-  text: "DIE WELT berichtet: „Wie im Gehirn Geisterbilder entstehen“. Es folgen zahlreiche Zuschriften. Menschen, die mit Migräne leben, berichten, wie bedeutsam es für sie ist, dass eine Computersimulation eine objektive Perspektive auf ihre nur subjektiv erlebten Symptome eröffnet. Diese digitale Darstellung hilft nicht nur dabei, das eigene Erleben besser zu verstehen, sondern verbessert auch die Kommunikation mit Ärztinnen und Ärzten – sowie mit dem familiären und sozialen Umfeld, das die unsichtbaren Belastungen oft nur schwer nachvollziehen kann."
+  text: "DIE WELT berichtet: „Wie im Gehirn Geisterbilder entstehen“. Es folgen zahlreiche Leserbriefe. Menschen, die mit Migräne leben, berichten, wie bedeutsam es für sie ist, dass eine Computersimulation eine objektive Perspektive auf ihre nur subjektiv erlebten Symptome eröffnet. Diese digitale Darstellung hilft nicht nur dabei, das eigene Erleben besser zu verstehen, sondern verbessert auch die Kommunikation mit Ärztinnen und Ärzten – sowie mit dem familiären und sozialen Umfeld, das die unsichtbaren Belastungen oft nur schwer nachvollziehen kann."
   image: "/images/timeline/2000-presse.png"
 
 - date: "11/2000"
@@ -22,6 +22,10 @@
   title: "Gründung der Stiftung"
   text: "Die Migräne-Aura Stiftung entsteht – mit wachsendem Netzwerk, Gästebuch und ‘Migränekunst’-Sektion."
   image: "/images/timeline/2004.png"
+
+- date: "2004"
+  title: "DFG-Förderung für neuartige Patientenperspektive"
+  text: "Markus Dahlem erhält eine Sachbeihilfe der Deutschen Forschungsgemeinschaft (DFG). Ziel ist es, mit Hilfe der Migräneaura-Simulation Patient:innen eine interaktive Introspektion zu ermöglichen – personalisiert anhand individueller anatomischer Parameter des Gehirns. Ein Vorgriff auf das Konzept digitaler Biomarker."
 
 - date: "2005"
   title: "Ausgezeichnete Aufklärung"
