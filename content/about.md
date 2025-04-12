@@ -17,7 +17,6 @@ Through digital education, symptom checkers, patient insights, and a commitment 
 
 - **Patient-centeredness** – Every individual experience matters
 - **Scientific integrity** – Research drives our work
-- **Clarity** – Making complex knowledge accessible
 - **Translational impact** – Bringing research into real-world care
 - **Digital competence** – Using technology to create meaningful patient benefit
 

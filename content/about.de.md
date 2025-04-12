@@ -19,7 +19,6 @@ Mit **digital unterstützter Aufklärung, Symptomprüfung, Erfahrungswissen** un
 
 - **Patientennähe** – Die individuelle Erfahrung zählt
 - **Wissenschaftlichkeit** – Forschung als Grundlage unseres Handelns
-- **Verständlichkeit** – Komplexes zugänglich machen
 - **Translationalität** – Erkenntnisse aus der Forschung in die Versorgung überführen
 - **Digitale Kompetenz** – Technologie gezielt nutzen, um Wirkung für Patient:innen zu entfalten
 
