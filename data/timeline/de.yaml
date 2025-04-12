@@ -1,6 +1,6 @@
 - date: "1998"
   title: "Migränegehirn verstehen – aus der Theorie heraus"
-  text: "Als theoretischer Physiker entwickelt Markus Dahlem die erste Computersimulation der Migräneaura – ohne selbst betroffen zu sein. Grundlage ist allein die neuronale Architektur des Gehirns. Er veröffentlicht annimierte Simmulationen auf der Universitätswebsite."
+  text: "Als theoretischer Physiker entwickelt Markus Dahlem im Rahmen seiner Doktorarbeit die erste Computersimulation der Migräneaura – ohne selbst betroffen zu sein. Grundlage ist allein die neuronale Architektur des Gehirns. Er veröffentlicht annimierte Simmulationen auf der Universitätswebsite."
   image: "/images/timeline/1998.png"
 
 - date: "03/2000"
@@ -56,14 +56,18 @@
   text: "Im Januar 2010 widmen sich nano (3sat) und drehscheibe Deutschland (ZDF) in einem Themenschwerpunkt der Migräne. Auch Markus Dahlems physikalischer Ansatz zur Erklärung der Migräneaura findet darin Platz – und zeigt, wie sich naturwissenschaftliche Modelle in eine umfassende und patientennahe Darstellung der Erkrankung integrieren lassen."
 
 - date: "2011"
-  title: "YouTube sperrt Aufklärungsvideo"
-  text: "YouTube entfernt die Simulation einer Migräneaura – mutmaßlich, weil sie selbst Migräne auslösen könnte. Dabei war das Video nicht nur wissenschaftlich fundiert und – versehen mit Warnhinweis – über 40.000 Mal aufgerufen worden, sondern die Forschung legt zudem nahe, dass gezielte visuelle Reize eher zur Desensibilisierung beitragen könnten. Letztlich ist ein YouTube-Kanal zwar kein Medizinprodukt, und doch stand er in gewissem Sinne Pate für den späteren Weg zur Migräne-DiGA – einer vom BfArM gelisteten digitalen Gesundheitsanwendung zur digitalen Behandlung."
-  image: "2011-youtube.png"
-
-- date: "2011"
   title: "Literarische Würdigung"
   text: "In ihrem Buch `Die zitternde Frau` beschreibt Siri Hustvedt, wie die Aura-Erfahrungen auf der Stiftungs-Website ihr neue Perspektiven eröffnen – etwa durch die Geschichte von Carl von Linné, der seinen Doppelgänger sah. Das Buch erscheint überraschend zuerst auf Deutsch."
   image: "/images/timeline/2011.png"
+
+- date: "2011"
+  title: "YouTube sperrt Aufklärungsvideo"
+  text: "YouTube entfernt die Simulation einer Migräneaura – mutmaßlich, weil sie selbst Migräne auslösen könnte. Dabei war das Video nicht nur wissenschaftlich fundiert und – versehen mit Warnhinweis – über 40.000 Mal aufgerufen worden, sondern die Forschung legt zudem nahe, dass gezielte visuelle Reize eher zur Desensibilisierung beitragen könnten. Letztlich ist ein YouTube-Kanal zwar kein Medizinprodukt, und doch stand er in gewissem Sinne Pate für den späteren Weg zur Migräne-DiGA – einer vom BfArM gelisteten digitalen Gesundheitsanwendung zur digitalen Behandlung."
+  image: "/images/timeline/2011-youtube.png"
+
+- date: "2015"
+  title: "Lichtblitze gegen Migräne?"
+  text: "Ein Beitrag im Deutschlandfunk porträtiert Markus Dahlems Forschung zur Migräne als physikalisches Phänomen. Die Idee: Eine spezielle LED-Brille sollte die im Gehirn wandernde Erregungswelle der Aura mit Lichtreizen stoppen. Der Ansatz war vielversprechend, aber letztlich zu riskant – die Forschung verlagert sich auf sicherere Technologien wie die transkranielle Magnetstimulation. Die Idee bleibt: Migräne an der Quelle zu unterbrechen – mit präziser physikbasierter Modulation. Sie führt zur Unternehmengründung von Newsenselab."
 
 - date: "2016"
   title: "Zwangspause wegen DSGVO"
