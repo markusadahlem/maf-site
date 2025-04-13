@@ -24,15 +24,19 @@ menu:
       name: About us
       pageRef: /about
       weight: 4
+    - identifier: contact
+      name: Contact
+      pageRef: /contact
+      weight: 5
     - identifier: search
       name: Search
-      weight: 5
+      weight: 6
       params:
         type: search
     - identifier: impressum
       name: Impressum
       pageRef: /impressum
-      weight: 6
+      weight: 7
 
   sidebar:
     - identifier: more
