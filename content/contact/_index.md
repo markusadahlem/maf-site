@@ -6,3 +6,7 @@ linkTitle: "Contact"
 sidebar:
   exclude: true
 ---
+
+## Newsletter
+
+<!-- {{< newsletter >}} -->

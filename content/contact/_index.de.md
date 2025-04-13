@@ -11,4 +11,4 @@ sidebar:
 
 ## Newsletter
 
-{{< newsletter >}}
+<!-- {{< newsletter >}} -->
