@@ -4,15 +4,19 @@ title: "Über uns"
 ---
 
 
-Die Migräne-Aura Stiftung wurde 2004 gegründet, um die Versorgung von Menschen mit Migräne durch patientennahe Aufklärung und digitale Innovation zu verbessern.
-Ausgehend von der ersten neurophysikalischen Simulation der Aura (1998) und Tausenden ausgewerteten Erfahrungsberichten entstand eine der weltweit führenden Wissensplattformen zu neurologischen Migränesymptomen.
-Als Schnittstelle zwischen Wissenschaft, Betroffenen und Versorgung treiben wir translational ausgerichtete Projekte voran – digital, evidenzbasiert, konsequent patientenzentriert.
+Migräne betrifft weltweit rund eine Milliarde Menschen – eine komplexe neurologische Erkrankung mit sehr individuellen Verläufen, bei der jedes Symptom zählt. Deshalb stellen wir die persönliche Erfahrung der Betroffenen konsequent in den Mittelpunkt – als Ausgangspunkt für Aufklärung, Symptomprüfung und Versorgung.
 
-## Unsere Ziele
 
-_Wir machen sichtbar, was oft übersehen wird: Jedes Migränezeichen zählt._
-Unser Ziel ist es, die **Gesundheitskompetenz** und **Souveränität** von Patient:innen zu stärken, indem wir neurologische Symptome wie die Aura besser verständlich, diagnostisch greifbar und im Versorgungskontext nutzbar machen.
-Mit **digital unterstützter Aufklärung, Symptomprüfung, Erfahrungswissen** und dem Prinzip **translationaler Forschung** leisten wir einen Beitrag zu **präziserer Diagnostik, besserer Arzt-Patienten-Kommunikation** und einer **menschenzentrierten Versorgung**.
+Gestützt auf tausende ausgewertete Erfahrungsberichte, aktuelle klinische Evidenz und eine der ersten neurophysiologischen Simulationen der Migräneaura verbinden wir subjektives Erleben mit objektiver Modellierung – und entwickeln daraus digitale Werkzeuge, die Kommunikation, Diagnostik und Therapie verbessern.
+
+Diese enge Verbindung von Forschung, Versorgung und Patient:innenperspektive macht uns zu einem Pionier der translationalen Digital Health – mit dem Ziel, Gesundheitskompetenz zu stärken und Versorgung messbar zu verbessern.
+
+Denn unser Anspruch ist Wirkung: Wir setzen Technologie dort ein, wo sie Versorgung verbessert, Gesundheitskompetenz stärkt und Menschen dabei unterstützt, ihre Erkrankung besser zu verstehen – und zu bewältigen.
+
+
+## Unser Ziel
+
+Migräne sichtbar machen – mit Wissen, das wirkt.
 
 
 ## Unsere Werte
@@ -25,6 +29,6 @@ Mit **digital unterstützter Aufklärung, Symptomprüfung, Erfahrungswissen** un
 
 
 
-## Entstehungsgeschichte 
+## Entstehungsgeschichte
 
 {{< timeline >}}
