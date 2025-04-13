@@ -44,7 +44,7 @@ Mit "Aura" bezeichnet man eine Gruppe neurologischer Symptome, die das Sehen, Sp
   {{< hextra/feature-card
     title="Diagnose"
     subtitle="Unsere Mission ist es, alle Migränesymptome zu charakterisieren – mit Beteiligung der Patient:innen."
-    link="Diagnosis"
+    link="diagnosis"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
     image="/images/teaser/aura-o-mat-app.png"
     imageClass="hx-top-[0%] hx-left-[0px]  dark:hx-opacity-80"
