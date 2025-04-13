@@ -16,16 +16,18 @@ Denn unser Anspruch ist Wirkung: Wir setzen Technologie dort ein, wo sie Versorg
 
 ## Unser Ziel
 
-Migräne sichtbar machen – mit Wissen, das wirkt.
+**Migräne sichtbar machen – mit Wissen, das wirkt.**
 
 
 ## Unsere Werte
 
-- **Patientennähe** – Die individuelle Erfahrung zählt
-- **Wissenschaftlichkeit** – Forschung als Grundlage unseres Handelns
-- **Translationalität** – Erkenntnisse aus der Forschung in die Versorgung überführen
-- **Digitale Kompetenz** – Technologie gezielt nutzen, um Wirkung für Patient:innen zu entfalten
+Unsere Arbeit basiert auf vier Werten:
 
+
+- **Patientenzentriert** – Die individuelle Erfahrung steht im Mittelpunkt
+- **Wissenschaftsbasiert** – Forschung ist die Grundlage unseres Handelns
+- **Praxisorientiert** – Erkenntnisse gezielt in die Versorgung überführen
+- **Digital kompetent** – Technologie wirksam für Patient:innen einsetzen
 
 
 

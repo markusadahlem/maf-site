@@ -1,0 +1,23 @@
+- date: "1998"
+  image: "/images/timeline/1998.png"
+  title:
+    en: "First Online Presence"
+    de: "Erste Internetpräsenz"
+  preview:
+    en: "For the first time, the migraine aura is published online as a scientifically grounded computer simulation – making the invisible aura visible, also to others."
+    de: "Erstmals wird die Migräneaura als wissenschaftlich fundierte Computersimulation online veröffentlicht und macht die unsichtbare Aura erstmals sichtbar – auch für andere."
+  text:
+    en: "As a theoretical physicist, Markus Dahlem develops the first scientifically based computer simulation of the migraine aura as part of his doctoral thesis – without being affected himself. The model is based solely on the brain’s neural architecture. The animated visuals are published on the website of the Institute for Biophysics at Otto von Guericke University."
+    de: "Als theoretischer Physiker entwickelt Markus Dahlem im Rahmen seiner Doktorarbeit die erste wissenschaftlich fundierte Computersimulation der Migräneaura – ohne selbst betroffen zu sein. Grundlage ist allein die neuronale Architektur des Gehirns. Die animierten Darstellungen werden auf der Website des Instituts für Biophysik der Otto-von-Guericke-Universität veröffentlicht."
+
+- date: "03/2000"
+  image: "/images/timeline/2000-sacks.png"
+  title:
+    en: "Encouragement from a Bestselling Author and Neurologist"
+    de: "Ermutigung durch Bestsellerautor und Neurologen"
+  preview:
+    en: "A letter from neurologist and bestselling author Dr. Oliver Sacks becomes the spark for patient-centered science communication."
+    de: "Ein Brief des Neurologen und Bestsellerautors Dr. med Oliver Sacks wird zur Initialzündung für eine patientenzentrierte Wissenschaftskommunikation."
+  text:
+    en: "After the simulation is also published in a scientific journal, a personal letter from Oliver Sacks acknowledges this theoretical work. Dr. Sacks – known for putting the patient’s individuality at the center of evidence-based medicine – encourages Markus Dahlem to continue writing about migraine in an accessible and patient-focused way, aligned with the idea of public understanding of science."
+    de: "Nach der Veröffentlichung der Computersimulation auch in einer Fachzeitschrift würdigt ein persönlicher Brief von Oliver Sacks diese theoretische Facharbeit. Dr. Sacks – der die Persönlichkeit des Patienten konsequent ins Zentrum einer evidenzbasierten Medizin stellte – motiviert Markus Dahlem, weiter über Migräne im Sinne eines Public Understanding of Science allgemeinverständlich und patientenzentriert zu publizieren."
