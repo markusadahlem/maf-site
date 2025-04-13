@@ -81,3 +81,6 @@
 
 - id: maf-name
   translation: "Фундація Мігрень з Аурою"
+
+- id: contact
+  translation: "Зв'язок"

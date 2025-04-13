@@ -81,3 +81,6 @@
 
 - id: maf-name
   translation: "Fondazione Emicrania con Aura"
+
+- id: contact
+  translation: "Contatto"

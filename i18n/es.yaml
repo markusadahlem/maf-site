@@ -81,3 +81,6 @@
 
 - id: maf-name
   translation: "Fundación Migraña con Aura"
+
+- id: contact
+  translation: "Contacto"
