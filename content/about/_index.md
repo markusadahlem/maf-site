@@ -3,7 +3,7 @@ date: "2025-04-05T18:40:56+02:00"
 title: "About us"
 ---
 
-Migraine affects nearly one billion people worldwide – a complex neurological condition with highly individual manifestations, where every symptom matters. That’s why we place the lived experience of those affected at the center of our work. It not only informs our content, but forms the basis of an open dialogue – one that you can be part of by sharing feedback, personal accounts, or insights with our team.
+Migraine affects nearly one billion people worldwide – a complex neurological condition with highly individual manifestations, where every symptom matters. That’s why we place the lived experience of those affected at the center of our work. The lived experience not only informs our content, but forms the basis of an open dialogue – one that you can be part of by sharing feedback, personal accounts, or insights with our team.
 
 Drawing on thousands of documented experiences, current clinical evidence, and one of the first neurophysiological simulations of migraine aura, we connect subjective experience with objective modeling – and develop digital tools that improve communication, diagnosis, and treatment.
 
