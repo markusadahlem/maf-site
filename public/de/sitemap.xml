@@ -2,6 +2,102 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/de/science/</loc>
+    <lastmod>2025-04-06T12:45:02+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/science/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/science/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/science/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://localhost:1313/it/science/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="uk"
+                href="http://localhost:1313/uk/science/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="http://localhost:1313/ru/science/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/nl/science/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="http://localhost:1313/da/science/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/science/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/de/contact/</loc>
+    <lastmod>2025-04-06T12:48:32+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://localhost:1313/it/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="uk"
+                href="http://localhost:1313/uk/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="http://localhost:1313/ru/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/nl/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="http://localhost:1313/da/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/contact/"
+                />
+  </url><url>
     <loc>http://localhost:1313/de/</loc>
     <lastmod>2025-04-06T15:30:41+02:00</lastmod>
     <xhtml:link
@@ -135,6 +231,21 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="it"
+                href="http://localhost:1313/it/art/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="uk"
+                href="http://localhost:1313/uk/art/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="http://localhost:1313/ru/art/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="nl"
                 href="http://localhost:1313/nl/art/"
                 />
@@ -147,72 +258,6 @@
                 rel="alternate"
                 hreflang="de"
                 href="http://localhost:1313/de/art/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/de/about-bak/voices/</loc>
-    <lastmod>2025-04-06T12:45:54+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/about-bak/voices/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/about-bak/voices/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/about-bak/voices/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="http://localhost:1313/nl/about-bak/voices/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="da"
-                href="http://localhost:1313/da/about-bak/voices/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/de/about-bak/voices/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/de/about-bak/get-involved/</loc>
-    <lastmod>2025-04-06T12:45:08+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/about-bak/get-involved/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/about-bak/get-involved/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/about-bak/get-involved/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="http://localhost:1313/nl/about-bak/get-involved/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="da"
-                href="http://localhost:1313/da/about-bak/get-involved/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/de/about-bak/get-involved/"
                 />
   </url><url>
     <loc>http://localhost:1313/de/research/</loc>
@@ -359,6 +404,19 @@
                 href="http://localhost:1313/de/aura-o-mat/modality/"
                 />
   </url><url>
+    <loc>http://localhost:1313/de/aura-o-mat/no-aura/</loc>
+    <lastmod>2025-04-06T12:45:02+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/aura-o-mat/no-aura/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/aura-o-mat/no-aura/"
+                />
+  </url><url>
     <loc>http://localhost:1313/de/aura-o-mat/symptom-check-summary/</loc>
     <lastmod>2025-04-06T12:45:02+02:00</lastmod>
     <xhtml:link
@@ -418,39 +476,6 @@
                 rel="alternate"
                 hreflang="de"
                 href="http://localhost:1313/de/aura-o-mat/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/de/about-bak/</loc>
-    <lastmod>2025-04-05T18:41:01+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/about-bak/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/about-bak/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/about-bak/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="http://localhost:1313/nl/about-bak/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="da"
-                href="http://localhost:1313/da/about-bak/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/de/about-bak/"
                 />
   </url><url>
     <loc>http://localhost:1313/de/about/</loc>
@@ -544,6 +569,53 @@
                 rel="alternate"
                 hreflang="de"
                 href="http://localhost:1313/de/aura-o-mat/aura-characteristics/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/de/genetics/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/genetics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/genetics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/genetics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://localhost:1313/it/genetics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="uk"
+                href="http://localhost:1313/uk/genetics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="http://localhost:1313/ru/genetics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/nl/genetics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="http://localhost:1313/da/genetics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/genetics/"
                 />
   </url><url>
     <loc>http://localhost:1313/de/categories/</loc>

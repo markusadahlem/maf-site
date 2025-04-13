@@ -9,7 +9,7 @@ Migräne betrifft weltweit rund eine Milliarde Menschen – eine komplexe neurol
 
 Gestützt auf tausende ausgewertete Erfahrungsberichte, aktuelle klinische Evidenz und der ersten interaktiven neurophysiologischen Simulationen der Migräneaura verbinden wir subjektives Erleben mit objektiver Modellierung – und entwickeln daraus digitale Werkzeuge, die Kommunikation, Diagnostik und Therapie verbessern.
 
-Diese enge Verbindung von Forschung, Versorgung und Patient:innenperspektive macht uns zu einem Pionier der translationalen »**Digital Health**« – mit dem Ziel, Gesundheitskompetenz zu stärken und Versorgung messbar zu verbessern.
+Diese enge Verbindung von Forschung, Versorgung und Patient:innenperspektive macht uns zu einem Pionier der translationalen _Digital Health_ – mit dem Ziel, Gesundheitskompetenz zu stärken und Versorgung messbar zu verbessern.
 
 Denn unser Anspruch ist Wirkung: Wir setzen Technologie dort ein, wo sie Versorgung verbessert, Gesundheitskompetenz stärkt und Menschen dabei unterstützt, ihre Erkrankung besser zu verstehen – und zu bewältigen.
 
