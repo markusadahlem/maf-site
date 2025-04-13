@@ -3,15 +3,17 @@ date: "2025-04-05T18:40:56+02:00"
 title: "About us"
 ---
 
-The Migraine Aura Foundation was founded in 2004 to improve care for people living with migraine through patient-centered education and digital innovation.
-Rooted in the first neurophysiological simulation of the aura (1998) and based on thousands of analyzed patient reports, it has grown into one of the world’s leading knowledge platforms on neurological migraine symptoms.
-Acting at the intersection of science, patient experience, and healthcare delivery, we drive translationally oriented projects – digital, evidence-based, and uncompromisingly patient-centered.
+Migraine affects nearly one billion people worldwide – a complex neurological condition with highly individual manifestations, where every symptom matters. That’s why we place the lived experience of those affected at the center of our work. It not only informs our content, but forms the basis of an open dialogue – one that you can be part of by sharing feedback, personal accounts, or insights with our team.
 
+Drawing on thousands of documented experiences, current clinical evidence, and one of the first neurophysiological simulations of migraine aura, we connect subjective experience with objective modeling – and develop digital tools that improve communication, diagnosis, and treatment.
+
+This close integration of research, care, and the patient perspective has made us a pioneer in translational digital health – with the goal of strengthening health literacy and measurably improving care.
+
+Because we are driven by impact: we apply technology where it makes a real difference – helping people better understand their condition, communicate more effectively, and manage life with migraine.
 
 ## Our Mission
-We highlight what is often overlooked: Every migraine sign counts.
-Our mission is to strengthen health literacy and patient agency by making neurological symptoms like aura easier to understand, diagnostically actionable, and relevant to clinical care.
-Through digital education, symptom checkers, patient insights, and a commitment to translational research, we contribute to more accurate diagnoses, better clinical communication, and person-centered care.
+
+Making migraine visible – and clinically meaningful.
 
 ## Our Values
 
