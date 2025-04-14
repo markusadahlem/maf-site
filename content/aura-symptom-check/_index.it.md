@@ -8,5 +8,5 @@ title: ""
 Lo strumento per controllare i sintomi è attualmente disponibile solo in inglese e tedesco.  
 Provalo qui:
 
-👉 [Versione in inglese](/aura-o-mat/)  
-👉 [Versione in tedesco](/de/aura-o-mat/)
+👉 [Versione in inglese](/aura-symptom-check/)  
+👉 [Versione in tedesco](/de/aura-symptom-check/)

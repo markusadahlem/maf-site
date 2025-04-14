@@ -19,4 +19,4 @@ Falls Sie weiterhin beunruhigende Symptome haben oder sich Ihre gesundheitliche 
 Für weitere Erklärungen und um mehr darüber zu erfahren, wie diese Kriterien angewendet werden, lesen Sie bitte unsere detaillierte Aufschlüsselung oder sprechen Sie mit Ihrem Arzt.
 
 
-[**Vollständigen Bericht anzeigen**](/aura-o-mat/symptom-check-summary-n/)
+[**Vollständigen Bericht anzeigen**](/aura-symptom-check/symptom-check-summary-n/)

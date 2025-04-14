@@ -17,4 +17,4 @@ Obwohl dieses Ergebnis mit den etablierten Kriterien und unseren gesammelten Pat
 Für weitere Details zu den einzelnen Merkmalen und zusätzliche Hinweise zum Management von Migräne mit Aura, sehen Sie sich bitte unsere zusätzlichen Ressourcen an oder kontaktieren Sie einen Fachmann.
 
 
-[**Vollständigen Bericht anzeigen**](/de/aura-o-mat/symptom-check-summary/)
+[**Vollständigen Bericht anzeigen**](/de/aura-symptom-check/symptom-check-summary/)

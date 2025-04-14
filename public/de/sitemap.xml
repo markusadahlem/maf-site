@@ -326,156 +326,156 @@
                 href="http://localhost:1313/de/symptoms/"
                 />
   </url><url>
-    <loc>http://localhost:1313/de/aura-o-mat/symptom-check-summary-n/</loc>
+    <loc>http://localhost:1313/de/aura-symptom-check/symptom-check-summary-n/</loc>
     <lastmod>2025-04-06T12:45:02+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/aura-o-mat/symptom-check-summary-n/"
+                href="http://localhost:1313/aura-symptom-check/symptom-check-summary-n/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:1313/de/aura-o-mat/symptom-check-summary-n/"
+                href="http://localhost:1313/de/aura-symptom-check/symptom-check-summary-n/"
                 />
   </url><url>
-    <loc>http://localhost:1313/de/aura-o-mat/criterioncmeet/</loc>
+    <loc>http://localhost:1313/de/aura-symptom-check/criterioncmeet/</loc>
     <lastmod>2025-04-06T12:45:02+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/aura-o-mat/criterioncmeet/"
+                href="http://localhost:1313/aura-symptom-check/criterioncmeet/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:1313/de/aura-o-mat/criterioncmeet/"
+                href="http://localhost:1313/de/aura-symptom-check/criterioncmeet/"
                 />
   </url><url>
-    <loc>http://localhost:1313/de/aura-o-mat/criterioncnotmeet/</loc>
+    <loc>http://localhost:1313/de/aura-symptom-check/criterioncnotmeet/</loc>
     <lastmod>2025-04-06T12:45:02+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/aura-o-mat/criterioncnotmeet/"
+                href="http://localhost:1313/aura-symptom-check/criterioncnotmeet/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:1313/de/aura-o-mat/criterioncnotmeet/"
+                href="http://localhost:1313/de/aura-symptom-check/criterioncnotmeet/"
                 />
   </url><url>
-    <loc>http://localhost:1313/de/aura-o-mat/other-modality/</loc>
+    <loc>http://localhost:1313/de/aura-symptom-check/other-modality/</loc>
     <lastmod>2025-04-06T12:45:02+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/aura-o-mat/other-modality/"
+                href="http://localhost:1313/aura-symptom-check/other-modality/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:1313/de/aura-o-mat/other-modality/"
+                href="http://localhost:1313/de/aura-symptom-check/other-modality/"
                 />
   </url><url>
-    <loc>http://localhost:1313/de/aura-o-mat/plus-other-modality/</loc>
+    <loc>http://localhost:1313/de/aura-symptom-check/plus-other-modality/</loc>
     <lastmod>2025-04-06T12:45:02+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/aura-o-mat/plus-other-modality/"
+                href="http://localhost:1313/aura-symptom-check/plus-other-modality/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:1313/de/aura-o-mat/plus-other-modality/"
+                href="http://localhost:1313/de/aura-symptom-check/plus-other-modality/"
                 />
   </url><url>
-    <loc>http://localhost:1313/de/aura-o-mat/modality/</loc>
+    <loc>http://localhost:1313/de/aura-symptom-check/modality/</loc>
     <lastmod>2025-04-06T12:45:02+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/aura-o-mat/modality/"
+                href="http://localhost:1313/aura-symptom-check/modality/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:1313/de/aura-o-mat/modality/"
+                href="http://localhost:1313/de/aura-symptom-check/modality/"
                 />
   </url><url>
-    <loc>http://localhost:1313/de/aura-o-mat/no-aura/</loc>
+    <loc>http://localhost:1313/de/aura-symptom-check/no-aura/</loc>
     <lastmod>2025-04-06T12:45:02+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/aura-o-mat/no-aura/"
+                href="http://localhost:1313/aura-symptom-check/no-aura/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:1313/de/aura-o-mat/no-aura/"
+                href="http://localhost:1313/de/aura-symptom-check/no-aura/"
                 />
   </url><url>
-    <loc>http://localhost:1313/de/aura-o-mat/symptom-check-summary/</loc>
+    <loc>http://localhost:1313/de/aura-symptom-check/symptom-check-summary/</loc>
     <lastmod>2025-04-06T12:45:02+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/aura-o-mat/symptom-check-summary/"
+                href="http://localhost:1313/aura-symptom-check/symptom-check-summary/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:1313/de/aura-o-mat/symptom-check-summary/"
+                href="http://localhost:1313/de/aura-symptom-check/symptom-check-summary/"
                 />
   </url><url>
-    <loc>http://localhost:1313/de/aura-o-mat/</loc>
+    <loc>http://localhost:1313/de/aura-symptom-check/</loc>
     <lastmod>2025-04-06T12:45:02+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/aura-o-mat/"
+                href="http://localhost:1313/aura-symptom-check/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/aura-o-mat/"
+                href="http://localhost:1313/fr/aura-symptom-check/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/es/aura-o-mat/"
+                href="http://localhost:1313/es/aura-symptom-check/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="http://localhost:1313/it/aura-o-mat/"
+                href="http://localhost:1313/it/aura-symptom-check/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="uk"
-                href="http://localhost:1313/uk/aura-o-mat/"
+                href="http://localhost:1313/uk/aura-symptom-check/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="http://localhost:1313/ru/aura-o-mat/"
+                href="http://localhost:1313/ru/aura-symptom-check/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="http://localhost:1313/nl/aura-o-mat/"
+                href="http://localhost:1313/nl/aura-symptom-check/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="da"
-                href="http://localhost:1313/da/aura-o-mat/"
+                href="http://localhost:1313/da/aura-symptom-check/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:1313/de/aura-o-mat/"
+                href="http://localhost:1313/de/aura-symptom-check/"
                 />
   </url><url>
     <loc>http://localhost:1313/de/about/</loc>
@@ -559,16 +559,16 @@
                 href="http://localhost:1313/de/blog/"
                 />
   </url><url>
-    <loc>http://localhost:1313/de/aura-o-mat/aura-characteristics/</loc>
+    <loc>http://localhost:1313/de/aura-symptom-check/aura-characteristics/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/aura-o-mat/aura-characteristics/"
+                href="http://localhost:1313/aura-symptom-check/aura-characteristics/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:1313/de/aura-o-mat/aura-characteristics/"
+                href="http://localhost:1313/de/aura-symptom-check/aura-characteristics/"
                 />
   </url><url>
     <loc>http://localhost:1313/de/genetics/</loc>

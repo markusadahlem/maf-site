@@ -19,4 +19,4 @@ For more details on what each characteristic means and further guidance on manag
 
 
 
-[**View Full Report**](/aura-o-mat/symptom-check-summary/)
+[**View Full Report**](/aura-symptom-check/symptom-check-summary/)

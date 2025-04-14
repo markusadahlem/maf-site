@@ -210,25 +210,25 @@
                 resultB.textContent =
                     "ℹ️ You selected a known aura modality and an additional symptom type — please check it further to make sure it fits.";
                 resultB.style.color = "darkorange";
-                nextLinkB.href = "/aura-o-mat/plus-other-modality/";
+                nextLinkB.href = "/aura-symptom-check/plus-other-modality/";
                 nextLinkB.style.display = "inline-block";
                 nextLinkB.textContent = "Next: Describe Characteristics";
             } else if (hasCoreAura) {
                 resultB.textContent = "✅ Aura modality identified.";
                 resultB.style.color = "green";
-                nextLinkB.href = "/aura-o-mat/aura-characteristics/";
+                nextLinkB.href = "/aura-symptom-check/aura-characteristics/";
                 nextLinkB.style.display = "inline-block";
                 nextLinkB.textContent = "Next: Describe Characteristics";
             } else if (onlyOther) {
                 resultB.textContent = "ℹ️ Unclassified aura modality selected.";
                 resultB.style.color = "darkorange";
-                nextLinkB.href = "/aura-o-mat/other-modality/";
+                nextLinkB.href = "/aura-symptom-check/other-modality/";
                 nextLinkB.style.display = "inline-block";
                 nextLinkB.textContent = "Next: Other Symptoms";
             } else if (onlyNone) {
                 resultB.textContent = "❌ No aura symptoms reported.";
                 resultB.style.color = "red";
-                nextLinkB.href = "/aura-o-mat/no-aura/";
+                nextLinkB.href = "/aura-symptom-check/no-aura/";
                 nextLinkB.style.display = "inline-block";
                 nextLinkB.textContent = "Next: Continue Without Aura";
             } else {

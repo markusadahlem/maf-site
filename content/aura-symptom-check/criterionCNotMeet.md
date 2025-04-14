@@ -17,4 +17,4 @@ If you continue to experience concerning symptoms or if your health situation ch
 
 For further explanation and to learn more about how these criteria are applied, please review our detailed breakdown or speak with your doctor.
 
-[**View Full Report**](/aura-o-mat/symptom-check-summary-n/)
+[**View Full Report**](/aura-symptom-check/symptom-check-summary-n/)

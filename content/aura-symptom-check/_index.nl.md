@@ -6,5 +6,5 @@ title: ""
 De symptoomchecktool is momenteel alleen beschikbaar in het Engels en Duits.  
 Probeer het hier:  
 
-👉 [Engelse versie](/aura-o-mat/)  
-👉 [Duitse versie](/de/aura-o-mat/)
+👉 [Engelse versie](/aura-symptom-check/)  
+👉 [Duitse versie](/de/aura-symptom-check/)

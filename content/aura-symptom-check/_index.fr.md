@@ -7,5 +7,5 @@ title: ""
 L'outil de vérification des symptômes est actuellement disponible uniquement en anglais et en allemand.  
 Essayez-le ici :  
 
-👉 [Version anglaise](/aura-o-mat/)  
-👉 [Version allemande](/de/aura-o-mat/)
+👉 [Version anglaise](/aura-symptom-check/)  
+👉 [Version allemande](/de/aura-symptom-check/)

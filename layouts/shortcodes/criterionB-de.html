@@ -212,26 +212,26 @@
                 resultB.textContent =
                     "ℹ️ Du hast eine bekannte Auramodalität und zusätzliche Symptome ausgewählt – bitte prüfe, ob dies zusammenpasst.";
                 resultB.style.color = "darkorange";
-                nextLinkB.href = "/de/aura-o-mat/plus-other-modality/";
+                nextLinkB.href = "/de/aura-symptom-check/plus-other-modality/";
                 nextLinkB.style.display = "inline-block";
                 nextLinkB.textContent = "Weiter: Merkmale beschreiben";
             } else if (hasCoreAura) {
                 resultB.textContent = "✅ Auramodalität erkannt.";
                 resultB.style.color = "green";
-                nextLinkB.href = "/de/aura-o-mat/aura-characteristics/";
+                nextLinkB.href = "/de/aura-symptom-check/aura-characteristics/";
                 nextLinkB.style.display = "inline-block";
                 nextLinkB.textContent = "Weiter: Merkmale beschreiben";
             } else if (onlyOther) {
                 resultB.textContent =
                     "ℹ️ Nicht klassifizierte Auramodalität ausgewählt.";
                 resultB.style.color = "darkorange";
-                nextLinkB.href = "/de/aura-o-mat/other-modality/";
+                nextLinkB.href = "/de/aura-symptom-check/other-modality/";
                 nextLinkB.style.display = "inline-block";
                 nextLinkB.textContent = "Weiter: Andere Symptome";
             } else if (onlyNone) {
                 resultB.textContent = "❌ Keine Aurabeschwerden angegeben.";
                 resultB.style.color = "red";
-                nextLinkB.href = "/de/aura-o-mat/no-aura/";
+                nextLinkB.href = "/de/aura-symptom-check/no-aura/";
                 nextLinkB.style.display = "inline-block";
                 nextLinkB.textContent = "Weiter ohne Aura";
             } else {

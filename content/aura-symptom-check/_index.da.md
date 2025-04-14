@@ -7,5 +7,5 @@ title: ""
 Symptomtjekværktøjet er i øjeblikket kun tilgængeligt på engelsk og tysk.  
 Prøv det her:  
 
-👉 [Engelsk version](/aura-o-mat/)  
-👉 [Tysk version](/de/aura-o-mat/)
+👉 [Engelsk version](/aura-symptom-check/)  
+👉 [Tysk version](/de/aura-symptom-check/)
