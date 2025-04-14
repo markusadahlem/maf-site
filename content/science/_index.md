@@ -7,3 +7,9 @@ linkTitle: Science
 sidebar:
   exclude: true
 ---
+
+# Migraine Aura Simulation
+
+### **Keep you gaze fixed on the fly.**
+
+{{< youtube GFvuC9dxY9I >}}
