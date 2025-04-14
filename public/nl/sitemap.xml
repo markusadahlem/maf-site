@@ -83,6 +83,54 @@
                 href="http://localhost:1313/nl/impressum/"
                 />
   </url><url>
+    <loc>http://localhost:1313/nl/genetics/</loc>
+    <lastmod>2025-04-06T12:48:32+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/genetics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/genetics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/genetics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/genetics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://localhost:1313/it/genetics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="uk"
+                href="http://localhost:1313/uk/genetics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="http://localhost:1313/ru/genetics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="da"
+                href="http://localhost:1313/da/genetics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="http://localhost:1313/nl/genetics/"
+                />
+  </url><url>
     <loc>http://localhost:1313/nl/diagnosis/</loc>
     <lastmod>2025-04-06T12:48:26+02:00</lastmod>
     <xhtml:link
@@ -404,53 +452,6 @@
                 rel="alternate"
                 hreflang="nl"
                 href="http://localhost:1313/nl/contact/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/nl/genetics/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/genetics/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/de/genetics/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/genetics/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/es/genetics/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="http://localhost:1313/it/genetics/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="uk"
-                href="http://localhost:1313/uk/genetics/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="http://localhost:1313/ru/genetics/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="da"
-                href="http://localhost:1313/da/genetics/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="http://localhost:1313/nl/genetics/"
                 />
   </url><url>
     <loc>http://localhost:1313/nl/science/</loc>

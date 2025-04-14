@@ -1,10 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Migraine Aura Foundation – </title>
+    <title>Migraine Aura Foundation – Genetics</title>
     <link>http://localhost:1313/es/genetics/</link>
-    <description>Recent content on Migraine Aura Foundation</description>
+    <description>Recent content in Genetics on Migraine Aura Foundation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
+    <lastBuildDate>Sun, 06 Apr 2025 12:48:32 +0200</lastBuildDate>
     
 	  <atom:link href="http://localhost:1313/es/genetics/index.xml" rel="self" type="application/rss+xml" />
     
