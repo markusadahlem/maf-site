@@ -9,6 +9,6 @@ sidebar:
 
 
 
-## Newsletter
+## Aboniere unseren Newsletter
 
-<!-- {{< newsletter >}} -->
+{{< newsletter-de >}}
