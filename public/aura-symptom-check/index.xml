@@ -77,11 +77,10 @@ sometimes, the aura stands alone.&lt;/p&gt;
       <description>
         
         
-        &lt;h1&gt;⚠️ You Do Not Meet The Second Criterion&lt;/h1&gt;&lt;p&gt;Fewer than three key characteristics apply.&lt;/p&gt;
+        &lt;h1&gt;⚠️ Your Symptoms Do Not Meet The Second Criterion&lt;/h1&gt;&lt;p&gt;Fewer than three key characteristics apply.&lt;/p&gt;
 &lt;p&gt;Based on your answers, fewer than three of the key features associated with migraine aura are present. This suggests that your symptom profile does not fully align with Criterion C as defined by the ICHD-3 guidelines. However, not meeting this criterion does not rule out migraine aura—it simply reflects the diversity in symptom experiences.&lt;/p&gt;
 &lt;p&gt;If you continue to experience concerning symptoms or if your health situation changes, we strongly recommend consulting with a healthcare professional. Remember, our tool is designed to provide insights based on a broad patient base and is not a substitute for a medical diagnosis.&lt;/p&gt;
-&lt;p&gt;For further explanation and to learn more about how these criteria are applied, please review our detailed breakdown or speak with your doctor.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/aura-symptom-check/symptom-check-summary-n/&#34; &gt;&lt;strong&gt;View Full Report&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For further explanation and to learn more about how these criteria are applied, please speak with your doctor.&lt;/p&gt;
 
       </description>
     </item>
@@ -511,8 +510,30 @@ Choose “None” if none of these apply.&lt;/p&gt;
       <description>
         
         
-        &lt;h3&gt;Looks like a migraine aura!&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;looks-like-a-migraine-aura&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#looks-like-a-migraine-aura&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;🚧🏗️ THIS IS WIP🚜👷‍♀️ — Stay tunded🚧&lt;/p&gt;
+        &lt;h4&gt;&lt;a href=&#34;http://localhost:1313/reports/Migraine-Aura-Report.pdf&#34; target=&#34;_blank&#34;&gt;View and download the PDF&lt;/a&gt;
+&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;hahahugoshortcode54s0hbhb&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#hahahugoshortcode54s0hbhb&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;h1&gt;Migraine Aura Report&lt;/h1&gt;&lt;p&gt;Provided by the Migraine Aura Foundation
+Result: Your responses suggest you may be experiencing migraine aura.&lt;/p&gt;
+&lt;h2&gt;Summary&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;summary&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#summary&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Based on your answers, your symptoms are consistent with migraine aura, a neurological
+phenomenon that often precedes or accompanies migraine headaches.
+This type of migraine is historically referred to as:
+Classic migraine, ophthalmic migraine, hemiparaesthetic migraine, hemiplegic migraine, aphasic
+migraine, migraine accompagnée, or complicated migraine.&lt;/p&gt;
+&lt;h2&gt;Diagnostic Threshold Reached&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;diagnostic-threshold-reached&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#diagnostic-threshold-reached&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Your responses indicate that the ICHD-3 criteria for migraine with aura have likely been met.
+This means that a sufficient number of typical features—such as gradual onset, full reversibility,
+limited duration, and association with headache—were present to suggest a pattern consistent
+with migraine aura.
+These criteria help differentiate migraine aura from other possible neurological conditions.&lt;/p&gt;
+&lt;h2&gt;⚠️ Important Disclaimer&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;-important-disclaimer&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#-important-disclaimer&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This tool does not provide a medical diagnosis. It is intended for informational purposes
+only.
+Neurological symptoms can have many causes—some of them serious. This tool assumes your
+symptoms are not better explained by another condition, such as stroke, epilepsy, multiple
+sclerosis, or a known eye disorder.&lt;/p&gt;
+&lt;p&gt;👉 If your symptoms are new, unusual, worsening, or accompanied by other health
+concerns, seek medical advice immediately.&lt;/p&gt;
 
       </description>
     </item>

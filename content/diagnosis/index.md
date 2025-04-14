@@ -15,9 +15,14 @@ We advocate for refining this process, especially for aura, where early and accu
 
 {{< figure src="/images/aura-o-mat.png" alt="Alt text" width="350" >}}
 
-
 {{< hextra/hero-badge link="/aura-o-mat">}}
   <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400"></div>
-  <span class="hx-text-lg">Check your symptoms</span>
+  <span class="hx-text-lg">Try the Aura-o-mat</span>
   {{< icon name="arrow-circle-right" attributes="height=32" >}}
 {{< /hextra/hero-badge >}}
+
+
+<div class="hx-mb-12">
+{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Some migraines involve visual distortions before the headache. The Aura-o-mat helps you reflect on what you saw — or didn’t.
+    {{< /hextra/hero-subtitle >}}
+</div>

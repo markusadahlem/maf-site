@@ -7,7 +7,7 @@ sidebar:
   exclude: true
 ---
 
-# ⚠️ You Do Not Meet The Second Criterion 
+# ⚠️ Your Symptoms Do Not Meet The Second Criterion 
 
 Fewer than three key characteristics apply.
 
@@ -15,6 +15,4 @@ Based on your answers, fewer than three of the key features associated with migr
 
 If you continue to experience concerning symptoms or if your health situation changes, we strongly recommend consulting with a healthcare professional. Remember, our tool is designed to provide insights based on a broad patient base and is not a substitute for a medical diagnosis.
 
-For further explanation and to learn more about how these criteria are applied, please review our detailed breakdown or speak with your doctor.
-
-[**View Full Report**](/aura-symptom-check/symptom-check-summary-n/)
+For further explanation and to learn more about how these criteria are applied, please speak with your doctor.

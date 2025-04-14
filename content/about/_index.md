@@ -13,6 +13,10 @@ This close integration of research, care, and the patient perspective has made u
 Because we are driven by impact: we apply technology where it makes a real difference – helping people better understand their condition, communicate more effectively, and manage life with migraine.
 -->
 
+## Our Founders
+
+- Markus A. Dahlem, PhD
+- Dr. med. Klaus Podoll (1958 - 2019)
 
 ## Our Mission
 

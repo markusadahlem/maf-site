@@ -28,8 +28,12 @@ Neurological symptoms can have many different causes—some of them serious. Thi
 
 If your symptoms are **new, unusual, worsening**, or occur **alongside other health issues**, please **seek medical advice immediately**.
 
-### Symptom Check 
+###  Non-headache Symptom Check 
 <div class="hx-mt-6 hx-mb-6">
 {{< hero-button-secondary text="I Understand – Continue ✅" link="modality/" >}}
 {{< hero-button-secondary text="I’m Not Sure – Exit 🚫" link="/" >}}
 </div>
+
+### Heache Symptom Check 
+
+🚧🏗️ COMING SOON 🚜👷‍♀️ — Stay tunded 🚧
