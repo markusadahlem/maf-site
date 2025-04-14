@@ -1,13 +1,13 @@
 - date: "1998"
   title: "Erste Internetpräsenz"
   preview: " Erstmals wird die Migräneaura als wissenschaftlich fundierte Computersimulation online veröffentlicht und macht die unsichtbare Aura erstmals sichtbar – auch für andere."
-  text: "Als theoretischer Physiker entwickelt Markus Dahlem im Rahmen seiner Doktorarbeit die erste wissenschaftlich fundierte Computersimulation der Migräneaura – ohne selbst betroffen zu sein. Grundlage ist allein die neuronale Architektur des Gehirns. Die animierten Darstellungen werden auf der Website des Instituts für Biophysik der Otto-von-Guericke-Universität veröffentlicht."
+  text: "Die erste wissenschaftlich fundierte Computersimulation der Migräneaura entstand im Rahmen der Doktorarbeit von Markus Dahlem in der theoretischen Physik – bemerkenswerterweise obwohl er selbst nicht von Migräne betroffen ist. Grundlage ist allein die neuronale Architektur des Gehirns. Die animierten Darstellungen werden auf der Website des Instituts für Biophysik der Otto-von-Guericke-Universität veröffentlicht."
   image: "/images/timeline/1998.png"
 
 - date: "03/2000"
   title: "Ermutigung durch Bestsellerautor und Neurologen"
   preview: "Ein Brief des Neurologen und Bestsellerautors Dr. med. Oliver Sacks wird zur Initialzündung für eine patientenzentrierte Wissenschaftskommunikation."
-  text: "Nach der Veröffentlichung der Computersimulation auch in einer Fachzeitschrift würdigt ein persönlicher Brief von Oliver Sacks diese theoretische Facharbeit. Dr. Sacks – der die Persönlichkeit des Patienten konsequent ins Zentrum einer evidenzbasierten Medizin stellte – motiviert Markus Dahlem, weiter über Migräne im Sinne eines Public Understanding of Science allgemeinverständlich und patientenzentriert zu publizieren."
+  text: "Nach der Veröffentlichung der Computersimulation in einer Fachzeitschrift erhält das Internet-Projekt eine bedeutende Anerkennung: Oliver Sacks würdigt die theoretische Arbeit in einem persönlichen Brief. Seine Haltung – die Persönlichkeit des Patienten ins Zentrum einer evidenzbasierten Medizin zu stellen – wird zum Leitgedanken für die spätere Ausrichtung der Kommunikation: allgemeinverständlich, patientenzentriert und im Sinne eines Public Understanding of Science."
   image: "/images/timeline/2000-sacks.png"
 
 - date: "08/2000"
@@ -23,9 +23,9 @@
   image: "/images/timeline/2000-forum.png"
 
 - date: "2003"
-  title: "Kooperation mit Dr. med. Klaus Podoll"
-  preview: "Aus einer gemeinsamen Idee entsteht die digitale Plattform für Migraine Art."
-  text: "Dr rer. nat. Dahlem nimmt Kontakt zum Neurologen Dr. med Klaus Podoll auf, um Inhalte zum Alice-im-Wunderland-Syndrom für die Plattform zu besprechen. Innerhalb eines Jahres entwickelt sich ein intensiver Austausch mit über 1000 E-Mails – der Beginn einer langjährigen Zusammenarbeit. Podoll bringt einen außergewöhnlich umfangreichen Fundus an Material ein, den er zusammen mit dem 2001 verstorbenen Derek Robinson aufgebaut hatte. Robinson, Marketingmanager bei Boehringer Ingelheim UK, war bereits 1973 auf der Suche nach eindrucksvollen Bildern zur Bewerbung eines neuen Migräneprophylaktikums – eine „verzweifelte Suche“, wie er selbst schrieb. Daraus entwickelte sich das Konzept der Migraine Art, das sein digitales Zuhause findet und zur Grundlage einer der weltweit bedeutendsten Sammlungen gelebter Aura-Erfahrungen wird."
+  title: "Ausbau der digitalen Migraine-Art-Plattform"
+  preview: "Eine gemeinsame Vision führt zum Aufbau einer der weltweit bedeutendsten digitalen Sammlungen gelebter Aura-Erfahrungen."
+  text: "Im Jahr 2003 erweitert die Plattform ihren inhaltlichen Fokus durch die Kooperation mit dem Neurologen Dr. med. Klaus Podoll. Er bringt einen außergewöhnlich umfangreichen Fundus an Materialien ein, die er zuvor gemeinsam mit dem 2001 verstorbenen Derek Robinson zusammengestellt hatte. Robinson, Marketingmanager bei Boehringer Ingelheim UK, hatte bereits 1973 nach eindrucksvollen Darstellungen des Migräneerlebens gesucht, um ein neues Prophylaktikum zu bewerben – eine „verzweifelte Suche“, wie er es selbst nannte. Was als Austausch über das Alice-im-Wunderland-Syndrom begann, entwickelte sich rasch: Über 1000 E-Mails wurden im ersten Jahr ausgetauscht – der Grundstein für eine langfristige Zusammenarbeit und ein digital kuratiertes Archiv von Migraine Art."
 
 - date: "2004"
   title: "Gründung und Vision einer digitalen Medizin"
@@ -36,7 +36,7 @@
 - date: "2004"
   title: "Förderun der Deutschen Forschungsgemeinschaft"
   preview: "Eine digitale, personalisierte Introspektion wird durch die DFG gefördert – mit frühen Smartphones und dem Blick auf digitale Biomarker."
-  text: "Dr. rer. nat. Dahlem erhält eine Sachbeihilfe der Deutschen Forschungsgemeinschaft (DFG), um Patient:innen mithilfe der Migräneaura-Simulation eine interaktive, personalisierte Introspektion zu ermöglichen – basierend auf individuellen anatomischen Parametern des Gehirns. Mithilfe der damals noch ganz neuen Smartphones – vier Jahre vor dem iPhone – sollen individuelle Hirnparameter alltagsnah und in Echtzeit erfasst werden. Ziel ist es, diese Daten als potenzielle Wirkziele für zukünftige Therapien nutzbar zu machen. Damit entsteht ein früher konzeptioneller Vorgriff auf das heutige Verständnis digitaler Biomarker – und auf die Vision einer Closed-Loop-Medizin."
+  text: "Mit einer Sachbeihilfe der Deutschen Forschungsgemeinschaft (DFG) beginnt die Entwicklung eines interaktiven Werkzeugs zur personalisierten Introspektion, bei dem Patient:innen mit der Migräneaura-Simulation auf Basis individueller anatomischer Hirnparameter arbeiten können. Smartphones – damals noch ein technisches Novum, vier Jahre vor dem iPhone – dienen zur alltagsnahen Erfassung dieser Parameter in Echtzeit. Das Projekt setzt damit früh konzeptionelle Impulse für das heutige Verständnis digitaler Biomarker – und skizziert bereits die Vision einer Closed-Loop-Medizin."
 
 - date: "2005"
   title: "Medienpreis"
@@ -53,19 +53,19 @@
 - date: "2009"
   title: "Migraine Art wird Buch"
   preview: "Durch die Online-Sammlung findet sich ein Verleger."
-  text: "Das von Derek Robinson und Dr. Klaus Podoll zusammengetragene Material zur visuellen Darstellung von Migräneauren wird über die Website der Stiftung öffentlich zugänglich gemacht. Auf dieser Grundlage findet sich ein Verleger: Die Sammlung Migraine Art erscheint als Buch und dokumentiert die Vielfalt subjektiver Aura-Erfahrungen."
+  text: "Die Veröffentlichung des Buchs Migraine Art: The Migraine Experience from Within erfüllt ein bereits lange vor der Stiftung formuliertes Ziel. Die von Derek Robinson und Dr. med. Klaus Podoll zusammengestellte Sammlung sollte ursprünglich als Buch erscheinen – doch zunächst fand sich kein Verlag. Daher wurde das Material über die Website der Stiftung öffentlich zugänglich gemacht. Diese digitale Veröffentlichung schuf Sichtbarkeit und Resonanz, die schließlich zur Buchveröffentlichung führte und die Vielfalt subjektiver Aura-Erfahrungen dokumentiert."
   image: "/images/timeline/2009-book.png"
 
 - date: "2009"
   title: "Blog zur Migränephysiologie"
   preview: "Aus einer Website-Sektion wird ein Wissenschaftsblog mit über 400 Beiträgen."
-  text: "Das Wissenschaftsblog Graue Substanz entsteht auf dem SciLogs-Portal von Spektrum der Wissenschaft. In den folgenden Jahren erscheinen dort über 400 allgemeinverständliche Beiträge, die neue Perspektiven auf Migräne und deren physiologische Grundlagen eröffnen. Mit der Gründung von Newsenselab wird die Blog-Aktivität weitgehend eingestellt. Der sogenannte Pepsi-Gate-Skandal – ein Fall gesponserter Inhalte durch PepsiCo auf einer wissenschaftlichen Plattform – verstärkt die Sensibilität für mögliche Interessenkonflikte in der Wissenschaftskommunikation."
+  text: "Im Einklang mit dem Stiftungsziel, wissenschaftliche Entdeckung und Translation anzustoßen, startet der Wissenschaftsblog Graue Substanz auf SciLogs, einer Plattform von Spektrum der Wissenschaft. Über die Jahre erscheinen mehr als 400 allgemeinverständliche Beiträge zur Physiologie der Migräne. Die Blogaktivität nimmt ab, nachdem Markus Dahlem 2014 Newsenselab mitbegründet – ein unabhängiges Unternehmen, das nicht zur Stiftung gehört."
   image: "/images/timeline/2009-blog.png"
 
 - date: "2010"
-  title: "Migräne im TV-Schwerpunkt"
-  preview: "Öffentlich-rechtliche TV-Formate greifen Migräne ganzheitlich auf – inklusive eines modellbasierten Ansatzes aus der Stiftungsarbeit."
-  text: "Im Januar 2010 widmen sich die Formate nano (3sat) und drehscheibe Deutschland (ZDF) in einem Themenschwerpunkt der Migräne. Auch Markus Dahlems physikalischer Ansatz zur Erklärung der Migräneaura wird vorgestellt – und veranschaulicht, wie naturwissenschaftliche Modelle zur patientennahen Vermittlung komplexer Krankheitsmechanismen beitragen können."
+  title: "Medienresonanz: Migräne im TV-Schwerpunkt"
+  preview: "Modellbasierte Forschung findet durch die Vermittlungsarbeit der Stiftung mediale Reichweite."
+  text: "Im Januar 2010 greifen die Sendungen nano (3sat) und drehscheibe Deutschland (ZDF) die Migräne in einem ganzheitlichen Themenschwerpunkt auf. Vorgestellt wird dabei auch ein physikalisch fundiertes Erklärungsmodell der Migräneaura, das im akademischen Kontext von Markus Dahlem entwickelt wurde. Die Stiftung, deren Ziel die Förderung des Public Understanding of Science ist, unterstützt die Vermittlung dieses komplexen Ansatzes und trägt so zur breiten öffentlichen Wahrnehmung bei."
 
 - date: "2011"
   title: "Literarische Würdigung"
@@ -80,9 +80,9 @@
   image: "/images/timeline/2011-youtube.png"
 
 - date: "2015"
-  title: "Therapieidee der Auraresonanz im Radio"
+  title: "Medienresonanz: Therapieidee der Auraresonanz im Radio"
   preview: "Ein Beitrag im Deutschlandfunk macht eine neuartige, physikalisch fundierte Behandlungsvision als Auraresonanz einer breiteren Öffentlichkeit zugänglich."
-  text: "Ein Beitrag im Deutschlandfunk porträtiert Dr. rer. nat. Markus Dahlems Forschung zur Migräne als physikalisches Phänomen. Im Mittelpunkt steht die Idee, die im Gehirn wandernde Erregungswelle der Aura mit einer LED-Brille gezielt zu unterbrechen. Der mediale Beitrag zeigt, dass das Konzept auch jenseits der Fachwelt Resonanz findet – ein Signal dafür, dass die Zeit reif ist. Die Vision einer präzisen, physikbasierten Neuromodulation wird ein Jahr später zur wissenschaftlichen Grundlage für die Gründung von Newsenselab."
+  text: "Ein Beitrag im Deutschlandfunk porträtiert Dr. rer. nat. Markus Dahlems Forschung zur Migräne als physikalisches Phänomen. Im Mittelpunkt steht die Idee, die im Gehirn wandernde Erregungswelle der Aura mit einer LED-Brille gezielt zu unterbrechen. Der mediale Beitrag zeigt, dass das Konzept auch jenseits der Fachwelt Resonanz findet – ein Signal dafür, dass die Zeit reif ist. Diese Resonanz trägt zur konzeptuellen Grundlage für die spätere Gründung von Newsenselab bei – einer Initiative, die zwar unabhängig von der Stiftung ist, aber gut mit ihrer wertegeleiteten Mission übereinstimmt."
 
 - date: "2016"
   title: "DSGVO-Pause"
