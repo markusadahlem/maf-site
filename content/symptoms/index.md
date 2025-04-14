@@ -4,6 +4,8 @@ title: "Transitory and Persitent Symptoms"
 weight: 1
 type: docs
 linkTitle: Symptoms
+sidebar:
+  exclude: true
 ---
 
 Since 2000, we collected thousands of patient reports of migraine with aura.
