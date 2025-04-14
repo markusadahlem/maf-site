@@ -7,6 +7,6 @@ sidebar:
   exclude: true
 ---
 
-## Newsletter
+## Subscribe to our newsletter
 
-<!-- {{< newsletter >}} -->
+{{< newsletter >}}

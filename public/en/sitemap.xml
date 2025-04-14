@@ -429,6 +429,19 @@
                 href="http://localhost:1313/aura-symptom-check/plus-other-modality/"
                 />
   </url><url>
+    <loc>http://localhost:1313/aura-symptom-check/headache-type/</loc>
+    <lastmod>2025-04-06T12:45:02+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/aura-symptom-check/headache-type/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/aura-symptom-check/headache-type/"
+                />
+  </url><url>
     <loc>http://localhost:1313/aura-symptom-check/modality/</loc>
     <lastmod>2025-04-06T12:45:02+02:00</lastmod>
     <xhtml:link

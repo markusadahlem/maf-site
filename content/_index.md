@@ -157,21 +157,3 @@ The migraine aura is a set of neurological symptoms that can affect vision, spee
 
 
 {{< /hextra/feature-grid >}}
-
-
-
-
-
-
-{{< hextra/hero-badge link="headache-type-check">}}
-  <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400"></div>
-  <span class="hx-text-lg">Check your headache type</span>
-  {{< icon name="arrow-circle-right" attributes="height=32" >}}
-{{< /hextra/hero-badge >}}
-
-
-
-<div class="hx-mb-12">
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Knowing what kind of headache you have is the first step toward relief — and better conversations with your doctor.
-    {{< /hextra/hero-subtitle >}}
-</div>

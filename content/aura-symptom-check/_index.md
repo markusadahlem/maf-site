@@ -34,6 +34,9 @@ If your symptoms are **new, unusual, worsening**, or occur **alongside other hea
 {{< hero-button-secondary text="I’m Not Sure – Exit 🚫" link="/" >}}
 </div>
 
-### Heache Symptom Check 
+### Headache Symptom Check 
 
-🚧🏗️ COMING SOON 🚜👷‍♀️ — Stay tunded 🚧
+<div class="hx-mt-6 hx-mb-6">
+{{< hero-button-secondary text="I Understand – Continue ✅" link="headache-type/" >}}
+{{< hero-button-secondary text="I’m Not Sure – Exit 🚫" link="/" >}}
+</div>
