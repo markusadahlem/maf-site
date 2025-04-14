@@ -53,7 +53,7 @@ Mit "Aura" bezeichnet man eine Gruppe neurologischer Symptome, die das Sehen, Sp
 
   {{< hextra/feature-card
     title="Kunstwettbewerbe"
-    subtitle="Kunst kann ein geeignetes Medium sein, um Migräneerfahrungen auszudrücken und zu kommunizieren."
+    subtitle="Kunst kann geeignet sein, um Migräneerfahrungen auszudrücken und zu kommunizieren."
     link="art"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
     image="/images/teaser/robinson_sacks-nov-1991.jpg"

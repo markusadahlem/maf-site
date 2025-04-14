@@ -52,13 +52,13 @@ Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Date
 
 Für die Kommentare wird Commento genutzt. Commento ist DSGVO-konform & datenschutzbetont. Die einzigen Daten, auf die diese Website oder Commento Zugriff hat, sind die, die freiwillig gegeben werden: i.d.R. Email-Adresse & einen gewählten Namen, wenn man sich einloggen möchte. Die Daten werden zu keinem anderen Zweck genutzt. Wenn man sich einloggt, wird ein Cookie gesetzt, um bei zukünftigen Besuchen automatisch einloggen zu können. Man kann auch anonym, ohne Login kommentieren. Mehr dazu in Commentos Datenschutzerklärung.
 
-
+-->
 
 ## Google Analytics
 
 Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. (‘’Google’‘). Google Analytics verwendet sog.’‘Cookies’’, Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglicht. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Website (einschließlich Ihrer IP-Adresse) wird an einen Server von Google in den USA übertragen und dort gespeichert. Google wird diese Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten für die Websitebetreiber zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen zu erbringen. Auch wird Google diese Informationen gegebenenfalls an Dritte übertragen, sofern dies gesetzlich vorgeschrieben oder soweit Dritte diese Daten im Auftrag von Google verarbeiten. Google wird in keinem Fall Ihre IP-Adresse mit anderen Daten der Google in Verbindung bringen. Sie können die Installation der Cookies durch eine entsprechende Einstellung Ihrer Browser Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website voll umfänglich nutzen können. Durch die Nutzung dieser Website erklären Sie sich mit der Bearbeitung der über Sie erhobenen Daten durch Google in der zuvor beschriebenen Art und Weise und zu dem zuvor benannten Zweck einverstanden.
 
--->
+
 
 Impressum vom Impressum Generator der Kanzlei Hasselbach, Frankfurt
 
