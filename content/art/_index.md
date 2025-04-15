@@ -17,4 +17,4 @@ artist, can generate five types of scintillating scotomas: rainbow, fortificatio
 stellate, pericentral, and expanding angular. This variety reflects the specialized func-
 tional mapping within the visual cortex.
 
-{{< figure src="/images/fortification-spiral-split-face.jpg" alt="Alt text" " >}}
+{{< figure src="/images/fortification-spiral-split-face.jpg" alt="Alt text" >}}
