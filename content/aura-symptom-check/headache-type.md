@@ -7,19 +7,8 @@ sidebar:
   exclude: true
 ---
 
-### Which aura symptoms have you experienced?
 
-We’re first checking for one or more fully reversible aura symptoms, as defined by clinical guidelines.
-
-Aura symptoms affect different sensory or functional modalities — such as vision, sensation, speech, or movement.
-
-Please select all symptoms you’ve experienced during your aura.  
-Choose “Other” if you’ve had additional modalities not listed here.  
-Choose “None” if none of these apply.
+### This test is not yet available
 
 
-
-
-
-**Modalities**
-{{< criterionB >}}
+It's coming soon! Stay informed by subscribing to our [newsletter](/contact/) for the latest updates.
