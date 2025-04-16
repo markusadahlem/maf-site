@@ -1,0 +1,25 @@
+{{ $imgDir := "images/dtx/carousel" }}
+{{ $yaml := resources.Get (printf "%s/_carousel.yaml" $imgDir) | transform.Unmarshal }}
+{{ $metaMap := dict }}
+{{ range $yaml }}
+  {{ $metaMap = merge $metaMap (dict .file .headline) }}
+{{ end }}
+
+<div class="swiper">
+  <div class="swiper-wrapper">
+    {{ $images := readDir (printf "static/%s" $imgDir) }}
+    {{ range $images }}
+      {{ if not .IsDir }}
+        {{ $headline := index $metaMap .Name | default "" }}
+        <div class="swiper-slide">
+          <img src="/{{ $imgDir }}/{{ .Name }}" alt="{{ $headline }}">
+          {{ if $headline }}
+            <div class="swiper-caption">{{ $headline }}</div>
+          {{ end }}
+        </div>
+      {{ end }}
+    {{ end }}
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+

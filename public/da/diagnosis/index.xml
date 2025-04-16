@@ -1,0 +1,39 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Migraine Aura Foundation – Diagnoses</title>
+    <link>http://localhost:1313/da/diagnosis/</link>
+    <description>Recent content in Diagnoses on Migraine Aura Foundation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>da</language>
+    <lastBuildDate>Sun, 06 Apr 2025 12:48:26 +0200</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/da/diagnosis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Migräne Art</title>
+      <link>http://localhost:1313/da/diagnosis/diagnostic-criteria/</link>
+      <pubDate>Sun, 06 Apr 2025 12:48:26 +0200</pubDate>
+      
+      <guid>http://localhost:1313/da/diagnosis/diagnostic-criteria/</guid>
+      <description>
+        
+        
+        &lt;p&gt;[Website im Aufbau]&lt;/p&gt;
+&lt;p&gt;In den 1970er Jahren wurde das Konzept der “Migräne-Kunst&amp;quot; entwickelt. Es bezeichnet die Idee, dass die abbildende Kunst ein angemessenes und manchmal das bestgeeignete Medium ist, um die
+eigenartigen Erfahrungen der Migränebetroffenen auszudrücken und zu kommunizieren.&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/migraine-computer.png&#34;
+    alt=&#34;Alt text&#34; width=&#34;350&#34;&gt;
+&lt;/figure&gt;
+
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

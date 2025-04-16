@@ -67,8 +67,19 @@ The migraine aura is a set of neurological symptoms that can affect vision, spee
 
 
   {{< hextra/feature-card
-    title="Diagnosis"
+    title="Aura Symptome"
     subtitle="Our mission is to characterize all migraine symptoms by involving patients."
+    link="diagnosis"
+    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
+    image="/images/teaser/roteRathausZigzag_cleanup.png"
+    imageClass="hx-top-[0%] hx-left-[0px]  dark:hx-opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(203, 28, 66, 0.1),hsla(0,0%,100%,0));"
+  >}}
+
+
+  {{< hextra/feature-card
+    title="Digital Clinical Measures"
+    subtitle="Making the invisble visible for monitoring in clinical research, clinical care, and public health."
     link="diagnosis"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
     image="/images/teaser/aura-o-mat-app.png"
@@ -76,8 +87,10 @@ The migraine aura is a set of neurological symptoms that can affect vision, spee
     style="background: radial-gradient(ellipse at 50% 80%,rgba(203, 28, 66, 0.1),hsla(0,0%,100%,0));"
   >}}
 
+
+
   {{< hextra/feature-card
-    title="Art Competitions"
+    title="Migraine Art"
     subtitle="Art may provide an adequate medium to express and communicate migraine experiences."
     link="art"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
@@ -86,7 +99,15 @@ The migraine aura is a set of neurological symptoms that can affect vision, spee
     style="background: radial-gradient(ellipse at 50% 80%,rgba(203, 28, 66, 0.1),hsla(0,0%,100%,0));"
   >}}
 
-
+  {{< hextra/feature-card
+    title="Digital Therapeutics"
+    subtitle="Translating neurological insights into digital therapy — toward more precise, brain-based interventions."
+    link="dtx"
+    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
+    image="/images/teaser/dtx.png"
+    imageClass="hx-top-[0%] hx-left-[0px]  hx-w-[100%] sm:hx-w-[20%] dark:hx-opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(245, 116, 97, 0.1),hsla(0,0%,100%,0));"
+  >}}
 <!--
 
   {{< hextra/feature-card
@@ -116,7 +137,7 @@ The migraine aura is a set of neurological symptoms that can affect vision, spee
 
 
   {{< hextra/feature-card
-    title="Science"
+    title="Biology & Mechanisms"
     subtitle="Migraine aura is more than a symptom — it's a window into how the brain normally works."
     link="science"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
@@ -145,6 +166,21 @@ The migraine aura is a set of neurological symptoms that can affect vision, spee
     imageClass="hx-top-[0%] hx-left-[0px]  hx-w-[100%] sm:hx-w-[20%] dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(245, 116, 97, 0.1),hsla(0,0%,100%,0));"
   >}}
+
+
+
+  {{< hextra/feature-card
+    title="Science Blogs"
+    subtitle="Selected post from Science Blogs »Gray Matter« featured in SciLogs, the German Scientific Amercan blog portal."
+    link="blog"
+    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
+    image="/images/teaser/twilightBirthingScene-teaser.png"
+    imageClass="hx-top-[0%] hx-left-[0px]  hx-w-[100%] sm:hx-w-[20%] dark:hx-opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(245, 116, 97, 0.1),hsla(0,0%,100%,0));"
+  >}}
+
+
+
 
   {{< hextra/feature-card
     title="In Memoriam"

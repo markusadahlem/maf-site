@@ -51,8 +51,19 @@ Mit "Aura" bezeichnet man eine Gruppe neurologischer Symptome, die das Sehen, Sp
     style="background: radial-gradient(ellipse at 50% 80%,rgba(203, 28, 66, 0.1),hsla(0,0%,100%,0));"
   >}}
 
+
   {{< hextra/feature-card
-    title="Kunstwettbewerbe"
+    title="DiGA Entwicklung"
+    subtitle="Erkenntnisse gezielt in die Versorgung überführen, d.h. in »Digitale Gesundheistanwenungen« (DiGA)."
+    link="dtx"
+    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
+    image="/images/teaser/dtx.png"
+    imageClass="hx-top-[0%] hx-left-[0px]  hx-w-[100%] sm:hx-w-[20%] dark:hx-opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(245, 116, 97, 0.1),hsla(0,0%,100%,0));"
+  >}}
+
+  {{< hextra/feature-card
+    title="Migränekunst"
     subtitle="Kunst kann geeignet sein, um Migräneerfahrungen auszudrücken und zu kommunizieren."
     link="art"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
@@ -90,7 +101,7 @@ Mit "Aura" bezeichnet man eine Gruppe neurologischer Symptome, die das Sehen, Sp
     subtitle="Die Migräneaura ist mehr als ein Symptom – sie ist ein Fenster in das normale Funktionieren des Gehirns."
     link=""
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
-    image="/images/teaser/aura-science.png"
+    image="/images/teaser/aura-science-de.png"
     imageClass="hx-top-[0%] hx-left-[0px]  hx-w-[100%] sm:hx-w-[20%] dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(245, 116, 97, 0.1),hsla(0,0%,100%,0));"
   >}}

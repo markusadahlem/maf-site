@@ -53,3 +53,48 @@
     color: #444;
     max-width: 600px;
 }
+
+.swiper {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 40px; /* Gives space for the pagination */
+}
+
+.swiper-wrapper {
+    display: flex;
+}
+
+.swiper-slide {
+    flex: 0 0 auto;
+    width: auto !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.swiper-headline {
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 0.75em 1em;
+    z-index: 10;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.swiper-pagination {
+    bottom: -20px !important; /* ⬇️ push 20px lower */
+    position: relative !important; /* make sure it respects bottom */
+}
+
+.swiper-wrapper {
+    display: flex;
+    flex-direction: row-reverse; /* 🔁 This is the magic line */
+}

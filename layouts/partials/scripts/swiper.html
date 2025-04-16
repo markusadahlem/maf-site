@@ -1,0 +1,28 @@
+<!-- Swiper CSS -->
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Swiper Initialization -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        new Swiper(".swiper", {
+            loop: true,
+            slidesPerView: 8,
+            spaceBetween: 20,
+            autoplay: {
+                delay: 3000,
+            },
+            direction: "horizontal",
+            rtl: false, // ✅ make sure this is false or removed
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    });
+</script>
