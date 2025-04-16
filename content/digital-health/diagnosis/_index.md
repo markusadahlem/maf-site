@@ -9,7 +9,6 @@ sidebar:
 ---
 
 
-
 ## Improving aura diagnostics
 
 While migraine is typically diagnosed through clinical history and the exclusion of other serious causes, the Migraine Aura Foundation highlights the unique diagnostic challenges posed by migraine aura. No blood test, imaging, or procedure can definitively confirm migraine—though such tools may help rule out other conditions. The key remains in gathering a detailed history, supported by structured screening tools. 
@@ -21,7 +20,7 @@ We advocate for refining this process, especially for aura, where early and accu
 
 {{< hextra/hero-badge link="/aura-o-mat">}}
   <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400"></div>
-  <span class="hx-text-lg">Try the Aura-o-mat</span>
+  <span class="hx-text-lg">Coming soon: Aura-o-mat</span>
   {{< icon name="arrow-circle-right" attributes="height=32" >}}
 {{< /hextra/hero-badge >}}
 

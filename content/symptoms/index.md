@@ -2,7 +2,6 @@
 date: "2025-04-06T12:45:02+02:00"
 title: "Transitory and Persitent Symptoms"
 weight: 1
-type: docs
 linkTitle: Symptoms
 sidebar:
   exclude: true

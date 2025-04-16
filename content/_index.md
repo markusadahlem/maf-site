@@ -69,7 +69,7 @@ The migraine aura is a set of neurological symptoms that can affect vision, spee
   {{< hextra/feature-card
     title="From Aura Symptoms ..."
     subtitle="Our mission is to characterize all migraine symptoms by involving patients."
-    link="diagnosis"
+    link="symptoms"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
     image="/images/teaser/roteRathausZigzag_cleanup.png"
     imageClass="hx-top-[0%] hx-left-[0px]  dark:hx-opacity-80"

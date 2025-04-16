@@ -12,17 +12,13 @@
     document.addEventListener("DOMContentLoaded", function () {
         new Swiper(".swiper", {
             loop: true,
-            slidesPerView: 8,
+            slidesPerView: 5,
             spaceBetween: 20,
             autoplay: {
                 delay: 3000,
             },
             direction: "horizontal",
             rtl: false, // ✅ make sure this is false or removed
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
         });
     });
 </script>
