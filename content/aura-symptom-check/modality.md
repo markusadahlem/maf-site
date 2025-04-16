@@ -14,8 +14,9 @@ We’re first checking for one or more fully reversible aura symptoms, as define
 Aura symptoms affect different sensory or functional modalities — such as vision, sensation, speech, or movement.
 
 Please select all symptoms you’ve experienced during your aura.  
-Choose “Other” if you’ve had additional modalities not listed here.  
-Choose “None” if none of these apply.
+You can choose **multiple options**.  
+Choose “**Other**” if you’ve had additional modalities not listed here.   
+Choose “**None**” if none of these apply.
 
 
 

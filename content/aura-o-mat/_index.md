@@ -7,7 +7,7 @@ sidebar:
 ---
 
 
-### This test is not yet available
+### This digital clinical assessment is not yet available
 
 
 It's coming soon! Stay informed by subscribing to our [newsletter](/contact/) for the latest updates.

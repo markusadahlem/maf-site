@@ -1,12 +1,11 @@
 ---
 date: "2025-04-06T12:45:02+02:00"
-title: "Pre-Check Introduction & Disclaimer"
+title: "Pre-Check"
 linkTitle: "Test"
 sidebar:
   exclude: true
 ---
 
-You’ll find the button to begin the symptom check at the bottom of this page—after the disclaimer.
 
 ## Introduction 
 
@@ -18,7 +17,7 @@ At the Migraine Aura Foundation, we’ve learned from over 7,000 patient account
 
 
 <p>&nbsp;</p>
-
+<!-- 
 ## ⚠️ Disclaimer
 
 This tool is not a medical diagnosis and is intended for informational purposes only.
@@ -40,3 +39,5 @@ If your symptoms are **new, unusual, worsening**, or occur **alongside other hea
 {{< hero-button-secondary text="I Understand – Continue ✅" link="headache-type/" >}}
 {{< hero-button-secondary text="I’m Not Sure – Exit 🚫" link="/" >}}
 </div>
+
+-->

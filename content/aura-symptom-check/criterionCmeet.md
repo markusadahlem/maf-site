@@ -6,16 +6,21 @@ sidebar:
   exclude: true
 ---
 
-# ✅ You Meet The  Second Criterion 
 
-At least three key characteristics of migraine aura are present.
+<p>&nbsp;</p>
 
-Based on your responses, you display at least three of the hallmark features described in the internationally recognized diagnostic guidelines (ICHD-3). Our extensive data—gathered from over 7,000 patient accounts since 2000—supports that these symptoms are common among those experiencing migraine aura.
+## ⚠️ Disclaimer
 
-While this result aligns with established criteria and our collective patient insights, please remember that this tool is for informational purposes only. It does not replace a formal medical evaluation. We encourage you to discuss these findings with your healthcare provider for personalized advice.
+This tool is not a medical diagnosis and is intended for informational purposes only.
 
-For more details on what each characteristic means and further guidance on managing migraine aura, please explore our additional resources or contact a professional.
-
+Neurological symptoms can have many different causes—some of them serious. This tool assumes that your symptoms are not better explained by another medical condition, such as epilepsy, stroke, multiple sclerosis, or a known eye disorder.
 
 
-[**View Full Report**](/aura-symptom-check/symptom-check-summary/)
+If your symptoms are **new, unusual, worsening**, or occur **alongside other health issues**, please **seek medical advice immediately**.
+
+
+
+<div class="hx-mt-6 hx-mb-6">
+{{< hero-button-secondary text="I understand! Continue to the report ✅" link="/aura-symptom-check/symptom-check-summary/" >}}
+{{< hero-button-secondary text="I’m Not Sure – Exit 🚫" link="/" >}}
+</div>

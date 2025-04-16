@@ -208,17 +208,18 @@
 
             if (hasCoreAura && hasOther) {
                 resultB.textContent =
-                    "ℹ️ You selected a known aura modality and an additional symptom type — please check it further to make sure it fits.";
+                    "ℹ️ You selected a known aura modality along with an “Other” symptom. Let’s clarify the additional symptom to make sure it fits your aura experience.";
                 resultB.style.color = "darkorange";
                 nextLinkB.href = "/aura-symptom-check/plus-other-modality/";
                 nextLinkB.style.display = "inline-block";
-                nextLinkB.textContent = "Next: Describe Characteristics";
+                nextLinkB.textContent = "Clarify “Other” Symptoms";
             } else if (hasCoreAura) {
-                resultB.textContent = "✅ Aura modality identified.";
+                resultB.textContent =
+                    "✅ Step 1 in progress. Select all that apply, then continue when you're ready.";
                 resultB.style.color = "green";
                 nextLinkB.href = "/aura-symptom-check/aura-characteristics/";
                 nextLinkB.style.display = "inline-block";
-                nextLinkB.textContent = "Next: Describe Characteristics";
+                nextLinkB.textContent = "Next (Step 2): Describe Auras";
             } else if (onlyOther) {
                 resultB.textContent = "ℹ️ Unclassified aura modality selected.";
                 resultB.style.color = "darkorange";

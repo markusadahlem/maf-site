@@ -21,7 +21,7 @@ Every migraine sign counts
 
 
 
-{{< hextra/hero-badge link="aura-symptom-check">}}
+{{< hextra/hero-badge link="aura-symptom-check/modality">}}
   <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400"></div>
   <span class="hx-text-lg">Check your symptoms</span>
   {{< icon name="arrow-circle-right" attributes="height=32" >}}

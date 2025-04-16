@@ -2,17 +2,19 @@
 date: "2025-04-06T12:48:32+02:00"
 title: "Digital Clinical Measures"
 weight: 9
+type: docs
 linkTitle: "Diagnosis"
 sidebar:
   exclude: true
 ---
 
 
+
 ## Improving aura diagnostics
 
 While migraine is typically diagnosed through clinical history and the exclusion of other serious causes, the Migraine Aura Foundation highlights the unique diagnostic challenges posed by migraine aura. No blood test, imaging, or procedure can definitively confirm migraine—though such tools may help rule out other conditions. The key remains in gathering a detailed history, supported by structured screening tools. 
 
-We advocate for refining this process, especially for aura, where early and accurate recognition possible with the help of **digital biomarkers** could transform both diagnosis and care.
+We advocate for refining this process, especially for aura, where early and accurate recognition possible with the help of **Digital Clinical Measures** and **Digital Biomarkers** could transform both diagnosis and care.
 
 
 {{< figure src="/images/from-art2aura-o-mat.png" alt="Frm Art to Aura-o-mat"  >}}
