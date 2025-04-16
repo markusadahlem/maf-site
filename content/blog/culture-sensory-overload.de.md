@@ -7,7 +7,12 @@ authors:
 description: "Visuelle Epilepsie- und Migräneauslöser sind an die neuronale Verschaltung der Großhirnrinde optimal angepasste Lichtreize, die bei weitem nicht mehr nur in flackernden Videospielen zu finden sind."
 ---
 
-Visuelle Epilepsie- und Migräneauslöser sind an die neuronale Verschaltung der Großhirnrinde optimal angepasste Lichtreize, die bei weitem nicht mehr nur in flackernden Videospielen zu finden sind.
+
+<div class="hx-mb-12">
+{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Visuelle Epilepsie- und Migräneauslöser sind an die neuronale Verschaltung der Großhirnrinde optimal angepasste Lichtreize, die bei weitem nicht mehr nur in flackernden Videospielen zu finden sind.
+
+    {{< /hextra/hero-subtitle >}}
+</div>
 
 
 Kontrastreiche Streifen- und Zickzackmuster können Migräne auslösen. Verkürzt gesagt, liegt dies an der Verschaltung der Nervenzellen in der Großhirnrinde, ein wenig genauer: an dem »funktionellen Aufbau« der Sehrinde, sie besteht aus spezialisierten, periodisch angeordneten Untereinheiten, die durch passende raumzeitliche Muster im Gesichtsfeld resonant angesprochen werden können. Das ist zumindest eine plausible These in guter Übereinstimmung mit den bekannten Daten aus psychophysikalischen Messungen und mathematischer Modellierung.
