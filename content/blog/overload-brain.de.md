@@ -1,10 +1,10 @@
 ---
 date: '2011-11-29T17:55:11+02:00'
-title: 'Culture of Optimal Sensory Overload'
+title: 'Satte Spezialisten überreizen das Gehirn'
 authors:
   - name: Markus A. Dahlem, PhD
     link: https://example.com/authors/markus
-description: "Visual perception plays a special role in migraine. Light sensitivity and the visual disturbances that occur during an attack raise an important question: can light also have a positive effect?"
+description: "Flackernde Lichtblitze bestimmter Form lassen spezialisierte Gehirnzellen maximal feuern; sie überreizen damit ein sowieso schon überempfindliches Netzwerk und können einen Migräneanfall auslösen."
 ---
 
 <div class="hx-mb-12">

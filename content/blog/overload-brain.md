@@ -1,30 +1,46 @@
 ---
 date: '2011-11-29T17:55:11+02:00'
-title: 'Culture of Optimal Sensory Overload'
+title: 'Can Light Treat What Light Hurts?'
 authors:
   - name: Markus A. Dahlem, PhD
     link: https://example.com/authors/markus
-description: "Visual perception plays a special role in migraine. Light sensitivity and the visual disturbances that occur during an attack raise an important question: can light also have a positive effect?"
+description: "Zigzags, flickers, flashes, and stripe patterns — some visual stimuli can trigger a migraine, others an epileptic seizure. But could they also treat what they provoke? In this three-part series, I explore how visual hallucinations emerge in migraine, why some brains are hypersensitive to light, and whether precisely tuned stimuli might one day offer relief. An unexpected music video sets the stage for some illuminating science."
 ---
 
 <div class="hx-mb-12">
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Visual perception plays a special role in migraine. Light sensitivity and the visual disturbances that occur during an attack raise an important question: can light also have a positive effect?
+{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Zigzags, flickers, flashes, and stripe patterns — some visual stimuli can trigger a migraine, others an epileptic seizure. But could they also _treat_ what they provoke? In this three-part series, I explore how visual hallucinations emerge in migraine, why some brains are hypersensitive to light, and whether precisely tuned stimuli might one day offer relief. An unexpected music video sets the stage for some illuminating science.
     {{< /hextra/hero-subtitle >}}
 </div>
 
-Visual hallucinations in migraine often consist of geometric zigzag patterns and can be explained by the foreign activation of specific nerve cells – edge and motion detectors. Conversely, flickering light flashes of a certain shape can overstimulate these specialized brain cells and trigger a migraine in the first place. So which stimuli should those affected avoid? And can other stimuli even have a therapeutic effect and reduce an impending sensory overload?
 
-These questions – visual triggers, visual hallucinations, and my research on therapeutic approaches using visual stimulation for migraine – can be explained using the hip-hop music track Migraine1 by the group ArtOfficial. There are three closely interconnected problems:
-(1) Which neural networks cause people with migraines to be hypersensitive to specific light stimuli?
-(2) How do simple visual hallucinations in the form of zigzag patterns arise during a migraine?
-And (3), the central question: how could an acute therapy based on light stimuli be researched?
+Visual hallucinations in migraine often take the form of geometric zigzag patterns. These can be explained by the aberrant activation of specific neurons—namely, edge and motion detectors. In turn, flickering light flashes with particular spatial and temporal properties can overstimulate these same neurons, potentially triggering a migraine in the first place.
 
-One thing is already certain: the aforementioned hip-hop music video is therapeutically completely unsuitable.
+This raises two pressing questions:
+Which visual stimuli should people with migraine avoid?
+And more provocatively: Could certain stimuli, if applied with precision, have a therapeutic effect—perhaps even preventing sensory overload?
 
-In a follow-up post next week, I’ll tackle just the first question: Why are migraine sufferers hypersensitive to certain visual stimuli? It will be a post about the receptive fields of specialized nerve cells in the visual cortex and their arrangement into what is called a cortical pinwheel map. This pinwheel map is another example of the many topographic maps in the brain—of which we’ve just gotten to know one with somatotopy, better known as the homunculus.
+To explore these questions—visual triggers, hallucinations, and the idea of using visual stimulation as a therapeutic tool—I’ll use a rather unexpected example: the hip-hop track »Migraine« by ArtOfficialMusic. It serves as a playful anchor for a series of three tightly connected challenges:
 
-So, these next three posts are closely connected to the last one, even though the shift in sensory modality—from feeling (somatosensory sense) to seeing (visual sense)—might make the connection less obvious at first glance. Hence this note.
+- What neural networks make migraineurs hypersensitive to specific visual stimuli?
+- How do simple visual hallucinations—like zigzag patterns—emerge during a migraine attack?
+- And most importantly: Could light itself, under the right conditions, become a therapeutic tool?
 
-The next post on visual receptive fields will be followed by post (2) on the Hip-Hop Neuroscience Fusion, in which the close relationship between visual triggers and visual hallucinations will be explained. This series – “Visual Triggers, Hallucinations, and Therapy” – will conclude with post (3), offering a forward-looking perspective on the scientific foundations rooted in theoretical physics that play into the central clinical question raised here regarding visual therapy. As stated in the blog header under “Grey Matter”: connections between physics, neurology, and medical technology – my core theme.
+One point can be stated upfront: the »Migraine« music video is not therapeutic. 
 
-Since these posts probably won’t appear in direct sequence, I’ve written this one as both an introduction and a connecting piece. I’ll link to all the subsequent posts from here once they’re online.
+{{< youtube ywWDFqWEYkE >}}
+
+
+In one post of this series, I take up the first question: Why are people with migraine so sensitive to certain visual patterns? That discussion leads into the architecture of the visual cortex—specifically, the receptive fields of neurons and their elegant arrangement into so-called pinwheel maps. Like the better-known somatotopic map (the "homunculus") in the somatosensory system, pinwheel maps are one of the brain’s many topographic blueprints.
+→ [Link will be added here once republished.]
+
+This post marks a shift in sensory modality—from touch to vision—which might make the connection to the earlier discussion less obvious at first glance. But conceptually, the link remains strong. That’s why I’m offering this brief roadmap.
+
+A second post in the series explores the Hip-Hop Neuroscience Fusion. It shows how visual triggers and hallucinations may arise from the same cortical architecture, and uses a music video as a provocative entry point to bridge perception and pathophysiology.
+→ [Link will be added here once republished.]
+
+The final post—Visual Triggers, Hallucinations, and Therapy—moves from explanation to exploration. It outlines a forward-looking view of potential acute treatments based on visual stimulation and introduces foundational ideas from theoretical physics. This brings us back to the blog’s central theme, as described in the Gray Matter header: bridging physics, neurology, and medical technology.
+→ [Link will be added here once republished.]
+
+Since the posts are being revised and republished in stages, this entry serves both as an introduction and a connective piece. Once all are available, links will be added here for easy navigation.
+
+To stay updated as each part is released, consider [subscribing to the newsletter](/contact/)—it's the easiest way to catch new posts as they go live.
