@@ -35,10 +35,10 @@ In one post of this series, I take up the first question: Why are people with mi
 
 This post marks a shift in sensory modality—from touch to vision—which might make the connection to the earlier discussion less obvious at first glance. But conceptually, the link remains strong. That’s why I’m offering this brief roadmap.
 
-A second post in the series explores the Hip-Hop Neuroscience Fusion. It shows how visual triggers and hallucinations may arise from the same cortical architecture, and uses a music video as a provocative entry point to bridge perception and pathophysiology.
+A second post in the series explores the _Hip-Hop Neuroscience Fusion_. It shows how visual triggers and hallucinations may arise from the same cortical architecture, and uses a music video as a provocative entry point to bridge perception and pathophysiology.
 → [Link will be added here once republished.]
 
-The final post—Visual Triggers, Hallucinations, and Therapy—moves from explanation to exploration. It outlines a forward-looking view of potential acute treatments based on visual stimulation and introduces foundational ideas from theoretical physics. This brings us back to the blog’s central theme, as described in the Gray Matter header: bridging physics, neurology, and medical technology.
+The final post—_Visual Triggers, Hallucinations, and Therapy_—moves from explanation to exploration. It outlines a forward-looking view of potential acute treatments based on visual stimulation and introduces foundational ideas from theoretical physics. This brings us back to the blog’s central theme, as described in the _Gray Matters_ header: **bridging physics, neurology, and medical technology**.
 → [Link will be added here once republished.]
 
 Since the posts are being revised and republished in stages, this entry serves both as an introduction and a connective piece. Once all are available, links will be added here for easy navigation.
