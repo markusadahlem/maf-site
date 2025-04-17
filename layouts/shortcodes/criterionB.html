@@ -124,6 +124,11 @@
     </div>
 </form>
 
+<form id="criterionBForm">
+    <!-- (Checkboxes wie bei dir belassen) -->
+    <!-- ... -->
+</form>
+
 <a id="nextLinkB" class="btn" style="display: none">Next</a>
 <p id="resultB" style="font-weight: bold; margin-top: 1rem"></p>
 
@@ -207,10 +212,16 @@
             const onlyNone = selected.length === 1 && hasNone;
 
             if (hasCoreAura && hasOther) {
+                const queryParams = new URLSearchParams();
+                selected.forEach((val) => queryParams.append("modality", val));
+
                 resultB.textContent =
                     "ℹ️ You selected a known aura modality along with an “Other” symptom. Let’s clarify the additional symptom to make sure it fits your aura experience.";
                 resultB.style.color = "darkorange";
-                nextLinkB.href = "/aura-symptom-check/plus-other-modality/";
+
+                nextLinkB.href =
+                    "/aura-symptom-check/plus-other-modality-summary/?" +
+                    queryParams.toString();
                 nextLinkB.style.display = "inline-block";
                 nextLinkB.textContent = "Clarify “Other” Symptoms";
             } else if (hasCoreAura) {

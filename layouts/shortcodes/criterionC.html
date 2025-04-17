@@ -134,6 +134,12 @@
         const score = answers.filter((a) => a === true).length;
         const passed = score >= 3;
 
+        // Speichere die Antworten
+        localStorage.setItem(
+            "auraCharacteristicsAnswers",
+            JSON.stringify(answers),
+        );
+
         // Redirect directly to the new page based on the result.
         window.location.href = passed
             ? "/aura-symptom-check/criterioncmeet/"
