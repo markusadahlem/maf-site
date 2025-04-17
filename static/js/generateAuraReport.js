@@ -103,6 +103,30 @@ function buildPlusOtherContent(doc, data, yStart) {
   doc.text(doc.splitTextToSize(text, 170), 25, y + 15);
 }
 
+function drawSelectedModalities(doc, modalities, yStart = 35) {
+  doc.setFont("helvetica", "bold");
+  doc.setFontSize(11);
+  doc.text("Selected Aura Modalities", 20, yStart);
+
+  doc.setFont("helvetica", "normal");
+  doc.setFontSize(10);
+
+  const labels = {
+    visual: "Visual",
+    sensory: "Sensory",
+    speech: "Speech and/or Language",
+    motor: "Motor",
+    brainstem: "Brainstem",
+    retinal: "Retinal",
+    other: "Other",
+  };
+
+  const items = modalities.map((m) => `• ${labels[m] || m}`);
+  doc.text(items, 25, yStart + 8);
+
+  return yStart + 8 + items.length * 6;
+}
+
 function buildStandardAuraContent(doc, data, yStart) {
   const char = data.characteristics || {};
   let y = yStart;
@@ -233,6 +257,8 @@ async function generateAuraReport(flowType, data) {
 
   await drawHeader(doc);
   let y = drawWarningBlock(doc);
+
+  //y = drawSelectedModalities(doc, data.modalities || [], y + 5);
 
   if (flowType === "other-only") {
     buildOtherOnlyContent(doc, data, y);

@@ -124,11 +124,6 @@
     </div>
 </form>
 
-<form id="criterionBForm">
-    <!-- (Checkboxes wie bei dir belassen) -->
-    <!-- ... -->
-</form>
-
 <a id="nextLinkB" class="btn" style="display: none">Next</a>
 <p id="resultB" style="font-weight: bold; margin-top: 1rem"></p>
 
@@ -194,6 +189,11 @@
             const selected = Array.from(allBoxes)
                 .filter((cb) => cb.checked)
                 .map((cb) => cb.value);
+
+            localStorage.setItem(
+                "selectedModalities",
+                JSON.stringify(selected),
+            );
 
             const hasCoreAura = selected.some((v) =>
                 [

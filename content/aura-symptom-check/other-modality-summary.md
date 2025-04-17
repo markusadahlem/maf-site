@@ -7,7 +7,6 @@ sidebar:
   exclude: true
 ---
 
-
 <h2>Describe your other aura symptom</h2>
 <p>You selected “Other” as your only aura symptom. Please describe what you experienced so we can generate a report.</p>
 
@@ -15,20 +14,37 @@ sidebar:
 
 <button id="generatePdfBtn" class="btn">Download Aura Report (PDF)</button>
 
+<!-- Required JS dependencies -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="/js/generateAuraReport.js"></script>
+
 <script>
-    document.getElementById("generatePdfBtn").addEventListener("click", () => {
-        const { jsPDF } = window.jspdf;
-        const doc = new jsPDF();
-        const desc = document.getElementById("otherDescription").value;
+  document.getElementById("generatePdfBtn").addEventListener("click", async () => {
+    const desc = document.getElementById("otherDescription").value;
 
-        doc.setFontSize(12);
-        doc.text("Migraine Aura Symptom Report", 20, 20);
-        doc.setFontSize(10);
-        doc.text("Reported Aura Modality: Other", 20, 30);
-        doc.text("Description:", 20, 40);
-        doc.text(desc || "[No description entered]", 20, 50, { maxWidth: 170 });
+    const data = {
+      flowType: "other-only",
+      modalities: ["other"],
+      otherDescription: desc
+    };
 
-        doc.save("aura_report.pdf");
-    });
+    await generateAuraReport("other-only", data);
+  });
 </script>
+
+<style>
+  .btn {
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+  }
+
+  .btn:hover {
+    background-color: #0056b3;
+  }
+</style>

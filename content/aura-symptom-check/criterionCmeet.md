@@ -23,37 +23,33 @@ If your symptoms are **new, unusual, worsening**, or occur **alongside other hea
 
 <button class="btn" id="generatePdf">Download Aura Report</button>
 
+
 <script>
   document.getElementById("generatePdf").addEventListener("click", async () => {
     const answers = JSON.parse(localStorage.getItem("auraCharacteristicsAnswers") || "[]");
 
-    const labels = [
-      "Gradual symptom (≥5 min)",
-      "Multiple symptoms in succession",
-      "Duration 5–60 min",
-      "Unilateral symptom",
-      "Positive symptom",
-      "Headache within 60 min"
-    ];
-
-    const characteristics = labels.map((label, i) => {
-      return `${label}: ${answers[i] ? "Yes" : "No"}`;
-    });
+    const modalities = JSON.parse(localStorage.getItem("selectedModalities") || "[]");
+    //const params = new URLSearchParams(window.location.search);
+    //const modalities = params.getAll("modality");
 
     const data = {
       flowType: "standard",
-      modalities: ["visual"], // 🟡 später dynamisch
+      modalities,
       characteristics: {
-        progression: answers[0] == true,
-        succession: answers[1] == true,
-        duration: answers[2] == true,
-        laterality: answers[3] == true,
-        positive: answers[4] == true,
-        headacheOnset: answers[5] == true,
+        progression: answers[0] === true,
+        succession: answers[1] === true,
+        duration: answers[2] === true,
+        laterality: answers[3] === true,
+        positive: answers[4] === true,
+        headacheOnset: answers[5] === true,
       }
     };
+    
 
     await generateAuraReport("standard", data); 
+    localStorage.removeItem("selectedModalities");
+    localStorage.removeItem("auraCharacteristicsAnswers"); // optional but consistent
+
   });
 </script>
 
