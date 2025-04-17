@@ -14,4 +14,4 @@ sidebar:
     Does the additional symptom you experienced resemble a known aura modality
     (e.g., visual, sensory, speech, motor, brainstem, or retinal)?
 </p>
-{{< criterionB-other-modility >}}
+{{< criterionB-plus-other-modility >}}

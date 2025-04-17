@@ -18,21 +18,26 @@ Every migraine sign counts
 {{< /hextra/hero-headline >}}
 </div>
 
+<div class="hx-mb-12">
+{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Migraine isn’t just a headache—it’s a complex condition with symptoms that matter for diagnosis, treatment, and your quality of life.
+    {{< /hextra/hero-subtitle >}}
+</div>
+
 
 
 
 {{< hextra/hero-badge link="aura-symptom-check/modality">}}
   <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400"></div>
-  <span class="hx-text-lg">Check your symptoms</span>
+  <span class="hx-text-lg">Get your personalized migraine report</span>
   {{< icon name="arrow-circle-right" attributes="height=32" >}}
 {{< /hextra/hero-badge >}}
 
 
-
 <div class="hx-mb-12">
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Migraine isn’t just a headache—it’s a complex condition with symptoms that matter for diagnosis, treatment, and your quality of life.
+{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Understand your symptoms. Share with your doctor.
     {{< /hextra/hero-subtitle >}}
 </div>
+
 
 
 
@@ -42,7 +47,7 @@ The migraine aura is a set of neurological symptoms that can affect vision, spee
 
 
 
-<!-- 
+<!--
 # More Tests
 
 {{< hextra/hero-badge link="aura-o-mat">}}
@@ -68,7 +73,7 @@ The migraine aura is a set of neurological symptoms that can affect vision, spee
 
   {{< hextra/feature-card
     title="From Aura Symptoms ..."
-    subtitle="Our mission is to characterize all migraine symptoms by involving patients."
+    subtitle="We start by listening to patients — to map every migraine symptom, especially beyond headache."
     link="symptoms"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
     image="/images/teaser/roteRathausZigzag_cleanup.png"
@@ -80,7 +85,7 @@ The migraine aura is a set of neurological symptoms that can affect vision, spee
 
   {{< hextra/feature-card
     title="... via Migraine Art ..."
-    subtitle="Art may provide an adequate medium to express and communicate migraine experiences."
+    subtitle="Some express their migraine through art — one powerful voice among many."
     link="art"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
     image="/images/teaser/robinson_sacks-nov-1991.jpg"
@@ -91,7 +96,7 @@ The migraine aura is a set of neurological symptoms that can affect vision, spee
 
   {{< hextra/feature-card
     title="... to Digital Health."
-    subtitle="Patient-centered innovation — from understanding symptoms to enabling digital care."
+    subtitle="What we learn fuels digital health tools — created with and for those affected."
     link="digital-health"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
     image="/images/teaser/aura-o-mat-app-tbg.png"
@@ -100,7 +105,7 @@ The migraine aura is a set of neurological symptoms that can affect vision, spee
   >}}
 
 
-  
+
 <!--
 
   {{< hextra/feature-card
@@ -142,7 +147,7 @@ The migraine aura is a set of neurological symptoms that can affect vision, spee
 
 
 
- 
+
 
 
 
@@ -162,12 +167,12 @@ The migraine aura is a set of neurological symptoms that can affect vision, spee
 {{< /hextra/feature-grid >}}
 
 
-<div class="hx-mt-8"></div> 
+<div class="hx-mt-8"></div>
 
 
 <h2 class="hx-text-2xl hx-font-bold hx-mt-8">🧬 Science is our Foundation</h2>
 
 
 
-Every insight we share and every tool we build rests on a deep commitment to scientific evidence and neurological understanding. 
+Every insight we share and every tool we build rests on a deep commitment to scientific evidence and neurological understanding.
 [**Explore Our Science  →**](science-overview)
