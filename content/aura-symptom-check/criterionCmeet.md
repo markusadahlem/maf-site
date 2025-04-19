@@ -18,8 +18,8 @@ Neurological symptoms can have many different causes—some of them serious. Thi
 
 If your symptoms are **new, unusual, worsening**, or occur **alongside other health issues**, please **seek medical advice immediately**.
 
-<script src="/js/generateAuraReport.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="/js/generateAuraReport.js"></script>
 
 <button class="btn" id="generatePdf">Download Aura Report</button>
 
@@ -45,7 +45,7 @@ If your symptoms are **new, unusual, worsening**, or occur **alongside other hea
       }
     };
     
-
+    console.log("Modalities passed to PDF:", modalities);
     await generateAuraReport("standard", data); 
     localStorage.removeItem("selectedModalities");
     localStorage.removeItem("auraCharacteristicsAnswers"); // optional but consistent

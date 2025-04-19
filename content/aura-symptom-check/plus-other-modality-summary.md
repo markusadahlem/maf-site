@@ -10,8 +10,10 @@ sidebar:
 <!-- Libraries zuerst laden -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script src="/js/generateAuraReport.js"></script>
-
 <!-- Deine Seite -->
+
+<link rel="stylesheet" href="/css/symptom-check.css" />
+
 <h2>Review Your Aura Symptoms</h2>
 
 <p><strong>Selected typical modality:</strong> <span id="selectedTypical"></span></p>
@@ -21,22 +23,7 @@ sidebar:
 
 <button id="generatePdfBtn" class="btn">Download Combined Aura Report</button>
 
-<style>
-  .btn {
-    margin-top: 1rem;
-    padding: 0.6rem 1.2rem;
-    font-size: 1rem;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    background-color: #007bff;
-    color: white;
-  }
 
-  .btn:hover {
-    background-color: #0056b3;
-  }
-</style>
 
 <!-- Kombinierter Script-Block -->
 <script>

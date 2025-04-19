@@ -104,27 +104,36 @@ function buildPlusOtherContent(doc, data, yStart) {
 }
 
 function drawSelectedModalities(doc, modalities, yStart = 35) {
-  doc.setFont("helvetica", "bold");
-  doc.setFontSize(11);
+  // Header
+  doc.setFont("helvetica", "bold").setFontSize(11);
   doc.text("Selected Aura Modalities", 20, yStart);
 
-  doc.setFont("helvetica", "normal");
-  doc.setFontSize(10);
-
+  // Prepare for bullets
+  doc.setFont("helvetica", "normal").setFontSize(10);
   const labels = {
     visual: "Visual",
     sensory: "Sensory",
-    speech: "Speech and/or Language",
+    speech: "Speech",
     motor: "Motor",
     brainstem: "Brainstem",
     retinal: "Retinal",
     other: "Other",
   };
 
-  const items = modalities.map((m) => `• ${labels[m] || m}`);
-  doc.text(items, 25, yStart + 8);
+  // Compute actual line spacing:
+  const fontSize = doc.getFontSize(); // e.g. 10
+  const lineHeight = fontSize * doc.getLineHeightFactor(); // ≈11.5
 
-  return yStart + 8 + items.length * 6;
+  // Draw one bullet per line—and advance Y correctly:
+  let y = yStart + 8;
+  modalities.forEach((m) => {
+    const text = `• ${labels[m] || m}`;
+    doc.text(text, 25, y);
+    y += lineHeight;
+  });
+
+  // Return the true bottom of this block
+  return y;
 }
 
 function buildStandardAuraContent(doc, data, yStart) {
@@ -222,7 +231,10 @@ async function loadImageAsBase64(url) {
       ctx.drawImage(img, 0, 0);
       resolve(canvas.toDataURL("image/png"));
     };
-    img.onerror = reject;
+    img.onerror = (error) => {
+      console.error("Error loading image:", error);
+      reject(error);
+    };
     img.src = url;
   });
 }
@@ -258,7 +270,7 @@ async function generateAuraReport(flowType, data) {
   await drawHeader(doc);
   let y = drawWarningBlock(doc);
 
-  //y = drawSelectedModalities(doc, data.modalities || [], y + 5);
+  y = drawSelectedModalities(doc, data.modalities || [], y + 5);
 
   if (flowType === "other-only") {
     buildOtherOnlyContent(doc, data, y);
