@@ -7,11 +7,6 @@ sidebar:
   exclude: true
 ---
 
-<!-- Libraries zuerst laden -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-<script src="/js/generateAuraReport.js"></script>
-<!-- Deine Seite -->
-
 <link rel="stylesheet" href="/css/symptom-check.css" />
 
 <h2>Review Your Aura Symptoms</h2>
@@ -23,42 +18,7 @@ sidebar:
 
 <button id="generatePdfBtn" class="btn">Download Combined Aura Report</button>
 
-
-
-<!-- Kombinierter Script-Block -->
-<script>
-  document.addEventListener("DOMContentLoaded", async () => {
-    const params = new URLSearchParams(window.location.search);
-    const modalities = params.getAll("modality");
-
-    const typical = modalities.filter((m) =>
-      ["visual", "sensory", "speech", "motor", "brainstem", "retinal"].includes(m)
-    );
-    const hasOther = modalities.includes("other");
-
-    document.getElementById("selectedTypical").textContent = typical.join(", ") || "[none]";
-
-    if (!hasOther || typical.length === 0) {
-      alert("Something went wrong — expected both 'Other' and a typical modality.");
-      return;
-    }
-
-    const btn = document.getElementById("generatePdfBtn");
-    btn.addEventListener("click", async () => {
-      const otherText = document.getElementById("otherDescription").value;
-
-      const data = {
-        flowType: "plus-other",
-        modalities: [...typical, "other"],
-        otherDescription: otherText
-      };
-
-      if (typeof generateAuraReport !== "function") {
-        alert("generateAuraReport() not loaded.");
-        return;
-      }
-
-      await generateAuraReport(data.flowType, data);
-    });
-  });
-</script>
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="/js/generateAuraReport.js"></script>
+<script src="/js/plusOther.js"></script>
