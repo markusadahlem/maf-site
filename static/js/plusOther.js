@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", async () => {
-  const params = new URLSearchParams(window.location.search);
-  const modalities = params.getAll("modality");
+  const modalities = JSON.parse(
+    localStorage.getItem("selectedModalities") || "[]",
+  );
 
   const typical = modalities.filter((m) =>
     ["visual", "sensory", "speech", "motor", "brainstem", "retinal"].includes(
@@ -12,28 +13,19 @@ document.addEventListener("DOMContentLoaded", async () => {
   document.getElementById("selectedTypical").textContent =
     typical.join(", ") || "[none]";
 
-  if (!hasOther || typical.length === 0) {
-    alert(
-      "Something went wrong — expected both 'Other' and a typical modality.",
-    );
-    return;
-  }
-
   const btn = document.getElementById("generatePdfBtn");
-  btn.addEventListener("click", async () => {
+
+  btn.addEventListener("click", () => {
     const otherText = document.getElementById("otherDescription").value;
 
-    const data = {
-      flowType: "plus-other",
-      modalities: [...typical, "other"],
-      otherDescription: otherText,
-    };
+    // Save inputs to localStorage so generateAuraReport can use it later
+    localStorage.setItem(
+      "selectedModalities",
+      JSON.stringify([...typical, "other"]),
+    );
+    localStorage.setItem("otherDescription", otherText);
 
-    if (typeof generateAuraReport !== "function") {
-      alert("generateAuraReport() not loaded.");
-      return;
-    }
-
-    await generateAuraReport(data.flowType, data);
+    // Redirect to the next step
+    window.location.href = "/aura-symptom-check/aura-characteristics/";
   });
 });

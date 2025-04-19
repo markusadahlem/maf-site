@@ -27,14 +27,13 @@ If your symptoms are **new, unusual, worsening**, or occur **alongside other hea
 <script>
   document.getElementById("generatePdf").addEventListener("click", async () => {
     const answers = JSON.parse(localStorage.getItem("auraCharacteristicsAnswers") || "[]");
-
     const modalities = JSON.parse(localStorage.getItem("selectedModalities") || "[]");
-    //const params = new URLSearchParams(window.location.search);
-    //const modalities = params.getAll("modality");
+    const otherDescription = localStorage.getItem("otherDescription") || "";
 
     const data = {
       flowType: "standard",
       modalities,
+      otherDescription,  // ✅ Freitext hinzufügen
       characteristics: {
         progression: answers[0] === true,
         succession: answers[1] === true,
@@ -44,12 +43,10 @@ If your symptoms are **new, unusual, worsening**, or occur **alongside other hea
         headacheOnset: answers[5] === true,
       }
     };
-    
-    console.log("Modalities passed to PDF:", modalities);
-    await generateAuraReport("standard", data); 
-    localStorage.removeItem("selectedModalities");
-    localStorage.removeItem("auraCharacteristicsAnswers"); // optional but consistent
 
+    console.log("🧪 Testdaten an PDF:", data);
+    await generateAuraReport("standard", data);
+    localStorage.clear();
   });
 </script>
 

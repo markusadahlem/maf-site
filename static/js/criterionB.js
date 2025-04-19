@@ -49,8 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
       resultB.style.color = "darkorange";
 
       nextLinkB.href =
-        "/aura-symptom-check/plus-other-modality-summary/?" +
-        queryParams.toString();
+        "/aura-symptom-check/plus-other-modality-add-description/?";
       nextLinkB.style.display = "inline-block";
       nextLinkB.textContent = "Clarify “Other” Symptoms";
     } else if (hasCoreAura) {
@@ -65,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
       resultB.style.color = "darkorange";
       nextLinkB.href = "/aura-symptom-check/other-modality/";
       nextLinkB.style.display = "inline-block";
-      nextLinkB.textContent = "Clarify Other Symptoms";
+      nextLinkB.textContent = "Clarify “Other” Symptoms";
     } else if (onlyNone) {
       resultB.textContent = "❌ No aura symptoms reported.";
       resultB.style.color = "red";
