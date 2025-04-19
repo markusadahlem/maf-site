@@ -144,15 +144,28 @@ function buildStandardAuraContent(doc, data, yStart) {
   y += 8;
 
   fields.forEach((item) => {
-    const answerText = item.value ? "Yes" : "No";
-    const color = item.value ? [0, 150, 0] : [200, 0, 0];
+    if (typeof item.value !== "boolean") {
+      throw new Error(
+        `Invalid value for "${item.label}": must be true or false.`,
+      );
+    }
 
+    const answerText = item.value ? "Yes" : "No";
+
+    // Label
     doc.setFont("helvetica", "bold").setFontSize(10).setTextColor(0);
     doc.text(`${item.label}:`, 20, y);
 
-    doc.setFont("helvetica", "normal").setTextColor(...color);
+    // Antwort (farbig)
+    if (item.value) {
+      doc.setTextColor(0, 150, 0);
+    } else {
+      doc.setTextColor(200, 0, 0);
+    }
+    doc.setFont("helvetica", "normal");
     doc.text(answerText, 55, y);
 
+    // Beschreibung
     doc.setFontSize(9).setTextColor(0);
     const lines = doc.splitTextToSize(item.text, 170);
     doc.text(lines, 25, y + 5);
@@ -161,12 +174,19 @@ function buildStandardAuraContent(doc, data, yStart) {
   });
 
   const passed = fields.filter((f) => f.value).length;
+
   y += 5;
   doc.setFont("helvetica", "bold").setFontSize(11);
-  doc.setTextColor(passed >= 3 ? [0, 150, 0] : [200, 0, 0]);
+  if (passed >= 3) {
+    doc.setTextColor(0, 150, 0);
+  } else {
+    doc.setTextColor(200, 0, 0);
+  }
+
   const summary = `You meet ${passed} out of 6 clinical characteristics for migraine aura (C criterion).`;
   doc.text(doc.splitTextToSize(summary, 170), 20, y);
-  doc.setTextColor(0);
+
+  doc.setTextColor(0); // Reset
 }
 
 async function loadImageAsBase64(url) {
