@@ -53,6 +53,33 @@ function drawWarningBlock(doc, y = 35) {
   return y + 10;
 }
 
+function drawSelectedModalities(doc, modalities = [], y = 35) {
+  const labels = {
+    visual: "Visual",
+    sensory: "Sensory",
+    speech: "Speech",
+    motor: "Motor",
+    brainstem: "Brainstem",
+    retinal: "Retinal",
+    other: "Other",
+  };
+
+  doc.setFont("helvetica", "bold").setFontSize(11);
+  doc.text("Selected Aura Modalities", 20, y);
+  y += 8;
+
+  doc.setFont("helvetica", "normal").setFontSize(10);
+  const lineHeight = doc.getFontSize() * doc.getLineHeightFactor();
+
+  modalities.forEach((m) => {
+    const label = `• ${labels[m] || m}`;
+    doc.text(label, 25, y);
+    y += lineHeight;
+  });
+
+  return y;
+}
+
 async function drawModalityGrid(doc, modalities = [], y = 35) {
   const all = ["visual", "sensory", "speech", "motor", "brainstem", "retinal"];
   const labels = {
@@ -66,9 +93,9 @@ async function drawModalityGrid(doc, modalities = [], y = 35) {
   const x0 = 20,
     cols = 3,
     w = 40,
-    h = 20,
+    h = 10,
     gapX = 55,
-    gapY = 50;
+    gapY = 25;
   doc
     .setFont("helvetica", "bold")
     .setFontSize(11)
@@ -215,7 +242,8 @@ async function generateAuraReport(flowType, data) {
 
   await drawHeader(doc);
   let y = drawWarningBlock(doc);
-  y = await drawModalityGrid(doc, data.modalities || [], y + 5);
+  //y = await drawModalityGrid(doc, data.modalities || [], y + 5);
+  y = drawSelectedModalities(doc, data.modalities || [], y + 5);
 
   if ((data.modalities || []).includes("other")) {
     const text = data.otherDescription || "[No description provided]";

@@ -1,0 +1,67 @@
+<form id="motorAuraForm">
+    <fieldset>
+        <legend>
+            <strong
+                >Have you ever experienced weakness or paralysis before or
+                during a headache?</strong
+            >
+        </legend>
+        <label
+            ><input type="radio" name="motor-weakness" value="yes" /> Yes</label
+        ><br />
+        <label><input type="radio" name="motor-weakness" value="no" /> No</label
+        ><br />
+        <label
+            ><input type="radio" name="motor-weakness" value="unsure" />
+            Unsure</label
+        >
+    </fieldset>
+
+    <div id="motorLocationsSection" style="margin-top: 1rem; display: none">
+        <p><strong>If “Yes,” where? (Select all that apply)</strong></p>
+        <label
+            ><input type="checkbox" name="motor-location" value="Arm or hand" />
+            Arm or hand</label
+        ><br />
+        <label
+            ><input type="checkbox" name="motor-location" value="Leg or foot" />
+            Leg or foot</label
+        ><br />
+        <label
+            ><input type="checkbox" name="motor-location" value="Face" />
+            Face</label
+        ><br />
+        <label
+            ><input type="checkbox" name="motor-location" value="Other" /> Other
+            motor weakness</label
+        >
+
+        <div style="margin-top: 0.5rem">
+            <label for="motor-other"
+                ><strong>Describe other motor weakness (if any):</strong></label
+            ><br />
+            <textarea id="motor-other" rows="3" style="width: 100%"></textarea>
+        </div>
+    </div>
+
+    <br />
+    <button type="button" class="btn" id="continueBtn">Continue</button>
+</form>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const yesNoRadios = document.querySelectorAll(
+            'input[name="motor-weakness"]',
+        );
+        const locationSection = document.getElementById(
+            "motorLocationsSection",
+        );
+
+        yesNoRadios.forEach((r) => {
+            r.addEventListener("change", () => {
+                locationSection.style.display =
+                    r.value === "yes" ? "block" : "none";
+            });
+        });
+    });
+</script>

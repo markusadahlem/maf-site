@@ -1,0 +1,10 @@
+<div class="question-block">
+  <p><strong>{{ .Get "question" }}</strong></p>
+  {{ $delimiter := or (.Get "delimiter") "|" }}
+  {{ range $option := split (.Get "options") $delimiter }}
+    <label>
+      <input type="checkbox" name="{{ $.Get "name" }}" value="{{ trim $option " " }}">
+      {{ trim $option " " }}
+    </label><br>
+  {{ end }}
+</div>
