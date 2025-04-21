@@ -1,14 +1,16 @@
 ---
-title: "Brainstem Aura"
-description: "Step 2.6 – Select symptoms of brainstem involvement during aura."
+title: ""
+description: ""
 date: 2025-04-19
 ---
 
-## 2.6 Brainstem Aura
+## Other unusual symptoms 
 
-**Have you experienced any of the following reversible brainstem symptoms before or during a headache?**  
+**Have you experienced any of the following symptoms?**  
 _(Select all that apply.)_
 
-{{< brainstem-aura-form >}}
+<link rel="stylesheet" href="/css/symptom-check.css">
 
-<script src="/js/brainstemAuraStep.js"></script>
+{{< modality/brainstem-aura-form >}}
+
+<script src="/js/modality/brainstemAuraStep.js"></script>

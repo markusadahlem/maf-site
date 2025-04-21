@@ -1,12 +1,15 @@
 ---
-title: "Visual Aura"
+title: ""
 description: "Step 2.1 – Select visual symptoms you’ve experienced before or during a headache."
 date: 2025-04-19
 ---
 
-## 2.1 Visual Aura
+## Visual disturbances
 
-Select any visual disturbances you have ever experienced **before or during a headache**.
+**Please select any visual disturbances you have experienced,or choose ‘_None of the above_.’**
 
-{{< visual-aura-form >}}
-<script src="/js/visualAuraStep.js"></script>
+<link rel="stylesheet" href="/css/symptom-check.css">
+
+{{< modality/visual-aura-form >}}
+
+<script src="/js/modality/visualAuraStep.js"></script>

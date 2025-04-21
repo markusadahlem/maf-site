@@ -8,7 +8,7 @@
                 name="brainstemSymptoms"
                 value="dysarthria"
             />
-            Dysarthria (slurred speech)</label
+            Slurred speech (Dysarthria)</label
         ><br />
         <label
             ><input type="checkbox" name="brainstemSymptoms" value="vertigo" />
@@ -24,15 +24,15 @@
                 name="brainstemSymptoms"
                 value="hypacusis"
             />
-            Hypacusis (reduced hearing)</label
+            Reduced hearing (Hypacusis)</label
         ><br />
         <label
             ><input type="checkbox" name="brainstemSymptoms" value="diplopia" />
-            Diplopia (double vision)</label
+            Double vision (Diplopia)</label
         ><br />
         <label
             ><input type="checkbox" name="brainstemSymptoms" value="ataxia" />
-            Ataxia (not due to numbness)</label
+            Loss of Coordination or Balance (Ataxia)</label
         ><br />
         <label
             ><input
@@ -40,20 +40,26 @@
                 name="brainstemSymptoms"
                 value="consciousness"
             />
-            Decreased consciousness (GCS ≤13)</label
+            Decreased Consciousness: (e.g., drowsiness, confusion)</label
         ><br />
-
-        <label id="brainstemOtherLabel"
-            ><input type="checkbox" name="brainstemSymptoms" value="other" />
-            Other brainstem symptoms</label
+        <label id="brainstemOtherLabel">
+            <input type="checkbox" name="brainstemSymptoms" value="other" />
+            Other Unusual Symptoms </label
         ><br /><br />
+
+        <!-- ✅ New "none" option -->
+        <label id="brainstemNoneLabel">
+            <input type="checkbox" name="brainstemSymptoms" value="none" />
+            None of the above </label
+        ><br />
 
         <label
             id="brainstemOtherTextLabel"
             for="brainstemOtherText"
             style="display: none"
-            ><strong>Other (please describe below):</strong></label
         >
+            <strong>Other (please describe below):</strong>
+        </label>
         <textarea
             id="brainstemOtherText"
             rows="2"

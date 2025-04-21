@@ -1,13 +1,15 @@
 ---
-title: "Sensory Aura"
+title: ""
 description: "Step 2.3 – Select any sensory disturbances you've experienced."
 date: 2025-04-19
 ---
 
-## 2.3 Sensory Aura
+## Sensory disturbances
 
-**Select any sensory (touch) disturbances you have ever experienced before or during a headache.**
+**Select any sensory (touch) disturbances you have experienced.**
 
-{{< sensory-aura-form >}}
+<link rel="stylesheet" href="/css/symptom-check.css">
 
-<script src="/js/sensoryAuraStep.js"></script>
+{{< modality/sensory-aura-form >}}
+
+<script src="/js/modality/sensoryAuraStep.js"></script>

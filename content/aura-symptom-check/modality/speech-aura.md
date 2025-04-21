@@ -1,13 +1,14 @@
 ---
-title: "Speech and Language Aura"
+title: ""
 description: "Step 2.4 – Describe any speech or language difficulties you experienced."
 date: 2025-04-19
 ---
 
-## 2.4 Speech and/or Language Aura
+## Speech and/or language difficulties
 
-**Select any speech or language difficulties you have ever experienced before or during a headache.**
+**Select any speech or language difficulties you have experienced.**
 
+<link rel="stylesheet" href="/css/symptom-check.css">
 
-{{< speech-aura-form >}}
-<script src="/js/speechAuraStep.js"></script>
+{{< modality/speech-aura-form >}}
+<script src="/js/modality/speechAuraStep.js"></script>

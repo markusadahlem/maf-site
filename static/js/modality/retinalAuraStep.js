@@ -1,6 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("retinalAuraForm");
   const nextBtn = document.getElementById("nextRetinalBtn");
+  const radios = form.querySelectorAll('input[name="retinalAura"]');
+
+  function updateContinueVisibility() {
+    const isSelected = form.querySelector('input[name="retinalAura"]:checked');
+    nextBtn.style.display = isSelected ? "inline-block" : "none";
+  }
+
+  // Check on load in case of pre-selection
+  updateContinueVisibility();
+
+  // Add event listeners to all radio buttons
+  radios.forEach((radio) =>
+    radio.addEventListener("change", updateContinueVisibility),
+  );
 
   nextBtn.addEventListener("click", () => {
     const selected = form.querySelector('input[name="retinalAura"]:checked');
@@ -10,15 +24,13 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // ✅ Store answer in unified structure
     const data = JSON.parse(localStorage.getItem("criterionBAnswers") || "{}");
     data.retinal = {
       selected: [selected.value],
-      description: "", // Not applicable for this step
+      description: "",
     };
     localStorage.setItem("criterionBAnswers", JSON.stringify(data));
 
-    // ✅ Update selectedModalities
     const currentModalities = JSON.parse(
       localStorage.getItem("selectedModalities") || "[]",
     );
@@ -30,7 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
       );
     }
 
-    // ▶️ Navigate to next step
     window.location.href = "/aura-symptom-check/modality/sensory-aura/";
   });
 });

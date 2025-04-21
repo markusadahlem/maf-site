@@ -1,11 +1,15 @@
 ---
-title: "Motor Aura"
-description: "Step 2.5 – Describe any motor-related symptoms like weakness or paralysis."
+title: ""
+description: ""
 date: 2025-04-19
 ---
 
-## 2.5 Motor Aura
+## Motor symptoms
 
-{{< motor-aura-form >}}
+**Have you ever experienced weakness or paralysis**
 
-<script src="/js/motorAuraStep.js"></script>
+<link rel="stylesheet" href="/css/symptom-check.css">
+
+{{< modality/motor-aura-form >}}
+
+<script src="/js/modality/motorAuraStep.js"></script>

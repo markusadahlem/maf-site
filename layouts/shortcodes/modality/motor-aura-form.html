@@ -1,11 +1,6 @@
 <form id="motorAuraForm">
     <fieldset>
-        <legend>
-            <strong
-                >Have you ever experienced weakness or paralysis before or
-                during a headache?</strong
-            >
-        </legend>
+        <legend></legend>
         <label
             ><input type="radio" name="motor-weakness" value="yes" /> Yes</label
         ><br />
@@ -37,31 +32,32 @@
         >
 
         <div style="margin-top: 0.5rem">
-            <label for="motor-other"
-                ><strong>Describe other motor weakness (if any):</strong></label
-            ><br />
-            <textarea id="motor-other" rows="3" style="width: 100%"></textarea>
+            <label id="motorOtherLabel" for="motor-other" style="display: none"
+                ><strong>Describe other motor weakness:</strong></label
+            >
+            <textarea
+                id="motor-other"
+                rows="2"
+                maxlength="80"
+                placeholder="Type here (max 80 characters)..."
+                style="
+                    width: 100%;
+                    border: 1px solid #ccc;
+                    padding: 6px;
+                    display: none;
+                "
+            ></textarea>
+            <div
+                id="motorCharCount"
+                style="font-size: 0.9em; color: #555; display: none"
+            >
+                0 / 80 characters
+            </div>
         </div>
     </div>
 
     <br />
-    <button type="button" class="btn" id="continueBtn">Continue</button>
+    <button type="button" class="btn" id="continueBtn" style="display: none">
+        Continue
+    </button>
 </form>
-
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const yesNoRadios = document.querySelectorAll(
-            'input[name="motor-weakness"]',
-        );
-        const locationSection = document.getElementById(
-            "motorLocationsSection",
-        );
-
-        yesNoRadios.forEach((r) => {
-            r.addEventListener("change", () => {
-                locationSection.style.display =
-                    r.value === "yes" ? "block" : "none";
-            });
-        });
-    });
-</script>
