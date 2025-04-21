@@ -2,29 +2,43 @@
     <fieldset>
         <legend><strong>Speech & Language Difficulties</strong></legend>
 
-        <label
-            ><input type="checkbox" name="speechSymptom" value="aphasia" />
-            Difficulty finding words (aphasia)</label
+        <label>
+            <input type="checkbox" name="speechSymptom" value="aphasia" />
+            Difficulty finding words (aphasia) </label
         ><br />
-        <label
-            ><input type="checkbox" name="speechSymptom" value="slurred" />
-            Slurred or garbled speech</label
+        <label>
+            <input type="checkbox" name="speechSymptom" value="slurred" />
+            Slurred or garbled speech </label
         ><br />
-        <label
-            ><input type="checkbox" name="speechSymptom" value="inability" />
-            Inability to speak or form sentences</label
+        <label>
+            <input type="checkbox" name="speechSymptom" value="inability" />
+            Inability to speak or form sentences </label
         ><br />
-        <label
-            ><input type="checkbox" name="speechSymptom" value="other" /> Other
-            speech/language changes (please describe below)</label
+        <label id="speechOtherLabel">
+            <input type="checkbox" name="speechSymptom" value="other" />
+            Other speech/language changes </label
         ><br />
     </fieldset>
 
     <br />
 
-    <label for="speechOtherText"><strong>Other (free-text):</strong></label
-    ><br />
-    <textarea id="speechOtherText" rows="3" style="width: 100%"></textarea>
+    <label for="speechOtherText" id="speechTextLabel" style="display: none"
+        ><strong>Other (please describe below):</strong></label
+    >
+    <textarea
+        id="speechOtherText"
+        rows="2"
+        maxlength="80"
+        placeholder="Type here (max 80 characters)..."
+        style="width: 100%; border: 1px solid #ccc; padding: 6px; display: none"
+    ></textarea>
+
+    <div
+        id="speechCharCount"
+        style="font-size: 0.9em; color: #555; display: none"
+    >
+        0 / 80 characters
+    </div>
 
     <br /><br />
     <button type="button" class="btn" id="nextSpeechBtn">Continue</button>

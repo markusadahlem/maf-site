@@ -1,38 +1,47 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const checkboxes = document.querySelectorAll(
-    'input[name="brainstemSymptoms"]',
+  const form = document.getElementById("brainstemAuraForm");
+  const otherBox = form.querySelector(
+    'input[name="brainstemSymptoms"][value="other"]',
   );
-  const textArea = document.getElementById("brainstemOtherDescription");
-  const continueBtn = document.getElementById("continueBtn");
+  const otherText = document.getElementById("brainstemOtherText");
+  const otherLabel = document.getElementById("brainstemOtherTextLabel");
+  const charCount = document.getElementById("brainstemCharCount");
+  const nextBtn = document.getElementById("nextBrainstemBtn");
 
-  checkboxes.forEach((cb) => {
-    cb.addEventListener("change", () => {
-      if (cb.value.includes("Other")) {
-        textArea.style.display = cb.checked ? "block" : "none";
-      }
-    });
+  otherBox.addEventListener("change", () => {
+    const show = otherBox.checked;
+    otherText.style.display = show ? "block" : "none";
+    otherLabel.style.display = show ? "block" : "none";
+    charCount.style.display = show ? "block" : "none";
   });
 
-  continueBtn.addEventListener("click", () => {
-    const selected = Array.from(checkboxes)
-      .filter((cb) => cb.checked)
-      .map((cb) => cb.value);
+  otherText.addEventListener("input", () => {
+    charCount.textContent = `${otherText.value.length} / 80 characters`;
+  });
 
-    const description = textArea?.value.trim() || "";
+  nextBtn.addEventListener("click", () => {
+    const checked = Array.from(
+      form.querySelectorAll('input[name="brainstemSymptoms"]:checked'),
+    ).map((cb) => cb.value);
+
+    const otherDesc = otherBox.checked ? otherText.value.trim() : "";
 
     const data = JSON.parse(localStorage.getItem("criterionBAnswers") || "{}");
     data.brainstem = {
-      selected,
-      description,
+      selected: checked,
+      description: otherDesc,
     };
     localStorage.setItem("criterionBAnswers", JSON.stringify(data));
 
-    const modalities = JSON.parse(
+    const currentModalities = JSON.parse(
       localStorage.getItem("selectedModalities") || "[]",
     );
-    if (!modalities.includes("brainstem")) {
-      modalities.push("brainstem");
-      localStorage.setItem("selectedModalities", JSON.stringify(modalities));
+    if (!currentModalities.includes("brainstem")) {
+      currentModalities.push("brainstem");
+      localStorage.setItem(
+        "selectedModalities",
+        JSON.stringify(currentModalities),
+      );
     }
 
     window.location.href = "/aura-symptom-check/modality-summary/";

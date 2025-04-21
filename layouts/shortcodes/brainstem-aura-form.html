@@ -1,0 +1,82 @@
+<form id="brainstemAuraForm">
+    <fieldset>
+        <legend><strong>Brainstem Symptoms</strong></legend>
+
+        <label
+            ><input
+                type="checkbox"
+                name="brainstemSymptoms"
+                value="dysarthria"
+            />
+            Dysarthria (slurred speech)</label
+        ><br />
+        <label
+            ><input type="checkbox" name="brainstemSymptoms" value="vertigo" />
+            Vertigo (spinning sensation)</label
+        ><br />
+        <label
+            ><input type="checkbox" name="brainstemSymptoms" value="tinnitus" />
+            Tinnitus (ringing in the ears)</label
+        ><br />
+        <label
+            ><input
+                type="checkbox"
+                name="brainstemSymptoms"
+                value="hypacusis"
+            />
+            Hypacusis (reduced hearing)</label
+        ><br />
+        <label
+            ><input type="checkbox" name="brainstemSymptoms" value="diplopia" />
+            Diplopia (double vision)</label
+        ><br />
+        <label
+            ><input type="checkbox" name="brainstemSymptoms" value="ataxia" />
+            Ataxia (not due to numbness)</label
+        ><br />
+        <label
+            ><input
+                type="checkbox"
+                name="brainstemSymptoms"
+                value="consciousness"
+            />
+            Decreased consciousness (GCS ≤13)</label
+        ><br />
+
+        <label id="brainstemOtherLabel"
+            ><input type="checkbox" name="brainstemSymptoms" value="other" />
+            Other brainstem symptoms</label
+        ><br /><br />
+
+        <label
+            id="brainstemOtherTextLabel"
+            for="brainstemOtherText"
+            style="display: none"
+            ><strong>Other (please describe below):</strong></label
+        >
+        <textarea
+            id="brainstemOtherText"
+            rows="2"
+            maxlength="80"
+            placeholder="Type here (max 80 characters)..."
+            style="
+                width: 100%;
+                border: 1px solid #ccc;
+                padding: 6px;
+                display: none;
+            "
+        ></textarea>
+
+        <div
+            id="brainstemCharCount"
+            style="font-size: 0.9em; color: #555; display: none"
+        >
+            0 / 80 characters
+        </div>
+    </fieldset>
+
+    <br />
+    <button type="button" class="btn" id="nextBrainstemBtn">Continue</button>
+</form>
+
+<script src="/js/brainstemAuraStep.js"></script>
