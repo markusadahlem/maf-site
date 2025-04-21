@@ -31,6 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // ▶️ Navigate to next step
-    window.location.href = "/aura-symptom-check/sensory-aura/";
+    window.location.href = "/aura-symptom-check/modality/sensory-aura/";
   });
 });

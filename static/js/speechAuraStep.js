@@ -37,6 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
       );
     }
 
-    window.location.href = "/aura-symptom-check/motor-aura/";
+    window.location.href = "/aura-symptom-check/modality/motor-aura/";
   });
 });

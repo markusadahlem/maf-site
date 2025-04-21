@@ -16,16 +16,30 @@
         ><br />
         <label
             ><input type="checkbox" name="sensorySymptom" value="other" /> Other
-            sensory changes (please describe below)</label
+            sensory changes</label
         ><br />
     </fieldset>
 
     <br />
 
-    <label for="sensoryOtherText"><strong>Other (free-text):</strong></label
-    ><br />
-    <textarea id="sensoryOtherText" rows="3" style="width: 100%"></textarea>
+    <label id="sensoryOtherLabel" for="sensoryOtherText"
+        ><strong>Other (please describe below):</strong></label
+    >
+    <textarea
+        id="sensoryOtherText"
+        rows="2"
+        maxlength="80"
+        placeholder="Type here (max 80 characters)..."
+        style="width: 100%; border: 1px solid #ccc; padding: 6px"
+    ></textarea>
 
+    <!-- Counter is hidden by default -->
+    <div
+        id="sensoryCharCount"
+        style="font-size: 0.9em; color: #555; display: none"
+    >
+        0 / 80 characters
+    </div>
     <br /><br />
     <button type="button" class="btn" id="nextSensoryBtn">Continue</button>
 </form>

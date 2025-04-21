@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (continueBtn) {
     continueBtn.addEventListener("click", () => {
       saveResponses();
-      window.location.href = "/aura-symptom-check/brainstem-aura/";
+      window.location.href = "/aura-symptom-check/modality/brainstem-aura/";
     });
   }
 });

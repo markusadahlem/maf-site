@@ -32,12 +32,26 @@
             visual phenomenon</label
         ><br />
 
-        <textarea
-            id="visualOtherDescription"
-            rows="3"
-            style="width: 100%; display: none"
-            placeholder="Please describe..."
-        ></textarea>
+        <div id="visualOtherWrapper" style="display: none">
+            <br />
+            <label id="svisualOtherLabel" for="visualOtherText"
+                ><strong>Other (please describe below):</strong></label
+            ><br />
+            <textarea
+                id="visualOtherText"
+                rows="2"
+                maxlength="80"
+                placeholder="Type here (max 80 characters)..."
+                style="width: 100%; border: 1px solid #ccc; padding: 6px"
+            ></textarea>
+
+            <div
+                id="visualCharCount"
+                style="font-size: 0.9em; color: #555; display: none"
+            >
+                0 / 80 characters
+            </div>
+        </div>
     </fieldset>
 
     <br />
