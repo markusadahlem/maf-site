@@ -10,6 +10,6 @@ date: 2025-04-19
 
 <link rel="stylesheet" href="/css/symptom-check.css">
 
-{{< modality/motor-aura-form >}}
+{{< aura-symptom-check/modality/motor-aura-form >}}
 
-<script src="/js/modality/motorAuraStep.js"></script>
+<script src="/js/aura-symptom-check/modality/motorAuraStep.js"></script>

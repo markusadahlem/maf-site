@@ -11,6 +11,6 @@ _(Select all that apply.)_
 
 <link rel="stylesheet" href="/css/symptom-check.css">
 
-{{< modality/brainstem-aura-form >}}
+{{< aura-symptom-check/modality/brainstem-aura-form >}}
 
-<script src="/js/modality/brainstemAuraStep.js"></script>
+<script src="/js/aura-symptom-check/modality/brainstemAuraStep.js"></script>

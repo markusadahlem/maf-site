@@ -10,5 +10,5 @@ date: 2025-04-19
 
 <link rel="stylesheet" href="/css/symptom-check.css">
 
-{{< modality/retinal-aura-form >}}
-<script src="/js/modality/retinalAuraStep.js"></script>
+{{< aura-symptom-check/modality/retinal-aura-form >}}
+<script src="/js/aura-symptom-check/modality/retinalAuraStep.js"></script>

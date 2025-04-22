@@ -11,6 +11,6 @@ date: 2025-04-19
 
 <link rel="stylesheet" href="/css/symptom-check.css">
 
-{{< modality/start-modality-form >}}
+{{< aura-symptom-check/demographic-information-form >}}
 
-<script src="/js/modality/startStep.js"></script>
+<script src="/js/demographic-information.js"></script>

@@ -10,6 +10,6 @@ date: 2025-04-19
 
 <link rel="stylesheet" href="/css/symptom-check.css">
 
-{{< modality/sensory-aura-form >}}
+{{< aura-symptom-check/modality/sensory-aura-form >}}
 
-<script src="/js/modality/sensoryAuraStep.js"></script>
+<script src="/js/aura-symptom-check/modality/sensoryAuraStep.js"></script>

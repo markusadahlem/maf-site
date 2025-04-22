@@ -12,6 +12,6 @@ date: 2025-04-19
 
 
 
-{{< modality/visual-aura-form >}}
+{{< aura-symptom-check/modality/visual-aura-form >}}
 
-<script src="/js/modality/visualAuraStep.js"></script>
+<script src="/js/aura-symptom-check/modality/visualAuraStep.js"></script>
