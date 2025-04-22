@@ -6,13 +6,13 @@ date: 2025-04-19
 
 ### Personalize Your Migraine Report
 
-**Which of these statements most closely matches your history?**
+**Have you ever had these different symptoms before?**
             
 
 <link rel="stylesheet" href="/css/symptom-check.css">
 
 
 
-{{< aura-symptom-check/acute-chronic/symptom-experience >}}
+{{< aura-symptom-check/acute-chronic/symptom-experience-2 >}}
 
 <script src="/js/aura-symptom-check/acute-chronic/symptom-experience.js"></script>
