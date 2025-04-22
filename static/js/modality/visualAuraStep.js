@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // 👉 Character counter
   otherText.addEventListener("input", () => {
     charCount.textContent = `${otherText.value.length} / 80 characters`;
+    charCount.style.display = otherText.value.length > 0 ? "block" : "none";
   });
 
   // 👉 Exclusive selection logic for "None"
@@ -62,8 +63,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const otherDesc = otherBox.checked ? otherText.value.trim() : "";
 
     const visualAura = {
-      symptoms: selected,
-      otherDescription: otherDesc,
+      selected,
+      description: otherDesc,
     };
 
     localStorage.setItem("visualAura", JSON.stringify(visualAura));
@@ -92,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (otherBox.checked) {
     noneBox.parentElement.style.display = "none";
     otherWrapper.style.display = "block";
-    charCount.style.display = "block";
+    charCount.style.display = otherText.value.length > 0 ? "block" : "none";
   }
 
   updateContinueVisibility();

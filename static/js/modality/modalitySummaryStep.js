@@ -1,15 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const currentModalities = JSON.parse(
-    localStorage.getItem("selectedModalities") || "[]",
-  );
-
-  console.log("✅ Modalities:", currentModalities);
-  console.log("🧪 visualAura:", localStorage.getItem("visualAura"));
-
   const output = document.getElementById("summaryOutput");
   const continueBtn = document.getElementById("continueBtn");
 
   const data = JSON.parse(localStorage.getItem("criterionBAnswers") || "{}");
+  const userInfo = JSON.parse(localStorage.getItem("userInfo") || "{}");
 
   if (!Object.keys(data).length) {
     output.innerHTML =
@@ -18,38 +12,119 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  const labels = {
-    visual: "Visual Aura",
-    retinal: "Retinal Aura",
-    sensory: "Sensory Aura",
-    speech: "Speech/Language Aura",
-    motor: "Motor Aura",
-    brainstem: "Brainstem Aura",
-  };
+  function formatList(items) {
+    if (items.length === 0) return "";
+    if (items.length === 1) return items[0];
+    if (items.length === 2) return `${items[0]} and ${items[1]}`;
+    return `${items.slice(0, -1).join(", ")}, and ${items.at(-1)}`;
+  }
 
-  const html = Object.entries(data)
-    .map(([modality, entry]) => {
-      const title = labels[modality] || modality;
-      const selectedItems = entry.selected || entry.symptoms || [];
-      const description = entry.description || entry.otherDescription || "";
+  function getPronouns(gender) {
+    const g = (gender || "").toLowerCase();
+    if (g === "male") return { subj: "He", poss: "his", label: "he/him" };
+    if (g === "female") return { subj: "She", poss: "her", label: "she/her" };
+    return { subj: "They", poss: "their", label: "they/them" };
+  }
 
-      const answers = selectedItems.map((v) => `<li>${v}</li>`).join("");
-      let descHTML = "";
-      if (description.trim()) {
-        descHTML = `<p><em>Other:</em> ${description.trim()}</p>`;
+  function generateNarrativeSummary(data, userInfo) {
+    const { subj, poss, label } = getPronouns(userInfo.gender);
+    const fullName = userInfo.name ? `${userInfo.name} (${label})` : subj;
+
+    const diagnosisYear = userInfo.diagnosisYear || "an unknown year";
+    const headacheDays =
+      userInfo.headacheDays !== undefined
+        ? `approximately ${userInfo.headacheDays} headache days per month`
+        : "frequent headaches";
+
+    const modalityMap = {
+      visual: "visual symptoms",
+      retinal: "retinal changes",
+      sensory: "sensory disturbances",
+      speech: "speech/language disturbances",
+      motor: "motor symptoms",
+      brainstem:
+        "other symptoms (usually summarised as brainstem or formerly basilar-typeaura)",
+    };
+
+    const summaryLines = [];
+
+    Object.entries(modalityMap).forEach(([key, label]) => {
+      const entry = data[key] || {};
+      const answers = entry.selected || entry.symptoms || [];
+      const hasNone =
+        answers.includes("none") ||
+        answers.includes("no") ||
+        answers.includes("unsure") ||
+        answers.length === 0;
+
+      if (hasNone) return;
+
+      const desc = entry.description?.trim();
+      const values = answers
+        .filter((v) => v !== "other" && v !== "yes")
+        .map((v) =>
+          key === "retinal" && v === "yes" ? "i.e., vision loss in one eye" : v,
+        );
+
+      if (key === "retinal" && answers.includes("yes")) {
+        values.push("i.e., vision loss in one eye");
       }
 
-      return `
-        <div class="modality-summary">
-          <h3>${title}</h3>
-          <ul>${answers}</ul>
-          ${descHTML}
-        </div>
-      `;
-    })
-    .join("<hr>");
+      if (desc) {
+        values.push(`in ${poss} own words: "${desc}"`);
+      }
 
-  output.innerHTML = html;
+      const content = values.length ? ` (${formatList(values)})` : "";
+
+      summaryLines.push(
+        `${label.charAt(0).toUpperCase() + label.slice(1)}${content}.`,
+      );
+    });
+
+    // Intro sentence
+    const intro = `${fullName} was first diagnosed with migraine in ${diagnosisYear} and currently experiences ${headacheDays}.`;
+
+    // Aura detail
+    let details = "";
+    if (summaryLines.length > 0) {
+      details = `${subj} report${subj === "They" ? "" : "s"} multiple aura modalities, including:<br><ul>`;
+      summaryLines.forEach((line) => {
+        details += `<li>${line}</li>`;
+      });
+      details += "</ul>";
+    } else {
+      details = `${subj} did not report any aura symptoms.`;
+    }
+
+    // Negative findings
+    const reported = Object.keys(modalityMap).filter(
+      (key) =>
+        data[key]?.selected &&
+        !["none", "no", "unsure"].includes(data[key].selected[0]),
+    );
+    const unreported = Object.keys(modalityMap).filter(
+      (key) => !reported.includes(key),
+    );
+    let neg = "";
+    if (unreported.length > 0 && unreported.length < 6) {
+      const labels = unreported.map((k) =>
+        modalityMap[k].replace(
+          / features| disturbances| symptoms| changes/,
+          "",
+        ),
+      );
+      neg = `<p>No ${formatList(labels)} aura symptoms were reported.</p>`;
+    }
+
+    return `
+      <h3>Summary:</h3>
+      <p><strong>${intro}</strong></p>
+      <p>${details}</p>
+      ${neg}
+    `;
+  }
+
+  output.innerHTML = generateNarrativeSummary(data, userInfo);
 
   continueBtn.addEventListener("click", () => {
     const next = continueBtn.getAttribute("data-next");

@@ -78,9 +78,17 @@ document.addEventListener("DOMContentLoaded", () => {
   continueBtn.addEventListener("click", () => {
     const hasWeakness =
       Array.from(yesNoRadios).find((r) => r.checked)?.value || null;
-    const selectedLocations = Array.from(locationCheckboxes)
-      .filter((cb) => cb.checked)
-      .map((cb) => cb.value);
+
+    let selectedLocations = [];
+
+    if (hasWeakness === "yes") {
+      selectedLocations = Array.from(locationCheckboxes)
+        .filter((cb) => cb.checked)
+        .map((cb) => cb.value);
+    } else {
+      selectedLocations = [hasWeakness]; // will be "no" or "unsure"
+    }
+
     const other = otherText?.value.trim() || "";
 
     // ✅ Save to localStorage
