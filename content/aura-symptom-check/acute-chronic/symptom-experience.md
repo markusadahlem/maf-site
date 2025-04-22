@@ -4,9 +4,9 @@ description: ""
 date: 2025-04-19
 ---
 
-## Reason for Visit
+## Symptom Experience
 
-**Experience**
+**When did these current symptoms first appear?**
 
 <link rel="stylesheet" href="/css/symptom-check.css">
 
