@@ -4,7 +4,7 @@ description: ""
 date: 2025-04-19
 ---
 
-## Impact on Daily Life
+### Personalize Your Migraine Report
 
 
 **Impact on Daily Life**

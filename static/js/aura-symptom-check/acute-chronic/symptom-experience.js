@@ -1,23 +1,35 @@
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("symptomExperienceForm");
-  const continueBtn = document.getElementById("onsetContinueBtn");
+  const nextBtn = document.getElementById("symptomExperienceContinueBtn");
 
-  // Enable button on selection
+  // 🔒 Hide button initially
+  nextBtn.style.display = "none";
+
+  // 👂 Show button when an option is selected
   form.addEventListener("change", () => {
-    const selected = form.querySelector('input[name="onset"]:checked');
-    continueBtn.style.display = selected ? "inline-block" : "none";
+    const selected = form.querySelector(
+      'input[name="symptomExperience"]:checked',
+    );
+    nextBtn.style.display = selected ? "inline-block" : "none";
   });
 
-  continueBtn.addEventListener("click", () => {
-    const selected = form.querySelector('input[name="onset"]:checked');
-    if (!selected) return;
+  // ✅ Save answer and continue
+  nextBtn.addEventListener("click", () => {
+    const selected = form.querySelector(
+      'input[name="symptomExperience"]:checked',
+    );
+    if (!selected) {
+      alert("Please select an answer.");
+      return;
+    }
 
-    // Save to localStorage under "acuteChronic"
-    const data = JSON.parse(localStorage.getItem("acuteChronic") || "{}");
-    data.onset = selected.value;
-    localStorage.setItem("acuteChronic", JSON.stringify(data));
+    const data = JSON.parse(
+      localStorage.getItem("acuteChronicAnswers") || "{}",
+    );
+    data.symptomExperience = selected.value;
+    localStorage.setItem("acuteChronicAnswers", JSON.stringify(data));
 
-    // Navigate to next step
+    // ▶️ Go to next step
     window.location.href = "/aura-symptom-check/acute-chronic/onset-window/";
   });
 });

@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     data.symptomProgression = selected.value;
     localStorage.setItem("acuteChronicAnswers", JSON.stringify(data));
 
-    window.location.href = "/aura-symptom-check/impact-on-daily-life/";
+    window.location.href =
+      "/aura-symptom-check/acute-chronic/impact-on-daily-life/";
   });
 });

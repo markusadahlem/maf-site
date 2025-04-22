@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("acuteChronic", JSON.stringify(data));
 
     // Navigate to next section
-    window.location.href = "/aura-symptom-check/symptom-experience/";
+    window.location.href =
+      "/aura-symptom-check/acute-chronic/symptom-experience/";
   });
 });

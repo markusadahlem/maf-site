@@ -4,9 +4,10 @@ description: ""
 date: 2025-04-19
 ---
 
-## Symptom Experience
+### Personalize Your Migraine Report
 
-**When did these current symptoms first appear?**
+**Which of these statements most closely matches your history?**
+            
 
 <link rel="stylesheet" href="/css/symptom-check.css">
 

@@ -4,7 +4,7 @@ description: ""
 date: 2025-04-19
 ---
 
-## Response to Your Usual Remedies
+### Personalize Your Migraine Report
 
 
 **When you try your normal relief methods (e.g., rest, over‑the‑counter meds), how effective are they?**

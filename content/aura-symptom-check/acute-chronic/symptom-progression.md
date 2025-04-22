@@ -4,7 +4,7 @@ description: ""
 date: 2025-04-19
 ---
 
-## Symptom Progression
+### Personalize Your Migraine Report
 
 **Since they began, how have your symptoms changed?**
 

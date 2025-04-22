@@ -4,7 +4,7 @@ description: ""
 date: 2025-04-19
 ---
 
-## Onset Window
+### Personalize Your Migraine Report
 
 
 **When did these current symptoms first appear?**
