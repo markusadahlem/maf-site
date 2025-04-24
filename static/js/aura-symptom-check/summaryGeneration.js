@@ -234,7 +234,7 @@ export function generateNarrativeSummary({
   const auraCharacteristicsDetails = [];
   if (auraCharacteristics[0]) {
     auraCharacteristicsDetails.push(
-      "at least one aura symptom spread gradually over ≥5 minutes",
+      "at least one aura symptom spread gradually over 5 minutes or longer",
     );
   }
   if (auraCharacteristics[1]) {

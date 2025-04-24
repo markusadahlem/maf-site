@@ -127,7 +127,7 @@ function buildStandardAuraContent(doc, data, y) {
   const fields = [
     {
       label: "Progression",
-      text: "Spreads gradually ≥5 minutes",
+      text: "Spreads gradually over minutes",
       v: data.characteristics?.progression,
     },
     {

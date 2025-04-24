@@ -1,6 +1,6 @@
 const questions = [
   {
-    text: "Did at least one aura symptom spread gradually over ≥5 minutes?",
+    text: "Did at least one aura symptom spread gradually over at least 5 minutes?",
     explanation:
       "E.g., a flickering spot in your visual field that slowly expands.",
   },

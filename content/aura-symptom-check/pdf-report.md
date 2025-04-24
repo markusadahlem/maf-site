@@ -1,15 +1,5 @@
----
-date: "2025-04-06T12:45:02+02:00"
-title: "Other Aura Symptom"
-linkTitle: "Other Symptom"
-toc: false
-sidebar:
-  exclude: true
----
-
 <h2>Describe your other aura symptom</h2>
 <p>You selected “Other” as your only aura symptom. Please describe what you experienced.</p>
-
 
 <button id="generatePdfBtn" class="btn">Download Aura Report (PDF)</button>
 
@@ -19,16 +9,82 @@ sidebar:
 
 <script type="module">
   document.getElementById("generatePdfBtn").addEventListener("click", async () => {
+    // Retrieve and parse the data from localStorage
+    const userInfo = JSON.parse(localStorage.getItem("userInfo") || '{}');
+    const selectedModalities = JSON.parse(localStorage.getItem("selectedModalities") || '[]');
+    const acuteChronicData = JSON.parse(localStorage.getItem("acuteChronic") || '{}');
+    const acuteChronicAnswers = JSON.parse(localStorage.getItem("acuteChronicAnswers") || '{}');
+    const auraCharacteristicsAnswers = JSON.parse(localStorage.getItem("auraCharacteristicsAnswers") || '[]');
+    const criterionBAnswers = JSON.parse(localStorage.getItem("criterionBAnswers") || '{}');
+
+    // Debugging logs to make sure data is being retrieved correctly
+    console.log("userInfo:", userInfo);
+    console.log("selectedModalities:", selectedModalities);
+    console.log("acuteChronicData:", acuteChronicData);
+    console.log("acuteChronicAnswers:", acuteChronicAnswers);
+    console.log("auraCharacteristicsAnswers:", auraCharacteristicsAnswers);
+    console.log("criterionBAnswers:", criterionBAnswers);
+
+    // Check if required data is available
+    if (!userInfo || !selectedModalities || !acuteChronicData || !acuteChronicAnswers || !auraCharacteristicsAnswers || !criterionBAnswers) {
+      alert("Missing data! Please check your localStorage.");
+      return; // Stop if data is missing
+    }
 
     const data = {
-      modalities: JSON.parse(localStorage.getItem("selectedModalities") || '["other"]'),
-      userInfo: JSON.parse(localStorage.getItem("userInfo") || "{}"),
-      acuteChronicData: JSON.parse(localStorage.getItem("acuteChronic") || "{}"),
-      acuteChronicAnswers: JSON.parse(localStorage.getItem("acuteChronicAnswers") || "{}"),
-      auraCharacteristicsAnswers: JSON.parse(localStorage.getItem("auraCharacteristicsAnswers") || "[]")
+      modalities: selectedModalities,
+      userInfo: userInfo,
+      acuteChronicData: acuteChronicData,
+      acuteChronicAnswers: acuteChronicAnswers,
+      auraCharacteristicsAnswers: auraCharacteristicsAnswers,
+      criterionBAnswers: criterionBAnswers,
     };
 
-    await window.generateAuraReport("other-only", data);
+    // Ensure data is correct and log it
+    console.log("Final data being passed to report:", data);
+
+document.getElementById("generatePdfBtn").addEventListener("click", async () => {
+  // Retrieve and parse the data from localStorage
+  const userInfo = JSON.parse(localStorage.getItem("userInfo") || '{}');
+  const selectedModalities = JSON.parse(localStorage.getItem("selectedModalities") || '[]');
+  const acuteChronicData = JSON.parse(localStorage.getItem("acuteChronic") || '{}');
+  const acuteChronicAnswers = JSON.parse(localStorage.getItem("acuteChronicAnswers") || '{}');
+  const auraCharacteristicsAnswers = JSON.parse(localStorage.getItem("auraCharacteristicsAnswers") || '[]');
+  const criterionBAnswers = JSON.parse(localStorage.getItem("criterionBAnswers") || '{}');
+
+  // Debugging logs to make sure data is being retrieved correctly
+  console.log("userInfo:", userInfo);
+  console.log("selectedModalities:", selectedModalities);
+  console.log("acuteChronicData:", acuteChronicData);
+  console.log("acuteChronicAnswers:", acuteChronicAnswers);
+  console.log("auraCharacteristicsAnswers:", auraCharacteristicsAnswers);
+  console.log("criterionBAnswers:", criterionBAnswers);
+
+  // Check if required data is available
+  if (!userInfo || !selectedModalities || !acuteChronicData || !acuteChronicAnswers || !auraCharacteristicsAnswers || !criterionBAnswers) {
+    alert("Missing data! Please check your localStorage.");
+    return; // Stop if data is missing
+  }
+
+  const data = {
+    modalities: selectedModalities,
+    userInfo: userInfo,
+    acuteChronicData: acuteChronicData,
+    acuteChronicAnswers: acuteChronicAnswers,
+    auraCharacteristicsAnswers: auraCharacteristicsAnswers,
+    criterionBAnswers: criterionBAnswers,
+  };
+
+  // Ensure data is correct and log it
+  console.log("Final data being passed to report:", data);
+
+  // Call the function to generate the PDF
+  await window.generateAuraReport(data); // Pass the data to the report generation function
+});
+
+
+    // Call the function to generate the PDF
+    await window.generateAuraReport(data); // Pass the data to the report generation function
   });
 </script>
 
