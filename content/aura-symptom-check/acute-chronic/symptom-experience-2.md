@@ -4,7 +4,8 @@ description: ""
 date: 2025-04-19
 ---
 
-### Personalize Your Migraine Report
+### Tell us why you're here 
+
 
 **Have you ever had these different symptoms before?**
             
@@ -15,4 +16,4 @@ date: 2025-04-19
 
 {{< aura-symptom-check/acute-chronic/symptom-experience-2 >}}
 
-<script src="/js/aura-symptom-check/acute-chronic/symptom-experience.js"></script>
+<script src="/js/aura-symptom-check/acute-chronic/symptom-experience-2.js"></script>

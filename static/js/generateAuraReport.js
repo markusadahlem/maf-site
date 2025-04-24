@@ -1,3 +1,5 @@
+import { generateNarrativeSummary } from "./aura-symptom-check/summaryGeneration.js";
+
 // --- Icon Map ---
 const modalityIcons = {
   visual: "/icons/visual.png",
@@ -9,9 +11,27 @@ const modalityIcons = {
   other: "/icons/other.png",
 };
 
+// --- Image Loader ---
+async function loadImageAsBase64(url) {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    img.crossOrigin = "anonymous";
+    img.onload = () => {
+      const c = document.createElement("canvas");
+      c.width = img.width;
+      c.height = img.height;
+      c.getContext("2d").drawImage(img, 0, 0);
+      resolve(c.toDataURL("image/png"));
+    };
+    img.onerror = reject;
+    img.src = url;
+  });
+}
+
 // --- Shared Components ---
 async function drawHeader(doc, title = "Migraine Aura Report") {
   doc.setFontSize(14).setFont("helvetica", "bold").text(title, 20, 20);
+
   try {
     const url = "/images/report-logo.png";
     const base64 = await loadImageAsBase64(url);
@@ -26,6 +46,29 @@ async function drawHeader(doc, title = "Migraine Aura Report") {
   } catch (e) {
     console.warn("Logo missing:", e);
   }
+
+  doc.setFontSize(9).setFont("helvetica", "normal");
+  doc.setTextColor(0);
+  doc.text("This automated report adheres to ICHD-3 criteria and is", 20, 26);
+  doc.setTextColor(200, 0, 0);
+  doc.text(
+    " not a substitute ",
+    doc.getTextWidth(
+      "This automated report adheres to ICHD-3 criteria and is",
+    ) + 20,
+    26,
+  );
+  doc.setTextColor(0);
+  doc.text(
+    "for professional medical diagnosis.",
+    doc.getTextWidth(
+      "This automated report adheres to ICHD-3 criteria and is not a substitute ",
+    ) + 20,
+    26,
+  );
+
+  doc.setFontSize(10).setTextColor(0, 0, 0);
+  doc.setDrawColor(0);
   doc.line(20, 28, 190, 28);
 }
 
@@ -40,17 +83,6 @@ function drawFooter(doc) {
     20,
     h - 5,
   );
-}
-
-function drawWarningBlock(doc, y = 35) {
-  doc.setFontSize(10).setTextColor(200, 0, 0);
-  doc.text(
-    "This report is informational only and not a medical diagnosis.",
-    20,
-    y,
-  );
-  doc.setTextColor(0);
-  return y + 10;
 }
 
 function drawSelectedModalities(doc, modalities = [], y = 35) {
@@ -80,54 +112,6 @@ function drawSelectedModalities(doc, modalities = [], y = 35) {
   return y;
 }
 
-async function drawModalityGrid(doc, modalities = [], y = 35) {
-  const all = ["visual", "sensory", "speech", "motor", "brainstem", "retinal"];
-  const labels = {
-    visual: "Visual",
-    sensory: "Sensory",
-    speech: "Speech",
-    motor: "Motor",
-    brainstem: "Brainstem",
-    retinal: "Retinal",
-  };
-  const x0 = 20,
-    cols = 3,
-    w = 40,
-    h = 10,
-    gapX = 55,
-    gapY = 25;
-  doc
-    .setFont("helvetica", "bold")
-    .setFontSize(11)
-    .text("Aura Modalities Overview", x0, y);
-  y += 10;
-
-  for (let i = 0; i < all.length; i++) {
-    const m = all[i],
-      row = Math.floor(i / cols),
-      col = i % cols;
-    const x = x0 + col * gapX,
-      yPos = y + row * gapY;
-    const present = modalities.includes(m);
-    const path = present
-      ? modalityIcons[m]
-      : modalityIcons[m].replace(".png", "_no.png");
-
-    try {
-      const base64 = await loadImageAsBase64(path);
-      doc.addImage(base64, "PNG", x, yPos, w, h);
-    } catch {
-      doc.setFillColor(255, 255, 255).rect(x, yPos, w, h, "F");
-    }
-
-    doc.setFont("helvetica", "normal").setFontSize(9);
-    doc.text(labels[m], x + w / 2, yPos + h + 5, { align: "center" });
-  }
-
-  return y + 2 * gapY + h + 10;
-}
-
-// --- Section Blocks ---
 function buildOtherOnlyContent(doc, data, y) {
   const text = data.otherDescription || "[No description provided]";
   doc
@@ -172,6 +156,7 @@ function buildStandardAuraContent(doc, data, y) {
       v: data.characteristics?.headacheOnset,
     },
   ];
+
   doc
     .setFont("helvetica", "bold")
     .setFontSize(12)
@@ -179,8 +164,8 @@ function buildStandardAuraContent(doc, data, y) {
   y += 8;
 
   fields.forEach((f) => {
-    const yes = f.v === true,
-      [r, g, b] = yes ? [0, 150, 0] : [200, 0, 0];
+    const yes = f.v === true;
+    const [r, g, b] = yes ? [0, 150, 0] : [200, 0, 0];
     doc.setFont("helvetica", "bold").setFontSize(10).setTextColor(0);
     doc.text(`${f.label}:`, 20, y);
     doc
@@ -203,8 +188,68 @@ function buildStandardAuraContent(doc, data, y) {
   doc.setTextColor(0);
 }
 
+async function drawNarrativeSummary(doc, htmlString, startY = 35) {
+  const tempDiv = document.createElement("div");
+  tempDiv.innerHTML = htmlString;
+  document.body.appendChild(tempDiv);
+
+  let y = startY;
+  const pageHeight = doc.internal.pageSize.getHeight();
+  const margin = 20;
+  const lineHeight = 6;
+
+  const addLines = async (lines, fontStyle = "normal") => {
+    doc.setFont("helvetica", fontStyle).setFontSize(10);
+    for (const line of lines) {
+      if (y + lineHeight > pageHeight - margin) {
+        drawFooter(doc);
+        doc.addPage();
+        await drawHeader(doc);
+        y = 30;
+      }
+      doc.text(line, margin, y);
+      y += lineHeight;
+    }
+  };
+
+  for (const node of tempDiv.childNodes) {
+    if (node.nodeType === Node.ELEMENT_NODE) {
+      if (node.tagName === "H3" || node.tagName === "H2") {
+        const text = node.innerText.trim();
+        if (text) {
+          doc.setFont("helvetica", "bold").setFontSize(12);
+          if (y + lineHeight > pageHeight - margin) {
+            drawFooter(doc);
+            doc.addPage();
+            await drawHeader(doc);
+            y = 30;
+          }
+          doc.text(text, margin, y);
+          y += lineHeight;
+        }
+      } else if (node.tagName === "P") {
+        const lines = doc.splitTextToSize(node.innerText.trim(), 170);
+        await addLines(lines, "normal");
+        y += lineHeight / 2;
+      } else if (node.tagName === "UL") {
+        for (const li of node.querySelectorAll("li")) {
+          const lines = doc.splitTextToSize(`• ${li.innerText.trim()}`, 170);
+          await addLines(lines, "normal");
+        }
+        y += lineHeight / 2;
+      }
+    }
+  }
+
+  drawFooter(doc);
+  document.body.removeChild(tempDiv);
+  return y;
+}
+
 function appendDisclaimerPage(doc) {
   doc.addPage();
+  drawHeader(doc);
+  drawFooter(doc);
   doc
     .setFont("helvetica", "bold")
     .setFontSize(12)
@@ -218,43 +263,34 @@ If your symptoms are new, worsening, or unusual, seek medical advice immediately
   doc.text(doc.splitTextToSize(disclaimer, 170), 20, 45);
 }
 
-// --- Image Loader ---
-async function loadImageAsBase64(url) {
-  return new Promise((resolve, reject) => {
-    const img = new Image();
-    img.crossOrigin = "anonymous";
-    img.onload = () => {
-      const c = document.createElement("canvas");
-      c.width = img.width;
-      c.height = img.height;
-      c.getContext("2d").drawImage(img, 0, 0);
-      resolve(c.toDataURL("image/png"));
-    };
-    img.onerror = reject;
-    img.src = url;
-  });
-}
-
 // --- Main Function ---
 async function generateAuraReport(flowType, data) {
   const { jsPDF } = window.jspdf;
   const doc = new jsPDF();
 
   await drawHeader(doc);
-  let y = drawWarningBlock(doc);
-  //y = await drawModalityGrid(doc, data.modalities || [], y + 5);
+  let y = 30;
+
+  const narrativeHtml = generateNarrativeSummary({
+    data,
+    userInfo: data.userInfo,
+    acuteChronicData: data.acuteChronicData,
+    acuteChronicAnswers: data.acuteChronicAnswers,
+    auraCharacteristicsAnswers: data.auraCharacteristicsAnswers,
+  });
+
+  y += 10;
+  y = await drawNarrativeSummary(doc, narrativeHtml, y);
+
+  doc.addPage();
+  await drawHeader(doc);
+  y = 30;
+
   y = drawSelectedModalities(doc, data.modalities || [], y + 5);
 
   if ((data.modalities || []).includes("other")) {
-    const text = data.otherDescription || "[No description provided]";
-    doc
-      .setFont("helvetica", "bold")
-      .setFontSize(11)
-      .text("Described 'Other' Aura Symptom:", 20, y);
-    doc.setFont("helvetica", "italic").setFontSize(10);
-    const lines = doc.splitTextToSize(text, 170);
-    doc.text(lines, 25, y + 10);
-    y += 16 + lines.length * 6;
+    buildOtherOnlyContent(doc, data, y);
+    y += 20;
   }
 
   if (flowType === "standard") {
@@ -272,3 +308,5 @@ async function generateAuraReport(flowType, data) {
   appendDisclaimerPage(doc);
   doc.save("aura_report.pdf");
 }
+
+window.generateAuraReport = generateAuraReport;

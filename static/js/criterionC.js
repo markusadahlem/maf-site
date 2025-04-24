@@ -94,8 +94,8 @@ function showResult() {
 
   // Redirect directly to the new page based on the result.
   window.location.href = passed
-    ? "/aura-symptom-check/criterioncmeet/"
-    : "/aura-symptom-check/criterioncnotmeet/";
+    ? "/aura-symptom-check/demographic-information/"
+    : "/aura-symptom-check/demographic-information/";
 }
 
 showQuestion(); // Start

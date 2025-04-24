@@ -4,10 +4,12 @@ description: ""
 date: 2025-04-19
 ---
 
-## Prior Medical Attention
+### Tell us why you're here 
+
+### Prior Medical Attention
 
 
-**Have you sought professional advice or treatment for these headaches before today?**
+**Have you sought professional advice or treatment before today?**
 
 <link rel="stylesheet" href="/css/symptom-check.css">
 

@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
       );
     }
 
-    window.location.href = "/aura-symptom-check/modality-summary/";
+    window.location.href = "/aura-symptom-check/aura-characteristics/";
   });
 
   // On load

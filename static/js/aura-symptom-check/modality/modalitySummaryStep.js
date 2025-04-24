@@ -1,9 +1,26 @@
+console.log("Script is loaded"); // Debugging line to confirm script is loaded
+
 document.addEventListener("DOMContentLoaded", () => {
+  console.log("DOMContentLoaded event fired"); // Debugging line
   const output = document.getElementById("summaryOutput");
   const continueBtn = document.getElementById("continueBtn");
 
+  console.log("Output element:", output); // Debugging line
+  console.log("Continue button element:", continueBtn); // Debugging line
+
   const data = JSON.parse(localStorage.getItem("criterionBAnswers") || "{}");
   const userInfo = JSON.parse(localStorage.getItem("userInfo") || "{}");
+  const acuteChronicData = JSON.parse(
+    localStorage.getItem("acuteChronic") || "{}",
+  );
+  const acuteChronicAnswers = JSON.parse(
+    localStorage.getItem("acuteChronicAnswers") || "{}",
+  );
+
+  console.log("Data from localStorage:", data); // Debugging line
+  console.log("User Info from localStorage:", userInfo); // Debugging line
+  console.log("Acute Chronic Data from localStorage:", acuteChronicData); // Debugging line
+  console.log("Acute Chronic Answers from localStorage:", acuteChronicAnswers); // Debugging line
 
   if (!Object.keys(data).length) {
     output.innerHTML =
@@ -26,7 +43,12 @@ document.addEventListener("DOMContentLoaded", () => {
     return { subj: "They", poss: "their", label: "they/them" };
   }
 
-  function generateNarrativeSummary(data, userInfo) {
+  function generateNarrativeSummary(
+    data,
+    userInfo,
+    acuteChronicData,
+    acuteChronicAnswers,
+  ) {
     const { subj, poss, label } = getPronouns(userInfo.gender);
     const fullName = userInfo.name ? `${userInfo.name} (${label})` : subj;
 
@@ -43,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
       speech: "speech/language disturbances",
       motor: "motor symptoms",
       brainstem:
-        "other symptoms (usually summarised as brainstem or formerly basilar-typeaura)",
+        "other symptoms (usually summarized as brainstem or formerly basilar-type aura)",
     };
 
     const summaryLines = [];
@@ -84,6 +106,104 @@ document.addEventListener("DOMContentLoaded", () => {
     // Intro sentence
     const intro = `${fullName} was first diagnosed with migraine in ${diagnosisYear} and currently experiences ${headacheDays}.`;
 
+    // Additional sentence based on reason selection
+    let additionalSentence = "";
+    const reason = acuteChronicData.reason; // Retrieve reason from acuteChronicData
+    console.log("Reason:", reason); // Debugging line
+
+    switch (reason) {
+      case "acute-chronic-A1":
+        additionalSentence = `${fullName} is experiencing new or unfamiliar symptoms that might be related to migraine.`;
+        break;
+      case "acute-chronic-A2":
+        additionalSentence = `${fullName} has had aura symptoms before, but something feels different this time.`;
+        break;
+      case "acute-chronic-A3":
+        additionalSentence = `${fullName} has been having migraine with aura episodes for a while.`;
+        break;
+      case "acute-chronic-A4":
+        additionalSentence = `${fullName} has been having aura symptoms without any headache for a while.`;
+        break;
+      case "acute-chronic-A5":
+        additionalSentence = `${fullName} is gathering general information about migraine auras.`;
+        break;
+      default:
+        additionalSentence = "";
+    }
+
+    // Additional sentence based on symptom experience selection for A1 and A2
+    let symptomExperienceSentence = "";
+    const symptomExperience = acuteChronicAnswers.symptomExperience;
+    console.log("Symptom Experience:", symptomExperience); // Debugging line
+
+    if (reason === "acute-chronic-A1" || reason === "acute-chronic-A2") {
+      switch (symptomExperience) {
+        case "acute-chronic-B1":
+          symptomExperienceSentence = `${fullName} reports that this is the first time experiencing these symptoms.`;
+          break;
+        case "acute-chronic-B2":
+          symptomExperienceSentence = `${fullName} reports having experienced these symptoms once or twice in the past, but not recently.`;
+          break;
+        case "acute-chronic-B3":
+          if (reason === "acute-chronic-A1") {
+            symptomExperienceSentence = `${fullName} reports that while the symptoms are new, they have been experiencing them for a while now.`;
+          } else if (reason === "acute-chronic-A2") {
+            symptomExperienceSentence = `${fullName} reports not having experienced such symptoms before, but has been getting these changed aura symptoms regularly for a while now.`;
+          }
+          break;
+        default:
+          symptomExperienceSentence = "";
+      }
+    }
+
+    // Additional sentence based on onset window selection for A1 and A2
+    let onsetWindowSentence = "";
+    const onsetWindow = acuteChronicAnswers.onsetWindow;
+    console.log("Onset Window:", onsetWindow); // Debugging line
+
+    if (reason === "acute-chronic-A1" || reason === "acute-chronic-A2") {
+      switch (onsetWindow) {
+        case "acute-chronic-C1":
+          onsetWindowSentence = `${fullName} reports that the symptoms started within the last 24 hours.`;
+          break;
+        case "acute-chronic-C2":
+          onsetWindowSentence = `${fullName} reports that the symptoms started within the last 7 days.`;
+          break;
+        case "acute-chronic-C3":
+          onsetWindowSentence = `${fullName} reports that the symptoms started within the last 30 days.`;
+          break;
+        case "acute-chronic-C4":
+          onsetWindowSentence = `${fullName} reports that the symptoms started more than 30 days ago.`;
+          break;
+        default:
+          onsetWindowSentence = "";
+      }
+    }
+
+    // Additional sentence based on symptom progression selection for all cases
+    let symptomProgressionSentence = "";
+    const symptomProgression = acuteChronicAnswers.symptomProgression;
+    console.log("Symptom Progression:", symptomProgression); // Debugging line
+
+    switch (symptomProgression) {
+      case "acute-chronic-D1":
+        symptomProgressionSentence = `${fullName} reports that the symptoms have become more intense.`;
+        break;
+      case "acute-chronic-D2":
+        symptomProgressionSentence = `${fullName} reports that the symptoms have eased or improved.`;
+        break;
+      case "acute-chronic-D3":
+        symptomProgressionSentence = `${fullName} reports that the symptoms have stayed about the same.`;
+        break;
+      default:
+        symptomProgressionSentence = "";
+    }
+
+    console.log("Additional Sentence:", additionalSentence); // Debugging line
+    console.log("Symptom Experience Sentence:", symptomExperienceSentence); // Debugging line
+    console.log("Onset Window Sentence:", onsetWindowSentence); // Debugging line
+    console.log("Symptom Progression Sentence:", symptomProgressionSentence); // Debugging line
+
     // Aura detail
     let details = "";
     if (summaryLines.length > 0) {
@@ -117,14 +237,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     return `
-      <h3>Summary:</h3>
-      <p><strong>${intro}</strong></p>
-      <p>${details}</p>
-      ${neg}
-    `;
+                    <h3>Summary:</h3>
+                    <p><strong>${intro}</strong></p>
+                    <p>${additionalSentence}</p>
+                    <p>${symptomExperienceSentence}</p>
+                    <p>${onsetWindowSentence}</p>
+                    <p>${symptomProgressionSentence}</p>
+                    <p>${details}</p>
+                    ${neg}
+                `;
   }
 
-  output.innerHTML = generateNarrativeSummary(data, userInfo);
+  output.innerHTML = generateNarrativeSummary(
+    data,
+    userInfo,
+    acuteChronicData,
+    acuteChronicAnswers,
+  );
 
   continueBtn.addEventListener("click", () => {
     const next = continueBtn.getAttribute("data-next");

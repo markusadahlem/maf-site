@@ -1,37 +1,37 @@
 ---
 date: "2025-04-06T12:45:02+02:00"
-title: "Other"
-linkTitle: "Symptoms Check"
+title: "Other Aura Symptom"
+linkTitle: "Other Symptom"
 toc: false
 sidebar:
   exclude: true
 ---
 
 <h2>Describe your other aura symptom</h2>
-<p>You selected “Other” as your only aura symptom. Please describe what you experienced so we can generate a report.</p>
+<p>You selected “Other” as your only aura symptom. Please describe what you experienced.</p>
 
-<textarea id="otherDescription" rows="6" style="width: 100%;" placeholder="e.g., déjà vu, olfactory changes, etc."></textarea>
 
 <button id="generatePdfBtn" class="btn">Download Aura Report (PDF)</button>
 
-<!-- Required JS dependencies -->
+<!-- JS Dependencies -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-<script type="module" src="/js/generateAuraReport.js"></script>
-
+<script type="module" src="/js/generateAuraReport.js?v=3"></script>
 
 <script type="module">
   document.getElementById("generatePdfBtn").addEventListener("click", async () => {
-    const desc = document.getElementById("otherDescription").value;
 
     const data = {
-      flowType: "other-only",
-      modalities: ["other"],
-      otherDescription: desc
+      modalities: JSON.parse(localStorage.getItem("selectedModalities") || '["other"]'),
+      userInfo: JSON.parse(localStorage.getItem("userInfo") || "{}"),
+      acuteChronicData: JSON.parse(localStorage.getItem("acuteChronic") || "{}"),
+      acuteChronicAnswers: JSON.parse(localStorage.getItem("acuteChronicAnswers") || "{}"),
+      auraCharacteristicsAnswers: JSON.parse(localStorage.getItem("auraCharacteristicsAnswers") || "[]")
     };
 
     await window.generateAuraReport("other-only", data);
   });
 </script>
+
 
 <style>
   .btn {

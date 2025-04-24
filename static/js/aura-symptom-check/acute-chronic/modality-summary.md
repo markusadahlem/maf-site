@@ -7,7 +7,7 @@ description: "Overview of all your selected aura symptoms."
 <div id="summaryOutput"></div>
 
 <br />
-<button id="continueBtn" class="btn" data-next="/aura-symptom-check/pdf-report/">
+<button id="continueBtn" class="btn" data-next="/aura-symptom-check/aura-characteristics/">
   Continue to Step 3
 </button>
 

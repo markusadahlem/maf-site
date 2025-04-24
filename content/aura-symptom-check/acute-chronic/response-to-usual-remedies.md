@@ -4,10 +4,11 @@ description: ""
 date: 2025-04-19
 ---
 
-### Personalize Your Migraine Report
+### Tell us why you're here 
 
 
-**When you try your normal relief methods (e.g., rest, over‑the‑counter meds), how effective are they?**
+
+**When you try your normal relief methods, how effective are they?**
 
 <link rel="stylesheet" href="/css/symptom-check.css">
 
