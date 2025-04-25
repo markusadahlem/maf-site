@@ -158,6 +158,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Save the generated PDF
     pdf.save("Migraine-Aura-Report.pdf");
+    // Clear the flag from localStorage
+    localStorage.removeItem("redirectToDemographicInfo");
+
   });
 });
 </script>

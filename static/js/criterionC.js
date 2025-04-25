@@ -92,10 +92,17 @@ function showResult() {
   // Speichere die Antworten
   localStorage.setItem("auraCharacteristicsAnswers", JSON.stringify(answers));
 
-  // Redirect directly to the new page based on the result.
-  window.location.href = passed
-    ? "/aura-symptom-check/demographic-information/"
-    : "/aura-symptom-check/demographic-information/";
+  // Check for the flag in localStorage
+  const flag = localStorage.getItem("redirectToDemographicInfo");
+
+  // Redirect based on the flag and the result
+  if (flag) {
+    window.location.href = "/aura-symptom-check/demographic-information/";
+  } else {
+    window.location.href = passed
+      ? "/aura-symptom-check/criterioncmeet/"
+      : "/aura-symptom-check/criterioncnotmeet/";
+  }
 }
 
 showQuestion(); // Start

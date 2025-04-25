@@ -24,7 +24,10 @@ This helps us generate a report that’s clear, relevant, and easy to share with
 
 <link rel="stylesheet" href="/css/symptom-check.css">
 
-
+<script>
+// Set the flag in localStorage
+localStorage.setItem("redirectToDemographicInfo", "true");
+</script>
 
 {{< aura-symptom-check/acute-chronic/reason-for-visit >}}
 
