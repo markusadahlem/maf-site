@@ -52,15 +52,7 @@ Mit "Aura" bezeichnet man eine Gruppe neurologischer Symptome, die das Sehen, Sp
   >}}
 
 
-  {{< hextra/feature-card
-    title="DiGA Entwicklung"
-    subtitle="Erkenntnisse gezielt in die Versorgung überführen, d.h. in »Digitale Gesundheistanwenungen« (DiGA)."
-    link="dtx"
-    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
-    image="/images/teaser/dtx.png"
-    imageClass="hx-top-[0%] hx-left-[0px]  hx-w-[100%] sm:hx-w-[20%] dark:hx-opacity-80"
-    style="background: radial-gradient(ellipse at 50% 80%,rgba(245, 116, 97, 0.1),hsla(0,0%,100%,0));"
-  >}}
+
 
   {{< hextra/feature-card
     title="Migränekunst"
@@ -70,6 +62,16 @@ Mit "Aura" bezeichnet man eine Gruppe neurologischer Symptome, die das Sehen, Sp
     image="/images/teaser/robinson_sacks-nov-1991.jpg"
     imageClass="hx-top-[0%] hx-left-[0px]  dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(203, 28, 66, 0.1),hsla(0,0%,100%,0));"
+  >}}
+
+  {{< hextra/feature-card
+    title="Gehirn Umprogrammieren"
+    subtitle="Erkenntnisse gezielt in die Versorgung überführen, d.h. in »Digitale Gesundheistanwenungen« (DiGA)."
+    link="digital-health/dtx"
+    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
+    image="/images/teaser/dtx.png"
+    imageClass="hx-top-[0%] hx-left-[0px]  hx-w-[100%] sm:hx-w-[20%] dark:hx-opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(245, 116, 97, 0.1),hsla(0,0%,100%,0));"
   >}}
 
 <!--
