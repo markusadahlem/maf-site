@@ -43,7 +43,7 @@ localStorage.setItem("redirectToDemographicInfo", "true");
 <script>
   function checkPassword() {
     var password = document.getElementById('password-input').value;
-    var correctPassword = '1'; // Replace with your actual password
+    var correctPassword = 'wonderland'; // Replace with your actual password
     if (password === correctPassword) {
       document.getElementById('password-protected-content').style.display = 'block';
       document.getElementById('password-prompt').style.display = 'none';
