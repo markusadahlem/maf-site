@@ -2,8 +2,11 @@
 title: ""
 description: ""
 date: 2025-04-19
+toc: false
+sidebar:
+  exclude: true
 ---
-
+<span style="color:red">Beta version</span>
 ## Motor symptoms
 
 **Have you ever experienced weakness or paralysis**

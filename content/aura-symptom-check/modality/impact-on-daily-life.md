@@ -9,12 +9,13 @@ sidebar:
 <span style="color:red">Beta version</span>
 ### Tell us why you're here 
 
-**Since they began, how have your symptoms changed?**
+
+**Impact on Daily Life**
 
 <link rel="stylesheet" href="/css/symptom-check.css">
 
 
 
-{{< aura-symptom-check/acute-chronic/symptom-progression >}}
+{{< aura-symptom-check/acute-chronic/impact-on-daily-life >}}
 
-<script src="/js/aura-symptom-check/acute-chronic/symptom-progression.js"></script>
+<script src="/js/aura-symptom-check/acute-chronic/impact-on-daily-life.js"></script>

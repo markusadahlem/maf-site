@@ -1,9 +1,12 @@
 ---
 title: ""
-description: "Step 2.3 – Select any sensory disturbances you've experienced."
+description: ""
 date: 2025-04-19
+toc: false
+sidebar:
+  exclude: true
 ---
-
+<span style="color:red">Beta version</span>
 ## Sensory disturbances
 
 **Select any sensory (touch) disturbances you have experienced.**

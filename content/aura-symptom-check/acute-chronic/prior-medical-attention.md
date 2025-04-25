@@ -1,12 +1,16 @@
-   ---
+---
 title: ""
 description: ""
 date: 2025-04-19
+toc: false
+sidebar:
+  exclude: true
 ---
 
+<span style="color:red">Beta version</span>
 ### Tell us why you're here 
 
-### Prior Medical Attention
+
 
 
 **Have you sought professional advice or treatment before today?**

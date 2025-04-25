@@ -2,8 +2,11 @@
 title: ""
 description: ""
 date: 2025-04-19
+toc: false
+sidebar:
+  exclude: true
 ---
-
+<span style="color:red">Beta version</span>
 ## Other unusual symptoms 
 
 **Have you experienced any of the following symptoms?**  

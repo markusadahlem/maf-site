@@ -1,4 +1,4 @@
-// File: /js/aura-symptom-check/modality/summaryGeneration.js
+// File: /js/aura-symptom-check/summaryGeneration.js
 
 import { formatList, getPronouns } from "./helpers.js";
 
@@ -226,45 +226,83 @@ export function generateNarrativeSummary({
       priorMedicalSentence = "";
   }
 
+  // Count the number of key characteristics that apply
+  const keyCharacteristicsCount = auraCharacteristicsAnswers.filter(
+    (answer) => answer,
+  ).length;
+  console.log("Key Characteristics Count:", keyCharacteristicsCount); // Debugging line
+
   // Additional sentence based on aura characteristics selection for all cases
   let auraCharacteristicsSentence = "";
-  const auraCharacteristics = auraCharacteristicsAnswers;
-  console.log("Aura Characteristics:", auraCharacteristics); // Debugging line
-
   const auraCharacteristicsDetails = [];
-  if (auraCharacteristics[0]) {
+  const auraCharacteristicsNotApply = [];
+
+  if (auraCharacteristicsAnswers[0]) {
     auraCharacteristicsDetails.push(
       "at least one aura symptom spread gradually over 5 minutes or longer",
     );
+  } else {
+    auraCharacteristicsNotApply.push(
+      "at least one aura symptom spread gradually over 5 minutes or longer",
+    );
   }
-  if (auraCharacteristics[1]) {
+  if (auraCharacteristicsAnswers[1]) {
     auraCharacteristicsDetails.push(
       "two or more aura symptoms occurred in succession",
     );
+  } else {
+    auraCharacteristicsNotApply.push(
+      "two or more aura symptoms occurred in succession",
+    );
   }
-  if (auraCharacteristics[2]) {
+  if (auraCharacteristicsAnswers[2]) {
     auraCharacteristicsDetails.push(
       "each individual aura symptom lasted between 5–60 minutes",
     );
+  } else {
+    auraCharacteristicsNotApply.push(
+      "each individual aura symptom lasted between 5–60 minutes",
+    );
   }
-  if (auraCharacteristics[3]) {
+  if (auraCharacteristicsAnswers[3]) {
     auraCharacteristicsDetails.push(
       "at least one aura symptom was unilateral (on one side only)",
     );
+  } else {
+    auraCharacteristicsNotApply.push(
+      "at least one aura symptom was unilateral (on one side only)",
+    );
   }
-  if (auraCharacteristics[4]) {
+  if (auraCharacteristicsAnswers[4]) {
     auraCharacteristicsDetails.push(
       "at least one aura symptom was positive (e.g., flashing lights or pins and needles)",
     );
+  } else {
+    auraCharacteristicsNotApply.push(
+      "at least one aura symptom was positive (e.g., flashing lights or pins and needles)",
+    );
   }
-  if (auraCharacteristics[5]) {
+  if (auraCharacteristicsAnswers[5]) {
     auraCharacteristicsDetails.push(
+      "the aura was accompanied or followed within 60 minutes by headache",
+    );
+  } else {
+    auraCharacteristicsNotApply.push(
       "the aura was accompanied or followed within 60 minutes by headache",
     );
   }
 
   if (auraCharacteristicsDetails.length > 0) {
-    auraCharacteristicsSentence = `${capitalizeFirstLetter(subj)} reports the following aura characteristics: ${formatList(auraCharacteristicsDetails)}.`;
+    auraCharacteristicsSentence = `${capitalizeFirstLetter(subj)} reports the following ${keyCharacteristicsCount} of 6 aura characteristics: ${formatList(auraCharacteristicsDetails)}.`;
+    auraCharacteristicsSentence += ` These ${6 - keyCharacteristicsCount} characteristics do not apply: ${formatList(auraCharacteristicsNotApply)}.`;
+  }
+
+  // Additional sentence based on the count of key characteristics
+  let keyCharacteristicsSummary = "";
+  if (keyCharacteristicsCount < 3) {
+    keyCharacteristicsSummary = `Fewer than three key characteristics apply. Based on your answers, fewer than three of the key features associated with migraine aura are present. This suggests that your symptom profile does not fully align with Criterion C as defined by the ICHD-3 guidelines.`;
+  } else {
+    keyCharacteristicsSummary = `Your responses indicate that the ICHD-3 criteria for migraine with aura have likely been met. This means that a sufficient number of typical features—such as gradual onset, full reversibility, limited duration, and association with headache—were present to suggest a pattern consistent with migraine aura. These criteria help differentiate migraine aura from other possible neurological conditions.`;
   }
 
   console.log("Additional Sentence:", additionalSentence); // Debugging line
@@ -275,13 +313,14 @@ export function generateNarrativeSummary({
   console.log("Remedies Sentence:", remediesSentence); // Debugging line
   console.log("Prior Medical Sentence:", priorMedicalSentence); // Debugging line
   console.log("Aura Characteristics Sentence:", auraCharacteristicsSentence); // Debugging line
+  console.log("Key Characteristics Summary:", keyCharacteristicsSummary); // Debugging line
 
   // Aura detail
   let details = "";
   if (summaryLines.length > 0) {
-    details = `${capitalizeFirstLetter(subj)} report${subj === "they" ? "" : "s"} multiple aura modalities, including:<br><ul>`;
+    details = `${capitalizeFirstLetter(subj)} report${subj === "They" ? "" : "s"} multiple aura modalities, including:<ul style="margin: 0; padding: 0; list-style-type: none;">`;
     summaryLines.forEach((line) => {
-      details += `<li>${line}</li>`;
+      details += `<li style="margin-bottom: 4px;">${line}</li>`;
     });
     details += "</ul>";
   } else {
@@ -306,14 +345,27 @@ export function generateNarrativeSummary({
   }
 
   return `
-        <h3>Summary:</h3>
-        <p>${intro}</p>
-        <p>${additionalSentence} ${symptomExperienceSentence} ${onsetWindowSentence} ${impactSentence} ${remediesSentence} ${priorMedicalSentence} </p>
-        <p>${symptomProgressionSentence}</p>
-        <p>${details}</p>
-        <p>${neg}</p>
-        ${auraCharacteristicsSentence}
-    `;
+    <style>
+      p, ul {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+      li {
+        margin-bottom: 4px; /* Adjust as needed */
+      }
+    </style>
+    <h4>Expert System Patient Report: Migraine Aura Assessment</h4>
+    <p>${intro}</p><p>${additionalSentence} ${symptomExperienceSentence} ${onsetWindowSentence} ${impactSentence} ${remediesSentence} ${priorMedicalSentence}</p>
+    <p>${symptomProgressionSentence}</p>
+    <p>${details}</p>
+    ${neg}
+    <p>${auraCharacteristicsSentence}</p>
+    <p>${keyCharacteristicsSummary}</p>
+  `;
 }
 
 /**

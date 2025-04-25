@@ -7,7 +7,6 @@ sidebar:
   exclude: true
 ---
 
-<span style="color:red">Beta version</span>
 ### Tell us why you're here 
 
 

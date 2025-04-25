@@ -1,9 +1,12 @@
 ---
 title: ""
-description: "Step 2.4 – Describe any speech or language difficulties you experienced."
+description: ""
 date: 2025-04-19
+toc: false
+sidebar:
+  exclude: true
 ---
-
+<span style="color:red">Beta version</span>
 ## Speech and/or language difficulties
 
 **Select any speech or language difficulties you have experienced.**
