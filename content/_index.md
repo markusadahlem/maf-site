@@ -110,7 +110,7 @@ Migraine aura is more than visual disturbance — it can affect speech, sensatio
 
   {{< hextra/feature-card
     title="Translating Insights"
-    subtitle="We turn patient insights into digital health tools."
+    subtitle="We turn patient insights into digital healthsolutions."
     link="digital-health"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
     image="/images/teaser/aura-o-mat-app-tbg.png"
@@ -194,6 +194,9 @@ Every insight we share and every tool we build rests on a deep commitment to sci
 
 
 <h2 class="hx-text-2xl hx-font-bold hx-mt-8">Publications</h2>
+
+
+
 
 
 
@@ -413,6 +416,12 @@ MA Dahlem, SC Müller, Migraine aura dynamics after reverse retinotopic mapping 
 
 K Podoll, D Ayles, Inspired by migraine: Sarah Raphael's 'Strip!' paintings, *Journal of the Royal Society of Medicine* **95 (12)**, 624–627 (2002)
 
+K Podoll, Auditory-visual synaesthesia in a patient with basilar migraine, *Journal of Neurology* **249 (1)**, 87–88 (2002)
+
+
+
+
+
 **2001**
 
 MA Dahlem, Modellierung gesichtsfeldbezogener Phänomene bei der Migräne-Aura auf der Grundlage von Erregungswellen in der primären Sehrinde, (2001)
@@ -421,12 +430,16 @@ MA Dahlem, Modellierung gesichtsfeldbezogener Phänomene bei der Migräne-Aura a
 
 K Podoll, D Robinson, Macrosomatognosia and microsomatognosia in migraine art, *Acta Neurologica Scandinavica* **101 (1)**, 19–23 (2000)
 
+MA Dahlem, R Engelmann, S Löwel, SC Müller, Does the migraine aura reflect cortical organization?, *European Journal of Neuroscience* **12 (2)**, 767–770 (2000)
+
+
 K Podoll, D Robinson, Migraine experiences as artistic inspiration in a contemporary artist, *Journal of the Royal Society of Medicine* **93 (11)**, 568–571 (2000)
+
+K Podoll, D Robinson, Self-report of the syndrome of Alice in Wonderland in migraine, *Psychiatry and Brain Research* **8 (3)**, 185–188 (2000)
 
 
 MA Dahlem, SC Müller, Image processing techniques applied to excitation waves in the chicken retina, *Methods* **21 (4)**, 317–323 (2000)
 
-MA Dahlem, R Engelmann, S Löwel, SC Müller, Does the migraine aura reflect cortical organization?, *European Journal of Neuroscience* **12 (2)**, 767–770 (2000)
 
 Y Ismailova, MA Dahlem, T Mair, SC Müller, Effect of potassium ions on spontaneous spreading depression waves characteristics, *Journal of Molecular Medicine – JMM* **78 (7)**, B50–B50 (2000)
 
