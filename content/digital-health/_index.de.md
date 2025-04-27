@@ -14,8 +14,8 @@ disableSidebar: true
 {{< hextra/feature-grid >}}
 
   {{< hextra/feature-card
-    title="Digitale klinische Messgrößen"
-    subtitle="Das Unsichtbare sichtbar machen – für Monitoring in klinischer Forschung, Versorgung und öffentlicher Gesundheit."
+    title="Klinische Messgrößen"
+    subtitle="Monitoring in klinischer Forschung und Versorgung."
     link="diagnosis"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
     image="/images/teaser/aura-o-mat-app.png"
@@ -24,8 +24,8 @@ disableSidebar: true
   >}}
 
   {{< hextra/feature-card
-    title="Digitale Therapeutika"
-    subtitle="Neurologische Erkenntnisse in digitale Therapien übersetzen – für präzisere, gehirnbasierte Interventionen."
+    title="DiGA"
+    subtitle="Digitale Gesundheitsanwendungen (DiGA) – das Migränegehirn umprogrammieren."
     link="dtx"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
     image="/images/teaser/dtx.png"
@@ -34,8 +34,8 @@ disableSidebar: true
   >}}
 
   {{< hextra/feature-card
-    title="Digitale Gesundheitsplattform"
-    subtitle="Patient:innen und Fachleute vernetzen – um Erkenntnisse zu teilen, Symptome zu erforschen und die digitale Versorgung zu gestalten."
+    title="Gesundheitsplattform"
+    subtitle="Patient:innen und Fachleute vernetzen – Digital versorgt."
     link="/de/"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
     image="/images/teaser/digital-platform.png"

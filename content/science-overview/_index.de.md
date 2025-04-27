@@ -1,7 +1,7 @@
 ---
 layout: hextra-home
 type: page
-title: "Science is our Foundation"
+title: "Wissentschaft ist unsere Grundlage"
 width: full
 disableSidebar: true
 ---
@@ -22,8 +22,8 @@ disableSidebar: true
 
 
   {{< hextra/feature-card
-    title="Biology & Mechanisms"
-    subtitle="Migraine aura is more than a symptom — it's a window into how the brain normally works."
+    title="Biologie & Mechanismen"
+    subtitle="Migraine aura ist mehr als ein Symptom — es ist ein Fenster in die Art und Weise, wie der Gehirn normal funktioniert."
     link="science"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
     image="/images/teaser/aura-science.png"
@@ -32,7 +32,7 @@ disableSidebar: true
   >}}
 
   {{< hextra/feature-card
-    title="Genetics"
+    title="Genetik"
     subtitle="Is migraine inherited? Partly—but not entirely, even in identical twins. It's more than just Mendelian genetics."
     link="genetics"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
@@ -71,128 +71,7 @@ disableSidebar: true
 
 
 
-<h2 class="hx-text-2xl hx-font-bold hx-mt-8">Most Relevant Publications by the Founders of the Foundation</h2>
-
-
-
-
-
-
-
-
-
-**2025**
-
-A Mian, S Donoghue, Prieto, MA Dahlem, M Vives-Mestres and G Boucher, The role of digital platforms and smartphone apps, In *Migraine Pain Management*, SB Shrewsbury (ed), pp. 123–145. Elsevier, (2025)
-
-
-**2021**
-
-AS Goncalves, I Laumeier, B Raffaelli, M Dahlem, P Burow, F Rimmele, *et al.*, Study protocol of a randomised controlled trial of the efficacy of a smartphone-based therapy of migraine (SMARTGEM), *Journal of Headache and Pain* **22 (Suppl 1)**, 121–121 (2021)
-
-
-**2020**
-
-A Roesch, MA Dahlem, L Neeb, T Kurth, Validation of an algorithm for automated classification of migraine and tension-type headache attacks in an electronic headache diary, *The Journal of Headache and Pain* **21**, 1–10 (2020)
-
-
-**2017**
-
-MA Dahlem, Mathematical modeling of human cortical spreading depression, In: *Neurobiological Basis of Migraine*, T Dalkara and MA Moskowitz (eds), 285–305 (2017)
-
-
-**2015**
-
-
-MA Dahlem, J Kurths, MD Ferrari, K Aihara, M Scheffer, A May, Understanding migraine using dynamic network biomarkers, *Cephalalgia* **35 (7)**, 627–630 (2015)
-
-
-MA Dahlem, B Schmidt, I Bojak, S Boie, F Kneer, N Hadjikhani, J Kurths, Cortical hot spots and labyrinths: why cortical neuromodulation for episodic migraine with aura should be personalized, *Frontiers in Computational Neuroscience* **9**, 29 (2015)
-
-
-**2014**
-
-
-K Podoll, H Ebel, D Robinson, U Nicola, Obligatory and facultative symptoms of the Alice in wonderland syndrome, *Minerva Medica* **93 (5)**, 507–517 (2002)
-
-
-
-MA Dahlem, J Schumacher, N Hübel, Linking a genetic defect in migraine to spreading depression in a computational model, *PeerJ* **2**, e379 (2014)
-
-
-**2013**
-
-MA Dahlem, Migraine generator network and spreading depression dynamics as neuromodulation targets in episodic migraine, *Chaos: An Interdisciplinary Journal of Nonlinear Science* **23 (4)** (2013)
-
-
-
-
-K Podoll, D Robinson, Migraine art: the migraine experience from within, *Books.google.com* **2009**, (2009)
-
-
-**2008**
-
-M Dahlem, N Hadjikhani, Migraine aura: retracting particle-like waves in weakly susceptible cortex, *Nature Precedings*, 1–1 (2008)
-
-
-**2006**
-
-K Podoll, Migraine art in the Internet: a study of 450 contemporary artists, *International Review of Neurobiology* **73**, 305–328 (2006)
-
-
-K Podoll, D Ayles, Sarah Raphael's migraine with aura as inspiration for the foray of her work into abstraction, *International Review of Neurobiology* **74**, 379–398 (2006)
-
-K Podoll, Kunst und Krankheit, *Symposium anlässlich des 60. Geburtstags von Professor Dr. H.-J. Möller*, Springer (2006)
-
-
-
-
-**2004**
-
-MA Dahlem, EP Chronicle, A computational perspective on migraine aura, *Progress in Neurobiology* **74 (6)**, 351–361 (2004)
-
-
-
-K Podoll, U Nicola, The illness of Giorgio de Chirico: Migraine or epilepsy?, *PsycNet APA* (2004)
-
-
-**2002**
-
-
-
-K Podoll, Auditory-visual synaesthesia in a patient with basilar migraine, *Journal of Neurology* **249 (1)**, 87–88 (2002)
-
-
-
-
-**2000**
-
-K Podoll, D Robinson, Macrosomatognosia and microsomatognosia in migraine art, *Acta Neurologica Scandinavica* **101 (1)**, 19–23 (2000)
-
-MA Dahlem, R Engelmann, S Löwel, SC Müller, Does the migraine aura reflect cortical organization?, *European Journal of Neuroscience* **12 (2)**, 767–770 (2000)
-
-
-K Podoll, D Robinson, Migraine experiences as artistic inspiration in a contemporary artist, *Journal of the Royal Society of Medicine* **93 (11)**, 568–571 (2000)
-
-K Podoll, D Robinson, Self-report of the syndrome of Alice in Wonderland in migraine, *Psychiatry and Brain Research* **8 (3)**, 185–188 (2000)
-
-
-
-**1999**
-
-K Podoll, D Robinson, Out-of-body experiences and related phenomena in migraine art, *Cephalalgia* **19 (8)**, 758–764 (1999)
-
-K Podoll, D Robinson, Lewis Carroll's migraine experiences, *The Lancet* **353 (9158)**, 1612 (1999)
-
-
-
-
-
-
-
-
-
-<h2 class="hx-text-2xl hx-font-bold hx-mt-8"> Complete list of Publications</h2>
+<h2 class="hx-text-2xl hx-font-bold hx-mt-8">Publications</h2>
 
 
 
@@ -277,6 +156,7 @@ N Hübel, MA Dahlem, Dynamics from seconds to hours in Hodgkin-Huxley model with
 
 E Santos, M Schöll, R Sánchez-Porras, MA Dahlem, H Silos, A Unterberg, *et al.*, Radial, spiral and reverberating waves of spreading depolarization occur in the gyrencephalic brain, *NeuroImage* **99**, 244–255 (2014)
 
+MA Dahlem, B Schmidt, I Bojak, S Boie, F Kneer, N Hadjikhani, J Kurths, Hot spots and labyrinths: Why neuromodulation devices for episodic migraine should be personalized, *PeerJ PrePrints* **1** (2014)
 
 MA Dahlem, J Schumacher, N Hübel, Linking a genetic defect in migraine to spreading depression in a computational model, *PeerJ* **2**, e379 (2014)
 
@@ -298,7 +178,7 @@ MA Dahlem, Neuromodulation: Model-Based Control Of Cortical Excitability In Earl
 
 JP Dreier, T Isele, C Reiffurth, N Offenhauser, SA Kirov, MA Dahlem, *et al.*, Is spreading depolarization characterized by an abrupt, massive release of Gibbs free energy from the human brain cortex?**, *The Neuroscientist* **19 (1)**, 25–42 (2013)
 
-
+R Zarnekow, L Kolbe, N Opitz, K Erek, J Rekers, M Dahlem, Fallstudie 4: Green IT bei der Deutschen Bank AG, *Green IT: Erkenntnisse und Best Practices aus Fallstudien*, 97–111 (2013)
 
 N Hübel, E Schöll, MA Dahlem, Bistable dynamics of ion homeostasis in ion-based neuron models, *arXiv e-prints* (2013)
 
