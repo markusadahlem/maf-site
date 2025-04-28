@@ -13,7 +13,7 @@ description: "How the Migraine-Aura-Symptom-Check Guides Patients Toward Underst
 </div>
 
 Sometimes, the greatest relief comes not from new treatments, but from finally putting a name to what was always there. For many patients, browsing the Migraine Aura Foundation’s website offers exactly that kind of breakthrough: a mirror, a recognition, a lifting of shame.
-We colletect a few [Voices](voices/).
+We colletect a few [Voices](/voices/).
 
 The new [Migraine-Aura-Symptom-Check](/aura-symptom-check/symptom-check-tools/) takes this journey one step further. It transforms what might have been a random exploration into a guided, expert-like tour—helping patients articulate their symptoms with structure, precision, and new confidence.
 
