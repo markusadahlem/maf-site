@@ -22,7 +22,7 @@ Jedes Migränezeichen zählt
 </div>
 
 
-{{< hextra/hero-badge link="aura-symptom-check/modality/">}}
+{{< hextra/hero-badge link="aura-symptom-check/symptom-check-tools">}}
   <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400"></div>
   <span class="hx-text-lg">Migränebericht jetzt sichern!</span>
   {{< icon name="arrow-circle-right" attributes="height=32" >}}

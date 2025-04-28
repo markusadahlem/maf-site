@@ -34,7 +34,7 @@ Get a comprehensive evaluation of your migraine symptoms with detailed insights 
 
 
 
-Interested in becoming a beta tester? Reach out to us for more information.
+Interested in becoming a beta tester?  [Reach out](../../contact/)  to us for more information.
 
 
 
