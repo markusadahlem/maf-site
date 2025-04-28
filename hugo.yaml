@@ -19,20 +19,25 @@ menu:
     - identifier: about
       name: About us
       pageRef: /about
-      weight: 3
+      weight: 4
+    - identifier: voices
+      name: Voices
+      pageRef: /voices
+      weight: 5
+    - identifier: con
     - identifier: contact
       name: Contact
       pageRef: /contact
-      weight: 4
+      weight: 6
     - identifier: search
       name: Search
-      weight: 5
+      weight: 7
       params:
         type: search
     - identifier: impressum
       name: Impressum
       pageRef: /impressum
-      weight: 6
+      weight: 8
 
   sidebar:
     - identifier: more

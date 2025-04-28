@@ -4,24 +4,23 @@ title: 'Discovering What Was Always There'
 authors:
   - name: Markus A. Dahlem, PhD
     link: https://example.com/authors/markus
-description: "How the Migraine-Aura-Symptom-Check Guides Patients Toward Understanding."
+description: "How the Migraine-Aura-Symptom-Check Guides Patients Toward Understanding, Improves the Patient Journey, and Supports Clinical Care."
 ---
 
 <div class="hx-mb-12">
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}How the Migraine-Aura-Symptom-Check Guides Patients Toward Understanding.
+{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}How the Migraine-Aura-Symptom-Check Guides Patients Toward Understanding, Improves the Patient Journey, and Supports Clinical Care.
     {{< /hextra/hero-subtitle >}}
 </div>
 
 Sometimes, the greatest relief comes not from new treatments, but from finally putting a name to what was always there. For many patients, browsing the Migraine Aura Foundation’s website offers exactly that kind of breakthrough: a mirror, a recognition, a lifting of shame.
 
-The new Migraine-Aura-Symptom-Check takes this journey one step further. It transforms what might have been a random exploration into a guided, expert-like tour—helping patients articulate their symptoms with structure, precision, and new confidence.
+The new [Migraine-Aura-Symptom-Check](/aura-symptom-check/symptom-check-tools/) takes this journey one step further. It transforms what might have been a random exploration into a guided, expert-like tour—helping patients articulate their symptoms with structure, precision, and new confidence.
 
 At its core, this tool is about empowerment through knowledge. Patients who actively seek information—whether in a moment of frustration, curiosity, or quiet hope—can now engage with a structured system that echoes the kind of thoughtful dialogue they might experience in a specialized clinical consultation.
 
-As part of its initial prototype, the Migraine-Aura-Symptom-Check already generates a structured PDF letter—designed to support communication with treating physicians by summarizing the patient's self-reported symptoms in a clear, clinically meaningful format.
+As part of its initial prototype (a beta version currently password-protected), the [Migraine-Aura-Symptom-Check](/aura-symptom-check/symptom-check-tools/) already generates a structured PDF letter—designed to support communication with treating physicians by summarizing the patient's self-reported symptoms in a clear, clinically meaningful format.
 
-In the future, the tool could also be integrated into more situational contexts—offering purposeful guidance at specific points during the patient journey, such as during infusion sessions. But today, it is primarily designed for self-driven exploration: a companion for those who search, often in quiet moments, for answers long overdue.
-
+In the future, the tool could also be integrated into more situational contexts—offering purposeful guidance at specific points during the patient journey, such as follow-up appointments with headache providers that typically last between 15 and 30 minutes. But today, it is primarily designed for self-driven exploration: a companion for those who search, often in quiet moments, for answers long overdue.
 
 To better understand the potential—and the caveats—let’s walk through a few points.
 
@@ -35,7 +34,7 @@ The structured summaries generated at the end—the equivalent of an expert lett
 ## When Awareness Shifts the Numbers
 Greater awareness, however, can introduce new complexities. As patients recognize previously unnoticed symptoms, their reported migraine frequency may rise—on paper, at least.
 
-This could lead to misinterpretations. Some might appear to shift diagnostic categories—from tension-type headache to migraine, or from episodic to chronic migraine—without any real worsening of the underlying condition.
+This could lead to misinterpretations. Some patients might appear to shift diagnostic categories—from a headache that manifests phenotypically as a tension-type headache to a migraine attack, as the aura symptoms override the headache phenotype. As a further consequence, they might also move from episodic to chronic migraine classifications—without any real worsening (!) of the underlying condition.
 
 If poorly communicated, these shifts could ripple outward, confusing clinicians, payers, or regulators about treatment efficacy.
 
