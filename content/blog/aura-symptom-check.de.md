@@ -20,6 +20,19 @@ Im Kern geht es bei diesem Tool um Empowerment durch Wissen. Menschen, die aktiv
 
 Bereits im Prototypenstadium (eine derzeit passwortgeschützte Beta-Version in englischer Sprache) generiert der [Migraine-Aura-Symptom-Check](de/aura-symptom-check/symptom-check-tools/) eine strukturierte PDF-Zusammenfassung – konzipiert zur Unterstützung der Kommunikation mit behandelnden Ärztinnen und Ärzten, indem die selbstberichteten Symptome der Patienten klar und klinisch sinnvoll dargestellt werden.
 
+
+<div style="text-align: center;">
+  <figure style="display: inline-block; margin: 0 auto;">
+    <img
+      src="/images/blog/aura-symptom-check-show-case.png"
+      class="img"
+      alt="Screenshots" />
+    <figcaption style="font-size: 0.8em; margin-top: 0.5em;">
+        Darstellung des Prototyps des Aura-Symptom-Checks, eines KI-gestützten medizinischen Dokumentationsprozesses. Links: Ein Webformular mit einer von zwanzig Fragen zur Dateneingabe. Rechts: Der daraus resultierende automatisierte Konsiliarbericht, der von einem KI-Expertensystem auf Basis der Eingabedaten erstellt wurde.
+    </figcaption>
+  </figure>
+</div>
+
 Zukünftig könnte das Tool auch in situativen Kontexten integriert werden – etwa um gezielte Unterstützung bei bestimmten Stationen der Patientenreise zu bieten, wie beispielsweise bei Nachsorgeterminen bei denen man die Wartezeit überbrücken kann. Aktuell jedoch ist es primär für die eigenständige Erkundung gedacht: ein Begleiter für alle, die oft in stillen Momenten nach lange überfälligen Antworten suchen.
 
 Um das Potenzial – und auch die Herausforderungen – besser zu verstehen, werfen wir einen genaueren Blick auf einige Aspekte.
@@ -29,7 +42,7 @@ Zunächst und vor allem befähigt der Migraine-Aura-Symptom-Check die Patientinn
 
 Durch das Erkennen subtilerer Symptome, die zuvor möglicherweise abgetan oder missverstanden wurden, können Patientinnen und Patienten ihre Erfahrungen besser dokumentieren. Dies führt zu fundierteren klinischen Gesprächen und letztlich zu individuell angepassteren Behandlungsplänen.
 
-Die am Ende generierten strukturierten Zusammenfassungen – vergleichbar mit einem Expertenbrief – geben den Patientinnen und Patienten etwas Seltenes und Wertvolles: eine würdevolle, teilbare Darstellung ihres Weges. Kein „Ich weiß, das klingt verrückt, aber...“ mehr. Kein unsichtbares Gewicht, das alleine getragen werden muss.
+Die am Ende generierten strukturierten Zusammenfassungen – vergleichbar mit einem Konsiliarbericht – geben den Patientinnen und Patienten etwas Seltenes und Wertvolles: eine würdevolle, teilbare Darstellung ihres Weges. Kein „Ich weiß, das klingt verrückt, aber...“ mehr. Kein unsichtbares Gewicht, das alleine getragen werden muss.
 
 ## Wenn Bewusstsein die Zahlen verschiebt
 Größeres Bewusstsein kann jedoch neue Komplexitäten mit sich bringen. Wenn Patientinnen und Patienten zuvor unbemerkte Symptome erkennen, kann ihre dokumentierte Migränefrequenz – zumindest auf dem Papier – steigen.

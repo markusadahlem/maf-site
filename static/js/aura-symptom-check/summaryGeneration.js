@@ -300,9 +300,9 @@ export function generateNarrativeSummary({
   // Additional sentence based on the count of key characteristics
   let keyCharacteristicsSummary = "";
   if (keyCharacteristicsCount < 3) {
-    keyCharacteristicsSummary = `Fewer than three key characteristics apply. Based on your answers, fewer than three of the key features associated with migraine aura are present. This suggests that your symptom profile does not fully align with Criterion C as defined by the ICHD-3 guidelines.`;
+    keyCharacteristicsSummary = `Fewer than three key characteristics apply. Based on ${poss} answers, fewer than three of the key features associated with migraine aura are present. This suggests that ${poss} symptom profile does not fully align with Criterion C as defined by the ICHD-3 guidelines.`;
   } else {
-    keyCharacteristicsSummary = `Your responses indicate that the ICHD-3 criteria for migraine with aura have likely been met. This means that a sufficient number of typical features—such as gradual onset, full reversibility, limited duration, and association with headache—were present to suggest a pattern consistent with migraine aura. These criteria help differentiate migraine aura from other possible neurological conditions.`;
+    keyCharacteristicsSummary = `${capitalizeFirstLetter(poss)} responses indicate that the ICHD-3 criteria for migraine with aura have likely been met. This means that a sufficient number of typical features—such as gradual onset, full reversibility, limited duration, and association with headache—were present to suggest a pattern consistent with migraine aura. These criteria help differentiate migraine aura from other possible neurological conditions.`;
   }
 
   console.log("Additional Sentence:", additionalSentence); // Debugging line
