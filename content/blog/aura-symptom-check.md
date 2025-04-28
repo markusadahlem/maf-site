@@ -1,6 +1,6 @@
 ---
 date: '2025-04-28T03:55:11+02:00'
-title: 'Discovering What Was Always There'
+title: 'Aura-Symptom-Check: Recognizing the Unrecognized'
 authors:
   - name: Markus A. Dahlem, PhD
     link: https://example.com/authors/markus
@@ -21,7 +21,7 @@ At its core, this tool is about empowerment through knowledge. Patients who acti
 
 As part of its initial prototype (a beta version currently password-protected), the [Migraine-Aura-Symptom-Check](/aura-symptom-check/symptom-check-tools/) already generates a structured PDF letter—designed to support communication with treating physicians by summarizing the patient's self-reported symptoms in a clear, clinically meaningful format.
 
-In the future, the tool could also be integrated into more situational contexts—offering purposeful guidance at specific points during the patient journey, such as follow-up appointments with headache providers that typically last between 15 and 30 minutes. But today, it is primarily designed for self-driven exploration: a companion for those who search, often in quiet moments, for answers long overdue.
+In the future, the tool could also be integrated into more situational contexts—offering purposeful guidance at specific points during the patient journey, such as follow-up appointments with headache providers to bridge the waiting time that typically lasts between 15 and 30 minutes. But today, it is primarily designed for self-driven exploration: a companion for those who search, often in quiet moments, for answers long overdue.
 
 To better understand the potential—and the caveats—let’s walk through a few points.
 

@@ -1,6 +1,6 @@
 ---
 date: '2025-04-28T03:55:11+02:00'
-title: 'Entdecken, was schon immer da war'
+title: 'Aura-Symptom-Check: Das Unerkannte erkennen'
 authors:
   - name: Markus A. Dahlem, PhD
     link: https://example.com/authors/markus
@@ -20,7 +20,7 @@ Im Kern geht es bei diesem Tool um Empowerment durch Wissen. Menschen, die aktiv
 
 Bereits im Prototypenstadium (eine derzeit passwortgeschützte Beta-Version in englischer Sprache) generiert der [Migraine-Aura-Symptom-Check](de/aura-symptom-check/symptom-check-tools/) eine strukturierte PDF-Zusammenfassung – konzipiert zur Unterstützung der Kommunikation mit behandelnden Ärztinnen und Ärzten, indem die selbstberichteten Symptome der Patienten klar und klinisch sinnvoll dargestellt werden.
 
-Zukünftig könnte das Tool auch in situativen Kontexten integriert werden – etwa um gezielte Unterstützung bei bestimmten Stationen der Patientenreise zu bieten, wie beispielsweise bei Nachsorgeterminen mit Kopfschmerzexpertinnen und -experten, die in der Regel zwischen 15 und 30 Minuten dauern. Aktuell jedoch ist es primär für die eigenständige Erkundung gedacht: ein Begleiter für alle, die oft in stillen Momenten nach lange überfälligen Antworten suchen.
+Zukünftig könnte das Tool auch in situativen Kontexten integriert werden – etwa um gezielte Unterstützung bei bestimmten Stationen der Patientenreise zu bieten, wie beispielsweise bei Nachsorgeterminen bei denen man die Wartezeit überbrücken kann. Aktuell jedoch ist es primär für die eigenständige Erkundung gedacht: ein Begleiter für alle, die oft in stillen Momenten nach lange überfälligen Antworten suchen.
 
 Um das Potenzial – und auch die Herausforderungen – besser zu verstehen, werfen wir einen genaueren Blick auf einige Aspekte.
 
