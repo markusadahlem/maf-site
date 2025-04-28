@@ -24,7 +24,7 @@ Jedes Migränezeichen zählt
 
 {{< hextra/hero-badge link="aura-symptom-check/symptom-check-tools">}}
   <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400"></div>
-  <span class="hx-text-lg">Migränebericht jetzt sichern!</span>
+  <span class="hx-text-lg">Persönlichen Migränebericht jetzt sichern!</span>
   {{< icon name="arrow-circle-right" attributes="height=32" >}}
 {{< /hextra/hero-badge >}}
 
@@ -55,7 +55,7 @@ Mit "Aura" bezeichnet man eine Gruppe neurologischer Symptome, die das Sehen, Sp
 {{< hextra/feature-grid >}}
 
   {{< hextra/feature-card
-    title="Migräne erfassen"
+    title="Migräne dokumentieren"
     subtitle="Wir hören Patient*innen zu und dokumentieren jedes Migränezeichen."
     link="symptoms"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
@@ -166,8 +166,8 @@ Jede Erkenntnis, die wir teilen, und jedes Tool, das wir entwickeln, basiert auf
 {{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}**Über digitale Plattformen und Smartphone-Apps**
     {{< /hextra/hero-subtitle >}}
 </div>
-A Mian, S Donoghue, Prieto, MA Dahlem, M Vives-Mestres, G Boucher,  
-*The role of digital platforms and smartphone apps*, In: Migraine Pain Management, SB Shrewsbury (Hrsg.), Elsevier (2025)  
+
+A Mian, S Donoghue, Prieto, MA Dahlem, M Vives-Mestres, G Boucher, *The role of digital platforms and smartphone apps*, In: Migraine Pain Management, SB Shrewsbury (Hrsg.), Elsevier (2025)  
 > Hier zeigen wir, wie moderne digitale Plattformen und Smartphone-Apps Menschen mit Migräne dabei unterstützen können, ihre Erkrankung besser zu managen und Symptome zu überwachen.
 
 <div>
@@ -175,8 +175,7 @@ A Mian, S Donoghue, Prieto, MA Dahlem, M Vives-Mestres, G Boucher,
     {{< /hextra/hero-subtitle >}}
 </div>
 
-MA Dahlem,  
-*Mathematical modeling of human cortical spreading depression*, In: *Neurobiological Basis of Migraine*, T Dalkara und MA Moskowitz (Hrsg.), 285–305 (2017)  
+MA Dahlem, *Mathematical modeling of human cortical spreading depression*, In: *Neurobiological Basis of Migraine*, T Dalkara und MA Moskowitz (Hrsg.), 285–305 (2017)  
 > Hier erklären wir, wie die kortikale spreading depression — eine Welle veränderter Gehirnaktivität — dem Migräne-Aura-Phänomen zugrunde liegt und visuelle sowie sensorische Symptome verständlich macht.
 
 <div>
@@ -185,7 +184,7 @@ MA Dahlem,
 </div>
 
 MA Dahlem, J Kurths, MD Ferrari, K Aihara, M Scheffer, A May,  
-*Understanding migraine using dynamic network biomarkers*, *Cephalalgia* **35 (7)**, 627–630 (2015)  
+*Understanding migraine using dynamic network biomarkers*, *Cephalalgia* 35, 627–630 (2015)  
 > Hier diskutieren wir, wie Migräne als dynamische Störung von Gehirnnetzwerken verstanden werden kann, wodurch Attacken nicht mehr als isolierte Ereignisse, sondern als Teil eines sich verändernden Systems gesehen werden.
 
 <div>
