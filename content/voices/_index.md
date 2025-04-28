@@ -3,7 +3,9 @@ date: "2025-04-05T18:40:56+02:00"
 title: "Voices from the Community"
 ---
 
-Migraine aura is often an invisible burden — difficult to explain, hard to share. Here, we let the real voices of those affected speak for themselves.
+Migraine aura is often an invisible burden — difficult to explain, hard to share. Here, we let the real voices of those affected speak for themselves, sharing their experiences and feedback about our website and its resources.
+
+
 
 ---
 
@@ -21,7 +23,7 @@ Migraine aura is often an invisible burden — difficult to explain, hard to sha
 
 > “For just over a year now, I have been suffering from migraine aura without any subsequent headache, but with visual disturbances, word-finding difficulties, and impaired hearing. I underwent thorough examinations, including a CT scan, and the diagnosis was migraine without headache.
 >
-> **I am very happy to have found your website**, because it is comforting to see that the symptoms I experience are also described by other affected individuals.
+> I am very happy to have found your website, because **it is comforting to see that the symptoms I experience are also described by other affected individuals.**
 >
 > To be honest, I was initially somewhat skeptical of the diagnosis — after all: **migraine without headache, just with aura??!!**”
 >

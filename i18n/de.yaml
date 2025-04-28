@@ -84,3 +84,6 @@
 
 - id: contact
   translation: "Kontakt"
+
+- id: Voices
+  translation: "Stimmen"
