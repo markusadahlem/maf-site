@@ -1,0 +1,26 @@
+{{ $imgDir := "images/symptoms/carousel" }} {{ $yamlRes := resources.Get (printf
+"%s/_carousel.yaml" $imgDir) }} {{ if not $yamlRes }}
+<p style="color: red">
+    ERROR: _carousel.yaml not found at assets/{{ $imgDir }}/_carousel.yaml
+</p>
+{{ else }} {{ $yaml := $yamlRes | transform.Unmarshal }} {{ $metaMap := dict }}
+{{ range $yaml }} {{ $metaMap = merge $metaMap (dict (lower .file) .headline) }}
+{{ end }}
+
+<div class="swiper">
+    <div class="swiper-wrapper">
+        {{ $images := readDir (printf "static/%s" $imgDir) }} {{ range $images
+        }} {{ if not .IsDir }} {{ $key := lower .Name }} {{ $headline := index
+        $metaMap $key | default "" }}
+        <div class="swiper-slide">
+            {{ if $headline }}
+            <div class="swiper-headline">{{ $headline }}</div>
+            {{ end }}
+            <img src="/{{ $imgDir }}/{{ .Name }}" alt="{{ $headline }}" />
+        </div>
+        {{ end }} {{ end }}
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+
+{{ end }}
