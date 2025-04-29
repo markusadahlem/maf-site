@@ -140,7 +140,7 @@ Mit "Aura" bezeichnet man eine Gruppe neurologischer Symptome, die das Sehen, Sp
     style="background: radial-gradient(ellipse at 50% 80%,rgba(245, 116, 97, 0.1),hsla(0,0%,100%,0));"
   >}}
 
-
+ -->
   {{< hextra/feature-card
     title="In Memoriam"
     subtitle="Klaus Podoll (1958–2019)."
@@ -150,7 +150,7 @@ Mit "Aura" bezeichnet man eine Gruppe neurologischer Symptome, die das Sehen, Sp
     imageClass="hx-top-[0%] hx-left-[0px]  hx-w-[100%] sm:hx-w-[20%] dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(245, 116, 97, 0.1),hsla(0,0%,100%,0));"
   >}}
-  -->
+ 
 
 {{< /hextra/feature-grid >}}
 

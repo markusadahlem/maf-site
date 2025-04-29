@@ -165,8 +165,7 @@ Migraine aura is more than visual disturbance — it can affect speech, sensatio
 
 
 
-
-
+-->
 
   {{< hextra/feature-card
     title="In Memoriam"
@@ -176,7 +175,7 @@ Migraine aura is more than visual disturbance — it can affect speech, sensatio
     imageClass="hx-top-[0%] hx-left-[0px]  hx-w-[100%] sm:hx-w-[20%] dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(245, 116, 97, 0.1),hsla(0,0%,100%,0));"
   >}}
--->
+
 
 {{< /hextra/feature-grid >}}
 
