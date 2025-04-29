@@ -30,7 +30,7 @@ With encyclopaedic-worthy detail, we have sorted these reports into 20 basic aur
 
 ## Persistent Symptoms
 
-- [Visual Snow](visual-snow)
+- [Visual Snow](persistent-symptoms)
 
 This page is part of an ongoing update ahead of our major 2025 relaunch.
 More content is coming soon. [Subscribe to our newsletter](/contact/#newsletter) to stay informed.
