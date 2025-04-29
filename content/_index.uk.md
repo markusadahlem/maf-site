@@ -19,7 +19,7 @@ Ingen diagnose går tabt
 
 
 
-{{< hextra/hero-badge link="aura-o-mat">}}
+{{< hextra/hero-badge link="aura-symptom-check" >}}
   <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400"></div>
   <span class="hx-text-lg">Tjek dine symptomer</span>
   {{< icon name="arrow-circle-right" attributes="height=32" >}}
