@@ -39,10 +39,9 @@ This will help guide you more precisely.
 
 {{< donut >}}
 
-Migraine attacks often unfold in up to four distinct phases. Not everyone experiences all of them, and their expression can vary between attacks — but recognizing them can help clarify where your current symptoms belong.
+Migraine attacks often unfold in distinct phases. Not everyone experiences all of them, and their expression can vary between attacks — but recognizing them can help clarify where your symptoms belong.
 
-The following duration periods are typical for each phase of the migraine cycle — but exceptions exist. Some attacks last longer than 72 hours (status migrainosus), some auras involve multiple modalities, each lasting up to 60 minutes, and some phases may be entirely absent (such as aura without headache).
-You’ll likely need to go back and forth a bit to recognize your own pattern and understand the full picture of your migraine cycle and its variations.
+
 
 ### 1. Premonitory
 The premonitory phase (also known as prodrome) is an early phase that is not yet considered as part of the migraine attack and can occur up to 48 hours before the headache starts and affects about 70% of people living with migraine.
@@ -62,5 +61,9 @@ Sometimes called the “migraine hangover,” this phase can last a few days and
 
 ### 5. Interictal Phase
 The interval between attacks. While symptom-free for some, others experience subtle lingering effects, such as brain fog or fatigue.
+
+The mentioned duration periods are typical for each phase of the migraine cycle — **but exceptions exist**. Some attacks last longer than 72 hours (status migrainosus), some auras involve multiple modalities, each lasting up to 60 minutes, and some phases may be entirely absent (such as aura without headache).
+
+You’ll likely need to go back and forth a bit to recognize your own pattern and understand the full picture of your migraine cycle and its variations.
 
 <!-- This phase is also important for identifying patterns or triggers. -->
