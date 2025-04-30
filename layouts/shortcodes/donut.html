@@ -1,0 +1,87 @@
+<svg id="donut"
+  width="{{ .Page.Params.donut_settings.width | default 400 }}"
+  height="{{ .Page.Params.donut_settings.height | default 400 }}"
+  viewBox="0 0 {{ .Page.Params.donut_settings.width | default 400 }} {{ .Page.Params.donut_settings.height | default 400 }}"
+  xmlns="http://www.w3.org/2000/svg">
+</svg>
+
+<script>
+(() => {
+  const width = {{ .Page.Params.donut_settings.width | default 400 }};
+  const height = {{ .Page.Params.donut_settings.height | default 400 }};
+  const centerX = width / 2;
+  const centerY = height / 2;
+  const outerRadius = {{ .Page.Params.donut_settings.outerRadius | default 160 }};
+  const innerRadius = {{ .Page.Params.donut_settings.innerRadius | default 100 }};
+  const labelRadius = (outerRadius + innerRadius) / 2;
+
+  const sections = [
+  {{- range $i, $e := .Page.Params.donut_sections }}
+    {{- if $i }},{{ end }}
+    {
+      degrees: {{ $e.degrees }},
+      link: "{{ $e.link }}",
+      color: "{{ $e.color }}"
+    }
+  {{- end }}
+  ];
+
+  let startAngle = 0;
+
+  const svg = document.getElementById("donut");
+
+  sections.forEach(section => {
+    const endAngle = startAngle + section.degrees;
+
+    const arcPath = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    arcPath.setAttribute("d", describeDonutArc(centerX, centerY, outerRadius, innerRadius, startAngle, endAngle));
+    arcPath.setAttribute("fill", section.color);
+
+    const midAngle = startAngle + (section.degrees / 2);
+    const labelPos = polarToCartesian(centerX, centerY, labelRadius, midAngle);
+
+    const text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+    text.setAttribute("x", labelPos.x);
+    text.setAttribute("y", labelPos.y);
+    text.setAttribute("text-anchor", "middle");
+    text.setAttribute("dominant-baseline", "middle");
+    text.setAttribute("font-size", "16");
+    text.setAttribute("fill", "black");
+    text.setAttribute("style", "text-decoration: none;");
+    text.textContent = section.link.replace(/\//g, '').replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+
+    const link = document.createElementNS("http://www.w3.org/2000/svg", "a");
+    link.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", section.link);
+    link.appendChild(arcPath);
+    link.appendChild(text);
+
+    svg.appendChild(link);
+    startAngle = endAngle;
+  });
+
+  function polarToCartesian(cx, cy, r, angleInDegrees) {
+    const rad = (angleInDegrees - 90) * Math.PI / 180.0;
+    return {
+      x: cx + r * Math.cos(rad),
+      y: cy + r * Math.sin(rad)
+    };
+  }
+
+  function describeDonutArc(cx, cy, outerR, innerR, startAngle, endAngle) {
+    const startOuter = polarToCartesian(cx, cy, outerR, startAngle);
+    const endOuter = polarToCartesian(cx, cy, outerR, endAngle);
+    const startInner = polarToCartesian(cx, cy, innerR, endAngle);
+    const endInner = polarToCartesian(cx, cy, innerR, startAngle);
+    const largeArcFlag = endAngle - startAngle <= 180 ? "0" : "1";
+
+    return [
+      "M", startOuter.x, startOuter.y,
+      "A", outerR, outerR, 0, largeArcFlag, 1, endOuter.x, endOuter.y,
+      "L", startInner.x, startInner.y,
+      "A", innerR, innerR, 0, largeArcFlag, 0, endInner.x, endInner.y,
+      "Z"
+    ].join(" ");
+  }
+})();
+</script>
+

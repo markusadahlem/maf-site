@@ -1,138 +1,66 @@
 ---
 date: "2025-04-06T12:45:02+02:00"
-title: "Symptoms"
+title: "Mapping Migraine"
 cascade:
   type: docs
-linkTitle: Symptoms
+linkTitle: Mapping Migraine
 sidebar:
   exclude: true
+
+donut_settings:
+  width: 400
+  height: 400
+  outerRadius: 160
+  innerRadius: 80
+
+donut_sections:
+  - degrees: 50
+    link: "premonitory/"
+    color: "#AEEEEE"
+  - degrees: 30
+    link: "aura/"
+    color: "#C7A6E5"
+  - degrees: 50
+    link: "headache/"
+    color: "#E599A3"
+  - degrees: 50
+    link: "postdrome/"
+    color: "#B3B3CC"
+  - degrees: 180
+    link: "interictal/"
+    color: "#D6D6E5"
 ---
 
-Since 2000, we collected thousands of patient reports of migraine with aura.
 
-With encyclopaedic-worthy detail, we have sorted these reports into 20 basic aura types with over 30 aura subforms.
+## The Migraine Cycle
 
-> »Every patient with classical migraine opened out, as it were, into an entire encyclopaedia of neurology«
-    – Oliver Sacks in his book Migraine.
+Before exploring your migraine symptoms, it’s helpful to clarify which phase of the migraine cycle the symptoms you’re interested in belong to.
+This will help guide you more precisely.
 
+{{< donut >}}
 
-## Transitory Symptoms
+Migraine attacks often unfold in up to four distinct phases. Not everyone experiences all of them, and their expression can vary between attacks — but recognizing them can help clarify where your current symptoms belong.
 
-- [Visual Symptoms](visual)
-- [Sensory Symptoms](sensory)
-- [Speech-Language Symptoms](speech-language)
-- [Motor Symptoms](motor)
-- [Brainstem Symptoms](brainstem)
-- [Retinal Symptoms](retinal)
+The following duration periods are typical for each phase of the migraine cycle — but exceptions exist. Some attacks last longer than 72 hours (status migrainosus), some auras involve multiple modalities, each lasting up to 60 minutes, and some phases may be entirely absent (such as aura without headache).
+You’ll likely need to go back and forth a bit to recognize your own pattern and understand the full picture of your migraine cycle and its variations.
 
-{{< symptoms-carousel >}}
+### 1. Premonitory
+The premonitory phase (also known as prodrome) is an early phase that is not yet considered as part of the migraine attack and can occur up to 48 hours before the headache starts and affects about 70% of people living with migraine.
 
 
-## Persistent Symptoms
+### 2. Aura
+Experienced by about 30% of people with migraine, the aura typically occurs shortly before the headache.
+It lasts 5–60 minutes. 
 
-- [Visual Snow](persistent-symptoms)
+### 3. Headache
+The most recognized phase, occurring in about 95% of attacks.
+It typically lasts 4 to 72 hours
 
-This page is part of an ongoing update ahead of our major 2025 relaunch.
-More content is coming soon. [Subscribe to our newsletter](/contact/#newsletter) to stay informed.
-
-
-<!-- ---
-date: "2025-04-06T12:45:02+02:00"
-title: "Transitory and Persitent Symptoms"
-weight: 1
-linkTitle: Symptoms
-sidebar:
-  exclude: true
----
-
-Since 2000, we collected thousands of patient reports of migraine with aura.
-
-With encyclopaedic-worthy detail, we have sorted these reports into 20 basic aura types with over 30 aura subforms.
-
-> »Every patient with classical migraine opened out, as it were, into an entire encyclopaedia of neurology«
-	    – Oliver Sacks in his book Migraine.
-
-## Transitory Symptoms
-
-### Body Image Disturbances
-
-![](/images/body-size-disturbances-alice-im-wonderland.png)
-
-### Anomic aphasia
-
-"_I KNOW I have some form of aphasia, too, before the onset of the migraine. It's very irritating for people to have to try and complete my sentences for me. Example: 'Erica, could you make sure the milk gets put back into the....the....oh, it's a simple word, you know what I mean....(exasperated sounds)' 'Mom, do you mean 'refrigerator'?' 'YES!, that's the word I was searching for!' 'Daaaaad, mom's acting really weird again!'_"   
-(Anne Buede, Newsgroups: alt.support.headaches.migraine, Subject: anyone "manic" before a migraine?, February 17, 1998)
-
-"_I was just reminded by someone who loves me very much: P that it gets even stranger than I just described: Me: 'Honey, could you....um....you know, (here I begin to make lifting motions with my arms), could you do that thing....that movement where you ...do something....to the milk... so that it gets into the refrigerator?' Erica: 'Mom , do you want me to 'pick up' the milk?' Me: 'Yes'! Erica: 'Daaaaad! Are you sure it's safe to let Mom out of the house...?'_"   
-(Anne Buede, Newsgroups: alt.support.headaches.migraine, Subject: anyone "manic" before a migraine?, February 17, 1998)
+### 4. Postdrome
+Sometimes called the “migraine hangover,” this phase can last a few days and affects about 70% of individuals.
 
 
+### 5. Interictal Phase
+The interval between attacks. While symptom-free for some, others experience subtle lingering effects, such as brain fog or fatigue.
 
-### Fortification
-
-<div style="text-align: center;">
-  <figure style="display: inline-block; margin: 0 auto;">
-    <img
-      src="/images/Roger_Heaton_Migraine_Images_1992Small_en.jpg"
-      class="img"
-      style="width:350px; height:auto;"
-      alt="Entry to Migraine Art Competition" />
-    <figcaption style="font-size: 0.8em; margin-top: 0.5em;">
-        Entry to art contest Migraine Images, 1992. © 2007 GlaxoSmithKline </figcaption>
-  </figure>
-</div>
-
-
-
-### Visual Illusion
-
-
-<div style="text-align: center;">
-  <figure style="display: inline-block; margin: 0 auto;">
-    <img
-      src="/images/Glaxo-H03_en.jpg"
-      class="img"
-      style="width:350px; height:auto;"
-      alt="Entry to Migraine Art Competition" />
-    <figcaption style="font-size: 0.8em; margin-top: 0.5em;">
-        Visual illusion of diplopia. © 2007 GlaxoSmithKline </figcaption>
-  </figure>
-</div>
-
-In contrast to a visual hallucination which is defined as a visual perception that is not associated with external visual stimuli, a visual illusion is a distortion or modification of a real visual image (Pelak and Liu, 2004). The following webpages will provide examples from the medical literature and from migraine sufferers' self-reports in the internet for various types of visual illusions that may occur as visual migraine aura symptoms.
-
-### Mosaic vision
-
-<div style="display: flex; justify-content: space-between; align-items: flex-start; text-align: center;">
-  <figure style="margin: 0; max-width: 48%;">
-    <img
-      src="/images/mosaic-aura.jpg"
-      class="img"
-      style="width: 100%; height: auto;"
-      alt="Entry to Migraine Art Competition" />
-    <figcaption style="font-size: 0.8em; margin-top: 0.5em;">
-      clamhead, Migraine, 2007. © 2007 clamhead
-    </figcaption>
-  </figure>
-
-  <figure style="margin: 0; max-width: 48%;">
-    <img
-      src="/images/Migraine_Art_Mosaic_Illusion_en.jpeg"
-      class="img"
-      style="width: 100%; height: auto;"
-      alt="Entry to Migraine Art Competition" />
-    <figcaption style="font-size: 0.8em; margin-top: 0.5em;">
-      Migraine Art: Mosaic illusion. © 2007 Migraine Action Association and Boehringer Ingelheim
-    </figcaption>
-  </figure>
-</div>
-
-
-
-## Persitent Symptoms
-
-### Visual Snow
-
-
-This page is part of an ongoing update ahead of our major 2025 relaunch.
-More content is coming soon. [Subscribe to our newsletter](/contact/#newsletter) to stay informed. -->
+<!-- This phase is also important for identifying patterns or triggers. -->

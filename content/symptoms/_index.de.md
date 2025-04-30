@@ -1,97 +1,66 @@
 ---
 date: "2025-04-06T12:45:02+02:00"
-title: "Vorübergehende und anhaltende Symptome"
-weight: 1
-linkTitle: Symptome
+title: "Mapping Migraine"
+cascade:
+  type: docs
+linkTitle: Mapping Migraine
 sidebar:
   exclude: true
+
+donut_settings:
+  width: 400
+  height: 400
+  outerRadius: 160
+  innerRadius: 80
+
+donut_sections:
+  - degrees: 50
+    link: "premonitory/"
+    color: "#AEEEEE"
+  - degrees: 30
+    link: "aura/"
+    color: "#C7A6E5"
+  - degrees: 50
+    link: "headache/"
+    color: "#E599A3"
+  - degrees: 50
+    link: "postdrome/"
+    color: "#B3B3CC"
+  - degrees: 180
+    link: "interictal/"
+    color: "#D6D6E5"
 ---
 
-Seit dem Jahr 2000 haben wir Tausende von Patientenberichten über Migräne mit Aura gesammelt.
 
-Mit enzyklopädischer Sorgfalt haben wir diese Berichte in 20 grundlegende Auratypen und über 30 Unterformen eingeordnet.
+## The Migraine Cycle
 
-> »Jeder Patient mit klassischer Migräne öffnete sich gewissermaßen zu einer ganzen Enzyklopädie der Neurologie.«  
-> – Oliver Sacks in seinem Buch *Migraine*.
+Before exploring your migraine symptoms, it’s helpful to clarify which phase of the migraine cycle the symptoms you’re interested in belong to.
+This will help guide you more precisely.
 
-## Vorübergehende Symptome
+{{< donut >}}
 
-### Körperbildstörungen
+Migraine attacks often unfold in up to four distinct phases. Not everyone experiences all of them, and their expression can vary between attacks — but recognizing them can help clarify where your current symptoms belong.
 
-![](/images/body-size-disturbances-alice-im-wonderland.png)
+The following duration periods are typical for each phase of the migraine cycle — but exceptions exist. Some attacks last longer than 72 hours (status migrainosus), some auras involve multiple modalities, each lasting up to 60 minutes, and some phases may be entirely absent (such as aura without headache).
+You’ll likely need to go back and forth a bit to recognize your own pattern and understand the full picture of your migraine cycle and its variations.
 
-### Anomische Aphasie
+### 1. Prodrome (Premonitory Phase)
+This early phase can occur up to 24 hours before the headache starts and affects about 60% of people with migraine.
 
-"_Ich weiß, dass ich eine Form der Aphasie habe, bevor die Migräne einsetzt. Es ist sehr irritierend für andere, wenn sie versuchen müssen, meine Sätze zu beenden. Beispiel: 'Erica, kannst du bitte die Milch wieder in den... den... oh, es ist ein einfaches Wort, du weißt, was ich meine... (genervte Geräusche)' 'Mom, meinst du den "Kühlschrank"?' 'JA!, das ist das Wort, das ich gesucht habe!' 'Daaaaad, Mom benimmt sich wieder seltsam!'_"  
-(Anne Buede, Newsgroups: alt.support.headaches.migraine, Betreff: anyone "manic" before a migraine?, 17. Februar 1998)
 
-"_Ich wurde gerade von jemandem, der mich sehr liebt :P, daran erinnert, dass es noch seltsamer wird: Ich: 'Schatz, könntest du... ähm... du weißt schon (hier beginne ich, Hebebewegungen mit den Armen zu machen)... könntest du diese Bewegung machen... damit die Milch... in den Kühlschrank kommt?' Erica: 'Mom, möchtest du, dass ich die Milch "hochhebe"?' Ich: 'Ja!' Erica: 'Daaaaad! Bist du sicher, dass es sicher ist, Mom aus dem Haus zu lassen...?'_"  
-(Anne Buede, Newsgroups: alt.support.headaches.migraine, Betreff: anyone "manic" before a migraine?, 17. Februar 1998)
+### 2. Aura
+Experienced by about 30% of people with migraine, the aura typically occurs shortly before the headache.
+It lasts 5–60 minutes. 
 
-### Zickzack-Festungen (Fortifikation)
+### 3. Headache
+The most recognized phase, occurring in about 95% of attacks.
+It typically lasts 4 to 72 hours
 
-<div style="text-align: center;">
-  <figure style="display: inline-block; margin: 0 auto;">
-    <img
-      src="/images/Roger_Heaton_Migraine_Images_1992Small_en.jpg"
-      class="img"
-      style="width:350px; height:auto;"
-      alt="Beitrag zum Migraine Art Wettbewerb" />
-    <figcaption style="font-size: 0.8em; margin-top: 0.5em;">
-        Beitrag zum Kunstwettbewerb Migraine Images, 1992. © 2007 GlaxoSmithKline
-    </figcaption>
-  </figure>
-</div>
+### 4. Postdrome
+Sometimes called the “migraine hangover,” this phase can last a few days and affects about 70% of individuals.
 
-### Visuelle Illusionen
 
-<div style="text-align: center;">
-  <figure style="display: inline-block; margin: 0 auto;">
-    <img
-      src="/images/Glaxo-H03_en.jpg"
-      class="img"
-      style="width:350px; height:auto;"
-      alt="Beitrag zum Migraine Art Wettbewerb" />
-    <figcaption style="font-size: 0.8em; margin-top: 0.5em;">
-        Visuelle Illusion von Doppeltsehen (Diplopie). © 2007 GlaxoSmithKline
-    </figcaption>
-  </figure>
-</div>
+### 5. Interictal Phase
+The interval between attacks. While symptom-free for some, others experience subtle lingering effects, such as brain fog or fatigue.
 
-Im Gegensatz zu einer visuellen Halluzination, die als Wahrnehmung ohne äußeren Reiz definiert ist, handelt es sich bei einer visuellen Illusion um eine Verzerrung oder Veränderung eines realen visuellen Reizes (Pelak und Liu, 2004).  
-Die folgenden Seiten zeigen Beispiele aus der medizinischen Literatur und Berichte von Migränebetroffenen aus dem Internet zu verschiedenen Typen visueller Illusionen, die als visuelle Aurasymptome auftreten können.
-
-### Mosaiksehen
-
-<div style="display: flex; justify-content: space-between; align-items: flex-start; text-align: center;">
-  <figure style="margin: 0; max-width: 48%;">
-    <img
-      src="/images/mosaic-aura.jpg"
-      class="img"
-      style="width: 100%; height: auto;"
-      alt="Beitrag zum Migraine Art Wettbewerb" />
-    <figcaption style="font-size: 0.8em; margin-top: 0.5em;">
-      clamhead, Migraine, 2007. © 2007 clamhead
-    </figcaption>
-  </figure>
-
-  <figure style="margin: 0; max-width: 48%;">
-    <img
-      src="/images/Migraine_Art_Mosaic_Illusion_en.jpeg"
-      class="img"
-      style="width: 100%; height: auto;"
-      alt="Beitrag zum Migraine Art Wettbewerb" />
-    <figcaption style="font-size: 0.8em; margin-top: 0.5em;">
-      Migraine Art: Mosaik-Illusion. © 2007 Migraine Action Association und Boehringer Ingelheim
-    </figcaption>
-  </figure>
-</div>
-
----
-
-## Anhaltende Symptome
-
-### Visual Snow (visueller Schnee)
-
-Diese Seite ist Teil einer laufenden Aktualisierung im Vorfeld unseres großen Relaunchs 2025.  
-Weitere Inhalte folgen in Kürze. [Abonniere unseren Newsletter](/contact/#newsletter), um auf dem Laufenden zu bleiben.
+<!-- This phase is also important for identifying patterns or triggers. -->
