@@ -84,16 +84,16 @@ Migraine aura is more than visual disturbance — it can affect speech, sensatio
 {{< hextra/feature-grid >}}
 
 
-
   {{< hextra/feature-card
-    title="Mapping Migraine"
-    subtitle="We listen to patients and map every migraine sign."
+    title="Migraine Cycle"
+    subtitle="We listen to patients and uncover every migraine sign."
     link="symptoms"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
-    image="/images/teaser/roteRathausZigzag_cleanup.png"
-    imageClass="hx-top-[0%] hx-left-[0px]  dark:hx-opacity-80"
+    image="/images/teaser/migraine-cycle@2x.png"
+    imageClass="hx-object-contain hx-w-full hx-h-full hx-relative dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(203, 28, 66, 0.1),hsla(0,0%,100%,0));"
   >}}
+
 
 
 
@@ -102,7 +102,7 @@ Migraine aura is more than visual disturbance — it can affect speech, sensatio
     subtitle="Art and stories reveal migraine’s hidden impact."
     link="art"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
-    image="/images/teaser/robinson_sacks-nov-1991.jpg"
+    image="/images/teaser/roteRathausZigzag_cleanup.png"
     imageClass="hx-top-[0%] hx-left-[0px]  dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(203, 28, 66, 0.1),hsla(0,0%,100%,0));"
   >}}
