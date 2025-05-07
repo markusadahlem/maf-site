@@ -28,6 +28,18 @@ sidebar:
   </figure>
 </div>
 
+<div style="text-align: center;">
+  <figure style="display: inline-block; margin: 0 auto;">
+    <img
+      src="/images/negative-symptoms.png"
+      class="img"
+      style="width:350px; height:auto;"
+      alt="Negative Migraine Symtoms" />
+    <figcaption style="font-size: 0.8em; margin-top: 0.5em;">
+         </figcaption>
+  </figure>
+</div>
+
 
 
 ### Visual Illusion
