@@ -95,7 +95,7 @@ images:
 
   {{< hextra/feature-card
     title="Explore Your Brain State"
-    subtitle="Measure how migraine shapes your senses."
+    subtitle="7 tasks to measure how migraine shapes your senses."
     link="test-suit"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
     image="/images/teaser/jesus-in-toast.png"
