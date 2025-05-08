@@ -1,31 +1,42 @@
 <!-- Quote Carousel Container -->
 <style>
     .quote-carousel {
-        max-width: 900px;
-        margin: 0 auto;
         padding: 2rem 1rem;
     }
 
     .quote-carousel .swiper-slide {
         min-height: 120px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+        display: block; /* ← no flexbox centering */
+        text-align: left; /* ← or remove this line entirely */
     }
 
     .quote-carousel blockquote {
         font-style: italic;
-        font-size: 1.5rem;
-        line-height: 1.6;
-        max-width: 1200px;
-        margin: 0 auto;
+        font-size: 1.2rem;
+        line-height: 1.4;
+        margin: 0; /* ← removes auto centering */
+        max-width: none; /* ← removes width constraint */
     }
 
     .quote-carousel footer {
         margin-top: 0.5rem;
         font-size: 1rem;
         color: #555;
+    }
+    .quote-carousel {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .quote-carousel .swiper-wrapper {
+        display: flex;
+        transition-timing-function: ease;
+    }
+
+    .quote-carousel .swiper-slide {
+        flex-shrink: 0;
+        width: 100%; /* very important for single-slide display */
+        box-sizing: border-box;
     }
 </style>
 

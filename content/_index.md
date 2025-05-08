@@ -14,7 +14,7 @@ images:
 
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-headline >}}
-    Make Migraine Visible
+    Make Your Migraine Visible
 {{< /hextra/hero-headline >}}
 </div>
 
@@ -39,20 +39,21 @@ images:
 </div>
 
 
-<h2 class="hx-text-4xl hx-font-bold hx-mt-12">
-    Voices of people living with migraine shape innovation
+<h2 class="hx-text-4xl hx-font-bold hx-mt-12 hx-mb-6">
+    Voices of people living with migraine
 </h2>
 
 {{< quote-carousel >}}
 
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}&nbsp;
-    {{< /hextra/hero-subtitle >}} 
-</div>
 
-Migraine aura is more than visual disturbance — it can affect speech, sensation, movement, or even thought clarity. Since 1998, we’ve gathered over 7,000 patient accounts to build one of the world's most comprehensive sources of knowledge on migraine aura.
+
+
+<h2 class="hx-text-4xl hx-font-bold hx-mt-12">
+    Your stories spark innovation
+</h2>
 
 <div >
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}From symptoms to stories to solutions: how patient experiences shape the future of migraine care.
+{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Experience. Insight. Action. Shaping a new future in migraine care — together.
     {{< /hextra/hero-subtitle >}} 
 </div>
 
@@ -76,16 +77,15 @@ Migraine aura is more than visual disturbance — it can affect speech, sensatio
 
 <div class="hx-mt-6"></div>
 
-
 {{< hextra/feature-grid >}}
 
 
   {{< hextra/feature-card
-    title="In Any Phase"
-    subtitle="We listen to patients and uncover every migraine sign."
-    link="symptoms"
+    title="Revealing Experiences"
+    subtitle="Art and stories reveal migraine’s hidden impact."
+    link="art"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
-    image="/images/teaser/migraine-cycle@2x.png"
+    image="/images/teaser/roteRathausZigzag_cleanup-plus.png"
     imageClass="hx-object-contain hx-w-full hx-h-full hx-relative dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(203, 28, 66, 0.1),hsla(0,0%,100%,0));"
   >}}
@@ -94,19 +94,19 @@ Migraine aura is more than visual disturbance — it can affect speech, sensatio
 
 
   {{< hextra/feature-card
-    title="Revealing Experiences"
-    subtitle="Art and stories reveal migraine’s hidden impact."
-    link="art"
+    title="Explore Your Brain State"
+    subtitle="Measure how migraine shapes your senses."
+    link="test-suit"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
-    image="/images/teaser/roteRathausZigzag_cleanup.png"
+    image="/images/teaser/jesus-in-toast.png"
     imageClass="hx-top-[0%] hx-left-[0px]  dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(203, 28, 66, 0.1),hsla(0,0%,100%,0));"
   >}}
 
 
   {{< hextra/feature-card
-    title="Translating Insights"
-    subtitle="We turn patient insights into digital healthsolutions."
+    title="Take Back Control"
+    subtitle="Smart Medicine — a new kind of migraine care."
     link="digital-health"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
     image="/images/teaser/aura-o-mat-app-tbg.png"
@@ -178,6 +178,7 @@ Migraine aura is more than visual disturbance — it can affect speech, sensatio
 
 <div class="hx-mt-8"></div>
 
+Migraine aura is more than visual disturbance — it can affect speech, sensation, movement, or even thought clarity. Since 1998, we’ve gathered over 7,000 patient accounts to build one of the world's most comprehensive sources of knowledge on migraine aura.
 
 
 <h2 class="hx-text-4xl hx-font-bold hx-mt-12">

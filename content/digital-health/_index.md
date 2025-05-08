@@ -9,7 +9,9 @@ disableSidebar: true
 
 # Digital Health
 
+**Coming soon:** Digital Therapeutics
 
+A first look at how we turn insight into intervention.
 
 
 
@@ -21,11 +23,10 @@ disableSidebar: true
 
 
   {{< hextra/feature-card
-    title="Digital Clinical Measures"
-    subtitle="Making the invisible visible for monitoring in clinical research, clinical care, and public health."
-    link="diagnosis"
+    title="Support Program"
+    subtitle=""
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
-    image="/images/teaser/aura-o-mat-app.png"
+    image="/images/teaser/pop.png"
     imageClass="hx-top-[0%] hx-left-[0px]  dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(203, 28, 66, 0.1),hsla(0,0%,100%,0));"
   >}}
@@ -33,24 +34,28 @@ disableSidebar: true
 
 
   {{< hextra/feature-card
-    title="Digital Therapeutics"
-    subtitle="Translating neurological insights into digital therapy — toward more precise, brain-based interventions."
-    link="dtx"
+    title="Act When Mild"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
-    image="/images/teaser/dtx.png"
+    image="/images/teaser/act-when-mild.png"
+    imageClass="hx-top-[0%] hx-left-[0px]  hx-w-[100%] sm:hx-w-[20%] dark:hx-opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(245, 116, 97, 0.1),hsla(0,0%,100%,0));"
+  >}}
+
+
+ {{< hextra/feature-card
+    title="Brain Desensitization"
+    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
+    image="/images/teaser/desensitization.png"
     imageClass="hx-top-[0%] hx-left-[0px]  hx-w-[100%] sm:hx-w-[20%] dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(245, 116, 97, 0.1),hsla(0,0%,100%,0));"
   >}}
 
  {{< hextra/feature-card
-    title="Digital Health Platform"
-    subtitle="Connecting patients and professionals — to share insights, explore symptoms, and shape digital care."
-    link="/"
+    title="Preemptive Treatment"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
-    image="/images/teaser/digital-platform.png"
+    image="/images/teaser/preemptive.png"
     imageClass="hx-top-[0%] hx-left-[0px]  hx-w-[100%] sm:hx-w-[20%] dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(245, 116, 97, 0.1),hsla(0,0%,100%,0));"
   >}}
-
 
 {{< /hextra/feature-grid >}}
