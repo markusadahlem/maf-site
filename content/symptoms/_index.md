@@ -15,19 +15,24 @@ donut_settings:
 
 donut_sections:
   - degrees: 50
+    label: "Warning sign"
     link: "premonitory/"
     color: "#AEEEEE"
   - degrees: 30
     link: "aura/"
+    label: "Aura"
     color: "#C7A6E5"
   - degrees: 50
     link: "headache/"
+    label: "Headache"
     color: "#E599A3"
   - degrees: 50
     link: "postdrome/"
+    label: "Hangover"
     color: "#B3B3CC"
   - degrees: 180
     link: "interictal/"
+    label: "Inbetween"
     color: "#D6D6E5"
 ---
 

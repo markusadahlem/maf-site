@@ -14,7 +14,7 @@ images:
 
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-headline >}}
-Every migraine sign counts
+    Make Migraine Visible
 {{< /hextra/hero-headline >}}
 </div>
 
@@ -34,26 +34,22 @@ Every migraine sign counts
 
 
 <div class="hx-mb-6">
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Understand your symptoms. Share with your doctor.
+{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Understand your symptoms. Share with your doctor. Your experience become visible.
     {{< /hextra/hero-subtitle >}}
 </div>
-
-
-
-
-Migraine aura is more than visual disturbance — it can affect speech, sensation, movement, or even thought clarity. Since 1998, we’ve gathered over 7,000 patient accounts to build one of the world's most comprehensive sources of knowledge on migraine aura.
-
-
-
-
-
 
 
 <h2 class="hx-text-4xl hx-font-bold hx-mt-12">
     Voices of people living with migraine shape innovation
 </h2>
 
+{{< quote-carousel >}}
 
+{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}&nbsp;
+    {{< /hextra/hero-subtitle >}} 
+</div>
+
+Migraine aura is more than visual disturbance — it can affect speech, sensation, movement, or even thought clarity. Since 1998, we’ve gathered over 7,000 patient accounts to build one of the world's most comprehensive sources of knowledge on migraine aura.
 
 <div >
 {{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}From symptoms to stories to solutions: how patient experiences shape the future of migraine care.
@@ -85,7 +81,7 @@ Migraine aura is more than visual disturbance — it can affect speech, sensatio
 
 
   {{< hextra/feature-card
-    title="Migraine Cycle"
+    title="In Any Phase"
     subtitle="We listen to patients and uncover every migraine sign."
     link="symptoms"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
@@ -185,61 +181,15 @@ Migraine aura is more than visual disturbance — it can affect speech, sensatio
 
 
 <h2 class="hx-text-4xl hx-font-bold hx-mt-12">
-    Science is our foundation
+    For Healthcare Professionals
 </h2>
 
 
-
-Every insight we share and every tool we build is rooted in scientific evidence and neurological expertise. The following five selected references, drawn from over 80 peer-reviewed papers and migraine textbook chapters, illustrate the scientific groundwork that informs our work at the Migraine Aura Foundation.
-
-
-
-<div>
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}**On digital platforms and smartphone apps**
+<div class="hx-mb-6">
+{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Grounded in Science. Designed for Practice
     {{< /hextra/hero-subtitle >}}
 </div>
-
-A Mian, S Donoghue, Prieto, MA Dahlem, M Vives-Mestres, G Boucher, *The role of digital platforms and smartphone apps*, In: Migraine Pain Management, SB Shrewsbury (ed), Elsevier (2025)  
-> Here we show that modern digital platforms and smartphone apps can empower people with migraine to better manage their condition and monitor their symptoms.
-
-<div>
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}**On the physiological mechanism behind aura** 
-    {{< /hextra/hero-subtitle >}}
-</div>
-
- 
-MA Dahlem, *Mathematical modeling of human cortical spreading depression*, In: Neurobiological Basis of Migraine, T Dalkara and MA Moskowitz (eds), 285–305 (2017)  
-> Here we explain how cortical spreading depression — a wave of altered brain activity — is at the core of migraine aura, helping make sense of visual and sensory symptoms.
-
-<div>
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}**On digital biomarkers**  
-    {{< /hextra/hero-subtitle >}}
-</div>
+At the Migraine Aura Foundation, we provide clinicians with scientifically validated tools and insights. Our work is supported by over 80 peer-reviewed studies and textbook chapters on migraine.
 
 
-MA Dahlem, J Kurths, MD Ferrari, K Aihara, M Scheffer, A May, *Understanding migraine using dynamic network biomarkers*, *Cephalalgia* 35, 627–630 (2015)  
-> Here we discuss how migraine can be understood as a dynamic brain network disorder, shifting how we view attacks not as isolated events but as part of a fluctuating system.
-
-<div>
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}**On migraine art and personal experience**  
-    {{< /hextra/hero-subtitle >}}
-</div>
-
-
-K Podoll, D Robinson, Oliver Sacks (Foreword)
-*Migraine art: the migraine experience from within*,  North Atlantic Books; Illustrated edition (2009)  
-> Here we illustrate how the personal experience of migraine — especially aura — has inspired artistic expression, offering a window into the emotional and sensory world of those affected.
-
-<div>
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}**On rare aura symptoms like Alice in Wonderland syndrome** 
-    {{< /hextra/hero-subtitle >}}
-</div>
-
- 
-K Podoll, H Ebel, D Robinson, U Nicola, *Obligatory and facultative symptoms of the Alice in Wonderland syndrome*, *Minerva Medica* (2002)  
-> Here we explore rare aura symptoms such as distortions in size, time, and body perception, known as Alice in Wonderland syndrome, and their connection to migraine.
-
-
-&nbsp;
-
-See the full list of scientific publications for further details and [**explore the science  of migraine→**](science-overview)
+[**→ Discover the science behind migraine**](science-overview)

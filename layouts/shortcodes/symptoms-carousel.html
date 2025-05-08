@@ -7,7 +7,7 @@
 {{ range $yaml }} {{ $metaMap = merge $metaMap (dict (lower .file) .headline) }}
 {{ end }}
 
-<div class="swiper">
+<div class="dtx-carousel swiper">
     <div class="swiper-wrapper">
         {{ $images := readDir (printf "static/%s" $imgDir) }} {{ range $images
         }} {{ if not .IsDir }} {{ $key := lower .Name }} {{ $headline := index

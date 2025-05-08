@@ -1,0 +1,84 @@
+<!-- Quote Carousel Container -->
+<style>
+    .quote-carousel {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+    }
+
+    .quote-carousel .swiper-slide {
+        min-height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .quote-carousel blockquote {
+        font-style: italic;
+        font-size: 1.5rem;
+        line-height: 1.6;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .quote-carousel footer {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+        color: #555;
+    }
+</style>
+
+<div class="quote-carousel swiper">
+    <div class="swiper-wrapper">
+        {{ range site.Data.quotes.quotes.carousel_quotes }}
+        <div class="swiper-slide">
+            <blockquote>
+                “{{ .text }}”
+                <footer>— {{ .author }}</footer>
+            </blockquote>
+        </div>
+        {{ end }}
+    </div>
+
+    <!--
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+    -->
+</div>
+
+<!-- Swiper dependencies (only once globally!) -->
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- Scoped initialization for quote carousel -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        console.log(
+            "Initializing Swiper: found",
+            document.querySelectorAll(".quote-carousel .swiper-slide").length,
+            "slides",
+        );
+
+        new Swiper(".quote-carousel", {
+            loop: true,
+            slidesPerView: 1, // ✅ Force only one quote at a time
+            autoplay: {
+                delay: 6000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".quote-carousel .swiper-button-next",
+                prevEl: ".quote-carousel .swiper-button-prev",
+            },
+            pagination: {
+                el: ".quote-carousel .swiper-pagination",
+                clickable: true,
+            },
+        });
+    });
+</script>
