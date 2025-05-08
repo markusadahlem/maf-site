@@ -34,7 +34,7 @@ images:
 
 
 <div class="hx-mb-6">
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Understand your symptoms. Share with your doctor. Your experience become visible.
+{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Understand your symptoms. Share with your doctor. Your experiences become visible.
     {{< /hextra/hero-subtitle >}}
 </div>
 
