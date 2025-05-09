@@ -95,7 +95,7 @@ images:
 
   {{< hextra/feature-card
     title="Explore Your Brain State"
-    subtitle="7 tasks to measure how migraine shapes your senses."
+    subtitle="BrainRadar: exploratory migraine cycle tracker."
     link="test-suit"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
     image="/images/teaser/jesus-in-toast.png"
