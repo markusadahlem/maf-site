@@ -83,7 +83,7 @@ images:
   {{< hextra/feature-card
     title="Revealing Experiences"
     subtitle="Art and stories reveal migraine’s hidden impact."
-    link="art"
+    link="experiences"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
     image="/images/teaser/roteRathausZigzag_cleanup-plus.png"
     imageClass="hx-object-contain hx-w-full hx-h-full hx-relative dark:hx-opacity-80"
