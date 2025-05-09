@@ -50,7 +50,7 @@ A first look at how we turn insight into intervention.
     <img
       src="/images/preemptive.png"
       style="width: 200px; height: auto;"
-      alt="Preemptive Treatmen" />
+      alt="Preemptive Treatment" />
     <figcaption style="font-size: 0.8em; margin-top: 0.5em;">
         Preemptive Treatmen
     </figcaption>

@@ -165,7 +165,7 @@ images:
 
   {{< hextra/feature-card
     title="In Memoriam"
-    subtitle="Klaus Podoll (1958-2019).)"
+    subtitle="Co-Founder Klaus Podoll (1958-2019).)"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
     image="/images/teaser/klaus-podoll.png"
     imageClass="hx-top-[0%] hx-left-[0px]  hx-w-[100%] sm:hx-w-[20%] dark:hx-opacity-80"
