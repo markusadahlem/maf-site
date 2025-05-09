@@ -11,7 +11,7 @@ donut_settings:
   width: 400
   height: 400
   outerRadius: 160
-  innerRadius: 80
+  innerRadius: 60
 
 donut_sections:
   - degrees: 50
