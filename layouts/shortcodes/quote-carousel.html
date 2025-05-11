@@ -1,46 +1,34 @@
 <!-- Quote Carousel Container -->
 <style>
     .quote-carousel {
-        padding: 2rem 1rem;
+        padding: 1rem; /* Reduced padding */
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        transition-timing-function: ease;
+        margin-bottom: 0 !important;
     }
 
     .quote-carousel .swiper-slide {
-        min-height: 120px;
-        display: block; /* ← no flexbox centering */
-        text-align: left; /* ← or remove this line entirely */
+        display: block;
+        text-align: left;
+        flex-shrink: 0;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .quote-carousel blockquote {
         font-style: italic;
         font-size: 1rem;
         line-height: 1.4;
-        margin: 0; /* ← removes auto centering */
-        max-width: none; /* ← removes width constraint */
+        margin: 0;
+        max-width: none;
     }
 
     .quote-carousel footer {
         margin-top: 0.5rem;
         font-size: 1rem;
         color: #555;
-    }
-    .quote-carousel {
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .quote-carousel {
-        display: flex;
-        transition-timing-function: ease;
-    }
-
-    .quote-carousel .swiper-slide {
-        flex-shrink: 0;
-        width: 100%; /* very important for single-slide display */
-        box-sizing: border-box;
-    }
-
-    .quote-carousel {
-        margin-bottom: 0 !important;
     }
 
     .quote-carousel + * {

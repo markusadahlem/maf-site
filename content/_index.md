@@ -18,8 +18,10 @@ images:
 {{< /hextra/hero-headline >}}
 </div>
 
-
-
+<div class="hx-mb-12">
+{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Migraine isn’t just a headache—it’s a complex condition with symptoms that matter for diagnosis, treatment, and your quality of life.
+    {{< /hextra/hero-subtitle >}}
+</div>
 
 **Voices of people living with migraine**
 
@@ -28,17 +30,13 @@ images:
 
 
 
-Migraine isn’t just a headache—it’s a complex condition with symptoms that matter for diagnosis, treatment, and your quality of life.
 
 <h2 class="hx-text-4xl hx-font-bold hx-mt-6">
-    Your stories spark innovation
+    With you, not just for you: Your stories spark innovation!
 </h2>
 
 
-<div >
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Experience. Insight. Action. Shaping a new future in migraine care — together.
-    {{< /hextra/hero-subtitle >}}
-</div>
+
 
 
 <!--
