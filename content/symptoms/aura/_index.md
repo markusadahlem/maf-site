@@ -15,7 +15,8 @@ Since 2000, we collected thousands of patient reports of migraine with aura.
 With encyclopaedic-worthy detail, we have sorted these reports into 20 basic aura types with over 30 aura subforms.
 
 > »Every patient with classical migraine opened out, as it were, into an entire encyclopaedia of neurology«
-    – Oliver Sacks in his book Migraine.
+    – Oliver Sacks in his first book Migraine.
+
 
 
 ## Transitory Symptoms
@@ -27,7 +28,17 @@ With encyclopaedic-worthy detail, we have sorted these reports into 20 basic aur
 - [Brainstem Symptoms](brainstem)
 - [Retinal Symptoms](retinal)
 
-{{< symptoms-carousel >}}
+
+
+{{< carousel
+  name="symptoms"
+  imageDir="images/symptoms/carousel"
+  yamlPath="images/symptoms/carousel/_carousel.yaml"
+  titleKey="headline"
+  slidesPerView="3"
+  delay="9000"
+  showPagination="false"
+>}}
 
 
 ## Persistent Symptoms

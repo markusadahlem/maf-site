@@ -13,48 +13,19 @@ A new way to understand your brain — before, during, and between migraine atta
 
 ### How Many Jesuses Do You Spot in 10 Toasts?
 
-<div style="display: flex; justify-content: center; gap: 2rem;">
-  <figure style="margin: 0; text-align: center;">
-    <img
-      src="/images/jesus-in-toast.png"
-      style="width: 150px; height: auto;"
-      alt="Jesus in Toast" />
-  </figure>
-
-  <figure style="margin: 0; text-align: center;">
-    <img
-      src="/images/aphrodite-in-toast.png"
-      style="width: 150px; height: auto;"
-      alt="Aphrodite in Toast" />
-  </figure>
-  <figure style="margin: 0; text-align: center;">
-    <img
-      src="/images/jesus-in-toast.png"
-      style="width: 150px; height: auto;"
-      alt="Jesus in Toast" />
-  </figure>
-
-<figure style="margin: 0; text-align: center;">
-    <img
-      src="/images/jesus-in-toast.png"
-      style="width: 150px; height: auto;"
-      alt="Jesus in Toast" />
-  </figure>
-
-  <figure style="margin: 0; text-align: center;">
-    <img
-      src="/images/aphrodite-in-toast.png"
-      style="width: 150px; height: auto;"
-      alt="Aphrodite in Toast" />
-  </figure>
-</div>
-<figcaption style="font-size: 0.8em; margin-top: 0.5em;">
-  The <i>Seeing-Jesus-in-Toast</i> task was inspired by listening to the experiences of people living with migraine.
-</figcaption>
+{{< carousel
+  name="toast-teaser"
+  imageDir="images/toast-teaser/carousel"
+  yamlPath="images/toast-teaser/carousel/_carousel.yaml"
+  titleKey="headline"
+  slidesPerView="1"
+  delay="5000"
+  showPagination="true"
+>}}
 
 This curious test is part of the MigraineBrainRadar™ and reveals how your brain makes sense of vague or noisy images — a phenomenon called pareidolia. It’s part of a growing set of perception tasks designed to explore how your brain processes the world, especially during migraine-prone phases.
 
-[Explore the **MigraineBrainRadar™** →](/migrainebrainradar)
+[Explore the **MigraineBrainRadar™** →](migrainebrainradar)
 
 
 ---

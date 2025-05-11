@@ -1,0 +1,42 @@
+{{/* Required shortcode parameters: name = unique name for HTML IDs and CSS
+classes (e.g. "dtx") imageDir = path to static image folder (e.g.
+"images/dtx/carousel") yamlPath = path to YAML metadata file (e.g.
+"images/dtx/carousel/_carousel.yaml") titleKey = YAML key for captions (e.g.
+"headline") slidesPerView = number of visible slides (optional, default 3) delay
+= autoplay delay in ms (optional, default 5000) */}} {{ $name := .Get "name" }}
+{{ $imgDir := .Get "imageDir" }} {{ $yamlPath := .Get "yamlPath" }} {{ $titleKey
+:= .Get "titleKey" | default "headline" }} {{ $slidesPerView := .Get
+"slidesPerView" | default "3" }} {{ $delay := .Get "delay" | default "5000" }}
+{{ $yamlRes := resources.Get $yamlPath }} {{ $metaMap := dict }} {{ if $yamlRes
+}} {{ $yaml := $yamlRes | transform.Unmarshal }} {{ range $yaml }} {{ $key :=
+lower .file }} {{ $value := index . $titleKey }} {{ $metaMap = merge $metaMap
+(dict $key $value) }} {{ end }} {{ end }} {{ $showPagination := .Get
+"showPagination" | default "true" }}
+<div
+    class="swiper carousel-{{ $name }}"
+    data-swiper='{
+  "loop": true,
+  "autoplay": { "delay": {{ $delay }} },
+  "slidesPerView": {{ $slidesPerView }},
+  "spaceBetween": 20
+  {{ if eq $showPagination "true" }},
+    "pagination": { "el": ".carousel-{{ $name }} .swiper-pagination", "clickable": true }
+  {{ end }}
+}'
+>
+    <div class="swiper-wrapper">
+        {{ $images := readDir (printf "static/%s" $imgDir) }} {{ range $images
+        }} {{ if not .IsDir }} {{ $key := lower .Name }} {{ $headline := index
+        $metaMap $key | default "" }}
+        <div class="swiper-slide">
+            {{ if $headline }}
+            <div class="swiper-headline">{{ $headline }}</div>
+            {{ end }}
+            <img src="/{{ $imgDir }}/{{ .Name }}" alt="{{ $headline }}" />
+        </div>
+        {{ end }} {{ end }}
+    </div>
+    {{ if eq $showPagination "true" }}
+    <div class="swiper-pagination"></div>
+    {{ end }}
+</div>

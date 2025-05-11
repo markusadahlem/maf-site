@@ -16,7 +16,16 @@ For over two decades, the _Migraine Aura Foundation_ has explored how neurologic
 
 ## From Research to Real-World Use
 
-{{< swiper-carousel >}}
+
+{{< carousel
+  name="dtx"
+  imageDir="images/dtx/carousel"
+  yamlPath="images/dtx/carousel/_carousel.yaml"
+  titleKey="headline"
+  slidesPerView="4"
+  delay="3000"
+  showPagination="false"
+>}}
 
 
 Long before digital therapeutics became a category, one of the _Migraine Aura Foundation_ founders explored how migraine research could inform digital care. Years later, this translational vision helped shape M-sense — the first DiGA-listed migraine app with ICHD-3-based diagnostics. The screenshots below showcase features that echo _Migraine Aura Foundation_’s commitment to translating insights directly into healthcare — through modeling, symptom tracking, and digital interaction design.

@@ -1,0 +1,10 @@
+<script type="module">
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".swiper").forEach((el) => {
+      const config = JSON.parse(el.dataset.swiper || "{}");
+      console.log("Swiper config", config)
+      new Swiper(el, config);
+    });
+  });
+</script>
+

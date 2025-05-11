@@ -54,17 +54,22 @@
     max-width: 600px;
 }
 
-.swiper {
+.carousel-toast-teaser {
+    max-width: 600px;
+    margin: auto;
+}
+
+.swiper-dtx {
     width: 100%;
     overflow: hidden;
     margin-bottom: 40px; /* Gives space for the pagination */
 }
 
-.swiper-wrapper {
+.swiper-dtx-wrapper {
     display: flex;
 }
 
-.swiper-slide {
+.swiper-dtx-slide {
     flex: 0 0 auto;
     width: auto !important;
     display: flex;
@@ -72,7 +77,7 @@
     align-items: center;
 }
 
-.swiper-headline {
+.swiper-dtx-headline {
     width: 100%;
     text-align: center;
     background: rgba(0, 0, 0, 0.7);
@@ -83,18 +88,18 @@
     z-index: 10;
 }
 
-.swiper-slide img {
+.swiper-dtx-slide img {
     width: 100%;
     height: auto;
     object-fit: contain;
 }
 
-.swiper-pagination {
+.swiper-dtx-pagination {
     bottom: -20px !important; /* ⬇️ push 20px lower */
     position: relative !important; /* make sure it respects bottom */
 }
 
-.swiper-wrapper {
+.swiper-dtx-wrapper {
     display: flex;
     flex-direction: row-reverse; /* 🔁 This is the magic line */
 }
@@ -105,8 +110,17 @@
     margin-bottom: 40px; /* Gives space for the pagination */
 }
 
-.swiper-symptoms-wrapper {
-    display: flex;
+.carousel-toast-teaser {
+    max-width: 250px; /* adjust as needed */
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.carousel-toast-teaser img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 .swiper-symptoms-slide {
