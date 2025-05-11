@@ -12,7 +12,7 @@
 
     .quote-carousel blockquote {
         font-style: italic;
-        font-size: 1.2rem;
+        font-size: 1rem;
         line-height: 1.4;
         margin: 0; /* ← removes auto centering */
         max-width: none; /* ← removes width constraint */
@@ -37,6 +37,15 @@
         flex-shrink: 0;
         width: 100%; /* very important for single-slide display */
         box-sizing: border-box;
+    }
+
+    .quote-carousel {
+        margin-bottom: 0 !important;
+    }
+
+    .quote-carousel + * {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
     }
 </style>
 
