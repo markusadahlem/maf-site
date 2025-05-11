@@ -26,19 +26,6 @@ images:
 
 
 
-{{< hextra/hero-badge link="aura-symptom-check/symptom-check-tools">}}
-  <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400"></div>
-  <span class="hx-text-lg">Get your personalized migraine report</span>
-  {{< icon name="arrow-circle-right" attributes="height=32" >}}
-{{< /hextra/hero-badge >}}
-
-
-<div class="hx-mb-6">
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Understand your symptoms. Share with your doctor. Your experiences become visible.
-    {{< /hextra/hero-subtitle >}}
-</div>
-
-
 <h2 class="hx-text-4xl hx-font-bold hx-mt-12 hx-mb-6">
     Voices of people living with migraine
 </h2>
@@ -54,7 +41,7 @@ images:
 
 <div >
 {{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Experience. Insight. Action. Shaping a new future in migraine care — together.
-    {{< /hextra/hero-subtitle >}} 
+    {{< /hextra/hero-subtitle >}}
 </div>
 
 

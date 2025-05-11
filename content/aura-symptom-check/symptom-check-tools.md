@@ -7,7 +7,7 @@ sidebar:
   exclude: true
 ---
 
-# Choose Your Migraine Analysis Tool 
+# Choose Your Migraine Analysis Tool
 
 **Select the option that best fits your needs to gain insights into your migraine symptoms.**
 
@@ -22,13 +22,13 @@ Get an analysis of your aura symptoms based on the International Classification 
 
 
 
-Get a comprehensive evaluation of your migraine symptoms with detailed insights to share with your doctor.   
+Get a comprehensive evaluation of your migraine symptoms with detailed insights to share with your doctor.
 <span style="color:red">Beta version — Note: Access to this tool is currently password-protected.</span>
 
 
 {{< hextra/hero-badge link="../acute-chronic/reason-for-visit">}}
   <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400"></div>
-  <span class="hx-text-lg">Advanced Migraine Analysis (Beta)</span>
+  <span class="hx-text-lg">MigraineAuraScan™ (Beta)</span>
   {{< icon name="arrow-circle-right" attributes="height=32" >}}
 {{< /hextra/hero-badge >}}
 
