@@ -12,12 +12,12 @@ width: normal
 
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-headline >}}
-    Mach deine Migräne sichtbar
+    Migräne sichtbar machen
 {{< /hextra/hero-headline >}}
 </div>
 
 <div class="hx-mb-12">
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Migräne ist nicht nur Kopfschmerz — sie ist eine komplexe Erkrankung, bei der alle Symptome für Diagnose, Behandlung und Lebensqualität entscheidend sein können.
+{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Migräne ist nicht nur Kopfschmerz — sie ist eine komplexe neurologische Erkrankung, bei der alle Symptome für Diagnose, Behandlung und Lebensqualität entscheidend sein können.
     {{< /hextra/hero-subtitle >}}
 </div>
 
