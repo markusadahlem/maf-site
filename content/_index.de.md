@@ -12,7 +12,7 @@ width: normal
 
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-headline >}}
-Jedes Migränezeichen zählt
+    Mach deine Migräne sichtbar
 {{< /hextra/hero-headline >}}
 </div>
 
@@ -21,6 +21,17 @@ Jedes Migränezeichen zählt
     {{< /hextra/hero-subtitle >}}
 </div>
 
+**Was Menschen, die mit Migräne leben und unsere Seite besuchten, sagen**
+
+
+{{< quote-carousel >}}
+
+
+<h2 class="hx-text-4xl hx-font-bold hx-mt-6">
+    Erfahrungen teilen bringt neue Ideen hervor
+</h2>
+
+<!--
 
 {{< hextra/hero-badge link="aura-symptom-check/symptom-check-tools">}}
   <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400"></div>
@@ -39,20 +50,60 @@ Jedes Migränezeichen zählt
 
 Mit "Aura" bezeichnet man eine Gruppe neurologischer Symptome, die das Sehen, Sprechen, Empfinden oder sogar das klare Denken beeinträchtigen können – gelegentlich sind auch Bewegungsstörungen oder körperliche Schwäche beteiligt. Seit 1998 haben wir über 7.000 Patient:innenberichte ausgewertet, um eine der weltweit umfassendsten Wissensquellen zur Migräneaura aufzubauen.
 
+
+
 <div class="hx-mt-6"></div>
 
-<h2 class="hx-text-4xl hx-font-bold hx-mt-12">
-    Menschen, die mit Migräne leben, gestalten Innovationen mit
-</h2>
+
 
 <div>
 {{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Von Symptomen über Erzählungen zu Lösungen: wie Erfahrungen von Menschen die mit Migräne leben die Zukunft der Versorgung gestalten.
 {{< /hextra/hero-subtitle >}} 
 </div>
 
-
+-->
 
 {{< hextra/feature-grid >}}
+
+
+  {{< hextra/feature-card
+    title="Erfahrungen sichtbar machen"
+    subtitle="Kunst und Geschichten zeigen Migräne von innen."
+    link="experiences"
+    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
+    image="/images/teaser/roteRathausZigzag_cleanup-plus-de.png"
+    imageClass="hx-object-contain hx-w-full hx-h-full hx-relative dark:hx-opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(203, 28, 66, 0.1),hsla(0,0%,100%,0));"
+  >}}
+
+
+
+
+  {{< hextra/feature-card
+    title="Erkunde dein Gehirn"
+    subtitle="BrainRadar: Entdecke den Verlauf vor einer Attacke."
+    link="test-suit"
+    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
+    image="/images/teaser/jesus-in-toast.png"
+    imageClass="hx-top-[0%] hx-left-[0px]  dark:hx-opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(203, 28, 66, 0.1),hsla(0,0%,100%,0));"
+  >}}
+
+
+  {{< hextra/feature-card
+    title="Hol dir die Kontrolle zurück"
+    subtitle="Smart Medicine: Migräne neu denken."
+    link="digital-health"
+    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
+    image="/images/teaser/aura-o-mat-app-tbg.png"
+    imageClass="hx-top-[0%] hx-left-[0px]  dark:hx-opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(203, 28, 66, 0.1),hsla(0,0%,100%,0));"
+  >}}
+
+
+
+<!--
+
 
   {{< hextra/feature-card
     title="Migräne dokumentieren"
@@ -87,7 +138,6 @@ Mit "Aura" bezeichnet man eine Gruppe neurologischer Symptome, die das Sehen, Sp
     style="background: radial-gradient(ellipse at 50% 80%,rgba(245, 116, 97, 0.1),hsla(0,0%,100%,0));"
   >}}
 
-<!--
 
   {{< hextra/feature-card
     title="Quantified Self"
@@ -156,6 +206,35 @@ Mit "Aura" bezeichnet man eine Gruppe neurologischer Symptome, die das Sehen, Sp
 
 
 
+<div class="hx-mt-8"></div>
+
+Mit “Aura” bezeichnet man eine Gruppe neurologischer Symptome, die das Sehen, Sprechen, Empfinden oder sogar das klare Denken beeinträchtigen können – gelegentlich sind auch Bewegungsstörungen oder körperliche Schwäche beteiligt. Seit 1998 haben wir über 7.000 Patient:innenberichte ausgewertet, um eine der weltweit umfassendsten Wissensquellen zur Migräneaura aufzubauen.
+
+
+<h2 class="hx-text-4xl hx-font-bold hx-mt-12">
+    Für Fachkreise
+</h2>
+
+
+
+
+<div class="hx-mb-6">
+{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Wissenschaftlich fundiert. Für die Praxis gemacht.
+    {{< /hextra/hero-subtitle >}}
+</div>
+Bei der Migraine Aura Foundation stellen wir Ärzt:innen und Therapeut:innen wissenschaftlich validierte Werkzeuge und Erkenntnisse zur Verfügung. Unsere Arbeit stützt sich auf über 80 peer-reviewte Studien und Buchkapitel zum Thema Migräne.
+
+[**→ Entdecken Sie die Wissenschaft hinter der Migräne**](science-overview)
+
+
+
+
+
+
+
+
+<!--
+
 <h2 class="hx-text-4xl hx-font-bold hx-mt-12">
     Wissenschaft ist unser Fundament
 </h2>
@@ -208,3 +287,5 @@ K Podoll, H Ebel, D Robinson, U Nicola,
 &nbsp;
 
 Siehe die vollständige Liste wissenschaftlicher Publikationen und [**entdecke die Wissenschaft der Migräne→**](science-overview)
+
+-->

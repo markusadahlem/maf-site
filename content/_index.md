@@ -19,11 +19,11 @@ images:
 </div>
 
 <div class="hx-mb-12">
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Migraine isn’t just a headache—it’s a complex condition with symptoms that matter for diagnosis, treatment, and your quality of life.
+{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Migraine isn’t just a headache—it’s a complex neurological condition with symptoms that matter for diagnosis, treatment, and your quality of life.
     {{< /hextra/hero-subtitle >}}
 </div>
 
-**Voices of people living with migraine**
+**What visitors say about our Site**
 
 
 {{< quote-carousel >}}

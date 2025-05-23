@@ -39,7 +39,8 @@
 
 <div class="quote-carousel swiper">
     <div class="swiper-wrapper">
-        {{ range site.Data.quotes.quotes.carousel_quotes }}
+        {{ $currentLang := .Site.Language.Lang }} {{ range index
+        site.Data.quotes $currentLang "carousel_quotes" }}
         <div class="swiper-slide">
             <blockquote>
                 “{{ .text }}”
@@ -48,12 +49,6 @@
         </div>
         {{ end }}
     </div>
-
-    <!--
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
-    -->
 </div>
 
 <!-- Swiper dependencies (only once globally!) -->
