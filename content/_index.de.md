@@ -46,7 +46,7 @@ width: normal
 </div>
 
 
- 
+
 
 Mit "Aura" bezeichnet man eine Gruppe neurologischer Symptome, die das Sehen, Sprechen, Empfinden oder sogar das klare Denken beeinträchtigen können – gelegentlich sind auch Bewegungsstörungen oder körperliche Schwäche beteiligt. Seit 1998 haben wir über 7.000 Patient:innenberichte ausgewertet, um eine der weltweit umfassendsten Wissensquellen zur Migräneaura aufzubauen.
 
@@ -58,7 +58,7 @@ Mit "Aura" bezeichnet man eine Gruppe neurologischer Symptome, die das Sehen, Sp
 
 <div>
 {{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Von Symptomen über Erzählungen zu Lösungen: wie Erfahrungen von Menschen die mit Migräne leben die Zukunft der Versorgung gestalten.
-{{< /hextra/hero-subtitle >}} 
+{{< /hextra/hero-subtitle >}}
 </div>
 
 -->
@@ -91,7 +91,7 @@ Mit "Aura" bezeichnet man eine Gruppe neurologischer Symptome, die das Sehen, Sp
 
 
   {{< hextra/feature-card
-    title="Hol dir die Kontrolle zurück"
+    title="Migräne im Griff"
     subtitle="Smart Medicine: Migräne neu denken."
     link="digital-health"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
@@ -110,7 +110,7 @@ Mit "Aura" bezeichnet man eine Gruppe neurologischer Symptome, die das Sehen, Sp
     subtitle="Wir hören Patient*innen zu und dokumentieren jedes Migränezeichen."
     link="symptoms"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
-      image="/images/teaser/aura-o-mat-app.png"image="/images/teaser/roteRathausZigzag_cleanup.png" 
+      image="/images/teaser/aura-o-mat-app.png"image="/images/teaser/roteRathausZigzag_cleanup.png"
     imageClass="hx-top-[0%] hx-left-[0px]  dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(203, 28, 66, 0.1),hsla(0,0%,100%,0));"
   >}}
@@ -200,7 +200,7 @@ Mit "Aura" bezeichnet man eine Gruppe neurologischer Symptome, die das Sehen, Sp
     imageClass="hx-top-[0%] hx-left-[0px]  hx-w-[100%] sm:hx-w-[20%] dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(245, 116, 97, 0.1),hsla(0,0%,100%,0));"
   >}}
- 
+
 
 {{< /hextra/feature-grid >}}
 
@@ -246,42 +246,42 @@ Jede Erkenntnis, die wir teilen, und jedes Tool, das wir entwickeln, basiert auf
     {{< /hextra/hero-subtitle >}}
 </div>
 
-A Mian, S Donoghue, Prieto, MA Dahlem, M Vives-Mestres, G Boucher, *The role of digital platforms and smartphone apps*, In: Migraine Pain Management, SB Shrewsbury (Hrsg.), Elsevier (2025)  
+A Mian, S Donoghue, Prieto, MA Dahlem, M Vives-Mestres, G Boucher, *The role of digital platforms and smartphone apps*, In: Migraine Pain Management, SB Shrewsbury (Hrsg.), Elsevier (2025)
 > Hier zeigen wir, wie moderne digitale Plattformen und Smartphone-Apps Menschen mit Migräne dabei unterstützen können, ihre Erkrankung besser zu managen und Symptome zu überwachen.
 
 <div>
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}**Über den physiologischen Mechanismus hinter der Aura** 
+{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}**Über den physiologischen Mechanismus hinter der Aura**
     {{< /hextra/hero-subtitle >}}
 </div>
 
-MA Dahlem, *Mathematical modeling of human cortical spreading depression*, In: *Neurobiological Basis of Migraine*, T Dalkara und MA Moskowitz (Hrsg.), 285–305 (2017)  
+MA Dahlem, *Mathematical modeling of human cortical spreading depression*, In: *Neurobiological Basis of Migraine*, T Dalkara und MA Moskowitz (Hrsg.), 285–305 (2017)
 > Hier erklären wir, wie die kortikale spreading depression — eine Welle veränderter Gehirnaktivität — dem Migräne-Aura-Phänomen zugrunde liegt und visuelle sowie sensorische Symptome verständlich macht.
 
 <div>
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}**Über digitale Biomarker**  
+{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}**Über digitale Biomarker**
     {{< /hextra/hero-subtitle >}}
 </div>
 
-MA Dahlem, J Kurths, MD Ferrari, K Aihara, M Scheffer, A May,  
-*Understanding migraine using dynamic network biomarkers*, *Cephalalgia* 35, 627–630 (2015)  
+MA Dahlem, J Kurths, MD Ferrari, K Aihara, M Scheffer, A May,
+*Understanding migraine using dynamic network biomarkers*, *Cephalalgia* 35, 627–630 (2015)
 > Hier diskutieren wir, wie Migräne als dynamische Störung von Gehirnnetzwerken verstanden werden kann, wodurch Attacken nicht mehr als isolierte Ereignisse, sondern als Teil eines sich verändernden Systems gesehen werden.
 
 <div>
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}**Über Migränekunst und persönliche Erfahrungen**  
+{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}**Über Migränekunst und persönliche Erfahrungen**
     {{< /hextra/hero-subtitle >}}
 </div>
 
-K Podoll, D Robinson, Oliver Sacks (Vorwort)  
-*Migraine art: the migraine experience from within*, North Atlantic Books; Illustrierte Ausgabe (2009)  
+K Podoll, D Robinson, Oliver Sacks (Vorwort)
+*Migraine art: the migraine experience from within*, North Atlantic Books; Illustrierte Ausgabe (2009)
 > Hier zeigen wir, wie die persönliche Erfahrung von Migräne — insbesondere der Aura — künstlerische Ausdrucksformen inspiriert hat und einen Einblick in die emotionale und sensorische Welt der Betroffenen ermöglicht.
 
 <div>
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}**Über seltene Aurasymptome wie das Alice-im-Wunderland-Syndrom** 
+{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}**Über seltene Aurasymptome wie das Alice-im-Wunderland-Syndrom**
     {{< /hextra/hero-subtitle >}}
 </div>
 
-K Podoll, H Ebel, D Robinson, U Nicola,  
-*Obligatory and facultative symptoms of the Alice in Wonderland syndrome*, *Minerva Medica* (2002)  
+K Podoll, H Ebel, D Robinson, U Nicola,
+*Obligatory and facultative symptoms of the Alice in Wonderland syndrome*, *Minerva Medica* (2002)
 > Hier beleuchten wir seltene Aurasymptome wie Größen-, Zeit- und Körperwahrnehmungsstörungen, die unter dem Begriff Alice-im-Wunderland-Syndrom zusammengefasst werden und ihren Bezug zur Migräne haben.
 
 &nbsp;
