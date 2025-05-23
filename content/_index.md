@@ -23,7 +23,7 @@ images:
     {{< /hextra/hero-subtitle >}}
 </div>
 
-**What visitors say about our Site**
+**What visitors say about our site**
 
 
 {{< quote-carousel >}}
@@ -39,22 +39,6 @@ images:
 
 
 
-<!--
-# More Tests
-
-{{< hextra/hero-badge link="aura-o-mat">}}
-  <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400"></div>
-  <span class="hx-text-lg">Try the Aura-o-mat</span>
-  {{< icon name="arrow-circle-right" attributes="height=32" >}}
-{{< /hextra/hero-badge >}}
-
-
-<div class="hx-mb-12">
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Some migraines involve visual distortions before the headache. The Aura-o-mat helps you reflect on what you saw — or didn’t.
-    {{< /hextra/hero-subtitle >}}
-</div>
-
--->
 
 <div class="hx-mt-6"></div>
 
@@ -76,7 +60,7 @@ images:
 
   {{< hextra/feature-card
     title="Explore Your Brain State"
-    subtitle="BrainRadar: exploratory migraine cycle tracker."
+    subtitle="MigraineBrainRadar™: Exploratory migraine tracker."
     link="test-suit"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
     image="/images/teaser/jesus-in-toast.png"

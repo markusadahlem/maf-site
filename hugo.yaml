@@ -39,17 +39,6 @@ menu:
       pageRef: /impressum
       weight: 8
 
-  sidebar:
-    - identifier: more
-      name: References
-      params:
-        type: separator
-      weight: 1
-    - identifier: tips_and_tricks
-      name: "ICHD3"
-      url: "https://ichd-3.org/1-migraine/1-2-migraine-with-aura/"
-      weight: 2
-
 params:
   navbar:
     displayTitle: true

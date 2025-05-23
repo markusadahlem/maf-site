@@ -9,9 +9,11 @@ disableSidebar: true
 
 # Digital Health
 
-**Coming soon:** Digital Therapeutics
 
-A first look at how we turn insight into intervention.
+**Co-Create the Next Generation of Migraine Care**
+
+Join us in developing impactful app features—from support programs and preemptive treatment to brain desensitization strategies and timely action during mild phases. Let's turn insight into intervention—together.
+
 
 
 
