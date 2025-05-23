@@ -1,21 +1,26 @@
 ---
 date: "2025-04-06T12:48:32+02:00"
 type: page
-title: "Digital Health"
+title: "Migräne im Griff – smart gesteuert"
 sidebar:
   exclude: true
 ---
 
+Gemeinsam entwickeln wir die nächste Generation der Migräneversorgung – durch die Kombination moderner Medikation mit digitalen Lösungen.
 
+Wir suchen Partner, um gemeinsam App-Funktionen zu entwickeln, die die Migränebehandlung weiterbringen – indem nicht allein der Kopfschmerz im Fokus steht.
 
+Unsere Prototypen adressieren:
 
-**Gemeinsam die nächste Generation der Migräneversorgung entwickeln**
+- Therapiebegleitprogramme zur Prophylaxe,
 
-Wir suchen Partner zur gemeinsamen Entwicklung von App-Funktionen, die die Migränebehandlung voranbringen:
-— von Therapiebegleitprogrammen zur Prophylaxe und Anleitung zum rechtzeitigem Handeln schon in der milden Phasen bei der Akutbehandlung,
-über Desensibilisierungsstrategien in der Phase zwischen den Attacken bis hin zu echt präemptiven Ansätzen, die das Beste aus Prophylaxe und Akutbehandlung vereinen indem Maßnahmen wie die Akutbehandlung nur frühzeitiger vorgreifen, jedoch nicht jeden Tag, sondern genau vor den Tagen, an denen die Attacke wirklich bevorsteht.
+- gezielte Handlungsempfehlungen in milden Phasen der Akutbehandlung,
 
-Lassen Sie uns Erkenntnisse in wirksame Interventionen übersetzen – gemeinsam.
+- Desensibilisierungsstrategien zwischen den Attacken
+
+- sowie prädiktive, präemptive Ansätze, die das Beste aus Prophylaxe und Akutbehandlung vereinen.
+
+Letztere setzen nicht auf tägliche Einnahme, sondern auf gezielte Intervention – genau vor den Tagen, an denen eine Attacke mit hoher Wahrscheinlichkeit bevorsteht.
 
 
 
@@ -67,7 +72,11 @@ Lassen Sie uns Erkenntnisse in wirksame Interventionen übersetzen – gemeinsam
 
 
 ### Von der Aura lernen
-Seit über zwei Jahrzehnten erforscht die Migräne-Aura Stiftung, wie sich neuropathologische Gehirnaktivität als Auren offenbaren und wie diese besondere Aktivität neuroplastisch beeinflusst werden kann, um das Migränegehirn umzuprogrammieren. Unsere Arbeit in den Bereichen Modellierung, Diagnostik und Patientenberichterstattung legte den Grundstein für einen neuen Therapieansatz: »_digitale Neuromodulation_«.
+
+Seit über zwei Jahrzehnten erforscht die Migräne-Aura Stiftung, wie sich neuropathologische Gehirnaktivität bereits in den prodromalen Phasen anbahnt – oft gefolgt von Auren, bevor schließlich die Kopfschmerzen einsetzen.
+Im Mittelpunkt steht dabei die Frage, wie diese frühe Hirnaktivität durch neuroplastische Prozesse beeinflusst werden kann – mit dem Ziel, das Migränegehirn gezielt umzuprogrammieren.
+
+Modellierung, Diagnostik und Patientenerfahrung – aus diesen drei Säulen heraus haben wir einen neuartigen Ansatz entwickelt: digitale Neuromodulation.
 
 ### Von der Forschung zur realen Anwendung
 
@@ -82,14 +91,20 @@ Seit über zwei Jahrzehnten erforscht die Migräne-Aura Stiftung, wie sich neuro
 >}}
 
 
-Lange bevor digitale Therapeutika zu einer Kategorie wurden, erforschte einer der Gründer der Migräne-Aura Stiftung, wie Migräneforschung die digitale Versorgung verändern könnte. Jahre später half diese Vision, M-sense zu entwicklen – die erste DiGA-gelistete Migräne-App mit ICHD-3-basierter Diagnostik. Die oben stehenden Screenshots zeigen Funktionen der App.
+Lange bevor digitale Therapeutika als eigene Kategorie etabliert wurden, wurde erforscht, wie Erkenntnisse aus der Migräneforschung die digitale Versorgung verändern könnten.
+Diese Vision mündete später in die Entwicklung von M-sense – der ersten DiGA-gelisteten Migräne-App mit ICHD-3-basierter Diagnostik. Die oben stehenden Screenshots zeigen Funktionen dieser App.
 
-Es ist ein Ziel der Migräne-Aura Stiftung, Erkenntnisse aus der Forschung direkt in die Gesundheitsversorgung zu übersetzen.
+Ein zentrales Ziel der Migräne-Aura Stiftung ist es, wissenschaftliche Erkenntnisse unmittelbar in die Gesundheitsversorgung zu übertragen.
 
 ### Aura-Rresonanz-Therapie: Innovation in der Migräneversorgung
 
 {{< figure src="/images/aura-resonance-therapy.png" alt="Der Migräne-Computer" >}}
 
-Nach Jahrzehnten therapeutischer Stagnation erlebt die Migräneversorgung eine Transformation. Seit der Einführung der Triptane in den 1990er Jahren gibt es erst seit wenigen Jahren CGRP-Medikamente und sogenannte Ditans, auch bekannt als Super-Triptane.
+Nach Jahrzehnten therapeutischer Stagnation erlebt die Migräneversorgung derzeit eine tiefgreifende Transformation.
+Seit der Einführung der Triptane in den 1990er Jahren kamen erst in den letzten Jahren mit den CGRP-Antagonisten und den sogenannten Ditans – auch als „Super-Triptane“ bekannt – neue Wirkstoffe hinzu.
 
-Doch Innovation endet nicht bei neuen Molekülen. Digitale Therapeutika bieten eine neue Klasse von Interventionen, die die pharmazeutische Behandlung ergänzen oder sogar modulieren können. Bei der Migräne-Aura Stiftung sehen wir darin eine Chance für die Kombination von Medikamenten und Medizinprodukten: Durch die Übersetzung neurobiologischer Forschung in patientenzentrierter Medizinprodukte entwickeln wir digitale Interventionen, die neben oder unabhängig von Medikamenten wirken.
+Doch Innovation endet nicht bei neuen Molekülen:
+Digitale Therapeutika eröffnen eine neue Klasse von Interventionen, die pharmazeutische Behandlungen ergänzen oder sogar modulieren können.
+
+Die Migräne-Aura Stiftung sieht hierin eine Chance zur gezielten Kombination von Arzneimitteln und Medizinprodukten.
+Durch die Übersetzung neurobiologischer Forschung in patientenzentrierte digitale Medizinprodukte entwickeln wir Interventionen, die komplementär oder unabhängig von Medikamenten wirken.
