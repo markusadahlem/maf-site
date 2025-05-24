@@ -19,7 +19,7 @@ At the Migraine Aura Foundation, we believe that medication can do more when pai
       style="width:max; height:auto;"
       alt="" />
     <figcaption style="font-size: 0.8em; margin-top: 0.5em;">
-        From past to future: (left) A 1985 painting imagines a migraine aura-generating “computer”; (middle) a fortification pattern linked to visual cortex function; (right) a mobile concept (2004–today) for personalized aura resonance therapy.
+        From past to future: (left) A 1985 painting imagines a migraine aura-generating “computer”; (middle) a fortification pattern linked to visual cortex function; (right) a mobile concept for personalized aura resonance therapy.
         © 2025 Migraine Aura Foundation
     </figcaption>
   </figure>

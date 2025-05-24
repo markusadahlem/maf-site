@@ -1,7 +1,7 @@
 ---
 title: "Für Fachkreise"
-width: full
-disableSidebar: true
+sidebar:
+  exclude: true
 ---
 
 Seit der Einführung der Triptane in den 1990er-Jahren blieb die Migränebehandlung zunächst lange Zeit therapeutisch unverändert – erst mit CGRP-Antikörpern, Ditanen und Gepanten kam wieder Bewegung in die medikamentöse Versorgung.

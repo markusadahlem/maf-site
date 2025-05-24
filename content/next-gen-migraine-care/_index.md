@@ -1,17 +1,18 @@
 ---
 date: "2025-04-06T12:48:32+02:00"
-title: "For Healthcare Professional"
+title: "Be Part of the Future"
 sidebar:
   exclude: true
 ---
 
 
+
+**We are seeking partners to co-create next-gen migraine care**
+
+
 Migraine care remained largely unchanged after triptans were introduced in the 1990s — but with the emergence of CGRP-targeting drugs, ditans, and gepants, a new era of therapeutic innovation has begun.
 
-**But innovation doesn’t stop at molecules.**
-
-Digital therapeutics represent a new class of interventions — not as stand-alone apps, but as precision tools that can complement or even modulate pharmacological treatment.
-
+**But we believe innovation doesn’t stop at molecules**
 
 
 
@@ -58,30 +59,20 @@ Digital therapeutics represent a new class of interventions — not as stand-alo
 </div>
 
 
-At _Migraine Aura Foundation_, we see this as a drug–device opportunity: using neurological models and patient-centered tools to design brain-based interventions that work alongside or beyond medication.
-We’re exploring opportunities to bring this science into clinical practice — in collaboration with researchers, developers, and innovators in digital and pharmaceutical care.
 
-
-### From Aura to Action
-
-For over two decades, the _Migraine Aura Foundation_ has explored how neurological patterns reveal themselves — and how they might be influenced. Our work in modeling, diagnostics, and patient reporting laid the foundation for a new frontier: digital therapeutics grounded in brain science.
-
-
-
-
-
-At the Migraine Aura Foundation, we provide clinicians with scientifically validated tools and insights. Our work is supported by over 80 peer-reviewed studies and textbook chapters on migraine.
-
-
-
-**Co-Create the Next Generation of Migraine Care**
-
-We are seeking partners to develop app features that advance migraine treatment:
-—from support programs for prophylaxis and timely action during mild phases for acute treatment,
+At _Migraine Aura Foundation_, we seek to develop digital tools that advance migraine treatment:
+from support programs for prophylaxis and timely action during mild phases for acute treatment,
 to brain desensitization strategies in the interictal interval and preemptive approaches that combine the best of prophylaxis and acute care.
 Let’s turn insight into intervention—together.
 
 
+### Overview of 5 research themes
+
+Our work is supported by over 80 peer-reviewed studies and textbook chapters on migraine.
+
+
+
+
 
 
 
@@ -89,71 +80,10 @@ Let’s turn insight into intervention—together.
 <div class="hx-mt-6"></div>
 
 
-
-<!--
-<div class="hx-mt-6"></div>
-
-
-{{< hextra/feature-grid >}}
-
-
-
-
-
-
-
-  {{< hextra/feature-card
-    title="Biology & Mechanisms"
-    subtitle="Migraine aura is more than a symptom — it's a window into how the brain normally works."
-    link="science"
-    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
-    image="/images/teaser/aura-science.png"
-    imageClass="hx-top-[0%] hx-left-[0px]  hx-w-[100%] sm:hx-w-[20%] dark:hx-opacity-80"
-    style="background: radial-gradient(ellipse at 50% 80%,rgba(245, 116, 97, 0.1),hsla(0,0%,100%,0));"
-  >}}
-
-  {{< hextra/feature-card
-    title="Genetics"
-    subtitle="Is migraine inherited? Partly—but not entirely, even in identical twins. It's more than just Mendelian genetics."
-    link="genetics"
-    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
-    image="/images/teaser/migraine-art-genetics.jpg"
-    imageClass="hx-top-[0%] hx-left-[0px] hx-w-[100%] sm:hx-w-[100%] dark:hx-opacity-80"
-    style="background: radial-gradient(ellipse at 50% 80%,rgba(245, 116, 97, 0.1),hsla(0,0%,100%,0));"
-  >}}
-
-<!--
-  {{< hextra/feature-card
-    title="Visual Snow Syndrome"
-    subtitle="Visual snow is a neurological condition, not just a visual disturbance. (From: Metzler & Robertson (2018). Current neurology and neuroscience reports.)"
-    link="symptoms/#visual-snow"
-    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
-    image="/images/teaser/visual-snow-syndrom.png"
-    imageClass="hx-top-[0%] hx-left-[0px]  hx-w-[100%] sm:hx-w-[20%] dark:hx-opacity-80"
-    style="background: radial-gradient(ellipse at 50% 80%,rgba(245, 116, 97, 0.1),hsla(0,0%,100%,0));"
-  >}}
-
-
-
-  {{< hextra/feature-card
-    title="Science Blogs"
-    subtitle="Selected post from Science Blogs »Gray Matter« featured in SciLogs, the German Scientific Amercan blog portal."
-    link="/blog"
-    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
-    image="/images/teaser/twilightBirthingScene-teaser.png"
-    imageClass="hx-top-[0%] hx-left-[0px]  hx-w-[100%] sm:hx-w-[20%] dark:hx-opacity-80"
-    style="background: radial-gradient(ellipse at 50% 80%,rgba(245, 116, 97, 0.1),hsla(0,0%,100%,0));"
-  >}}
-
-
-
-{{< /hextra/feature-grid >}}
-
--->
 
 
 <div>
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}**On digital platforms and smartphone apps**
+{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}**(I) On digital platforms and smartphone apps**
     {{< /hextra/hero-subtitle >}}
 </div>
 
@@ -161,7 +91,7 @@ A Mian, S Donoghue, Prieto, MA Dahlem, M Vives-Mestres, G Boucher, *The role of 
 > Here we show that modern digital platforms and smartphone apps can empower people with migraine to better manage their condition and monitor their symptoms.
 
 <div>
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}**On the physiological mechanism behind aura**
+{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}**(II) On the physiological mechanism behind aura**
     {{< /hextra/hero-subtitle >}}
 </div>
 
@@ -170,7 +100,7 @@ MA Dahlem, *Mathematical modeling of human cortical spreading depression*, In: N
 > Here we explain how cortical spreading depression — a wave of altered brain activity — is at the core of migraine aura, helping make sense of visual and sensory symptoms.
 
 <div>
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}**On digital biomarkers**
+{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}**(III) On digital biomarkers**
     {{< /hextra/hero-subtitle >}}
 </div>
 
@@ -179,7 +109,7 @@ MA Dahlem, J Kurths, MD Ferrari, K Aihara, M Scheffer, A May, *Understanding mig
 > Here we discuss how migraine can be understood as a dynamic brain network disorder, shifting how we view attacks not as isolated events but as part of a fluctuating system.
 
 <div>
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}**On migraine art and personal experience**
+{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}**(IV) On migraine art and personal experience**
     {{< /hextra/hero-subtitle >}}
 </div>
 
@@ -189,7 +119,7 @@ K Podoll, D Robinson, Oliver Sacks (Foreword)
 > Here we illustrate how the personal experience of migraine — especially aura — has inspired artistic expression, offering a window into the emotional and sensory world of those affected.
 
 <div>
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}**On rare aura symptoms like Alice in Wonderland syndrome**
+{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}**(V) On rare aura symptoms like Alice in Wonderland syndrome**
     {{< /hextra/hero-subtitle >}}
 </div>
 
@@ -203,8 +133,8 @@ K Podoll, H Ebel, D Robinson, U Nicola, *Obligatory and facultative symptoms of 
 
 
 
-
-<h2 class="hx-text-2xl hx-font-bold hx-mt-8">Most Relevant Publications by the Founders of the Foundation</h2>
+<!--
+### Full List of Relevant Publications by the Founders of the Foundation
 
 
 
@@ -320,12 +250,12 @@ K Podoll, D Robinson, Lewis Carroll's migraine experiences, *The Lancet* **353 (
 
 
 
+-->
 
 
 
 
-
-<h2 class="hx-text-2xl hx-font-bold hx-mt-8"> Complete list of Publications</h2>
+###  Complete list of Publications
 
 
 

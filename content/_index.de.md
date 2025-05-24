@@ -224,7 +224,7 @@ Mit “Aura” bezeichnet man eine Gruppe neurologischer Symptome, die das Sehen
 </div>
 Bei der Migraine Aura Foundation stellen wir Ärzt:innen und Therapeut:innen wissenschaftlich validierte Werkzeuge und Erkenntnisse zur Verfügung. Unsere Arbeit stützt sich auf über 80 peer-reviewte Studien und Buchkapitel zum Thema Migräne.
 
-[**→ Entdecken Sie die Wissenschaft hinter der Migräne**](aura2action)
+[**→ Entdecken Sie die Wissenschaft hinter der Migräne**](next-gen-migraine-care)
 
 
 

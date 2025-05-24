@@ -157,4 +157,4 @@ Migraine aura is more than visual disturbance — it can affect speech, sensatio
 </div>
 Equipping healthcare professionals and industry partners with evidence-based tools, research, and resources for every stage of migraine care.
 
-[**→ Collaborate for Better Migraine Care**](aura2action)
+[**→ Collaborate for Better Migraine Care**](next-gen-migraine-care)

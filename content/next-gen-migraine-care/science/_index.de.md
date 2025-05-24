@@ -4,4 +4,6 @@ title: "Wissenschaft"
 weight: 1
 type: docs
 linkTitle: Science
+sidebar:
+  exclude: true
 ---
