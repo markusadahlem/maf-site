@@ -109,7 +109,7 @@ Our goal is to turn insights from brain modeling into therapeutic strategies —
 
 This short simulation visualizes the migraine aura as it emerges from brain circuitry — offering a glimpse of how precisely tuned stimuli might one day reprogram these circuits through neuroplasticity.
 
-**Watch an aura simulation:** For best impression, change to full screen (f), fix your gaze on the fly, and <span style="color:red;">wait for at least ~20 seconds for the aura to emerge.</span> 
+**Experience a Migraine Aura Simulation**: For best results, change to full screen (f), fix your gaze on the fly, and <span style="color:red;">wait for at least ~20 seconds for the aura to emerge</span>. Do **not** move your gaze away from the fly even so the aura expands into your peripheral vision. 
 
 This simulation is based on actual brain models used in our research.
 
