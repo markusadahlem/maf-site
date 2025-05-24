@@ -8,7 +8,10 @@ sidebar:
 
 **Charting the course for tomorrow's migraine care.**
 
-At the Migraine Aura Foundation, we believe that medication can do more when paired with digital insight. People living with migraine deserve tools that help them understand their brain state — and help optimize the timing and precision of pharmacological treatment.
+We believe that medication reaches its full potential when enhanced by smart software.
+People living with migraine deserve digital support that helps them better understand their condition — and treat their attacks earlier and more precisely, especially in the critical pre-headache phase.
+
+That’s what we’ve been working on for over 30 years.
 
 
 <div style="text-align: center;">
@@ -19,7 +22,7 @@ At the Migraine Aura Foundation, we believe that medication can do more when pai
       style="width:max; height:auto;"
       alt="" />
     <figcaption style="font-size: 0.8em; margin-top: 0.5em;">
-        From past to future: (left) A 1985 painting imagines a migraine aura-generating “computer”; (middle) a fortification pattern linked to visual cortex function; (right) a mobile concept for personalized aura resonance therapy.
+        From past to future: (left) A 1985 painting imagines a migraine aura-generating “computer”; (middle) a fortification pattern linked to visual cortex function; (right) a mobile concept for the Aura-o-mat™ as a step towards a personalized aura resonance therapy.
         © 2025 Migraine Aura Foundation
     </figcaption>
   </figure>
@@ -40,7 +43,7 @@ This page shares where we started, what we’ve built, and where we see the futu
 
 ### From Patient-centric Research to Real-World Use
 
-Since 2004, we explored how migraine research can inform digital care---long before _digital therapeutics_ became a recognized treatment category. Learn more about our history in our [_About Us_](/about) section.
+Our migraine research dates back to the mid-1990s. Since 2004, we’ve been working to translate scientific insights into digital care solutions --- long before digital therapeutics (DTx) were recognized as a distinct treatment category.
 
 
 
@@ -63,7 +66,7 @@ Since 2004, we explored how migraine research can inform digital care---long bef
 
 ### Bridging Research and Prescription
 
-M-sense was the first prescription DTx for migraine, offering CBT as a low-threshold entry point to collect data for brain-based interventions. While the app succeeded in that first step, the company lacked the funding to advance toward reprogramming the migraine brain.
+_M-sense_ was the first prescription DTx (aka DiGA; digital health application) for migraine, offering cognitive behavioral therapy as a low-threshold entry point — and as a way to collect data for the next generation of digital neuromodulatory interventions.
 
 
 
@@ -81,6 +84,7 @@ We are advancing digital, model-based strategies that aim to give patients real 
   showPagination="false"
 >}}
 
+Unfortunately, the approval trial did not yield the desired results for permanent DiGA listing. And while the data collection showed great promise, the company lacked the funding to take the next step: targeted reprogramming of the migraine brain.
 
 
 
@@ -99,9 +103,14 @@ We are advancing digital, model-based strategies that aim to give patients real 
   </figure>
 </div>
 
-Visual simulations aren’t just for understanding migraine — they may become part of how we treat it.
-By engaging the brain early in an attack, targeted stimuli can intervene in so-called “hot spots” and modulate activity along susceptible neural trajectories.
-Our goal is to turn insights from brain modeling into therapeutic strategies — shaping how the migraine unfolds, not just how it's endured.
+
+More Than Visualization: When Seeing Becomes Intervention
+
+The Aura-o-mat™ and the [MigraineBrainRadar™](test-suit/migrainebrainradar/) both help detect visual and other sensory auras and early warning signs in the prodromal phase, respectively — opening a time window for preemptive pharmacological intervention.
+
+But it doesn’t stop there: we are exploring how targeted visual stimulation can actively influence the brain during this sensitive phase — by modulating so-called "hot spots" and vulnerable neural pathways.
+
+Our goal is to translate insights from brain modeling into digital therapeutic approaches that not only predict the course of a migraine attack, but actively redirect it.
 
 
 

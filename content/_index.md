@@ -60,7 +60,7 @@ images:
 
   {{< hextra/feature-card
     title="Explore Your Brain State"
-    subtitle="MigraineBrainRadar™: Exploratory migraine tracker."
+    subtitle="MigraineBrainRadar:™ Exploratory migraine tracker."
     link="test-suit"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
     image="/images/teaser/jesus-in-toast.png"
@@ -80,53 +80,6 @@ images:
   >}}
 
 
-
-<!--
-
-  {{< hextra/feature-card
-    title="Quantified Self"
-    subtitle="Simple ways to measure you migraine aura and learn about your brain."
-    link="doc/reference/reference-environment-variables"
-    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
-    image="/images/teaser/hassenstein-measurements.jpg"
-    imageClass="hx-top-[0%] hx-left-[0px] dark:hx-opacity-80"
-    style="background: radial-gradient(ellipse at 50% 80%,rgba(58, 56, 113, 0.1),hsla(0,0%,100%,0));"
-  >}}
-
-
-
-
-  {{< hextra/feature-card
-    title="Treatment"
-    subtitle="Drugs, neuromodulation, and digital therapeutics, many options are available."
-    link="tx"
-    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
-    image="/images/teaser/elektrisches-kopfbad.png"
-    imageClass="hx-top-[0%] hx-left-[0px]  dark:hx-opacity-80"
-    style="background: radial-gradient(ellipse at 50% 80%,rgba(203, 28, 66, 0.1),hsla(0,0%,100%,0));"
-  >}}
-
--->
-
-<!--
-  {{< hextra/feature-card
-    title="Science"
-    subtitle="Migraine aura is more than a symptom — it's a window into how the brain normally works."
-    link="science"
-    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
-    image="/images/teaser/aura-science.png"
-    imageClass="hx-top-[0%] hx-left-[0px]  hx-w-[100%] sm:hx-w-[20%] dark:hx-opacity-80"
-    style="background: radial-gradient(ellipse at 50% 80%,rgba(245, 116, 97, 0.1),hsla(0,0%,100%,0));"
-  >}}
-
-
-
-
-
-
-
-
--->
 
   {{< hextra/feature-card
     title="In Memoriam"
