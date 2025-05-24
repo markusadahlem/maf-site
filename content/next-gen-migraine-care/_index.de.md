@@ -7,7 +7,13 @@ sidebar:
 **Wir laden Partner aus Digital Health und Neurowissenschaften ein, mit uns die nächste Generation der Migräneversorgung zu gestalten — mit einem Fokus, der über reine Schmerzlinderung hinausgeht und die neurologische Komplexität in den Blick nimmt, die der Attacke vorausgeht und sie mitbestimmt.**
 
 
-Seit der Einführung der Triptane in den 1990er-Jahren blieb die Migränebehandlung zunächst lange Zeit therapeutisch unverändert – erst mit CGRP-Antikörpern, Ditanen und Gepanten kam wieder Bewegung in die medikamentöse Versorgung.
+Die Migränebehandlung blieb nach der Einführung der Triptane in den 1990er-Jahren zunächst weitgehend unverändert – abgesehen von der Einführung von Botox zur Behandlung der chronischen Migräne.
+
+Ein echter Umbruch setzte erst mit dem Aufkommen neuer pharmakologischer Klassen ein: CGRP-zielgerichtete Therapien (darunter monoklonale Antikörper und niedermolekulare Antagonisten, sogenannte Gepants) sowie Ditane, eine neuartige Klasse von Serotoninrezeptor-Agonisten.
+
+Diese Durchbrüche markieren den Beginn einer neuen Ära der Migränetherapie – ergänzt durch Innovationen in der Wirkstoffverabreichung wie intranasales Dihydroergotamin (DHE), das klassische Wirkstoffe mit moderner Technologie neu belebt.
+
+
 
 **Doch Innovation endet nicht bei Molekülen.**
 

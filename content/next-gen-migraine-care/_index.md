@@ -9,10 +9,16 @@ sidebar:
 
 **We invite digital health and neuroscience partners to join us in developing next-gen migraine care — focused not on pain relief alone, but on the neurological complexity that precedes and shapes the attack.**
 
+Migraine care remained largely unchanged for quite a while after triptans were introduced in the 1990s — apart from the introduction of Botox for chronic migraine.
 
-Migraine care remained largely unchanged after triptans were introduced in the 1990s — but with the emergence of CGRP-targeting drugs, ditans, and gepants, a new era of therapeutic innovation has begun.
+A true shift began only with the emergence of new pharmacological classes: CGRP-targeting therapies (including monoclonal antibodies and small-molecule antagonists, or gepants), and ditans, a novel class of serotonin receptor agonists.
 
-**But we believe innovation doesn’t stop at molecules**
+These breakthroughs marked the beginning of a new era in migraine treatment — complemented by delivery innovations like intranasal dihydroergotamine (DHE), reviving legacy drugs with modern technology.
+
+
+**While this represents real progress, we believe innovation doesn’t stop at molecules.**
+
+
 
 
 
