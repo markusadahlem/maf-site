@@ -6,8 +6,9 @@ sidebar:
   exclude: true
 ---
 
+**Die Migräneversorgung von morgen.**
 
-Wir sind überzeugt: Medikamente entfalten ihr volles Potenzial, wenn sie durch Software ergänzt werden.
+Als eine der ersten Migräne-Aufklärungsseiten im Netz verfolgten wir schon früh den Ansatz: Medikamente wirken besser, wenn sie durch Software ergänzt werden.
 
 Menschen mit Migräne verdienen digitale Unterstützung, die ihnen hilft, ihre Migräneattacken besser zu verstehen und gerade schon in der Frühphase vor den Kopfschmerzen frühzeitig gezielter zu behandeln – daran arbeiten wir seit über 30 Jahren.
 

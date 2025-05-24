@@ -8,7 +8,8 @@ sidebar:
 
 **Charting the course for tomorrow's migraine care.**
 
-We believe that medication reaches its full potential when enhanced by smart software.
+Since our early days of migraine awareness online, we've believed in one thing: medication works best when supported by smart software.
+
 People living with migraine deserve digital support that helps them better understand their condition — and treat their attacks earlier and more precisely, especially in the critical pre-headache phase.
 
 That’s what we’ve been working on for over 30 years.
@@ -132,7 +133,7 @@ Our goal is to translate insights from brain modeling into digital therapeutic a
 
 This short simulation visualizes the migraine aura as it emerges from brain circuitry — offering a glimpse of how precisely tuned stimuli might one day reprogram these circuits through neuroplasticity.
 
-**Experience a Migraine Aura Simulation**: For best results, change to full screen (f), fix your gaze on the fly, and <span style="color:red;">wait for at least ~20 seconds for the aura to emerge</span>. Do **not** move your gaze away from the fly even so the aura expands into your peripheral vision. 
+**Experience a Migraine Aura Simulation**: For best results, change to full screen (f), fix your gaze on the fly, and <span style="color:red;">wait for at least ~20 seconds for the aura to emerge</span>. Do **not** move your gaze away from the fly even so the aura expands into your peripheral vision.
 
 
 {{< youtube GFvuC9dxY9I >}}
@@ -140,7 +141,7 @@ This short simulation visualizes the migraine aura as it emerges from brain circ
 
 This simulation is based on actual brain models used in our research.
 
-<div style="font-size: 0.8em; margin-top: 1em;"> See: Dahlem, M. A., Engelmann, R., Löwel, S., & Müller, S. C. (2000). Does the migraine aura reflect cortical organization? 
+<div style="font-size: 0.8em; margin-top: 1em;"> See: Dahlem, M. A., Engelmann, R., Löwel, S., & Müller, S. C. (2000). Does the migraine aura reflect cortical organization?
   <em>European Journal of Neuroscience,</em>  12(2), 767-770.
   <a href="https://doi.org/10.1046/j.1460-9568.2000.00995.x" target="_blank" rel="noopener">https://doi.org/10.1046/j.1460-9568.2000.00995.x</a>
 </div>

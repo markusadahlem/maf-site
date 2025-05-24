@@ -10,16 +10,14 @@ width: normal
 
 <!-- markdownlint-disable MD033 MD034-->
 
-<div class="hx-mt-6 hx-mb-6">
-{{< hextra/hero-headline >}}
+<h2 class="hx-text-4xl hx-font-bold hx-mt-6">
     Migräne sichtbar machen
-{{< /hextra/hero-headline >}}
-</div>
+</h2>
 
-<div class="hx-mb-12">
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Migräne ist nicht nur Kopfschmerz — sie ist eine komplexe neurologische Erkrankung, bei der alle Symptome für Diagnose, Behandlung und Lebensqualität entscheidend sein können.
-    {{< /hextra/hero-subtitle >}}
-</div>
+
+Migräne ist nicht nur Kopfschmerz — sie ist eine komplexe neurologische Erkrankung, bei der alle Symptome für Diagnose, Behandlung und Lebensqualität entscheidend sein können.
+
+&nbsp;
 
 **Was Menschen, die mit Migräne leben und unsere Seite besuchten, sagen**
 
@@ -27,41 +25,11 @@ width: normal
 {{< quote-carousel >}}
 
 
-<h2 class="hx-text-4xl hx-font-bold hx-mt-6">
-    Erfahrungen teilen bringt neue Ideen hervor
-</h2>
+&nbsp;
 
-<!--
-
-{{< hextra/hero-badge link="aura-symptom-check/symptom-check-tools">}}
-  <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400"></div>
-  <span class="hx-text-lg">Persönlichen Migränebericht jetzt sichern!</span>
-  {{< icon name="arrow-circle-right" attributes="height=32" >}}
-{{< /hextra/hero-badge >}}
-
-
-<div class="hx-mb-6">
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Symptome verstehen. Mit der Ärztin/dem Arzt teilen.
-    {{< /hextra/hero-subtitle >}}
-</div>
-
-
-
-
-Mit "Aura" bezeichnet man eine Gruppe neurologischer Symptome, die das Sehen, Sprechen, Empfinden oder sogar das klare Denken beeinträchtigen können – gelegentlich sind auch Bewegungsstörungen oder körperliche Schwäche beteiligt. Seit 1998 haben wir über 7.000 Patient:innenberichte ausgewertet, um eine der weltweit umfassendsten Wissensquellen zur Migräneaura aufzubauen.
-
-
+**Erfahrungen teilen bringt neue Ideen hervor**
 
 <div class="hx-mt-6"></div>
-
-
-
-<div>
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Von Symptomen über Erzählungen zu Lösungen: wie Erfahrungen von Menschen die mit Migräne leben die Zukunft der Versorgung gestalten.
-{{< /hextra/hero-subtitle >}}
-</div>
-
--->
 
 {{< hextra/feature-grid >}}
 
@@ -92,7 +60,7 @@ Mit "Aura" bezeichnet man eine Gruppe neurologischer Symptome, die das Sehen, Sp
 
   {{< hextra/feature-card
     title="Migräne im Griff"
-    subtitle="Smart Medicine: Migräne neu denken."
+    subtitle="Die Migräneversorgung von morgen."
     link="digital-health"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
     image="/images/teaser/aura-o-mat-app-tbg.png"
