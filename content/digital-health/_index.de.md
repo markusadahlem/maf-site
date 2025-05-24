@@ -21,7 +21,7 @@ Menschen mit Migräne verdienen digitale Unterstützung, die ihnen hilft, ihre M
       style="width:max; height:auto;"
       alt="" />
     <figcaption style="font-size: 0.8em; margin-top: 0.5em;">
-        Von der Vergangenheit in die Zukunft: (links) In einer Zeichnung aus dem Jahr 1985 wird das Migränegehirn als einen „Computer“ vorgestellt, der Migräneauren erzeugt; (Mitte) Der Bezug der visuellen Migräneaura mit der funktionalen Architektur des visuellen Kortex; (rechts) ein mobiles Konzept für eine zukünftig personalisierte Aura-Resonanztherapie.  
+        Von der Vergangenheit in die Zukunft: (links) In einer Zeichnung aus dem Jahr 1985 wird das Migränegehirn als einen „Computer“ vorgestellt, der Migräneauren erzeugt; (Mitte) Der Bezug der visuellen Migräneaura mit der funktionalen Architektur des visuellen Kortex; (rechts) ein mobiles Konzept für eine zukünftig personalisierte Aura-Resonanztherapie.
         © 2025 Migraine Aura Foundation
     </figcaption>
   </figure>
@@ -29,7 +29,7 @@ Menschen mit Migräne verdienen digitale Unterstützung, die ihnen hilft, ihre M
 
 Diese Seite zeigt, wie wir begonnen und was entwickelt haben – und wohin die Reise geht.
 
-### Von patientenzentrierter Forschung zur Anwendung 
+### Von patientenzentrierter Forschung zur Anwendung
 
 Unsere Forschung zu Migräne reicht bis in die Mitte der 1990er-Jahre zurück. Seit 2004 arbeiten wir daran, wissenschaftliche Erkenntnisse in digitale Versorgungslösungen zu übersetzen, zum Beispiel in eine mobile, telemedizinische Diagnostik – lange bevor Digitale Gesundheitsanwendungen (DiGA) als "App uf Rezept" als eine eigene Behandlungskategorie anerkannt wurden.
 
@@ -50,7 +50,7 @@ Siehe im Abschnitt [_Über uns_](/de/about) mehr dazu.
 
 ### Brücke zwischen Forschung und Verordnung
 
-_M-sense_ war die erste verordnungsfähige DiGA (digitale Gesundheitsanwendung) für Migräne und bot kognitive Verhaltenstherapie als niederschwelligen Einstiegspunkt, auch um Daten für die nächste Generation ditigal neuromodulatorischer Interventionen zu sammeln.  
+_M-sense_ war die erste verordnungsfähige DiGA (digitale Gesundheitsanwendung) für Migräne und bot kognitive Verhaltenstherapie als niederschwelligen Einstiegspunkt, auch um Daten für die nächste Generation ditigal neuromodulatorischer Interventionen zu sammeln.
 
 
 
@@ -91,10 +91,10 @@ Unser Ziel ist es, Erkenntnisse aus der Hirnmodellierung in digitale Therapieans
 
 ### Wenn Sehen zur Therapie wird
 
-Diese kurze Simulation macht sichtbar, wie eine Migräneauren entstehen – aus den zugrunde liegenden Gehirnprozessen heraus.  
+Diese kurze Simulation macht sichtbar, wie eine Migräneauren entstehen – aus den zugrunde liegenden Gehirnprozessen heraus.
 Sie zeigt, wie gezielt abgestimmte Reize eines Tages diese neuronalen Muster durch Neuroplastizität umlenken könnten.
 
-**Erlebe eine Aura-Simulation:** Für den besten Eindruck wechsle in den Vollbildmodus (Taste _f_), fixiere deinen Blick auf die Fliege, und <span style="color:red;">warte mindestens ~20 Sekunden, bis sich die Aura entfaltet</span>. Bewege deinen Blick **nicht**, auch wenn sich das Muster in dein peripheres Sichtfeld ausdehnt.  
+**Erlebe eine Aura-Simulation:** Für den besten Eindruck wechsle in den Vollbildmodus (Taste _f_), fixiere deinen Blick auf die Fliege, und <span style="color:red;">warte mindestens ~20 Sekunden, bis sich die Aura entfaltet</span>. Bewege deinen Blick **nicht**, auch wenn sich das Muster in dein peripheres Sichtfeld ausdehnt.
 
 Diese Simulation basiert auf echten Hirnmodellen aus unserer Forschung.
 
