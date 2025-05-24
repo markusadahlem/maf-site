@@ -1,0 +1,5 @@
+/* Reduce font size of Hextra's hero headline */
+.hero-headline {
+    font-size: 0.5rem !important; /* Or 2rem, adjust as needed */
+    line-height: 0.2;
+}

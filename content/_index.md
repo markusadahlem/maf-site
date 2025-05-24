@@ -12,28 +12,49 @@ images:
 
 <!-- markdownlint-disable MD033 MD034-->
 
-<div class="hx-mt-6 hx-mb-6">
-{{< hextra/hero-headline >}}
+<h2 class="hx-text-4xl hx-font-bold hx-mt-6">
     Make Your Migraine Visible
+</h2>
+
+<!--<div class="hx-mt-6 hx-mb-6">
+{{< hextra/hero-headline >}}
 {{< /hextra/hero-headline >}}
 </div>
 
-<div class="hx-mb-12">
+
+<div class="hx-mb-6">
 {{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Migraine isn’t just a headache—it’s a complex neurological condition with symptoms that matter for diagnosis, treatment, and your quality of life.
     {{< /hextra/hero-subtitle >}}
 </div>
+
+-->
+
+Migraine isn’t just a headache—it’s a complex neurological condition with symptoms that matter for diagnosis, treatment, and your quality of life.
+
+&nbsp;
 
 **What visitors say about our site**
 
 
 {{< quote-carousel >}}
 
+<!--
 
+<div class="hx-mb-2">
+{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}
+With you, not just for you: Your stories spark innovation!
+{{< /hextra/hero-subtitle >}}
+</div>
 
-
-<h2 class="hx-text-4xl hx-font-bold hx-mt-6">
+<h2 class="hx-text-xl hx-font-bold hx-mt-6">
     With you, not just for you: Your stories spark innovation!
 </h2>
+
+-->
+
+&nbsp;
+
+**With you, not just for you: Your stories spark innovation!**
 
 
 
@@ -99,15 +120,17 @@ images:
 Migraine aura is more than visual disturbance — it can affect speech, sensation, movement, or even thought clarity. Since 1998, we’ve gathered over 7,000 patient accounts to build one of the world's most comprehensive sources of knowledge on migraine aura.
 
 
-<h2 class="hx-text-4xl hx-font-bold hx-mt-12">
+<h2 class="hx-text-2xl hx-font-bold hx-mt-12">
     For Healthcare Professionals
 </h2>
 
 
-<div class="hx-mb-6">
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Co-create Next-gen Migraine Care
-    {{< /hextra/hero-subtitle >}}
-</div>
+**Co-create Next-gen Migraine Care**
+
+&nbsp;
+
 Equipping healthcare professionals and industry partners with evidence-based tools, research, and resources for every stage of migraine care.
+
+&nbsp;
 
 [**→ Collaborate for Better Migraine Care**](next-gen-migraine-care)
