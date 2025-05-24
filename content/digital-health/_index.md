@@ -104,11 +104,19 @@ Unfortunately, the approval trial did not yield the desired results for permanen
 </div>
 
 
+
 More Than Visualization: When Seeing Becomes Intervention
 
 The Aura-o-mat™ and the [MigraineBrainRadar™](test-suit/migrainebrainradar/) both help detect visual and other sensory auras and early warning signs in the prodromal phase, respectively — opening a time window for preemptive pharmacological intervention.
 
-But it doesn’t stop there: we are exploring how targeted visual stimulation can actively influence the brain during this sensitive phase — by modulating so-called "hot spots" and vulnerable neural pathways.
+But it doesn’t stop there: we are exploring how targeted visual stimulation can actively influence the brain during this sensitive phase — by modulating so-called "_hot spots_" and "_labyrinths_", i.e.,  vulnerable neural pathways.
+
+<div style="font-size: 0.8em; margin-top: 1em;">
+  See: Dahlem, M. A., Schmidt, B., Bojak, I., Boie, S., Kneer, F., Hadjikhani, N., & Kurths, J. (2015).
+  Cortical hot spots and labyrinths: why cortical neuromodulation for episodic migraine with aura should be personalized.
+  <em>Frontiers in Computational Neuroscience, 9</em>, 29.
+  <a href="https://doi.org/10.3389/fncom.2015.00029" target="_blank" rel="noopener">https://doi.org/10.3389/fncom.2015.00029</a>
+</div>
 
 Our goal is to translate insights from brain modeling into digital therapeutic approaches that not only predict the course of a migraine attack, but actively redirect it.
 
@@ -120,6 +128,13 @@ This short simulation visualizes the migraine aura as it emerges from brain circ
 
 **Experience a Migraine Aura Simulation**: For best results, change to full screen (f), fix your gaze on the fly, and <span style="color:red;">wait for at least ~20 seconds for the aura to emerge</span>. Do **not** move your gaze away from the fly even so the aura expands into your peripheral vision. 
 
-This simulation is based on actual brain models used in our research.
 
 {{< youtube GFvuC9dxY9I >}}
+
+
+This simulation is based on actual brain models used in our research.
+
+<div style="font-size: 0.8em; margin-top: 1em;"> See: Dahlem, M. A., Engelmann, R., Löwel, S., & Müller, S. C. (2000). Does the migraine aura reflect cortical organization? 
+  <em>European Journal of Neuroscience,</em>  12(2), 767-770.
+  <a href="https://doi.org/10.1046/j.1460-9568.2000.00995.x" target="_blank" rel="noopener">https://doi.org/10.1046/j.1460-9568.2000.00995.x</a>
+</div>
