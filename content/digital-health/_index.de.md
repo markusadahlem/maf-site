@@ -77,14 +77,14 @@ Leider zeigte  die  Zulassungsstudie nicht das gewünschte Ergeniss für eine da
       style="width:500px; height:auto;"
       alt="" />
     <figcaption style="font-size: 0.8em; margin-top: 0.5em;">
-       © 2025 Migraine Aura Foundation
+       Mehr als nur Visualisierung: Wenn Sehen zur Intervention wird © 2025 Migraine Aura Foundation
     </figcaption>
   </figure>
 </div>
 
-Mehr als nur Visualisierung: Wenn Sehen zur Intervention wird
 
-Der Aura-o-mat hilft dabei, visuelle Auren und andere Vorboten in der Prodromalphase frühzeitig zu erkennen – und schafft so ein Zeitfenster für präemptive medikamentöse Interventionen.
+
+Aura-o-mat™ und [MigräneGehirnRadar™](/de/test-suit/migrainebrainradar) helfen dabei, visuelle und andere Auren sowie Vorboten in der Prodromalphase frühzeitig zu erkennen -- und schaffen so ein Zeitfenster für präemptive medikamentöse Interventionen.
 
 Doch dabei bleibt es nicht: Wir erforschen, wie gezielte visuelle Stimulation das Gehirn in dieser sensiblen Phase aktiv beeinflussen kann – durch die Modulation sogenannter „Hot Spots“ und vulnerabler neuronaler Pfade.
 Unser Ziel ist es, Erkenntnisse aus der Hirnmodellierung in digitale Therapieansätze zu überführen, die den Verlauf einer Migräneattacke nicht nur vorhersagen, sondern aktiv umlenken können.

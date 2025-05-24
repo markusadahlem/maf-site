@@ -6,8 +6,10 @@ sidebar:
   exclude: true
 ---
 
-**MigraineBrainRadar™** ist eine neue Möglichkeit, deinen Migränezyklus mit einfachen, wissenschaftlich fundierten Aufgaben zu erfassen – inspiriert von Patientenerfahrungen, verankert in der Neurowissenschaft.  
-Noch handelt es sich nicht um ein Diagnoseinstrument, sondern um ein exploratives Werkzeug, das unsichtbare Muster sichtbar machen soll. Wir validieren es derzeit wissenschaftlich. Der erste Test wird bald hier veröffentlicht. Bleib dran!
+Das **MigräneGehirnRadar™** ist eine neue Möglichkeit, deinen Migränezyklus mit einfachen, wissenschaftlich fundierten Aufgaben zu erfassen – inspiriert von Patientenerfahrungen, verankert in der Neurowissenschaft.
+
+Das Tool ist derzeit noch kein validiertes Prognoseinstrument, sondern ein explorativer Ansatz zur Sichtbarmachung verborgener Muster. Die wissenschaftliche Validierung ist in der Vorbereitung.
+
 
 <div style="text-align: center;">
   <figure style="display: inline-block; margin: 0 auto;">

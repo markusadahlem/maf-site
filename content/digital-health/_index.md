@@ -114,7 +114,7 @@ Unfortunately, the approval trial did not yield the desired results for permanen
 
 More Than Visualization: When Seeing Becomes Intervention
 
-The Aura-o-mat™ and the [MigraineBrainRadar™](test-suit/migrainebrainradar/) both help detect visual and other sensory auras and early warning signs in the prodromal phase, respectively — opening a time window for preemptive pharmacological intervention.
+The Aura-o-mat™ and the [MigraineBrainRadar™](/test-suit/migrainebrainradar/) both help detect visual and other sensory auras and early warning signs in the prodromal phase, respectively — opening a time window for preemptive pharmacological intervention.
 
 But it doesn’t stop there: we are exploring how targeted visual stimulation can actively influence the brain during this sensitive phase — by modulating so-called "_hot spots_" and "_labyrinths_", i.e.,  vulnerable neural pathways.
 
