@@ -58,7 +58,7 @@ Our migraine research dates back to the mid-1990s. Since 2004, we’ve been work
       style="width:max; height:auto;"
       alt="" />
     <figcaption style="font-size: 0.8em; margin-top: 0.5em;">
-       © 2025 Migraine Aura Foundation
+       Concept for mobile, telemedical diagnostics (motemedi) from 2004 © 2025 Migraine Aura Foundation
     </figcaption>
   </figure>
 </div>
@@ -85,6 +85,12 @@ We are advancing digital, model-based strategies that aim to give patients real 
 >}}
 
 Unfortunately, the approval trial did not yield the desired results for permanent DiGA listing. And while the data collection showed great promise, the company lacked the funding to take the next step: targeted reprogramming of the migraine brain.
+
+<div style="font-size: 0.8em; margin-top: 1em;">
+  See: Raffaelli, B., Mecklenburg, J., Overeem, L. H., Scholler, S., Dahlem, M. A., Kurth, T., ... & Neeb, L. (2021). Determining the evolution of headache among regular users of a daily electronic diary via a smartphone app: observational study.
+  <em>JMIR mHealth and uHealth</em>, 9(7), e26401..
+  <a href="https://mhealth.jmir.org/2021/7/e26401" target="_blank" rel="noopener">https://mhealth.jmir.org/2021/7/e26401</a>
+</div>
 
 
 
