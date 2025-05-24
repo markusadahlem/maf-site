@@ -1,15 +1,89 @@
 ---
 layout: hextra-home
 type: page
-title: "Grounded in Science. Designed for Practice."
+title: "For Healthcare Professional"
 width: full
 disableSidebar: true
 ---
 
 
+After decades of therapeutic stagnation, migraine care is undergoing a transformation — from the launch of triptans in the 1990s to today’s CGRP-targeting drugs, ditans, and gepants. But innovation doesn’t stop at molecules. Digital therapeutics represent a new class of interventions — not as stand-alone apps, but as precision tools that can complement or even modulate pharmacological treatment. At _Migraine Aura Foundation_, we see this as a drug–device opportunity: using neurological models and patient-centered tools to design brain-based interventions that work alongside or beyond medication.
+We’re exploring opportunities to bring this science into clinical practice — in collaboration with researchers, developers, and innovators in digital and pharmaceutical care.
+
+
+### From Aura to Action
+
+For over two decades, the _Migraine Aura Foundation_ has explored how neurological patterns reveal themselves — and how they might be influenced. Our work in modeling, diagnostics, and patient reporting laid the foundation for a new frontier: digital therapeutics grounded in brain science.
 
 
 
+
+
+At the Migraine Aura Foundation, we provide clinicians with scientifically validated tools and insights. Our work is supported by over 80 peer-reviewed studies and textbook chapters on migraine.
+
+
+
+**Co-Create the Next Generation of Migraine Care**
+
+We are seeking partners to develop app features that advance migraine treatment:
+—from support programs for prophylaxis and timely action during mild phases for acute treatment,
+to brain desensitization strategies in the interictal interval and preemptive approaches that combine the best of prophylaxis and acute care.
+Let’s turn insight into intervention—together.
+
+
+
+
+
+
+
+
+<div style="display: flex; justify-content: center; gap: 2rem;">
+  <figure style="margin: 0; text-align: center;">
+    <img
+      src="/images/pop.png"
+      style="width: 200px; height: auto;"
+      alt="Support Program" />
+    <figcaption style="font-size: 0.8em; margin-top: 0.5em;">
+      <i>Support Program</i>
+    </figcaption>
+  </figure>
+
+  <figure style="margin: 0; text-align: center;">
+    <img
+      src="/images/act-when-mild.png"
+      style="width: 200px; height: auto;"
+      alt="Act When Mild" />
+    <figcaption style="font-size: 0.8em; margin-top: 0.5em;">
+        <i>Act When Mild</i>
+    </figcaption>
+  </figure>
+
+  <figure style="margin: 0; text-align: center;">
+    <img
+      src="/images/desensitization.png"
+      style="width: 200px; height: auto;"
+      alt="Brain Desensitization" />
+    <figcaption style="font-size: 0.8em; margin-top: 0.5em;">
+      <i>Brain Desensitization</i>
+    </figcaption>
+  </figure>
+
+  <figure style="margin: 0; text-align: center;">
+    <img
+      src="/images/preemptive.png"
+      style="width: 200px; height: auto;"
+      alt="Preemptive Treatment" />
+    <figcaption style="font-size: 0.8em; margin-top: 0.5em;">
+        <i>Preemptive Treatment</i>
+    </figcaption>
+  </figure>
+</div>
+
+<div class="hx-mt-6"></div>
+
+
+
+<!--
 <div class="hx-mt-6"></div>
 
 
@@ -52,7 +126,7 @@ disableSidebar: true
     style="background: radial-gradient(ellipse at 50% 80%,rgba(245, 116, 97, 0.1),hsla(0,0%,100%,0));"
   >}}
 
--->
+
 
   {{< hextra/feature-card
     title="Science Blogs"
@@ -68,7 +142,7 @@ disableSidebar: true
 
 {{< /hextra/feature-grid >}}
 
-
+--> 
 
 
 <div>
@@ -118,7 +192,9 @@ K Podoll, H Ebel, D Robinson, U Nicola, *Obligatory and facultative symptoms of 
 
 
 &nbsp;
-<!--
+
+
+
 
 
 <h2 class="hx-text-2xl hx-font-bold hx-mt-8">Most Relevant Publications by the Founders of the Foundation</h2>
@@ -506,6 +582,3 @@ MA Dahlem, SC Müller, Self-induced splitting of spiral-shaped spreading depress
 
 
 </small>
-
-
--->

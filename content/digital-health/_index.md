@@ -1,80 +1,44 @@
 ---
 date: "2025-04-06T12:48:32+02:00"
 type: page
-title: "Digital Health"
+title: "Pioneering Digital Solutions"
 sidebar:
   exclude: true
 ---
 
 
 
+### From Patient-centric Research to Real-World Use
 
-**Co-Create the Next Generation of Migraine Care**
+Since 2004, the Migraine Aura Foundation has explored how migraine research can inform digital care---long before _digital therapeutics_ became a recognized treatment category.
 
-We are seeking partners to develop app features that advance migraine treatment:
-—from support programs for prophylaxis and timely action during mild phases for acute treatment,
-to brain desensitization strategies in the interictal interval and preemptive approaches that combine the best of prophylaxis and acute care.
-Let’s turn insight into intervention—together.
+Learn more about our history in our [_About Us_](/about) section.
 
 
 
 
 
 
-
-
-<div style="display: flex; justify-content: center; gap: 2rem;">
-  <figure style="margin: 0; text-align: center;">
+<div style="text-align: center;">
+  <figure style="display: inline-block; margin: 0 auto;">
     <img
-      src="/images/pop.png"
-      style="width: 200px; height: auto;"
-      alt="Support Program" />
+      src="/images/motemedi_nokia_show_case.png"
+      class="img"
+      style="width:max; height:auto;"
+      alt="" />
     <figcaption style="font-size: 0.8em; margin-top: 0.5em;">
-      <i>Support Program</i>
-    </figcaption>
-  </figure>
-
-  <figure style="margin: 0; text-align: center;">
-    <img
-      src="/images/act-when-mild.png"
-      style="width: 200px; height: auto;"
-      alt="Act When Mild" />
-    <figcaption style="font-size: 0.8em; margin-top: 0.5em;">
-        <i>Act When Mild</i>
-    </figcaption>
-  </figure>
-
-  <figure style="margin: 0; text-align: center;">
-    <img
-      src="/images/desensitization.png"
-      style="width: 200px; height: auto;"
-      alt="Brain Desensitization" />
-    <figcaption style="font-size: 0.8em; margin-top: 0.5em;">
-      <i>Brain Desensitization</i>
-    </figcaption>
-  </figure>
-
-  <figure style="margin: 0; text-align: center;">
-    <img
-      src="/images/preemptive.png"
-      style="width: 200px; height: auto;"
-      alt="Preemptive Treatment" />
-    <figcaption style="font-size: 0.8em; margin-top: 0.5em;">
-        <i>Preemptive Treatment</i>
+       © 2025 Migraine Aura Foundation    
     </figcaption>
   </figure>
 </div>
 
-<div class="hx-mt-6"></div>
 
+### Bridging Research and Prescription
 
+Our pioneering work laid the foundation for turning scientific insight into actionable tools — including the first prescription digital therapeutic (DTx) for migraine.
 
-### From Aura to Action
+The screenshots below illustrate how our thinking helped shape key features of M-sense: dynamic symptom tracking, brain-state modeling, and intuitive interaction design. These are not just interface choices — they reflect a new therapeutic logic grounded in neurology, usability, and lived experience.
 
-For over two decades, the _Migraine Aura Foundation_ has explored how neurological patterns reveal themselves — and how they might be influenced. Our work in modeling, diagnostics, and patient reporting laid the foundation for a new frontier: digital therapeutics grounded in brain science.
-
-
-### From Research to Real-World Use
 
 
 {{< carousel
@@ -82,18 +46,42 @@ For over two decades, the _Migraine Aura Foundation_ has explored how neurologic
   imageDir="images/dtx/carousel"
   yamlPath="images/dtx/carousel/_carousel.yaml"
   titleKey="headline"
-  slidesPerView="4"
+  slidesPerView="5"
   delay="3000"
   showPagination="false"
 >}}
 
 
-Long before digital therapeutics became a category, one of the _Migraine Aura Foundation_ founders explored how migraine research could inform digital care. Years later, this translational vision helped shape M-sense — the first DiGA-listed migraine app with ICHD-3-based diagnostics. The screenshots below showcase features that echo _Migraine Aura Foundation_’s commitment to translating insights directly into healthcare — through modeling, symptom tracking, and digital interaction design.
+### Seeing Migraine Through the Brain’s Eye
 
-### Innovation in Migraine Care
+What does a migraine aura feel like — from the inside?
+This short simulation brings you close: it’s not a visual gimmick, but the result of brain network modeling grounded in neurophysics. 
 
-{{< figure src="/images/aura-resonance-therapy.png" alt="The migraine computer"  >}}
+**Watch the simulation:** Fix your gaze on the fly and wait ~15 seconds for the aura to emerge. This experience is based on actual brain models used in our research.
+
+{{< youtube GFvuC9dxY9I >}}
 
 
-After decades of therapeutic stagnation, migraine care is undergoing a transformation — from the launch of triptans in the 1990s to today’s CGRP-targeting drugs, ditans, and gepants. But innovation doesn’t stop at molecules. Digital therapeutics represent a new class of interventions — not as stand-alone apps, but as precision tools that can complement or even modulate pharmacological treatment. At _Migraine Aura Foundation_, we see this as a drug–device opportunity: using neurological models and patient-centered tools to design brain-based interventions that work alongside or beyond medication.
+
+### Designing the Future of Migraine Care
+
+<div style="text-align: center;">
+  <figure style="display: inline-block; margin: 0 auto;">
+    <img
+      src="/images/aura-resonance-therapy.png"
+      class="img"
+      style="width:500px; height:auto;"
+      alt="" />
+    <figcaption style="font-size: 0.8em; margin-top: 0.5em;">
+       © 2025 Migraine Aura Foundation    
+    </figcaption>
+  </figure>
+</div>
+
+Visual simulations aren’t just for understanding migraine — they may become part of how we treat it.
+By engaging the brain early in an attack, targeted stimuli can intervene in so-called “hot spots” and modulate activity along susceptible neural trajectories.
+Our goal is to turn insights from brain modeling into therapeutic strategies — shaping how the migraine unfolds, not just how it's endured.
+
+<!--After decades of therapeutic stagnation, migraine care is undergoing a transformation — from the launch of triptans in the 1990s to today’s CGRP-targeting drugs, ditans, and gepants. But innovation doesn’t stop at molecules. Digital therapeutics represent a new class of interventions — not as stand-alone apps, but as precision tools that can complement or even modulate pharmacological treatment. At _Migraine Aura Foundation_, we see this as a drug–device opportunity: using neurological models and patient-centered tools to design brain-based interventions that work alongside or beyond medication.
 We’re exploring opportunities to bring this science into clinical practice — in collaboration with researchers, developers, and innovators in digital and pharmaceutical care.
+-->

@@ -71,7 +71,7 @@ images:
 
   {{< hextra/feature-card
     title="Take Back Control"
-    subtitle="Smart Medicine — a new kind of migraine care."
+    subtitle="Charting the course for tomorrow's migraine care."
     link="digital-health"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
     image="/images/teaser/aura-o-mat-app-tbg.png"
@@ -152,10 +152,9 @@ Migraine aura is more than visual disturbance — it can affect speech, sensatio
 
 
 <div class="hx-mb-6">
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Grounded in Science. Designed for Practice
+{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}From Aura to Action
     {{< /hextra/hero-subtitle >}}
 </div>
-At the Migraine Aura Foundation, we provide clinicians with scientifically validated tools and insights. Our work is supported by over 80 peer-reviewed studies and textbook chapters on migraine.
+Equipping healthcare professionals and industry partners with evidence-based tools, research, and resources for every stage of migraine care.
 
-
-[**→ Discover the science behind migraine**](science-overview)
+[**→ Collaborate for Better Migraine Care**](aura2action)
