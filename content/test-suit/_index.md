@@ -8,7 +8,7 @@ sidebar:
 
 **A new way to understand the migraine brain**
 
-Out aim is to highlight experiences before, during, and between migraine attacks that traditional checklists miss.
+Our aim is to highlight experiences before, during, and between migraine attacks that traditional checklists miss.
 
 
 ### How Many Jesuses Do You Spot in 10 Toasts?

@@ -15,7 +15,7 @@ width: normal
 </h2>
 
 
-Migräne ist nicht nur Kopfschmerz — sie ist eine komplexe neurologische Erkrankung, bei der alle Symptome für Diagnose, Behandlung und Lebensqualität entscheidend sein können.
+Migräne ist nicht nur Kopfschmerz — sie ist eine komplexe neurologische Erkrankung mit frühen und sich wandelnden Symptomen, die für Diagnose, Behandlung und Lebensqualität entscheidend sein können.
 
 &nbsp;
 
@@ -27,7 +27,8 @@ Migräne ist nicht nur Kopfschmerz — sie ist eine komplexe neurologische Erkra
 
 &nbsp;
 
-**Erfahrungen teilen bringt neue Ideen hervor**
+**Mit euch, nicht nur für euch:**
+Eure Erfahrungen treiben die Suche nach dem _heiligen Gral_ der Migräneforschung an --- Vorhersage und ultra-frühe Intervention.
 
 <div class="hx-mt-6"></div>
 

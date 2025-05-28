@@ -6,7 +6,7 @@ description: "Making the invisible visible — through art and lived stories"
 summary: "Gateway page for migraine art and symptom structure."
 ---
 
-**Aura is real — and how you describe it matters.**
+**Aura is real — recognising it and how you describe it matters.**
 
 Whether expressed in art or structured by clinical criteria, every perspective helps make the invisible more visible.
 <div style="display: flex; justify-content: center; gap: 2rem; align-items: flex-start;">

@@ -29,7 +29,7 @@ images:
 
 -->
 
-Migraine isn’t just a headache—it’s a complex neurological condition with symptoms that matter for diagnosis, treatment, and your quality of life.
+Migraine isn’t just a headache—it’s a complex neurological condition with early and evolving symptoms that matter for diagnosis, treatment, and your quality of life.
 
 &nbsp;
 
@@ -54,8 +54,9 @@ With you, not just for you: Your stories spark innovation!
 
 &nbsp;
 
-**With you, not just for you: Your stories spark innovation!**
 
+**With you, not just for you:**   
+Your experiences inspire the quest for migraine science’s _holy grail_ --- attack prediction and ultra-early intervention.
 
 
 
@@ -68,7 +69,7 @@ With you, not just for you: Your stories spark innovation!
 
   {{< hextra/feature-card
     title="Revealing Experiences"
-    subtitle="Art and stories reveal migraine’s hidden impact."
+    subtitle="Art & stories make migraine’s hidden impact visible."
     link="experiences"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
     image="/images/teaser/roteRathausZigzag_cleanup-plus.png"
@@ -81,7 +82,7 @@ With you, not just for you: Your stories spark innovation!
 
   {{< hextra/feature-card
     title="Explore Your Brain State"
-    subtitle="MigraineBrainRadar:™ Exploratory migraine tracker."
+    subtitle="Measure what matters --- explore a growing toolbox."
     link="test-suit"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
     image="/images/teaser/jesus-in-toast.png"
@@ -92,7 +93,7 @@ With you, not just for you: Your stories spark innovation!
 
   {{< hextra/feature-card
     title="Take Back Control"
-    subtitle="Charting the course for tomorrow's migraine care."
+    subtitle="Catch migraine early --- treat it smarter."
     link="digital-health"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
     image="/images/teaser/aura-o-mat-app-tbg.png"

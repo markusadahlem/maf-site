@@ -6,142 +6,69 @@ sidebar:
   exclude: true
 ---
 
-**Charting the course for tomorrow's migraine care.**
+**To take back control means treating migraine smarter.**
 
-Since our early days of migraine awareness online, we've believed in one thing: medication works best when supported by smart software.
+We believe the _holy grail_ lies in preemptive therapy — not supressing the attack not even just stopping the attack, but reshaping how the brain responds to migraine altogether.
 
-People living with migraine deserve digital support that helps them better understand their condition — and treat their attacks earlier and more precisely, especially in the critical pre-headache phase.
+Achieving this means forecasting the event and this meand overcoming five core challenges — powered by what we name **Sense & Signal™**, our data fusion AI approach.
 
-That’s what we’ve been working on for over 30 years.
+- **Sense** is about noticing what’s already there — the early, often-overlooked symptoms that suggest an attack may be coming.
 
+- **Signal** is about actively probing the migraine brain — using digital tools to detect hidden instabilities before pain begins.
 
+### The 5 Challenges for Preemptive Therapy
+
+Sensitivity | Precision | False-Positive Rate | Early Warning Paradox | Timing  
 <div style="text-align: center;">
   <figure style="display: inline-block; margin: 0 auto;">
     <img
-      src="/images/from-art2aura-o-mat.png"
+      src="/images/core-challenges.png"
       class="img"
       style="width:max; height:auto;"
       alt="" />
-    <figcaption style="font-size: 0.8em; margin-top: 0.5em;">
-        From past to future: (left) A 1985 painting imagines a migraine aura-generating “computer”; (middle) a fortification pattern linked to visual cortex function; (right) a mobile concept for the Aura-o-mat™ as a step towards a personalized aura resonance therapy.
+    <figcaption style="font-size: 0.8em; margin-top: 0.5em;">      
         © 2025 Migraine Aura Foundation
     </figcaption>
   </figure>
 </div>
 
-This page shares where we started, what we’ve built, and where we see the future going.
 
+> »Success, therefore, is not about the episodic, momentary victories, though they do play a role. It is about the longer view of incremental steps that produce sustained progress.«   
+— **Atul Gawande**, In: The Heroism of Incremental Care
 
+Our approach to migraine forecasting isn’t about replacing traditional care — it’s about strengthening it.
+As Atul Gawande described in his landmark New Yorker article on incremental medicine, real progress often comes step by step. People with migraine need that same steady, long-term support — and so do their doctors. That’s the spirit behind our work.
 
+Below, we introduce five key challenges on the path toward preemptive migraine therapy — not as fixed answers, but as a roadmap in progress.
+In each section, you’ll also find links to other parts of the site where you can explore resources designed to support early symptom awareness and preview the first generation of signal-based testing tools.
 
+[**Read about Challenge 1**](core-challenge-1)  – Increasing Sensitivity
 
+[**Explore our 30-year journey**](charting-the-course) – Charting the course for tomorrow’s migraine care.
 
+<!-- Sense & Signal™ is our foundation for treating migraine earlier, smarter, and more precisely — starting before pain begins.-->
 
+<!--
+## The 5 Challenges for Preemptive Therapy
 
+### 1. Increase Sensitivity
+How often is the sign present before a migraine attack?
+Some warning signs are subtle, irregular, or dismissed as everyday fluctuations. To increase sensitivity, we combine symptom tracking with dynamic testing — probing the brain’s shifting state to detect early changes even before subjective awareness. It’s about catching the quiet signals before they vanish.
 
+### 2. Increase Precision
+How often does a migraine attack follow the sign?
+Not every signal means trouble. That’s why we go beyond surface patterns. Like a diagnostic in chemical biology, our tools aim to identify specific physiological signatures — using perception and behavior as readouts of brain instability. Precision means fewer false hopes, more timely actions.
 
+### 3. Reduce the False-Positive Rate
+How often do we get a false alarm?
+A signal you can’t trust is worse than none at all. By probing the migraine brain with structured tasks — rather than relying on vague gut feelings — we work to lower false alarms. Smart prompts and network-based models help us distinguish real warnings from background noise.
 
+### 4. Dissolve the Early Warning Paradox
+What if a good intervention hides its own success?
+Here’s the paradox: if a warning helps prevent an attack, it may look like it was wrong. We’re developing methods to account for this — treating the warning as a causal probe, not just a forecast. Like in chemical screens, success sometimes hides its own trail — we make it visible again.
 
-### From Patient-centric Research to Real-World Use
+### 5. Hit the Timing Sweet Spot
+When is it early enough — and not too late?
+Timing is everything. Our focus is the narrow 72–24 hour window before headache begins — when the brain is shifting, but you may not yet feel anything. Through short digital tests and pattern recognition, we aim to detect this physiological “sweet spot” — and act before migraine takes hold.
 
-Our migraine research dates back to the mid-1990s. Since 2004, we’ve been working to translate scientific insights into digital care solutions --- long before digital therapeutics (DTx) were recognized as a distinct treatment category.
-
-
-
-
-
-
-<div style="text-align: center;">
-  <figure style="display: inline-block; margin: 0 auto;">
-    <img
-      src="/images/motemedi_nokia_show_case.png"
-      class="img"
-      style="width:max; height:auto;"
-      alt="" />
-    <figcaption style="font-size: 0.8em; margin-top: 0.5em;">
-       Concept for mobile, telemedical diagnostics (motemedi) from 2004 © 2025 Migraine Aura Foundation
-    </figcaption>
-  </figure>
-</div>
-
-
-### Bridging Research and Prescription
-
-_M-sense_ was the first prescription DTx (aka DiGA; digital health application) for migraine, offering cognitive behavioral therapy as a low-threshold entry point — and as a way to collect data for the next generation of digital neuromodulatory interventions.
-
-
-
-<!--While we are not offering a migraine app at the moment — and the M-sense DTx is currently unavailable — our work continues.
-We are advancing digital, model-based strategies that aim to give patients real agency: to recognize patterns, predict attacks, and possibly redirect the course of an episode.-->
-
-
-{{< carousel
-  name="dtx"
-  imageDir="images/dtx/carousel"
-  yamlPath="images/dtx/carousel/_carousel.yaml"
-  titleKey="headline"
-  slidesPerView="5"
-  delay="3000"
-  showPagination="false"
->}}
-
-Unfortunately, the approval trial did not yield the desired results for permanent DiGA listing. And while the data collection showed great promise, the company lacked the funding to take the next step: targeted reprogramming of the migraine brain.
-
-<div style="font-size: 0.8em; margin-top: 1em;">
-  See: Raffaelli, B., Mecklenburg, J., Overeem, L. H., Scholler, S., Dahlem, M. A., Kurth, T., ... & Neeb, L. (2021). Determining the evolution of headache among regular users of a daily electronic diary via a smartphone app: observational study.
-  <em>JMIR mHealth and uHealth</em>, 9(7), e26401..
-  <a href="https://mhealth.jmir.org/2021/7/e26401" target="_blank" rel="noopener">https://mhealth.jmir.org/2021/7/e26401</a>
-</div>
-
-
-
-### Designing the Future of Migraine Care
-
-<div style="text-align: center;">
-  <figure style="display: inline-block; margin: 0 auto;">
-    <img
-      src="/images/aura-resonance-therapy.png"
-      class="img"
-      style="width:500px; height:auto;"
-      alt="" />
-    <figcaption style="font-size: 0.8em; margin-top: 0.5em;">
-       © 2025 Migraine Aura Foundation
-    </figcaption>
-  </figure>
-</div>
-
-
-
-More Than Visualization: When Seeing Becomes Intervention
-
-The Aura-o-mat™ and the [MigraineBrainRadar™](/test-suit/migrainebrainradar/) both help detect visual and other sensory auras and early warning signs in the prodromal phase, respectively — opening a time window for preemptive pharmacological intervention.
-
-But it doesn’t stop there: we are exploring how targeted visual stimulation can actively influence the brain during this sensitive phase — by modulating so-called "_hot spots_" and "_labyrinths_", i.e.,  vulnerable neural pathways.
-
-<div style="font-size: 0.8em; margin-top: 1em;">
-  See: Dahlem, M. A., Schmidt, B., Bojak, I., Boie, S., Kneer, F., Hadjikhani, N., & Kurths, J. (2015).
-  Cortical hot spots and labyrinths: why cortical neuromodulation for episodic migraine with aura should be personalized.
-  <em>Frontiers in Computational Neuroscience, 9</em>, 29.
-  <a href="https://doi.org/10.3389/fncom.2015.00029" target="_blank" rel="noopener">https://doi.org/10.3389/fncom.2015.00029</a>
-</div>
-
-Our goal is to translate insights from brain modeling into digital therapeutic approaches that not only predict the course of a migraine attack, but actively redirect it.
-
-
-
-### When Vision Becomes Therapy
-
-This short simulation visualizes the migraine aura as it emerges from brain circuitry — offering a glimpse of how precisely tuned stimuli might one day reprogram these circuits through neuroplasticity.
-
-**Experience a Migraine Aura Simulation**: For best results, change to full screen (f), fix your gaze on the fly, and <span style="color:red;">wait for at least ~20 seconds for the aura to emerge</span>. Do **not** move your gaze away from the fly even so the aura expands into your peripheral vision.
-
-
-{{< youtube GFvuC9dxY9I >}}
-
-
-This simulation is based on actual brain models used in our research.
-
-<div style="font-size: 0.8em; margin-top: 1em;"> See: Dahlem, M. A., Engelmann, R., Löwel, S., & Müller, S. C. (2000). Does the migraine aura reflect cortical organization?
-  <em>European Journal of Neuroscience,</em>  12(2), 767-770.
-  <a href="https://doi.org/10.1046/j.1460-9568.2000.00995.x" target="_blank" rel="noopener">https://doi.org/10.1046/j.1460-9568.2000.00995.x</a>
-</div>
+-->

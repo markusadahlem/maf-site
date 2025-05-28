@@ -6,7 +6,7 @@ description: "Das Unsichtbare sichtbar machen – durch Kunst und persönliche G
 summary: "Einstiegsseite zu Migräne-Kunst und Symptommustern."
 ---
 
-**Aura ist real – und wie du sie beschreibst, ist wichtig.**
+**Aura ist real – sie zu erkennen und wie sie beschreiben wird, ist wichtig.**
 
 Ob durch Kunst ausgedrückt oder durch medizinische Kriterien strukturiert – jede Perspektive hilft, das Unsichtbare sichtbarer zu machen.
 
@@ -52,7 +52,7 @@ Unser Archiv umfasst über fünf Jahrzehnte geteilte Erfahrungen.
 Unsere Symptomkarte übersetzt Erlebnisse in medizinische Sprache – basierend auf der **ICHD-3** und abgestimmt auf die kommende **ICHD-4 beta**.  
 Sie verbindet persönliche Erfahrungen mit diagnostischen Standards.
 
-<!--[**Zur Symptomkarte →**](/de/symptoms)-->
+[**Zur Symptomübersicht →**](/de/symptoms)
 
 ---
 
