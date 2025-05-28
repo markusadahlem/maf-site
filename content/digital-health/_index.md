@@ -46,11 +46,9 @@ That’s why we’ve broken the road to preemptive therapy into five core challe
 > »Success, therefore, is not about the episodic, momentary victories, though they do play a role. It is about the longer view of incremental steps that produce sustained progress.«
 — **Atul Gawande**, In: The Heroism of Incremental Care
 
-Our approach to migraine forecasting isn’t about replacing traditional care — it’s about strengthening it.
-As Atul Gawande described in his landmark New Yorker article on incremental medicine, real progress often comes step by step. People with migraine need that same steady, long-term support — and so do their doctors. That’s the spirit behind our work.
+Our approach to migraine forecasting is not about replacing traditional care — it’s about strengthening it. Like Atul Gawande’s has described it in his famous article on incremental medicine in _The New Yorker_, people with migraine need to move step by step, supporting long-term care. This is also our approach.
 
-Below, we introduce five key challenges on the path toward preemptive migraine therapy — not as fixed answers, but as a roadmap in progress.
-In each section, you’ll also find links to other parts of the site where you can explore resources designed to support early symptom awareness and preview the first generation of signal-based testing tools.
+Below, we introduce the five key challenges one by one on the path to preemptive migraine therapy — a roadmap more than a fisolution. Elsewhere on this site, you can explore resources designed to support early symptom awareness and introduce the first generation of signal-based tests.
 
 [**Read about Challenge 1**](core-challenge-1)  – Increasing Sensitivity
 
