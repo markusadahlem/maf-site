@@ -6,19 +6,29 @@ sidebar:
   exclude: true
 ---
 
-**To take back control means treating migraine smarter.**
+**People living with migraine take back control by treating it more intelligently.**
 
-We believe the _holy grail_ lies in preemptive therapy — not supressing the attack not even just stopping the attack, but reshaping how the brain responds to migraine altogether.
+We believe the _holy grail_ lies in preemptive therapy — not just suppressing or stopping the attack, but reshaping how the brain responds to migraine altogether.
 
-Achieving this means forecasting the event and this meand overcoming five core challenges — powered by what we name **Sense & Signal™**, our data fusion AI approach.
+Achieving this requires forecasting migraine — identifying the window when the brain is most plastic and the attack can still be bypassed entirely.
+It’s a fleeting opportunity — not just to stop the current episode, but to reshape how the brain responds to migraine in the future. That’s the long-term vision: from interruption to resilience.
 
-- **Sense** is about noticing what’s already there — the early, often-overlooked symptoms that suggest an attack may be coming.
+Getting there means overcoming five core challenges. And it calls for two kinds of intelligence:
 
-- **Signal** is about actively probing the migraine brain — using digital tools to detect hidden instabilities before pain begins.
+- One is **sensing** — noticing subtle signs and interpreting patterns that may point to an oncoming migraine.
+
+- The other is **signaling** — actively using digital tools to probe how the brain responds, revealing instabilities before symptoms fully unfold.
+
+Because this combination is so foundational, we’ve given it a name that’s easy to remember: **Sense & Signal™**.
+
+Sense & Signal™ is more than a catchy name — it reflects a deeper logic. Preemptive therapy depends on metrics: how early we can detect a shift, how often the signal is right, and how many false alarms we risk along the way. Each of these is a challenge. And together, they shape how — and when — we act.
+
+That’s why we’ve broken the road to preemptive therapy into five core challenges. Each one sharpens the tools we need. Each one brings us closer to resilience.
+
 
 ### The 5 Challenges for Preemptive Therapy
 
-Sensitivity | Precision | False-Positive Rate | Early Warning Paradox | Timing  
+
 <div style="text-align: center;">
   <figure style="display: inline-block; margin: 0 auto;">
     <img
@@ -26,14 +36,14 @@ Sensitivity | Precision | False-Positive Rate | Early Warning Paradox | Timing 
       class="img"
       style="width:max; height:auto;"
       alt="" />
-    <figcaption style="font-size: 0.8em; margin-top: 0.5em;">      
-        © 2025 Migraine Aura Foundation
+    <figcaption style="font-size: 0.8em; margin-top: 0.5em;">
+     Early warning signs vary in <b>sensitivity</b> (how often they occur before an attack) and <b>precision</b> (how often they correctly predict one). Bubble size reflects the <b>false positive rate</b>. Some signs, like neck pain, may seem to vanish due to the <b>early warning paradox</b> — because action works. And if alerts come too late, the <b>timing</b> is off — making prediction useless.   © 2025 Migraine Aura Foundation
     </figcaption>
   </figure>
 </div>
 
 
-> »Success, therefore, is not about the episodic, momentary victories, though they do play a role. It is about the longer view of incremental steps that produce sustained progress.«   
+> »Success, therefore, is not about the episodic, momentary victories, though they do play a role. It is about the longer view of incremental steps that produce sustained progress.«
 — **Atul Gawande**, In: The Heroism of Incremental Care
 
 Our approach to migraine forecasting isn’t about replacing traditional care — it’s about strengthening it.

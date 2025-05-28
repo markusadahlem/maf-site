@@ -29,7 +29,7 @@ images:
 
 -->
 
-Migraine isn’t just a headache—it’s a complex neurological condition with early and evolving symptoms that matter for diagnosis, treatment, and your quality of life.
+Migraine isn’t just a headache—it’s a complex condition marked by a wide range of neurological symptoms that can emerge before, during, and between attacks. Recognizing them matters for diagnosis, treatment, and your quality of life.
 
 &nbsp;
 
@@ -55,7 +55,7 @@ With you, not just for you: Your stories spark innovation!
 &nbsp;
 
 
-**With you, not just for you:**   
+**With you, not just for you:**
 Your experiences inspire the quest for migraine science’s _holy grail_ --- attack prediction and ultra-early intervention.
 
 
