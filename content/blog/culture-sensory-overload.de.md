@@ -4,6 +4,7 @@ layout: blog
 title: 'Kultur optimaler Reizüberflutung'
 authors:
   - name: Dr. rer. nat. Markus A. Dahlem
+    link: https://www.linkedin.com/in/markusdahlem/
 description: "Visuelle Epilepsie- und Migräneauslöser sind an die neuronale Verschaltung der Großhirnrinde optimal angepasste Lichtreize, die bei weitem nicht mehr nur in flackernden Videospielen zu finden sind."
 ---
 

@@ -3,7 +3,7 @@ date: '2011-11-29T17:55:11+02:00'
 title: 'Satte Spezialisten überreizen das Gehirn'
 authors:
   - name: Markus A. Dahlem, PhD
-    link: https://example.com/authors/markus
+    link: https://www.linkedin.com/in/markusdahlem/
 description: "Flackernde Lichtblitze bestimmter Form lassen spezialisierte Gehirnzellen maximal feuern; sie überreizen damit ein sowieso schon überempfindliches Netzwerk und können einen Migräneanfall auslösen."
 ---
 

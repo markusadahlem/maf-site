@@ -3,7 +3,7 @@ date: '2010-01-21T17:55:11+02:00'
 title: 'The Migraine Zapper'
 authors:
   - name: Markus A. Dahlem, PhD
-    link: https://example.com/authors/markus
+    link: https://www.linkedin.com/in/markusdahlem/
 description: "Therapeutic magnetic stimulation for migraine has received widespread attention. One device—a transcranial magnetic stimulator nicknamed the migraine zapper—has been approved by the FDA as an investigational medical device. "
 ---
 

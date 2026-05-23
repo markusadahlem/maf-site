@@ -4,7 +4,7 @@ title: 'Ghost of a Saddle-node Bifurcation'
 draft: true
 authors:
   - name: Markus A. Dahlem, PhD
-    link: https://example.com/authors/markus
+    link: https://www.linkedin.com/in/markusdahlem/
 description: "Visual triggers of epilepsy and migraine are light stimuli optimally tuned to the neural wiring of the cerebral cortex — and they are by no means limited to flickering video games anymore."
 ---
 

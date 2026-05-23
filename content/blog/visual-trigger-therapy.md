@@ -4,7 +4,7 @@ title: 'X'
 draft: true
 authors:
   - name: Markus A. Dahlem, PhD
-    link: https://example.com/authors/markus
+    link: https://www.linkedin.com/in/markusdahlem/
 description: "Visual perception plays a special role in migraine. Light sensitivity and the visual disturbances that occur during an attack raise an important question: can light also have a positive effect?"
 ---
 

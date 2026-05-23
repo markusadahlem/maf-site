@@ -4,6 +4,7 @@ title: 'Visuelle Trigger, Halluzinationen und Therapie'
 draft: true
 authors:
   - name: Markus A. Dahlem, PhD
+    link: https://www.linkedin.com/in/markusdahlem/
 description: "Die visuelle Wahrnehmung spielt bei Migräne eine besondere Rolle. Lichtempfindlichkeit und während des Anfalls auftretende Sehstörungen legen eine Frage nahe: kann Licht auch positiv wirken?"
 ---
 

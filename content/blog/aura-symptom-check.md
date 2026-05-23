@@ -3,7 +3,7 @@ date: '2025-04-28T03:55:11+02:00'
 title: 'Aura-Symptom-Check: Recognizing the Unrecognized'
 authors:
   - name: Markus A. Dahlem, PhD
-    link: https://example.com/authors/markus
+    link: https://www.linkedin.com/in/markusdahlem/
 description: "How the Migraine-Aura-Symptom-Check Guides Patients Toward Understanding, Improves the Patient Journey, and Supports Clinical Care."
 ---
 

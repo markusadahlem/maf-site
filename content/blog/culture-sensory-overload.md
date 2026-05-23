@@ -3,7 +3,7 @@ date: '2011-11-29T17:55:11+02:00'
 title: 'Culture of Optimal Sensory Overload'
 authors:
   - name: Markus A. Dahlem, PhD
-    link: https://example.com/authors/markus
+    link: https://www.linkedin.com/in/markusdahlem/
 description: "Visual triggers of epilepsy and migraine are light stimuli optimally tuned to the neural wiring of the cerebral cortex — and they are by no means limited to flickering video games anymore."
 ---
 
@@ -53,7 +53,7 @@ The most notorious example of an epilepsy-inducing sequence comes from the 1997 
 
 Are today’s known visual triggers—whether for migraine or epilepsy—the result of cultural fine-tuning? Have certain light patterns been replicated, stylized, and optimized for maximum effect on our brain’s modular architecture? It's not far-fetched. Directors and designers often seek visceral reactions—the ultimate adrenaline kick. Their lightning-fast image sequences have become almost stereotypical. Once crude in comic books, these patterns are now computer-animated—and everywhere.
 
-Even family-friendly films like Toy Story 3 or visual spectacles like Avatar have raised concerns about seizure risk. But it’s not the 3D effects per se [5]. It’s the rapid flashing, flickering, and zigzagging projected on screens—big and small. Today, most of us are never more than 30 cm away from a screen.
+Even family-friendly films like Toy Story 3 or visual spectacles like Avatar have raised concerns about seizure risk. But it’s not the 3D effects per se [4]. It’s the rapid flashing, flickering, and zigzagging projected on screens—big and small. Today, most of us are never more than 30 cm away from a screen.
 
 So it’s not surprising that these visual patterns—ever faster, ever brighter—are chasing our attention while converging, perhaps unknowingly, on the very configurations that overstimulate the brain. They have become stealthy triggers for migraine and epilepsy.
 
@@ -74,4 +74,7 @@ But it’s worth remembering: every era and every culture has had its own visual
 [3] Fisher RS, Harding G, Erba G, Barkley GL, Wilkins A; Epilepsy Foundation of America Working Group: Photic- and pattern-induced seizures: a review for the Epilepsy Foundation of America Working Group. Epilepsia. (2005) 46,1426-1441.
 
 [4] Prasad M, Arora M, Abu-Arafeh I, Harding G.:  3D movies and risk of seizures in patients with photosensitive epilepsy. Seizure. (2011) im Druck.
+
+<!--
 [5] Kager, H. , Wadman, W. J. and Somjen, G. G.: Simulated seizures and spreading depression in a neuron model incorporating interstitial space and ion concentrations, (2000) J. Neurophysiol. 84, 495.
+-->

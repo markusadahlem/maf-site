@@ -3,7 +3,7 @@ date: '2011-11-29T17:55:11+02:00'
 title: 'Can Light Treat What Light Hurts?'
 authors:
   - name: Markus A. Dahlem, PhD
-    link: https://example.com/authors/markus
+    link: https://www.linkedin.com/in/markusdahlem/
 description: "Zigzags, flickers, flashes, and stripe patterns — some visual stimuli can trigger a migraine, others an epileptic seizure. But could they also treat what they provoke? In this three-part series, I explore how visual hallucinations emerge in migraine, why some brains are hypersensitive to light, and whether precisely tuned stimuli might one day offer relief. An unexpected music video sets the stage for some illuminating science."
 ---
 
