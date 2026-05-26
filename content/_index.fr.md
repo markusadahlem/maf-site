@@ -1,16 +1,15 @@
 ---
-type: docs
+type: normal
 title: ""
 layout: hextra-home
 disableSidebar: false
-type: default
 width: normal
 ---
 
 
 <!-- markdownlint-disable MD033 MD034-->
 
-<div class="hx-mt-6 hx-mb-6">
+<div class="hx:mt-6 hx:mb-6">
 {{< hextra/hero-headline >}}
 Chaque signe de migraine compte
 {{< /hextra/hero-headline >}}
@@ -23,7 +22,7 @@ La migraine n’est pas qu’un mal de tête – c’est une maladie complexe do
 
 
 {{< hextra/hero-badge link="aura-symptom-check" >}}
-  <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400"></div>
-  <span class="hx-text-lg">Vérifiez vos symptômes</span>
+  <div class="hx:w-2 hx:h-2 hx:rounded-full hx:bg-primary-400"></div>
+  <span class="hx:text-lg">Vérifiez vos symptômes</span>
   {{< icon name="arrow-circle-right" attributes="height=32" >}}
 {{< /hextra/hero-badge >}}

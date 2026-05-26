@@ -1,0 +1,74 @@
+/* home.css — homepage typography and rhythm */
+
+/* Constrain and center the Hextra hero shortcodes. Loaded only on the
+   homepage, so these class selectors don't leak elsewhere. */
+h1.not-prose {
+    max-width: 65ch;
+    margin: 1.5rem auto;
+    text-align: center;
+}
+
+p.not-prose {
+    max-width: 65ch;
+    margin: 0 auto 1.5rem;
+    text-align: center;
+}
+
+.home-prose {
+    max-width: 65ch;
+    margin: 1.5rem auto;
+    line-height: 1.65;
+}
+
+.home-prose p {
+    margin: 0.75rem 0;
+}
+
+.home-prose strong {
+    font-weight: 600;
+}
+
+.home-carousel {
+    width: 100%;
+    max-width: 65ch;
+    margin: 0 auto;
+}
+
+/* Stack the feature cards vertically at all breakpoints, constrained to the
+   same reading width as the rest of the page. Overrides Hextra's responsive
+   grid-cols utilities, so !important is intentional. */
+.hextra-feature-grid {
+    grid-template-columns: 1fr !important;
+    max-width: 65ch;
+    margin: 1.5rem auto;
+}
+
+.home-clinician {
+    margin: 3rem auto 1.5rem;
+    padding: 2rem 1.75rem;
+    border-radius: 12px;
+    background: rgba(0, 123, 255, 0.05);
+    border-left: 3px solid rgba(0, 123, 255, 0.45);
+    max-width: 65ch;
+    line-height: 1.65;
+}
+
+.home-clinician h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.home-clinician p {
+    margin: 0.75rem 0;
+}
+
+.home-clinician a {
+    font-weight: 600;
+}
+
+@media (prefers-color-scheme: dark) {
+    .home-clinician {
+        background: rgba(255, 255, 255, 0.04);
+        border-left-color: rgba(255, 255, 255, 0.3);
+    }
+}

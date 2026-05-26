@@ -6,6 +6,10 @@ module:
   imports:
     - path: github.com/imfing/hextra
 
+author:
+  name: Migraine Aura Foundation
+  email: dahlem@migraine-aura-foundation.org
+
 menu:
   main:
     - identifier: home
