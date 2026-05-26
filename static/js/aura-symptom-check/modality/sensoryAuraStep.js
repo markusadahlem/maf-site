@@ -1,83 +1,51 @@
+import {
+  setModalityAnswer,
+  addSelectedModality,
+} from "/js/aura-symptom-check/lib/storage.js";
+import {
+  bindExclusiveCheckboxGroup,
+  bindOtherTextarea,
+  bindContinueButton,
+} from "/js/aura-symptom-check/lib/form-controls.js";
+
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("sensoryAuraForm");
+  const checkboxes = form.querySelectorAll('input[name="sensorySymptom"]');
+  const otherBox = form.querySelector('input[value="other"]');
+  const noneBox = form.querySelector('input[value="none"]');
+  const otherLabel = document.getElementById("sensoryOtherLabel");
+  const otherText = document.getElementById("sensoryOtherText");
+  const charCount = document.getElementById("sensoryCharCount");
   const nextBtn = document.getElementById("nextSensoryBtn");
 
-  const checkboxes = form.querySelectorAll('input[name="sensorySymptom"]');
-  const otherCheckbox = form.querySelector('input[value="other"]');
-  const noneCheckbox = form.querySelector('input[value="none"]');
-
-  const otherLabel = document.getElementById("sensoryOtherLabel");
-  const otherTextarea = document.getElementById("sensoryOtherText");
-  const charCountDisplay = document.getElementById("sensoryCharCount");
-
-  function toggleOtherField() {
-    const show = otherCheckbox.checked;
-    otherLabel.style.display = show ? "block" : "none";
-    otherTextarea.style.display = show ? "block" : "none";
-    noneCheckbox.parentElement.style.display = show ? "none" : "block";
-
-    if (!show) {
-      otherTextarea.value = "";
-      charCountDisplay.style.display = "none";
-    }
-  }
-
-  otherTextarea.addEventListener("input", () => {
-    const len = otherTextarea.value.length;
-    charCountDisplay.style.display = len > 0 ? "block" : "none";
-    charCountDisplay.textContent = `${len} / 80 characters`;
+  const refreshContinue = bindContinueButton({
+    button: nextBtn,
+    isReady: () => Array.from(checkboxes).some((cb) => cb.checked),
   });
 
-  checkboxes.forEach((cb) =>
-    cb.addEventListener("change", () => {
-      if (cb.value === "none" && cb.checked) {
-        // If "none" is selected, uncheck all others
-        checkboxes.forEach((el) => {
-          if (el !== cb) el.checked = false;
-        });
-      } else if (cb.value !== "none" && cb.checked) {
-        // If any other is selected, uncheck "none"
-        noneCheckbox.checked = false;
-      }
+  bindOtherTextarea({
+    trigger: otherBox,
+    showWhenChecked: [otherLabel, otherText],
+    hideWhenChecked: [noneBox.parentElement],
+    textarea: otherText,
+    counter: charCount,
+    onChange: refreshContinue,
+  });
 
-      toggleOtherField();
-      updateContinueButton();
-    }),
-  );
-
-  function updateContinueButton() {
-    const isAnyChecked = Array.from(checkboxes).some((cb) => cb.checked);
-    nextBtn.style.display = isAnyChecked ? "inline-block" : "none";
-  }
-
-  // Initialize state
-  toggleOtherField();
-  updateContinueButton();
+  bindExclusiveCheckboxGroup({
+    checkboxes,
+    exclusiveValue: "none",
+    onChange: refreshContinue,
+  });
 
   nextBtn.addEventListener("click", () => {
     const selected = Array.from(checkboxes)
       .filter((cb) => cb.checked)
       .map((cb) => cb.value);
+    const description = otherBox.checked ? otherText.value.trim() : "";
 
-    const otherText = otherTextarea.value.trim();
-
-    const data = JSON.parse(localStorage.getItem("criterionBAnswers") || "{}");
-    data.sensory = {
-      selected,
-      description: otherText,
-    };
-    localStorage.setItem("criterionBAnswers", JSON.stringify(data));
-
-    const currentModalities = JSON.parse(
-      localStorage.getItem("selectedModalities") || "[]",
-    );
-    if (!currentModalities.includes("sensory")) {
-      currentModalities.push("sensory");
-      localStorage.setItem(
-        "selectedModalities",
-        JSON.stringify(currentModalities),
-      );
-    }
+    setModalityAnswer("sensory", { selected, description });
+    addSelectedModality("sensory");
 
     window.location.href = "/aura-symptom-check/modality/speech-aura/";
   });

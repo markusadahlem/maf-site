@@ -16,4 +16,4 @@ _(Select all that apply.)_
 
 {{< aura-symptom-check/modality/brainstem-aura-form >}}
 
-<script src="/js/aura-symptom-check/modality/brainstemAuraStep.js"></script>
+<script type="module" src="/js/aura-symptom-check/modality/brainstemAuraStep.js"></script>

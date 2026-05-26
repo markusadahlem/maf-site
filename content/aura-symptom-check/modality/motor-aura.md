@@ -15,4 +15,4 @@ sidebar:
 
 {{< aura-symptom-check/modality/motor-aura-form >}}
 
-<script src="/js/aura-symptom-check/modality/motorAuraStep.js"></script>
+<script type="module" src="/js/aura-symptom-check/modality/motorAuraStep.js"></script>

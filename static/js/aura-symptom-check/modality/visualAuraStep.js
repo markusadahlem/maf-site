@@ -1,100 +1,52 @@
+import {
+  setModalityAnswer,
+  addSelectedModality,
+} from "/js/aura-symptom-check/lib/storage.js";
+import {
+  bindExclusiveCheckboxGroup,
+  bindOtherTextarea,
+  bindContinueButton,
+} from "/js/aura-symptom-check/lib/form-controls.js";
+
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("visualAuraForm");
+  const checkboxes = form.querySelectorAll('input[name="visualSymptom"]');
   const otherBox = form.querySelector('input[value="other"]');
+  const noneBox = form.querySelector('input[value="none"]');
   const otherWrapper = document.getElementById("visualOtherWrapper");
   const otherText = document.getElementById("visualOtherText");
   const charCount = document.getElementById("visualCharCount");
-  const noneBox = form.querySelector('input[value="none"]');
   const nextBtn = document.getElementById("nextVisualBtn");
-  const allBoxes = form.querySelectorAll('input[name="visualSymptom"]');
 
-  // 👉 Toggle textarea + "None" visibility
-  otherBox.addEventListener("change", () => {
-    const show = otherBox.checked;
-    otherWrapper.style.display = show ? "block" : "none";
-    charCount.style.display = show ? "block" : "none";
-
-    if (show) {
-      noneBox.checked = false;
-      noneBox.parentElement.style.display = "none";
-    } else {
-      noneBox.parentElement.style.display = "block";
-    }
-
-    updateContinueVisibility();
+  const refreshContinue = bindContinueButton({
+    button: nextBtn,
+    isReady: () => Array.from(checkboxes).some((cb) => cb.checked),
   });
 
-  // 👉 Character counter
-  otherText.addEventListener("input", () => {
-    charCount.textContent = `${otherText.value.length} / 80 characters`;
-    charCount.style.display = otherText.value.length > 0 ? "block" : "none";
+  bindOtherTextarea({
+    trigger: otherBox,
+    showWhenChecked: [otherWrapper],
+    hideWhenChecked: [noneBox.parentElement],
+    textarea: otherText,
+    counter: charCount,
+    onChange: refreshContinue,
   });
 
-  // 👉 Exclusive selection logic for "None"
-  allBoxes.forEach((box) => {
-    box.addEventListener("change", () => {
-      if (box.value === "none" && box.checked) {
-        allBoxes.forEach((cb) => {
-          if (cb !== box) cb.checked = false;
-        });
-        otherWrapper.style.display = "none";
-        otherText.value = "";
-        charCount.style.display = "none";
-      } else if (box.value !== "none" && box.checked) {
-        noneBox.checked = false;
-      }
-
-      updateContinueVisibility();
-    });
+  bindExclusiveCheckboxGroup({
+    checkboxes,
+    exclusiveValue: "none",
+    onChange: refreshContinue,
   });
 
-  // 👉 Show/hide Continue button depending on selection
-  function updateContinueVisibility() {
-    const isAnyChecked = Array.from(allBoxes).some((cb) => cb.checked);
-    nextBtn.style.display = isAnyChecked ? "inline-block" : "none";
-  }
-
-  // 👉 Save and continue
   nextBtn.addEventListener("click", () => {
-    const selected = Array.from(
-      form.querySelectorAll('input[name="visualSymptom"]:checked'),
-    ).map((cb) => cb.value);
+    const selected = Array.from(checkboxes)
+      .filter((cb) => cb.checked)
+      .map((cb) => cb.value);
+    const description = otherBox.checked ? otherText.value.trim() : "";
 
-    const otherDesc = otherBox.checked ? otherText.value.trim() : "";
-
-    const visualAura = {
-      selected,
-      description: otherDesc,
-    };
-
-    localStorage.setItem("visualAura", JSON.stringify(visualAura));
-
-    const currentModalities = JSON.parse(
-      localStorage.getItem("selectedModalities") || "[]",
-    );
-    if (!currentModalities.includes("visual")) {
-      currentModalities.push("visual");
-    }
-    localStorage.setItem(
-      "selectedModalities",
-      JSON.stringify(currentModalities),
-    );
-
-    const allAnswers = JSON.parse(
-      localStorage.getItem("criterionBAnswers") || "{}",
-    );
-    allAnswers.visual = visualAura;
-    localStorage.setItem("criterionBAnswers", JSON.stringify(allAnswers));
+    setModalityAnswer("visual", { selected, description });
+    addSelectedModality("visual");
 
     window.location.href = "/aura-symptom-check/modality/retinal-aura/";
   });
-
-  // ✅ Initial state setup
-  if (otherBox.checked) {
-    noneBox.parentElement.style.display = "none";
-    otherWrapper.style.display = "block";
-    charCount.style.display = otherText.value.length > 0 ? "block" : "none";
-  }
-
-  updateContinueVisibility();
 });

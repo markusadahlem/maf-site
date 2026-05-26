@@ -14,4 +14,4 @@ sidebar:
 <link rel="stylesheet" href="/css/symptom-check.css">
 
 {{< aura-symptom-check/modality/retinal-aura-form >}}
-<script src="/js/aura-symptom-check/modality/retinalAuraStep.js"></script>
+<script type="module" src="/js/aura-symptom-check/modality/retinalAuraStep.js"></script>

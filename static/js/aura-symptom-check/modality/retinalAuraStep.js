@@ -1,46 +1,30 @@
+import {
+  setModalityAnswer,
+  addSelectedModality,
+} from "/js/aura-symptom-check/lib/storage.js";
+import { bindContinueButton } from "/js/aura-symptom-check/lib/form-controls.js";
+
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("retinalAuraForm");
-  const nextBtn = document.getElementById("nextRetinalBtn");
   const radios = form.querySelectorAll('input[name="retinalAura"]');
+  const nextBtn = document.getElementById("nextRetinalBtn");
 
-  function updateContinueVisibility() {
-    const isSelected = form.querySelector('input[name="retinalAura"]:checked');
-    nextBtn.style.display = isSelected ? "inline-block" : "none";
-  }
+  const refreshContinue = bindContinueButton({
+    button: nextBtn,
+    isReady: () => !!form.querySelector('input[name="retinalAura"]:checked'),
+  });
 
-  // Check on load in case of pre-selection
-  updateContinueVisibility();
-
-  // Add event listeners to all radio buttons
-  radios.forEach((radio) =>
-    radio.addEventListener("change", updateContinueVisibility),
-  );
+  radios.forEach((r) => r.addEventListener("change", refreshContinue));
 
   nextBtn.addEventListener("click", () => {
     const selected = form.querySelector('input[name="retinalAura"]:checked');
+    if (!selected) return;
 
-    if (!selected) {
-      alert("Please select an answer.");
-      return;
-    }
-
-    const data = JSON.parse(localStorage.getItem("criterionBAnswers") || "{}");
-    data.retinal = {
+    setModalityAnswer("retinal", {
       selected: [selected.value],
       description: "",
-    };
-    localStorage.setItem("criterionBAnswers", JSON.stringify(data));
-
-    const currentModalities = JSON.parse(
-      localStorage.getItem("selectedModalities") || "[]",
-    );
-    if (!currentModalities.includes("retinal")) {
-      currentModalities.push("retinal");
-      localStorage.setItem(
-        "selectedModalities",
-        JSON.stringify(currentModalities),
-      );
-    }
+    });
+    addSelectedModality("retinal");
 
     window.location.href = "/aura-symptom-check/modality/sensory-aura/";
   });

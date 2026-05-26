@@ -1,7 +1,14 @@
+import {
+  setModalityAnswer,
+  addSelectedModality,
+} from "/js/aura-symptom-check/lib/storage.js";
+import {
+  bindOtherTextarea,
+  bindContinueButton,
+} from "/js/aura-symptom-check/lib/form-controls.js";
+
 document.addEventListener("DOMContentLoaded", () => {
   const yesNoRadios = document.querySelectorAll('input[name="motor-weakness"]');
-  const locationSection = document.getElementById("motorLocationsSection");
-
   const locationCheckboxes = document.querySelectorAll(
     'input[name="motor-location"]',
   );
@@ -11,105 +18,57 @@ document.addEventListener("DOMContentLoaded", () => {
   const otherText = document.getElementById("motor-other");
   const otherLabel = document.getElementById("motorOtherLabel");
   const charCount = document.getElementById("motorCharCount");
-
+  const locationSection = document.getElementById("motorLocationsSection");
   const continueBtn = document.getElementById("continueBtn");
 
-  function updateVisibility() {
-    const selected = Array.from(yesNoRadios).find((r) => r.checked)?.value;
-    locationSection.style.display = selected === "yes" ? "block" : "none";
+  const selectedRadio = () =>
+    Array.from(yesNoRadios).find((r) => r.checked)?.value;
 
-    updateContinueButton(); // Always recheck button visibility
-  }
+  const refreshContinue = bindContinueButton({
+    button: continueBtn,
+    isReady: () => {
+      const choice = selectedRadio();
+      if (choice === "yes") {
+        return Array.from(locationCheckboxes).some((cb) => cb.checked);
+      }
+      return choice === "no" || choice === "unsure";
+    },
+  });
 
-  function updateOtherField() {
-    const show = otherCheckbox.checked;
-    otherText.style.display = show ? "block" : "none";
-    otherLabel.style.display = show ? "block" : "none";
-    charCount.style.display =
-      show && otherText.value.length > 0 ? "block" : "none";
+  const syncLocationSection = () => {
+    locationSection.style.display = selectedRadio() === "yes" ? "block" : "none";
+    refreshContinue();
+  };
 
-    if (!show) {
-      otherText.value = "";
-      charCount.textContent = "0 / 80 characters";
-    }
-  }
+  bindOtherTextarea({
+    trigger: otherCheckbox,
+    showWhenChecked: [otherLabel, otherText],
+    textarea: otherText,
+    counter: charCount,
+    onChange: refreshContinue,
+  });
 
-  function updateCharCount() {
-    charCount.textContent = `${otherText.value.length} / 80 characters`;
-    charCount.style.display = otherText.value.length > 0 ? "block" : "none";
-  }
-
-  function updateContinueButton() {
-    const selected = Array.from(yesNoRadios).find((r) => r.checked)?.value;
-
-    if (selected === "yes") {
-      const anyChecked = Array.from(locationCheckboxes).some(
-        (cb) => cb.checked,
-      );
-      continueBtn.style.display = anyChecked ? "inline-block" : "none";
-    } else if (selected === "no" || selected === "unsure") {
-      continueBtn.style.display = "inline-block";
-    } else {
-      continueBtn.style.display = "none";
-    }
-  }
-
-  // 👉 Event bindings
-  yesNoRadios.forEach((r) => r.addEventListener("change", updateVisibility));
+  yesNoRadios.forEach((r) => r.addEventListener("change", syncLocationSection));
   locationCheckboxes.forEach((cb) =>
-    cb.addEventListener("change", () => {
-      updateOtherField();
-      updateContinueButton();
-    }),
+    cb.addEventListener("change", refreshContinue),
   );
 
-  if (otherText) {
-    otherText.addEventListener("input", () => {
-      updateCharCount();
-      updateContinueButton();
-    });
-  }
-
-  // Initial state on page load
-  updateVisibility();
-  updateOtherField();
-  updateCharCount();
+  syncLocationSection();
 
   continueBtn.addEventListener("click", () => {
-    const hasWeakness =
-      Array.from(yesNoRadios).find((r) => r.checked)?.value || null;
+    const hasWeakness = selectedRadio() || null;
 
-    let selectedLocations = [];
+    const selected =
+      hasWeakness === "yes"
+        ? Array.from(locationCheckboxes)
+            .filter((cb) => cb.checked)
+            .map((cb) => cb.value)
+        : [hasWeakness];
 
-    if (hasWeakness === "yes") {
-      selectedLocations = Array.from(locationCheckboxes)
-        .filter((cb) => cb.checked)
-        .map((cb) => cb.value);
-    } else {
-      selectedLocations = [hasWeakness]; // will be "no" or "unsure"
-    }
+    const description = otherText.value.trim();
 
-    const other = otherText?.value.trim() || "";
-
-    // ✅ Save to localStorage
-    const data = JSON.parse(localStorage.getItem("criterionBAnswers") || "{}");
-    data.motor = {
-      selected: selectedLocations,
-      description: other,
-      hasWeakness,
-    };
-    localStorage.setItem("criterionBAnswers", JSON.stringify(data));
-
-    const currentModalities = JSON.parse(
-      localStorage.getItem("selectedModalities") || "[]",
-    );
-    if (!currentModalities.includes("motor")) {
-      currentModalities.push("motor");
-      localStorage.setItem(
-        "selectedModalities",
-        JSON.stringify(currentModalities),
-      );
-    }
+    setModalityAnswer("motor", { selected, description, hasWeakness });
+    addSelectedModality("motor");
 
     window.location.href = "/aura-symptom-check/modality/brainstem-aura/";
   });

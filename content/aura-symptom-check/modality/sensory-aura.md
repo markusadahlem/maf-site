@@ -15,4 +15,4 @@ sidebar:
 
 {{< aura-symptom-check/modality/sensory-aura-form >}}
 
-<script src="/js/aura-symptom-check/modality/sensoryAuraStep.js"></script>
+<script type="module" src="/js/aura-symptom-check/modality/sensoryAuraStep.js"></script>
