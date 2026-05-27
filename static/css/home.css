@@ -16,11 +16,23 @@ h1.not-prose {
     text-align: left;
 }
 
-p.not-prose {
-    width: 100%;
+.home-hero-subtitle {
     max-width: var(--home-reading-width);
     margin: 0 auto 1.5rem;
+}
+
+.home-hero-subtitle p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: #4b5563;
     text-align: left;
+    margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    .home-hero-subtitle p {
+        color: #9ca3af;
+    }
 }
 
 .home-prose {

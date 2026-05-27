@@ -8,13 +8,11 @@ width: normal
 
 <link rel="stylesheet" href="/css/home.css">
 
-{{< hextra/hero-headline >}}
-Migräne sichtbar machen
-{{< /hextra/hero-headline >}}
+{{< hextra/hero-headline >}}Migräne sichtbar machen{{< /hextra/hero-headline >}}
 
-{{< hextra/hero-subtitle >}}
-Migräne ist nicht nur Kopfschmerz — sie ist eine komplexe neurologische Erkrankung mit frühen und sich wandelnden Symptomen, die für Diagnose, Behandlung und Lebensqualität entscheidend sein können.
-{{< /hextra/hero-subtitle >}}
+<div class="home-hero-subtitle">
+<p>Migräne ist nicht nur Kopfschmerz — sie ist eine komplexe neurologische Erkrankung mit frühen und sich wandelnden Symptomen, die für Diagnose, Behandlung und Lebensqualität entscheidend sein können.</p>
+</div>
 
 <div class="home-prose">
 
