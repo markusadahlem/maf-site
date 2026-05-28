@@ -19,4 +19,4 @@ sidebar:
 
 {{< aura-symptom-check/acute-chronic/response-to-usual-remedies >}}
 
-<script src="/js/aura-symptom-check/acute-chronic/response-to-usual-remedies.js"></script>
+<script type="module" src="/js/aura-symptom-check/acute-chronic/response-to-usual-remedies.js"></script>

@@ -1,3 +1,5 @@
+import { store, MODULE_ID } from "/js/modules/aura-symptom-check/index.js";
+
 const questions = [
   {
     text: "Did at least one aura symptom spread gradually over at least 5 minutes?",
@@ -34,7 +36,7 @@ const container = document.getElementById("quizContainer");
 const result = document.getElementById("resultC");
 
 function showQuestion() {
-  result.textContent = ""; // Clear result if user goes back
+  result.textContent = "";
 
   if (current === questions.length) {
     let summaryHTML = "<ul>";
@@ -49,8 +51,8 @@ function showQuestion() {
               <p>Here’s a summary of your responses:</p>
               ${summaryHTML}
               <p>Click below to see whether your responses meet the clinical threshold for this part.</p>
-              <button class="btn" onclick="showResult()">✅ Yes, show my result</button>
-              <button class="btn btn-secondary" onclick="goBack()">← Go Back</button>
+              <button class="btn" data-action="show-result">✅ Yes, show my result</button>
+              <button class="btn btn-secondary" data-action="go-back">← Go Back</button>
             `;
     return;
   }
@@ -59,11 +61,11 @@ function showQuestion() {
   container.innerHTML = `
     <p><strong>Question ${current + 1} of ${questions.length}</strong></p>
     <p>${q.text}
-      <button onclick="showExplanation()" title="More info" class="info-icon">ⓘ</button>
+      <button data-action="explain" title="More info" class="info-icon">ⓘ</button>
     </p>
-    <button class="btn" onclick="answer(true)">Yes</button>
-    <button class="btn btn-outline" onclick="answer(false)">No</button>
-    ${current > 0 ? `<br><br><button class="btn btn-secondary" onclick="goBack()">← Go Back</button>` : ""}
+    <button class="btn" data-action="answer-yes">Yes</button>
+    <button class="btn btn-outline" data-action="answer-no">No</button>
+    ${current > 0 ? `<br><br><button class="btn btn-secondary" data-action="go-back">← Go Back</button>` : ""}
     <div id="explanation" style="display:none; margin-top: 0.5rem; font-style: italic;"></div>
   `;
 }
@@ -85,17 +87,16 @@ function showExplanation() {
   explEl.textContent = explanation;
   explEl.style.display = "block";
 }
+
 function showResult() {
   const score = answers.filter((a) => a === true).length;
   const passed = score >= 3;
 
-  // Speichere die Antworten
-  localStorage.setItem("auraCharacteristicsAnswers", JSON.stringify(answers));
+  store.set(MODULE_ID, "auraCharacteristicsAnswers", answers);
 
-  // Check for the flag in localStorage
+  // redirectToDemographicInfo is a transient cross-page signal, not flow state.
   const flag = localStorage.getItem("redirectToDemographicInfo");
 
-  // Redirect based on the flag and the result
   if (flag) {
     window.location.href = "/aura-symptom-check/demographic-information/";
   } else {
@@ -104,5 +105,17 @@ function showResult() {
       : "/aura-symptom-check/criterioncnotmeet/";
   }
 }
+
+container.addEventListener("click", (event) => {
+  const action = event.target.closest("[data-action]")?.dataset.action;
+  if (!action) return;
+  switch (action) {
+    case "answer-yes": answer(true); break;
+    case "answer-no": answer(false); break;
+    case "go-back": goBack(); break;
+    case "explain": showExplanation(); break;
+    case "show-result": showResult(); break;
+  }
+});
 
 showQuestion(); // Start

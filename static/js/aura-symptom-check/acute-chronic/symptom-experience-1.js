@@ -1,3 +1,5 @@
+import { flowRunner, store, MODULE_ID } from "/js/modules/aura-symptom-check/index.js";
+
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("symptomExperienceForm");
   const continueBtn = document.getElementById("symptomExperienceContinueBtn");
@@ -16,24 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
     );
     if (!selected) return;
 
-    // Retrieve existing data from localStorage
-    let acuteChronicAnswers = JSON.parse(
-      localStorage.getItem("acuteChronicAnswers") || "{}",
-    );
-
-    // Update the specific key with the new value
+    const acuteChronicAnswers = store.get(MODULE_ID, "acuteChronicAnswers") || {};
     acuteChronicAnswers.symptomExperience = selected.value;
+    store.set(MODULE_ID, "acuteChronicAnswers", acuteChronicAnswers);
 
-    // Save updated data to localStorage
-    localStorage.setItem(
-      "acuteChronicAnswers",
-      JSON.stringify(acuteChronicAnswers),
-    );
-
-    // Debugging: Log the saved data
-    console.log("Saved acuteChronicAnswers data:", acuteChronicAnswers);
-
-    // Navigate to the next page
-    window.location.href = "/aura-symptom-check/acute-chronic/onset-window";
+    flowRunner.goNext("symptom-experience-1");
   });
 });

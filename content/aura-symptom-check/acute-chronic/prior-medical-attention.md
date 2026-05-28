@@ -21,4 +21,4 @@ sidebar:
 
 {{< aura-symptom-check/acute-chronic/prior-medical-attention >}}
 
-<script src="/js/aura-symptom-check/acute-chronic/prior-medical-attention.js"></script>
+<script type="module" src="/js/aura-symptom-check/acute-chronic/prior-medical-attention.js"></script>

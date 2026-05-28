@@ -1,32 +1,27 @@
-const CRITERION_B_KEY = "criterionBAnswers";
-const SELECTED_MODALITIES_KEY = "selectedModalities";
+// storage.js — domain-meaningful wrappers around the state-store for
+// modality answers (criterionBAnswers, selectedModalities).
 
-function readJSON(key, fallback) {
-  try {
-    return JSON.parse(localStorage.getItem(key) || fallback);
-  } catch {
-    return JSON.parse(fallback);
-  }
-}
+import * as store from "/js/decision-flow/state-store.js";
+import { MODULE_ID } from "/js/modules/aura-symptom-check/index.js";
 
 export function getCriterionBAnswers() {
-  return readJSON(CRITERION_B_KEY, "{}");
+    return store.get(MODULE_ID, "criterionBAnswers") || {};
 }
 
 export function setModalityAnswer(modality, answer) {
-  const answers = getCriterionBAnswers();
-  answers[modality] = answer;
-  localStorage.setItem(CRITERION_B_KEY, JSON.stringify(answers));
+    const answers = getCriterionBAnswers();
+    answers[modality] = answer;
+    store.set(MODULE_ID, "criterionBAnswers", answers);
 }
 
 export function getSelectedModalities() {
-  return readJSON(SELECTED_MODALITIES_KEY, "[]");
+    return store.get(MODULE_ID, "selectedModalities") || [];
 }
 
 export function addSelectedModality(modality) {
-  const list = getSelectedModalities();
-  if (!list.includes(modality)) {
-    list.push(modality);
-    localStorage.setItem(SELECTED_MODALITIES_KEY, JSON.stringify(list));
-  }
+    const list = getSelectedModalities();
+    if (!list.includes(modality)) {
+        list.push(modality);
+        store.set(MODULE_ID, "selectedModalities", list);
+    }
 }

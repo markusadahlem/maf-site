@@ -7,6 +7,7 @@ import {
   bindOtherTextarea,
   bindContinueButton,
 } from "/js/aura-symptom-check/lib/form-controls.js";
+import { flowRunner } from "/js/modules/aura-symptom-check/index.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("speechAuraForm");
@@ -48,6 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
     setModalityAnswer("speech", { selected, description });
     addSelectedModality("speech");
 
-    window.location.href = "/aura-symptom-check/modality/motor-aura/";
+    flowRunner.goNext("speech-aura");
   });
 });

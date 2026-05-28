@@ -3,6 +3,7 @@ import {
   addSelectedModality,
 } from "/js/aura-symptom-check/lib/storage.js";
 import { bindContinueButton } from "/js/aura-symptom-check/lib/form-controls.js";
+import { flowRunner } from "/js/modules/aura-symptom-check/index.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("retinalAuraForm");
@@ -26,6 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     addSelectedModality("retinal");
 
-    window.location.href = "/aura-symptom-check/modality/sensory-aura/";
+    flowRunner.goNext("retinal-aura");
   });
 });

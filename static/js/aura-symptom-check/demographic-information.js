@@ -1,3 +1,5 @@
+import { flowRunner, store, MODULE_ID } from "/js/modules/aura-symptom-check/index.js";
+
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("startForm");
 
@@ -30,13 +32,9 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // ✅ Store data
-    localStorage.setItem(
-      "userInfo",
-      JSON.stringify({ name, gender, diagnosisYear, headacheDays }),
-    );
+    store.set(MODULE_ID, "userInfo", { name, gender, diagnosisYear, headacheDays });
 
     // ▶️ Navigate to next step
-    window.location.href = "/aura-symptom-check/modality-summary/";
+    flowRunner.goNext("demographic-information");
   });
 });

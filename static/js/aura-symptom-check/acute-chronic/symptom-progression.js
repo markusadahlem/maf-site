@@ -1,3 +1,5 @@
+import { flowRunner, store, MODULE_ID } from "/js/modules/aura-symptom-check/index.js";
+
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("symptomProgressionForm");
   const continueBtn = document.getElementById("nextProgressionBtn");
@@ -15,13 +17,10 @@ document.addEventListener("DOMContentLoaded", () => {
     );
     if (!selected) return;
 
-    const data = JSON.parse(
-      localStorage.getItem("acuteChronicAnswers") || "{}",
-    );
+    const data = store.get(MODULE_ID, "acuteChronicAnswers") || {};
     data.symptomProgression = selected.value;
-    localStorage.setItem("acuteChronicAnswers", JSON.stringify(data));
+    store.set(MODULE_ID, "acuteChronicAnswers", data);
 
-    window.location.href =
-      "/aura-symptom-check/acute-chronic/impact-on-daily-life/";
+    flowRunner.goNext("symptom-progression");
   });
 });

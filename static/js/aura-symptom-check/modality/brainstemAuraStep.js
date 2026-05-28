@@ -7,6 +7,7 @@ import {
   bindOtherTextarea,
   bindContinueButton,
 } from "/js/aura-symptom-check/lib/form-controls.js";
+import { flowRunner } from "/js/modules/aura-symptom-check/index.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("brainstemAuraForm");
@@ -47,6 +48,6 @@ document.addEventListener("DOMContentLoaded", () => {
     setModalityAnswer("brainstem", { selected, description });
     addSelectedModality("brainstem");
 
-    window.location.href = "/aura-symptom-check/aura-characteristics/";
+    flowRunner.goNext("brainstem-aura");
   });
 });

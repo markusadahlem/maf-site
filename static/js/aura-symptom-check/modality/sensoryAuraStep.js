@@ -7,6 +7,7 @@ import {
   bindOtherTextarea,
   bindContinueButton,
 } from "/js/aura-symptom-check/lib/form-controls.js";
+import { flowRunner } from "/js/modules/aura-symptom-check/index.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("sensoryAuraForm");
@@ -47,6 +48,6 @@ document.addEventListener("DOMContentLoaded", () => {
     setModalityAnswer("sensory", { selected, description });
     addSelectedModality("sensory");
 
-    window.location.href = "/aura-symptom-check/modality/speech-aura/";
+    flowRunner.goNext("sensory-aura");
   });
 });

@@ -8,83 +8,31 @@
 <script type="module" src="/js/generateAuraReport.js?v=3"></script>
 
 <script type="module">
+  import { store, MODULE_ID } from "/js/modules/aura-symptom-check/index.js";
+
   document.getElementById("generatePdfBtn").addEventListener("click", async () => {
-    // Retrieve and parse the data from localStorage
-    const userInfo = JSON.parse(localStorage.getItem("userInfo") || '{}');
-    const selectedModalities = JSON.parse(localStorage.getItem("selectedModalities") || '[]');
-    const acuteChronicData = JSON.parse(localStorage.getItem("acuteChronic") || '{}');
-    const acuteChronicAnswers = JSON.parse(localStorage.getItem("acuteChronicAnswers") || '{}');
-    const auraCharacteristicsAnswers = JSON.parse(localStorage.getItem("auraCharacteristicsAnswers") || '[]');
-    const criterionBAnswers = JSON.parse(localStorage.getItem("criterionBAnswers") || '{}');
+    const userInfo = store.get(MODULE_ID, "userInfo") || {};
+    const selectedModalities = store.get(MODULE_ID, "selectedModalities") || [];
+    const acuteChronicData = store.get(MODULE_ID, "acuteChronic") || {};
+    const acuteChronicAnswers = store.get(MODULE_ID, "acuteChronicAnswers") || {};
+    const auraCharacteristicsAnswers = store.get(MODULE_ID, "auraCharacteristicsAnswers") || [];
+    const criterionBAnswers = store.get(MODULE_ID, "criterionBAnswers") || {};
 
-    // Debugging logs to make sure data is being retrieved correctly
-    console.log("userInfo:", userInfo);
-    console.log("selectedModalities:", selectedModalities);
-    console.log("acuteChronicData:", acuteChronicData);
-    console.log("acuteChronicAnswers:", acuteChronicAnswers);
-    console.log("auraCharacteristicsAnswers:", auraCharacteristicsAnswers);
-    console.log("criterionBAnswers:", criterionBAnswers);
-
-    // Check if required data is available
     if (!userInfo || !selectedModalities || !acuteChronicData || !acuteChronicAnswers || !auraCharacteristicsAnswers || !criterionBAnswers) {
       alert("Missing data! Please check your localStorage.");
-      return; // Stop if data is missing
+      return;
     }
 
     const data = {
       modalities: selectedModalities,
-      userInfo: userInfo,
-      acuteChronicData: acuteChronicData,
-      acuteChronicAnswers: acuteChronicAnswers,
-      auraCharacteristicsAnswers: auraCharacteristicsAnswers,
-      criterionBAnswers: criterionBAnswers,
+      userInfo,
+      acuteChronicData,
+      acuteChronicAnswers,
+      auraCharacteristicsAnswers,
+      criterionBAnswers,
     };
 
-    // Ensure data is correct and log it
-    console.log("Final data being passed to report:", data);
-
-document.getElementById("generatePdfBtn").addEventListener("click", async () => {
-  // Retrieve and parse the data from localStorage
-  const userInfo = JSON.parse(localStorage.getItem("userInfo") || '{}');
-  const selectedModalities = JSON.parse(localStorage.getItem("selectedModalities") || '[]');
-  const acuteChronicData = JSON.parse(localStorage.getItem("acuteChronic") || '{}');
-  const acuteChronicAnswers = JSON.parse(localStorage.getItem("acuteChronicAnswers") || '{}');
-  const auraCharacteristicsAnswers = JSON.parse(localStorage.getItem("auraCharacteristicsAnswers") || '[]');
-  const criterionBAnswers = JSON.parse(localStorage.getItem("criterionBAnswers") || '{}');
-
-  // Debugging logs to make sure data is being retrieved correctly
-  console.log("userInfo:", userInfo);
-  console.log("selectedModalities:", selectedModalities);
-  console.log("acuteChronicData:", acuteChronicData);
-  console.log("acuteChronicAnswers:", acuteChronicAnswers);
-  console.log("auraCharacteristicsAnswers:", auraCharacteristicsAnswers);
-  console.log("criterionBAnswers:", criterionBAnswers);
-
-  // Check if required data is available
-  if (!userInfo || !selectedModalities || !acuteChronicData || !acuteChronicAnswers || !auraCharacteristicsAnswers || !criterionBAnswers) {
-    alert("Missing data! Please check your localStorage.");
-    return; // Stop if data is missing
-  }
-
-  const data = {
-    modalities: selectedModalities,
-    userInfo: userInfo,
-    acuteChronicData: acuteChronicData,
-    acuteChronicAnswers: acuteChronicAnswers,
-    auraCharacteristicsAnswers: auraCharacteristicsAnswers,
-    criterionBAnswers: criterionBAnswers,
-  };
-
-  // Ensure data is correct and log it
-  console.log("Final data being passed to report:", data);
-
-  // Call the function to generate the PDF
-  await window.generateAuraReport(data); // Pass the data to the report generation function
-});
-
-
-    // Call the function to generate the PDF
-    await window.generateAuraReport(data); // Pass the data to the report generation function
+    await window.generateAuraReport(data);
   });
 </script>
 

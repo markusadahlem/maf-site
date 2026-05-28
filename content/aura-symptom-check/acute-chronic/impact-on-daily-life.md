@@ -19,4 +19,4 @@ sidebar:
 
 {{< aura-symptom-check/acute-chronic/impact-on-daily-life >}}
 
-<script src="/js/aura-symptom-check/acute-chronic/impact-on-daily-life.js"></script>
+<script type="module" src="/js/aura-symptom-check/acute-chronic/impact-on-daily-life.js"></script>

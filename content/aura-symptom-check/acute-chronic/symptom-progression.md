@@ -17,4 +17,4 @@ sidebar:
 
 {{< aura-symptom-check/acute-chronic/symptom-progression >}}
 
-<script src="/js/aura-symptom-check/acute-chronic/symptom-progression.js"></script>
+<script type="module" src="/js/aura-symptom-check/acute-chronic/symptom-progression.js"></script>

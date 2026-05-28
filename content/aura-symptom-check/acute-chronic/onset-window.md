@@ -19,4 +19,4 @@ sidebar:
 
 {{< aura-symptom-check/acute-chronic/onset-window >}}
 
-<script src="/js/aura-symptom-check/acute-chronic/onset-window.js"></script>
+<script type="module" src="/js/aura-symptom-check/acute-chronic/onset-window.js"></script>

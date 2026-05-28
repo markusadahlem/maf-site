@@ -7,6 +7,7 @@ import {
   bindOtherTextarea,
   bindContinueButton,
 } from "/js/aura-symptom-check/lib/form-controls.js";
+import { flowRunner } from "/js/modules/aura-symptom-check/index.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("visualAuraForm");
@@ -47,6 +48,6 @@ document.addEventListener("DOMContentLoaded", () => {
     setModalityAnswer("visual", { selected, description });
     addSelectedModality("visual");
 
-    window.location.href = "/aura-symptom-check/modality/retinal-aura/";
+    flowRunner.goNext("visual-aura");
   });
 });

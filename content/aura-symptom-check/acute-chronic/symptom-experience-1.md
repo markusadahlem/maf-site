@@ -20,4 +20,4 @@ sidebar:
 
 {{< aura-symptom-check/acute-chronic/symptom-experience-1 >}}
 
-<script src="/js/aura-symptom-check/acute-chronic/symptom-experience-1.js"></script>
+<script type="module" src="/js/aura-symptom-check/acute-chronic/symptom-experience-1.js"></script>

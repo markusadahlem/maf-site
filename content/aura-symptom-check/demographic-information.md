@@ -17,4 +17,4 @@ Your answers stay **on your device and are never shared**. They are used only to
 
 {{< aura-symptom-check/demographic-information-form >}}
 
-<script src="/js/aura-symptom-check/demographic-information.js"></script>
+<script type="module" src="/js/aura-symptom-check/demographic-information.js"></script>

@@ -31,7 +31,7 @@ localStorage.setItem("redirectToDemographicInfo", "true");
 
 {{< aura-symptom-check/acute-chronic/reason-for-visit >}}
 
-<script src="/js/aura-symptom-check/acute-chronic/reason-for-visit.js"></script>
+<script type="module" src="/js/aura-symptom-check/acute-chronic/reason-for-visit.js"></script>
 </div>
 
 <div id="password-prompt">

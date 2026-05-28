@@ -1,3 +1,5 @@
+import { flowRunner, store, MODULE_ID } from "/js/modules/aura-symptom-check/index.js";
+
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("remediesForm");
   const nextBtn = document.getElementById("remediesContinueBtn");
@@ -18,14 +20,11 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    const data = JSON.parse(
-      localStorage.getItem("acuteChronicAnswers") || "{}",
-    );
+    const data = store.get(MODULE_ID, "acuteChronicAnswers") || {};
     data.remedies = selected.value;
-    localStorage.setItem("acuteChronicAnswers", JSON.stringify(data));
+    store.set(MODULE_ID, "acuteChronicAnswers", data);
 
     // ▶️ Go to next step
-    window.location.href =
-      "/aura-symptom-check/acute-chronic/prior-medical-attention/";
+    flowRunner.goNext("response-to-usual-remedies");
   });
 });

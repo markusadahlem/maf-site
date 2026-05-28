@@ -6,6 +6,7 @@ import {
   bindOtherTextarea,
   bindContinueButton,
 } from "/js/aura-symptom-check/lib/form-controls.js";
+import { flowRunner } from "/js/modules/aura-symptom-check/index.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const yesNoRadios = document.querySelectorAll('input[name="motor-weakness"]');
@@ -70,6 +71,6 @@ document.addEventListener("DOMContentLoaded", () => {
     setModalityAnswer("motor", { selected, description, hasWeakness });
     addSelectedModality("motor");
 
-    window.location.href = "/aura-symptom-check/modality/brainstem-aura/";
+    flowRunner.goNext("motor-aura");
   });
 });

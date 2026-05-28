@@ -1,3 +1,5 @@
+import { flowRunner, store, MODULE_ID } from "/js/modules/aura-symptom-check/index.js";
+
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("priorMedicalForm");
   const nextBtn = document.getElementById("priorMedicalContinueBtn");
@@ -19,12 +21,10 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    const data = JSON.parse(
-      localStorage.getItem("acuteChronicAnswers") || "{}",
-    );
+    const data = store.get(MODULE_ID, "acuteChronicAnswers") || {};
     data.priorMedical = selected.value;
-    localStorage.setItem("acuteChronicAnswers", JSON.stringify(data));
+    store.set(MODULE_ID, "acuteChronicAnswers", data);
 
-    window.location.href = "/aura-symptom-check/modality/visual-aura/";
+    flowRunner.goNext("prior-medical-attention");
   });
 });

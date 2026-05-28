@@ -21,4 +21,4 @@ sidebar:
 <!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script src="/js/generateAuraReport.js"></script>
-<script src="/js/plusOther.js"></script>
+<script type="module" src="/js/plusOther.js"></script>
