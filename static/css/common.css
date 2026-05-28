@@ -1,4 +1,18 @@
 /* common.css */
+
+/* Match non-home content pages to the homepage's 38rem reading column.
+   The Hextra theme renders <main class="… hextra-max-content-width …">
+   on internal pages but its `variables.css` template that defines this
+   class isn't being compiled into main.css in this build, so we add the
+   rule directly here. */
+.hextra-max-content-width {
+    /* content-box so the 38rem is the inner reading width, matching the
+       homepage content blocks; the surrounding hx:px-* padding sits
+       outside this cap rather than eating into it. */
+    box-sizing: content-box;
+    max-width: 38rem;
+}
+
 .btn {
     display: inline-block;
     margin: 0.5rem 0.5rem 0 0;
