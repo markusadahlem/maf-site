@@ -8,5 +8,3 @@ sidebar:
 ---
 
 ### Dieser Test ist noch nicht verfügbar
-
-Abonniere unseren [Newsletter](/de/contact/), um auf dem Laufenden zu bleiben.

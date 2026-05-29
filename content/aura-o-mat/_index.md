@@ -11,7 +11,7 @@ sidebar:
 
 
 
-It's coming soon! Stay informed by subscribing to our [newsletter](/contact/) for the latest updates.
+It's coming soon!
 
 
 

@@ -94,4 +94,4 @@ Die folgenden Seiten zeigen Beispiele aus der medizinischen Literatur und Berich
 ### Visual Snow (visueller Schnee)
 
 Diese Seite ist Teil einer laufenden Aktualisierung im Vorfeld unseres großen Relaunchs 2025.  
-Weitere Inhalte folgen in Kürze. [Abonniere unseren Newsletter](/contact/#newsletter), um auf dem Laufenden zu bleiben.
+Weitere Inhalte folgen in Kürze.

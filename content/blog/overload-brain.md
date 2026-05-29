@@ -42,5 +42,3 @@ The final post—_Visual Triggers, Hallucinations, and Therapy_—moves from exp
 → [Link will be added here once republished.]
 
 Since the posts are being revised and republished in stages, this entry serves both as an introduction and a connective piece. Once all are available, links will be added here for easy navigation.
-
-To stay updated as each part is released, consider [subscribing to the newsletter](/contact/)—it's the easiest way to catch new posts as they go live.
