@@ -90,7 +90,7 @@ function drawFooter(doc) {
     h - 10,
   );
   doc.text(
-    t("flow.report.footer.url", "www.migraine-aura.org"),
+    t("flow.report.footer.url", "www.migraine-aura-foundation.org"),
     150,
     h - 10,
     { align: "right" },

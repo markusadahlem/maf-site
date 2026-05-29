@@ -62,13 +62,13 @@ html[lang="de"] .hextra-language-switcher > div::before {
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    background-color: #007bff;
+    background-color: var(--maf-darkblue);
     color: white;
     text-decoration: none;
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: #065d6e;
 }
 
 .btn-outline {

@@ -271,7 +271,7 @@ flow.report.headerDisclaimer.lead: "Dieser automatisierte Bericht entspricht den
 flow.report.headerDisclaimer.emph: " keine Alternative "
 flow.report.headerDisclaimer.tail: "zu einer professionellen medizinischen Diagnose."
 flow.report.footer.generatedBy: "Erstellt von der Migräne-Aura-Stiftung"
-flow.report.footer.url: "www.migraine-aura.org"
+flow.report.footer.url: "www.migraine-aura-foundation.org"
 flow.report.footer.disclaimerNote: "Diese Einschätzung ist keine Diagnose. Vollständigen Haftungsausschluss siehe letzte Seite."
 flow.report.section.selectedModalities: "Ausgewählte Aura-Modalitäten"
 flow.report.section.otherDescribed: "Beschriebenes „Anderes“ Aurasymptom:"

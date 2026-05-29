@@ -1,7 +1,7 @@
 :root {
-    --asc-primary: #2563eb;
-    --asc-primary-hover: #1d4ed8;
-    --asc-primary-tint: #eff6ff;
+    --asc-primary: var(--maf-darkblue);
+    --asc-primary-hover: #065d6e;
+    --asc-primary-tint: #e8f6f7;
     --asc-text: #0f172a;
     --asc-text-muted: #475569;
     --asc-border: #e2e8f0;
@@ -10,7 +10,7 @@
     --asc-radius-pill: 999px;
     --asc-shadow-sm: 0 1px 2px rgb(0 0 0 / 0.05);
     --asc-shadow-md: 0 4px 12px rgb(0 0 0 / 0.08);
-    --asc-focus-ring: 0 0 0 3px rgb(37 99 235 / 0.35);
+    --asc-focus-ring: 0 0 0 3px rgb(8 118 138 / 0.35);
     --asc-font: ui-sans-serif, system-ui, -apple-system, "Segoe UI",
         Roboto, "Helvetica Neue", Arial, sans-serif;
 }
