@@ -79,7 +79,7 @@ tests/                            # Vitest unit tests
 ### Phase 5 — Chrome carry-overs (~1-2 days)
 - **Brevo newsletter** → Astro component (port existing HTML form + Brevo endpoint URL).
 - **Swiper carousels** → keep Swiper (framework-agnostic).
-- **Google Tag Manager** (G-93YYDEHTQD) → Astro layout `<head>` slot.
+- **PostHog** (cookieless, EU region) → Astro layout `<head>` slot. Port `layouts/partials/custom/posthog.html` verbatim — same `phc_…` project key, same `persistence: 'memory'` / `autocapture: false` / `disable_session_recording: true` flags, same `eu.i.posthog.com` host. No consent banner. (GA was removed in commit `c7d2d33` before this migration.)
 - **Alpine.js** → drop, Starlight + vanilla TS covers what Alpine did for Hextra.
 - **FlexSearch (Hextra)** → Pagefind (Starlight default).
 
