@@ -9,8 +9,3 @@ sidebar:
 
 
 Reach out: dahlem@migraine-aura-foundation.org
-
-<!-- ## Subscribe to our newsletter
-
-{{< newsletter >}}
--->
