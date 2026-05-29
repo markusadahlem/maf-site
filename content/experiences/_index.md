@@ -8,6 +8,8 @@ summary: "Gateway page for migraine art and symptom structure."
 
 **Aura is real — recognising it and how you describe it matters.**
 
+Nearly 7,000 individual patient reports from the original version of this site are being carefully curated and condensed for re-publication here — an ongoing long-term effort that sponsors could help us speed up.
+
 Whether expressed in art or structured by clinical criteria, every perspective helps make the invisible more visible.
 <div style="display: flex; justify-content: center; gap: 2rem; align-items: flex-start;">
   <figure style="margin: 0; text-align: center; width: 420px; display: flex; flex-direction: column; align-items: center;">

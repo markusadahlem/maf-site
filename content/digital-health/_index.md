@@ -8,6 +8,8 @@ sidebar:
 
 **People living with migraine take back control by treating it more intelligently.**
 
+We’ve been close to this space for many years. M-sense, a direct-to-consumer migraine app, we helped bring to market was downloaded nearly 300,000 times in Germany. The prescription DTx (digital therapeutics) enhanced version was prescribed close to 12,000 times. We also experienced the setback of a failed clinical trial — and learned important lessons from it.
+
 We believe the _holy grail_ lies in preemptive therapy — not just suppressing or stopping the attack, but reshaping how the brain responds to migraine altogether.
 
 Achieving this requires forecasting migraine — identifying the window when the brain is most plastic and the attack can still be bypassed entirely.

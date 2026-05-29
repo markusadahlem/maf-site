@@ -8,6 +8,8 @@ sidebar:
 
 **Die Migräneversorgung von morgen.**
 
+Wir sind diesem Feld seit vielen Jahren eng verbunden. M-sense, zunächst eine Direct-to-Consumer Migräne-App, an dessen Markteinführung wir mitgewirkt haben, wurde fast 300.000 Mal heruntergeladen. Eine Weiterentwicklung als DiGA (App  auf Rezept) wurde über 12.000 Mal verordnet. Wir haben auch den Rückschlag einer gescheiterten klinischen Studie miterlebt – und wichtige Lehren daraus gezogen.
+
 Als eine der ersten Migräne-Aufklärungsseiten im Netz verfolgten wir schon früh den Ansatz: Medikamente wirken besser, wenn sie durch Software ergänzt werden.
 
 Menschen mit Migräne verdienen digitale Unterstützung, die ihnen hilft, ihre Migräneattacken besser zu verstehen und gerade schon in der Frühphase vor den Kopfschmerzen frühzeitig gezielter zu behandeln – daran arbeiten wir seit über 30 Jahren.

@@ -8,6 +8,8 @@ summary: "Einstiegsseite zu Migräne-Kunst und Symptommustern."
 
 **Aura ist real – sie zu erkennen und wie sie beschreiben wird, ist wichtig.**
 
+Fast 7.000 individuelle Berichte von Patient:innen aus der ursprünglichen Version dieser Website werden sorgfältig kuratiert und die Information daraus verdichtet, um hier erneut veröffentlicht zu werden. Eine langfristige Aufgabe, bei der Sponsoren den Prozess beschleunigen könnten -- sprecht uns gerne an!
+
 Ob durch Kunst ausgedrückt oder durch medizinische Kriterien strukturiert – jede Perspektive hilft, das Unsichtbare sichtbarer zu machen.
 
 <div style="display: flex; justify-content: center; gap: 2rem; align-items: flex-start;">
