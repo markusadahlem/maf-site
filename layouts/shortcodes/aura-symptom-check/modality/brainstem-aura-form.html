@@ -1,6 +1,6 @@
 <form id="brainstemAuraForm">
     <fieldset>
-        <legend><strong>Brainstem Symptoms</strong></legend>
+        <legend><strong>{{ i18n "flow.modality.brainstem.legend" }}</strong></legend>
 
         <label
             ><input
@@ -8,15 +8,15 @@
                 name="brainstemSymptoms"
                 value="dysarthria"
             />
-            Slurred speech (Dysarthria)</label
+            {{ i18n "flow.modality.brainstem.option.dysarthria" }}</label
         ><br />
         <label
             ><input type="checkbox" name="brainstemSymptoms" value="vertigo" />
-            Vertigo (spinning sensation)</label
+            {{ i18n "flow.modality.brainstem.option.vertigo" }}</label
         ><br />
         <label
             ><input type="checkbox" name="brainstemSymptoms" value="tinnitus" />
-            Tinnitus (ringing in the ears)</label
+            {{ i18n "flow.modality.brainstem.option.tinnitus" }}</label
         ><br />
         <label
             ><input
@@ -24,15 +24,15 @@
                 name="brainstemSymptoms"
                 value="hypacusis"
             />
-            Reduced hearing (Hypacusis)</label
+            {{ i18n "flow.modality.brainstem.option.hypacusis" }}</label
         ><br />
         <label
             ><input type="checkbox" name="brainstemSymptoms" value="diplopia" />
-            Double vision (Diplopia)</label
+            {{ i18n "flow.modality.brainstem.option.diplopia" }}</label
         ><br />
         <label
             ><input type="checkbox" name="brainstemSymptoms" value="ataxia" />
-            Loss of Coordination or Balance (Ataxia)</label
+            {{ i18n "flow.modality.brainstem.option.ataxia" }}</label
         ><br />
         <label
             ><input
@@ -40,17 +40,16 @@
                 name="brainstemSymptoms"
                 value="consciousness"
             />
-            Decreased Consciousness: (e.g., drowsiness, confusion)</label
+            {{ i18n "flow.modality.brainstem.option.consciousness" }}</label
         ><br />
         <label id="brainstemOtherLabel">
             <input type="checkbox" name="brainstemSymptoms" value="other" />
-            Other Unusual Symptoms </label
+            {{ i18n "flow.modality.brainstem.option.other" }} </label
         ><br /><br />
 
-        <!-- ✅ New "none" option -->
         <label id="brainstemNoneLabel">
             <input type="checkbox" name="brainstemSymptoms" value="none" />
-            None of the above </label
+            {{ i18n "flow.common.option.noneAbove" }} </label
         ><br />
 
         <label
@@ -58,13 +57,13 @@
             for="brainstemOtherText"
             style="display: none"
         >
-            <strong>Other (please describe below):</strong>
+            <strong>{{ i18n "flow.common.label.otherDescribe" }}</strong>
         </label>
         <textarea
             id="brainstemOtherText"
             rows="2"
             maxlength="80"
-            placeholder="Type here (max 80 characters)..."
+            placeholder="{{ i18n "flow.common.placeholder.maxChars80" }}"
             style="
                 width: 100%;
                 border: 1px solid #ccc;
@@ -77,10 +76,10 @@
             id="brainstemCharCount"
             style="font-size: 0.9em; color: #555; display: none"
         >
-            0 / 80 characters
+            {{ i18n "flow.common.counter80" }}
         </div>
     </fieldset>
 
     <br />
-    <button type="button" class="btn" id="nextBrainstemBtn">Continue</button>
+    <button type="button" class="btn" id="nextBrainstemBtn">{{ i18n "flow.common.button.continue" }}</button>
 </form>

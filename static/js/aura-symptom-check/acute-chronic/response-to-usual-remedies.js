@@ -1,4 +1,5 @@
 import { flowRunner, store, MODULE_ID } from "/js/modules/aura-symptom-check/index.js";
+import { t } from "/js/decision-flow/i18n.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("remediesForm");
@@ -16,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   nextBtn.addEventListener("click", () => {
     const selected = form.querySelector('input[name="remedies"]:checked');
     if (!selected) {
-      alert("Please select an answer.");
+      alert(t("flow.alerts.selectAnswer"));
       return;
     }
 

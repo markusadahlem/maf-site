@@ -1,4 +1,5 @@
 import { store, MODULE_ID } from "/js/modules/aura-symptom-check/index.js";
+import { langURL } from "/js/decision-flow/i18n.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
   const modalities = store.get(MODULE_ID, "selectedModalities") || [];
@@ -20,6 +21,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     store.set(MODULE_ID, "selectedModalities", [...typical, "other"]);
     store.set(MODULE_ID, "otherDescription", otherText);
 
-    window.location.href = "/aura-symptom-check/aura-characteristics/";
+    window.location.href = langURL("/aura-symptom-check/aura-characteristics/");
   });
 });

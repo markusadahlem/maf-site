@@ -2,7 +2,7 @@
     <div>
         <label
             ><input type="checkbox" name="symptom" value="visual" />
-            Visual</label
+            {{ i18n "flow.criterionB.modality.visual" }}</label
         >
         <button
             class="info-btn"
@@ -12,14 +12,13 @@
             ⓘ
         </button>
         <div id="explain-visual" class="info-text">
-            Visual aura often includes flickering lights, zigzag lines, or blind
-            spots.
+            {{ i18n "flow.criterionB.explain.visual" }}
         </div>
     </div>
     <div>
         <label
             ><input type="checkbox" name="symptom" value="sensory" />
-            Sensory</label
+            {{ i18n "flow.criterionB.modality.sensory" }}</label
         >
         <button
             class="info-btn"
@@ -29,14 +28,13 @@
             ⓘ
         </button>
         <div id="explain-sensory" class="info-text">
-            Sensory aura can cause tingling or numbness, usually starting in one
-            hand and moving up the arm.
+            {{ i18n "flow.criterionB.explain.sensory" }}
         </div>
     </div>
     <div>
         <label
-            ><input type="checkbox" name="symptom" value="speech" /> Speech
-            and/or language</label
+            ><input type="checkbox" name="symptom" value="speech" />
+            {{ i18n "flow.criterionB.modality.speech" }}</label
         >
         <button
             class="info-btn"
@@ -46,13 +44,13 @@
             ⓘ
         </button>
         <div id="explain-speech" class="info-text">
-            Speech aura can result in difficulty finding words or speaking
-            clearly (dysphasia).
+            {{ i18n "flow.criterionB.explain.speech" }}
         </div>
     </div>
     <div>
         <label
-            ><input type="checkbox" name="symptom" value="motor" /> Motor</label
+            ><input type="checkbox" name="symptom" value="motor" />
+            {{ i18n "flow.criterionB.modality.motor" }}</label
         >
         <button
             class="info-btn"
@@ -62,15 +60,13 @@
             ⓘ
         </button>
         <div id="explain-motor" class="info-text">
-            Motor aura can cause weakness or paralysis, typically on one side of
-            the body.
+            {{ i18n "flow.criterionB.explain.motor" }}
         </div>
     </div>
     <div>
         <label
             ><input type="checkbox" name="symptom" value="brainstem" />
-            Brainstem (incl. dysarthria, vertigo, tinnitus, hypacusis, diplopia,
-            among others)</label
+            {{ i18n "flow.criterionB.modality.brainstem" }}</label
         >
         <button
             class="info-btn"
@@ -80,14 +76,13 @@
             ⓘ
         </button>
         <div id="explain-brainstem" class="info-text">
-            Brainstem aura includes vertigo, double vision, or unsteady gait
-            without motor weakness.
+            {{ i18n "flow.criterionB.explain.brainstem" }}
         </div>
     </div>
     <div>
         <label
             ><input type="checkbox" name="symptom" value="retinal" />
-            Retinal</label
+            {{ i18n "flow.criterionB.modality.retinal" }}</label
         >
         <button
             class="info-btn"
@@ -97,13 +92,13 @@
             ⓘ
         </button>
         <div id="explain-retinal" class="info-text">
-            Retinal aura causes repeated attacks of visual disturbance in one
-            eye (monocular).
+            {{ i18n "flow.criterionB.explain.retinal" }}
         </div>
     </div>
     <div>
         <label
-            ><input type="checkbox" name="symptom" value="other" /> Other</label
+            ><input type="checkbox" name="symptom" value="other" />
+            {{ i18n "flow.criterionB.modality.other" }}</label
         >
         <button
             class="info-btn"
@@ -113,18 +108,18 @@
             ⓘ
         </button>
         <div id="explain-other" class="info-text">
-            Other neurological symptoms not listed here but still reversible and
-            aura-like.
+            {{ i18n "flow.criterionB.explain.other" }}
         </div>
     </div>
     <div>
         <label
-            ><input type="checkbox" name="symptom" value="none" /> None</label
+            ><input type="checkbox" name="symptom" value="none" />
+            {{ i18n "flow.criterionB.modality.none" }}</label
         >
     </div>
 </form>
 
-<a id="nextLinkB" class="btn" style="display: none">Next</a>
+<a id="nextLinkB" class="btn" style="display: none">{{ i18n "flow.criterionB.button.nextInitial" }}</a>
 <p id="resultB" style="font-weight: bold; margin-top: 1rem"></p>
 
 <style>
@@ -161,6 +156,23 @@
 </style>
 
 <script>
+    const CRITERION_B_URLS = {
+        plusOther: {{ relLangURL "/aura-symptom-check/plus-other-modality/" | jsonify | safeJS }},
+        auraCharacteristics: {{ relLangURL "/aura-symptom-check/aura-characteristics/" | jsonify | safeJS }},
+        otherModality: {{ relLangURL "/aura-symptom-check/other-modality/" | jsonify | safeJS }},
+        noAura: {{ relLangURL "/aura-symptom-check/no-aura/" | jsonify | safeJS }},
+    };
+    const CRITERION_B_MSGS = {
+        coreAuraPlusOther: {{ i18n "flow.criterionB.result.coreAuraPlusOther" | jsonify | safeJS }},
+        coreAura: {{ i18n "flow.criterionB.result.coreAura" | jsonify | safeJS }},
+        onlyOther: {{ i18n "flow.criterionB.result.onlyOther" | jsonify | safeJS }},
+        onlyNone: {{ i18n "flow.criterionB.result.onlyNone" | jsonify | safeJS }},
+        buttonClarifyOther: {{ i18n "flow.criterionB.button.clarifyOther" | jsonify | safeJS }},
+        buttonDescribeAuras: {{ i18n "flow.criterionB.button.describeAuras" | jsonify | safeJS }},
+        buttonClarifyOtherSimple: {{ i18n "flow.criterionB.button.clarifyOtherSimple" | jsonify | safeJS }},
+        buttonContinueWithoutAura: {{ i18n "flow.criterionB.button.continueWithoutAura" | jsonify | safeJS }},
+    };
+
     document.addEventListener("DOMContentLoaded", function () {
         const formB = document.getElementById("criterionBForm");
         const resultB = document.getElementById("resultB");
@@ -207,31 +219,29 @@
             const onlyNone = selected.length === 1 && hasNone;
 
             if (hasCoreAura && hasOther) {
-                resultB.textContent =
-                    "ℹ️ You selected a known aura modality along with an “Other” symptom. Let’s clarify the additional symptom to make sure it fits your aura experience.";
+                resultB.textContent = CRITERION_B_MSGS.coreAuraPlusOther;
                 resultB.style.color = "darkorange";
-                nextLinkB.href = "/aura-symptom-check/plus-other-modality/";
+                nextLinkB.href = CRITERION_B_URLS.plusOther;
                 nextLinkB.style.display = "inline-block";
-                nextLinkB.textContent = "Clarify “Other” Symptoms";
+                nextLinkB.textContent = CRITERION_B_MSGS.buttonClarifyOther;
             } else if (hasCoreAura) {
-                resultB.textContent =
-                    "✅ Step 1 in progress. Select all that apply, then continue when you're ready.";
+                resultB.textContent = CRITERION_B_MSGS.coreAura;
                 resultB.style.color = "green";
-                nextLinkB.href = "/aura-symptom-check/aura-characteristics/";
+                nextLinkB.href = CRITERION_B_URLS.auraCharacteristics;
                 nextLinkB.style.display = "inline-block";
-                nextLinkB.textContent = "Next (Step 2): Describe Auras";
+                nextLinkB.textContent = CRITERION_B_MSGS.buttonDescribeAuras;
             } else if (onlyOther) {
-                resultB.textContent = "ℹ️ Unclassified aura modality selected.";
+                resultB.textContent = CRITERION_B_MSGS.onlyOther;
                 resultB.style.color = "darkorange";
-                nextLinkB.href = "/aura-symptom-check/other-modality/";
+                nextLinkB.href = CRITERION_B_URLS.otherModality;
                 nextLinkB.style.display = "inline-block";
-                nextLinkB.textContent = "Clarify Other Symptoms";
+                nextLinkB.textContent = CRITERION_B_MSGS.buttonClarifyOtherSimple;
             } else if (onlyNone) {
-                resultB.textContent = "❌ No aura symptoms reported.";
+                resultB.textContent = CRITERION_B_MSGS.onlyNone;
                 resultB.style.color = "red";
-                nextLinkB.href = "/aura-symptom-check/no-aura/";
+                nextLinkB.href = CRITERION_B_URLS.noAura;
                 nextLinkB.style.display = "inline-block";
-                nextLinkB.textContent = "Next: Continue Without Aura";
+                nextLinkB.textContent = CRITERION_B_MSGS.buttonContinueWithoutAura;
             } else {
                 resultB.textContent = "";
                 nextLinkB.style.display = "none";

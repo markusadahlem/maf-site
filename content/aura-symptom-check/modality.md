@@ -7,7 +7,7 @@ sidebar:
   exclude: true
 ---
 
-### Which aura symptoms have you experienced?
+### {{< t "flow.pages.modality.heading" >}}
 
 We’re first checking for one or more fully reversible aura symptoms, as defined by clinical guidelines.
 
@@ -22,5 +22,5 @@ Choose “**None**” if none of these apply.
 
 
 
-**Modalities**
+**{{< t "flow.pages.modality.label" >}}**
 {{< criterionB >}}

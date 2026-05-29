@@ -1,12 +1,12 @@
 ---
 title: ""
-description: "Evaluate if your symptoms meet necessary criterion for migraine aura."
+description: "Beurteilung, ob deine Symptome das nötige Kriterium für Migräne mit Aura erfüllen."
 toc: false
 sidebar:
   exclude: true
 ---
 
-### Wie äußern sich deine Symptome?
+### {{< t "flow.pages.auraCharacteristics.heading" >}}
 
 
-{{< criterionC-de >}}
+{{< criterionC >}}

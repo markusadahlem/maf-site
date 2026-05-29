@@ -2,49 +2,46 @@
     <fieldset>
         <br />
         <div>
-            <strong>New Symptoms</strong><br />
+            <strong>{{ i18n "flow.acuteChronic.reason.a1.heading" }}</strong><br />
             <label>
                 <input type="radio" name="reason" value="acute-chronic-A1" />
-                I’m experiencing new or unfamiliar symptoms that I suspect might
-                be related to migraine.
+                {{ i18n "flow.acuteChronic.reason.a1.label" }}
             </label>
         </div>
         <br />
 
         <div>
-            <strong>Different Aura Symptoms</strong><br />
+            <strong>{{ i18n "flow.acuteChronic.reason.a2.heading" }}</strong><br />
             <label>
                 <input type="radio" name="reason" value="acute-chronic-A2" />
-                I’ve had aura symptoms before, but something feels different
-                this time.
+                {{ i18n "flow.acuteChronic.reason.a2.label" }}
             </label>
         </div>
         <br />
 
         <div>
-            <strong>Regular Migraine Aura Episodes</strong><br />
+            <strong>{{ i18n "flow.acuteChronic.reason.a3.heading" }}</strong><br />
             <label>
                 <input type="radio" name="reason" value="acute-chronic-A3" />
-                I’ve been having migraine with aura episodes for a while (not
-                necessarily each with an aura).
+                {{ i18n "flow.acuteChronic.reason.a3.label" }}
             </label>
         </div>
         <br />
 
         <div>
-            <strong>Aura Without Headache</strong><br />
+            <strong>{{ i18n "flow.acuteChronic.reason.a4.heading" }}</strong><br />
             <label>
                 <input type="radio" name="reason" value="acute-chronic-A4" />
-                I’ve been having aura symptoms without any headache for a while.
+                {{ i18n "flow.acuteChronic.reason.a4.label" }}
             </label>
         </div>
         <br />
 
         <div>
-            <strong>General Information</strong><br />
+            <strong>{{ i18n "flow.acuteChronic.reason.a5.heading" }}</strong><br />
             <label>
                 <input type="radio" name="reason" value="acute-chronic-A5" />
-                I’m just gathering general information about migraine auras.
+                {{ i18n "flow.acuteChronic.reason.a5.label" }}
             </label>
         </div>
         <br />
@@ -57,6 +54,6 @@
         id="reasonContinueBtn"
         style="display: none"
     >
-        Continue
+        {{ i18n "flow.common.button.continue" }}
     </button>
 </form>

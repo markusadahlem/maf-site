@@ -4,43 +4,43 @@
 
         <label
             ><input type="checkbox" name="visualSymptom" value="flicker" />
-            Shimmering or flickering lights</label
+            {{ i18n "flow.modality.visual.option.flicker" }}</label
         ><br />
 
         <label
             ><input type="checkbox" name="visualSymptom" value="zigzag" />
-            Zig‑zag or wavy lines</label
+            {{ i18n "flow.modality.visual.option.zigzag" }}</label
         ><br />
 
         <label
             ><input type="checkbox" name="visualSymptom" value="blurred" />
-            Blurred or tunnel vision</label
+            {{ i18n "flow.modality.visual.option.blurred" }}</label
         ><br />
 
         <label
             ><input type="checkbox" name="visualSymptom" value="scotoma" />
-            Areas of partial loss of vision (“blind spots”/scotoma)</label
+            {{ i18n "flow.modality.visual.option.scotoma" }}</label
         ><br />
 
         <label
             ><input type="checkbox" name="visualSymptom" value="geometric" />
-            Geometric shapes or patterns</label
+            {{ i18n "flow.modality.visual.option.geometric" }}</label
         ><br />
         <label
-            ><input type="checkbox" name="visualSymptom" value="other" /> Other
-            visual phenomenon</label
+            ><input type="checkbox" name="visualSymptom" value="other" />
+            {{ i18n "flow.modality.visual.option.other" }}</label
         ><br />
 
         <div id="visualOtherWrapper" style="display: none">
             <br />
             <label id="svisualOtherLabel" for="visualOtherText"
-                ><strong>Other (please describe below):</strong></label
+                ><strong>{{ i18n "flow.common.label.otherDescribe" }}</strong></label
             ><br />
             <textarea
                 id="visualOtherText"
                 rows="2"
                 maxlength="80"
-                placeholder="Type here (max 80 characters)..."
+                placeholder="{{ i18n "flow.common.placeholder.maxChars80" }}"
                 style="width: 100%; border: 1px solid #ccc; padding: 6px"
             ></textarea>
 
@@ -48,7 +48,7 @@
                 id="visualCharCount"
                 style="font-size: 0.9em; color: #555; display: none"
             >
-                0 / 80 characters
+                {{ i18n "flow.common.counter80" }}
             </div>
         </div>
 
@@ -61,10 +61,10 @@
                 value="none"
                 id="visualNoneCheckbox"
             />
-            None of the above – I did not experience any visual disturbances.
+            {{ i18n "flow.modality.visual.option.none" }}
         </label>
     </fieldset>
 
     <br />
-    <button type="button" class="btn" id="nextVisualBtn">Continue</button>
+    <button type="button" class="btn" id="nextVisualBtn">{{ i18n "flow.common.button.continue" }}</button>
 </form>

@@ -1,31 +1,30 @@
 import { store, MODULE_ID } from "/js/modules/aura-symptom-check/index.js";
+import { t, langURL } from "/js/decision-flow/i18n.js";
 
 const questions = [
   {
-    text: "Did at least one aura symptom spread gradually over at least 5 minutes?",
-    explanation:
-      "E.g., a flickering spot in your visual field that slowly expands.",
+    text: t("flow.criterionC.q1.text"),
+    explanation: t("flow.criterionC.q1.explanation"),
   },
   {
-    text: "Did two or more aura symptoms occur in succession?",
-    explanation: "E.g., visual aura followed by tingling.",
+    text: t("flow.criterionC.q2.text"),
+    explanation: t("flow.criterionC.q2.explanation"),
   },
   {
-    text: "Did each individual aura symptom last between 5–60 minutes?",
-    explanation: "Shorter or longer durations are less typical.",
+    text: t("flow.criterionC.q3.text"),
+    explanation: t("flow.criterionC.q3.explanation"),
   },
   {
-    text: "Was at least one aura symptom unilateral (on one side only)?",
-    explanation:
-      "E.g., vision affected in only one eye, or tingling only on one side.",
+    text: t("flow.criterionC.q4.text"),
+    explanation: t("flow.criterionC.q4.explanation"),
   },
   {
-    text: "Was at least one aura symptom positive (e.g., flashing lights or pins and needles)?",
-    explanation: "Positive means an added sensation (not loss of function).",
+    text: t("flow.criterionC.q5.text"),
+    explanation: t("flow.criterionC.q5.explanation"),
   },
   {
-    text: "Was the aura accompanied or followed within 60 minutes by headache?",
-    explanation: "Timing matters — headache should be within 1 hour of aura.",
+    text: t("flow.criterionC.q6.text"),
+    explanation: t("flow.criterionC.q6.explanation"),
   },
 ];
 
@@ -41,31 +40,34 @@ function showQuestion() {
   if (current === questions.length) {
     let summaryHTML = "<ul>";
     questions.forEach((q, index) => {
-      const response = answers[index] === true ? "✅ Yes" : "❌ No";
+      const response =
+        answers[index] === true
+          ? t("flow.criterionC.summary.yesLabel")
+          : t("flow.criterionC.summary.noLabel");
       summaryHTML += `<li>${q.text} <strong>${response}</strong></li>`;
     });
     summaryHTML += "</ul>";
 
     container.innerHTML = `
-              <p><strong>You’ve completed the section on aura characteristics.</strong></p>
-              <p>Here’s a summary of your responses:</p>
+              <p><strong>${t("flow.criterionC.summary.intro")}</strong></p>
+              <p>${t("flow.criterionC.summary.summaryHeading")}</p>
               ${summaryHTML}
-              <p>Click below to see whether your responses meet the clinical threshold for this part.</p>
-              <button class="btn" data-action="show-result">✅ Yes, show my result</button>
-              <button class="btn btn-secondary" data-action="go-back">← Go Back</button>
+              <p>${t("flow.criterionC.summary.clickPrompt")}</p>
+              <button class="btn btn-outline" data-action="show-result">${t("flow.criterionC.buttons.showResult")}</button>
+              <button class="btn btn-secondary" data-action="go-back">${t("flow.criterionC.buttons.back")}</button>
             `;
     return;
   }
 
   const q = questions[current];
   container.innerHTML = `
-    <p><strong>Question ${current + 1} of ${questions.length}</strong></p>
+    <p><strong>${t("flow.criterionC.questionLabel", null, { n: current + 1, total: questions.length })}</strong></p>
     <p>${q.text}
-      <button data-action="explain" title="More info" class="info-icon">ⓘ</button>
+      <button data-action="explain" title="${t("flow.criterionC.moreInfo")}" class="info-icon">ⓘ</button>
     </p>
-    <button class="btn" data-action="answer-yes">Yes</button>
-    <button class="btn btn-outline" data-action="answer-no">No</button>
-    ${current > 0 ? `<br><br><button class="btn btn-secondary" data-action="go-back">← Go Back</button>` : ""}
+    <button class="btn btn-outline" data-action="answer-yes">${t("flow.criterionC.buttons.yes")}</button>
+    <button class="btn btn-outline" data-action="answer-no">${t("flow.criterionC.buttons.no")}</button>
+    ${current > 0 ? `<br><br><button class="btn btn-secondary" data-action="go-back">${t("flow.criterionC.buttons.back")}</button>` : ""}
     <div id="explanation" style="display:none; margin-top: 0.5rem; font-style: italic;"></div>
   `;
 }
@@ -98,11 +100,13 @@ function showResult() {
   const flag = localStorage.getItem("redirectToDemographicInfo");
 
   if (flag) {
-    window.location.href = "/aura-symptom-check/demographic-information/";
+    window.location.href = langURL("/aura-symptom-check/demographic-information/");
   } else {
-    window.location.href = passed
-      ? "/aura-symptom-check/criterioncmeet/"
-      : "/aura-symptom-check/criterioncnotmeet/";
+    window.location.href = langURL(
+      passed
+        ? "/aura-symptom-check/criterioncmeet/"
+        : "/aura-symptom-check/criterioncnotmeet/",
+    );
   }
 }
 

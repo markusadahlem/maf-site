@@ -9,16 +9,21 @@ sidebar:
 
 <link rel="stylesheet" href="/css/symptom-check.css" />
 
-<h2>Review Your Aura Symptoms</h2>
+<h2>{{< t "flow.report.page.combined.heading" >}}</h2>
 
-<p><strong>Selected typical modality:</strong> <span id="selectedTypical"></span></p>
+<p><strong>{{< t "flow.report.page.combined.label.typical" >}}</strong> <span id="selectedTypical"></span></p>
 
-<p><strong>Other symptom:</strong></p>
+<p><strong>{{< t "flow.report.page.combined.label.other" >}}</strong></p>
 <textarea id="otherDescription" rows="5" style="width: 100%;"></textarea>
 
-<button id="generatePdfBtn" class="btn">Download Combined Aura Report</button>
+<button id="generatePdfBtn" class="btn"></button>
 
 <!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-<script src="/js/generateAuraReport.js"></script>
+<script type="module" src="/js/generateAuraReport.js"></script>
 <script type="module" src="/js/plusOther.js"></script>
+
+<script type="module">
+  import { t } from "/js/decision-flow/i18n.js";
+  document.getElementById("generatePdfBtn").textContent = t("flow.report.button.downloadCombined", "Download Combined Aura Report");
+</script>

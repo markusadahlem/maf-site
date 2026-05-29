@@ -1,4 +1,5 @@
 import { flowRunner, store, MODULE_ID } from "/js/modules/aura-symptom-check/index.js";
+import { t } from "/js/decision-flow/i18n.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("startForm");
@@ -18,17 +19,17 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     if (!name || !gender || isNaN(diagnosisYear) || isNaN(headacheDays)) {
-      alert("Please fill in all fields.");
+      alert(t("flow.alerts.fillAllFields"));
       return;
     }
 
     if (diagnosisYear < 1900 || diagnosisYear > 2025) {
-      alert("Please enter a valid year between 1900 and 2025.");
+      alert(t("flow.alerts.yearRange"));
       return;
     }
 
     if (headacheDays < 0 || headacheDays > 31) {
-      alert("Please enter a valid number of headache days (0–31).");
+      alert(t("flow.alerts.daysRange"));
       return;
     }
 

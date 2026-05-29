@@ -2,38 +2,38 @@
     <fieldset>
         <label>
             <input type="checkbox" name="speechSymptom" value="aphasia" />
-            Difficulty finding words (aphasia) </label
+            {{ i18n "flow.modality.speech.option.aphasia" }} </label
         ><br />
 
         <label>
             <input type="checkbox" name="speechSymptom" value="slurred" />
-            Slurred or garbled speech </label
+            {{ i18n "flow.modality.speech.option.slurred" }} </label
         ><br />
 
         <label>
             <input type="checkbox" name="speechSymptom" value="inability" />
-            Inability to speak or form sentences </label
+            {{ i18n "flow.modality.speech.option.inability" }} </label
         ><br />
 
         <label id="speechOtherLabel">
             <input type="checkbox" name="speechSymptom" value="other" />
-            Other speech/language changes </label
+            {{ i18n "flow.modality.speech.option.other" }} </label
         ><br /><br />
 
         <label id="speechNoneLabel">
             <input type="checkbox" name="speechSymptom" value="none" />
-            None of the above </label
+            {{ i18n "flow.common.option.noneAbove" }} </label
         ><br />
     </fieldset>
 
     <label for="speechOtherText" id="speechTextLabel" style="display: none">
-        <strong>Other (please describe below):</strong>
+        <strong>{{ i18n "flow.common.label.otherDescribe" }}</strong>
     </label>
     <textarea
         id="speechOtherText"
         rows="2"
         maxlength="80"
-        placeholder="Type here (max 80 characters)..."
+        placeholder="{{ i18n "flow.common.placeholder.maxChars80" }}"
         style="width: 100%; border: 1px solid #ccc; padding: 6px; display: none"
     ></textarea>
 
@@ -41,9 +41,9 @@
         id="speechCharCount"
         style="font-size: 0.9em; color: #555; display: none"
     >
-        0 / 80 characters
+        {{ i18n "flow.common.counter80" }}
     </div>
 
     <br /><br />
-    <button type="button" class="btn" id="nextSpeechBtn">Continue</button>
+    <button type="button" class="btn" id="nextSpeechBtn">{{ i18n "flow.common.button.continue" }}</button>
 </form>

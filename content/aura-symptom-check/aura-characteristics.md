@@ -6,7 +6,7 @@ sidebar:
   exclude: true
 ---
 
-### What were your aura symptoms like?
+### {{< t "flow.pages.auraCharacteristics.heading" >}}
 
 
 {{< criterionC >}}

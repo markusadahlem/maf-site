@@ -2,28 +2,28 @@
     <fieldset>
         <label id="optionC1">
             <input type="radio" name="onsetWindow" value="acute-chronic-C1" />
-            Within the last 24 hours </label
+            {{ i18n "flow.acuteChronic.onsetWindow.c1" }} </label
         ><br />
 
         <label>
             <input type="radio" name="onsetWindow" value="acute-chronic-C2" />
-            Within the last 7 days </label
+            {{ i18n "flow.acuteChronic.onsetWindow.c2" }} </label
         ><br />
 
         <label>
             <input type="radio" name="onsetWindow" value="acute-chronic-C3" />
-            Within the last 30 days </label
+            {{ i18n "flow.acuteChronic.onsetWindow.c3" }} </label
         ><br />
 
         <label>
             <input type="radio" name="onsetWindow" value="acute-chronic-C4" />
-            More than 30 days ago
+            {{ i18n "flow.acuteChronic.onsetWindow.c4" }}
         </label>
     </fieldset>
 
     <br />
     <button type="button" class="btn" id="nextOnsetBtn" style="display: none">
-        Continue
+        {{ i18n "flow.common.button.continue" }}
     </button>
     <button
         type="button"
@@ -31,6 +31,6 @@
         id="backBtn"
         style="display: none"
     >
-        Back
+        {{ i18n "flow.common.button.back" }}
     </button>
 </form>

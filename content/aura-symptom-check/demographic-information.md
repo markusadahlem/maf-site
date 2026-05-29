@@ -5,12 +5,12 @@ date: 2025-04-19
 ---
 
 
-## Demographic Information
+## {{< t "flow.pages.demographic.heading" >}}
 
 Help us personalize your report.    
 Your answers stay **on your device and are never shared**. They are used only to tailor the summary you can download and optionally share with your doctor.
 
-**Please provide a few basic details:**
+**{{< t "flow.pages.demographic.prompt" >}}**
 
 
 <link rel="stylesheet" href="/css/symptom-check.css">

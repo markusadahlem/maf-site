@@ -62,7 +62,7 @@ Jetzt, wo du gesehen hast, wie andere ihre Symptome ausdrücken – und wie die 
 
 Beginne jetzt mit deinem persönlichen Migränebericht – eine Zusammenfassung, die du verstehst und mit deiner Ärztin oder deinem Arzt teilen kannst, damit deine Erfahrungen sichtbar werden.
 
-{{< hextra/hero-badge link="/aura-symptom-check/symptom-check-tools">}}
+{{< hextra/hero-badge link="/de/aura-symptom-check/symptom-check-tools">}}
   <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400"></div>
   <span class="hx-text-lg">Teste den MigraineAuraScan™</span>
   {{< icon name="arrow-circle-right" attributes="height=32" >}}

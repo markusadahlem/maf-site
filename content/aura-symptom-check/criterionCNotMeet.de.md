@@ -1,7 +1,7 @@
 ---
 date: "2025-04-06T12:45:02+02:00"
 title: ""
-linkTitle: "Check Other Modalities"
+linkTitle: "Andere Modalitäten prüfen"
 toc: false
 sidebar:
   exclude: true
@@ -19,4 +19,4 @@ Falls Sie weiterhin beunruhigende Symptome haben oder sich Ihre gesundheitliche 
 Für weitere Erklärungen und um mehr darüber zu erfahren, wie diese Kriterien angewendet werden, lesen Sie bitte unsere detaillierte Aufschlüsselung oder sprechen Sie mit Ihrem Arzt.
 
 
-[**Vollständigen Bericht anzeigen**](/aura-symptom-check/symptom-check-summary-n/)
+[**Vollständigen Bericht anzeigen**](/de/aura-symptom-check/symptom-check-summary-n/)

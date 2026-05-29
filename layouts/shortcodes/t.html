@@ -1,0 +1,4 @@
+{{- /* Inline-markdown i18n shortcode. Usage: {{< t "flow.foo.bar" >}}.
+       Missing keys render as the key itself (rather than blank) to keep
+       regressions visible during incremental migration. */ -}}
+{{- with .Get 0 -}}{{ i18n . | default . }}{{- end -}}

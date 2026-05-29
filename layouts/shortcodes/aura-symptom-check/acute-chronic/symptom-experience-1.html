@@ -6,7 +6,7 @@
                 name="symptomExperience"
                 value="acute-chronic-B1"
             />
-            No — this is really the first time. </label
+            {{ i18n "flow.acuteChronic.symptomExperience1.b1" }} </label
         ><br />
         <label>
             <input
@@ -14,7 +14,7 @@
                 name="symptomExperience"
                 value="acute-chronic-B2"
             />
-            Maybe once or twice in the past, but not recently. </label
+            {{ i18n "flow.acuteChronic.symptomExperience1.b2" }} </label
         ><br />
         <label>
             <input
@@ -22,7 +22,7 @@
                 name="symptomExperience"
                 value="acute-chronic-B3"
             />
-            While they are new, I’ve experienced these symptoms now for a while. </label
+            {{ i18n "flow.acuteChronic.symptomExperience1.b3" }} </label
         ><br />
     </fieldset>
     <br />
@@ -32,6 +32,6 @@
         id="symptomExperienceContinueBtn"
         style="display: none"
     >
-        Continue
+        {{ i18n "flow.common.button.continue" }}
     </button>
 </form>

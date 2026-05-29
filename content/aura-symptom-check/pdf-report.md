@@ -1,7 +1,7 @@
-<h2>Describe your other aura symptom</h2>
-<p>You selected “Other” as your only aura symptom. Please describe what you experienced.</p>
+<h2>{{< t "flow.report.page.otherDescribe.heading" >}}</h2>
+<p>{{< t "flow.report.page.otherDescribe.promptShort" >}}</p>
 
-<button id="generatePdfBtn" class="btn">Download Aura Report (PDF)</button>
+<button id="generatePdfBtn" class="btn"></button>
 
 <!-- JS Dependencies -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
@@ -9,8 +9,12 @@
 
 <script type="module">
   import { store, MODULE_ID } from "/js/modules/aura-symptom-check/index.js";
+  import { t } from "/js/decision-flow/i18n.js";
 
-  document.getElementById("generatePdfBtn").addEventListener("click", async () => {
+  const btn = document.getElementById("generatePdfBtn");
+  btn.textContent = t("flow.report.button.downloadAuraPdf", "Download Aura Report (PDF)");
+
+  btn.addEventListener("click", async () => {
     const userInfo = store.get(MODULE_ID, "userInfo") || {};
     const selectedModalities = store.get(MODULE_ID, "selectedModalities") || [];
     const acuteChronicData = store.get(MODULE_ID, "acuteChronic") || {};
@@ -19,7 +23,7 @@
     const criterionBAnswers = store.get(MODULE_ID, "criterionBAnswers") || {};
 
     if (!userInfo || !selectedModalities || !acuteChronicData || !acuteChronicAnswers || !auraCharacteristicsAnswers || !criterionBAnswers) {
-      alert("Missing data! Please check your localStorage.");
+      alert(t("flow.report.alert.missingData", "Missing data! Please check your localStorage."));
       return;
     }
 

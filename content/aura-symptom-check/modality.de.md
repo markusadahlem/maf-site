@@ -1,13 +1,13 @@
 ---
 date: "2025-04-06T12:45:02+02:00"
 title: ""
-linkTitle: "Modality"
+linkTitle: "Modalität"
 toc: false
 sidebar:
   exclude: true
 ---
 
-### Welche Aurasymptome hast du erlebt?
+### {{< t "flow.pages.modality.heading" >}}
 
 Zunächst prüfen wir, ob bei dir eines oder mehrere vollständig reversible Aurasymptome vorlagen – so, wie sie in medizinischen Leitlinien definiert sind.
 
@@ -20,5 +20,5 @@ Wähle „Keine“, wenn keine dieser Optionen zutrifft.
 
 
 
-**Modalities**
-{{< criterionB-de >}}
+**{{< t "flow.pages.modality.label" >}}**
+{{< criterionB >}}

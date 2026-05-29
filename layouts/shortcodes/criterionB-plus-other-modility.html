@@ -1,5 +1,5 @@
-<button class="btn" onclick="handleOtherCheck(true)">Yes</button>
-<button class="btn btn-outline" onclick="handleOtherCheck(false)">No</button>
+<button class="btn" onclick="handleOtherCheck(true)">{{ i18n "flow.criterionBOther.button.yes" }}</button>
+<button class="btn btn-outline" onclick="handleOtherCheck(false)">{{ i18n "flow.criterionBOther.button.no" }}</button>
 
 <div id="followUpResponse" style="margin-top: 1rem"></div>
 
@@ -29,22 +29,31 @@
 </style>
 
 <script>
+    const PLUS_OTHER_MSGS = {
+        similar: {{ i18n "flow.criterionBOther.result.similar" | jsonify | safeJS }},
+        notSimilar: {{ i18n "flow.criterionBPlusOther.result.notSimilar" | jsonify | safeJS }},
+        buttonContinue: {{ i18n "flow.criterionBOther.button.continue" | jsonify | safeJS }},
+        buttonGoToReport: {{ i18n "flow.criterionBPlusOther.button.goToReport" | jsonify | safeJS }},
+    };
+    const PLUS_OTHER_URLS = {
+        continue: {{ relLangURL "/aura-symptom-check/aura-characteristics/" | jsonify | safeJS }},
+        report: {{ relLangURL "/aura-symptom-check/symptom-check-preliminary-plus-report/" | jsonify | safeJS }},
+    };
+
     function handleOtherCheck(isSimilar) {
         const output = document.getElementById("followUpResponse");
 
         if (isSimilar) {
             output.innerHTML = `
-                ✅ Thanks for clarifying. You can now continue.
+                ${PLUS_OTHER_MSGS.similar}
                 <br><br>
-                <a href="/aura-symptom-check/aura-characteristics/" class="btn">Continue</a>
+                <a href="${PLUS_OTHER_URLS.continue}" class="btn">${PLUS_OTHER_MSGS.buttonContinue}</a>
             `;
         } else {
             output.innerHTML = `
-                ⚠️ Some of your symptom do not resemble any known aura modality.
+                ${PLUS_OTHER_MSGS.notSimilar}
                 <br><br>
-                This may fall outside the scope of this tool. We recommend speaking with a healthcare professional for further evaluation.
-                <br><br>
-                <a href="/symptom-check-preliminary-plus-report" class="btn btn-outline">Go to Report</a>
+                <a href="${PLUS_OTHER_URLS.report}" class="btn btn-outline">${PLUS_OTHER_MSGS.buttonGoToReport}</a>
             `;
         }
     }

@@ -2,32 +2,32 @@
     <fieldset>
         <label
             ><input type="checkbox" name="sensorySymptom" value="tingling" />
-            Pins‑and‑needles or tingling sensations</label
+            {{ i18n "flow.modality.sensory.option.tingling" }}</label
         ><br />
         <label
             ><input type="checkbox" name="sensorySymptom" value="numbness" />
-            Numbness or “heavy” feeling in an arm, hand, face, or leg</label
+            {{ i18n "flow.modality.sensory.option.numbness" }}</label
         ><br />
         <label
             ><input type="checkbox" name="sensorySymptom" value="burning" />
-            Burning or prickling sensations</label
+            {{ i18n "flow.modality.sensory.option.burning" }}</label
         ><br />
         <label
-            ><input type="checkbox" name="sensorySymptom" value="other" /> Other
-            sensory changes</label
+            ><input type="checkbox" name="sensorySymptom" value="other" />
+            {{ i18n "flow.modality.sensory.option.other" }}</label
         ><br />
     </fieldset>
 
     <br />
 
     <label id="sensoryOtherLabel" for="sensoryOtherText"
-        ><strong>Other (please describe below):</strong></label
+        ><strong>{{ i18n "flow.common.label.otherDescribe" }}</strong></label
     >
     <textarea
         id="sensoryOtherText"
         rows="2"
         maxlength="80"
-        placeholder="Type here (max 80 characters)..."
+        placeholder="{{ i18n "flow.common.placeholder.maxChars80" }}"
         style="width: 100%; border: 1px solid #ccc; padding: 6px"
     ></textarea>
 
@@ -36,14 +36,14 @@
         id="sensoryCharCount"
         style="font-size: 0.9em; color: #555; display: none"
     >
-        0 / 80 characters
+        {{ i18n "flow.common.counter80" }}
     </div>
     <br />
     <label
-        ><input type="checkbox" name="sensorySymptom" value="none" /> None of
-        the above</label
+        ><input type="checkbox" name="sensorySymptom" value="none" />
+        {{ i18n "flow.common.option.noneAbove" }}</label
     ><br />
     <br /><br />
 
-    <button type="button" class="btn" id="nextSensoryBtn">Continue</button>
+    <button type="button" class="btn" id="nextSensoryBtn">{{ i18n "flow.common.button.continue" }}</button>
 </form>

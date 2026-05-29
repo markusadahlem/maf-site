@@ -1,57 +1,250 @@
-.btn {
-    display: inline-block;
-    margin: 0.1rem 0.5rem 0 0;
-    padding: 0.6rem 1.2rem;
-    font-size: 1rem;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-}
-.btn:hover {
-    background-color: #0056b3;
-}
-.btn-outline {
-    background-color: transparent;
-    border: 2px solid #007bff;
-    color: #007bff;
-}
-.btn-outline:hover {
-    background-color: #007bff;
-    color: white;
-}
-.btn-secondary {
-    background-color: #6c757d;
-}
-.btn-secondary:hover {
-    background-color: #565e64;
+:root {
+    --asc-primary: #2563eb;
+    --asc-primary-hover: #1d4ed8;
+    --asc-primary-tint: #eff6ff;
+    --asc-text: #0f172a;
+    --asc-text-muted: #475569;
+    --asc-border: #e2e8f0;
+    --asc-surface: #ffffff;
+    --asc-radius: 12px;
+    --asc-radius-pill: 999px;
+    --asc-shadow-sm: 0 1px 2px rgb(0 0 0 / 0.05);
+    --asc-shadow-md: 0 4px 12px rgb(0 0 0 / 0.08);
+    --asc-focus-ring: 0 0 0 3px rgb(37 99 235 / 0.35);
+    --asc-font: ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+        Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-.info-btn {
-    border: none;
+/* Catches every form in the symptom-check flow:
+   symptomExperienceForm, impactForm, remediesForm, etc. */
+form[id$="Form"] {
+    font-family: var(--asc-font);
+    color: var(--asc-text);
+    max-width: 640px;
+    margin: 2rem auto;
+}
+
+form[id$="Form"] fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* The shortcodes have <br>s between labels — collapse them so the
+   flex gap controls spacing. */
+form[id$="Form"] fieldset br {
+    display: none;
+}
+
+/* Option card */
+form[id$="Form"] label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 20px;
+    background: var(--asc-surface);
+    border: 1px solid var(--asc-border);
+    border-radius: var(--asc-radius);
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1.4;
+    transition:
+        border-color 0.15s,
+        background 0.15s,
+        box-shadow 0.15s,
+        transform 0.15s;
+}
+
+form[id$="Form"] label:hover {
+    border-color: var(--asc-primary);
+    box-shadow: var(--asc-shadow-sm);
+    transform: translateY(-1px);
+}
+
+/* :has() drives the selected state — no JS class toggling needed. */
+form[id$="Form"] label:has(input:checked) {
+    border-color: var(--asc-primary);
+    background: var(--asc-primary-tint);
+    box-shadow: var(--asc-shadow-sm);
+}
+
+form[id$="Form"] label:has(input:focus-visible) {
+    box-shadow: var(--asc-focus-ring);
+}
+
+/* Custom radio/checkbox glyphs */
+form[id$="Form"] input[type="radio"],
+form[id$="Form"] input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    border: 2px solid var(--asc-border);
+    border-radius: 50%;
+    flex-shrink: 0;
+    cursor: pointer;
+    position: relative;
+    transition:
+        border-color 0.15s,
+        background 0.15s;
+}
+
+form[id$="Form"] input[type="checkbox"] {
+    border-radius: 4px;
+}
+
+form[id$="Form"] input:checked {
+    border-color: var(--asc-primary);
+    background: var(--asc-primary);
+}
+
+form[id$="Form"] input[type="radio"]:checked::after {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+form[id$="Form"] input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: #fff;
+    clip-path: polygon(
+        14% 44%,
+        0 65%,
+        50% 100%,
+        100% 16%,
+        80% 0,
+        43% 62%
+    );
+}
+
+/* Text inputs / textareas inside the flow */
+form[id$="Form"] input[type="text"],
+form[id$="Form"] input[type="number"],
+form[id$="Form"] textarea,
+form[id$="Form"] select {
+    font: inherit;
+    color: inherit;
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--asc-border);
+    border-radius: var(--asc-radius);
+    background: var(--asc-surface);
+    transition:
+        border-color 0.15s,
+        box-shadow 0.15s;
+}
+
+form[id$="Form"] input[type="text"]:focus,
+form[id$="Form"] input[type="number"]:focus,
+form[id$="Form"] textarea:focus,
+form[id$="Form"] select:focus {
+    outline: 0;
+    border-color: var(--asc-primary);
+    box-shadow: var(--asc-focus-ring);
+}
+
+/* Button — pill shape with proper hover/focus states */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 28px;
+    font-family: var(--asc-font);
+    font-size: 1rem;
+    font-weight: 600;
+    border: 0;
+    border-radius: var(--asc-radius-pill);
+    cursor: pointer;
+    background: var(--asc-primary);
+    color: #fff;
+    text-decoration: none;
+    box-shadow: var(--asc-shadow-sm);
+    transition:
+        background 0.15s,
+        transform 0.1s,
+        box-shadow 0.15s;
+}
+
+.btn:hover {
+    background: var(--asc-primary-hover);
+    transform: translateY(-1px);
+    box-shadow: var(--asc-shadow-md);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn:focus-visible {
+    outline: 0;
+    box-shadow: var(--asc-focus-ring);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--asc-primary);
+    box-shadow: inset 0 0 0 1.5px var(--asc-primary);
+}
+
+.btn-outline:hover {
+    background: var(--asc-primary-tint);
+    box-shadow:
+        inset 0 0 0 1.5px var(--asc-primary),
+        var(--asc-shadow-sm);
+}
+
+.btn-secondary {
+    background: var(--asc-text-muted);
+}
+
+.btn-secondary:hover {
+    background: #334155;
+}
+
+/* Info button / explanation text (used in Criterion C quiz) */
+.info-btn,
+.info-icon {
+    border: 0;
     background: none;
     font-size: 1.1rem;
     margin-left: 0.4rem;
     cursor: pointer;
+    color: var(--asc-text-muted);
+    padding: 4px;
+    border-radius: 50%;
+    transition: background 0.15s;
+}
+
+.info-btn:hover,
+.info-icon:hover {
+    background: var(--asc-border);
 }
 
 .info-text {
     display: none;
     font-style: italic;
     margin: 0.3rem 0 0.8rem 1.5rem;
-    color: #444;
+    color: var(--asc-text-muted);
     max-width: 600px;
 }
 
-/* Styling for clinical summary block */
+/* Clinical summary block */
 .clinical-summary {
-    padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #fdfdfd;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 1.5rem;
+    border: 1px solid var(--asc-border);
+    border-radius: var(--asc-radius);
+    background: var(--asc-surface);
+    box-shadow: var(--asc-shadow-sm);
+    font-family: var(--asc-font);
+    color: var(--asc-text);
 }
 
 .clinical-summary h2 {

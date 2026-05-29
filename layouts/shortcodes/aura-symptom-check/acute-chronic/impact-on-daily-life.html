@@ -2,17 +2,17 @@
     <fieldset>
         <label>
             <input type="radio" name="impact" value="acute-chronic-E1" />
-            Severely – I can’t go about my normal day </label
+            {{ i18n "flow.acuteChronic.impact.e1" }} </label
         ><br />
 
         <label>
             <input type="radio" name="impact" value="acute-chronic-E2" />
-            Moderately – I have to adjust my plans or routines </label
+            {{ i18n "flow.acuteChronic.impact.e2" }} </label
         ><br />
 
         <label>
             <input type="radio" name="impact" value="acute-chronic-E3" />
-            Minimally – I can carry on as usual </label
+            {{ i18n "flow.acuteChronic.impact.e3" }} </label
         ><br />
     </fieldset>
 
@@ -23,6 +23,6 @@
         id="impactContinueBtn"
         style="display: none"
     >
-        Continue
+        {{ i18n "flow.common.button.continue" }}
     </button>
 </form>

@@ -7,12 +7,12 @@ sidebar:
   exclude: true
 ---
 
-<h2>Describe your other aura symptom</h2>
-<p>You selected “Other” as your only aura symptom. Please describe what you experienced so we can generate a report.</p>
+<h2>{{< t "flow.report.page.otherDescribe.heading" >}}</h2>
+<p>{{< t "flow.report.page.otherDescribe.promptLong" >}}</p>
 
-<textarea id="otherDescription" rows="6" style="width: 100%;" placeholder="e.g., déjà vu, olfactory changes, etc."></textarea>
+<textarea id="otherDescription" rows="6" style="width: 100%;" placeholder='{{< t "flow.report.page.otherDescribe.placeholder" >}}'></textarea>
 
-<button id="generatePdfBtn" class="btn">Download Aura Report (PDF)</button>
+<button id="generatePdfBtn" class="btn"></button>
 
 <!-- Required JS dependencies -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
@@ -20,7 +20,12 @@ sidebar:
 
 
 <script type="module">
-  document.getElementById("generatePdfBtn").addEventListener("click", async () => {
+  import { t } from "/js/decision-flow/i18n.js";
+
+  const btn = document.getElementById("generatePdfBtn");
+  btn.textContent = t("flow.report.button.downloadAuraPdf", "Download Aura Report (PDF)");
+
+  btn.addEventListener("click", async () => {
     const desc = document.getElementById("otherDescription").value;
 
     const data = {

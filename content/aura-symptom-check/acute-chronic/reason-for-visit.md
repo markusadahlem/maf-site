@@ -9,8 +9,8 @@ sidebar:
 
 <div id="password-protected-content" style="display:none;">
 
-<span style="color:red">Beta version</span>
-### Tell us why you're here 
+<span style="color:red">{{< t "flow.pages.common.betaVersion" >}}</span>
+### {{< t "flow.pages.common.tellUsWhyYoureHere" >}} 
 
 
 To better understand your situation, please answer a few questions.
@@ -20,7 +20,7 @@ This helps us generate a report that’s clear, relevant, and easy to share with
 
 
 
-**Which of these best describes why you’re filling out this form today?**
+**{{< t "flow.pages.reasonForVisit.prompt" >}}**
 
 <link rel="stylesheet" href="/css/symptom-check.css">
 

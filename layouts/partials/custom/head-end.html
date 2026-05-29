@@ -1,0 +1,5 @@
+{{- /* Hextra calls this hook from layouts/partials/head.html.
+       Inject the aura-symptom-check i18n catalog only on flow pages. */ -}}
+{{- if in .RelPermalink "/aura-symptom-check/" -}}
+  {{- partial "aura-symptom-check/i18n-catalog.html" . -}}
+{{- end -}}

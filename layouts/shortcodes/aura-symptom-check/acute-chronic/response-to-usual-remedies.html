@@ -2,22 +2,22 @@
     <fieldset>
         <label>
             <input type="radio" name="remedies" value="acute-chronic-F1" />
-            I haven’t tried any yet </label
+            {{ i18n "flow.acuteChronic.remedies.f1" }} </label
         ><br />
 
         <label>
             <input type="radio" name="remedies" value="acute-chronic-F2" />
-            They provide little to no relief </label
+            {{ i18n "flow.acuteChronic.remedies.f2" }} </label
         ><br />
 
         <label>
             <input type="radio" name="remedies" value="acute-chronic-F3" />
-            They help somewhat </label
+            {{ i18n "flow.acuteChronic.remedies.f3" }} </label
         ><br />
 
         <label>
             <input type="radio" name="remedies" value="acute-chronic-F4" />
-            They usually relieve symptoms fully </label
+            {{ i18n "flow.acuteChronic.remedies.f4" }} </label
         ><br />
     </fieldset>
 
@@ -28,6 +28,6 @@
         id="remediesContinueBtn"
         style="display: none"
     >
-        Continue
+        {{ i18n "flow.common.button.continue" }}
     </button>
 </form>

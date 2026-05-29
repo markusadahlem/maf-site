@@ -1,15 +1,15 @@
 <form id="retinalAuraForm">
     <fieldset>
-        <label><input type="radio" name="retinalAura" value="yes" /> Yes</label
+        <label><input type="radio" name="retinalAura" value="yes" /> {{ i18n "flow.common.option.yes" }}</label
         ><br />
-        <label><input type="radio" name="retinalAura" value="no" /> No</label
+        <label><input type="radio" name="retinalAura" value="no" /> {{ i18n "flow.common.option.no" }}</label
         ><br />
         <label
             ><input type="radio" name="retinalAura" value="unsure" />
-            Unsure</label
+            {{ i18n "flow.common.option.unsure" }}</label
         ><br />
     </fieldset>
 
     <br />
-    <button type="button" class="btn" id="nextRetinalBtn">Continue</button>
+    <button type="button" class="btn" id="nextRetinalBtn">{{ i18n "flow.common.button.continue" }}</button>
 </form>

@@ -18,6 +18,7 @@
 // window.location.href = "...".
 
 import { resolve } from "./rules-engine.js";
+import { langURL } from "./i18n.js";
 
 export class FlowRunner {
     constructor(flow, stateProvider) {
@@ -40,6 +41,6 @@ export class FlowRunner {
     }
 
     goNext(stepId) {
-        window.location.href = this.nextUrl(stepId);
+        window.location.href = langURL(this.nextUrl(stepId));
     }
 }

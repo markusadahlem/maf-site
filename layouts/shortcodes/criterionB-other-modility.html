@@ -1,18 +1,24 @@
 <div id="otherCheckContainer">
     <p>
-        <strong
-            >Does your symptom resemble any of the listed aura types?</strong
-        >
+        <strong>{{ i18n "flow.criterionBOther.question" }}</strong>
     </p>
-    <button class="btn" onclick="handleOtherCheck(true)">Yes</button>
+    <button class="btn" onclick="handleOtherCheck(true)">{{ i18n "flow.criterionBOther.button.yes" }}</button>
     <button class="btn btn-outline" onclick="handleOtherCheck(false)">
-        No
+        {{ i18n "flow.criterionBOther.button.no" }}
     </button>
 
     <div id="followUpResponse" style="margin-top: 1rem"></div>
 </div>
 
 <script>
+    const OTHER_CHECK_MSGS = {
+        similar: {{ i18n "flow.criterionBOther.result.similar" | jsonify | safeJS }},
+        notSimilar: {{ i18n "flow.criterionBOther.result.notSimilar" | jsonify | safeJS }},
+        buttonContinue: {{ i18n "flow.criterionBOther.button.continue" | jsonify | safeJS }},
+        buttonContinueAnyway: {{ i18n "flow.criterionBOther.button.continueAnyway" | jsonify | safeJS }},
+    };
+    const OTHER_CHECK_URL = {{ relLangURL "/aura-symptom-check/aura-characteristics/" | jsonify | safeJS }};
+
     function handleOtherCheck(isSimilar) {
         // Save user's answer for PDF later
         localStorage.setItem(
@@ -24,17 +30,15 @@
 
         if (isSimilar) {
             output.innerHTML = `
-        ✅ Thanks for clarifying. You can now continue.
+        ${OTHER_CHECK_MSGS.similar}
         <br><br>
-        <a href="/aura-symptom-check/aura-characteristics/" class="btn">Continue</a>
+        <a href="${OTHER_CHECK_URL}" class="btn">${OTHER_CHECK_MSGS.buttonContinue}</a>
       `;
         } else {
             output.innerHTML = `
-        ⚠️ Your symptom does not resemble any known aura modality.
+        ${OTHER_CHECK_MSGS.notSimilar}
         <br><br>
-        This may fall outside the scope of this tool. We recommend speaking with a healthcare professional for further evaluation and sharing your report.
-        <br><br>
-        <a href="/aura-symptom-check/aura-characteristics/" class="btn btn-outline">Let's still continue</a>
+        <a href="${OTHER_CHECK_URL}" class="btn btn-outline">${OTHER_CHECK_MSGS.buttonContinueAnyway}</a>
       `;
         }
     }

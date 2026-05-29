@@ -1,7 +1,7 @@
 ---
 date: "2025-04-06T12:45:02+02:00"
 title: ""
-linkTitle: "Check Other Modalities"
+linkTitle: "Andere Modalitäten prüfen"
 toc: false
 sidebar:
   exclude: true
@@ -14,4 +14,4 @@ sidebar:
     Does the additional symptom you experienced resemble a known aura modality
     (e.g., visual, sensory, speech, motor, brainstem, or retinal)?
 </p>
-{{< criterionB-other-modility >}}
+{{< criterionB-plus-other-modility >}}
