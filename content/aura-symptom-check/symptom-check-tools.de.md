@@ -15,6 +15,8 @@ sidebar:
 Erhalte eine umfassende Auswertung deiner Migräneaurasymptome mit detaillierten Informationen, die du  mit deiner Ärztin oder deinem Arzt teilen kannst.
 <span style="color:red">Beta-Version — Hinweis: Der Zugriff auf dieses Tool ist derzeit passwortgeschützt. </span>
 
+Noch kein Passwort? [Lies in der Zwischenzeit, was der Check umfasst](/de/blog/aura-symptom-check/).
+
 
 <div class="cta-primary">
 
