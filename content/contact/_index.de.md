@@ -9,6 +9,7 @@ sidebar:
 
 Schreibe an unser "Support-Team": dahlem@migraine-aura-foundation.org
 
-## Aboniere unseren Newsletter
+<!-- ## Aboniere unseren Newsletter
 
 {{< newsletter-de >}}
+-->

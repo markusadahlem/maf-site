@@ -42,7 +42,13 @@ Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unt
 
 ### Datenschutz
 
-Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich. Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.
+Diese Website ist eine rein informative, statisch ausgelieferte Webseite. Sie enthält weder Formulare noch eine Kommentarfunktion, kein Nutzerkonto, keinen Shop und keinen Newsletter; eine aktive Erhebung personenbezogener Daten findet nicht statt.
+
+Anonyme Zugriffsstatistiken erhebt PostHog (siehe Abschnitt „PostHog").
+
+Die Auslieferung der Seite erfolgt über GitHub Pages (GitHub, Inc., 88 Colin P Kelly Jr Street, San Francisco, CA 94107, USA). Beim Aufruf der Website verarbeitet GitHub technisch notwendige Verbindungsdaten (IP-Adresse, Zeitstempel, abgerufene URL, User-Agent) auf Grundlage berechtigten Interesses am stabilen Betrieb und der Abwehr von Missbrauch (Art. 6 Abs. 1 lit. f DSGVO). Eine Übermittlung in die USA ist hierfür unvermeidbar; GitHub ist nach dem EU-US Data Privacy Framework zertifiziert.
+
+Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann; ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich. Der Nutzung der hier veröffentlichten Kontaktdaten durch Dritte zur Übersendung unverlangter Werbung wird ausdrücklich widersprochen.
 
 
 
