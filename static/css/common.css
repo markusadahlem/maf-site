@@ -1,5 +1,35 @@
 /* common.css */
 
+/* === Language switcher flags ===
+   Replace Hextra's globe icon with the current language's flag, and
+   prefix each dropdown option with its flag. Order in the dropdown
+   follows the weight field in hugo.yaml (en=1 → 🇬🇧, de=2 → 🇩🇪).
+   Emoji flags render correctly on macOS/iOS/Android/Linux; on Windows
+   they fall back to the two-letter region code. */
+.hextra-language-switcher svg {
+    display: none;
+}
+html[lang="en"] .hextra-language-switcher > div::before {
+    content: "🇬🇧";
+    margin-right: 0.4em;
+    font-size: 1.1em;
+}
+html[lang="de"] .hextra-language-switcher > div::before {
+    content: "🇩🇪";
+    margin-right: 0.4em;
+    font-size: 1.1em;
+}
+.hextra-language-options li:nth-child(1) a::before {
+    content: "🇬🇧";
+    margin-right: 0.5em;
+    font-size: 1.1em;
+}
+.hextra-language-options li:nth-child(2) a::before {
+    content: "🇩🇪";
+    margin-right: 0.5em;
+    font-size: 1.1em;
+}
+
 /* Match non-home content pages to the homepage's 38rem reading column.
    The Hextra theme renders <main class="… hextra-max-content-width …">
    on internal pages but its `variables.css` template that defines this

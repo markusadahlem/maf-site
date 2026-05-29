@@ -42,6 +42,11 @@ menu:
       name: Impressum
       pageRef: /impressum
       weight: 8
+    - identifier: language-switch
+      weight: 9
+      params:
+        type: language-switch
+        label: true
 
 params:
   navbar:
@@ -62,6 +67,17 @@ params:
     apiHost: "https://eu.i.posthog.com"
 
 defaultContentLanguage: en
+# fr/es/it/uk/ru/nl/da content files stay on disk but are excluded from
+# the build. Re-enable by removing entries from this list when translations
+# are ready.
+disableLanguages:
+  - fr
+  - es
+  - it
+  - uk
+  - ru
+  - nl
+  - da
 languages:
   en:
     languageName: English
