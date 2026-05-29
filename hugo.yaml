@@ -57,6 +57,9 @@ params:
     displayCopyright: true
     displayPoweredBy: false
     width: normal
+  posthog:
+    projectKey: "phc_pwLBxvza4A7TWXJrbJGx6cFY5nzPg77yH8TiaJdoou75"
+    apiHost: "https://eu.i.posthog.com"
 
 defaultContentLanguage: en
 languages:
@@ -94,7 +97,3 @@ markup:
       unsafe: true
   highlight:
     noClasses: false
-
-services:
-  googleAnalytics:
-    ID: G-93YYDEHTQD

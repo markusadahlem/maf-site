@@ -36,12 +36,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="/css/common.css" />
 
-  <!-- Google Analytics -->
-  {{- if and (eq hugo.Environment "production") .Site.Config.Services.GoogleAnalytics.ID }}
-    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
-    {{ partial "google-analytics.html" . }}
-  {{- end }}
-
   <script>
     const defaultTheme = '{{ site.Params.theme.default | default `system`}}';
 
