@@ -16,6 +16,25 @@ images:
 <p>Migraine isn’t just a headache—it’s a complex condition marked by a wide range of neurological symptoms that emerge before, during, and between attacks. Recognizing them matters for diagnosis, treatment, and your quality of life.</p>
 </div>
 
+<div class="home-hero-cta">
+
+{{< hextra/hero-button text="Take the 10-minute aura check" link="/aura-symptom-check/symptom-check-tools" >}}
+
+<p class="home-hero-cta-sub">Turn your symptoms into a report you can share with your doctor.</p>
+
+</div>
+
+
+**What visitors say about our site**
+
+</div>
+
+<div class="home-carousel">
+
+{{< quote-carousel >}}
+
+</div>
+
 <div class="home-prose">
 
 **With you, not just for you.** Your experiences inspire the quest for migraine science’s _holy grail_ — attack prediction and ultra-early intervention.
@@ -62,15 +81,6 @@ images:
 
 Migraine aura is more than visual disturbance — it can affect speech, sensation, movement, or even thought clarity. Since 1998, we’ve gathered over 7,000 patient accounts to build one of the world’s most comprehensive sources of knowledge on migraine aura.
 
-**What visitors say about our site**
-
-</div>
-
-<div class="home-carousel">
-
-{{< quote-carousel >}}
-
-</div>
 
 <div class="home-clinician">
 

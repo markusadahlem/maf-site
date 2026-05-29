@@ -11,24 +11,25 @@ sidebar:
 
 **Wähle die Option, die am besten zu deinen Bedürfnissen passt, um Einblicke in deine Migränesymptome zu erhalten.**
 
-Erhalte eine Analyse deiner Auraphänomene basierend auf den Kriterien der Internationalen Kopfschmerzklassifikation (ICHD-3). Dieses Tool bietet einen schnellen Überblick und hilft dir, die grundlegenden Merkmale einer Migräne mit Aura besser zu verstehen.
 
-{{< hextra/hero-badge link="../modality">}}
-  <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400"></div>
-  <span class="hx-text-lg">Schneller Aura-Check</span>
-  {{< icon name="arrow-circle-right" attributes="height=32" >}}
-{{< /hextra/hero-badge >}}
+Erhalte eine umfassende Auswertung deiner Migräneaurasymptome mit detaillierten Informationen, die du  mit deiner Ärztin oder deinem Arzt teilen kannst.
+<span style="color:red">Beta-Version — Hinweis: Der Zugriff auf dieses Tool ist derzeit passwortgeschützt. </span>
 
-Erhalte eine umfassende Auswertung deiner Migränesymptome mit detaillierten Informationen, die du  mit deiner Ärztin oder deinem Arzt teilen kannst.   
-<span style="color:red">Hinweis: Aktuell nur als englische Beta-Version verfügbar; der Zugriff auf dieses Tool ist zudem derzeit passwortgeschützt.</span>
 
-{{< hextra/hero-badge link="../acute-chronic/reason-for-visit">}}
-  <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400"></div>
-  <span class="hx-text-lg">Erweiterte Migräne-Analyse (Beta)</span>
-  {{< icon name="arrow-circle-right" attributes="height=32" >}}
-{{< /hextra/hero-badge >}}
+<div class="cta-primary">
+
+{{< hextra/hero-button text="Erweiterte Migräne-Analyse (Beta)" link="../acute-chronic/reason-for-visit" >}}
+
+</div>
+
+
+
 
 Möchtest du Betatester:in werden? [Kontaktiere](../../contact/) uns gerne für weitere Informationen.
 
-
 Dein Feedback ist uns wichtig. Wenn du Fragen hast oder Unterstützung benötigst, wenden dich bitte an unser Support-Team.
+
+
+### Kopfschmerz-Phänotypisierung — bald verfügbar
+
+In Entwicklung: Phänotypisierung deiner Migräne über die Zeit — wie es von M-Sense bekannt ist.

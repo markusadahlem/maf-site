@@ -1,5 +1,16 @@
 /* common.css */
 
+/* === Brand palette ===
+   White-dominant page, brand colors used sparingly on buttons and
+   accents. Darkblue is the canonical text-on-yellow pairing for the
+   primary CTA (4.82:1 contrast, passes WCAG AA). */
+:root {
+    --maf-darkblue: #08768a;
+    --maf-midblue: #64cbd2;
+    --maf-lightblue: #92e1e7;
+    --maf-yellow: #eeff41;
+}
+
 /* === Language switcher flags ===
    Replace Hextra's globe icon with the current language's flag, and
    prefix each dropdown option with its flag. Order in the dropdown
@@ -200,4 +211,37 @@ html[lang="de"] .hextra-language-switcher > div::before {
 .swiper-symptoms-wrapper {
     display: flex;
     flex-direction: row-reverse; /* 🔁 This is the magic line */
+}
+
+/* Primary CTA — yellow on near-black, bold. Matches the homepage hero
+   button so callers on internal pages can reuse the same treatment via
+   `<div class="cta-primary">` around a `hextra/hero-button` shortcode. */
+.cta-primary {
+    margin: 1.5rem auto 2rem;
+    text-align: center;
+}
+
+.cta-primary a {
+    background: var(--maf-yellow) !important;
+    color: var(--maf-darkblue) !important;
+    font-weight: 700;
+}
+
+.cta-primary a:hover {
+    background: var(--maf-lightblue) !important;
+    color: var(--maf-darkblue) !important;
+}
+
+.cta-primary-sub {
+    margin: 1rem auto 0;
+    max-width: 38rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #4b5563;
+}
+
+@media (prefers-color-scheme: dark) {
+    .cta-primary-sub {
+        color: #9ca3af;
+    }
 }
