@@ -23,6 +23,8 @@ width: normal
 </div>
 
 
+<div class="home-prose">
+
 **Was Menschen, die mit Migräne leben und unsere Seite besuchten, sagen**
 
 </div>
@@ -79,6 +81,8 @@ width: normal
 <div class="home-prose hx:mt-10">
 
 Mit „Aura“ bezeichnet man eine Gruppe neurologischer Symptome, die das Sehen, Sprechen, Empfinden oder sogar das klare Denken beeinträchtigen können – gelegentlich sind auch Bewegungsstörungen oder körperliche Schwäche beteiligt. Seit 1998 haben wir über 7.000 Patient:innenberichte ausgewertet, um eine der weltweit umfassendsten Wissensquellen zur Migräneaura aufzubauen.
+
+</div>
 
 <div class="home-clinician">
 

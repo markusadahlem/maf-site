@@ -14,14 +14,14 @@
 /* === Language switcher flags ===
    Replace Hextra's globe icon with the current language's flag, and
    prefix each dropdown option with its flag. Order in the dropdown
-   follows the weight field in hugo.yaml (en=1 → 🇬🇧, de=2 → 🇩🇪).
+   follows the weight field in hugo.yaml (en=1 → 🌐, de=2 → 🇩🇪).
    Emoji flags render correctly on macOS/iOS/Android/Linux; on Windows
    they fall back to the two-letter region code. */
 .hextra-language-switcher svg {
     display: none;
 }
 html[lang="en"] .hextra-language-switcher > div::before {
-    content: "🇬🇧";
+    content: "🌐";
     margin-right: 0.4em;
     font-size: 1.1em;
 }
@@ -31,7 +31,7 @@ html[lang="de"] .hextra-language-switcher > div::before {
     font-size: 1.1em;
 }
 .hextra-language-options li:nth-child(1) a::before {
-    content: "🇬🇧";
+    content: "🌐";
     margin-right: 0.5em;
     font-size: 1.1em;
 }

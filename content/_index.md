@@ -25,6 +25,8 @@ images:
 </div>
 
 
+<div class="home-prose">
+
 **What visitors say about our site**
 
 </div>
@@ -81,6 +83,7 @@ images:
 
 Migraine aura is more than visual disturbance — it can affect speech, sensation, movement, or even thought clarity. Since 1998, we’ve gathered over 7,000 patient accounts to build one of the world’s most comprehensive sources of knowledge on migraine aura.
 
+</div>
 
 <div class="home-clinician">
 
