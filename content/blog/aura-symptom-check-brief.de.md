@@ -53,3 +53,27 @@ In der Medizin zählt nicht nur, *was* ein System ausgibt, sondern *warum*. Ein 
 Das ist die Wette dieses Tools: dass die Verbindung von kollektivem Erfahrungswissen, formaler Diagnoselogik und einem teilbaren Bericht mehr leistet als jedes dieser Stücke für sich.
 
 Wer tiefer einsteigen möchte: Der ausführliche Beitrag [„Der Migräne-Aura-Scan: Das Unerkannte erkennen"](/de/blog/aura-symptom-check/) erklärt Wirkung, Risiken und Validierung im Detail.
+
+<script>
+document.addEventListener('click', function (e) {
+  const link = e.target.closest('a');
+  if (!link) return;
+
+  const href = link.getAttribute('href') || '';
+  let target;
+
+  if (href.includes('ichd-3.org'))                          target = 'ichd3';
+  else if (/\/blog\/aura-symptom-check\/?$/.test(href))     target = 'long_blog';
+  else if (href.includes('/symptom-check-tools'))           target = 'symptom_check_tools';
+  else if (href.includes('/test-suit'))                     target = 'migrainebrainradar';
+  else if (href.includes('/voices'))                        target = 'voices';
+  else return;
+
+  if (window.posthog) {
+    posthog.capture('brief_blog_outbound_click', {
+      target,
+      lang: document.documentElement.lang || 'en',
+    });
+  }
+});
+</script>

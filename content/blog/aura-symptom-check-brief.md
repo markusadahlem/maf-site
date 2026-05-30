@@ -54,3 +54,27 @@ In medicine, what matters is not only *what* a system outputs, but *why*. A lang
 That is the wager of this tool: that combining collective experiential knowledge, formal diagnostic logic, and a shareable report yields more than any of these parts alone.
 
 For a deeper dive, the longer post ["Migraine Aura Check: Recognizing the Unrecognized"](/blog/aura-symptom-check/) explains effects, risks, and validation in detail.
+
+<script>
+document.addEventListener('click', function (e) {
+  const link = e.target.closest('a');
+  if (!link) return;
+
+  const href = link.getAttribute('href') || '';
+  let target;
+
+  if (href.includes('ichd-3.org'))                          target = 'ichd3';
+  else if (/\/blog\/aura-symptom-check\/?$/.test(href))     target = 'long_blog';
+  else if (href.includes('/symptom-check-tools'))           target = 'symptom_check_tools';
+  else if (href.includes('/test-suit'))                     target = 'migrainebrainradar';
+  else if (href.includes('/voices'))                        target = 'voices';
+  else return;
+
+  if (window.posthog) {
+    posthog.capture('brief_blog_outbound_click', {
+      target,
+      lang: document.documentElement.lang || 'en',
+    });
+  }
+});
+</script>
