@@ -14,11 +14,7 @@ width: normal
 <p>Migräne ist mehr als Kopfschmerz — eine komplexe Erkrankung mit einem breiten Spektrum neurologischer Symptome, die vor, während und zwischen den Attacken auftreten. Sie zu erkennen ist entscheidend für Diagnose, Behandlung und Lebensqualität — und doch fehlen oft die Worte. Wir übersetzen das narrative Erleben in die formale Sprache der Diagnostik.</p>
 </div>
 
-<div class="home-prose">
 
-
-
-</div>
 
 <div class="home-hero-cta">
 
