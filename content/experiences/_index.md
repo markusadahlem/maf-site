@@ -8,11 +8,9 @@ summary: "Gateway page for migraine art and symptom structure."
 
 **Aura is real — recognising it and how you describe it matters.**
 
-Nearly 7,000 individual patient reports from the original version of this site are being carefully curated and condensed for re-publication here — an ongoing long-term effort that sponsors could help us speed up.
-
 Whether expressed in art or structured by clinical criteria, every perspective helps make the invisible more visible.
-<div style="display: flex; justify-content: center; gap: 2rem; align-items: flex-start;">
-  <figure style="margin: 0; text-align: center; width: 420px; display: flex; flex-direction: column; align-items: center;">
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; align-items: flex-start;">
+  <figure style="margin: 0; text-align: center; max-width: 420px; flex: 1 1 280px; display: flex; flex-direction: column; align-items: center;">
     <figcaption style="font-size: 1em; font-weight: bold; margin-top: 0.5em;">
       Expressed in Art
     </figcaption>
@@ -25,7 +23,7 @@ Whether expressed in art or structured by clinical criteria, every perspective h
     </figcaption>
   </figure>
 
-  <figure style="margin: 0; text-align: center; width: 600px; display: flex; flex-direction: column; align-items: center;">
+  <figure style="margin: 0; text-align: center; max-width: 600px; flex: 1 1 280px; display: flex; flex-direction: column; align-items: center;">
     <figcaption style="font-size: 1em; font-weight: bold; margin-top: 0.5em;">
       Structured by Medical Criteria
     </figcaption>
@@ -55,7 +53,7 @@ It connects personal symptoms with diagnostic standards.
 
 [**Explore the Symptom Map →**](/symptoms)
 
-
+---
 
 ## From Experience to Report
 
@@ -65,13 +63,17 @@ Begin creating your personalized migraine report — a summary you can understan
 
 
 
-{{< hextra/hero-badge link="/aura-symptom-check/symptom-check-tools">}}
-  <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400"></div>
-  <span class="hx-text-lg">Try the MigraineAuraScan™</span>
-  {{< icon name="arrow-circle-right" attributes="height=32" >}}
-{{< /hextra/hero-badge >}}
+<div class="cta-primary">
+
+{{< hextra/hero-button text="Try the MigraineAuraScan™" link="/aura-symptom-check/symptom-check-tools" >}}
+
+</div>
 
 
 
 
 If you’re unsure about any question, return here to clarify what it might mean.
+
+<aside style="margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #e5e7eb; font-size: 0.85em; color: #6b7280;">
+Over 7,000 individual patient reports from the original version of this site are being carefully curated and condensed for re-publication here — an ongoing long-term effort that sponsors could help us speed up — get in touch.
+</aside>

@@ -6,14 +6,12 @@ description: "Das Unsichtbare sichtbar machen – durch Kunst und persönliche G
 summary: "Einstiegsseite zu Migräne-Kunst und Symptommustern."
 ---
 
-**Aura ist real – sie zu erkennen und wie sie beschreiben wird, ist wichtig.**
-
-Fast 7.000 individuelle Berichte von Patient:innen aus der ursprünglichen Version dieser Website werden sorgfältig kuratiert und die Information daraus verdichtet, um hier erneut veröffentlicht zu werden. Eine langfristige Aufgabe, bei der Sponsoren den Prozess beschleunigen könnten -- sprecht uns gerne an!
+**Aura ist real – sie zu erkennen und wie man sie beschreibt, ist wichtig.**
 
 Ob durch Kunst ausgedrückt oder durch medizinische Kriterien strukturiert – jede Perspektive hilft, das Unsichtbare sichtbarer zu machen.
 
-<div style="display: flex; justify-content: center; gap: 2rem; align-items: flex-start;">
-  <figure style="margin: 0; text-align: center; width: 420px; display: flex; flex-direction: column; align-items: center;">
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; align-items: flex-start;">
+  <figure style="margin: 0; text-align: center; max-width: 420px; flex: 1 1 280px; display: flex; flex-direction: column; align-items: center;">
     <figcaption style="font-size: 1em; font-weight: bold; margin-top: 0.5em;">
       Ausdruck durch Kunst
     </figcaption>
@@ -26,7 +24,7 @@ Ob durch Kunst ausgedrückt oder durch medizinische Kriterien strukturiert – j
     </figcaption>
   </figure>
 
-  <figure style="margin: 0; text-align: center; width: 600px; display: flex; flex-direction: column; align-items: center;">
+  <figure style="margin: 0; text-align: center; max-width: 600px; flex: 1 1 280px; display: flex; flex-direction: column; align-items: center;">
     <figcaption style="font-size: 1em; font-weight: bold; margin-top: 0.5em;">
       Strukturiert durch medizinische Kriterien
     </figcaption>
@@ -64,10 +62,14 @@ Jetzt, wo du gesehen hast, wie andere ihre Symptome ausdrücken – und wie die 
 
 Beginne jetzt mit deinem persönlichen Migränebericht – eine Zusammenfassung, die du verstehst und mit deiner Ärztin oder deinem Arzt teilen kannst, damit deine Erfahrungen sichtbar werden.
 
-{{< hextra/hero-badge link="/de/aura-symptom-check/symptom-check-tools">}}
-  <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400"></div>
-  <span class="hx-text-lg">Teste den MigraineAuraScan™</span>
-  {{< icon name="arrow-circle-right" attributes="height=32" >}}
-{{< /hextra/hero-badge >}}
+<div class="cta-primary">
+
+{{< hextra/hero-button text="Teste den MigraineAuraScan™" link="/de/aura-symptom-check/symptom-check-tools" >}}
+
+</div>
 
 Wenn du bei einer Frage unsicher bist, kannst du jederzeit hierher zurückkehren, um die Bedeutung besser zu verstehen.
+
+<aside style="margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #e5e7eb; font-size: 0.85em; color: #6b7280;">
+Über 7.000 individuelle Berichte von Patient:innen aus der ursprünglichen Version dieser Website werden sorgfältig kuratiert und die Information daraus verdichtet, um hier erneut veröffentlicht zu werden. Eine langfristige Aufgabe, bei der Sponsoren den Prozess beschleunigen könnten – sprecht uns gerne an!
+</aside>

@@ -33,7 +33,7 @@ That is the goal of the [MigraineAuraScan](/aura-symptom-check/symptom-check-too
 
 **At the center** sits a symbolic AI expert system. Symbolic means: no chatbot, and therefore no black box — but transparent rules grounded in the [ICHD-3 diagnostic criteria](https://ichd-3.org/) of the International Headache Society. Every question, every conclusion is openly traceable.
 
-**As input**, the system needs a translation — between the patient's narrative experience and the formal language of diagnostics. That translation draws on the rich archive of the foundation's website: more than 7,000 lived accounts (read same [Voices](/voices/)), gathered since 1998. At every step of the questionnaire, patients can look up how others described something similar — and so subjective illness experience becomes comparable.
+**As input**, the system needs a translation — between the patient's narrative experience and the formal language of diagnostics. That translation draws on the rich archive of the foundation's website: over 7,000 lived accounts (read same [Voices](/voices/)), gathered since 1998. At every step of the questionnaire, patients can look up how others described something similar — and so subjective illness experience becomes comparable.
 
 **As output**, an automated consultation letter is generated, in the style of a tele-consult. Readable by a clinician in 30 seconds, delivered as a PDF to bring to the appointment.
 
