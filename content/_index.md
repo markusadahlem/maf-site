@@ -13,8 +13,7 @@ images:
 {{< hextra/hero-headline >}}Make Your Migraine Visible{{< /hextra/hero-headline >}}
 
 <div class="home-hero-subtitle">
-<p>Migraine isn't just a headache—it's a complex condition marked by a wide range of neurological symptoms that emerge before, during, and between attacks. Recognizing them matters for diagnosis, treatment, and your quality of life — yet they often begin where words fail. We translate the narrative experience into the formal language of diagnostics.
-</p>
+<p>We translate the narrative experience into the formal language of diagnostics.</p>
 </div>
 
 <div class="home-hero-cta">
@@ -25,6 +24,12 @@ images:
 
 </div>
 
+
+<div class="home-prose">
+
+Migraine isn't just a headache—it's a complex condition marked by a wide range of neurological symptoms that emerge before, during, and between attacks. Recognizing them matters for diagnosis, treatment, and your quality of life — yet they often begin where words fail.
+
+</div>
 
 <div class="home-prose">
 

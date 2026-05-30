@@ -11,7 +11,7 @@ width: normal
 {{< hextra/hero-headline >}}Migräne sichtbar machen{{< /hextra/hero-headline >}}
 
 <div class="home-hero-subtitle">
-<p>Migräne ist mehr als Kopfschmerz — eine komplexe Erkrankung mit einem breiten Spektrum neurologischer Symptome, die vor, während und zwischen den Attacken auftreten. Sie zu erkennen ist entscheidend für Diagnose, Behandlung und Lebensqualität — und doch fehlen oft die Worte. Wir übersetzen das narrative Erleben in die formale Sprache der Diagnostik.</p>
+<p> Wir übersetzen das narrative Erleben in die formale Sprache der Diagnostik.</p>
 </div>
 
 
@@ -21,9 +21,14 @@ width: normal
 {{< hextra/hero-button text="Mache die 10-Minuten-Aura-Anamnese" link="/de/aura-symptom-check/symptom-check-tools" >}}
 
 <p class="home-hero-cta-sub">Verwandle deine Symptome in einen Bericht für deine Ärztin oder Arzt.</p>
-
 </div>
 
+
+<div class="home-prose">
+
+Migräne ist mehr als Kopfschmerz — eine komplexe Erkrankung mit einem breiten Spektrum neurologischer Symptome, die vor, während und zwischen den Attacken auftreten. Sie zu erkennen ist entscheidend für Diagnose, Behandlung und Lebensqualität — und doch fehlen oft die Worte.
+
+</div>
 
 <div class="home-prose">
 
