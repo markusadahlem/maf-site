@@ -8,7 +8,7 @@ description: "A short introduction for those who don't yet have a password but w
 ---
 
 <div class="hx-mb-12">
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}A short introduction for those who don't yet have a password but want to know what the MigraineAuraScan — the Aura Anamnesis from the Migraine Aura Foundation — does.
+{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}A short introduction for those who don't yet have a password but want to know what the MigraineAuraScan — the Aura Anamnesis from the Migraine Aura Foundation — does: we translate the narrative experience of people living with migraine into the formal language of diagnostics.
     {{< /hextra/hero-subtitle >}}
 </div>
 
@@ -16,19 +16,19 @@ Imagine a world where you no longer sit in the waiting room trying to compress m
 
 That is the goal of the [MigraineAuraScan](/aura-symptom-check/symptom-check-tools/) — the structured Aura Anamnesis from the Migraine Aura Foundation. But the mission needs more than one tool: alongside it, headache phenotyping (carried over from M-sense's >300M-record corpus) and the [MigraineBrainRadar™](/test-suit/) are advancing in parallel.
 
-<!--
+
 <div style="text-align: center;">
   <figure style="display: inline-block; margin: 0 auto;">
     <img
-      src="/images/blog/aura-symptom-check-konzept.png"
+      src="/images/blog/aura-symptom-check-show-case.png"
       class="img"
       alt="Concept diagram: expert system at the center, Voices on the input side, consultation report on the output side" />
     <figcaption style="font-size: 0.8em; margin-top: 0.5em;">
-        The concept in one picture: at the center, the symbolic AI expert system; on the input side, the link to the foundation's collective patient accounts (the PatientsLikeMe principle); on the output side, an automatically generated consultation letter in the style of a tele-consult.
+        The concept in one picture: at the center, the symbolic AI expert system; on the input side (not visualized), the link to the foundation's collective patient accounts; on the output side, an automatically generated consultation letter in the style of a tele-consult.
     </figcaption>
   </figure>
 </div>
--->
+
 ## Bringing three things together
 
 **At the center** sits a symbolic AI expert system. Symbolic means: no chatbot, and therefore no black box — but transparent rules grounded in the [ICHD-3 diagnostic criteria](https://ichd-3.org/) of the International Headache Society. Every question, every conclusion is openly traceable.

@@ -8,7 +8,7 @@ description: "Ein Kurzeinstieg für alle, die noch kein Passwort haben und wisse
 ---
 
 <div class="hx-mb-12">
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Ein Kurzeinstieg für alle, die noch kein Passwort haben und wissen möchten, was der Migräne-Aura-Scan – die Aura-Anamnese der Migraine Aura Foundation – leistet.
+{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Ein Kurzeinstieg für alle, die noch kein Passwort haben und wissen möchten, was der Migräne-Aura-Scan – die Aura-Anamnese der Migraine Aura Foundation – leistet: wir übersetzen das narrative Erleben der Patientinnen und Patienten und die formale Sprache der Diagnostik. 
     {{< /hextra/hero-subtitle >}}
 </div>
 
@@ -19,11 +19,11 @@ Das ist das Ziel des [MigraineAuraScan](/de/aura-symptom-check/symptom-check-too
 <div style="text-align: center;">
   <figure style="display: inline-block; margin: 0 auto;">
     <img
-      src="/images/blog/aura-symptom-check-konzept.png"
+      src="/images/blog/aura-symptom-check-show-case.png"
       class="img"
       alt="Konzeptgrafik: Expertensystem in der Mitte, Voices links, Konsiliarbericht rechts" />
     <figcaption style="font-size: 0.8em; margin-top: 0.5em;">
-        Das Konzept in einem Bild: In der Mitte das symbolische KI-Expertensystem, links die Anknüpfung an die kollektiven Erfahrungsberichte der Stiftungswebseite (PatientsLikeMe-Prinzip), rechts der automatisiert erstellte Konsiliarbericht im Stil eines Telekonsils.
+        Das Konzept in einem Bild: In der Mitte das symbolische KI-Expertensystem, die Anknüpfung an die kollektiven Erfahrungsberichte der Stiftungswebseite ist nicht gezeigt, rechts der automatisiert erstellte Konsiliarbericht im Stil eines Telekonsils.
     </figcaption>
   </figure>
 </div>
