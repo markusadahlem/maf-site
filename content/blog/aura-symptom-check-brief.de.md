@@ -8,7 +8,7 @@ description: "Ein Kurzeinstieg für alle, die noch kein Passwort haben und wisse
 ---
 
 <div class="hx-mb-12">
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Ein Kurzeinstieg für alle, die noch kein Passwort haben und wissen möchten, was der Migräne-Aura-Scan – die Aura-Anamnese der Migraine Aura Foundation – leistet: wir übersetzen das narrative Erleben der Patientinnen und Patienten und die formale Sprache der Diagnostik. 
+{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Ein Kurzeinstieg für alle, die noch kein Passwort haben und wissen möchten, was der Migräne-Aura-Scan – die Aura-Anamnese der Migraine Aura Foundation – leistet: wir übersetzen das narrative Erleben der Patientinnen und Patienten in die formale Sprache der Diagnostik. 
     {{< /hextra/hero-subtitle >}}
 </div>
 

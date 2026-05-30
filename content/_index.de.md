@@ -11,7 +11,13 @@ width: normal
 {{< hextra/hero-headline >}}Migräne sichtbar machen{{< /hextra/hero-headline >}}
 
 <div class="home-hero-subtitle">
-<p>Migräne ist nicht nur Kopfschmerz — sie ist eine komplexe neurologische Erkrankung mit frühen und sich wandelnden Symptomen, die für Diagnose, Behandlung und Lebensqualität entscheidend sein können.</p>
+<p>Migräne ist mehr als Kopfschmerz — eine komplexe Erkrankung mit einem breiten Spektrum neurologischer Symptome, die vor, während und zwischen den Attacken auftreten. Sie zu erkennen ist entscheidend für Diagnose, Behandlung und Lebensqualität — und doch fehlen oft die Worte. Wir übersetzen das narrative Erleben in die formale Sprache der Diagnostik.</p>
+</div>
+
+<div class="home-prose">
+
+
+
 </div>
 
 <div class="home-hero-cta">
