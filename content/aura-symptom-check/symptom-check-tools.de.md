@@ -15,12 +15,12 @@ sidebar:
 Erhalte eine umfassende Auswertung deiner Migräneaurasymptome mit detaillierten Informationen, die du  mit deiner Ärztin oder deinem Arzt teilen kannst.
 <span style="color:red">Beta-Version — Hinweis: Der Zugriff auf dieses Tool ist derzeit passwortgeschützt. </span>
 
-Noch kein Passwort? [Lies in der Zwischenzeit, was der Check umfasst](/de/blog/aura-symptom-check/).
+Noch kein Passwort? [Lies in der Zwischenzeit, was der Check umfasst](/de/blog/aura-symptom-check-brief/).
 
 
 <div class="cta-primary">
 
-{{< hextra/hero-button text="Erweiterte Migräne-Analyse (Beta)" link="../acute-chronic/reason-for-visit" >}}
+{{< hextra/hero-button text="Migräne-Aura-Scan (Beta)" link="../acute-chronic/reason-for-visit" >}}
 
 </div>
 

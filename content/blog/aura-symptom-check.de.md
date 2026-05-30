@@ -1,24 +1,24 @@
 ---
 date: '2025-04-28T03:55:11+02:00'
-title: 'Aura-Symptom-Check: Das Unerkannte erkennen'
+title: 'Der Migräne-Aura-Scan: Das Unerkannte erkennen'
 authors:
   - name: Markus A. Dahlem, PhD
     link: https://www.linkedin.com/in/markusdahlem/
-description: "Wie der Migraine-Aura-Symptom-Check Patientenverständnis fördert, die Patienten -Journey  verbessert und die klinische Versorgung unterstützt."
+description: "Wie der Migraine-Aura-Scan Patientenverständnis fördert, die Patienten -Journey  verbessert und die klinische Versorgung unterstützt."
 ---
 
 <div class="hx-mb-12">
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Wie der Migraine-Aura-Symptom-Check Patientenverständnis fördert, die Patientenreise verbessert und die klinische Versorgung unterstützt.
+{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}Wie der Migraine-Aura-Scan Patientenverständnis fördert, die Patienten -Journey  verbessert und die klinische Versorgung unterstützt.
     {{< /hextra/hero-subtitle >}}
 </div>
 
 Manchmal kommt die größte Erleichterung nicht von neuen Behandlungen, sondern davon, dem, was schon immer da war, endlich einen Namen zu geben. Für viele Patientinnen und Patienten bietet das Durchstöbern der Website der Migraine Aura Foundation genau diesen Durchbruch: ein Spiegelbild, ein Erkennen, eine Entlastung von Scham. Wir haben einge [Stimmen](/de/voices/) einmal zusammengestellt.
 
-Der neue [Migraine-Aura-Symptom-Check](/de/aura-symptom-check/symptom-check-tools/) geht noch einen Schritt weiter. Er verwandelt eine zufällige Erkundung in eine geführte, expertenähnliche Tour – und hilft Patientinnen und Patienten, ihre Symptome strukturiert, präzise und mit neuem Selbstbewusstsein zu artikulieren.
+Der neue [Migraine-Aura-Scan](/de/aura-symptom-check/symptom-check-tools/) geht noch einen Schritt weiter. Er verwandelt eine zufällige Erkundung in eine geführte, expertenähnliche Tour – und hilft Patientinnen und Patienten, ihre Symptome strukturiert, präzise und mit neuem Selbstbewusstsein zu artikulieren.
 
 Im Kern geht es bei diesem Tool um Empowerment durch Wissen. Menschen, die aktiv nach Informationen suchen – sei es in einem Moment der Frustration, der Neugier oder der stillen Hoffnung – können nun mit einem strukturierten System interagieren, das dem durchdachten Dialog ähnelt, den sie in einer spezialisierten klinischen Konsultation erleben würden.
 
-Bereits im Prototypenstadium (eine derzeit passwortgeschützte Beta-Version in englischer Sprache) generiert der [Migraine-Aura-Symptom-Check](de/aura-symptom-check/symptom-check-tools/) eine strukturierte PDF-Zusammenfassung – konzipiert zur Unterstützung der Kommunikation mit behandelnden Ärztinnen und Ärzten, indem die selbstberichteten Symptome der Patienten klar und klinisch sinnvoll dargestellt werden.
+Bereits im Prototypenstadium (eine derzeit passwortgeschützte Beta-Version in englischer Sprache) generiert der [Migraine-Aura-Scan](de/aura-symptom-check/symptom-check-tools/) eine strukturierte PDF-Zusammenfassung – konzipiert zur Unterstützung der Kommunikation mit behandelnden Ärztinnen und Ärzten, indem die selbstberichteten Symptome der Patienten klar und klinisch sinnvoll dargestellt werden.
 
 
 <div style="text-align: center;">

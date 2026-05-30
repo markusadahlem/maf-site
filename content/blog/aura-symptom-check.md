@@ -1,25 +1,25 @@
 ---
 date: '2025-04-28T03:55:11+02:00'
-title: 'Aura-Symptom-Check: Recognizing the Unrecognized'
+title: 'Migraine Aura Scan: Recognizing the Unrecognized'
 authors:
   - name: Markus A. Dahlem, PhD
     link: https://www.linkedin.com/in/markusdahlem/
-description: "How the Migraine-Aura-Symptom-Check Guides Patients Toward Understanding, Improves the Patient Journey, and Supports Clinical Care."
+description: "How the MigraineAuraScan guides patients toward understanding, improves the patient journey, and supports clinical care."
 ---
 
 <div class="hx-mb-12">
-{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}How the Migraine-Aura-Symptom-Check Guides Patients Toward Understanding, Improves the Patient Journey, and Supports Clinical Care.
+{{< hextra/hero-subtitle style="margin: 1rem 0 0 0">}}How the MigraineAuraScan guides patients toward understanding, improves the patient journey, and supports clinical care.
     {{< /hextra/hero-subtitle >}}
 </div>
 
 Sometimes, the greatest relief comes not from new treatments, but from finally putting a name to what was always there. For many patients, browsing the Migraine Aura Foundation’s website offers exactly that kind of breakthrough: a mirror, a recognition, a lifting of shame.
 We collected a few [Voices](/voices/).
 
-The new [Migraine-Aura-Symptom-Check](/aura-symptom-check/symptom-check-tools/) takes this journey one step further. It transforms what might have been a random exploration into a guided, expert-like tour—helping patients articulate their symptoms with structure, precision, and new confidence.
+The new [Migraine Aura Scan](/aura-symptom-check/symptom-check-tools/) takes this journey one step further. It transforms what might have been a random exploration into a guided, expert-like tour—helping patients articulate their symptoms with structure, precision, and new confidence.
 
 At its core, this tool is about empowerment through knowledge. Patients who actively seek information—whether in a moment of frustration, curiosity, or quiet hope—can now engage with a structured system that echoes the kind of thoughtful dialogue they might experience in a specialized clinical consultation.
 
-As part of its initial prototype (a beta version currently password-protected), the [Migraine-Aura-Symptom-Check](/aura-symptom-check/symptom-check-tools/) already generates a structured PDF letter—designed to support communication with treating physicians by summarizing the patient's self-reported symptoms in a clear, clinically meaningful format.
+As part of its initial prototype (a beta version currently password-protected), the [Migraine Aura Scan](/aura-symptom-check/symptom-check-tools/) already generates a structured PDF letter—designed to support communication with treating physicians by summarizing the patient's self-reported symptoms in a clear, clinically meaningful format.
 
 
 <div style="text-align: center;">

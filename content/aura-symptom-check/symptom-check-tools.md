@@ -17,7 +17,7 @@ sidebar:
 Get a comprehensive evaluation of your migraine aura symptoms with detailed insights to share with your doctor.
 <span style="color:red">Beta version — Note: Access to this tool is currently password-protected. </span>
 
-Don't have a password yet? [Read about what the check covers](/blog/aura-symptom-check/) in the meantime.
+Don't have a password yet? [Read about what the check covers](/blog/aura-symptom-check-brief/) in the meantime.
 
 
 <div class="cta-primary">
