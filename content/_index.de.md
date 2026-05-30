@@ -16,7 +16,7 @@ width: normal
 
 <div class="home-hero-cta">
 
-{{< hextra/hero-button text="Mache den 10-Minuten-Aura-Check" link="/de/aura-symptom-check/symptom-check-tools" >}}
+{{< hextra/hero-button text="Mache die 10-Minuten-Aura-Anamnese" link="/de/aura-symptom-check/symptom-check-tools" >}}
 
 <p class="home-hero-cta-sub">Verwandle deine Symptome in einen Bericht für deine Ärztin oder Arzt.</p>
 

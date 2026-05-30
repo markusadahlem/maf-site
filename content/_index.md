@@ -18,7 +18,7 @@ images:
 
 <div class="home-hero-cta">
 
-{{< hextra/hero-button text="Take the 10-minute aura check" link="/aura-symptom-check/symptom-check-tools" >}}
+{{< hextra/hero-button text="Take the 10-minute aura anamnesis" link="/aura-symptom-check/symptom-check-tools" >}}
 
 <p class="home-hero-cta-sub">Turn your symptoms into a report you can share with your doctor.</p>
 
