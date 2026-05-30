@@ -7,16 +7,17 @@ sidebar:
   exclude: true
 ---
 
-# Wählen Dein Migräne-Analyse-Tool
+# Unsere Migräne-Analyse-Tools
 
-**Wähle die Option, die am besten zu deinen Bedürfnissen passt, um Einblicke in deine Migränesymptome zu erhalten.**
+**Drei Ansätze in verschiedenen Entwicklungsphasen.**
 
 
-Erhalte eine umfassende Auswertung deiner Migräneaurasymptome mit detaillierten Informationen, die du  mit deiner Ärztin oder deinem Arzt teilen kannst.
+### Migräne-Aura-Scan — Beta
+
+Erhalte eine umfassende Auswertung deiner Migräneaurasymptome mit detaillierten Informationen, die du mit deiner Ärztin oder deinem Arzt teilen kannst.
 <span style="color:red">Beta-Version — Hinweis: Der Zugriff auf dieses Tool ist derzeit passwortgeschützt. </span>
 
 Noch kein Passwort? [Lies in der Zwischenzeit, was der Check umfasst](/de/blog/aura-symptom-check-brief/).
-
 
 <div class="cta-primary">
 
@@ -24,14 +25,17 @@ Noch kein Passwort? [Lies in der Zwischenzeit, was der Check umfasst](/de/blog/a
 
 </div>
 
-
-
-
 Möchtest du Betatester:in werden? [Kontaktiere](../../contact/) uns gerne für weitere Informationen.
 
+
+### Kopfschmerz-Phänotypisierung — Alpha
+
+Ein Werkzeug zur Phänotypisierung deines Migränemusters über die Zeit. Zuvor in M-sense, einer DiGA (digitale Gesundheitsanwendung auf Rezept), eingesetzt und dort an mehr als 300 Millionen einzelnen Kopfschmerzepisoden validiert – wird derzeit auf die Website der Foundation übertragen.
+
+
+### [MigraineBrainRadar™](/de/test-suit/) — Entdeckung & Translation
+
+In der Erforschung: ein Werkzeug der nächsten Generation für die signalbasierte Früherkennung im Migräne-Prodrom.
+
+
 Dein Feedback ist uns wichtig. Wenn du Fragen hast oder Unterstützung benötigst, wenden dich bitte an unser Support-Team.
-
-
-### Kopfschmerz-Phänotypisierung — bald verfügbar
-
-In Entwicklung: Phänotypisierung deiner Migräne über die Zeit — wie es von M-Sense bekannt ist.
