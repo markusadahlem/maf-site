@@ -14,9 +14,6 @@ description: "A short introduction for those who don't yet have a password but w
 
 Imagine a world where you no longer sit in the waiting room trying to compress months into five sentences — but instead walk into the consultation with an ordered report of your own symptoms in hand. The conversation begins where it usually ends.
 
-That is the goal of the [MigraineAuraScan](/aura-symptom-check/symptom-check-tools/) — the structured Aura Anamnesis from the Migraine Aura Foundation. But the mission needs more than one tool: alongside it, headache phenotyping (carried over from M-sense's >300M-record corpus) and the [MigraineBrainRadar™](/test-suit/) are advancing in parallel.
-
-
 <div style="text-align: center;">
   <figure style="display: inline-block; margin: 0 auto;">
     <img
@@ -28,6 +25,9 @@ That is the goal of the [MigraineAuraScan](/aura-symptom-check/symptom-check-too
     </figcaption>
   </figure>
 </div>
+
+That is the goal of the [MigraineAuraScan](/aura-symptom-check/symptom-check-tools/) — the structured Aura Anamnesis from the Migraine Aura Foundation. But the mission needs more than one tool: alongside it, headache phenotyping (from the migraine DiGA M-sense, tested in over 300 million headache-days) and the [MigraineBrainRadar™](/test-suit/) are advancing in parallel.
+
 
 ## Bringing three things together
 
