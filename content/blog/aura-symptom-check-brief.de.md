@@ -14,7 +14,6 @@ description: "Ein Kurzeinstieg für alle, die noch kein Passwort haben und wisse
 
 Stell dir eine Welt vor, in der du nicht mehr im Wartezimmer sitzt und versuchst, Monate in fünf Sätze zu pressen – sondern mit einem geordneten Bericht über deine eigenen Symptome in die Sprechstunde gehst. Das Gespräch beginnt dort, wo es sonst aufhört.
 
-Das ist das Ziel des [MigraineAuraScan](/de/aura-symptom-check/symptom-check-tools/) – der strukturierten Aura-Anamnese der Migraine Aura Foundation. Doch die Mission braucht mehr als ein Werkzeug: parallel dazu schreiten die Kopfschmerz-Phänotypisierung (aus dem M-sense-Korpus von mehr als 300 Millionen Datensätzen übertragen) und der [MigraineBrainRadar™](/de/test-suit/) voran.
 
 <div style="text-align: center;">
   <figure style="display: inline-block; margin: 0 auto;">
@@ -27,6 +26,9 @@ Das ist das Ziel des [MigraineAuraScan](/de/aura-symptom-check/symptom-check-too
     </figcaption>
   </figure>
 </div>
+
+Das ist das Ziel des [MigraineAuraScan](/de/aura-symptom-check/symptom-check-tools/) – der strukturierten Aura-Anamnese der Migraine Aura Foundation. Doch die Mission braucht mehr als ein Werkzeug: parallel dazu schreiten die Kopfschmerz-Phänotypisierung (aus der Migräne DiGA  M-sense, getestet in mehr als 300 Millionen Kopfschmerztagen) und der [MigraineBrainRadar™](/de/test-suit/) voran.
+
 
 ## Wir bringen drei Dinge zusammen
 
