@@ -129,6 +129,9 @@ No autoplay, no Swiper, no timers.
   const btn = root.querySelector('[data-action="show-more"]');
   if (!btn) return;
   btn.addEventListener("click", function () {
+    if (window.posthog) {
+      posthog.capture("testimonials_expanded", { lang: document.documentElement.lang || "en" });
+    }
     root.querySelectorAll(".is-hidden").forEach(function (el) {
       el.classList.remove("is-hidden");
     });

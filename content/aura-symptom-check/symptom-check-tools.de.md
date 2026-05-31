@@ -45,3 +45,19 @@ In der Erforschung: ein Werkzeug der nächsten Generation für die signalbasiert
 
 
 Dein Feedback ist uns wichtig. Wenn du Fragen hast oder Unterstützung benötigst, wenden dich bitte an unser Support-Team.
+
+<script>
+(function () {
+  document.addEventListener("click", function (e) {
+    const link = e.target.closest("a");
+    if (!link || !window.posthog) return;
+    const href = link.getAttribute("href") || "";
+    const lang = document.documentElement.lang || "de";
+    if (href.includes("/acute-chronic/reason-for-visit")) {
+      posthog.capture("aura_check_started", { lang });
+    } else if (/\/test-suit\/?$/.test(href)) {
+      posthog.capture("mbr_cta_clicked", { lang });
+    }
+  });
+})();
+</script>

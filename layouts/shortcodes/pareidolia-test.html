@@ -180,7 +180,10 @@ Example:
   const state={idx:0,answers:[],pending:undefined,accepting:false,timer:null};
   function showScreen(n){Object.values(screens).forEach(s=>s.classList.remove("is-active")); screens[n].classList.add("is-active");}
   function clearTimer(){if(state.timer){clearTimeout(state.timer); state.timer=null;}}
-  function start(){state.idx=0; state.answers=[]; showScreen("test"); setStageMode("count"); countIn(CONFIG.images.length?()=>nextImage():showResult,3);}
+  function start(){
+    if (window.posthog) posthog.capture("pareidolia_started", { lang: CONFIG.lang });
+    state.idx=0; state.answers=[]; showScreen("test"); setStageMode("count"); countIn(CONFIG.images.length?()=>nextImage():showResult,3);
+  }
   function countIn(done,n){if(CONFIG.countInMs===0||n<=0){done();return;} countEl.textContent=n; state.timer=setTimeout(()=>countIn(done,n-1),CONFIG.countInMs);}
   function setStageMode(m){stageImg.hidden=m!=="image"; fixation.hidden=m!=="fixation"; countEl.hidden=m!=="count"; stageEl.classList.toggle("is-blank", m==="blank");}
   function nextImage(){
@@ -217,6 +220,7 @@ Example:
   function showResult(){
     clearTimer(); const total=CONFIG.images.length; const seen=state.answers.filter(Boolean).length;
     scoreEl.textContent=seen; scoreLabel.textContent=T.scoreLabel(seen,total); resultMsg.textContent=T.interpret(seen,total);
+    if (window.posthog) posthog.capture("pareidolia_completed", { lang: CONFIG.lang, score: seen, total: total });
     showScreen("result");
   }
   function enableButtons(on){btnYes.disabled=!on; btnNo.disabled=!on;}

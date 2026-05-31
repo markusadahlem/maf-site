@@ -45,3 +45,19 @@ In active research: a next-generation tool aimed at signal-based early detection
 
 
 Your feedback is valuable to us. If you have any questions or need assistance, please don't hesitate to contact our support team.
+
+<script>
+(function () {
+  document.addEventListener("click", function (e) {
+    const link = e.target.closest("a");
+    if (!link || !window.posthog) return;
+    const href = link.getAttribute("href") || "";
+    const lang = document.documentElement.lang || "en";
+    if (href.includes("/acute-chronic/reason-for-visit")) {
+      posthog.capture("aura_check_started", { lang });
+    } else if (/\/test-suit\/?$/.test(href)) {
+      posthog.capture("mbr_cta_clicked", { lang });
+    }
+  });
+})();
+</script>

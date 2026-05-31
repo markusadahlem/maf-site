@@ -56,10 +56,13 @@ Dieses Tool dient ausschließlich Informationszwecken und stellt keine medizinis
   function checkPassword() {
     var password = document.getElementById('password-input').value;
     var correctPassword = 'wonderland'; // Replace with your actual password
+    var lang = document.documentElement.lang || 'de';
     if (password === correctPassword) {
+      if (window.posthog) posthog.capture('password_submitted', { result: 'success', lang: lang });
       document.getElementById('password-protected-content').style.display = 'block';
       document.getElementById('password-prompt').style.display = 'none';
     } else {
+      if (window.posthog) posthog.capture('password_submitted', { result: 'failure', lang: lang });
       alert('Incorrect password. Please try again.');
     }
   }
