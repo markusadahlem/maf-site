@@ -46,11 +46,11 @@ sidebar:
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    background-color: #007bff;
+    background-color: #08768a;
     color: white;
   }
 
   .btn:hover {
-    background-color: #0056b3;
+    background-color: #065d6e;
   }
 </style>
