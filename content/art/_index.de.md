@@ -22,6 +22,15 @@ sidebar:
   </figure>
 </div>
 
+<figure style="max-width: 38rem; margin: 2rem auto; padding: 1.5rem 1.75rem; border-left: 4px solid #08768a; background: rgba(8, 118, 138, 0.05); border-radius: 0 8px 8px 0;">
+  <blockquote style="margin: 0; font-style: italic; font-size: 1.1rem; line-height: 1.5; color: #1f2937;">
+    „Endlich, nach nun mehr als 15 Jahren, kann ich mich outen. Ich bin ein Aurafreak. Aurakunst kannte ich bisher auch nicht. Schön das es sowas gibt, da kann man es allen anderen mal so richtig zeigen."
+  </blockquote>
+  <figcaption style="margin-top: 0.75rem; font-size: 0.875rem; color: #6b7280;">
+    — S. G. (2005)
+  </figcaption>
+</figure>
+
 ## Das Konzept der Migränekunst
 
 Obwohl sich Ursprünge bis in die Neurologie des 19. Jahrhunderts zurückverfolgen lassen, entwickelte Derek Robinson in den 1970er Jahren das Konzept der Migränekunst. Anlass war das inspirierende Beispiel einer Kunstlehrerin, die ihre Migräneanfälle bildlich darstellte.  

@@ -28,7 +28,7 @@ images:
 
 <div class="home-prose">
 
-Migraine isn't just a headache—it's a complex condition marked by a wide range of neurological symptoms that emerge before, during, and between attacks. Recognizing them matters for diagnosis, treatment, and your quality of life — yet they often begin where words fail.
+Migraine isn't just a headache—it's a complex condition marked by a wide range of neurological symptoms that emerge before, during, and between headache phases. Recognizing them matters for diagnosis, treatment, and your quality of life — yet they often begin where words fail.
 
 </div>
 
@@ -38,11 +38,7 @@ Migraine isn't just a headache—it's a complex condition marked by a wide range
 
 </div>
 
-<div class="home-carousel">
-
 {{< quote-carousel >}}
-
-</div>
 
 <div class="home-prose">
 

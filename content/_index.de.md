@@ -26,7 +26,7 @@ width: normal
 
 <div class="home-prose">
 
-Migräne ist mehr als Kopfschmerz — eine komplexe Erkrankung mit einem breiten Spektrum neurologischer Symptome, die vor, während und zwischen den Attacken auftreten. Sie zu erkennen ist entscheidend für Diagnose, Behandlung und Lebensqualität — und doch fehlen oft die Worte.
+Migräne ist mehr als Kopfschmerz — eine komplexe Erkrankung mit einem breiten Spektrum neurologischer Symptome, die vor, während und zwischen den Kopfschmerzen auftreten. Sie zu erkennen ist entscheidend für Diagnose, Behandlung und Lebensqualität — und doch fehlen oft die Worte.
 
 </div>
 
@@ -36,11 +36,7 @@ Migräne ist mehr als Kopfschmerz — eine komplexe Erkrankung mit einem breiten
 
 </div>
 
-<div class="home-carousel">
-
 {{< quote-carousel >}}
-
-</div>
 
 
 <div class="home-prose">

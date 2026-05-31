@@ -1,87 +1,124 @@
-<!-- Quote Carousel Container -->
-<style>
-    .quote-carousel {
-        padding: 1rem; /* Reduced padding */
-        width: 100%;
-        overflow: hidden;
-        display: flex;
-        transition-timing-function: ease;
-        margin-bottom: 0 !important;
-    }
+{{- /*
+Static testimonials grid. Replaces the previous Swiper-based auto-rotating
+carousel. Reads quotes from data/quotes/{lang}.yaml under `carousel_quotes`,
+renders them as cards (2 across on desktop, stacked on mobile). Initially
+the first two are visible (2×1); the rest are hidden behind a "Read more"
+button that reveals all of them (with 6 quotes per locale the final state
+is a 2-column × 3-row grid).
 
-    .quote-carousel .swiper-slide {
-        display: block;
-        text-align: left;
-        flex-shrink: 0;
-        width: 100%;
-        box-sizing: border-box;
-    }
+No autoplay, no Swiper, no timers.
+*/ -}}
+{{- $lang := .Site.Language.Lang -}}
+{{- $quotes := index site.Data.quotes $lang "carousel_quotes" -}}
+{{- $intro := cond (eq $lang "de") "Stimmen aus über 20 Jahren Migräne-Aura-Community" "Voices from more than 20 years of the migraine-aura community" -}}
+{{- $moreLabel := cond (eq $lang "de") "Mehr lesen" "Read more" -}}
 
-    .quote-carousel blockquote {
-        font-style: italic;
-        font-size: 1rem;
-        line-height: 1.4;
-        margin: 0;
-        max-width: none;
-    }
-
-    .quote-carousel footer {
-        margin-top: 0.5rem;
-        font-size: 1rem;
-        color: #555;
-    }
-
-    .quote-carousel + * {
-        margin-top: 0 !important;
-        padding-top: 0 !important;
-    }
-</style>
-
-<div class="quote-carousel swiper">
-    <div class="swiper-wrapper">
-        {{ $currentLang := .Site.Language.Lang }} {{ range index
-        site.Data.quotes $currentLang "carousel_quotes" }}
-        <div class="swiper-slide">
-            <blockquote>
-                “{{ .text }}”
-                <footer>— {{ .author }}</footer>
-            </blockquote>
-        </div>
-        {{ end }}
-    </div>
+<div class="quote-voices">
+  <p class="quote-voices__intro">{{ $intro }}</p>
+  <div class="quote-voices__grid">
+    {{- range $i, $q := collections.Reverse $quotes }}
+    <figure class="quote-voices__card{{ if ge $i 2 }} is-hidden{{ end }}">
+      <blockquote>„{{ $q.text }}“</blockquote>
+      <figcaption>— {{ $q.author }}</figcaption>
+    </figure>
+    {{- end }}
+  </div>
+  {{- if gt (len $quotes) 2 }}
+  <button type="button" class="quote-voices__more" data-action="show-more">{{ $moreLabel }}</button>
+  {{- end }}
 </div>
 
-<!-- Swiper dependencies (only once globally!) -->
-<link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-/>
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<style>
+  .quote-voices {
+    width: 100%;
+    max-width: var(--home-reading-width, 38rem);
+    margin: 1.5rem auto;
+    box-sizing: border-box;
+  }
+  .quote-voices__intro {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--maf-darkblue, #08768a);
+    margin: 0 0 1.25rem;
+    text-align: center;
+    font-weight: 600;
+  }
+  .quote-voices__grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 768px) {
+    .quote-voices__grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  .quote-voices__card {
+    margin: 0;
+    padding: 1.25rem;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+  }
+  .quote-voices__card blockquote {
+    font-style: italic;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0 0 0.75rem;
+    color: #1f2937;
+  }
+  .quote-voices__card figcaption {
+    font-size: 0.85rem;
+    color: #6b7280;
+    margin-top: auto;
+  }
+  .quote-voices__card.is-hidden { display: none; }
+  .quote-voices__more {
+    display: block;
+    margin: 1.5rem auto 0;
+    padding: 0.55rem 1.4rem;
+    background: transparent;
+    color: var(--maf-darkblue, #08768a);
+    border: 1px solid var(--maf-darkblue, #08768a);
+    border-radius: 999px;
+    font: inherit;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+  }
+  .quote-voices__more:hover {
+    background: var(--maf-darkblue, #08768a);
+    color: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    .quote-voices__card {
+      background: #1f2937;
+      border-color: #374151;
+    }
+    .quote-voices__card blockquote { color: #f3f4f6; }
+    .quote-voices__card figcaption { color: #9ca3af; }
+  }
+  html.dark .quote-voices__card {
+    background: #1f2937;
+    border-color: #374151;
+  }
+  html.dark .quote-voices__card blockquote { color: #f3f4f6; }
+  html.dark .quote-voices__card figcaption { color: #9ca3af; }
+</style>
 
-<!-- Scoped initialization for quote carousel -->
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        console.log(
-            "Initializing Swiper: found",
-            document.querySelectorAll(".quote-carousel .swiper-slide").length,
-            "slides",
-        );
-
-        new Swiper(".quote-carousel", {
-            loop: true,
-            slidesPerView: 1, // ✅ Force only one quote at a time
-            autoplay: {
-                delay: 12000,
-                disableOnInteraction: false,
-            },
-            navigation: {
-                nextEl: ".quote-carousel .swiper-button-next",
-                prevEl: ".quote-carousel .swiper-button-prev",
-            },
-            pagination: {
-                el: ".quote-carousel .swiper-pagination",
-                clickable: true,
-            },
-        });
+(function () {
+  const root = document.querySelector(".quote-voices");
+  if (!root) return;
+  const btn = root.querySelector('[data-action="show-more"]');
+  if (!btn) return;
+  btn.addEventListener("click", function () {
+    root.querySelectorAll(".quote-voices__card.is-hidden").forEach(function (c) {
+      c.classList.remove("is-hidden");
     });
+    btn.remove();
+  });
+})();
 </script>
