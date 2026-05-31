@@ -33,9 +33,15 @@ Möchtest du Betatester:in werden? [Kontaktiere](../../contact/) uns gerne für 
 Ein Werkzeug zur Phänotypisierung deines Migränemusters über die Zeit. Zuvor in M-sense, einer DiGA (digitale Gesundheitsanwendung auf Rezept), eingesetzt und dort an mehr als 300 Millionen einzelnen Kopfschmerzepisoden validiert – wird derzeit auf die Website der Foundation übertragen.
 
 
-### [MigraineBrainRadar™](/de/test-suit/) — Entdeckung & Translation
+### MigraineBrainRadar™ — Entdeckung & Translation
 
-In der Erforschung: ein Werkzeug der nächsten Generation für die signalbasierte Früherkennung im Migräne-Prodrom.
+In der Erforschung: ein Werkzeug der nächsten Generation für die signalbasierte Früherkennung im Migräne-Prodrom. Die erste Dimension – ein Pareidolie-Wahrnehmungstest – ist nun als früher Prototyp verfügbar.
+
+<div class="cta-primary">
+
+{{< hextra/hero-button text="MigraineBrainRadar™ entdecken" link="/de/test-suit/" >}}
+
+</div>
 
 
 Dein Feedback ist uns wichtig. Wenn du Fragen hast oder Unterstützung benötigst, wenden dich bitte an unser Support-Team.

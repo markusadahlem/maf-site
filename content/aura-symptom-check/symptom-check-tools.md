@@ -33,9 +33,15 @@ Interested in becoming a beta tester? [Reach out](../../contact/) to us for more
 A phenotyping tool for your migraine pattern over time. Previously deployed in M-sense, a DiGA (prescription digital therapeutic), and validated there on more than 300 million individual headache attack records — now being transferred to the foundation's website.
 
 
-### [MigraineBrainRadar™](/test-suit/) — Discovery & translation
+### MigraineBrainRadar™ — Discovery & translation
 
-In active research: a next-generation tool aimed at signal-based early detection in the migraine prodrome.
+In active research: a next-generation tool aimed at signal-based early detection in the migraine prodrome. The first dimension — a pareidolia perception test — is now available as an early prototype.
+
+<div class="cta-primary">
+
+{{< hextra/hero-button text="Explore MigraineBrainRadar™" link="/test-suit/" >}}
+
+</div>
 
 
 Your feedback is valuable to us. If you have any questions or need assistance, please don't hesitate to contact our support team.
