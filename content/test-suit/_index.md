@@ -11,18 +11,7 @@ sidebar:
 Our aim is to highlight experiences before, during, and between migraine attacks that traditional checklists miss.
 
 
-### How Many Jesuses Do You Spot in 10 Toasts?
-
-
-{{< carousel
-  name="toast-teaser"
-  imageDir="images/toast-teaser/carousel"
-  yamlPath="images/toast-teaser/carousel/_carousel.yaml"
-  titleKey="headline"
-  slidesPerView="1"
-  delay="5000"
-  showPagination="true"
->}}
+{{< pareidolia-test lang="en" ctaHref="https://www.migraine-aura-foundation.org/test-suit/migrainebrainradar" >}}
 
 
 
