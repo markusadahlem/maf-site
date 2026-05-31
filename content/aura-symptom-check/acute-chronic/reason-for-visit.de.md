@@ -34,10 +34,18 @@ localStorage.setItem("redirectToDemographicInfo", "true");
 <script type="module" src="/js/aura-symptom-check/acute-chronic/reason-for-visit.js"></script>
 </div>
 
+<div style="max-width: 38rem; margin: 2rem auto; padding: 1.25rem 1.5rem; border-left: 4px solid #c2622d; background: rgba(194, 98, 45, 0.06); border-radius: 0 8px 8px 0;">
+
+### ⚠️ Wichtiger Hinweis
+
+Dieses Tool dient ausschließlich Informationszwecken und stellt keine medizinische Diagnose dar. Neurologische Symptome können viele Ursachen haben – darunter auch ernsthafte Erkrankungen. Wenn deine Symptome **neu, ungewöhnlich oder zunehmend** sind, suche bitte **unverzüglich ärztlichen Rat**.
+
+</div>
+
 <div id="password-prompt">
-  <h1>Enter Password</h1>
-  <input type="password" id="password-input" placeholder="Password">
-  <button onclick="checkPassword()">Submit</button>
+  <h1>Passwort eingeben</h1>
+  <input type="password" id="password-input" placeholder="Passwort">
+  <button onclick="checkPassword()">Absenden</button>
 </div>
 
 <script>
