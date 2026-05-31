@@ -11,7 +11,7 @@ width: normal
 {{< hextra/hero-headline >}}Migräne sichtbar machen{{< /hextra/hero-headline >}}
 
 <div class="home-hero-subtitle">
-<p>Migräne ist mehr als Kopfschmerz — eine komplexe Erkrankung mit einem breiten Spektrum neurologischer Symptome, die vor, während und zwischen den Attacken auftreten. Sie zu erkennen ist entscheidend für Diagnose, Behandlung und Lebensqualität — und doch fehlen oft die Worte. Wir übersetzen das narrative Erleben in die formale Sprache der Diagnostik.</p>
+<p> Wir übersetzen das narrative Erleben in die formale Sprache der Diagnostik.</p>
 </div>
 
 
@@ -24,6 +24,11 @@ width: normal
 
 </div>
 
+<div class="home-prose">
+
+Migräne ist mehr als Kopfschmerz — eine komplexe Erkrankung mit einem breiten Spektrum neurologischer Symptome, die vor, während und zwischen den Attacken auftreten. Sie zu erkennen ist entscheidend für Diagnose, Behandlung und Lebensqualität — und doch fehlen oft die Worte.
+
+</div>
 
 <div class="home-prose">
 
@@ -40,7 +45,7 @@ width: normal
 
 <div class="home-prose">
 
-**Mit euch, nicht nur für euch.** Eure Erfahrungen treiben die Suche nach dem _heiligen Gral_ der Migräneforschung an — Vorhersage und ultra-frühe Intervention.
+**Mit euch, nicht nur für euch.** Aus Betroffenen werden Beteiligte – in der Forschung, die ihr mitgestaltet, und in den Entscheidungen über eure Behandlung.
 
 </div>
 
