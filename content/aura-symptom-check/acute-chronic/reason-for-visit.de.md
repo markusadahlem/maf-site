@@ -10,10 +10,13 @@ sidebar:
 <div id="password-protected-content" style="display:none;">
 
 <span style="color:red">{{< t "flow.pages.common.betaVersion" >}}</span>
-### {{< t "flow.pages.common.tellUsWhyYoureHere" >}} 
+
+{{< aura-symptom-check/section-progress current="1" >}}
+
+### {{< t "flow.pages.reasonForVisit.heading" >}}
 
 
-Um Ihre Situation besser zu verstehen, bitten wir Sie, einige Fragen zu beantworten.
+Um Ihre Situation zu verstehen, stellen wir Ihnen hier **sieben** kurze Fragen. Zwei weitere Abschnitte folgen — einer zu den Symptomen, die Sie erlebt haben, und einer dazu, wie sie typischerweise verlaufen.
 Das hilft uns, einen Bericht zu erstellen, der klar, relevant und bei Bedarf leicht mit Ihrer Ärztin oder Ihrem Arzt geteilt werden kann.
 
 

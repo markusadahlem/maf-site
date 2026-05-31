@@ -1,0 +1,17 @@
+{{- $current := int (.Get "current" | default 1) -}}
+<nav class="section-progress" aria-label="{{ i18n "flow.progress.aria" }}">
+  <ol>
+    <li class="{{ if eq $current 1 }}is-current{{ else if gt $current 1 }}is-done{{ end }}">
+      <span class="step-num" aria-hidden="true">1</span>
+      <span class="step-label">{{ i18n "flow.progress.section1" }}</span>
+    </li>
+    <li class="{{ if eq $current 2 }}is-current{{ else if gt $current 2 }}is-done{{ end }}">
+      <span class="step-num" aria-hidden="true">2</span>
+      <span class="step-label">{{ i18n "flow.progress.section2" }}</span>
+    </li>
+    <li class="{{ if eq $current 3 }}is-current{{ end }}">
+      <span class="step-num" aria-hidden="true">3</span>
+      <span class="step-label">{{ i18n "flow.progress.section3" }}</span>
+    </li>
+  </ol>
+</nav>

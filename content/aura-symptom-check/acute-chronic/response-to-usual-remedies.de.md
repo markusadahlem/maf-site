@@ -7,7 +7,11 @@ sidebar:
   exclude: true
 ---
 
-### {{< t "flow.pages.common.tellUsWhyYoureHere" >}}
+<span style="color:red">{{< t "flow.pages.common.betaVersion" >}}</span>
+
+{{< aura-symptom-check/section-progress current="1" >}}
+
+### {{< t "flow.pages.responseToUsualRemedies.heading" >}}
 
 
 

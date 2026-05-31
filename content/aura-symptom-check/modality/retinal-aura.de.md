@@ -7,6 +7,9 @@ sidebar:
   exclude: true
 ---
 <span style="color:red">{{< t "flow.pages.common.betaVersion" >}}</span>
+
+{{< aura-symptom-check/section-progress current="2" >}}
+
 ## {{< t "flow.pages.modality.retinal.heading" >}}
 
 **{{< t "flow.pages.modality.retinal.prompt" >}}**

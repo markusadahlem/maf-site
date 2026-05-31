@@ -7,6 +7,8 @@ sidebar:
   exclude: true
 ---
 
+{{< aura-symptom-check/section-progress current="2" >}}
+
 ### {{< t "flow.pages.modality.heading" >}}
 
 We’re first checking for one or more fully reversible aura symptoms, as defined by clinical guidelines.

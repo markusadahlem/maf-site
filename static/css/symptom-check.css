@@ -256,3 +256,72 @@ form[id$="Form"] select:focus {
     margin-top: 1rem;
     font-size: 1.2rem;
 }
+
+/* 3-section progress indicator for the aura symptom-check flow */
+.section-progress {
+    max-width: 640px;
+    margin: 0.5rem auto 1.75rem;
+    font-family: var(--asc-font);
+}
+
+.section-progress ol {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.section-progress ol::before {
+    content: "";
+    position: absolute;
+    top: 1rem;
+    left: calc(16.66% + 0.4rem);
+    right: calc(16.66% + 0.4rem);
+    height: 2px;
+    background: var(--asc-border);
+    z-index: 0;
+}
+
+.section-progress li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: var(--asc-text-muted);
+    font-size: 0.82rem;
+    line-height: 1.2;
+    gap: 0.35rem;
+}
+
+.section-progress .step-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: var(--asc-surface);
+    border: 2px solid var(--asc-border);
+    font-weight: 600;
+}
+
+.section-progress li.is-current .step-num,
+.section-progress li.is-done .step-num {
+    background: var(--asc-primary);
+    border-color: var(--asc-primary);
+    color: #fff;
+}
+
+.section-progress li.is-current {
+    color: var(--asc-primary);
+    font-weight: 600;
+}
+
+.section-progress .step-label {
+    padding: 0 0.25rem;
+}

@@ -7,6 +7,8 @@ sidebar:
   exclude: true
 ---
 
+{{< aura-symptom-check/section-progress current="2" >}}
+
 ### {{< t "flow.pages.modality.heading" >}}
 
 Zunächst prüfen wir, ob bei dir eines oder mehrere vollständig reversible Aurasymptome vorlagen – so, wie sie in medizinischen Leitlinien definiert sind.

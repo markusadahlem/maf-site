@@ -362,3 +362,17 @@ flow.summary.conclusion.meets: "Die Antworten deuten darauf hin, dass die ICHD-3
 flow.summary.details.headingMultiple: "{Subj} berichtet von mehreren Auramodalitäten, darunter:"
 flow.summary.details.headingNone: "{Subj} hat keine Aurasymptome angegeben."
 flow.summary.negativeFindings: "Es wurden keine {labels} Aurasymptome angegeben."
+
+flow.progress.aria: "Abschnittsfortschritt"
+flow.progress.section1: "Zu deinem Besuch"
+flow.progress.section2: "Symptome"
+flow.progress.section3: "Merkmale"
+
+flow.pages.reasonForVisit.heading: "Grund deines Besuchs"
+flow.pages.onsetWindow.heading: "Wann es begann"
+flow.pages.symptomProgression.heading: "Wie es verlaufen ist"
+flow.pages.responseToUsualRemedies.heading: "Wirkung üblicher Mittel"
+flow.pages.symptomExperience1.heading: "Deine Erfahrung (1 von 2)"
+flow.pages.symptomExperience2.heading: "Deine Erfahrung (2 von 2)"
+flow.pages.priorMedicalAttention.heading: "Bisherige medizinische Betreuung"
+flow.pages.impactOnDailyLife.heading: "Auswirkung auf den Alltag"

@@ -339,3 +339,17 @@ flow.summary.conclusion.meets: "{Poss} responses indicate that the ICHD-3 criter
 flow.summary.details.headingMultiple: "{Subj} reports multiple aura modalities, including:"
 flow.summary.details.headingNone: "{Subj} did not report any aura symptoms."
 flow.summary.negativeFindings: "No {labels} aura symptoms were reported."
+
+flow.progress.aria: "Section progress"
+flow.progress.section1: "About your visit"
+flow.progress.section2: "Symptoms"
+flow.progress.section3: "Characteristics"
+
+flow.pages.reasonForVisit.heading: "Reason for visit"
+flow.pages.onsetWindow.heading: "When it started"
+flow.pages.symptomProgression.heading: "How it has progressed"
+flow.pages.responseToUsualRemedies.heading: "Response to usual remedies"
+flow.pages.symptomExperience1.heading: "Your experience (1 of 2)"
+flow.pages.symptomExperience2.heading: "Your experience (2 of 2)"
+flow.pages.priorMedicalAttention.heading: "Prior medical care"
+flow.pages.impactOnDailyLife.heading: "Impact on daily life"

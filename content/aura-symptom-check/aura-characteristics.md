@@ -6,6 +6,8 @@ sidebar:
   exclude: true
 ---
 
+{{< aura-symptom-check/section-progress current="3" >}}
+
 ### {{< t "flow.pages.auraCharacteristics.heading" >}}
 
 

@@ -8,7 +8,10 @@ sidebar:
 ---
 
 <span style="color:red">{{< t "flow.pages.common.betaVersion" >}}</span>
-### {{< t "flow.pages.common.tellUsWhyYoureHere" >}}
+
+{{< aura-symptom-check/section-progress current="1" >}}
+
+### {{< t "flow.pages.priorMedicalAttention.heading" >}}
 
 
 
