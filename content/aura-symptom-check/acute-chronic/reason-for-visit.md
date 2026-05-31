@@ -46,6 +46,10 @@ This tool is informational only — it is not a medical diagnosis. Neurological 
   <h1>Enter Password</h1>
   <input type="password" id="password-input" placeholder="Password">
   <button onclick="checkPassword()">Submit</button>
+
+  <p style="margin-top: 1.25rem; font-size: 0.95rem; color: #4b5563;">
+    Don't have a password yet? <a href="/blog/aura-symptom-check-brief/">Read about what the check covers</a> in the meantime.
+  </p>
 </div>
 
 <script>

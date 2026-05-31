@@ -46,6 +46,10 @@ Dieses Tool dient ausschließlich Informationszwecken und stellt keine medizinis
   <h1>Passwort eingeben</h1>
   <input type="password" id="password-input" placeholder="Passwort">
   <button onclick="checkPassword()">Absenden</button>
+
+  <p style="margin-top: 1.25rem; font-size: 0.95rem; color: #4b5563;">
+    Noch kein Passwort? <a href="/de/blog/aura-symptom-check-brief/">Lies in der Zwischenzeit, was der Check umfasst</a>.
+  </p>
 </div>
 
 <script>
