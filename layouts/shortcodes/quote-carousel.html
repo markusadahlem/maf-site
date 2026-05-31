@@ -10,8 +10,9 @@ No autoplay, no Swiper, no timers.
 */ -}}
 {{- $lang := .Site.Language.Lang -}}
 {{- $quotes := index site.Data.quotes $lang "carousel_quotes" -}}
-{{- $intro := cond (eq $lang "de") "Stimmen aus über 20 Jahren Migräne-Aura-Community" "Voices from more than 20 years of the migraine-aura community" -}}
+{{- $intro := cond (eq $lang "de") "Stimmen unserer Besucher:innen, aus über 20 Jahren" "Voices from our visitors, over 20 years" -}}
 {{- $moreLabel := cond (eq $lang "de") "Mehr lesen" "Read more" -}}
+{{- $ctaHTML := cond (eq $lang "de") "Möchtest du deine eigene Aura-Erfahrung teilen? <a href=\"/de/contact/\">Schreib uns</a> – Initialen und Jahr genügen." "Want to share your own aura experience? <a href=\"/contact/\">Get in touch</a> — initials and year are enough." -}}
 
 <div class="quote-voices">
   <p class="quote-voices__intro">{{ $intro }}</p>
@@ -25,6 +26,7 @@ No autoplay, no Swiper, no timers.
   </div>
   {{- if gt (len $quotes) 2 }}
   <button type="button" class="quote-voices__more" data-action="show-more">{{ $moreLabel }}</button>
+  <p class="quote-voices__cta is-hidden">{{ $ctaHTML | safeHTML }}</p>
   {{- end }}
 </div>
 
@@ -74,7 +76,7 @@ No autoplay, no Swiper, no timers.
     color: #6b7280;
     margin-top: auto;
   }
-  .quote-voices__card.is-hidden { display: none; }
+  .quote-voices .is-hidden { display: none; }
   .quote-voices__more {
     display: block;
     margin: 1.5rem auto 0;
@@ -91,6 +93,18 @@ No autoplay, no Swiper, no timers.
   .quote-voices__more:hover {
     background: var(--maf-darkblue, #08768a);
     color: #ffffff;
+  }
+  .quote-voices__cta {
+    margin: 1.75rem auto 0;
+    text-align: center;
+    color: #4b5563;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    max-width: 38rem;
+  }
+  .quote-voices__cta a {
+    color: var(--maf-darkblue, #08768a);
+    font-weight: 500;
   }
   @media (prefers-color-scheme: dark) {
     .quote-voices__card {
@@ -115,8 +129,8 @@ No autoplay, no Swiper, no timers.
   const btn = root.querySelector('[data-action="show-more"]');
   if (!btn) return;
   btn.addEventListener("click", function () {
-    root.querySelectorAll(".quote-voices__card.is-hidden").forEach(function (c) {
-      c.classList.remove("is-hidden");
+    root.querySelectorAll(".is-hidden").forEach(function (el) {
+      el.classList.remove("is-hidden");
     });
     btn.remove();
   });

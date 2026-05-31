@@ -32,11 +32,7 @@ Migraine isn't just a headache—it's a complex condition marked by a wide range
 
 </div>
 
-<div class="home-prose">
 
-**What visitors say about our site**
-
-</div>
 
 {{< quote-carousel >}}
 

@@ -30,11 +30,7 @@ Migräne ist mehr als Kopfschmerz — eine komplexe Erkrankung mit einem breiten
 
 </div>
 
-<div class="home-prose">
 
-**Was Menschen, die mit Migräne leben und unsere Seite besuchten, sagen**
-
-</div>
 
 {{< quote-carousel >}}
 
