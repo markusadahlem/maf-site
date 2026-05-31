@@ -8,14 +8,11 @@ sidebar:
 
 **A new way to understand the migraine brain**
 
-Our aim is to highlight experiences before, during, and between migraine attacks that traditional checklists miss.
-
+How easily your brain finds patterns in randomness depends on how sensitive it currently is to stimulation, and that sensitivity shifts before, after and between migraine attacks. This is one of seven dimensions in the MigraineBrainRadar™ — each needs to be a solid, proper test, and this dimension is still an early prototype.
 
 {{< pareidolia-test lang="en" ctaHref="https://www.migraine-aura-foundation.org/test-suit/migrainebrainradar" >}}
 
-
-
-The Seeing-Jesus-in-Toast test is part of the MigraineBrainRadar™ and reveals how your brain makes sense of vague or noisy images — a phenomenon called pareidolia. It’s part of a growing set of perception tasks designed to explore how your brain processes the world — before, directly after, and inbetween migraine attacks.
+What you just experienced is pareidolia — your brain making meaning out of noise. Our aim is to surface these small shifts that traditional checklists miss.
 
 [Explore the **MigraineBrainRadar™** →](migrainebrainradar)
 
