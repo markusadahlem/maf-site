@@ -70,7 +70,7 @@ Migraine isn't just a headache—it's a complex condition marked by a wide range
     link="test-suit"
     class="hx:aspect-auto hx:md:aspect-[1.1/1] hx:max-lg:min-h-[340px]"
     image="/images/teaser/jesus-in-toast.png"
-    imageClass="hx:top-[0%] hx:left-[0px] hx:dark:opacity-80"
+    imageClass="hx:object-contain hx:w-full hx:h-full hx:relative hx:dark:opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(203, 28, 66, 0.1),hsla(0,0%,100%,0));"
   >}}
 
