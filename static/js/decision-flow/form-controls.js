@@ -34,7 +34,7 @@ export function bindOtherTextarea({
     hideWhenChecked = [],
     textarea,
     counter,
-    maxLength = 80,
+    maxLength = 200,
     onChange,
 }) {
     const updateCounter = () => {
