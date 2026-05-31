@@ -1,45 +1,25 @@
-{{- if and (not hugo.IsProduction) (eq hugo.Environment "theme") }} {{- $styles
-:= resources.Get "css/styles.css" }} {{- $styles = $styles | postCSS (dict
-"inlineImports" true) }}
-<link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
-{{- else }} {{- $styles := resources.Get "css/compiled/main.css" -}} {{- if
-hugo.IsProduction }} {{- $styles = $styles | minify | fingerprint }}
-<link
-    rel="preload"
-    href="{{ $styles.RelPermalink }}"
-    as="style"
-    integrity="{{ $styles.Data.Integrity }}"
-/>
-<link
-    href="{{ $styles.RelPermalink }}"
-    rel="stylesheet"
-    integrity="{{ $styles.Data.Integrity }}"
-/>
-{{- else }}
-<link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
-{{- end }} {{- end }}
+{{- /*
+Load Hextra's full CSS chain (main + custom + variables). Mirrors the
+pattern from the theme's `_partials/head.html` (Hextra v0.12.3).
 
-<!-- Custom CSS -->
-{{- $custom := resources.Get "css/custom.css" }} {{- if hugo.IsProduction -}}
-{{- $custom = $custom | minify | fingerprint }}
-<link
-    href="{{ $custom.RelPermalink }}"
-    rel="stylesheet"
-    integrity="{{ $custom.Data.Integrity }}"
-/>
-{{- else }}
-<link href="{{ $custom.RelPermalink }}" rel="stylesheet" />
-{{- end }} {{ $custom := resources.Get "css/custom.css" | minify | fingerprint
-}}
-<link
-    rel="stylesheet"
-    href="{{ $custom.RelPermalink }}"
-    integrity="{{ $custom.Data.Integrity }}"
-/>
+`resources.Get` picks up the files from the theme module's
+`assets/css/` directory — no per-site versions of these are needed.
 
-{{ $custom := resources.Get "css/custom.css" | minify | fingerprint }}
-<link
-    rel="stylesheet"
-    href="{{ $custom.RelPermalink }}"
-    integrity="{{ $custom.Data.Integrity }}"
-/>
+Production: concat + minify + fingerprint into a single stylesheet
+with preload + integrity. Dev: load each file individually for
+faster rebuilds.
+*/ -}}
+{{- $mainCss := resources.Get "css/compiled/main.css" -}}
+{{- $customCss := resources.Get "css/custom.css" -}}
+{{- $variablesCss := resources.Get "css/variables.css" | resources.ExecuteAsTemplate "css/variables.css" . -}}
+
+{{- if hugo.IsProduction }}
+  {{- $styles := slice $variablesCss $mainCss $customCss | resources.Concat "css/compiled/main.css" | minify | fingerprint }}
+  <link rel="preload" href="{{ $styles.RelPermalink }}" as="style" integrity="{{ $styles.Data.Integrity }}" />
+  <link href="{{ $styles.RelPermalink }}" rel="stylesheet" integrity="{{ $styles.Data.Integrity }}" />
+{{- else }}
+  {{- $styles := resources.Get "css/compiled/main.css" -}}
+  <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
+  <link href="{{ $variablesCss.RelPermalink }}" rel="stylesheet" />
+  <link href="{{ $customCss.RelPermalink }}" rel="stylesheet" />
+{{- end }}
