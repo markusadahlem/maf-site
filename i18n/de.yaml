@@ -126,6 +126,15 @@ flow.modality.visual.option.geometric: "Geometrische Formen oder Muster"
 flow.modality.visual.option.other: "Anderes visuelles Phänomen"
 flow.modality.visual.option.none: "Keine der oben genannten – ich hatte keine Sehstörungen."
 
+# Field Guide info popovers on visual-aura options
+flow.common.info.moreInfo: "Mehr Informationen"
+flow.common.info.readFullEntry: "Ganzen Eintrag lesen"
+flow.modality.visual.info.flicker: "Punktförmige Lichtblitze — wie Fernseh‑Rauschen oder rasches Flimmern — die im Sichtfeld auftauchen. Oft das erste Anzeichen einer visuellen Aura; dauert Sekunden bis Minuten und vergeht wieder."
+flow.modality.visual.info.zigzag: "Helle Zickzack- oder Wellenlinien, meist in Bogenform, die sich über 5–20 Minuten vom Sehzentrum nach außen ausdehnen. Auch Fortifikationsspektrum oder Flimmerbogen genannt."
+flow.modality.visual.info.blurred: "Das Sehen wird unscharf, schleierhaft oder verengt sich wie ein Tunnelblick. Umrisse bleiben sichtbar, Details fehlen. Geht immer wieder zurück."
+flow.modality.visual.info.scotoma: "Ein Bereich des Gesichtsfeldes wird dunkel oder leer — ein blinder Fleck, klein oder groß. Er kann am Rand flimmern. Das Gehirn „füllt“ den fehlenden Bereich oft mit dem Hintergrund auf."
+flow.modality.visual.info.geometric: "Gitter, Raster, Kaleidoskopmuster, Spiralen oder konzentrische Ringe legen sich über das Gesehene. Diese Formkonstanten sind typische visuelle Halluzinationen während der Aura."
+
 # Modality forms — sensory aura
 flow.modality.sensory.option.tingling: "Kribbeln oder Ameisenlaufen"
 flow.modality.sensory.option.numbness: "Taubheitsgefühl oder ein „schweres“ Gefühl in Arm, Hand, Gesicht oder Bein"

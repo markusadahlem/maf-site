@@ -1,31 +1,79 @@
+{{- $moreInfo := i18n "flow.common.info.moreInfo" -}}
+{{- $readFull := i18n "flow.common.info.readFullEntry" -}}
 <form id="visualAuraForm">
     <fieldset>
         <br />
 
-        <label
-            ><input type="checkbox" name="visualSymptom" value="flicker" />
-            {{ i18n "flow.modality.visual.option.flicker" }}</label
-        ><br />
+        <span class="symptom-option">
+            <label>
+                <input type="checkbox" name="visualSymptom" value="flicker" />
+                {{ i18n "flow.modality.visual.option.flicker" }}
+            </label>
+            <details class="symptom-info">
+                <summary aria-label="{{ $moreInfo }}">ⓘ</summary>
+                <div class="symptom-info-popover">
+                    <p>{{ i18n "flow.modality.visual.info.flicker" }}</p>
+                    <a href="/symptom-guide/transitory_visual-hallucinations/#random-form" target="_blank" rel="noopener noreferrer">{{ $readFull }} ↗</a>
+                </div>
+            </details>
+        </span><br />
 
-        <label
-            ><input type="checkbox" name="visualSymptom" value="zigzag" />
-            {{ i18n "flow.modality.visual.option.zigzag" }}</label
-        ><br />
+        <span class="symptom-option">
+            <label>
+                <input type="checkbox" name="visualSymptom" value="zigzag" />
+                {{ i18n "flow.modality.visual.option.zigzag" }}
+            </label>
+            <details class="symptom-info">
+                <summary aria-label="{{ $moreInfo }}">ⓘ</summary>
+                <div class="symptom-info-popover">
+                    <p>{{ i18n "flow.modality.visual.info.zigzag" }}</p>
+                    <a href="/symptom-guide/transitory_visual-hallucinations/#line-form" target="_blank" rel="noopener noreferrer">{{ $readFull }} ↗</a>
+                </div>
+            </details>
+        </span><br />
 
-        <label
-            ><input type="checkbox" name="visualSymptom" value="blurred" />
-            {{ i18n "flow.modality.visual.option.blurred" }}</label
-        ><br />
+        <span class="symptom-option">
+            <label>
+                <input type="checkbox" name="visualSymptom" value="blurred" />
+                {{ i18n "flow.modality.visual.option.blurred" }}
+            </label>
+            <details class="symptom-info">
+                <summary aria-label="{{ $moreInfo }}">ⓘ</summary>
+                <div class="symptom-info-popover">
+                    <p>{{ i18n "flow.modality.visual.info.blurred" }}</p>
+                    <a href="/symptom-guide/transitory_visual-loss/#blurred-vision" target="_blank" rel="noopener noreferrer">{{ $readFull }} ↗</a>
+                </div>
+            </details>
+        </span><br />
 
-        <label
-            ><input type="checkbox" name="visualSymptom" value="scotoma" />
-            {{ i18n "flow.modality.visual.option.scotoma" }}</label
-        ><br />
+        <span class="symptom-option">
+            <label>
+                <input type="checkbox" name="visualSymptom" value="scotoma" />
+                {{ i18n "flow.modality.visual.option.scotoma" }}
+            </label>
+            <details class="symptom-info">
+                <summary aria-label="{{ $moreInfo }}">ⓘ</summary>
+                <div class="symptom-info-popover">
+                    <p>{{ i18n "flow.modality.visual.info.scotoma" }}</p>
+                    <a href="/symptom-guide/transitory_visual-loss/#scotoma" target="_blank" rel="noopener noreferrer">{{ $readFull }} ↗</a>
+                </div>
+            </details>
+        </span><br />
 
-        <label
-            ><input type="checkbox" name="visualSymptom" value="geometric" />
-            {{ i18n "flow.modality.visual.option.geometric" }}</label
-        ><br />
+        <span class="symptom-option">
+            <label>
+                <input type="checkbox" name="visualSymptom" value="geometric" />
+                {{ i18n "flow.modality.visual.option.geometric" }}
+            </label>
+            <details class="symptom-info">
+                <summary aria-label="{{ $moreInfo }}">ⓘ</summary>
+                <div class="symptom-info-popover">
+                    <p>{{ i18n "flow.modality.visual.info.geometric" }}</p>
+                    <a href="/symptom-guide/transitory_visual-hallucinations/#lattice-form" target="_blank" rel="noopener noreferrer">{{ $readFull }} ↗</a>
+                </div>
+            </details>
+        </span><br />
+
         <label
             ><input type="checkbox" name="visualSymptom" value="other" />
             {{ i18n "flow.modality.visual.option.other" }}</label

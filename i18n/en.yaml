@@ -108,6 +108,15 @@ flow.modality.visual.option.geometric: "Geometric shapes or patterns"
 flow.modality.visual.option.other: "Other visual phenomenon"
 flow.modality.visual.option.none: "None of the above – I did not experience any visual disturbances."
 
+# Field Guide info popovers on visual-aura options
+flow.common.info.moreInfo: "More information"
+flow.common.info.readFullEntry: "Read full entry"
+flow.modality.visual.info.flicker: "Random points of light — like TV static or rapid flickering — that appear in the visual field. Often the first sign of visual aura, lasting seconds to minutes before resolving."
+flow.modality.visual.info.zigzag: "Bright zig‑zag or wavy lines, typically arc‑shaped, that expand outward from the centre of vision over 5–20 minutes. Also called the fortification spectrum or scintillating arc."
+flow.modality.visual.info.blurred: "Vision becomes fuzzy, out‑of‑focus, or narrows like looking through a tunnel. You can still see general shapes and outlines, but detail is degraded. Always reversible."
+flow.modality.visual.info.scotoma: "An area of vision goes blank or dark — a hole or blind spot in the visual field that can be small or large. It may shimmer at its edge. The brain often “fills in” the missing area with the surrounding background."
+flow.modality.visual.info.geometric: "Lattices, grids, kaleidoscope patterns, spirals, or concentric rings appear superimposed on what you see. These are form‑constants of visual hallucination during aura."
+
 # Modality forms — sensory aura
 flow.modality.sensory.option.tingling: "Pins‑and‑needles or tingling sensations"
 flow.modality.sensory.option.numbness: "Numbness or “heavy” feeling in an arm, hand, face, or leg"

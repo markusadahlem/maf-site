@@ -325,3 +325,77 @@ form[id$="Form"] select:focus {
 .section-progress .step-label {
     padding: 0 0.25rem;
 }
+
+/* Field Guide info popovers on modality form options */
+.symptom-option {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.4rem;
+    width: 100%;
+}
+.symptom-option > label {
+    flex: 1 1 auto;
+}
+.symptom-info {
+    display: inline-block;
+    position: relative;
+}
+.symptom-info > summary {
+    list-style: none;
+    cursor: pointer;
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    text-align: center;
+    border-radius: 999px;
+    color: var(--asc-primary, #08768a);
+    font-size: 1rem;
+    user-select: none;
+    transition: background-color 120ms ease;
+}
+.symptom-info > summary::-webkit-details-marker {
+    display: none;
+}
+.symptom-info > summary:hover,
+.symptom-info > summary:focus-visible {
+    background-color: rgba(8, 118, 138, 0.12);
+    outline: none;
+}
+.symptom-info[open] > summary {
+    background-color: rgba(8, 118, 138, 0.18);
+}
+.symptom-info-popover {
+    position: absolute;
+    z-index: 5;
+    top: calc(100% + 0.35rem);
+    right: 0;
+    max-width: 22rem;
+    width: max-content;
+    background: var(--asc-surface, #ffffff);
+    color: var(--asc-text, #0f172a);
+    border: 1px solid var(--asc-border, #e2e8f0);
+    border-radius: var(--asc-radius, 12px);
+    box-shadow: var(--asc-shadow-md, 0 4px 12px rgb(0 0 0 / 0.08));
+    padding: 0.85rem 1rem;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    text-align: left;
+}
+.symptom-info-popover p {
+    margin: 0 0 0.6rem;
+}
+.symptom-info-popover a {
+    display: inline-block;
+    color: var(--asc-primary, #08768a);
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 0.92rem;
+}
+@media (max-width: 480px) {
+    .symptom-info-popover {
+        right: auto;
+        left: 0;
+        max-width: calc(100vw - 2rem);
+    }
+}
