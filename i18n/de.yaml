@@ -139,6 +139,7 @@ flow.modality.visual.info.retinal: "Ein einseitiges Ereignis: Das Sehen wird auf
 flow.modality.visual.info.other: "Wenn deine visuelle Erfahrung zu keiner der obigen Optionen passt, schau dir die vollständigen Kataloge des Symptom-Leitfadens an — vorübergehende (klingen meist innerhalb von 60 Minuten ab) und persistierende (bleiben länger) visuelle Symptome."
 flow.common.info.transitoryVisualLabel: "Vorübergehende visuelle Symptome"
 flow.common.info.persistentVisualLabel: "Persistierende visuelle Symptome"
+flow.common.info.transitorySpeechLanguageLabel: "Vorübergehende Sprach‑ und Sprechsymptome"
 
 # Modality forms — sensory aura
 flow.modality.sensory.option.tingling: "Kribbeln oder Ameisenlaufen"
@@ -151,6 +152,12 @@ flow.modality.speech.option.aphasia: "Wortfindungsstörungen (Aphasie)"
 flow.modality.speech.option.slurred: "Verwaschene oder unverständliche Sprache"
 flow.modality.speech.option.inability: "Unfähigkeit zu sprechen oder Sätze zu bilden"
 flow.modality.speech.option.other: "Andere Sprach‑ oder Sprechveränderungen"
+
+# Field Guide info popovers on speech-aura options
+flow.modality.speech.info.aphasia: "Du weißt, was du sagen willst, kannst aber die Wörter nicht finden, oder die Sätze kommen verdreht heraus. Hören und Verstehen sind ansonsten intakt. Auch expressive Aphasie oder Dysphasie genannt."
+flow.modality.speech.info.slurred: "Die Sprache klingt undeutlich, verwaschen oder schwer — wie nach Alkohol — obwohl deine Gedanken klar sind. Klinisch Dysarthrie genannt; typisch für die Basilarisaura."
+flow.modality.speech.info.inability: "Vorübergehender Verlust der Fähigkeit, überhaupt zu sprechen (Mutismus). Bei der Aura selten, immer kurz, und klingt mit der Aura vollständig wieder ab."
+flow.modality.speech.info.other: "Jede andere Sprach‑ oder Sprechstörung während deiner Aura — z. B. Stottern, Wortverwechslungen (paraphasisch), oder Schwierigkeiten, andere zu verstehen."
 
 # Modality forms — motor aura
 flow.modality.motor.locationsPrompt: "Falls „Ja“, wo? (Mehrfachauswahl möglich)"

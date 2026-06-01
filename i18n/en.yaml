@@ -121,6 +121,7 @@ flow.modality.visual.info.retinal: "A monocular event: vision goes dark, blank o
 flow.modality.visual.info.other: "If your visual experience doesn't match any of the options above, browse the Field Guide's full catalogues of visual symptoms — transitory (resolving within ~60 minutes) and persistent (lasting longer)."
 flow.common.info.transitoryVisualLabel: "Transitory visual symptoms"
 flow.common.info.persistentVisualLabel: "Persistent visual symptoms"
+flow.common.info.transitorySpeechLanguageLabel: "Transitory speech and language symptoms"
 
 # Modality forms — sensory aura
 flow.modality.sensory.option.tingling: "Pins‑and‑needles or tingling sensations"
@@ -133,6 +134,12 @@ flow.modality.speech.option.aphasia: "Difficulty finding words (aphasia)"
 flow.modality.speech.option.slurred: "Slurred or garbled speech"
 flow.modality.speech.option.inability: "Inability to speak or form sentences"
 flow.modality.speech.option.other: "Other speech/language changes"
+
+# Field Guide info popovers on speech-aura options
+flow.modality.speech.info.aphasia: "You know what you want to say but can't access the words, or sentences come out scrambled. Hearing and comprehension are otherwise intact. Also called expressive aphasia or dysphasia."
+flow.modality.speech.info.slurred: "Speech sounds mumbled, slurred or thick — as if you'd been drinking — even though your thoughts are clear. Clinically called dysarthria; a hallmark of basilar‑type aura."
+flow.modality.speech.info.inability: "Temporary loss of the ability to produce any speech at all (mutism). Rare during aura, always brief, and resolves completely as the aura clears."
+flow.modality.speech.info.other: "Any other speech or language disturbance during your aura — for example, stuttering, paraphasic word‑substitutions, or trouble understanding what others are saying."
 
 # Modality forms — motor aura
 flow.modality.motor.locationsPrompt: "If “Yes,” where? (Select all that apply)"

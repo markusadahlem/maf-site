@@ -1,24 +1,64 @@
+{{- $moreInfo := i18n "flow.common.info.moreInfo" -}}
+{{- $readFull := i18n "flow.common.info.readFullEntry" -}}
 <form id="speechAuraForm">
     <fieldset>
-        <label>
-            <input type="checkbox" name="speechSymptom" value="aphasia" />
-            {{ i18n "flow.modality.speech.option.aphasia" }} </label
-        ><br />
+        <br />
 
-        <label>
-            <input type="checkbox" name="speechSymptom" value="slurred" />
-            {{ i18n "flow.modality.speech.option.slurred" }} </label
-        ><br />
+        <span class="symptom-option">
+            <label>
+                <input type="checkbox" name="speechSymptom" value="aphasia" />
+                {{ i18n "flow.modality.speech.option.aphasia" }}
+            </label>
+            <details class="symptom-info">
+                <summary aria-label="{{ $moreInfo }}">ⓘ</summary>
+                <div class="symptom-info-popover">
+                    <p>{{ i18n "flow.modality.speech.info.aphasia" }}</p>
+                    <a href="/symptom-guide/transitory_language-symptoms/#expressive-aphasia" target="_blank" rel="noopener noreferrer">{{ $readFull }} ↗</a>
+                </div>
+            </details>
+        </span><br />
 
-        <label>
-            <input type="checkbox" name="speechSymptom" value="inability" />
-            {{ i18n "flow.modality.speech.option.inability" }} </label
-        ><br />
+        <span class="symptom-option">
+            <label>
+                <input type="checkbox" name="speechSymptom" value="slurred" />
+                {{ i18n "flow.modality.speech.option.slurred" }}
+            </label>
+            <details class="symptom-info">
+                <summary aria-label="{{ $moreInfo }}">ⓘ</summary>
+                <div class="symptom-info-popover">
+                    <p>{{ i18n "flow.modality.speech.info.slurred" }}</p>
+                    <a href="/symptom-guide/transitory_speech-symptoms/#dysarthria" target="_blank" rel="noopener noreferrer">{{ $readFull }} ↗</a>
+                </div>
+            </details>
+        </span><br />
 
-        <label id="speechOtherLabel">
-            <input type="checkbox" name="speechSymptom" value="other" />
-            {{ i18n "flow.modality.speech.option.other" }} </label
-        ><br /><br />
+        <span class="symptom-option">
+            <label>
+                <input type="checkbox" name="speechSymptom" value="inability" />
+                {{ i18n "flow.modality.speech.option.inability" }}
+            </label>
+            <details class="symptom-info">
+                <summary aria-label="{{ $moreInfo }}">ⓘ</summary>
+                <div class="symptom-info-popover">
+                    <p>{{ i18n "flow.modality.speech.info.inability" }}</p>
+                    <a href="/symptom-guide/transitory_speech-symptoms/#mutism" target="_blank" rel="noopener noreferrer">{{ $readFull }} ↗</a>
+                </div>
+            </details>
+        </span><br />
+
+        <span class="symptom-option">
+            <label id="speechOtherLabel">
+                <input type="checkbox" name="speechSymptom" value="other" />
+                {{ i18n "flow.modality.speech.option.other" }}
+            </label>
+            <details class="symptom-info">
+                <summary aria-label="{{ $moreInfo }}">ⓘ</summary>
+                <div class="symptom-info-popover">
+                    <p>{{ i18n "flow.modality.speech.info.other" }}</p>
+                    <a href="{{ "symptom-guide/" | relLangURL }}#transitory-speech-language" target="_blank" rel="noopener noreferrer">{{ i18n "flow.common.info.transitorySpeechLanguageLabel" }} ↗</a>
+                </div>
+            </details>
+        </span><br /><br />
 
         <label id="speechNoneLabel">
             <input type="checkbox" name="speechSymptom" value="none" />
