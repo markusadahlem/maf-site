@@ -40,13 +40,22 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   nextBtn.addEventListener("click", () => {
-    const selected = Array.from(checkboxes)
+    const allSelected = Array.from(checkboxes)
       .filter((cb) => cb.checked)
       .map((cb) => cb.value);
+    // Split `retinal` off — it maps to its own modality bucket
+    // (folded into this form to remove the standalone retinal-aura page).
+    const visualSelected = allSelected.filter((v) => v !== "retinal");
+    const retinalSelected = allSelected.includes("retinal");
     const description = otherBox.checked ? otherText.value.trim() : "";
 
-    setModalityAnswer("visual", { selected, description });
+    setModalityAnswer("visual", { selected: visualSelected, description });
     addSelectedModality("visual");
+
+    if (retinalSelected) {
+      setModalityAnswer("retinal", { selected: ["yes"], description: "" });
+      addSelectedModality("retinal");
+    }
 
     flowRunner.goNext("visual-aura");
   });

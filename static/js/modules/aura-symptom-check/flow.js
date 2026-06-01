@@ -21,10 +21,9 @@ export const flow = {
         },
 
         // ── Modality cascade ─────────────────────────────────────────────
+        // Retinal aura was a standalone step; its single yes/no/unsure
+        // question is now a checkbox option inside the visual-aura form.
         "visual-aura": {
-            next: "/aura-symptom-check/modality/retinal-aura/",
-        },
-        "retinal-aura": {
             next: "/aura-symptom-check/modality/sensory-aura/",
         },
         "sensory-aura": {

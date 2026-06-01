@@ -62,6 +62,20 @@
 
         <span class="symptom-option">
             <label>
+                <input type="checkbox" name="visualSymptom" value="retinal" />
+                {{ i18n "flow.modality.visual.option.retinal" }}
+            </label>
+            <details class="symptom-info">
+                <summary aria-label="{{ $moreInfo }}">ⓘ</summary>
+                <div class="symptom-info-popover">
+                    <p>{{ i18n "flow.modality.visual.info.retinal" }}</p>
+                    <a href="/symptom-guide/transitory_visual-loss/" target="_blank" rel="noopener noreferrer">{{ $readFull }} ↗</a>
+                </div>
+            </details>
+        </span><br />
+
+        <span class="symptom-option">
+            <label>
                 <input type="checkbox" name="visualSymptom" value="geometric" />
                 {{ i18n "flow.modality.visual.option.geometric" }}
             </label>
