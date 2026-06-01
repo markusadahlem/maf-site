@@ -386,11 +386,14 @@ form[id$="Form"] select:focus {
     margin: 0 0 0.6rem;
 }
 .symptom-info-popover a {
-    display: inline-block;
+    display: block;
     color: var(--asc-primary, #08768a);
     text-decoration: underline;
     font-weight: 600;
     font-size: 0.92rem;
+}
+.symptom-info-popover a + a {
+    margin-top: 0.35rem;
 }
 @media (max-width: 480px) {
     .symptom-info-popover {

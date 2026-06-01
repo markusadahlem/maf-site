@@ -106,7 +106,7 @@ flow.modality.visual.option.blurred: "Blurred or tunnel vision"
 flow.modality.visual.option.scotoma: "Areas of partial loss of vision (“blind spots”/scotoma)"
 flow.modality.visual.option.geometric: "Geometric shapes or patterns"
 flow.modality.visual.option.other: "Other visual phenomenon"
-flow.modality.visual.option.none: "None of the above – I did not experience any visual disturbances."
+flow.modality.visual.option.none: "I did not experience any visual disturbances."
 
 # Field Guide info popovers on visual-aura options
 flow.common.info.moreInfo: "More information"
@@ -116,6 +116,9 @@ flow.modality.visual.info.zigzag: "Bright zig‑zag or wavy lines, typically arc
 flow.modality.visual.info.blurred: "Vision becomes fuzzy, out‑of‑focus, or narrows like looking through a tunnel. You can still see general shapes and outlines, but detail is degraded. Always reversible."
 flow.modality.visual.info.scotoma: "An area of vision goes blank or dark — a hole or blind spot in the visual field that can be small or large. It may shimmer at its edge. The brain often “fills in” the missing area with the surrounding background."
 flow.modality.visual.info.geometric: "Lattices, grids, kaleidoscope patterns, spirals, or concentric rings appear superimposed on what you see. These are form‑constants of visual hallucination during aura."
+flow.modality.visual.info.other: "If your visual experience doesn't match any of the options above, browse the Field Guide's full catalogues of visual symptoms — transitory (resolving within ~60 minutes) and persistent (lasting longer)."
+flow.common.info.transitoryVisualLabel: "Transitory visual symptoms"
+flow.common.info.persistentVisualLabel: "Persistent visual symptoms"
 
 # Modality forms — sensory aura
 flow.modality.sensory.option.tingling: "Pins‑and‑needles or tingling sensations"

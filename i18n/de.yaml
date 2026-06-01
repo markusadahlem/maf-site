@@ -124,7 +124,7 @@ flow.modality.visual.option.blurred: "Verschwommenes Sehen oder Tunnelblick"
 flow.modality.visual.option.scotoma: "Bereiche mit teilweisem Sehverlust („blinde Flecken“/Skotom)"
 flow.modality.visual.option.geometric: "Geometrische Formen oder Muster"
 flow.modality.visual.option.other: "Anderes visuelles Phänomen"
-flow.modality.visual.option.none: "Keine der oben genannten – ich hatte keine Sehstörungen."
+flow.modality.visual.option.none: "Ich hatte keine Sehstörungen."
 
 # Field Guide info popovers on visual-aura options
 flow.common.info.moreInfo: "Mehr Informationen"
@@ -134,6 +134,9 @@ flow.modality.visual.info.zigzag: "Helle Zickzack- oder Wellenlinien, meist in B
 flow.modality.visual.info.blurred: "Das Sehen wird unscharf, schleierhaft oder verengt sich wie ein Tunnelblick. Umrisse bleiben sichtbar, Details fehlen. Geht immer wieder zurück."
 flow.modality.visual.info.scotoma: "Ein Bereich des Gesichtsfeldes wird dunkel oder leer — ein blinder Fleck, klein oder groß. Er kann am Rand flimmern. Das Gehirn „füllt“ den fehlenden Bereich oft mit dem Hintergrund auf."
 flow.modality.visual.info.geometric: "Gitter, Raster, Kaleidoskopmuster, Spiralen oder konzentrische Ringe legen sich über das Gesehene. Diese Formkonstanten sind typische visuelle Halluzinationen während der Aura."
+flow.modality.visual.info.other: "Wenn deine visuelle Erfahrung zu keiner der obigen Optionen passt, schau dir die vollständigen Kataloge des Symptom-Leitfadens an — vorübergehende (klingen meist innerhalb von 60 Minuten ab) und persistierende (bleiben länger) visuelle Symptome."
+flow.common.info.transitoryVisualLabel: "Vorübergehende visuelle Symptome"
+flow.common.info.persistentVisualLabel: "Persistierende visuelle Symptome"
 
 # Modality forms — sensory aura
 flow.modality.sensory.option.tingling: "Kribbeln oder Ameisenlaufen"

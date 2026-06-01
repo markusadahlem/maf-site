@@ -74,10 +74,20 @@
             </details>
         </span><br />
 
-        <label
-            ><input type="checkbox" name="visualSymptom" value="other" />
-            {{ i18n "flow.modality.visual.option.other" }}</label
-        ><br />
+        <span class="symptom-option">
+            <label>
+                <input type="checkbox" name="visualSymptom" value="other" />
+                {{ i18n "flow.modality.visual.option.other" }}
+            </label>
+            <details class="symptom-info">
+                <summary aria-label="{{ $moreInfo }}">ⓘ</summary>
+                <div class="symptom-info-popover">
+                    <p>{{ i18n "flow.modality.visual.info.other" }}</p>
+                    <a href="{{ "symptom-guide/" | relLangURL }}#transitory-visual" target="_blank" rel="noopener noreferrer">{{ i18n "flow.common.info.transitoryVisualLabel" }} ↗</a>
+                    <a href="{{ "symptom-guide/" | relLangURL }}#persistent-visual" target="_blank" rel="noopener noreferrer">{{ i18n "flow.common.info.persistentVisualLabel" }} ↗</a>
+                </div>
+            </details>
+        </span><br />
 
         <div id="visualOtherWrapper" style="display: none">
             <br />
