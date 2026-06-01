@@ -1,21 +1,64 @@
+{{- $moreInfo := i18n "flow.common.info.moreInfo" -}}
+{{- $readFull := i18n "flow.common.info.readFullEntry" -}}
 <form id="sensoryAuraForm">
     <fieldset>
-        <label
-            ><input type="checkbox" name="sensorySymptom" value="tingling" />
-            {{ i18n "flow.modality.sensory.option.tingling" }}</label
-        ><br />
-        <label
-            ><input type="checkbox" name="sensorySymptom" value="numbness" />
-            {{ i18n "flow.modality.sensory.option.numbness" }}</label
-        ><br />
-        <label
-            ><input type="checkbox" name="sensorySymptom" value="burning" />
-            {{ i18n "flow.modality.sensory.option.burning" }}</label
-        ><br />
-        <label
-            ><input type="checkbox" name="sensorySymptom" value="other" />
-            {{ i18n "flow.modality.sensory.option.other" }}</label
-        ><br />
+        <br />
+
+        <span class="symptom-option">
+            <label>
+                <input type="checkbox" name="sensorySymptom" value="tingling" />
+                {{ i18n "flow.modality.sensory.option.tingling" }}
+            </label>
+            <details class="symptom-info">
+                <summary aria-label="{{ $moreInfo }}">ⓘ</summary>
+                <div class="symptom-info-popover">
+                    <p>{{ i18n "flow.modality.sensory.info.tingling" }}</p>
+                    <a href="/symptom-guide/transitory_somatosensory-symptoms/#paraesthesias" target="_blank" rel="noopener noreferrer">{{ $readFull }} ↗</a>
+                </div>
+            </details>
+        </span><br />
+
+        <span class="symptom-option">
+            <label>
+                <input type="checkbox" name="sensorySymptom" value="numbness" />
+                {{ i18n "flow.modality.sensory.option.numbness" }}
+            </label>
+            <details class="symptom-info">
+                <summary aria-label="{{ $moreInfo }}">ⓘ</summary>
+                <div class="symptom-info-popover">
+                    <p>{{ i18n "flow.modality.sensory.info.numbness" }}</p>
+                    <a href="/symptom-guide/transitory_somatosensory-symptoms/#hemihypaesthesia" target="_blank" rel="noopener noreferrer">{{ $readFull }} ↗</a>
+                </div>
+            </details>
+        </span><br />
+
+        <span class="symptom-option">
+            <label>
+                <input type="checkbox" name="sensorySymptom" value="burning" />
+                {{ i18n "flow.modality.sensory.option.burning" }}
+            </label>
+            <details class="symptom-info">
+                <summary aria-label="{{ $moreInfo }}">ⓘ</summary>
+                <div class="symptom-info-popover">
+                    <p>{{ i18n "flow.modality.sensory.info.burning" }}</p>
+                    <a href="/symptom-guide/transitory_somatosensory-symptoms/#paraesthesias" target="_blank" rel="noopener noreferrer">{{ $readFull }} ↗</a>
+                </div>
+            </details>
+        </span><br />
+
+        <span class="symptom-option">
+            <label>
+                <input type="checkbox" name="sensorySymptom" value="other" />
+                {{ i18n "flow.modality.sensory.option.other" }}
+            </label>
+            <details class="symptom-info">
+                <summary aria-label="{{ $moreInfo }}">ⓘ</summary>
+                <div class="symptom-info-popover">
+                    <p>{{ i18n "flow.modality.sensory.info.other" }}</p>
+                    <a href="{{ "symptom-guide/" | relLangURL }}#transitory-somatosensory" target="_blank" rel="noopener noreferrer">{{ i18n "flow.common.info.transitorySomatosensoryLabel" }} ↗</a>
+                </div>
+            </details>
+        </span><br />
     </fieldset>
 
     <br />

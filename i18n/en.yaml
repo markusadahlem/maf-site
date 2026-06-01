@@ -122,12 +122,19 @@ flow.modality.visual.info.other: "If your visual experience doesn't match any of
 flow.common.info.transitoryVisualLabel: "Transitory visual symptoms"
 flow.common.info.persistentVisualLabel: "Persistent visual symptoms"
 flow.common.info.transitorySpeechLanguageLabel: "Transitory speech and language symptoms"
+flow.common.info.transitorySomatosensoryLabel: "Transitory somatosensory symptoms"
 
 # Modality forms — sensory aura
 flow.modality.sensory.option.tingling: "Pins‑and‑needles or tingling sensations"
 flow.modality.sensory.option.numbness: "Numbness or “heavy” feeling in an arm, hand, face, or leg"
 flow.modality.sensory.option.burning: "Burning or prickling sensations"
 flow.modality.sensory.option.other: "Other sensory changes"
+
+# Field Guide info popovers on sensory-aura options
+flow.modality.sensory.info.tingling: "A tingling, prickling sensation — like a limb 'falling asleep' — that often starts in the fingers and gradually spreads up the arm. Clinically called paraesthesia."
+flow.modality.sensory.info.numbness: "Loss or reduction of feeling, sometimes with a heavy or 'dead' sensation. Typically affects one side of the body, face or limb (hemihypaesthesia) and resolves with the aura."
+flow.modality.sensory.info.burning: "A warm, prickly or stinging surface sensation on the skin without an external cause. Often felt alongside tingling or numbness and follows the same aura time‑course."
+flow.modality.sensory.info.other: "Any other somatosensory change during your aura — for example, bilateral tingling, swapped or mirrored sensations between hands, or unusual feelings on the lips or tongue."
 
 # Modality forms — speech aura
 flow.modality.speech.option.aphasia: "Difficulty finding words (aphasia)"

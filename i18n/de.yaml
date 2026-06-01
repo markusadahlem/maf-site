@@ -140,12 +140,19 @@ flow.modality.visual.info.other: "Wenn deine visuelle Erfahrung zu keiner der ob
 flow.common.info.transitoryVisualLabel: "Vorübergehende visuelle Symptome"
 flow.common.info.persistentVisualLabel: "Persistierende visuelle Symptome"
 flow.common.info.transitorySpeechLanguageLabel: "Vorübergehende Sprach‑ und Sprechsymptome"
+flow.common.info.transitorySomatosensoryLabel: "Vorübergehende somatosensorische Symptome"
 
 # Modality forms — sensory aura
 flow.modality.sensory.option.tingling: "Kribbeln oder Ameisenlaufen"
 flow.modality.sensory.option.numbness: "Taubheitsgefühl oder ein „schweres“ Gefühl in Arm, Hand, Gesicht oder Bein"
 flow.modality.sensory.option.burning: "Brennen oder stechende Empfindungen"
 flow.modality.sensory.option.other: "Andere sensorische Veränderungen"
+
+# Field Guide info popovers on sensory-aura options
+flow.modality.sensory.info.tingling: "Ein kribbelndes, prickelndes Gefühl — wie ein „eingeschlafenes“ Glied — das oft in den Fingern beginnt und sich allmählich den Arm hinaufzieht. Klinisch Parästhesie genannt."
+flow.modality.sensory.info.numbness: "Verlust oder Verminderung der Empfindung, manchmal mit einem schweren oder „toten“ Gefühl. Betrifft meist eine Körperhälfte, das Gesicht oder eine Gliedmaße (Hemihypästhesie) und klingt mit der Aura wieder ab."
+flow.modality.sensory.info.burning: "Ein warmes, prickelndes oder brennendes Hautgefühl ohne äußere Ursache. Tritt oft zusammen mit Kribbeln oder Taubheit auf und folgt dem gleichen Aura‑Verlauf."
+flow.modality.sensory.info.other: "Jede andere somatosensorische Veränderung während deiner Aura — z. B. beidseitiges Kribbeln, vertauschte oder gespiegelte Empfindungen zwischen den Händen oder ungewöhnliche Gefühle an Lippen oder Zunge."
 
 # Modality forms — speech aura
 flow.modality.speech.option.aphasia: "Wortfindungsstörungen (Aphasie)"
