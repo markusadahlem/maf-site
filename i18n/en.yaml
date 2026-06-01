@@ -124,6 +124,7 @@ flow.common.info.persistentVisualLabel: "Persistent visual symptoms"
 flow.common.info.transitorySpeechLanguageLabel: "Transitory speech and language symptoms"
 flow.common.info.transitorySomatosensoryLabel: "Transitory somatosensory symptoms"
 flow.common.info.transitoryMotorLabel: "Transitory motor symptoms"
+flow.common.info.transitoryBrainstemLabel: "Transitory brainstem / basilar‑type symptoms"
 
 # Modality forms — sensory aura
 flow.modality.sensory.option.tingling: "Pins‑and‑needles or tingling sensations"
@@ -173,6 +174,16 @@ flow.modality.brainstem.option.diplopia: "Double vision (Diplopia)"
 flow.modality.brainstem.option.ataxia: "Loss of Coordination or Balance (Ataxia)"
 flow.modality.brainstem.option.consciousness: "Decreased Consciousness: (e.g., drowsiness, confusion)"
 flow.modality.brainstem.option.other: "Other Unusual Symptoms"
+
+# Field Guide info popovers on brainstem-aura options
+flow.modality.brainstem.info.dysarthria: "Speech sounds slurred, mumbled or thick — clinically called dysarthria. A hallmark of basilar‑type aura (it also appears on the speech-aura page, since the two overlap)."
+flow.modality.brainstem.info.vertigo: "A true spinning sensation — feeling that you or the room are rotating — distinct from light‑headedness. A core basilar‑type aura symptom that resolves within an hour."
+flow.modality.brainstem.info.tinnitus: "Buzzing, ringing or roaring sounds in the ears that aren't really there. The most common auditory aura symptom; often comes and goes with the rest of the aura."
+flow.modality.brainstem.info.hypacusis: "Sounds become distant, muffled or 'far away', as if you were under water. Hearing returns to normal as the aura resolves."
+flow.modality.brainstem.info.diplopia: "Double vision — you see two images of a single object, side by side or overlapping. A basilar‑type aura symptom that resolves with the rest of the aura."
+flow.modality.brainstem.info.ataxia: "Loss of coordination or balance — walking feels unsteady, drunken or 'floaty' even without weakness. A classic basilar‑type aura sign."
+flow.modality.brainstem.info.consciousness: "A clouded, drowsy, foggy or confused mental state during the aura — short of fainting but noticeably reduced alertness. Rare; seek medical evaluation if this is new."
+flow.modality.brainstem.info.other: "Any other unusual brainstem‑type symptom during your aura that doesn't fit the options above — for example, swallowing difficulty, transient hiccups, or a peculiar sensation of detachment."
 
 # Acute-chronic — reason-for-visit
 flow.acuteChronic.reason.a1.heading: "New Symptoms"

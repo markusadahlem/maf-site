@@ -142,6 +142,7 @@ flow.common.info.persistentVisualLabel: "Persistierende visuelle Symptome"
 flow.common.info.transitorySpeechLanguageLabel: "Vorübergehende Sprach‑ und Sprechsymptome"
 flow.common.info.transitorySomatosensoryLabel: "Vorübergehende somatosensorische Symptome"
 flow.common.info.transitoryMotorLabel: "Vorübergehende motorische Symptome"
+flow.common.info.transitoryBrainstemLabel: "Vorübergehende Hirnstamm‑/Basilaris‑Symptome"
 
 # Modality forms — sensory aura
 flow.modality.sensory.option.tingling: "Kribbeln oder Ameisenlaufen"
@@ -191,6 +192,16 @@ flow.modality.brainstem.option.diplopia: "Doppeltsehen (Diplopie)"
 flow.modality.brainstem.option.ataxia: "Koordinations‑ oder Gleichgewichtsstörung (Ataxie)"
 flow.modality.brainstem.option.consciousness: "Bewusstseinsminderung: (z. B. Schläfrigkeit, Verwirrtheit)"
 flow.modality.brainstem.option.other: "Andere ungewöhnliche Symptome"
+
+# Field Guide info popovers on brainstem-aura options
+flow.modality.brainstem.info.dysarthria: "Die Sprache klingt verwaschen, undeutlich oder schwer — klinisch Dysarthrie genannt. Typisch für die Basilarisaura (taucht deshalb auch im Sprech‑Aura‑Formular auf, da sich beides überschneidet)."
+flow.modality.brainstem.info.vertigo: "Ein echtes Drehgefühl — das Empfinden, dass du selbst oder der Raum rotiert — unterschieden von Benommenheit. Ein Kernsymptom der Basilarisaura, das innerhalb einer Stunde abklingt."
+flow.modality.brainstem.info.tinnitus: "Summen, Klingeln oder Rauschen in den Ohren, das nicht wirklich vorhanden ist. Das häufigste auditive Aurasymptom; kommt und geht oft mit der übrigen Aura."
+flow.modality.brainstem.info.hypacusis: "Geräusche werden entfernt, gedämpft oder „wie unter Wasser“. Das Hören normalisiert sich, sobald die Aura abklingt."
+flow.modality.brainstem.info.diplopia: "Doppeltsehen — du siehst zwei Bilder eines einzelnen Objekts, nebeneinander oder überlagert. Ein Basilarisaura‑Symptom, das mit dem Rest der Aura abklingt."
+flow.modality.brainstem.info.ataxia: "Verlust der Koordination oder des Gleichgewichts — Gehen fühlt sich unsicher, betrunken oder „schwebend“ an, auch ohne Schwäche. Ein klassisches Zeichen der Basilarisaura."
+flow.modality.brainstem.info.consciousness: "Ein getrübter, schläfriger, vernebelter oder verwirrter Bewusstseinszustand während der Aura — knapp am Ohnmachtsgefühl, aber merklich verminderte Aufmerksamkeit. Selten; wenn neu, ärztlich abklären lassen."
+flow.modality.brainstem.info.other: "Jedes andere ungewöhnliche Hirnstamm‑Symptom während deiner Aura, das nicht zu den obigen Optionen passt — z. B. Schluckbeschwerden, vorübergehender Schluckauf oder ein eigentümliches Gefühl der Entfremdung."
 
 # Acute-chronic — reason-for-visit
 flow.acuteChronic.reason.a1.heading: "Neue Symptome"
