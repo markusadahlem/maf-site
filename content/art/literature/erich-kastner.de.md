@@ -1,0 +1,19 @@
+---
+title: Erich Kästner (1899–1977)
+type: docs
+prev: false
+next: /art/literature/friedrich-nietzsche
+sidebar:
+  hide: true
+---
+
+
+## Überblick
+
+Der deutsche Schriftsteller Erich Kästner ist vor allem als Autor von *Emil und die Detektive* (1929) in Erinnerung – jenem Kinderbuchklassiker, der eine über Jahrzehnte reichende literarische Laufbahn begründete. Neben seinem berühmten Werk für junge Leser:innen verfasste Kästner Romane, Theaterstücke, Lyrik und Essays, die häufig Themen wie Sozialkritik, Kindheit und das Spannungsfeld zwischen Ideal und Wirklichkeit auslotete.
+
+![Erich Kästner, 1899–1977](/art/images/lit-kastner__Erich_Kaestner_small_en.jpg)
+
+Kästners persönliche Migräneerfahrung prägte sein Verständnis von körperlichem Leiden und menschlicher Verletzlichkeit. Auch wenn Migräne nicht im Zentrum seiner bekanntesten Werke steht, taucht sie in seiner breiteren literarischen und gedanklichen Auseinandersetzung mit Körper, Schmerz und den alltäglichen Kämpfen menschlicher Existenz auf. Seine Gabe, präzise und oft eindringliche Beobachtungen menschlichen Erlebens festzuhalten – ob in Geschichten von Kindern, die durch die Komplexität städtischer Welten navigieren, oder in introspektiveren Texten – verrät ein Gespür für feine Wahrnehmungsverschiebungen und für die innere Landschaft körperlicher und seelischer Zustände.
+
+Kästner durchlebte stürmische Epochen – Weimarer Republik, NS-Herrschaft und Nachkriegszeit –, Erfahrungen, die Widerstandskraft und einen klaren Blick verlangten. Seine literarische Praxis genauen Beobachtens und unbestechlicher Ehrlichkeit gegenüber menschlicher Natur und menschlichem Leid übertrug er auch auf die eigene Migräneerfahrung, der er – wie so vielen anderen Aspekten seines Lebens – mit Pragmatismus und Nachdenklichkeit begegnete.
