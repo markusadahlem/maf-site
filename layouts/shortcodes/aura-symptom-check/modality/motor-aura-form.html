@@ -1,3 +1,5 @@
+{{- $moreInfo := i18n "flow.common.info.moreInfo" -}}
+{{- $readFull := i18n "flow.common.info.readFullEntry" -}}
 <form id="motorAuraForm">
     <fieldset>
         <legend></legend>
@@ -14,22 +16,62 @@
 
     <div id="motorLocationsSection" style="margin-top: 1rem; display: none">
         <p><strong>{{ i18n "flow.modality.motor.locationsPrompt" }}</strong></p>
-        <label
-            ><input type="checkbox" name="motor-location" value="Arm or hand" />
-            {{ i18n "flow.modality.motor.location.armOrHand" }}</label
-        ><br />
-        <label
-            ><input type="checkbox" name="motor-location" value="Leg or foot" />
-            {{ i18n "flow.modality.motor.location.legOrFoot" }}</label
-        ><br />
-        <label
-            ><input type="checkbox" name="motor-location" value="Face" />
-            {{ i18n "flow.modality.motor.location.face" }}</label
-        ><br />
-        <label
-            ><input type="checkbox" name="motor-location" value="Other" />
-            {{ i18n "flow.modality.motor.location.other" }}</label
-        >
+
+        <span class="symptom-option">
+            <label>
+                <input type="checkbox" name="motor-location" value="Arm or hand" />
+                {{ i18n "flow.modality.motor.location.armOrHand" }}
+            </label>
+            <details class="symptom-info">
+                <summary aria-label="{{ $moreInfo }}">ⓘ</summary>
+                <div class="symptom-info-popover">
+                    <p>{{ i18n "flow.modality.motor.info.armOrHand" }}</p>
+                    <a href="/symptom-guide/transitory_motor-symptoms/#hemiplegic-migraine" target="_blank" rel="noopener noreferrer">{{ $readFull }} ↗</a>
+                </div>
+            </details>
+        </span><br />
+
+        <span class="symptom-option">
+            <label>
+                <input type="checkbox" name="motor-location" value="Leg or foot" />
+                {{ i18n "flow.modality.motor.location.legOrFoot" }}
+            </label>
+            <details class="symptom-info">
+                <summary aria-label="{{ $moreInfo }}">ⓘ</summary>
+                <div class="symptom-info-popover">
+                    <p>{{ i18n "flow.modality.motor.info.legOrFoot" }}</p>
+                    <a href="/symptom-guide/transitory_motor-symptoms/#hemiplegic-migraine" target="_blank" rel="noopener noreferrer">{{ $readFull }} ↗</a>
+                </div>
+            </details>
+        </span><br />
+
+        <span class="symptom-option">
+            <label>
+                <input type="checkbox" name="motor-location" value="Face" />
+                {{ i18n "flow.modality.motor.location.face" }}
+            </label>
+            <details class="symptom-info">
+                <summary aria-label="{{ $moreInfo }}">ⓘ</summary>
+                <div class="symptom-info-popover">
+                    <p>{{ i18n "flow.modality.motor.info.face" }}</p>
+                    <a href="/symptom-guide/transitory_motor-symptoms/#facial-weakness" target="_blank" rel="noopener noreferrer">{{ $readFull }} ↗</a>
+                </div>
+            </details>
+        </span><br />
+
+        <span class="symptom-option">
+            <label>
+                <input type="checkbox" name="motor-location" value="Other" />
+                {{ i18n "flow.modality.motor.location.other" }}
+            </label>
+            <details class="symptom-info">
+                <summary aria-label="{{ $moreInfo }}">ⓘ</summary>
+                <div class="symptom-info-popover">
+                    <p>{{ i18n "flow.modality.motor.info.other" }}</p>
+                    <a href="{{ "symptom-guide/" | relLangURL }}#transitory-motor" target="_blank" rel="noopener noreferrer">{{ i18n "flow.common.info.transitoryMotorLabel" }} ↗</a>
+                </div>
+            </details>
+        </span>
 
         <div style="margin-top: 0.5rem">
             <label id="motorOtherLabel" for="motor-other" style="display: none"

@@ -141,6 +141,7 @@ flow.common.info.transitoryVisualLabel: "Vorübergehende visuelle Symptome"
 flow.common.info.persistentVisualLabel: "Persistierende visuelle Symptome"
 flow.common.info.transitorySpeechLanguageLabel: "Vorübergehende Sprach‑ und Sprechsymptome"
 flow.common.info.transitorySomatosensoryLabel: "Vorübergehende somatosensorische Symptome"
+flow.common.info.transitoryMotorLabel: "Vorübergehende motorische Symptome"
 
 # Modality forms — sensory aura
 flow.modality.sensory.option.tingling: "Kribbeln oder Ameisenlaufen"
@@ -173,6 +174,12 @@ flow.modality.motor.location.legOrFoot: "Bein oder Fuß"
 flow.modality.motor.location.face: "Gesicht"
 flow.modality.motor.location.other: "Andere motorische Schwäche"
 flow.modality.motor.label.describeOther: "Andere motorische Schwäche beschreiben:"
+
+# Field Guide info popovers on motor-aura location options
+flow.modality.motor.info.armOrHand: "Schwäche oder Schwere in Arm oder Hand auf einer Seite — du kannst sie zwar bewegen, aber sie fühlt sich „tot“ oder schwerfällig an. Oft Teil einer hemiplegischen Migräne, bei der eine ganze Körperhälfte während der Aura an Kraft verliert."
+flow.modality.motor.info.legOrFoot: "Schwäche oder Schwere in Bein oder Fuß auf einer Seite — der Gang wird unsicher oder das Bein zieht nach. Oft Teil einer hemiplegischen Migräne, bei der eine ganze Körperhälfte während der Aura an Kraft verliert."
+flow.modality.motor.info.face: "Eine Gesichtshälfte hängt herab oder verliert an Kraft, manchmal so, dass Lächeln oder deutliches Sprechen schwerfällt. Eine seltene Variante, gelegentlich als faszioplegische Migräne bezeichnet."
+flow.modality.motor.info.other: "Jede andere motorische Schwäche während deiner Aura — z. B. Schwäche, die sich auf beide Seiten ausdehnt, isolierte Zungen‑ oder Kieferschwäche, oder Schwäche, die nicht zu den oben genannten Mustern passt."
 
 # Modality forms — brainstem aura
 flow.modality.brainstem.legend: "Hirnstammsymptome"

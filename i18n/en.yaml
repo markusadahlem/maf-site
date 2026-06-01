@@ -123,6 +123,7 @@ flow.common.info.transitoryVisualLabel: "Transitory visual symptoms"
 flow.common.info.persistentVisualLabel: "Persistent visual symptoms"
 flow.common.info.transitorySpeechLanguageLabel: "Transitory speech and language symptoms"
 flow.common.info.transitorySomatosensoryLabel: "Transitory somatosensory symptoms"
+flow.common.info.transitoryMotorLabel: "Transitory motor symptoms"
 
 # Modality forms — sensory aura
 flow.modality.sensory.option.tingling: "Pins‑and‑needles or tingling sensations"
@@ -155,6 +156,12 @@ flow.modality.motor.location.legOrFoot: "Leg or foot"
 flow.modality.motor.location.face: "Face"
 flow.modality.motor.location.other: "Other motor weakness"
 flow.modality.motor.label.describeOther: "Describe other motor weakness:"
+
+# Field Guide info popovers on motor-aura location options
+flow.modality.motor.info.armOrHand: "Weakness or heaviness in the arm or hand on one side — you can move it but it feels difficult or 'dead'. Often part of hemiplegic migraine, where one whole side loses strength during aura."
+flow.modality.motor.info.legOrFoot: "Weakness or heaviness in the leg or foot on one side — walking feels unsteady or the leg drags. Often part of hemiplegic migraine, where one whole side loses strength during aura."
+flow.modality.motor.info.face: "One side of the face droops or loses strength, sometimes making it hard to smile or speak clearly. A rare variant sometimes called facioplegic migraine."
+flow.modality.motor.info.other: "Any other motor weakness during your aura — for example, weakness spreading to both sides, isolated tongue or jaw weakness, or weakness that doesn't match the patterns above."
 
 # Modality forms — brainstem aura
 flow.modality.brainstem.legend: "Brainstem Symptoms"
