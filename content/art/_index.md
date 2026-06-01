@@ -5,6 +5,7 @@ weight: 9
 linkTitle: "Migraine Art"
 sidebar:
   exclude: true
+  hide: true
 ---
 
 
@@ -34,34 +35,15 @@ sidebar:
 
 ## The Migraine Art Concept
 
-Although its roots may be traced back to 19th century neurology, it was not until the
-inspiring example of an art teacher's pictorial representations of her
-migraine attacks, that the Migraine Art concept
-was developed by Derek Robinson in the 1970s to serve as the basis of
-four  National Migraine Art Competitions and similar contests
-held in the UK and the United States, the results of which were
-presented to the public in a number of exhibitions and publications in both the lay and medical press.
-\[[more](migraine-art-concept)\]
-
-<!-- Although its
-[roots](/content/e24966/e25413/e25429/index_en.html)
-may be traced back to 19th century neurology, it was not until the
-inspiring example of an art teacher's pictorial representations of her
-migraine attacks, that the [Migraine Art
-concept](/content/e24966/e25413/e25414/index_en.html)
-was developed by Derek Robinson in the 1970s to serve as the basis of
-four [National Migraine Art
-Competitions](/content/e24966/e25413/e25619/index_en.html)
-and similar
-[contests](/content/e24966/e25413/e25452/index_en.html)
-held in the UK and the United States, the results of which were
-presented to the public in a number of
-[exhibitions](/content/e24966/e25413/e25515/index_en.html)
-and
-[publications](/content/e24966/e25413/e25578/index_en.html)
-in both the lay and medical press.
-\[[more](migraine-art-concept)\]
-->
+Although its roots may be traced back to 19th-century neurology, the
+Migraine Art concept was developed by Derek Robinson in the 1970s as a
+framework for collecting and exhibiting artistic responses to migraine
+experience. His vision served as the basis for four National Migraine
+Art Competitions and similar contests held in the UK and the United
+States. The results were presented to the public in exhibitions and
+publications in both the lay and medical press, establishing migraine
+art as a legitimate and valued form of expression.
+\[[more](concept)\]
 
 <div style="text-align: center;">
   <figure style="display: inline-block; margin: 0 auto;">
@@ -87,112 +69,37 @@ February 24, 2009 (see [here](https://www.northatlanticbooks.com/shop/migraine-a
 
 ## Migraine and Visual Arts
 
-Migraine experiences have served as a major source of artistic
-inspiration in both past and contemporary painters, sculptors,
-film-makers and other visual artists. A virtual gallery of
-migraine-inspired art includes pieces from famous women and men like
-[Hildegard of
-Bingen](/content/e24966/e22874/e23377/index_en.html),
-[Giorgio de
-Chirico](/content/e24966/e22874/e23278/index_en.html),
-[Salvador
-Dali](/content/e24966/e22874/e24092/index_en.html),
-[Yayoi
-Kusama](/content/e24966/e22874/e24840/index_en.html),
-[Marina
-Abramovic](/content/e24966/e22874/e23720/index_en.html),
-[Sarah
-Raphael](/content/e24966/e22874/e24122/index_en.html),
-to name just a few, as well as the work from many less well known (but
-by no means less interesting) artists - and maybe soon your's too?
-\[[more](/content/e24966/e22874/index_en.html)\]
-
-
-<!--
-{{< hero-button-secondary text="Do you wish to contribute with your migraine-inspired artwork to this Migraine Art website? Please contact Dr Klaus Podoll to discuss the submission of one or more pieces of your migraine-related artwork, highlighting the aspects of the migraine experiences represented in your artwork." link="headache-type/" >}}
--->
-
-
-
+From Hildegard of Bingen's 12th-century illuminations describing her
+visions to Giorgio de Chirico's metaphysical cityscapes and Yayoi
+Kusama's dot-covered canvases, the visual experience of migraine aura
+has left a traceable mark across nine centuries of Western art. These
+works reveal how the distinctive geometry, color distortions, and
+scintillating patterns of aura have influenced artistic imagination
+and, in turn, shaped how we visualize neurological experience.
+\[[more](visual-arts)\]
 
 
 
 ## Migraine and Literature
 
-This section does not only provide literary descriptions of migraine
-experiences from past and contemporary poets, story writers or
-novelists, but also offers examples of migraine-related narratives from
-Usenet Newsgroups, electronic diaries ("blogs") and other sources
-encountered in the Internet, including the self-observations of
-scientists such as Marvin, Oliver
-Sacks and others. Your contributions are welcome, too! Comments on these
-selected texts address the issues of metaphors of migraine, migraine and
-creativeness, and migraine aura and spiritual experience.
-
-
-<!--
-\[[more](/content/e24966/e22874/e24092/index_en.html)\]
-
-This section does not only provide literary descriptions of migraine
-experiences from past and contemporary poets, story writers or
-novelists, but also offers examples of migraine-related narratives from
-Usenet Newsgroups, electronic diaries ("blogs") and other sources
-encountered in the Internet, including the self-observations of
-scientists such as [Marvin
-Minsky](/content/e24966/e25007/e46984/index_en.html),
-[Oliver
-Sacks](/content/e24966/e25007/index_en.html)
-and others. Your contributions are welcome, too! Comments on these
-selected texts address the issues of metaphors of migraine, migraine and
-creativeness, and migraine aura and spiritual experience.
-\[[more](/content/e24966/e22874/e24092/index_en.html)\]
-
-
-
-Do you wish to contribute with your migraine-inspired artwork to this
-Migraine Art website? Please contact Dr Klaus Podoll to discuss the
-submission of one or more pieces of your migraine-related literary work.
--->
+This section presents literary descriptions of migraine from past and
+contemporary poets, story writers, and novelists, alongside
+migraine-related narratives from online sources and self-observations
+of scientists such as Marvin Minsky and Oliver Sacks. The selected
+texts explore metaphors of migraine, the relationship between migraine
+and creativity, and the spiritual dimensions of aura experience,
+offering readers insight into how writers have grappled with this
+compelling phenomenon.
+\[[more](literature)\]
 
 
 ## Migraine and Music
 
-Finally, it is known that some famous musicians have suffered from
-migraines − from classical composer Gustav
-Mahler,
-over King of Rock'n'Roll Elvis
-Presley,
-and Jeff
-Tweedy,
-singer/songwriter from the alternative country band Wilco, to Alwa
-Glebe the German "dark chanteuse", to mention just a few. Did the composers'
-and performers' migraines influence their art?
-
-<!--
-\[[more](/content/e24966/e24880/index_en.html)\]
-
-
-Finally, it is known that some famous musicians have suffered from
-migraines − from classical composer [Gustav
-Mahler](/content/e24966/e24880/index_en.html),
-over King of Rock'n'Roll [Elvis
-Presley](/content/e24966/e24880/index_en.html),
-and [Jeff
-Tweedy](/content/e24966/e24880/index_en.html),
-singer/songwriter from the alternative country band Wilco, to [Alwa
-Glebe](/content/e24966/e24880/e63941/index_en.html),
-the German "dark chanteuse", to mention just a few. Did the composers'
-and performers' migraines influence their art?
-\[[more](/content/e24966/e24880/index_en.html)\]
-
-
-Do you wish to contribute with your migraine-inspired artwork to this
-Migraine Art website? Please contact Dr Klaus Podoll to discuss the
-submission of one or more pieces of your migraine-related music,
-highlighting the aspects of the migraine experiences represented in your
-composition.
-
-(see also
-[here](http://www.welt.de/welt_print/article1713618/Malen_mit_Migraene.html))
-
--->
+Some of the most influential musicians in history have suffered from
+migraines — from the classical composer Gustav Mahler to Elvis
+Presley, Jeff Tweedy of Wilco, and Alwa Glebe, the German "dark
+chanteuse". Did their migraines shape their artistic output? This
+section explores the lives and work of musicians touched by migraine
+and considers how neurological experience may have influenced their
+compositions and performances.
+\[[more](music)\]

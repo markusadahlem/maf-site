@@ -33,9 +33,17 @@ sidebar:
 
 ## Das Konzept der Migränekunst
 
-Obwohl sich Ursprünge bis in die Neurologie des 19. Jahrhunderts zurückverfolgen lassen, entwickelte Derek Robinson in den 1970er Jahren das Konzept der Migränekunst. Anlass war das inspirierende Beispiel einer Kunstlehrerin, die ihre Migräneanfälle bildlich darstellte.  
-Dieses Konzept bildete die Grundlage für vier nationale Migränekunst-Wettbewerbe sowie ähnliche Ausschreibungen in Großbritannien und den USA. Die Ergebnisse wurden in mehreren Ausstellungen sowie in Publikationen der Laien- und Fachpresse präsentiert.  
-\[[mehr](migraine-art-concept)\]
+Obwohl sich Ursprünge bis in die Neurologie des 19. Jahrhunderts
+zurückverfolgen lassen, entwickelte Derek Robinson in den 1970er
+Jahren das Konzept der Migränekunst als Rahmen für das Sammeln und
+Ausstellen künstlerischer Reaktionen auf das Migräneerleben. Diese
+Vision bildete die Grundlage für vier nationale Migränekunst-
+Wettbewerbe und ähnliche Ausschreibungen in Großbritannien und den
+USA. Die Ergebnisse wurden der Öffentlichkeit in Ausstellungen und
+in Publikationen der Laien- und Fachpresse präsentiert und
+etablierten die Migränekunst als legitime und geschätzte Ausdrucks-
+form.  
+\[[mehr](concept)\]
 
 <div style="text-align: center;">
   <figure style="display: inline-block; margin: 0 auto;">
@@ -58,33 +66,42 @@ Ein Buch mit dem Titel *"Migraine Art – The Migraine Experience from Within"* 
 
 ## Migräne und Bildende Kunst
 
-Migräneerfahrungen haben Künstlerinnen und Künstler – Maler:innen, Bildhauer:innen, Filmemacher:innen und andere visuelle Künstler:innen – über Jahrhunderte hinweg inspiriert.  
-Unsere virtuelle Galerie zeigt Werke berühmter Persönlichkeiten wie
-[Hildegard von Bingen](/content/e24966/e22874/e23377/index_en.html),
-[Giorgio de Chirico](/content/e24966/e22874/e23278/index_en.html),
-[Salvador Dalí](/content/e24966/e22874/e24092/index_en.html),
-[Yayoi Kusama](/content/e24966/e22874/e24840/index_en.html),
-[Marina Abramović](/content/e24966/e22874/e23720/index_en.html),
-[Sarah Raphael](/content/e24966/e22874/e24122/index_en.html),
-um nur einige zu nennen – sowie Werke vieler weniger bekannter (aber keineswegs weniger faszinierender) Künstler:innen. Vielleicht bald auch deines?  
-\[[mehr](/content/e24966/e22874/index_en.html)\]
+Von Hildegard von Bingens Buchmalereien aus dem 12. Jahrhundert, die
+ihre Visionen festhielten, über Giorgio de Chiricos metaphysische
+Stadtbilder bis zu Yayoi Kusamas punktbedeckten Leinwänden hat das
+visuelle Erleben der Migräne-Aura eine sichtbare Spur durch neun
+Jahrhunderte westlicher Kunst gezogen. Diese Werke zeigen, wie die
+charakteristische Geometrie, die Farbverschiebungen und die
+flimmernden Muster der Aura die künstlerische Vorstellungskraft
+geprägt – und damit auch beeinflusst haben, wie wir uns
+neurologische Erfahrung vorstellen.  
+\[[mehr](visual-arts)\]
 
 ---
 
 ## Migräne und Literatur
 
-In diesem Abschnitt finden sich nicht nur literarische Beschreibungen von Migräneerfahrungen aus Werken historischer und zeitgenössischer Dichter:innen, Erzähler:innen und Romanautor:innen.  
-Er bietet auch Beispiele für migränebezogene Erzählungen aus Usenet-Newsgroups, elektronischen Tagebüchern ("Blogs") und weiteren Internetquellen – inklusive Selbstbeobachtungen von Wissenschaftlern wie Marvin Minsky, Oliver Sacks und anderen.  
-Kommentare zu diesen Texten beleuchten Themen wie Metaphern der Migräne, Kreativität bei Migräne und die spirituelle Dimension der Auraphänomene.
+Dieser Abschnitt stellt literarische Beschreibungen von Migräne aus
+den Werken historischer und zeitgenössischer Dichter:innen, Erzähler:
+innen und Romanautor:innen vor, ergänzt um migränebezogene
+Erzählungen aus Online-Quellen und Selbstbeobachtungen von
+Wissenschaftlern wie Marvin Minsky und Oliver Sacks. Die ausgewählten
+Texte erkunden Metaphern der Migräne, das Verhältnis zwischen
+Migräne und Kreativität sowie die spirituelle Dimension der Aura-
+Erfahrung und geben Einblick darin, wie Schriftsteller:innen mit
+diesem fesselnden Phänomen gerungen haben.  
+\[[mehr](literature)\]
 
 ---
 
 ## Migräne und Musik
 
-Es ist bekannt, dass auch einige berühmte Musiker:innen unter Migräne litten – von Komponisten wie
-Gustav Mahler,
-über Rock’n’Roll-Legende Elvis Presley
-und Jeff Tweedy,
-Sänger und Songwriter der Alternative-Country-Band Wilco,  
-bis hin zur deutschen "Dark Chanteuse" Alwa Glebe, um nur einige zu nennen.  
-Wie haben ihre Migräneerfahrungen möglicherweise ihr künstlerisches Schaffen beeinflusst?
+Einige der einflussreichsten Musiker:innen der Geschichte litten an
+Migräne – vom klassischen Komponisten Gustav Mahler über Elvis
+Presley und Jeff Tweedy von Wilco bis hin zur deutschen "Dark
+Chanteuse" Alwa Glebe. Haben ihre Migränen ihr künstlerisches
+Schaffen geformt? Dieser Abschnitt geht den Leben und Werken jener
+Musiker:innen nach, die mit Migräne in Berührung kamen, und fragt,
+wie das neurologische Erleben ihre Kompositionen und Performances
+beeinflusst haben könnte.  
+\[[mehr](music)\]
