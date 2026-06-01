@@ -47,6 +47,16 @@ Migraine isn't just a headache—it's a complex condition marked by a wide range
 {{< hextra/feature-grid >}}
 
   {{< hextra/feature-card
+    title="A Field Guide to Symptoms"
+    subtitle="Browse a complete catalogue of migraine symptoms."
+    link="symptom-guide"
+    class="hx:aspect-auto hx:md:aspect-[1.1/1] hx:max-lg:min-h-[340px]"
+    image="/images/teaser/roteRathausZigzag_cleanup-plus.png"
+    imageClass="hx:object-contain hx:w-full hx:h-full hx:relative hx:dark:opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(203, 28, 66, 0.1),hsla(0,0%,100%,0));"
+  >}}
+
+  {{< hextra/feature-card
     title="Revealing Experiences"
     subtitle="Art & stories make migraine’s hidden impact visible."
     link="experiences"
