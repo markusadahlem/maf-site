@@ -1,0 +1,655 @@
+{
+  "version": "1.0",
+  "generated": "2026-06-01T10:14:30+00:00",
+  "levels": [
+    {
+      "id": "transitory",
+      "label": "Vorübergehende Aurasymptome",
+      "description": "Entwickeln sich über 5–20 Minuten und klingen innerhalb von 60 Minuten ab.",
+      "domains": [
+        {
+          "id": "visual",
+          "label": "Visuell",
+          "pages": [
+            {
+              "slug": "transitory_visual-loss",
+              "title": "Sehverlust",
+              "file": "transitory_visual-loss.de.md",
+              "anchors": [
+                "#what-is-it",
+                "#experience",
+                "#patient-accounts",
+                "#subtypes",
+                "#related",
+                "#clinical-note"
+              ],
+              "subtype_anchors": [
+                "#blurred-vision",
+                "#scotoma",
+                "#scintillating-scotoma",
+                "#hemianopia",
+                "#complete-blindness",
+                "#perceptual-completion"
+              ]
+            },
+            {
+              "slug": "transitory_visual-hallucinations",
+              "title": "Visuelle Halluzinationen",
+              "file": "transitory_visual-hallucinations.de.md",
+              "anchors": [
+                "#what-is-it",
+                "#experience",
+                "#patient-accounts",
+                "#subtypes",
+                "#related",
+                "#clinical-note"
+              ],
+              "subtype_anchors": [
+                "#random-form",
+                "#line-form",
+                "#curve-form",
+                "#web-form",
+                "#lattice-form",
+                "#tunnel-form",
+                "#spiral-form",
+                "#kaleidoscope-form",
+                "#complex-hallucinations"
+              ]
+            },
+            {
+              "slug": "transitory_visual-illusions",
+              "title": "Visuelle Illusionen",
+              "file": "transitory_visual-illusions.de.md",
+              "anchors": [
+                "#what-is-it",
+                "#experience",
+                "#patient-accounts",
+                "#subtypes",
+                "#related",
+                "#clinical-note"
+              ],
+              "subtype_anchors": [
+                "#dysmetropsia",
+                "#macropsia",
+                "#micropsia",
+                "#pelopsia",
+                "#teleopsia",
+                "#diplopia",
+                "#polyopia",
+                "#visual-perseveration",
+                "#cinematographic-vision",
+                "#corona-phenomenon",
+                "#illusory-visual-splitting",
+                "#metamorphopsia",
+                "#facial-metamorphopsia",
+                "#mosaic-illusion",
+                "#autokinesis",
+                "#tilted-vision"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "somatosensory",
+          "label": "Somatosensorisch",
+          "pages": [
+            {
+              "slug": "transitory_somatosensory-symptoms",
+              "title": "Somatosensorische Symptome (Kribbeln und Taubheit)",
+              "file": "transitory_somatosensory-symptoms.de.md",
+              "anchors": [
+                "#what-is-it",
+                "#experience",
+                "#patient-accounts",
+                "#subtypes",
+                "#related",
+                "#clinical-note"
+              ],
+              "subtype_anchors": [
+                "#paraesthesias",
+                "#hemihypaesthesia",
+                "#digitolingual-syndrome",
+                "#bilateral-paraesthesias"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speech-language",
+          "label": "Sprache",
+          "pages": [
+            {
+              "slug": "transitory_speech-symptoms",
+              "title": "Sprachsymptome",
+              "file": "transitory_speech-symptoms.de.md",
+              "anchors": [
+                "#what-is-it",
+                "#experience",
+                "#patient-accounts",
+                "#subtypes",
+                "#related",
+                "#clinical-note"
+              ],
+              "subtype_anchors": [
+                "#dysarthria",
+                "#stuttering",
+                "#mutism"
+              ]
+            },
+            {
+              "slug": "transitory_language-symptoms",
+              "title": "Sprachsymptome",
+              "file": "transitory_language-symptoms.de.md",
+              "anchors": [
+                "#what-is-it",
+                "#experience",
+                "#patient-accounts",
+                "#subtypes",
+                "#related",
+                "#clinical-note"
+              ],
+              "subtype_anchors": [
+                "#receptive-aphasia",
+                "#expressive-aphasia",
+                "#global-aphasia",
+                "#anomia",
+                "#paraphasia"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "motor",
+          "label": "Motorisch",
+          "pages": [
+            {
+              "slug": "transitory_motor-symptoms",
+              "title": "Motorische Symptome (Schwäche und Lähmung)",
+              "file": "transitory_motor-symptoms.de.md",
+              "anchors": [
+                "#what-is-it",
+                "#experience",
+                "#patient-accounts",
+                "#subtypes",
+                "#related",
+                "#clinical-note"
+              ],
+              "subtype_anchors": [
+                "#hemiplegic-migraine",
+                "#facial-weakness",
+                "#sporadic-vs-familial"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "brainstem",
+          "label": "Hirnstamm / Basilaris-Typ",
+          "pages": [
+            {
+              "slug": "transitory_auditory-symptoms",
+              "title": "Auditorische Aurasymptome",
+              "file": "transitory_auditory-symptoms.de.md",
+              "anchors": [
+                "#what-is-it",
+                "#experience",
+                "#patient-accounts",
+                "#subtypes",
+                "#related",
+                "#clinical-note"
+              ],
+              "subtype_anchors": [
+                "#decreased-hearing",
+                "#tinnitus",
+                "#oscillocusis"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cognitive-psychological",
+          "label": "Kognitiv und psychologisch",
+          "pages": [
+            {
+              "slug": "transitory_depersonalization-derealization",
+              "title": "Depersonalisation und Derealisation",
+              "file": "transitory_depersonalization-derealization.de.md",
+              "anchors": [
+                "#what-is-it",
+                "#experience",
+                "#patient-accounts",
+                "#subtypes",
+                "#related",
+                "#clinical-note"
+              ],
+              "subtype_anchors": []
+            },
+            {
+              "slug": "transitory_body-image-disturbances",
+              "title": "Körperbildstörungen (Alice-im-Wunderland-Syndrom)",
+              "file": "transitory_body-image-disturbances.de.md",
+              "anchors": [
+                "#what-is-it",
+                "#experience",
+                "#patient-accounts",
+                "#subtypes",
+                "#related",
+                "#clinical-note"
+              ],
+              "subtype_anchors": [
+                "#macrosomatognosia",
+                "#microsomatognosia",
+                "#out-of-body",
+                "#feeling-too-heavy"
+              ]
+            },
+            {
+              "slug": "transitory_time-perception",
+              "title": "Zeitwahrnehmungsstörungen",
+              "file": "transitory_time-perception.de.md",
+              "anchors": [
+                "#what-is-it",
+                "#experience",
+                "#patient-accounts",
+                "#subtypes",
+                "#related",
+                "#clinical-note"
+              ],
+              "subtype_anchors": [
+                "#slowing-of-time",
+                "#time-speedup",
+                "#time-reduplication"
+              ]
+            },
+            {
+              "slug": "transitory_paramnesias",
+              "title": "Paramnésien (Déjà-vu und Jamais-vu)",
+              "file": "transitory_paramnesias.de.md",
+              "anchors": [
+                "#what-is-it",
+                "#experience",
+                "#patient-accounts",
+                "#subtypes",
+                "#related",
+                "#clinical-note"
+              ],
+              "subtype_anchors": [
+                "#deja-vu",
+                "#jamais-vu"
+              ]
+            },
+            {
+              "slug": "transitory_forced-reminiscence",
+              "title": "Erinnerungsfluten",
+              "file": "transitory_forced-reminiscence.de.md",
+              "anchors": [
+                "#what-is-it",
+                "#experience",
+                "#patient-accounts",
+                "#subtypes",
+                "#related",
+                "#clinical-note"
+              ],
+              "subtype_anchors": []
+            },
+            {
+              "slug": "transitory_synaesthesia",
+              "title": "Synästhesie (Vermischung der Sinne)",
+              "file": "transitory_synaesthesia.de.md",
+              "anchors": [
+                "#what-is-it",
+                "#experience",
+                "#patient-accounts",
+                "#subtypes",
+                "#related",
+                "#clinical-note"
+              ],
+              "subtype_anchors": [
+                "#auditory-visual",
+                "#colour-number",
+                "#chromaesthesia"
+              ]
+            },
+            {
+              "slug": "transitory_other-higher-cortical",
+              "title": "Andere Störungen höherer Gehirnfunktionen",
+              "file": "transitory_other-higher-cortical.de.md",
+              "anchors": [
+                "#what-is-it",
+                "#experience",
+                "#patient-accounts",
+                "#subtypes",
+                "#related",
+                "#clinical-note"
+              ],
+              "subtype_anchors": [
+                "#achromatopsia",
+                "#chromatopsia",
+                "#prosopagnosia",
+                "#allochiria",
+                "#balints-syndrome"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "olfactory-gustatory",
+          "label": "Olfaktorisch und gustatorisch",
+          "pages": [
+            {
+              "slug": "transitory_olfactory-symptoms",
+              "title": "Olfaktorische Aurasymptome (Geruchssinn)",
+              "file": "transitory_olfactory-symptoms.de.md",
+              "anchors": [
+                "#what-is-it",
+                "#experience",
+                "#patient-accounts",
+                "#subtypes",
+                "#related",
+                "#clinical-note"
+              ],
+              "subtype_anchors": [
+                "#parosmia",
+                "#phantosmia"
+              ]
+            },
+            {
+              "slug": "transitory_gustatory-symptoms",
+              "title": "Geschmacksaurasymptome",
+              "file": "transitory_gustatory-symptoms.de.md",
+              "anchors": [
+                "#what-is-it",
+                "#experience",
+                "#patient-accounts",
+                "#subtypes",
+                "#related",
+                "#clinical-note"
+              ],
+              "subtype_anchors": [
+                "#gustatory-illusions",
+                "#gustatory-hallucinations"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sleep-related",
+          "label": "Schlafbezogen",
+          "pages": [
+            {
+              "slug": "transitory_disturbances-of-dreaming",
+              "title": "Störungen des Träumens",
+              "file": "transitory_disturbances-of-dreaming.de.md",
+              "anchors": [
+                "#what-is-it",
+                "#experience",
+                "#patient-accounts",
+                "#subtypes",
+                "#related",
+                "#clinical-note"
+              ],
+              "subtype_anchors": [
+                "#nightmares",
+                "#vivid-weird",
+                "#pain-in-dreams",
+                "#recurring-dreams",
+                "#aura-in-dreams"
+              ]
+            },
+            {
+              "slug": "transitory_felt-presences",
+              "title": "Empfundene Präsenzen",
+              "file": "transitory_felt-presences.de.md",
+              "anchors": [
+                "#what-is-it",
+                "#experience",
+                "#patient-accounts",
+                "#subtypes",
+                "#related",
+                "#clinical-note"
+              ],
+              "subtype_anchors": []
+            },
+            {
+              "slug": "transitory_sleepwalking",
+              "title": "Somnambulismus (Schlafwandeln)",
+              "file": "transitory_sleepwalking.de.md",
+              "anchors": [
+                "#what-is-it",
+                "#experience",
+                "#patient-accounts",
+                "#subtypes",
+                "#related",
+                "#clinical-note"
+              ],
+              "subtype_anchors": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "persistent",
+      "label": "Persistierende Aurasymptome",
+      "description": "Dauern Wochen, Monate oder Jahre; selten, aber dokumentiert.",
+      "domains": [
+        {
+          "id": "visual",
+          "label": "Visuell",
+          "pages": [
+            {
+              "slug": "persistent_visual-snow",
+              "title": "Visuelles Schneerauschen",
+              "file": "persistent_visual-snow.de.md",
+              "anchors": [
+                "#what-is-it",
+                "#experience",
+                "#patient-accounts",
+                "#subtypes",
+                "#related",
+                "#clinical-note"
+              ],
+              "subtype_anchors": []
+            },
+            {
+              "slug": "persistent_visual-loss",
+              "title": "Persistierender Sehverlust",
+              "file": "persistent_visual-loss.de.md",
+              "anchors": [
+                "#what-is-it",
+                "#experience",
+                "#patient-accounts",
+                "#subtypes",
+                "#related",
+                "#clinical-note"
+              ],
+              "subtype_anchors": []
+            },
+            {
+              "slug": "persistent_visual-perseveration",
+              "title": "Visuelle Perseveration (Nachbilder und Spuren)",
+              "file": "persistent_visual-perseveration.de.md",
+              "anchors": [
+                "#what-is-it",
+                "#experience",
+                "#patient-accounts",
+                "#subtypes",
+                "#related",
+                "#clinical-note"
+              ],
+              "subtype_anchors": [
+                "#negative-afterimages",
+                "#positive-afterimages",
+                "#trails",
+                "#palinopsia"
+              ]
+            },
+            {
+              "slug": "persistent_light-sensitivity",
+              "title": "Überempfindlichkeit gegen Licht und visuelles Unbehagen",
+              "file": "persistent_light-sensitivity.de.md",
+              "anchors": [
+                "#what-is-it",
+                "#experience",
+                "#patient-accounts",
+                "#subtypes",
+                "#related",
+                "#clinical-note"
+              ],
+              "subtype_anchors": []
+            },
+            {
+              "slug": "persistent_night-vision-reading",
+              "title": "Beeinträchtigte Nachtsicht und visuelle Leseprobleme",
+              "file": "persistent_night-vision-reading.de.md",
+              "anchors": [
+                "#what-is-it",
+                "#experience",
+                "#patient-accounts",
+                "#subtypes",
+                "#related",
+                "#clinical-note"
+              ],
+              "subtype_anchors": []
+            },
+            {
+              "slug": "persistent_other-visual-symptoms",
+              "title": "Andere persistierende visuelle Symptome",
+              "file": "persistent_other-visual-symptoms.de.md",
+              "anchors": [
+                "#what-is-it",
+                "#experience",
+                "#patient-accounts",
+                "#subtypes",
+                "#related",
+                "#clinical-note"
+              ],
+              "subtype_anchors": [
+                "#autokinesis",
+                "#monocular-diplopia",
+                "#binocular-diplopia",
+                "#corona-phenomenon",
+                "#visual-hallucinations-line",
+                "#visual-hallucinations-lattice",
+                "#visual-hallucinations-kaleidoscope",
+                "#visual-hallucinations-curve",
+                "#closed-eye-hallucinations",
+                "#pelopsia-teleopsia",
+                "#polyopia",
+                "#cinematographic-vision"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "auditory",
+          "label": "Auditiv",
+          "pages": [
+            {
+              "slug": "persistent_tinnitus",
+              "title": "Persistierendes Tinnitus (Ohrenrauschen)",
+              "file": "persistent_tinnitus.de.md",
+              "anchors": [
+                "#what-is-it",
+                "#experience",
+                "#patient-accounts",
+                "#subtypes",
+                "#related",
+                "#clinical-note"
+              ],
+              "subtype_anchors": []
+            },
+            {
+              "slug": "persistent_auditory-symptoms",
+              "title": "Persistierende Auditive Symptome (Hörveränderungen)",
+              "file": "persistent_auditory-symptoms.de.md",
+              "anchors": [
+                "#what-is-it",
+                "#experience",
+                "#patient-accounts",
+                "#subtypes",
+                "#related",
+                "#clinical-note"
+              ],
+              "subtype_anchors": []
+            }
+          ]
+        },
+        {
+          "id": "vestibular",
+          "label": "Vestibulär",
+          "pages": [
+            {
+              "slug": "persistent_vestibular-symptoms",
+              "title": "Persistierende Vestibuläre Symptome (Schwindel und Vertigo)",
+              "file": "persistent_vestibular-symptoms.de.md",
+              "anchors": [
+                "#what-is-it",
+                "#experience",
+                "#patient-accounts",
+                "#subtypes",
+                "#related",
+                "#clinical-note"
+              ],
+              "subtype_anchors": []
+            }
+          ]
+        },
+        {
+          "id": "cognitive",
+          "label": "Kognitiv",
+          "pages": [
+            {
+              "slug": "persistent_cognitive-problems",
+              "title": "Persistierende Kognitive Beeinträchtigungen",
+              "file": "persistent_cognitive-problems.de.md",
+              "anchors": [
+                "#what-is-it",
+                "#experience",
+                "#patient-accounts",
+                "#subtypes",
+                "#related",
+                "#clinical-note"
+              ],
+              "subtype_anchors": []
+            },
+            {
+              "slug": "persistent_derealization-depersonalization",
+              "title": "Persistierende Derealisation und Depersonalisation",
+              "file": "persistent_derealization-depersonalization.de.md",
+              "anchors": [
+                "#what-is-it",
+                "#experience",
+                "#patient-accounts",
+                "#subtypes",
+                "#related",
+                "#clinical-note"
+              ],
+              "subtype_anchors": []
+            }
+          ]
+        },
+        {
+          "id": "other",
+          "label": "Andere",
+          "pages": [
+            {
+              "slug": "persistent_other-symptoms",
+              "title": "Weitere Persistierende Nicht-Visuelle Symptome",
+              "file": "persistent_other-symptoms.de.md",
+              "anchors": [
+                "#what-is-it",
+                "#experience",
+                "#patient-accounts",
+                "#subtypes",
+                "#related",
+                "#clinical-note"
+              ],
+              "subtype_anchors": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
