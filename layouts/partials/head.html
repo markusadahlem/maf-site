@@ -36,26 +36,27 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="/css/common.css" />
 
+  {{- /*
+    Hextra's body-time core/theme.js (which wires up clicks on the
+    .hextra-theme-toggle button) calls a global setTheme(theme) that
+    Hextra normally injects via head/theme.js. This project overrides
+    the whole head partial, so we must inline the same contract here
+    or the toggle silently no-ops with a ReferenceError.
+
+    Body identical to hextra@v0.12.3/assets/js/head/theme.js — keep
+    in sync on Hextra bumps.
+  */}}
   <script>
-    const defaultTheme = '{{ site.Params.theme.default | default `system`}}';
-
-    const setDarkTheme = () => {
-      document.documentElement.classList.add("dark");
-      document.documentElement.style.colorScheme = "dark";
-    }
-    const setLightTheme = () => {
-      document.documentElement.classList.remove("dark");
-      document.documentElement.style.colorScheme = "light";
-    }
-
-    if ("color-theme" in localStorage) {
-      localStorage.getItem("color-theme") === "dark" ? setDarkTheme() : setLightTheme();
-    } else {
-      defaultTheme === "dark" ? setDarkTheme() : setLightTheme();
-      if (defaultTheme === "system") {
-        window.matchMedia("(prefers-color-scheme: dark)").matches ? setDarkTheme() : setLightTheme();
+    function setTheme(theme) {
+      document.documentElement.classList.remove("light", "dark");
+      if (theme !== "light" && theme !== "dark") {
+        theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
       }
+      document.documentElement.classList.add(theme);
+      document.documentElement.style.colorScheme = theme;
     }
+
+    setTheme("color-theme" in localStorage ? localStorage.getItem("color-theme") : '{{ site.Params.theme.default | default `system`}}');
   </script>
 
   <!-- KaTeX -->
