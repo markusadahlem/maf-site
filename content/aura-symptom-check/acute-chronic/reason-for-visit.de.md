@@ -37,36 +37,12 @@ localStorage.setItem("redirectToDemographicInfo", "true");
 <script type="module" src="/js/aura-symptom-check/acute-chronic/reason-for-visit.js"></script>
 </div>
 
-<div style="max-width: 38rem; margin: 2rem auto; padding: 1.25rem 1.5rem; border-left: 4px solid #c2622d; background: rgba(194, 98, 45, 0.06); border-radius: 0 8px 8px 0;">
+<div style="max-width: 38rem; margin: 2rem auto; padding: 1.25rem 1.5rem; border-left: 4px solid #08768a; background: rgba(8, 118, 138, 0.06); border-radius: 0 8px 8px 0;">
 
 ### ⚠️ Wichtiger Hinweis
 
-Dieses Tool dient ausschließlich Informationszwecken und stellt keine medizinische Diagnose dar. Neurologische Symptome können viele Ursachen haben – darunter auch ernsthafte Erkrankungen. Wenn deine Symptome **neu, ungewöhnlich oder zunehmend** sind, suche bitte **unverzüglich ärztlichen Rat**.
+Dieses Tool dient ausschließlich Informationszwecken und stellt keine medizinische Diagnose dar. Neurologische Symptome können viele Ursachen haben – darunter auch neue ernsthafte Erkrankungen. Wenn deine Symptome **neu, ungewöhnlich oder zunehmend** sind, suche bitte **unverzüglich ärztlichen Rat**.
 
 </div>
 
-<div id="password-prompt">
-  <h1>Passwort eingeben</h1>
-  <input type="password" id="password-input" placeholder="Passwort">
-  <button onclick="checkPassword()">Absenden</button>
-
-  <p style="margin-top: 1.25rem; font-size: 0.95rem; color: #4b5563;">
-    Noch kein Passwort? <a href="/de/blog/aura-symptom-check-brief/">Lies in der Zwischenzeit, was der Check umfasst</a>.
-  </p>
-</div>
-
-<script>
-  function checkPassword() {
-    var password = document.getElementById('password-input').value;
-    var correctPassword = 'wonderland'; // Replace with your actual password
-    var lang = document.documentElement.lang || 'de';
-    if (password === correctPassword) {
-      if (window.posthog) posthog.capture('password_submitted', { result: 'success', lang: lang });
-      document.getElementById('password-protected-content').style.display = 'block';
-      document.getElementById('password-prompt').style.display = 'none';
-    } else {
-      if (window.posthog) posthog.capture('password_submitted', { result: 'failure', lang: lang });
-      alert('Incorrect password. Please try again.');
-    }
-  }
-</script>
+{{< password-gate >}}

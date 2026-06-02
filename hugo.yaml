@@ -64,6 +64,14 @@ params:
   posthog:
     projectKey: "phc_pwLBxvza4A7TWXJrbJGx6cFY5nzPg77yH8TiaJdoou75"
     apiHost: "https://eu.i.posthog.com"
+  # Beta-gate password, stored as SHA-256(password) so the plaintext is
+  # not present in the page source. Rotate by running:
+  #   printf '%s' '<new-password>' | shasum -a 256
+  # and replacing the digest below. (Hash-based gating on a static site
+  # is obscurity, not security — it deters casual source-view leaks but
+  # is still trivially brute-forced for guessable passwords.)
+  passwordGate:
+    sha256: "a71a7c7011f53a1bab3642ec2ce12593f05230ace8de1e3e7645f69efac1443d"
 
 defaultContentLanguage: en
 # fr/es/it/uk/ru/nl/da content files stay on disk but are excluded from
