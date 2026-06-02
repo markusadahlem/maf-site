@@ -12,7 +12,7 @@ No autoplay, no Swiper, no timers.
 {{- $quotes := index site.Data.quotes $lang "carousel_quotes" -}}
 {{- $intro := cond (eq $lang "de") "Stimmen unserer Besucher:innen, aus über 20 Jahren" "Voices from our visitors, over 20 years" -}}
 {{- $moreLabel := cond (eq $lang "de") "Mehr lesen" "Read more" -}}
-{{- $ctaHTML := cond (eq $lang "de") "Möchtest du deine eigene Aura-Erfahrung teilen? <a href=\"/de/contact/\">Schreib uns</a> – Initialen und Jahr genügen." "Want to share your own aura experience? <a href=\"/contact/\">Get in touch</a> — initials and year are enough." -}}
+{{- $ctaHTML := cond (eq $lang "de") "Möchtest du deine eigene Aura-Erfahrung teilen? <a href=\"/de/contact/\">Schreib uns</a>. Mit deinem Einverständnis können wir deine Geschichte auf dieser Website veröffentlichen – zum Schutz deiner Privatsphäre genügt oft eine Kennzeichnung wie „M.D., 2026“." "Want to share your own aura experience? <a href=\"/contact/\">Get in touch</a>. With your permission, we may share your story on this website — and for privacy, attribution such as “M.D., 2026” is often all that is needed." -}}
 
 <div class="quote-voices">
   <p class="quote-voices__intro">{{ $intro }}</p>
