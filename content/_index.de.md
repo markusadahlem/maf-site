@@ -60,7 +60,7 @@ Migräne ist mehr als Kopfschmerz — eine komplexe Erkrankung mit einem breiten
     subtitle="Kunst und Geschichten zeigen Migräne von innen."
     link="experiences"
     class="hx:aspect-auto hx:md:aspect-[1.1/1] hx:max-lg:min-h-[340px]"
-    image="/images/teaser/roteRathausZigzag_cleanup-plus-de.png"
+    image="/images/teaser/the-migraine-computer.png"
     imageClass="hx:object-contain hx:w-full hx:h-full hx:relative hx:dark:opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(203, 28, 66, 0.1),hsla(0,0%,100%,0));"
   >}}
