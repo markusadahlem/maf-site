@@ -1,0 +1,4 @@
+<div class="maf-introstats">
+  {{ with .Get "intro" }}<p class="maf-intro">{{ . | safeHTML }}</p>{{ end }}
+  <div class="maf-stats">{{ .Inner }}</div>
+</div>

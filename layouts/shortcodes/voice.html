@@ -1,0 +1,5 @@
+<figure class="maf-quote{{ if eq (.Get "feature") "true" }} feature{{ end }}">
+  <span class="maf-mark">&ldquo;</span>
+  <p>{{ .Inner | markdownify }}</p>
+  <cite>{{ .Get "by" }}</cite>
+</figure>
