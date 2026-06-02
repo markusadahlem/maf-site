@@ -8,7 +8,7 @@ sidebar:
 ---
 <p class="beta-notice">{{< t "flow.pages.common.betaVersion" >}}</p>
 
-{{< aura-symptom-check/section-progress current="2" >}}
+{{< aura-symptom-check/section-progress current="2" step="5" total="5" >}}
 
 ## {{< t "flow.pages.modality.brainstem.heading" >}}
 

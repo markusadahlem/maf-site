@@ -6,7 +6,7 @@ toc: false
 ---
 <p class="beta-notice">{{< t "flow.pages.common.betaVersion" >}}</p>
 
-{{< aura-symptom-check/section-progress current="2" >}}
+{{< aura-symptom-check/section-progress current="2" step="1" total="5" >}}
 
 {{< t "flow.pages.modality.visual.intro" >}}
 

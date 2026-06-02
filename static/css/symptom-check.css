@@ -120,6 +120,18 @@
 }
 .section-progress li.is-done .step-label{ color:var(--maf-body); }
 
+/* Within-section step chip ("3 / 7"), only on the current section. */
+.section-progress .step-of-total{
+  margin-top:4px;
+  padding:2px 10px;
+  border-radius:var(--asc-radius-pill);
+  background:var(--asc-primary-tint);
+  color:var(--asc-primary);
+  font-size:.78rem; font-weight:600;
+  font-variant-numeric:tabular-nums;
+  line-height:1.4;
+}
+
 /* mobile: keep 3 columns, tighten */
 @media (max-width:480px){
   .section-progress{ margin-bottom:1.4rem; }
@@ -216,6 +228,11 @@ form[id$="Form"] input:focus-visible{ outline:none; box-shadow:var(--asc-focus-r
 }
 .other-field textarea:focus-visible{ outline:none; border-color:var(--asc-primary); box-shadow:var(--asc-focus-ring); }
 .other-field .char-counter{ display:block; text-align:right; font-size:13px; color:var(--asc-text-muted); margin-top:6px; }
+/* Collapse the .other-field wrapper to zero height while its textarea is
+   JS-hidden — otherwise the wrapper's own margin pushes the next option
+   (typically "None of the above") down by ~16-20px even when empty. */
+.other-field:has(> textarea[style*="display:none"]),
+.other-field:has(> textarea[style*="display: none"]){ display:none; }
 
 /* ---- 5. FIELD GUIDE INFO POPOVER ----------------------------- */
 /* <details class="symptom-info"><summary>ⓘ</summary>
