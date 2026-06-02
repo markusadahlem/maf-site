@@ -1,3 +1,9 @@
+{{- /* IBM Plex Sans for the redesign — referenced by --font-sans in
+       assets/css/custom.css. Loaded here so the fetch starts as
+       early as possible in the head. */ -}}
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 {{- partial "custom/posthog.html" . -}}
 
 {{- /* Hextra calls this hook from layouts/partials/head.html.
