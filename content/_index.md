@@ -60,8 +60,8 @@ Migraine isn't just a headache—it's a complex condition marked by a wide range
     title="Revealing Experiences"
     subtitle="Art & stories make migraine’s hidden impact visible."
     link="experiences"
-    class="hx:aspect-auto hx:md:aspect-[1.1/1] hx:max-lg:min-h-[340px]"
-    image="/images/teaser/the-migraine-computer.png"
+    class="hx:aspect-auto hx:md:aspect-[1600/1204] hx:max-lg:min-h-[340px]"
+    image="/images/teaser/migraine-art-genetics-4x.png"
     imageClass="hx:object-contain hx:w-full hx:h-full hx:relative hx:dark:opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(203, 28, 66, 0.1),hsla(0,0%,100%,0));"
   >}}
