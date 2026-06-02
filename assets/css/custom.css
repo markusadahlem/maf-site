@@ -209,3 +209,15 @@ aside .hextra-sidebar-item[data-active="true"] a {
 
 /* Section heading helper (used via {.maf-section-head}) */
 .maf-section-head { letter-spacing:-0.02em; }
+
+/* ============================================================
+   §12. EMPTY LEFT NAVIGATION COLUMN
+   Site-wide: keep the sidebar column visible (preserves the
+   two-column page layout + search/lang-switch/theme-toggle in
+   the sticky bottom strip), but hide the nav tree itself. The
+   two <ul>s inside .hextra-scrollbar are Hextra's mobile and
+   desktop navigation lists. Pages that already use
+   `sidebar.hide: true` (e.g. /art/) are unaffected — the whole
+   <aside> is display:none there.
+   ============================================================ */
+.hextra-sidebar-container .hextra-scrollbar > ul { display: none; }
