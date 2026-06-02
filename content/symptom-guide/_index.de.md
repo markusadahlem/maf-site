@@ -2,8 +2,14 @@
 title: Symptom-Leitfaden
 linkTitle: Symptom-Leitfaden
 type: "docs"
-description: Durchstöbere den vollständigen Katalog der Migränesymptome.
+description: Durchstöbere den vollständigen Katalog der Migräne-Aurasymptome.
 ---
+
+<div style="max-width: 38rem; margin: 0 auto 2rem; padding: 1.25rem 1.5rem; border-left: 4px solid #08768a; background: rgba(8, 118, 138, 0.06); border-radius: 0 8px 8px 0;">
+
+Dieser Leitfaden behandelt **ausschließlich Migräne-Aurasymptome**. Eine Migräne kann zahlreiche weitere Symptome vor, während und nach einer Attacke umfassen. Einen Überblick über den vollständigen Migränezyklus und seine Phasen findest du in unserer [Migräne-Symptomübersicht](/de/symptoms/).
+
+</div>
 
 ## Vorübergehende Aurasymptome
 

@@ -2,8 +2,14 @@
 title: A Field Guide to Symptoms
 linkTitle: Field Guide
 type: "docs"
-description: Browse a complete catalogue of migraine symptoms.
+description: Browse a complete catalogue of migraine aura symptoms.
 ---
+
+<div style="max-width: 38rem; margin: 0 auto 2rem; padding: 1.25rem 1.5rem; border-left: 4px solid #08768a; background: rgba(8, 118, 138, 0.06); border-radius: 0 8px 8px 0;">
+
+This field guide focuses **exclusively on migraine aura symptoms**. Migraine can involve many additional symptoms before, during, and after an attack. For an overview of the full migraine cycle and its different phases, visit our [Migraine Symptoms Overview](/symptoms/).
+
+</div>
 
 ## Transitory Aura Symptoms
 

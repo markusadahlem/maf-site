@@ -53,11 +53,17 @@ Obwohl visuelle Störungen am bekanntesten sind, kann die Aura viele andere Moda
 
 Um dir zu helfen, herauszufinden, ob deine Symptome den klinischen Kriterien für Aura entsprechen, haben wir ein geführtes Werkzeug mit strukturierten Fragen entwickelt.
 
-{{< hextra/hero-badge link="/aura-symptom-check/symptom-check-tools">}}
-  <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400"></div>
-  <span class="hx-text-lg">Teste den MigraineAuraScan™</span>
-  {{< icon name="arrow-circle-right" attributes="height=32" >}}
-{{< /hextra/hero-badge >}}
+<div class="cta-primary">
+
+{{< hextra/hero-button text="Mache die 10-Minuten-Aura-Anamnese" link="/de/aura-symptom-check/symptom-check-tools" >}}
+
+</div>
+
+<div style="max-width: 38rem; margin: 2rem auto; padding: 1.25rem 1.5rem; border-left: 4px solid #08768a; background: rgba(8, 118, 138, 0.06); border-radius: 0 8px 8px 0;">
+
+**Suchst du detaillierte Beschreibungen der Aurasymptome?** Im [Migräne-Aura-Symptom-Leitfaden](/de/symptom-guide/) findest du einen ausführlichen Katalog einzelner Aurasymptome. Bitte beachte, dass dieser Leitfaden ausschließlich die **Aura-Phase** behandelt. Migränesymptome können in allen Phasen des Migränezyklus auftreten; eigene Leitfäden für die übrigen Phasen (Vorboten, Kopfschmerz, Auflösung, Zwischenphase) sind in Planung.
+
+</div>
 
 Viele bringen Aura mit gezackten Mustern oder flimmernden Gesichtsfeldausfällen in Verbindung – Erfahrungen, die wahrscheinlich in sehr frühen visuellen Arealen des Gehirns im Okzipitallappen entstehen, also dort, wo elementare visuelle Wahrnehmung verarbeitet wird. Diese „klassischen“ visuellen Auren lassen sich relativ leicht beschreiben und zeichnen.
 

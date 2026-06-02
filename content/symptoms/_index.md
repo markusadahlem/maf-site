@@ -106,12 +106,17 @@ To help you determine whether your symptoms meet the clinical criteria for aura,
 
 
 
-{{< hextra/hero-badge link="/aura-symptom-check/symptom-check-tools">}}
-  <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400"></div>
-  <span class="hx-text-lg">Try the MigraineAuraScan™</span>
-  {{< icon name="arrow-circle-right" attributes="height=32" >}}
-{{< /hextra/hero-badge >}}
+<div class="cta-primary">
 
+{{< hextra/hero-button text="Take the 10-minute aura anamnesis" link="/aura-symptom-check/symptom-check-tools" >}}
+
+</div>
+
+<div style="max-width: 38rem; margin: 2rem auto; padding: 1.25rem 1.5rem; border-left: 4px solid #08768a; background: rgba(8, 118, 138, 0.06); border-radius: 0 8px 8px 0;">
+
+**Looking for detailed descriptions of aura symptoms?** Explore our [Migraine Aura Field Guide](/symptom-guide/). Please note that this guide focuses on the **aura phase only**. Migraine symptoms can occur throughout the migraine cycle, and dedicated guides for the other phases (premonitory, headache, postdrome, interictal) are planned.
+
+</div>
 
 Many people associate aura with geometric zigzag patterns or flickering scotomas—experiences thought to arise from the brain’s early visual areas in the occipital lobe, responsible for basic visual processing. These classic “elementary” visual auras are easier to describe and illustrate.
 
