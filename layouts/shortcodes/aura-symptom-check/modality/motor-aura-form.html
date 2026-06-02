@@ -73,25 +73,20 @@
             </details>
         </span>
 
-        <div style="margin-top: 0.5rem">
+        <div class="other-field">
             <label id="motorOtherLabel" for="motor-other" style="display: none"
-                ><strong>{{ i18n "flow.modality.motor.label.describeOther" }}</strong></label
-            >
+                ><strong>{{ i18n "flow.modality.motor.label.describeOther" }}</strong></label>
             <textarea
                 id="motor-other"
                 rows="2"
                 maxlength="200"
                 placeholder="{{ i18n "flow.common.placeholder.maxChars200" }}"
-                style="
-                    width: 100%;
-                    border: 1px solid #ccc;
-                    padding: 6px;
-                    display: none;
-                "
+                style="display: none"
             ></textarea>
             <div
                 id="motorCharCount"
-                style="font-size: 0.9em; color: #555; display: none"
+                class="char-counter"
+                style="display: none"
             >
                 {{ i18n "flow.common.counter200" }}
             </div>

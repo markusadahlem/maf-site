@@ -119,36 +119,36 @@
             </details>
         </span><br /><br />
 
-        <label id="brainstemNoneLabel">
-            <input type="checkbox" name="brainstemSymptoms" value="none" />
-            {{ i18n "flow.common.option.noneAbove" }} </label
-        ><br />
+        <span class="symptom-option is-exclusive">
+            <label id="brainstemNoneLabel">
+                <input type="checkbox" name="brainstemSymptoms" value="none" />
+                {{ i18n "flow.common.option.noneAbove" }}
+            </label>
+        </span>
 
-        <label
-            id="brainstemOtherTextLabel"
-            for="brainstemOtherText"
-            style="display: none"
-        >
-            <strong>{{ i18n "flow.common.label.otherDescribe" }}</strong>
-        </label>
-        <textarea
-            id="brainstemOtherText"
-            rows="2"
-            maxlength="200"
-            placeholder="{{ i18n "flow.common.placeholder.maxChars200" }}"
-            style="
-                width: 100%;
-                border: 1px solid #ccc;
-                padding: 6px;
-                display: none;
-            "
-        ></textarea>
+        <div class="other-field">
+            <label
+                id="brainstemOtherTextLabel"
+                for="brainstemOtherText"
+                style="display: none"
+            >
+                <strong>{{ i18n "flow.common.label.otherDescribe" }}</strong>
+            </label>
+            <textarea
+                id="brainstemOtherText"
+                rows="2"
+                maxlength="200"
+                placeholder="{{ i18n "flow.common.placeholder.maxChars200" }}"
+                style="display: none"
+            ></textarea>
 
-        <div
-            id="brainstemCharCount"
-            style="font-size: 0.9em; color: #555; display: none"
-        >
-            {{ i18n "flow.common.counter200" }}
+            <div
+                id="brainstemCharCount"
+                class="char-counter"
+                style="display: none"
+            >
+                {{ i18n "flow.common.counter200" }}
+            </div>
         </div>
     </fieldset>
 

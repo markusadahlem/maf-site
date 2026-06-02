@@ -103,38 +103,36 @@
             </details>
         </span><br />
 
-        <div id="visualOtherWrapper" style="display: none">
-            <br />
+        <div id="visualOtherWrapper" class="other-field" style="display: none">
             <label id="svisualOtherLabel" for="visualOtherText"
-                ><strong>{{ i18n "flow.common.label.otherDescribe" }}</strong></label
-            ><br />
+                ><strong>{{ i18n "flow.common.label.otherDescribe" }}</strong></label>
             <textarea
                 id="visualOtherText"
                 rows="2"
                 maxlength="200"
                 placeholder="{{ i18n "flow.common.placeholder.maxChars200" }}"
-                style="width: 100%; border: 1px solid #ccc; padding: 6px"
             ></textarea>
 
             <div
                 id="visualCharCount"
-                style="font-size: 0.9em; color: #555; display: none"
+                class="char-counter"
+                style="display: none"
             >
                 {{ i18n "flow.common.counter200" }}
             </div>
         </div>
 
-        <br />
-
-        <label>
-            <input
-                type="checkbox"
-                name="visualSymptom"
-                value="none"
-                id="visualNoneCheckbox"
-            />
-            {{ i18n "flow.modality.visual.option.none" }}
-        </label>
+        <span class="symptom-option is-exclusive">
+            <label>
+                <input
+                    type="checkbox"
+                    name="visualSymptom"
+                    value="none"
+                    id="visualNoneCheckbox"
+                />
+                {{ i18n "flow.modality.visual.option.none" }}
+            </label>
+        </span>
     </fieldset>
 
     <br />

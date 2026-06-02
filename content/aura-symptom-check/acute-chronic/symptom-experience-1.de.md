@@ -7,7 +7,7 @@ sidebar:
   exclude: true
 ---
 
-<span style="color:red">{{< t "flow.pages.common.betaVersion" >}}</span>
+<p class="beta-notice">{{< t "flow.pages.common.betaVersion" >}}</p>
 
 {{< aura-symptom-check/section-progress current="1" >}}
 

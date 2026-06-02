@@ -63,30 +63,31 @@
 
     <br />
 
-    <label id="sensoryOtherLabel" for="sensoryOtherText"
-        ><strong>{{ i18n "flow.common.label.otherDescribe" }}</strong></label
-    >
-    <textarea
-        id="sensoryOtherText"
-        rows="2"
-        maxlength="200"
-        placeholder="{{ i18n "flow.common.placeholder.maxChars200" }}"
-        style="width: 100%; border: 1px solid #ccc; padding: 6px"
-    ></textarea>
+    <div class="other-field">
+        <label id="sensoryOtherLabel" for="sensoryOtherText"
+            ><strong>{{ i18n "flow.common.label.otherDescribe" }}</strong></label>
+        <textarea
+            id="sensoryOtherText"
+            rows="2"
+            maxlength="200"
+            placeholder="{{ i18n "flow.common.placeholder.maxChars200" }}"
+        ></textarea>
 
-    <!-- Counter is hidden by default -->
-    <div
-        id="sensoryCharCount"
-        style="font-size: 0.9em; color: #555; display: none"
-    >
-        {{ i18n "flow.common.counter200" }}
+        <!-- Counter is hidden by default; JS toggles it on textarea input -->
+        <div
+            id="sensoryCharCount"
+            class="char-counter"
+            style="display: none"
+        >
+            {{ i18n "flow.common.counter200" }}
+        </div>
     </div>
-    <br />
-    <label
-        ><input type="checkbox" name="sensorySymptom" value="none" />
-        {{ i18n "flow.common.option.noneAbove" }}</label
-    ><br />
-    <br /><br />
+
+    <span class="symptom-option is-exclusive">
+        <label
+            ><input type="checkbox" name="sensorySymptom" value="none" />
+            {{ i18n "flow.common.option.noneAbove" }}</label>
+    </span>
 
     <button type="button" class="btn" id="nextSensoryBtn">{{ i18n "flow.common.button.continue" }}</button>
 </form>
