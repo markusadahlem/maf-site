@@ -6,6 +6,7 @@ weight: 9
 linkTitle: "Migränekunst"
 sidebar:
   exclude: true
+  hide: true
 ---
 
 <div style="text-align: center;">
