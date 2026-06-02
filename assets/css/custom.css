@@ -69,6 +69,7 @@ body .home-hero-cta a {
   background-color: var(--maf-yellow) !important;
   color: var(--maf-ink) !important;
   border: 1px solid var(--maf-yellow-deep) !important;
+  border-radius: 10px !important;
   font-weight: 600;
   box-shadow: 0 1px 0 var(--maf-yellow-deep);
   transition: background-color .15s ease, transform .12s ease;
