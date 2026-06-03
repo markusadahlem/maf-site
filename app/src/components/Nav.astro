@@ -4,8 +4,12 @@ import { navLinks, ctaPrimary } from '../config/site';
 interface Props {
   /** nav key to highlight, e.g. "field-guide" */
   active?: string;
+  /** same page under the other locale, for the language switcher */
+  altUrl?: string;
+  /** the other locale's code, e.g. "de" */
+  altLang?: string;
 }
-const { active } = Astro.props;
+const { active, altUrl, altLang } = Astro.props;
 ---
 
 <header class="nav">
@@ -24,6 +28,13 @@ const { active } = Astro.props;
     </nav>
 
     <div class="nav__tools">
+      {
+        altUrl && altLang && (
+          <a class="nav__lang theme-toggle" href={altUrl} hreflang={altLang} aria-label={`Switch language to ${altLang.toUpperCase()}`}>
+            {altLang.toUpperCase()}
+          </a>
+        )
+      }
       <button class="nav__menu-btn theme-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-btn>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round">
           <path d="M4 7h16M4 12h16M4 17h16"></path>

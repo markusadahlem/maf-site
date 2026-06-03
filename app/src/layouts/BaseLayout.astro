@@ -1,6 +1,7 @@
 ---
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
+import Analytics from '../components/Analytics.astro';
 import { site } from '../config/site';
 import '../styles/theme.css';
 
@@ -14,6 +15,12 @@ interface Props {
   lang?: string;
 }
 const { title, description = site.description, active, showFooter = true, lang = 'en' } = Astro.props;
+
+// Language switcher target: the same path under the other locale (en at root,
+// de under /de). Pages without a twin in the other locale are a known gap.
+const path = Astro.url.pathname;
+const altLang = lang === 'de' ? 'en' : 'de';
+const altUrl = lang === 'de' ? path.replace(/^\/de(?=\/|$)/, '') || '/' : `/de${path}`;
 ---
 
 <!doctype html>
@@ -40,10 +47,11 @@ const { title, description = site.description, active, showFooter = true, lang =
       })();
     </script>
 
+    <Analytics />
     <slot name="head" />
   </head>
   <body>
-    <Nav active={active} />
+    <Nav active={active} altUrl={altUrl} altLang={altLang} />
     <main>
       <slot />
     </main>
