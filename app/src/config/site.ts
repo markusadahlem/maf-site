@@ -35,6 +35,7 @@ export const footerCols = [
       { label: 'Migraine Art', href: '/art' },
       { label: 'Science Blog', href: '/blog' },
       { label: 'Aura Check', href: '/aura-check' },
+      { label: 'Explore Your Brain State', href: '/test-suit' },
     ],
   },
   {
