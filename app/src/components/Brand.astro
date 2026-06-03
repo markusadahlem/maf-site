@@ -1,5 +1,5 @@
 ---
-// The aura mark: a scintillating-scotoma zigzag inside a ring.
+// The MAF "MA" monogram mark (logo.svg, with logo-dark.svg for dark mode).
 // `withText` renders the full lockup (name + optional tagline).
 interface Props {
   href?: string;
@@ -12,16 +12,8 @@ const { href = '/', withText = true, showTagline = false } = Astro.props;
 
 <a class="brand" href={href} aria-label={`${site.name} — home`}>
   <span class="brand__mark" aria-hidden="true">
-    <svg viewBox="0 0 40 40" fill="none">
-      <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.6" opacity="0.32" />
-      <path
-        d="M9 20 L13 14 L16 23 L20 11 L24 26 L27 16 L31 20"
-        stroke="var(--primary)"
-        stroke-width="2.2"
-        stroke-linejoin="round"
-        stroke-linecap="round"
-      />
-    </svg>
+    <img class="brand__logo brand__logo--light" src="/images/logo.svg" alt="" width="34" height="34" />
+    <img class="brand__logo brand__logo--dark" src="/images/logo-dark.svg" alt="" width="34" height="34" />
   </span>
   {
     withText && (
