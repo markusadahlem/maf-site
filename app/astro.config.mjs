@@ -18,6 +18,12 @@ export default defineConfig({
     routing: { prefixDefaultLocale: false },
   },
 
+  // Experiences was folded into the Migraine Art landing; keep the old URLs alive.
+  redirects: {
+    '/experiences': '/art',
+    '/de/experiences': '/de/art',
+  },
+
   // Markdown rendering for content collections (Field Guide, Blog).
   // remark-heading-id honours the `## Heading {#custom-id}` anchors the Hugo
   // field guide uses — the questionnaire's info-popovers deep-link to them.

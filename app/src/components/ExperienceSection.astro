@@ -1,9 +1,8 @@
 ---
-// Experiences ("Revealing Experiences") — the art-vs-clinical gateway + curated
-// Migraine Art gallery. Shared by the en and de routes; chrome + captions are
-// localised, the curated artwork is the same in both.
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Kicker from '../components/Kicker.astro';
+// ExperienceSection — the lived-experience lead-in to Migraine Art: the
+// "expressed in art → into clinical language" two-track + curated patient-art
+// gallery + CTA. Rendered inline at the top of the /art landing (was the
+// standalone /experiences page). Locale-driven; the artwork is shared.
 import SectionHead from '../components/SectionHead.astro';
 import Track from '../components/Track.astro';
 import GalleryFigure from '../components/GalleryFigure.astro';
@@ -29,7 +28,7 @@ const gallery = [
 
 const UI = isDe
   ? {
-      kicker: 'Aufschlussreiche Erfahrungen',
+      kicker: 'Erfahrung',
       title: 'Das Unsichtbare sichtbar machen',
       lead: 'Aura ist real — und wie du sie beschreibst, ist wichtig. Ob in der Kunst ausgedrückt oder durch klinische Kriterien strukturiert: Jede Perspektive hilft, das Unsichtbare sichtbarer zu machen.',
       t1Tag: 'In der Kunst ausgedrückt', t1Title: 'Von innen', t1Link: 'Das Archiv durchstöbern',
@@ -45,7 +44,7 @@ const UI = isDe
       ctaLabel: 'Aura-Check ausprobieren',
     }
   : {
-      kicker: 'Revealing experiences',
+      kicker: 'Experience',
       title: 'Making the invisible visible',
       lead: 'Aura is real — and how you describe it matters. Whether expressed in art or structured by clinical criteria, every perspective helps make the invisible more visible.',
       t1Tag: 'Expressed in art', t1Title: 'From the inside', t1Link: 'Browse the archive',
@@ -62,43 +61,34 @@ const UI = isDe
     };
 ---
 
-<BaseLayout title={`${UI.kicker} — Migraine Aura Foundation`} lang={locale} active="experiences">
-  <div class="page-head">
-    <div class="wrap">
-      <Kicker>{UI.kicker}</Kicker>
-      <h1 class="page-head__title">{UI.title}</h1>
-      <p class="page-head__lead">{UI.lead}</p>
+<section class="section--tight">
+  <div class="wrap">
+    <SectionHead kicker={UI.kicker} title={UI.title} sub={UI.lead} />
+    <div class="two-track" style="margin-top:8px;">
+      <Track img="/img/art-fortification.png" alt="Visual aura as a zigzag over a city skyline." tag={UI.t1Tag} title={UI.t1Title} href="#gallery" linkLabel={UI.t1Link}>
+        <Fragment set:html={UI.t1Body} />
+      </Track>
+      <Track img="/img/art-clinical-criteria.png" alt="The same aura annotated with clinical diagnostic criteria." tag={UI.t2Tag} tagBlue title={UI.t2Title} href={p('/field-guide')} linkLabel={UI.t2Link}>
+        <Fragment set:html={UI.t2Body} />
+      </Track>
     </div>
   </div>
+</section>
 
-  <section class="section--tight">
-    <div class="wrap">
-      <div class="two-track">
-        <Track img="/img/art-fortification.png" alt="Visual aura as a zigzag over a city skyline." tag={UI.t1Tag} title={UI.t1Title} href="#gallery" linkLabel={UI.t1Link}>
-          <Fragment set:html={UI.t1Body} />
-        </Track>
-        <Track img="/img/art-clinical-criteria.png" alt="The same aura annotated with clinical diagnostic criteria." tag={UI.t2Tag} tagBlue title={UI.t2Title} href={p('/field-guide')} linkLabel={UI.t2Link}>
-          <Fragment set:html={UI.t2Body} />
-        </Track>
-      </div>
+<section class="section--tight" id="gallery">
+  <div class="wrap">
+    <SectionHead kicker={UI.shKicker} title={UI.shTitle} sub={UI.shSub} />
+    <div class="gallery">
+      {gallery.map((g) => <GalleryFigure img={g.img} alt={g.alt} title={(isDe ? g.de : g.en).title} caption={(isDe ? g.de : g.en).caption} />)}
     </div>
-  </section>
+    <aside style="margin-top:32px; padding-top:18px; border-top:1px solid var(--border); font-size:14.5px; color:var(--muted); max-width:70ch;">
+      {UI.aside} <a href={p('/contact')}>{UI.asideLink}</a>
+    </aside>
+  </div>
+</section>
 
-  <section class="section--tight" id="gallery">
-    <div class="wrap">
-      <SectionHead kicker={UI.shKicker} title={UI.shTitle} sub={UI.shSub} />
-      <div class="gallery">
-        {gallery.map((g) => <GalleryFigure img={g.img} alt={g.alt} title={(isDe ? g.de : g.en).title} caption={(isDe ? g.de : g.en).caption} />)}
-      </div>
-      <aside style="margin-top:32px; padding-top:18px; border-top:1px solid var(--border); font-size:14.5px; color:var(--muted); max-width:70ch;">
-        {UI.aside} <a href={p('/contact')}>{UI.asideLink}</a>
-      </aside>
-    </div>
-  </section>
-
-  <section class="section--tight">
-    <div class="wrap">
-      <CtaBand title={UI.ctaTitle} text={UI.ctaText} ctaLabel={UI.ctaLabel} ctaHref={p('/aura-check')} />
-    </div>
-  </section>
-</BaseLayout>
+<section class="section--tight">
+  <div class="wrap">
+    <CtaBand title={UI.ctaTitle} text={UI.ctaText} ctaLabel={UI.ctaLabel} ctaHref={p('/aura-check')} />
+  </div>
+</section>
