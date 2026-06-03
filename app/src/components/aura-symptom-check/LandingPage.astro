@@ -1,7 +1,11 @@
 ---
 // LandingPage — the questionnaire entry screen. Sets expectations (beta, time,
-// privacy, not-a-diagnosis) and launches the flow at reason-for-visit. Replaces
-// the handoff's single-step demo at /aura-check.
+// privacy, not-a-diagnosis) and launches the flow at reason-for-visit.
+//
+// Beta gate: the "Begin" CTA is hidden behind a client-side SHA-256 password
+// check (obscurity, not security — the digest is public, same model as the
+// original Hugo gate). A correct password unlocks for the tab via
+// sessionStorage. The intro copy stays visible either way.
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCatalog } from '../../lib/engine/catalogs';
 import { setCatalog, t } from '../../lib/engine/i18n';
@@ -11,8 +15,11 @@ interface Props { locale: string }
 const { locale } = Astro.props;
 setCatalog(getCatalog(locale));
 
+// SHA-256(password) digest — carried over from the Hugo passwordGate config.
+const DIGEST = 'a71a7c7011f53a1bab3642ec2ce12593f05230ace8de1e3e7645f69efac1443d';
 const prefix = locale === 'en' ? '' : `/${locale}`;
 const beginHref = `${prefix}/aura-symptom-check/acute-chronic/reason-for-visit/`;
+const hintHref = `${prefix}/blog/aura-symptom-check-brief`;
 const points = [t('flow.landing.point1'), t('flow.landing.point2'), t('flow.landing.point3')];
 const title = t('flow.landing.title');
 ---
@@ -38,9 +45,67 @@ const title = t('flow.landing.title');
         ))}
       </ul>
 
-      <div class="qactions qactions--end">
+      {/* Beta gate — replaced by the Begin button once unlocked */}
+      <div class="beta-gate" data-beta-gate data-digest={DIGEST}>
+        <h2 class="beta-gate__heading">{t('passwordGate.heading')}</h2>
+        <form class="beta-gate__form" autocomplete="off" data-gate-form>
+          <div class="beta-gate__row">
+            <input type="password" class="beta-gate__input" data-gate-input
+              placeholder={t('passwordGate.placeholder')} autocomplete="off"
+              autocapitalize="off" autocorrect="off" spellcheck="false" required />
+            <button type="button" class="beta-gate__toggle" data-gate-toggle
+              data-show={t('passwordGate.show')} data-hide={t('passwordGate.hide')}>{t('passwordGate.show')}</button>
+          </div>
+          <button type="submit" class="btn btn--primary">{t('passwordGate.submit')}</button>
+          <p class="beta-gate__error" data-gate-error hidden>{t('passwordGate.incorrect')}</p>
+        </form>
+        <p class="beta-gate__hint">
+          {t('passwordGate.hintLead')} <a href={hintHref}>{t('passwordGate.hintLinkText')}</a> {t('passwordGate.hintTail')}
+        </p>
+      </div>
+
+      <div class="qactions qactions--end" data-begin-wrap hidden>
         <a class="btn btn--primary btn--lg" href={beginHref}>{t('flow.landing.begin')} <span class="arr">→</span></a>
       </div>
     </section>
   </div>
 </BaseLayout>
+
+<script>
+  const KEY = 'maf-beta-unlocked';
+  const gate = document.querySelector<HTMLElement>('[data-beta-gate]');
+  const beginWrap = document.querySelector<HTMLElement>('[data-begin-wrap]');
+  if (gate && beginWrap) {
+    const reveal = () => { gate.hidden = true; beginWrap.hidden = false; };
+    if (sessionStorage.getItem(KEY) === '1') reveal();
+
+    const form = gate.querySelector<HTMLFormElement>('[data-gate-form]')!;
+    const input = gate.querySelector<HTMLInputElement>('[data-gate-input]')!;
+    const err = gate.querySelector<HTMLElement>('[data-gate-error]')!;
+    const toggle = gate.querySelector<HTMLButtonElement>('[data-gate-toggle]')!;
+
+    async function sha256hex(s: string) {
+      const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s));
+      return [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, '0')).join('');
+    }
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const digest = await sha256hex(input.value);
+      if (digest === gate.dataset.digest) {
+        sessionStorage.setItem(KEY, '1');
+        reveal();
+      } else {
+        err.hidden = false;
+        input.value = '';
+        input.focus();
+      }
+    });
+
+    toggle.addEventListener('click', () => {
+      const showing = input.type === 'text';
+      input.type = showing ? 'password' : 'text';
+      toggle.textContent = showing ? toggle.dataset.show! : toggle.dataset.hide!;
+    });
+  }
+</script>
