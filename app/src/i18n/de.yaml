@@ -433,9 +433,9 @@ passwordGate.hintLinkText: "Lies in der Zwischenzeit, was der Check umfasst"
 passwordGate.hintTail: ""
 
 # ── aura-symptom-check landing (redesign) ───────────────────────────
-flow.landing.title: "Überprüfen Sie Ihre Aura-Symptome"
-flow.landing.lead: "Ein kurzer, geführter Fragebogen, der Ihre Migräne-Aura anhand der klinischen ICHD-3-Kriterien einordnet und einen Bericht erstellt, den Sie mit Ihrer Ärztin oder Ihrem Arzt teilen können."
+flow.landing.title: "Überprüfe deine Aura-Symptome"
+flow.landing.lead: "Ein kurzer, geführter Fragebogen, der deine Migräne-Aura anhand der klinischen ICHD-3-Kriterien einordnet und einen Bericht erstellt, den du mit deiner Ärztin oder deinem Arzt teilen kannst."
 flow.landing.point1: "Dauert etwa 10 Minuten"
-flow.landing.point2: "Ihre Antworten bleiben in Ihrem Browser — es wird nichts an einen Server gesendet"
+flow.landing.point2: "Deine Antworten bleiben in deinem Browser — es wird nichts an einen Server gesendet"
 flow.landing.point3: "Dies ist eine Screening-Hilfe, keine Diagnose"
 flow.landing.begin: "Check starten"
