@@ -1,5 +1,6 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+import remarkHeadingId from 'remark-heading-id';
 
 // https://astro.build/config
 //
@@ -18,7 +19,10 @@ export default defineConfig({
   },
 
   // Markdown rendering for content collections (Field Guide, Blog).
+  // remark-heading-id honours the `## Heading {#custom-id}` anchors the Hugo
+  // field guide uses — the questionnaire's info-popovers deep-link to them.
   markdown: {
     shikiConfig: { theme: 'github-light' },
+    remarkPlugins: [remarkHeadingId],
   },
 });

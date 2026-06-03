@@ -14,7 +14,8 @@
   "dependencies": {
     "astro": "^4.16.0",
     "js-yaml": "^4.2.0",
-    "jspdf": "^4.2.1"
+    "jspdf": "^4.2.1",
+    "remark-heading-id": "^1.0.1"
   },
   "devDependencies": {
     "@types/js-yaml": "^4.0.9",
