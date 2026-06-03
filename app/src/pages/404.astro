@@ -1,0 +1,20 @@
+---
+// Custom 404 — GitHub Pages serves /404.html for any unmatched path.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Button from '../components/Button.astro';
+import Kicker from '../components/Kicker.astro';
+---
+<BaseLayout title="Page not found — Migraine Aura Foundation">
+  <div class="page-head">
+    <div class="wrap" style="text-align:center">
+      <Kicker variant="warm">404</Kicker>
+      <h1 class="page-head__title">This page could not be found</h1>
+      <p class="page-head__lead" style="margin-inline:auto">The page you were looking for may have moved or no longer exists.</p>
+      <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:24px;">
+        <Button href="/" variant="primary" arrow>Back to home</Button>
+        <Button href="/field-guide" variant="ghost">Field Guide</Button>
+        <Button href="/aura-check" variant="ghost">Aura Check</Button>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
