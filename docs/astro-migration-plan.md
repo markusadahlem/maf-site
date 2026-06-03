@@ -106,10 +106,11 @@ The scaffold ships ONE static question step (`app/src/pages/aura-check.astro` + 
 - **Search dropped for v1.** Pagefind was a Starlight default; with custom chrome it needs a standalone index + a hand-built search UI matching the design system (net-new, no mockup). The site is content-light; ship without search and add Pagefind later (it runs standalone with Astro) if analytics show demand.
 
 ### Phase 6 — Cutover (~1 day)
-- Manual clinical walkthrough: 5-10 representative flows in both en and de, compare narrative paragraph and PDF body side-by-side against current Hugo production.
-- Configure GH Pages custom domain (`migraine-aura-foundation.org`); CNAME file in repo root.
-- DNS swap from current Hugo host to GH Pages.
-- Keep Hugo repo on its current host for **7 days** as fallback; archive after.
+**Production is GitHub Pages already** (confirmed): Hugo is built+published to GH Pages by `pages.yaml` on push to `main`. So cutover swaps the *content* GH Pages serves (Hugo → Astro) — **no DNS change, no separate host, no CNAME file** (the custom domain `migraine-aura-foundation.org` lives in repo Settings and persists; Hugo uploaded `./public` without a CNAME and so does the Astro deploy).
+- Manual clinical walkthrough: 5-10 representative flows in both en and de, compare narrative paragraph and PDF body side-by-side against current Hugo production. (DONE 2026-06-03 — passed.)
+- The swap is staged on `redesign`: `deploy.yml` (build `app/` → publish `app/dist` to Pages, on push:main) is added and Hugo's `pages.yaml` is deleted, so **merging `redesign` → `main` atomically swaps Hugo → Astro**.
+- Pre-flight: confirm GH Pages Source = "GitHub Actions"; pick www-vs-apex canonical (astro `site` is www, Hugo built apex).
+- **Rollback = revert the merge commit on `main`** (restores `pages.yaml`, drops the Astro deploy; next push to main rebuilds Hugo). Hugo source stays in git history.
 
 ## Preserve / rebuild list
 
@@ -175,8 +176,8 @@ The scaffold ships ONE static question step (`app/src/pages/aura-check.astro` + 
 - Verify the language switcher round-trip preserves state.
 
 ### Cutover safety
-- Keep Hugo repo on its current host for 7 days post-cutover.
-- Rollback = DNS revert if anything material is wrong.
+- Production is GH Pages (not a separate host), so there is no DNS step and no parallel host to keep running.
+- Rollback = revert the merge commit on `main` (restores Hugo's `pages.yaml`, drops the Astro deploy); Hugo source remains in git history.
 - Archive the Hugo repo after 7 days.
 
 ## Decisions still open (settle in Phase 1)
@@ -202,7 +203,7 @@ The scaffold ships ONE static question step (`app/src/pages/aura-check.astro` + 
 Trade-offs accepted vs the original brief:
 - No automated UI tests (Vitest covers rules; manual walk covers UI).
 - No PDF byte-stability test or version-stamp metadata.
-- Brief risk window during cutover (manual walk → DNS swap).
+- Brief risk window during cutover (manual walk → merge `redesign`→`main`, which swaps the GH Pages content).
 - Loose frontmatter typing (no Zod schemas on content).
 
 These can all be added later if a specific bug or audit need surfaces.
