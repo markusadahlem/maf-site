@@ -1,0 +1,46 @@
+---
+// Migraine Art page — renders any node of the art hierarchy (root landing,
+// section landings, or entries). Breadcrumb derived from the slug path; the
+// markdown body carries its own "In this section" lists / article content.
+import { type CollectionEntry } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/guide.css';
+import '../styles/pages.css';
+
+interface Props { entry: CollectionEntry<'art'>; locale: string }
+const { entry, locale } = Astro.props;
+const isDe = locale === 'de';
+const { Content } = await entry.render();
+
+const base = isDe ? '/de/art' : '/art';
+const rootLabel = isDe ? 'Migränekunst' : 'Migraine Art';
+// "index" (en root) and "de" (de root) are the section root — no breadcrumb.
+const slug = entry.slug === 'de' || entry.slug === 'index' ? '' : entry.slug.replace(/^de\//, '');
+const segs = slug ? slug.split('/') : [];
+const tc = (s: string) => s.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+// intermediate crumbs = section dirs between root and the current page
+const crumbs = segs.slice(0, -1).map((s, i) => ({ label: tc(s), href: `${base}/${segs.slice(0, i + 1).join('/')}` }));
+---
+
+<BaseLayout title={`${entry.data.title} — ${rootLabel}`} lang={locale} active="art">
+  <div class="page-head">
+    <div class="wrap">
+      {
+        segs.length > 0 && (
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href={base}>{rootLabel}</a>
+            {crumbs.map((c) => (<><span class="sep">/</span><a href={c.href}>{c.label}</a></>))}
+            <span class="sep">/</span><span class="current">{entry.data.title}</span>
+          </nav>
+        )
+      }
+      <h1 class="page-head__title">{entry.data.title}</h1>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <article class="article mx-auto" style="padding-block: clamp(24px,3vw,40px);">
+      <div class="prose"><Content /></div>
+    </article>
+  </div>
+</BaseLayout>

@@ -28,4 +28,11 @@ const blog = defineCollection({
   }),
 });
 
-export const collections = { symptoms, blog };
+// Migraine Art — encyclopedia of migraine in culture (concept/literature/
+// music/visual-arts). Hierarchical: section landings (index.md) + entries.
+const art = defineCollection({
+  type: 'content',
+  schema: z.object({ title: z.string() }),
+});
+
+export const collections = { symptoms, blog, art };
