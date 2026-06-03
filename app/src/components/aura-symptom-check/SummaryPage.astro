@@ -1,0 +1,64 @@
+---
+// SummaryPage — the terminal report. Renders the narrative summary client-side
+// (from the collected localStorage answers) and offers the jsPDF download.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProgressSteps from '../ProgressSteps.astro';
+import { getCatalog } from '../../lib/engine/catalogs';
+import { setCatalog, t } from '../../lib/engine/i18n';
+import '../../styles/questionnaire.css';
+
+interface Props { locale: string }
+const { locale } = Astro.props;
+setCatalog(getCatalog(locale));
+
+const labels: [string, string, string] = [
+  t('flow.progress.section1'),
+  t('flow.progress.section2'),
+  t('flow.progress.section3'),
+];
+const heading = t('flow.report.title', 'Migraine Aura Report');
+const downloadLabel = t('flow.report.button.download', 'Download PDF Report');
+const jspdfFailed = t('flow.report.alert.jspdfFailed', 'PDF generation failed. Please try again.');
+const prefix = locale === 'en' ? '' : `/${locale}`;
+---
+
+<BaseLayout title={`${heading} — Aura Check`} lang={locale} showFooter={false}>
+  <div class="flow">
+    <div class="flow-top">
+      <span class="beta">{t('flow.pages.common.betaVersion')}</span>
+      <a class="flow-exit" href={prefix || '/'}>{t('flow.exit.saveAndExit', 'Save & exit')}</a>
+    </div>
+
+    <ProgressSteps current={3} labels={labels} />
+
+    <section class="qcard">
+      <h1 class="qcard__heading">{heading}</h1>
+      <div id="summaryOutput" class="report-summary"></div>
+      <div class="qactions qactions--end">
+        <button type="button" class="btn btn--primary" id="downloadReport" data-fail={jspdfFailed}>
+          {downloadLabel} <span class="arr">↓</span>
+        </button>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<script>
+  import { renderSummary, downloadReport } from '../../lib/aura-symptom-check/report';
+
+  const out = document.getElementById('summaryOutput');
+  if (out) renderSummary(out);
+
+  const btn = document.getElementById('downloadReport') as HTMLButtonElement | null;
+  btn?.addEventListener('click', async () => {
+    btn.disabled = true;
+    try {
+      await downloadReport();
+    } catch (e) {
+      console.error('report generation failed', e);
+      alert(btn.dataset.fail);
+    } finally {
+      btn.disabled = false;
+    }
+  });
+</script>

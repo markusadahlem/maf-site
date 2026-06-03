@@ -52,6 +52,14 @@ export const flow: Flow<FlowState> = {
       next: "/aura-symptom-check/aura-characteristics/",
     },
 
+    // ── Criterion C quiz ─────────────────────────────────────────────
+    // In the legacy flow this lived outside flow.js (criterionC.js routed on a
+    // localStorage flag). The redesigned linear flow always continues to the
+    // demographic form; the C-criterion verdict is stated in the final report.
+    "aura-characteristics": {
+      next: "/aura-symptom-check/demographic-information/",
+    },
+
     // ── Acute-chronic linear segment ─────────────────────────────────
     "symptom-experience": {
       next: "/aura-symptom-check/acute-chronic/onset-window/",

@@ -7,6 +7,7 @@ import ProgressSteps from '../ProgressSteps.astro';
 import OptionGroup from '../OptionGroup.astro';
 import MotorStep from './MotorStep.astro';
 import DemographicForm from './DemographicForm.astro';
+import CriterionC from './CriterionC.astro';
 import type { StepDef } from '../../lib/rules/steps';
 import type { Option } from '../../config/types';
 import { getCatalog } from '../../lib/engine/catalogs';
@@ -25,7 +26,7 @@ const localize = (path: string) => `${prefix}/aura-symptom-check/${path}`;
 const localizeHref = (href: string) => (locale === 'en' ? href : `${prefix}${href}`);
 
 const heading = t(def.headingKey);
-const prompt = t(def.promptKey);
+const prompt = def.promptKey ? t(def.promptKey) : '';
 const sectionLabels: [string, string, string] = [
   t('flow.progress.section1'),
   t('flow.progress.section2'),
@@ -62,7 +63,7 @@ const uiOptions: Option[] = (def.options ?? []).map((o) => ({
 
     <section class="qcard">
       <h1 class="qcard__heading">{heading}</h1>
-      <p class="qcard__prompt"><strong>{prompt}</strong></p>
+      {prompt && <p class="qcard__prompt"><strong>{prompt}</strong></p>}
 
       {
         (def.type === 'checkbox' || def.type === 'radio') && (
@@ -124,6 +125,31 @@ const uiOptions: Option[] = (def.options ?? []).map((o) => ({
               daysRange: t('flow.alerts.daysRange'),
             }}
             continueLabel={t('flow.common.button.continue')}
+          />
+        )
+      }
+
+      {
+        def.type === 'criterionC' && (
+          <CriterionC
+            stepId={def.stepId}
+            questions={[1, 2, 3, 4, 5, 6].map((n) => ({
+              text: t(`flow.criterionC.q${n}.text`),
+              explanation: t(`flow.criterionC.q${n}.explanation`),
+            }))}
+            labels={{
+              yes: t('flow.criterionC.buttons.yes'),
+              no: t('flow.criterionC.buttons.no'),
+              back: t('flow.criterionC.buttons.back'),
+              showResult: t('flow.criterionC.buttons.showResult'),
+              moreInfo: t('flow.criterionC.moreInfo'),
+              questionLabel: t('flow.criterionC.questionLabel'),
+              summaryIntro: t('flow.criterionC.summary.intro'),
+              summaryHeading: t('flow.criterionC.summary.summaryHeading'),
+              clickPrompt: t('flow.criterionC.summary.clickPrompt'),
+              yesLabel: t('flow.criterionC.summary.yesLabel'),
+              noLabel: t('flow.criterionC.summary.noLabel'),
+            }}
           />
         )
       }

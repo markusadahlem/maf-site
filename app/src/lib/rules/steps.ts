@@ -43,7 +43,7 @@ export interface StepDef {
   /** optional sub-step counter within the section */
   substep?: { current: number; total: number };
   headingKey: string;
-  promptKey: string;
+  promptKey?: string;
   /** input name attribute (kept stable; the engine/storage reads it) */
   name: string;
   options?: StepOption[];
@@ -310,6 +310,19 @@ const priorMedical: StepDef = {
   ],
 };
 
+// ── Criterion C quiz (Section 3 — "Characteristics") ────────────────────────
+
+const auraCharacteristics: StepDef = {
+  path: "aura-characteristics",
+  stepId: "aura-characteristics",
+  type: "criterionC",
+  section: 3,
+  headingKey: "flow.pages.auraCharacteristics.heading",
+  name: "auraCharacteristics",
+  persist: { kind: "auraCharacteristics" },
+  backPath: "modality/brainstem-aura",
+};
+
 // ── Demographic (Section 3 — "Characteristics") ─────────────────────────────
 
 const demographic: StepDef = {
@@ -337,6 +350,7 @@ export const flowSteps: StepDef[] = [
   impact,
   remedies,
   priorMedical,
+  auraCharacteristics,
   demographic,
 ];
 
