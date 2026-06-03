@@ -1,0 +1,137 @@
+---
+// MotorStep — the motor-aura step: a yes/no/unsure gate, and (when "Yes") a set
+// of location checkboxes with an "Other" free-text field. Stores
+// criterionBAnswers.motor = { selected, description, hasWeakness }, matching the
+// Hugo motorAuraStep.js, then advances via flowRunner.goNext("motor-aura").
+import type { Option } from '../../config/types';
+
+interface Props {
+  stepId: string;
+  name: string; // radio name (motorWeakness)
+  options: Option[]; // location checkboxes
+  yesLabel: string;
+  noLabel: string;
+  unsureLabel: string;
+  locationsPrompt: string;
+  otherLabel: string;
+  otherPlaceholder: string;
+  continueLabel: string;
+  backHref: string;
+}
+const {
+  stepId,
+  name,
+  options,
+  yesLabel,
+  noLabel,
+  unsureLabel,
+  locationsPrompt,
+  otherLabel,
+  otherPlaceholder,
+  continueLabel,
+  backHref,
+} = Astro.props;
+const radios = [
+  { value: 'yes', label: yesLabel },
+  { value: 'no', label: noLabel },
+  { value: 'unsure', label: unsureLabel },
+];
+---
+<form id="motor-form" class="qform" data-step={stepId} data-name={name}>
+  <div class="options">
+    {
+      radios.map((r) => (
+        <label class="option option--radio" data-opt>
+          <input type="radio" name={name} value={r.value} data-weakness />
+          <span class="option__box"><span class="dot" /></span>
+          <span class="option__label">{r.label}</span>
+          <span />
+        </label>
+      ))
+    }
+  </div>
+
+  <div class="motor-locations" data-locations hidden>
+    <p class="qcard__prompt"><strong>{locationsPrompt}</strong></p>
+    <div class="options">
+      {
+        options.map((o) => (
+          <label class="option" data-opt>
+            <input type="checkbox" name="motorLocation" value={o.value} data-other={o.other ? '' : undefined} />
+            <span class="option__box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12.5l4.5 4.5L19 7" />
+              </svg>
+            </span>
+            <span class="option__label">{o.label}</span>
+            {o.info ? (
+              <span class="info">
+                <button type="button" class="info__btn" aria-label="More information" data-info-btn>ⓘ</button>
+                <span class="info__pop" role="tooltip">
+                  <p>{o.info.text}</p>
+                  <a href={o.info.href} target="_blank" rel="noopener">{o.info.linkLabel} ↗</a>
+                </span>
+              </span>
+            ) : (
+              <span />
+            )}
+          </label>
+        ))
+      }
+      <div class="other-field" data-other-field>
+        <label for="motor-other">{otherLabel}</label>
+        <textarea id="motor-other" rows="2" maxlength="200" placeholder={otherPlaceholder} data-other-text></textarea>
+        <div class="char-counter" data-counter>200 characters remaining</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="qactions">
+    <a class="btn-back" href={backHref}><span class="arr" style="display:inline-block;transform:rotate(180deg)">→</span> Back</a>
+    <button type="button" class="btn btn--primary" data-continue disabled>{continueLabel} <span class="arr">→</span></button>
+  </div>
+</form>
+
+<script>
+  import { flowRunner } from '../../lib/aura-symptom-check';
+  import { setModalityAnswer, addSelectedModality } from '../../lib/engine/storage';
+
+  const form = document.getElementById('motor-form') as HTMLFormElement | null;
+  if (form) {
+    const radios = Array.from(form.querySelectorAll<HTMLInputElement>('[data-weakness]'));
+    const locations = form.querySelector<HTMLElement>('[data-locations]');
+    const otherInput = form.querySelector<HTMLInputElement>('input[data-other]');
+    const otherField = form.querySelector<HTMLElement>('[data-other-field]');
+    const textarea = form.querySelector<HTMLTextAreaElement>('[data-other-text]');
+    const counter = form.querySelector<HTMLElement>('[data-counter]');
+    const cont = form.querySelector<HTMLButtonElement>('[data-continue]');
+
+    const weakness = () => radios.find((r) => r.checked)?.value;
+
+    radios.forEach((r) =>
+      r.addEventListener('change', () => {
+        if (locations) locations.hidden = r.value !== 'yes' || !r.checked;
+        if (cont) cont.disabled = !weakness();
+      }),
+    );
+    otherInput?.addEventListener('change', () => {
+      otherField?.classList.toggle('is-shown', otherInput.checked);
+    });
+    textarea?.addEventListener('input', () => {
+      if (counter) counter.textContent = `${200 - textarea.value.length} characters remaining`;
+    });
+
+    cont?.addEventListener('click', () => {
+      const has = weakness();
+      if (!has) return;
+      const checkedLocations = Array.from(
+        form.querySelectorAll<HTMLInputElement>('input[name="motorLocation"]:checked'),
+      ).map((i) => i.value);
+      const selected = has === 'yes' ? checkedLocations : [has];
+      const description = textarea?.value.trim() || '';
+      setModalityAnswer('motor', { selected, description, hasWeakness: has });
+      addSelectedModality('motor');
+      window.location.assign(flowRunner.goNext(form.dataset.step!));
+    });
+  }
+</script>

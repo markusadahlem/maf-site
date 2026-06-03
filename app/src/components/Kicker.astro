@@ -1,0 +1,15 @@
+---
+// Small uppercase label with a leading rule. variant: "warm" | "blue"
+interface Props {
+  variant?: 'warm' | 'blue';
+  center?: boolean;
+  class?: string;
+}
+const { variant = 'warm', center = false, class: cls = '' } = Astro.props;
+---
+<span
+  class:list={['kicker', { 'kicker--blue': variant === 'blue' }, cls]}
+  style={center ? 'justify-content:center' : undefined}
+>
+  <slot />
+</span>

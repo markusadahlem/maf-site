@@ -1,0 +1,58 @@
+# Deploy the Astro app (app/) to GitHub Pages.
+#
+# Replaces the Hugo deploy (pages.yaml, deleted in the same change) at cutover:
+# this lives on the `redesign` branch and only takes effect once redesign is
+# merged to main, so main keeps deploying Hugo until then. The GH Pages custom
+# domain (migraine-aura-foundation.org) is configured in repo Settings and
+# persists — Hugo uploaded ./public with no CNAME file and so do we.
+name: Deploy Astro site to Pages
+
+on:
+  push:
+    branches: ["main"]
+    paths: ["app/**", ".github/workflows/deploy.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+    working-directory: app
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: app/.nvmrc
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+      - name: Configure Pages
+        uses: actions/configure-pages@v4
+      - run: npm ci
+      - run: npm run build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: app/dist
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

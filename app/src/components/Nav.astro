@@ -1,0 +1,71 @@
+---
+import Brand from './Brand.astro';
+import { navLinks, ctaPrimary } from '../config/site';
+interface Props {
+  /** nav key to highlight, e.g. "field-guide" */
+  active?: string;
+  /** same page under the other locale, for the language switcher */
+  altUrl?: string;
+  /** the other locale's code, e.g. "de" */
+  altLang?: string;
+}
+const { active, altUrl, altLang } = Astro.props;
+---
+
+<header class="nav">
+  <div class="nav__inner">
+    <Brand showTagline={true} />
+
+    <nav class="nav__links" aria-label="Primary">
+      {
+        navLinks.map((l) => (
+          <a class:list={['nav__link', { 'nav__link--active': active === l.key }]} href={l.href}>
+            {l.label}
+          </a>
+        ))
+      }
+      <a class="btn btn--primary nav__cta" href={ctaPrimary.href}>{ctaPrimary.label}</a>
+    </nav>
+
+    <div class="nav__tools">
+      {
+        altUrl && altLang && (
+          <a class="nav__lang theme-toggle" href={altUrl} hreflang={altLang} aria-label={`Switch language to ${altLang.toUpperCase()}`}>
+            {altLang.toUpperCase()}
+          </a>
+        )
+      }
+      <button class="nav__menu-btn theme-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-btn>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round">
+          <path d="M4 7h16M4 12h16M4 17h16"></path>
+        </svg>
+      </button>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode" data-theme-btn>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+          <circle cx="12" cy="12" r="4.2"></circle>
+          <path d="M12 2.5v2.5M12 19v2.5M4.5 4.5l1.8 1.8M17.7 17.7l1.8 1.8M2.5 12H5M19 12h2.5M4.5 19.5l1.8-1.8M17.7 6.3l1.8-1.8"></path>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 14.5A8 8 0 1 1 9.5 4a6.3 6.3 0 0 0 10.5 10.5Z"></path>
+        </svg>
+      </button>
+      <a class="btn btn--primary" href={ctaPrimary.href}>{ctaPrimary.label}</a>
+    </div>
+  </div>
+</header>
+
+<script>
+  // Theme toggle + mobile menu — runs once per page, bundled by Astro.
+  const root = document.documentElement;
+  document.querySelector('[data-theme-btn]')?.addEventListener('click', () => {
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('maf-theme', next);
+  });
+  const menuBtn = document.querySelector('[data-menu-btn]');
+  menuBtn?.addEventListener('click', () => {
+    const nav = menuBtn.closest('.nav');
+    const open = nav?.classList.toggle('is-open');
+    menuBtn.setAttribute('aria-expanded', String(!!open));
+  });
+</script>

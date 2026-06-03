@@ -1,0 +1,5 @@
+---
+import LegalPage from '../../components/LegalPage.astro';
+import { Content, frontmatter } from '../../prose/next-gen/_index.md';
+---
+<LegalPage title={frontmatter.title} kicker="For clinicians" locale="en"><Content /></LegalPage>

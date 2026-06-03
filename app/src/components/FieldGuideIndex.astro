@@ -1,0 +1,114 @@
+---
+// Field Guide index, generated from the `symptoms` collection (grouped by
+// persistence then domain). Shared by the en and de routes.
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Kicker from '../components/Kicker.astro';
+import Callout from '../components/Callout.astro';
+import '../styles/guide.css';
+
+interface Props { locale: string }
+const { locale } = Astro.props;
+const isDe = locale === 'de';
+
+const UI = isDe
+  ? {
+      kicker: 'Symptom-Leitfaden',
+      title: 'Symptom-Leitfaden',
+      lead: 'Ein vollständiger Katalog der Migräne-<em>Aura</em>-Symptome — in klarer Sprache beschrieben, gruppiert nach Dauer und betroffenem Sinn.',
+      transitory: 'Vorübergehende Aurasymptome',
+      transitoryMeta: 'Entwickeln sich über 5–20 Minuten und klingen innerhalb von 60 Minuten ab.',
+      persistent: 'Anhaltende Aurasymptome',
+      persistentMeta: 'Dauern Wochen, Monate oder Jahre; selten, aber dokumentiert.',
+      callout: 'Dieser Leitfaden behandelt <strong>ausschließlich Migräne-Aura-Symptome</strong>. Migräne kann viele weitere Symptome vor, während und nach einer Attacke umfassen.',
+    }
+  : {
+      kicker: 'Field Guide',
+      title: 'A Field Guide to Symptoms',
+      lead: 'A complete catalogue of migraine <em>aura</em> symptoms — described in plain language, grouped by how long they last and the sense they affect.',
+      transitory: 'Transitory Aura Symptoms',
+      transitoryMeta: 'Develop over 5–20 minutes and resolve within 60 minutes.',
+      persistent: 'Persistent Aura Symptoms',
+      persistentMeta: 'Last weeks, months, or years; rare but documented.',
+      callout: 'This guide focuses <strong>exclusively on migraine aura symptoms</strong>. Migraine can involve many other symptoms before, during, and after an attack.',
+    };
+
+const hrefBase = isDe ? '/de/symptom-guide/' : '/symptom-guide/';
+const entries = await getCollection('symptoms', (e) =>
+  isDe ? e.slug.startsWith('de/') : !e.slug.startsWith('de/'),
+);
+
+interface Item { title: string; domain: string; href: string }
+interface Group { domain: string; items: Item[] }
+
+function groupByDomain(list: Item[]): Group[] {
+  const map = new Map<string, Item[]>();
+  for (const it of list) {
+    if (!map.has(it.domain)) map.set(it.domain, []);
+    map.get(it.domain)!.push(it);
+  }
+  return [...map.entries()]
+    .map(([domain, items]) => ({ domain, items: items.sort((a, b) => a.title.localeCompare(b.title)) }))
+    .sort((a, b) => a.domain.localeCompare(b.domain));
+}
+
+const items: { item: Item; persistence: string }[] = entries.map((e) => ({
+  persistence: e.data.persistence ?? 'Transitory',
+  item: {
+    title: e.data.title,
+    domain: e.data.domain || (isDe ? 'Andere' : 'Other'),
+    href: hrefBase + e.slug.replace(/^de\//, ''),
+  },
+}));
+const transitory = groupByDomain(items.filter((x) => x.persistence === 'Transitory').map((x) => x.item));
+const persistent = groupByDomain(items.filter((x) => x.persistence === 'Persistent').map((x) => x.item));
+const sections = [
+  { key: 't', head: UI.transitory, meta: UI.transitoryMeta, groups: transitory },
+  { key: 'p', head: UI.persistent, meta: UI.persistentMeta, groups: persistent },
+];
+---
+
+<BaseLayout title={`${UI.title} — Migraine Aura Foundation`} lang={locale} active="field-guide">
+  <div class="page-head">
+    <div class="wrap">
+      <Kicker variant="blue">{UI.kicker}</Kicker>
+      <h1 class="page-head__title">{UI.title}</h1>
+      <p class="page-head__lead" set:html={UI.lead} />
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="docs">
+      <aside class="side" aria-label="Symptom categories">
+        {sections.map((s) => (
+          <div class="side__group">
+            <div class="side__title">{s.head.split(' ')[0]}</div>
+            <ul class="side__list">
+              {s.groups.map((g, i) => <li><a href={`#${s.key}-${i}`} class:list={[{ 'is-active': s.key === 't' && i === 0 }]}>{g.domain}</a></li>)}
+            </ul>
+          </div>
+        ))}
+      </aside>
+
+      <div>
+        <Callout><p set:html={UI.callout} /></Callout>
+
+        {sections.map((s) => (
+          <section class="fg-section">
+            <div class="fg-section__head"><h2 class="fg-section__title">{s.head}</h2><span class="fg-section__meta">{s.meta}</span></div>
+            <div class="fg-groups">
+              {s.groups.map((g, i) => (
+                <div class="fg-group" id={`${s.key}-${i}`}>
+                  <div class="fg-group__title">{g.domain}</div>
+                  <ul class="fg-list">
+                    {g.items.map((it) => <li><a href={it.href}>{it.title}<span class="chev">→</span></a></li>)}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,22 @@
+---
+// Simple prose page (impressum, contact, …): page-head + a centered prose body.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Kicker from './Kicker.astro';
+import '../styles/guide.css';
+
+interface Props { title: string; kicker?: string; locale?: string }
+const { title, kicker, locale = 'en' } = Astro.props;
+---
+<BaseLayout title={`${title} — Migraine Aura Foundation`} lang={locale}>
+  <div class="page-head">
+    <div class="wrap">
+      {kicker && <Kicker>{kicker}</Kicker>}
+      <h1 class="page-head__title">{title}</h1>
+    </div>
+  </div>
+  <div class="wrap">
+    <article class="article mx-auto" style="padding-block: clamp(24px,3vw,40px);">
+      <div class="prose"><slot /></div>
+    </article>
+  </div>
+</BaseLayout>

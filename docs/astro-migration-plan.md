@@ -1,6 +1,6 @@
 # Hugo → Astro migration of migraine-aura-foundation.org
 
-> **Status**: Approved, deferred. Plan approved 2026-05-29; user intends to start execution in approximately 2 weeks (~2026-06-12). When resuming, no need to re-plan — this file is the source of truth.
+> **Status**: Active — execution started 2026-06-03. Plan approved 2026-05-29. A custom design was commissioned after approval and is now adopted as-is (see **Design system** below), which replaces the original "Starlight chrome" decision with hand-built chrome. This file is the single source of truth and **supersedes** `app/README.md` (the design handoff's notes). When resuming, no need to re-plan.
 
 ## Context
 
@@ -13,12 +13,24 @@ The site is currently Hugo + Hextra theme, with substantial recent investment in
 - **Cache busting**: Hugo doesn't fingerprint `/static/js/*.js` URLs, causing repeated "stale module" issues during the i18n work.
 - **Theme constraints**: Hextra's chrome (sidebar, switcher, dark mode, search) is good but coupled tightly to Hugo's data structures; small UX changes require theme-level workarounds.
 
-Goal: port to Astro + TypeScript + Starlight, extracting the rule engine into a typed package with vignette tests, while preserving en + de URLs and content. Multi-language continues with en + de as concrete locales; further languages slot in by adding catalogs + content siblings.
+Goal: port to Astro + TypeScript with a bespoke design system (no Starlight), extracting the rule engine into a typed package with unit tests, while preserving en + de URLs and content. Multi-language continues with en + de as concrete locales; further languages slot in by adding catalogs + content siblings.
+
+## Design system
+
+The foundation commissioned a custom design after this plan was approved. It is **adopted as-is** — do not redesign it.
+
+- **Source of truth (read-only)**: `NEW-DESIGN/handoff/` (gitignored) holds the 8 static HTML mockups, screenshots, and the design CSS. Treat it as the reference; the living code is in `app/`.
+- **Tokens**: `app/src/styles/theme.css` — OKLCH palette (warm-paper neutrals, calm clinical blue `--primary`, terracotta `--warm`), light + dark via `:root[data-theme="dark"]`. Type: **Source Serif 4** (display) + **Hanken Grotesk** (UI/body).
+- **Brand change**: this replaces the current Hugo identity (teal `#08768a` / yellow `#eeff41` / IBM Plex Sans). The Roboto TTF stays, but only inside the PDF (jsPDF Unicode), not as a web font.
+
+## Existing scaffold
+
+A working Astro project already exists at `app/` (promoted from `NEW-DESIGN/handoff/astro/`). It ships the **presentation layer**: ~17 components (Brand, Nav, Footer, Button, Kicker, Tag, SectionHead, Callout, FeatureCard, Quote, CtaBand, PostCard, Track, GalleryFigure, TimelineItem, ProgressSteps, OptionGroup), 8 page routes, `BaseLayout` (html shell, fonts, no-flash theme init, Nav+Footer), `config/site.ts` (brand + nav + footer), `data/voices.ts`, and content collections (`symptoms`, `blog`) with light Zod schemas. The remaining work below is the **engine / rules / i18n / PDF / content / deploy** layer that plugs into this scaffold.
 
 ## Stack (decided)
 
 - **Build**: Astro + TypeScript, **single project (no monorepo)**.
-- **Chrome**: Starlight — sidebar nav, language switcher (i18n-aware routing), dark mode, mobile layout, Pagefind search, TOC. Customize via slot overrides where needed.
+- **Chrome**: **bespoke design system, no Starlight.** Nav (with language switcher + dark-mode toggle + mobile menu island), Footer, sidebar/TOC, and the questionnaire UI are hand-built Astro components already present in `app/` (see **Existing scaffold**). OKLCH tokens + Source Serif 4 / Hanken Grotesk.
 - **Islands**: Astro components with minimal `client:visible` islands using vanilla TS. **No additional framework** (Svelte/React) for v1 — add only if a specific interaction proves too painful in plain TS.
 - **Rules**: **TypeScript `.ts` files**. Direct imports, autocomplete, refactor-safe, no parser dependency. (i18n catalogs stay YAML since translators edit them.)
 - **PDF**: **Keep jsPDF** + Roboto. Already migrated to i18n with proper Unicode rendering; don't change two things at once.
@@ -28,42 +40,52 @@ Goal: port to Astro + TypeScript + Starlight, extracting the rule engine into a 
 
 ## Repo structure
 
-Single Astro project:
+Single Astro project. During the build phase it lives in **`app/`** so Hugo (repo root) and Astro build side-by-side; at cutover `app/` flattens to the repo root (the "single project, src at root" end state). `app/public/` holds tracked design assets — distinct from Hugo's gitignored root `public/` build output (the `.gitignore` rule is anchored to `/public/`).
 
 ```
-src/
-  pages/                          # Astro routes (replaces Hugo content URL routing)
-  content/                        # Markdown (single shared frontmatter schema if any)
-    aura-symptom-check/{en,de}/   # Language-routed via Astro i18n
-    blog/, experiences/, art/, voices/, about/, contact/, research/
-  components/                     # Astro components for forms, criterionC, criterionB, etc.
-  lib/
-    engine/                       # state-store, rules-engine, flow-runner, helpers, narrative, i18n
-    rules/                        # TypeScript rule definitions (e.g. aura-symptom-check.ts)
-    pdf/                          # generateAuraReport.ts (jsPDF port to TS)
-  i18n/{en,de}.yaml               # Message catalogs (1:1 port of current i18n/*.yaml)
-  fonts/Roboto-Regular.ttf
-tests/                            # Vitest unit tests
-.github/workflows/deploy.yml      # GH Pages deploy on push to main
+app/
+  astro.config.mjs                # Astro + built-in i18n (en+de); no Starlight
+  src/
+    pages/                        # Astro routes (replaces Hugo content URL routing)
+    content/                      # Markdown collections (symptoms, blog; loose schema)
+      <collection>/de/            # German mirror — Astro i18n directory layout
+    components/                   # design-system components (already built) + forms,
+                                  #   criterionC, criterionB (Phase 2)
+    config/site.ts                # brand, nav links, footer columns
+    styles/theme.css              # OKLCH design tokens (light + dark)
+    lib/
+      engine/                     # state-store, rules-engine, flow-runner, helpers, narrative, i18n
+      rules/                      # TypeScript rule defs: aura-symptom-check.ts, steps.ts (registry)
+      pdf/                        # generateAuraReport.ts (jsPDF port to TS) + roboto.ts
+    i18n/{en,de}.yaml             # Message catalogs (1:1 port of current i18n/*.yaml)
+    fonts/Roboto-Regular.ttf      # PDF only
+  tests/                          # Vitest unit tests
+.github/workflows/deploy.yml      # GH Pages deploy (build app/, publish app/dist)
 ```
 
 ## Migration phases
 
+### Phase 0 — Promote scaffold + reconcile (~half day) — DONE 2026-06-03
+- Copied `NEW-DESIGN/handoff/astro/` → tracked `app/`; anchored `.gitignore` `public/` → `/public/`; ignored `app/{node_modules,dist,.astro}`; pinned Node via `app/.nvmrc`.
+- `npm install` + `npm run build` clean (11 pages). Baseline committed verbatim.
+- Reconciled this plan doc into the single source of truth.
+
 ### Phase 1 — Foundation + Engine (~2-3 days)
-- `pnpm create astro@latest` with the Starlight integration. Configure i18n: `en` default, `de` as second locale.
-- Port `static/js/decision-flow/{state-store,rules-engine,flow-runner,i18n}.js` to `src/lib/engine/` in TS. Same API shape (`flowRunner.goNext`, `store.get/set`, `t(key, fallback, params)`).
+- Scaffold already promoted (Phase 0). Configure built-in i18n in `astro.config.mjs`: `en` default, `de` second locale, `prefixDefaultLocale: false`.
+- Port `static/js/decision-flow/{state-store,rules-engine,flow-runner,i18n}.js` to `app/src/lib/engine/` in TS. Same API shape (`flowRunner.goNext`, `store.get/set`, `t(key, fallback, params)`). `goNext` returns the resolved URL (no `window.location.href`); keep a pure `nextUrl(stepId)` for tests. Replace the `window.__symptomCheckI18n` auto-init with an explicit `setCatalog()` fed per locale at build.
 - Port `static/js/modules/aura-symptom-check/flow.js` to `src/lib/rules/aura-symptom-check.ts` as a typed object literal.
 - Port `static/js/aura-symptom-check/{helpers,summaryGeneration}.js` to `src/lib/engine/`. Preserve `getPronouns(gender, lang)`, `formatList(items, lang)`, and the `{Subj}/{subj}/{poss}/{fullName}` parameter convention in narrative templates.
 - Copy `i18n/en.yaml` + `i18n/de.yaml` → `src/i18n/` verbatim.
 - Write Vitest unit tests for: state-store get/set, rules-engine resolve (static + branch arrays), flow-runner goNext with `langURL()`, t() parameter substitution, getPronouns/formatList for en + de, narrative composition for canned input objects.
 - GH Actions workflow → GH Pages deploy.
 
-### Phase 2 — Flow UI (~2-3 days)
-- Aura-symptom-check pages as Astro routes consuming the engine.
-- Form components as Astro components with vanilla TS islands (one per step type: checkbox group, radio group, "yes/no + location detail", textarea, demographic form).
-- criterionC quiz, criterionB modality selector, PDF download button as standalone Astro components.
-- Wire `flowRunner.goNext()` to Astro's `navigate()` (no `window.location.href`).
-- Walk en + de flows manually in dev; iterate until parity feels right.
+### Phase 2 — Flow UI (~3-4 days) — generalize the single handoff step into the full flow
+The scaffold ships ONE static question step (`app/src/pages/aura-check.astro` + `OptionGroup.astro`, with a `TODO(migration)` seam). The real flow is ~14 branching steps. Generalize, don't hand-author 14 pages:
+- **One dynamic route** `app/src/pages/aura-symptom-check/[...step].astro` driven by a **step registry** `app/src/lib/rules/steps.ts` (per stepId: type, i18n keys for heading/prompt/options, `ProgressSteps` position, engine stepId). `getStaticPaths()` emits one page per registry entry × locale.
+- **Reuse `OptionGroup`** unchanged for checkbox/radio steps (feed options from i18n via `t()`, not hardcoded English). Add 3 new components in `app/src/components/aura-symptom-check/` for the demographic form, criterionC quiz, and criterionB modality selector (port the Hugo shortcodes). `modality-summary` → terminal page calling `narrative.ts` + the PDF button.
+- Keep `OptionGroup.astro`, `ProgressSteps.astro`, `questionnaire.css`, and the `.flow/.qcard` markup as-is (preserve the design + DOM contract).
+- **Wire the seam**: collect checked values + "Other" textarea → persist via storage helpers → `flowRunner.goNext(stepId)` → `window.location.assign(langURL(url))`. Plain `location.assign` for v1 (state in localStorage survives reloads); View Transitions can come later.
+- Walk en + de flows manually in dev against live Hugo prod; iterate until parity.
 
 ### Phase 3 — PDF (~1 day)
 - Port `static/js/generateAuraReport.js` to `src/lib/pdf/generateAuraReport.ts` (still jsPDF, now typed).
@@ -77,16 +99,18 @@ tests/                            # Vitest unit tests
 - Preserve URLs via `[...slug].astro` page templates.
 
 ### Phase 5 — Chrome carry-overs (~1-2 days)
-- **Swiper carousels** → keep Swiper (framework-agnostic).
-- **PostHog** (cookieless, EU region) → Astro layout `<head>` slot. Port `layouts/partials/custom/posthog.html` verbatim — same `phc_…` project key, same `persistence: 'memory'` / `autocapture: false` / `disable_session_recording: true` flags, same `eu.i.posthog.com` host. No consent banner. (GA was removed in commit `c7d2d33` before this migration.)
-- **Alpine.js** → drop, Starlight + vanilla TS covers what Alpine did for Hextra.
-- **FlexSearch (Hextra)** → Pagefind (Starlight default).
+- **Nav / Footer / theme toggle / mobile menu** → already hand-built in the scaffold (`Nav.astro`, `Footer.astro`, `BaseLayout.astro` no-flash init). Just confirm the en↔de language switcher round-trips.
+- **PostHog** (cookieless, EU region) → port `layouts/partials/custom/posthog.html` verbatim into `BaseLayout.astro`'s `<head>` slot — same `phc_…` project key, same `persistence: 'memory'` / `autocapture: false` / `disable_session_recording: true` flags, same `eu.i.posthog.com` host. No consent banner. (GA was removed in commit `c7d2d33` before this migration.)
+- **Swiper carousels** → keep Swiper only if the scaffold's `Track` / `GalleryFigure` don't already cover the galleries; check first.
+- **Alpine.js** → drop (was Hextra-only).
+- **Search dropped for v1.** Pagefind was a Starlight default; with custom chrome it needs a standalone index + a hand-built search UI matching the design system (net-new, no mockup). The site is content-light; ship without search and add Pagefind later (it runs standalone with Astro) if analytics show demand.
 
 ### Phase 6 — Cutover (~1 day)
-- Manual clinical walkthrough: 5-10 representative flows in both en and de, compare narrative paragraph and PDF body side-by-side against current Hugo production.
-- Configure GH Pages custom domain (`migraine-aura-foundation.org`); CNAME file in repo root.
-- DNS swap from current Hugo host to GH Pages.
-- Keep Hugo repo on its current host for **7 days** as fallback; archive after.
+**Production is GitHub Pages already** (confirmed): Hugo is built+published to GH Pages by `pages.yaml` on push to `main`. So cutover swaps the *content* GH Pages serves (Hugo → Astro) — **no DNS change, no separate host, no CNAME file** (the custom domain `migraine-aura-foundation.org` lives in repo Settings and persists; Hugo uploaded `./public` without a CNAME and so does the Astro deploy).
+- Manual clinical walkthrough: 5-10 representative flows in both en and de, compare narrative paragraph and PDF body side-by-side against current Hugo production. (DONE 2026-06-03 — passed.)
+- The swap is staged on `redesign`: `deploy.yml` (build `app/` → publish `app/dist` to Pages, on push:main) is added and Hugo's `pages.yaml` is deleted, so **merging `redesign` → `main` atomically swaps Hugo → Astro**.
+- Pre-flight: confirm GH Pages Source = "GitHub Actions"; pick www-vs-apex canonical (astro `site` is www, Hugo built apex).
+- **Rollback = revert the merge commit on `main`** (restores `pages.yaml`, drops the Astro deploy; next push to main rebuilds Hugo). Hugo source stays in git history.
 
 ## Preserve / rebuild list
 
@@ -100,10 +124,10 @@ tests/                            # Vitest unit tests
 - URL structure: `/aura-symptom-check/...` for English, `/de/aura-symptom-check/...` for German.
 
 **Rebuild (Hugo-specific or theme-coupled)**:
-- Hugo shortcodes (`layouts/shortcodes/aura-symptom-check/**/*.html`, `criterionB.html`, `criterionC.html`) → Astro components in `src/components/`.
-- Hugo partials + Hextra theme chrome → Starlight defaults + slot overrides.
+- Hugo shortcodes (`layouts/shortcodes/aura-symptom-check/**/*.html`, `criterionB.html`, `criterionC.html`) → Astro components in `app/src/components/aura-symptom-check/`.
+- Hugo partials + Hextra theme chrome → already rebuilt as the bespoke design system in `app/` (Nav/Footer/BaseLayout); nothing to port.
 - Alpine.js (used by Hextra) → drop.
-- FlexSearch (Hextra) → Pagefind.
+- FlexSearch (Hextra) → dropped for v1 (no search; Pagefind deferred — see Phase 5).
 - Hugo's `relLangURL` → Astro's `getRelativeLocaleUrl`.
 - The 14 `.de.md` sibling files created during the i18n work → not needed (Astro's i18n directory layout handles language routing natively).
 - `layouts/partials/aura-symptom-check/i18n-catalog.html` (the inline `window.__symptomCheckI18n` injection) → not needed. Astro statically resolves i18n at build time; client JS receives only the active language's strings.
@@ -123,13 +147,13 @@ tests/                            # Vitest unit tests
 
 ## Critical files (representative; not exhaustive)
 
-**New**:
-- `astro.config.mjs` — Astro + Starlight + i18n config.
-- `src/lib/engine/{state-store,rules-engine,flow-runner,helpers,narrative,i18n}.ts`.
-- `src/lib/rules/aura-symptom-check.ts`.
-- `src/i18n/{en,de}.yaml` (1:1 ports).
-- `src/lib/pdf/{generateAuraReport,roboto}.ts`.
-- `tests/**/*.test.ts` — Vitest unit tests.
+**New** (all under `app/` during the build phase):
+- `app/astro.config.mjs` — Astro + built-in i18n config (no Starlight).
+- `app/src/lib/engine/{state-store,rules-engine,flow-runner,helpers,narrative,i18n,storage}.ts`.
+- `app/src/lib/rules/{aura-symptom-check,steps}.ts` (rule graph + step registry).
+- `app/src/i18n/{en,de}.yaml` (1:1 ports).
+- `app/src/lib/pdf/{generateAuraReport,roboto}.ts`.
+- `app/tests/**/*.test.ts` — Vitest unit tests.
 - `.github/workflows/deploy.yml`.
 
 **Migrated patterns**:
@@ -152,14 +176,16 @@ tests/                            # Vitest unit tests
 - Verify the language switcher round-trip preserves state.
 
 ### Cutover safety
-- Keep Hugo repo on its current host for 7 days post-cutover.
-- Rollback = DNS revert if anything material is wrong.
+- Production is GH Pages (not a separate host), so there is no DNS step and no parallel host to keep running.
+- Rollback = revert the merge commit on `main` (restores Hugo's `pages.yaml`, drops the Astro deploy); Hugo source remains in git history.
 - Archive the Hugo repo after 7 days.
 
 ## Decisions still open (settle in Phase 1)
 
-- **Astro i18n strategy**: built-in `i18n` config vs `astro-i18next` plugin. Built-in is simpler; pick if it covers our needs.
-- **Pagefind index scope**: all content vs key pages only. Default to all.
+- **Astro i18n strategy** — DECIDED: built-in `i18n` config (`prefixDefaultLocale: false`), not `astro-i18next`.
+- **Search** — DECIDED: dropped for v1 (no Pagefind). Revisit if analytics show demand.
+- **Client navigation** — DECIDED: plain `window.location.assign(langURL(url))` for v1 (state in localStorage survives reloads); View Transitions deferred.
+- **Cutover layout** — open: at Phase 6, flatten `app/` → repo root (matches "src at root") vs keep `app/` and point CI there. Decide before it affects paths.
 - **The 7 partially-translated locales** (fr, es, it, uk, ru, nl, da) in current `i18n/*.yaml`. Probably leave the yaml files but don't add them to Astro's i18n config until real translators populate them. Existing partial-language URLs (none for the flow pages) will 404 quietly.
 - **Content frontmatter schema**: none for v1 (Astro accepts loose frontmatter). Add Zod schemas later if a specific bug warrants it.
 
@@ -177,7 +203,7 @@ tests/                            # Vitest unit tests
 Trade-offs accepted vs the original brief:
 - No automated UI tests (Vitest covers rules; manual walk covers UI).
 - No PDF byte-stability test or version-stamp metadata.
-- Brief risk window during cutover (manual walk → DNS swap).
+- Brief risk window during cutover (manual walk → merge `redesign`→`main`, which swaps the GH Pages content).
 - Loose frontmatter typing (no Zod schemas on content).
 
 These can all be added later if a specific bug or audit need surfaces.

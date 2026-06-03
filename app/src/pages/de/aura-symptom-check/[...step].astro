@@ -1,0 +1,13 @@
+---
+// German aura-symptom-check flow (served under /de/). Same registry + engine as
+// the English route; only the locale (catalog + <html lang> + URL prefix) differs.
+import FlowStep from '../../../components/aura-symptom-check/FlowStep.astro';
+import { flowSteps } from '../../../lib/rules/steps';
+
+export function getStaticPaths() {
+  return flowSteps.map((def) => ({ params: { step: def.path }, props: { def } }));
+}
+
+const { def } = Astro.props;
+---
+<FlowStep def={def} locale="de" />

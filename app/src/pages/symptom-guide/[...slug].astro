@@ -1,0 +1,13 @@
+---
+// English Field Guide articles (the symptoms collection, excluding the de/ mirror).
+import { getCollection } from 'astro:content';
+import FieldGuideArticle from '../../components/FieldGuideArticle.astro';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('symptoms', (e) => !e.slug.startsWith('de/'));
+  return entries.map((entry) => ({ params: { slug: entry.slug }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+---
+<FieldGuideArticle entry={entry} locale="en" />

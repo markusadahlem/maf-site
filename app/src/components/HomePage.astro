@@ -1,0 +1,170 @@
+---
+// Homepage, locale-driven. Shared by / (en) and /de/. The patient voices stay
+// in their original wording; all chrome/marketing copy is localised.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Kicker from '../components/Kicker.astro';
+import Button from '../components/Button.astro';
+import SectionHead from '../components/SectionHead.astro';
+import FeatureCard from '../components/FeatureCard.astro';
+import Quote from '../components/Quote.astro';
+import { voices } from '../data/voices';
+import '../styles/home.css';
+
+interface Props { locale: string }
+const { locale } = Astro.props;
+const isDe = locale === 'de';
+const p = (path: string) => (isDe ? `/de${path}` : path);
+
+const T = isDe
+  ? {
+      title: 'Migraine Aura Foundation — Mach deine Migräne sichtbar',
+      heroKicker: 'Eine Stiftung, die aus Patientenstimmen entstand',
+      heroTitle: 'Mach deine Migräne <em>sichtbar</em>.',
+      heroSub: 'Migräne-Aura beginnt oft dort, wo Worte versagen — in flackerndem Licht, Taubheit, verlorener Sprache, verzerrter Zeit. Wir übersetzen diese Erfahrung in die formale Sprache der Diagnose, damit du verstanden wirst.',
+      cta1: 'Den 10-minütigen Aura-Check starten', cta2: 'Den Symptom-Leitfaden durchstöbern',
+      heroMicro: 'Verwandle deine Symptome in einen klaren Bericht, den du mit deiner Ärztin oder deinem Arzt teilen kannst.',
+      heroCaption: '„Fortifikationsspektrum" über dem Roten Rathaus — Patientenkunst, die eine visuelle Aura darstellt.',
+      statsLead: "Seit über 25 Jahren hören wir zu, sammeln und benennen, was Migräne bewirkt — und haben so <strong>eine der weltweit umfassendsten Aufzeichnungen der Aura</strong> aufgebaut.",
+      stat1: 'Aus erster Hand gesammelte Aura-Berichte von Patienten',
+      stat2: 'Sammeln und Benennen von Aura-Symptomen seit',
+      stat3: 'Im Symptom-Leitfaden dokumentierte Aura-Symptome',
+      exploreKicker: 'Entdecken', exploreTitle: 'Vier Einstiege',
+      exploreSub: 'Ob du benennen möchtest, was du fühlst, dich auf einen Termin vorbereitest oder die Erfahrung eines Angehörigen verstehen willst — beginne hier.',
+      f1t: 'Ein Symptom-Leitfaden', f1s: 'Durchstöbere einen vollständigen Katalog der Migräne-Aura-Symptome — vorübergehend und anhaltend — in klarer Sprache.', f1l: 'Den Leitfaden öffnen',
+      f2t: 'Aufschlussreiche Erfahrungen', f2s: 'Kunst und Geschichten, die die verborgenen Auswirkungen der Migräne sichtbar machen — für Familien, Behandelnde und dich selbst.', f2l: 'Die Galerie ansehen',
+      f3t: 'Der Aura-Check', f3s: 'Eine geführte 10-minütige Anamnese, die deine Erfahrungen in einen strukturierten Bericht für deine Ärztin oder deinen Arzt verwandelt.', f3l: 'Den Check starten',
+      f4t: 'Migräneversorgung der nächsten Generation', f4s: 'Evidenzbasierte Werkzeuge und Forschung für Behandelnde und Partner, die das Nächste aufbauen.', f4l: 'Für Fachpersonen',
+      expKicker: 'Aufschlussreiche Erfahrungen', expTitle: 'Wenn Worte versagen, malen Menschen.',
+      expText: 'Seit den 1990er-Jahren senden uns Patienten Gemälde, Zeichnungen und Texte, die einfangen, wie sich Aura von innen anfühlt. Zusammen bilden sie ein lebendiges Archiv — der Beweis, dass diese Symptome real, geteilt und benennbar sind.',
+      expLink: 'Das Archiv erkunden',
+      voicesKicker: 'In ihren Worten', voicesTitle: 'Es lässt einen sich weniger allein fühlen',
+      hcpKicker: 'Für medizinisches Fachpersonal', hcpTitle: 'Gestalte die Migräneversorgung der nächsten Generation mit.',
+      hcpSub: 'Wir statten Behandelnde und Industriepartner mit evidenzbasierten Werkzeugen, Forschung und patientenbasierten Daten für jede Phase der Migräneversorgung aus — von der ersten Aura bis zum Langzeitmanagement.',
+      hcpCta: 'Mit uns zusammenarbeiten',
+      hcp1: 'An diagnostischen Kriterien ausgerichtet', hcp2n: 'Offen', hcp2: 'Patientenbasierte Symptomdaten', hcp3n: '25 J.', hcp3: 'Längsschnittliche Patientenstimmen',
+    }
+  : {
+      title: 'Migraine Aura Foundation — Make your migraine visible',
+      heroKicker: 'A foundation built from patient voices',
+      heroTitle: 'Make your migraine <em>visible</em>.',
+      heroSub: 'Migraine aura often begins where words fail — in flickering light, numbness, lost speech, distorted time. We translate that experience into the formal language of diagnosis, so you can be understood.',
+      cta1: 'Take the 10-minute aura check', cta2: 'Browse the Field Guide',
+      heroMicro: 'Turn your symptoms into a clear report you can share with your doctor.',
+      heroCaption: '“Fortification spectrum” over Rotes Rathaus — patient artwork depicting a visual aura.',
+      statsLead: "For over 25 years we have listened, gathered, and named what migraine does — building <strong>one of the world's most comprehensive records of aura.</strong>",
+      stat1: 'First-hand accounts of aura collected from patients',
+      stat2: 'Gathering and naming aura symptoms since',
+      stat3: 'Distinct aura symptoms documented in the Field Guide',
+      exploreKicker: 'Explore', exploreTitle: 'Four ways in',
+      exploreSub: "Whether you are trying to name what you feel, prepare for an appointment, or understand a loved one's experience — start here.",
+      f1t: 'A Field Guide to Symptoms', f1s: 'Browse a complete catalogue of migraine aura symptoms — transitory and persistent — in plain language.', f1l: 'Open the guide',
+      f2t: 'Revealing Experiences', f2s: "Art and stories that make migraine's hidden impact visible — to families, clinicians, and yourself.", f2l: 'See the gallery',
+      f3t: 'The Aura Check', f3s: 'A guided 10-minute anamnesis that turns what you experience into a structured report for your doctor.', f3l: 'Start the check',
+      f4t: 'Next-gen Migraine Care', f4s: 'Evidence-based tools and research for clinicians and partners building what comes next.', f4l: 'For professionals',
+      expKicker: 'Revealing experiences', expTitle: 'When words fail, people paint.',
+      expText: 'Since the 1990s, patients have sent us paintings, drawings, and writing that capture what aura feels like from the inside. Together they form a living archive — proof that these symptoms are real, shared, and nameable.',
+      expLink: 'Explore the archive',
+      voicesKicker: 'In their words', voicesTitle: 'It makes you feel less alone',
+      hcpKicker: 'For healthcare professionals', hcpTitle: 'Co-create next-generation migraine care.',
+      hcpSub: 'We equip clinicians and industry partners with evidence-based tools, research, and patient-derived data for every stage of migraine care — from first aura to long-term management.',
+      hcpCta: 'Collaborate with us',
+      hcp1: 'Aligned to diagnostic criteria', hcp2n: 'Open', hcp2: 'Patient-derived symptom data', hcp3n: '25 yrs', hcp3: 'Longitudinal patient voices',
+    };
+---
+
+<BaseLayout title={T.title} lang={locale} active="">
+  <section class="hero section">
+    <div class="wrap hero__grid">
+      <div class="hero__copy">
+        <Kicker>{T.heroKicker}</Kicker>
+        <h1 class="hero__title" set:html={T.heroTitle} />
+        <p class="hero__sub">{T.heroSub}</p>
+        <div class="hero__cta">
+          <Button href={p('/aura-check')} variant="primary" size="lg" arrow>{T.cta1}</Button>
+          <Button href={p('/field-guide')} variant="ghost" size="lg">{T.cta2}</Button>
+        </div>
+        <p class="hero__micro">{T.heroMicro}</p>
+      </div>
+      <figure class="hero__art">
+        <img src="/img/art-fortification.png" alt="Patient artwork: a scintillating zigzag cutting across a skyline — a visual aura." />
+        <figcaption>{T.heroCaption}</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="band section--tight">
+    <div class="wrap introstats">
+      <p class="introstats__lead" set:html={T.statsLead} />
+      <dl class="stats">
+        <div class="stat"><dt class="stat__n">7,000<span class="stat__plus">+</span></dt><dd class="stat__l">{T.stat1}</dd></div>
+        <div class="stat"><dt class="stat__n">1998</dt><dd class="stat__l">{T.stat2}</dd></div>
+        <div class="stat"><dt class="stat__n">40<span class="stat__plus">+</span></dt><dd class="stat__l">{T.stat3}</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <SectionHead kicker={T.exploreKicker} title={T.exploreTitle} sub={T.exploreSub} />
+      <div class="features">
+        <FeatureCard title={T.f1t} sub={T.f1s} href={p('/field-guide')} linkLabel={T.f1l}>
+          <svg slot="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2 2 0 0 1 6 4h6v15H6a2 2 0 0 0-2 2V5.5Z"/><path d="M20 5.5A2 2 0 0 0 18 4h-6v15h6a2 2 0 0 1 2 2V5.5Z"/></svg>
+        </FeatureCard>
+        <FeatureCard title={T.f2t} sub={T.f2s} href={p('/experiences')} linkLabel={T.f2l} warm>
+          <svg slot="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4.5" width="17" height="15" rx="2"/><path d="M3.5 16l4.2-4 3.3 3 3.2-3.6 6.3 5.1"/><circle cx="8.5" cy="9" r="1.5"/></svg>
+        </FeatureCard>
+        <FeatureCard title={T.f3t} sub={T.f3s} href={p('/aura-check')} linkLabel={T.f3l}>
+          <svg slot="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h3.5l2-6 4 13 2.5-7H21"/></svg>
+        </FeatureCard>
+        <FeatureCard title={T.f4t} sub={T.f4s} href={p('/next-gen-migraine-care')} linkLabel={T.f4l} warm>
+          <svg slot="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v6M12 9a4 4 0 0 0-4 4v1a4 4 0 0 0 8 0v-1a4 4 0 0 0-4-4Z"/><circle cx="12" cy="20" r="1.6"/></svg>
+        </FeatureCard>
+      </div>
+    </div>
+  </section>
+
+  <section class="section band">
+    <div class="wrap">
+      <div class="exp">
+        <div class="exp__copy">
+          <Kicker>{T.expKicker}</Kicker>
+          <h2 class="exp__title">{T.expTitle}</h2>
+          <p class="exp__text">{T.expText}</p>
+          <Button href={p('/experiences')} variant="ghost" arrow>{T.expLink}</Button>
+        </div>
+        <div class="exp__gallery">
+          <figure class="exp__fig exp__fig--tall"><img src="/img/art-genetics.jpg" alt="Patient painting of a dark bauble labelled Migraine held between hands." /></figure>
+          <figure class="exp__fig"><img src="/img/art-mosaic.jpg" alt="Mosaic-like fragmentation of vision during aura." /></figure>
+          <figure class="exp__fig"><img src="/img/art-toast.png" alt="Patient artwork exploring pareidolia." /></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <SectionHead kicker={T.voicesKicker} title={T.voicesTitle} center />
+      <div class="voices">
+        {voices.map((v) => <Quote author={v.author} feature={v.feature}>{v.text}</Quote>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="hcp">
+        <div class="hcp__text">
+          <span class="kicker" style="color:var(--warm-soft);--warm:var(--on-primary)">{T.hcpKicker}</span>
+          <h2 class="hcp__title">{T.hcpTitle}</h2>
+          <p class="hcp__sub">{T.hcpSub}</p>
+          <a class="btn hcp__cta" href={p('/next-gen-migraine-care')}>{T.hcpCta} <span class="arr">→</span></a>
+        </div>
+        <div class="hcp__panel" aria-hidden="true">
+          <div class="hcp__stat"><span class="hcp__stat-n">ICHD-3</span><span class="hcp__stat-l">{T.hcp1}</span></div>
+          <div class="hcp__stat"><span class="hcp__stat-n">{T.hcp2n}</span><span class="hcp__stat-l">{T.hcp2}</span></div>
+          <div class="hcp__stat"><span class="hcp__stat-n">{T.hcp3n}</span><span class="hcp__stat-l">{T.hcp3}</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

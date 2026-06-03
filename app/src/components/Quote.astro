@@ -1,0 +1,11 @@
+---
+interface Props {
+  author: string;
+  feature?: boolean;
+}
+const { author, feature = false } = Astro.props;
+---
+<figure class:list={['quote', { 'quote--feature': feature }]}>
+  <p><slot /></p>
+  <figcaption>{author}</figcaption>
+</figure>

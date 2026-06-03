@@ -1,0 +1,16 @@
+---
+// German Field Guide articles (the de/ mirror of the symptoms collection).
+import { getCollection } from 'astro:content';
+import FieldGuideArticle from '../../../components/FieldGuideArticle.astro';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('symptoms', (e) => e.slug.startsWith('de/'));
+  return entries.map((entry) => ({
+    params: { slug: entry.slug.replace(/^de\//, '') },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+---
+<FieldGuideArticle entry={entry} locale="de" />

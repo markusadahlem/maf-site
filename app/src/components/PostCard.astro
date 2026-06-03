@@ -1,0 +1,21 @@
+---
+import Tag from './Tag.astro';
+interface Props {
+  title: string;
+  href: string;
+  excerpt: string;
+  tag: string;
+  tagVariant?: 'blue' | 'warm' | 'plain';
+  date: string;
+  author: string;
+}
+const { title, href, excerpt, tag, tagVariant = 'blue', date, author } = Astro.props;
+---
+<article class="card postcard">
+  <div class="postcard__tags tags"><Tag variant={tagVariant}>{tag}</Tag></div>
+  <h3 class="postcard__title"><a href={href}>{title}</a></h3>
+  <p class="postcard__excerpt">{excerpt}</p>
+  <div class="postcard__foot post-meta">
+    <span>{date}</span><span class="dot"></span><span>{author}</span>
+  </div>
+</article>

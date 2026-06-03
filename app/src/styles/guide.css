@@ -1,0 +1,84 @@
+/* ============================================================
+   Docs layout — Field Guide index + symptom articles
+   Pairs with theme.css
+   ============================================================ */
+
+.page-head { padding-block: clamp(40px, 5vw, 64px) clamp(28px, 3vw, 40px); border-bottom: 1px solid var(--border); }
+.page-head__title { font-size: clamp(34px, 5vw, 54px); letter-spacing: -0.025em; margin-top: 16px; }
+.page-head__lead { font-size: clamp(18px, 2.1vw, 21px); color: var(--muted); margin-top: 18px; max-width: 54ch; line-height: 1.5; }
+.breadcrumb { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 14px; color: var(--muted); margin-bottom: 4px; }
+.breadcrumb a { color: var(--muted); }
+.breadcrumb a:hover { color: var(--primary); }
+.breadcrumb .sep { opacity: .5; }
+.breadcrumb .current { color: var(--text); }
+
+/* ---- Docs grid ---- */
+.docs { display: grid; grid-template-columns: 232px minmax(0,1fr); gap: clamp(28px, 4vw, 56px); align-items: start; padding-block: clamp(32px, 4vw, 52px); }
+.docs--article { grid-template-columns: minmax(0,1fr) 220px; }
+
+.side { position: sticky; top: calc(var(--nav-h) + 20px); align-self: start; }
+.side__title { font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); font-weight: 600; margin-bottom: 14px; }
+.side__group { margin-bottom: 22px; }
+.side__list { list-style: none; padding: 0; display: grid; gap: 2px; border-left: 1px solid var(--border); }
+.side__list a {
+  display: block; padding: 6px 14px; font-size: 14.5px; color: var(--text);
+  border-left: 2px solid transparent; margin-left: -1px; border-radius: 0 var(--r-xs) var(--r-xs) 0;
+}
+.side__list a:hover { color: var(--ink); background: var(--surface-2); text-decoration: none; }
+.side__list a.is-active { color: var(--primary); border-left-color: var(--primary); font-weight: 600; }
+
+/* ---- Field guide content ---- */
+.fg-section { margin-bottom: clamp(36px, 5vw, 56px); }
+.fg-section__head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 14px; padding-bottom: 14px; border-bottom: 1px solid var(--border); margin-bottom: 26px; }
+.fg-section__title { font-size: clamp(24px, 3vw, 32px); letter-spacing: -0.02em; }
+.fg-section__meta { font-size: 14.5px; color: var(--muted); font-style: italic; }
+.fg-groups { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+.fg-group { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r); padding: 22px 22px 18px; }
+.fg-group__title { font-family: var(--sans); font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--warm); font-weight: 600; margin-bottom: 14px; }
+.fg-group__title--blue { color: var(--primary); }
+.fg-list { list-style: none; padding: 0; display: grid; gap: 2px; }
+.fg-list a {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  padding: 9px 12px; border-radius: var(--r-xs); color: var(--ink); font-size: 15px; font-weight: 500;
+  transition: background .14s, color .14s;
+}
+.fg-list a:hover { background: var(--primary-soft); color: var(--primary); text-decoration: none; }
+.fg-list a .chev { color: var(--faint); transition: transform .15s, color .15s; }
+.fg-list a:hover .chev { color: var(--primary); transform: translateX(2px); }
+
+/* ---- Article (symptom) ---- */
+.article { max-width: var(--maxw-prose); }
+.article__title { font-size: clamp(34px, 5vw, 50px); letter-spacing: -0.025em; margin: 14px 0 0; }
+.article__lead { font-size: 20px; line-height: 1.55; color: var(--ink); margin-top: 20px; font-family: var(--serif); }
+.article .tags { margin-top: 22px; }
+.article__divider { border: 0; border-top: 1px solid var(--border); margin: 28px 0; }
+
+.toc { font-size: 14px; }
+.toc__title { font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); font-weight: 600; margin-bottom: 14px; }
+.toc ul { list-style: none; padding: 0; display: grid; gap: 3px; border-left: 1px solid var(--border); }
+.toc a { display: block; padding: 5px 14px; color: var(--muted); border-left: 2px solid transparent; margin-left: -1px; }
+.toc a:hover, .toc a.is-active { color: var(--primary); border-left-color: var(--primary); text-decoration: none; }
+
+.patient-quote {
+  border-left: 2px solid var(--warm); background: var(--warm-soft);
+  border-radius: 0 var(--r) var(--r) 0; padding: 16px 20px; margin: 18px 0;
+}
+.patient-quote p { font-family: var(--serif); font-style: italic; font-size: 17px; color: var(--ink); margin: 0; line-height: 1.5; }
+.patient-quote cite { display: block; font-style: normal; font-family: var(--sans); font-size: 13.5px; color: var(--muted); margin-top: 8px; font-weight: 600; }
+
+.article-cta {
+  margin-top: 40px; padding: 28px; border-radius: var(--r-lg);
+  background: var(--primary-soft); border: 1px solid var(--primary-line);
+  display: flex; flex-wrap: wrap; gap: 18px; align-items: center; justify-content: space-between;
+}
+.article-cta__text strong { color: var(--ink); font-size: 18px; display: block; font-family: var(--serif); }
+.article-cta__text span { color: var(--muted); font-size: 15px; }
+
+.article-nav { display: flex; justify-content: space-between; gap: 14px; margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--border); }
+.article-nav a { font-size: 15px; font-weight: 500; }
+
+@media (max-width: 920px) {
+  .docs, .docs--article { grid-template-columns: 1fr; }
+  .side, .toc-side { display: none; }
+  .fg-groups { grid-template-columns: 1fr; }
+}

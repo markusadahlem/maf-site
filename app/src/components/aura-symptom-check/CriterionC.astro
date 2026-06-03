@@ -1,0 +1,80 @@
+---
+// CriterionC — the aura-characteristics quiz: 6 yes/no questions asked one at a
+// time (with an explanation toggle + Back), then a summary + "Show result".
+// Stores auraCharacteristicsAnswers as a boolean[6] (index 0–5 = q1–q6, the
+// ICHD-3 C-criterion features) and advances via flowRunner.goNext.
+interface QC { text: string; explanation: string }
+interface Props {
+  stepId: string;
+  questions: QC[];
+  labels: {
+    yes: string; no: string; back: string; showResult: string; moreInfo: string;
+    questionLabel: string; summaryIntro: string; summaryHeading: string;
+    clickPrompt: string; yesLabel: string; noLabel: string;
+  };
+}
+const { stepId, questions, labels } = Astro.props;
+---
+<div id="criterionC" class="criterionc" data-config={JSON.stringify({ stepId, questions, labels })}></div>
+
+<script>
+  import { flowRunner, store, MODULE_ID } from '../../lib/aura-symptom-check';
+
+  const root = document.getElementById('criterionC');
+  if (root) {
+    const cfg = JSON.parse(root.dataset.config!);
+    const q = cfg.questions as { text: string; explanation: string }[];
+    const L = cfg.labels;
+    let current = 0;
+    const answers: boolean[] = [];
+
+    const esc = (s: string) =>
+      s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+    function render() {
+      if (current === q.length) {
+        const items = q
+          .map((qq, i) => `<li>${esc(qq.text)} <strong>${answers[i] ? esc(L.yesLabel) : esc(L.noLabel)}</strong></li>`)
+          .join('');
+        root.innerHTML = `
+          <p class="qcard__prompt"><strong>${esc(L.summaryIntro)}</strong></p>
+          <p>${esc(L.summaryHeading)}</p>
+          <ul class="criterionc__summary">${items}</ul>
+          <p class="qhint" style="visibility:visible">${esc(L.clickPrompt)}</p>
+          <div class="qactions">
+            <a class="btn-back" data-action="go-back"><span class="arr" style="display:inline-block;transform:rotate(180deg)">→</span> ${esc(L.back)}</a>
+            <button type="button" class="btn btn--primary" data-action="show-result">${esc(L.showResult)} <span class="arr">→</span></button>
+          </div>`;
+        return;
+      }
+      const item = q[current];
+      const count = L.questionLabel.replace('{n}', String(current + 1)).replace('{total}', String(q.length));
+      root.innerHTML = `
+        <p class="criterionc__count">${esc(count)}</p>
+        <p class="qcard__prompt"><strong>${esc(item.text)}</strong>
+          <button type="button" class="info__btn" data-action="explain" title="${esc(L.moreInfo)}" aria-label="${esc(L.moreInfo)}">ⓘ</button>
+        </p>
+        <div class="criterionc__expl" data-expl hidden>${esc(item.explanation)}</div>
+        <div class="criterionc__yn">
+          <button type="button" class="btn btn--ghost" data-action="answer-yes">${esc(L.yes)}</button>
+          <button type="button" class="btn btn--ghost" data-action="answer-no">${esc(L.no)}</button>
+        </div>
+        ${current > 0 ? `<div class="qactions"><a class="btn-back" data-action="go-back"><span class="arr" style="display:inline-block;transform:rotate(180deg)">→</span> ${esc(L.back)}</a></div>` : ''}`;
+    }
+
+    root.addEventListener('click', (e) => {
+      const action = (e.target as HTMLElement).closest('[data-action]')?.getAttribute('data-action');
+      if (!action) return;
+      if (action === 'answer-yes') { answers[current] = true; current++; render(); }
+      else if (action === 'answer-no') { answers[current] = false; current++; render(); }
+      else if (action === 'go-back') { if (current > 0) current--; render(); }
+      else if (action === 'explain') { const ex = root.querySelector<HTMLElement>('[data-expl]'); if (ex) ex.hidden = !ex.hidden; }
+      else if (action === 'show-result') {
+        store.set(MODULE_ID, 'auraCharacteristicsAnswers', answers);
+        window.location.assign(flowRunner.goNext(cfg.stepId));
+      }
+    });
+
+    render();
+  }
+</script>

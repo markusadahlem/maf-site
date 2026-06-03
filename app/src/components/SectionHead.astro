@@ -1,0 +1,16 @@
+---
+import Kicker from './Kicker.astro';
+interface Props {
+  kicker?: string;
+  kickerVariant?: 'warm' | 'blue';
+  title: string;
+  sub?: string;
+  center?: boolean;
+}
+const { kicker, kickerVariant = 'blue', title, sub, center = false } = Astro.props;
+---
+<header class:list={['sec-head', { 'sec-head--center': center }]}>
+  {kicker && <Kicker variant={kickerVariant} center={center}>{kicker}</Kicker>}
+  <h2 class="sec-head__title">{title}</h2>
+  {sub && <p class="sec-head__sub">{sub}</p>}
+</header>

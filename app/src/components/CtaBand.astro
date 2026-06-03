@@ -1,0 +1,15 @@
+---
+interface Props {
+  title: string;
+  text: string;
+  ctaLabel: string;
+  ctaHref: string;
+}
+const { title, text, ctaLabel, ctaHref } = Astro.props;
+import Button from './Button.astro';
+---
+<div class="cta-band">
+  <h2>{title}</h2>
+  <p>{text}</p>
+  <Button href={ctaHref} variant="primary" size="lg" arrow>{ctaLabel}</Button>
+</div>

@@ -1,0 +1,26 @@
+---
+// The MAF "MA" monogram mark (logo.svg, with logo-dark.svg for dark mode).
+// `withText` renders the full lockup (name + optional tagline).
+interface Props {
+  href?: string;
+  withText?: boolean;
+  showTagline?: boolean;
+}
+import { site } from '../config/site';
+const { href = '/', withText = true, showTagline = false } = Astro.props;
+---
+
+<a class="brand" href={href} aria-label={`${site.name} — home`}>
+  <span class="brand__mark" aria-hidden="true">
+    <img class="brand__logo brand__logo--light" src="/images/logo.svg" alt="" width="34" height="34" />
+    <img class="brand__logo brand__logo--dark" src="/images/logo-dark.svg" alt="" width="34" height="34" />
+  </span>
+  {
+    withText && (
+      <span class="brand__text">
+        <span class="brand__name">{site.name}</span>
+        {showTagline && <span class="brand__sub">{site.tagline}</span>}
+      </span>
+    )
+  }
+</a>

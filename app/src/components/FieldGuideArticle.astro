@@ -1,0 +1,88 @@
+---
+// Shared Field Guide article renderer for both locales. The English and German
+// [...slug] routes pass their entry + locale; UI chrome strings are localised
+// here (the body/title come from the collection entry).
+import { type CollectionEntry } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Tag from './Tag.astro';
+import Button from './Button.astro';
+import '../styles/guide.css';
+
+interface Props {
+  entry: CollectionEntry<'symptoms'>;
+  locale: string;
+}
+const { entry, locale } = Astro.props;
+const { Content, headings } = await entry.render();
+const toc = headings.filter((h) => h.depth === 2);
+
+const UI = {
+  en: { fieldGuide: 'Field Guide', onThisPage: 'On this page', ctaStrong: 'Recognise this in yourself?', ctaText: 'Turn what you experience into a structured report for your doctor.', ctaBtn: 'Start the aura check', next: 'Next:' },
+  de: { fieldGuide: 'Symptom-Leitfaden', onThisPage: 'Auf dieser Seite', ctaStrong: 'Erkennst du das bei dir?', ctaText: 'Verwandle deine Erfahrungen in einen strukturierten Bericht für deine Ärztin oder deinen Arzt.', ctaBtn: 'Check starten', next: 'Weiter:' },
+}[locale === 'de' ? 'de' : 'en'];
+
+const fieldGuideHref = '/field-guide';
+const ctaHref = locale === 'de' ? '/de/aura-check' : '/aura-check';
+---
+
+<BaseLayout title={`${entry.data.title} — ${UI.fieldGuide}`} description={entry.data.lead} lang={locale} active="field-guide">
+  <div class="wrap">
+    <div class="docs docs--article">
+      <article class="article">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href={fieldGuideHref}>{UI.fieldGuide}</a><span class="sep">/</span>
+          {entry.data.persistence && <><a href={fieldGuideHref}>{entry.data.persistence}</a><span class="sep">/</span></>}
+          <span class="current">{entry.data.domain}</span>
+        </nav>
+
+        <h1 class="article__title">{entry.data.title}</h1>
+        <div class="tags">{entry.data.tags.map((t, i) => <Tag variant={i === 1 ? 'warm' : i === 2 ? 'plain' : 'blue'}>{t}</Tag>)}</div>
+        {entry.data.lead && <p class="article__lead">{entry.data.lead}</p>}
+        <hr class="article__divider" />
+
+        <div class="prose"><Content /></div>
+
+        <div class="article-cta">
+          <div class="article-cta__text">
+            <strong>{UI.ctaStrong}</strong>
+            <span>{UI.ctaText}</span>
+          </div>
+          <Button href={ctaHref} variant="primary" arrow>{UI.ctaBtn}</Button>
+        </div>
+
+        {
+          entry.data.next && (
+            <nav class="article-nav" aria-label="Symptom navigation">
+              <span />
+              <a href={entry.data.next.href}>{UI.next} {entry.data.next.label} <span class="arr">→</span></a>
+            </nav>
+          )
+        }
+      </article>
+
+      <aside class="toc-side side" aria-label={UI.onThisPage}>
+        <nav class="toc">
+          <div class="toc__title">{UI.onThisPage}</div>
+          <ul>
+            {toc.map((h, i) => (
+              <li><a href={`#${h.slug}`} class:list={[{ 'is-active': i === 0 }]}>{h.text}</a></li>
+            ))}
+          </ul>
+        </nav>
+      </aside>
+    </div>
+  </div>
+
+  <script>
+    const links = Array.from(document.querySelectorAll<HTMLAnchorElement>('.toc a'));
+    const heads = links.map((a) => document.getElementById(a.getAttribute('href')!.slice(1)));
+    function onScroll() {
+      const y = scrollY + 120;
+      let idx = 0;
+      heads.forEach((h, i) => { if (h && h.offsetTop <= y) idx = i; });
+      links.forEach((a, i) => a.classList.toggle('is-active', i === idx));
+    }
+    addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  </script>
+</BaseLayout>
