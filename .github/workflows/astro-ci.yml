@@ -1,0 +1,33 @@
+# Astro app CI — builds and tests the app/ project on the migration branch.
+#
+# This is intentionally CI-ONLY: it does NOT publish to GitHub Pages, so it
+# cannot collide with the live Hugo deploy (pages.yaml, push → main). The Pages
+# publish job is added at cutover (Phase 6), at which point pages.yaml is
+# retired and this workflow takes over the production deploy.
+name: Astro app CI
+
+on:
+  push:
+    branches: ["redesign"]
+    paths: ["app/**", ".github/workflows/astro-ci.yml"]
+  pull_request:
+    paths: ["app/**"]
+  workflow_dispatch:
+
+defaults:
+  run:
+    working-directory: app
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: app/.nvmrc
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
