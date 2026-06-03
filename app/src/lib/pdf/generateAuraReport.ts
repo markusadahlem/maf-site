@@ -110,7 +110,7 @@ function drawFooter(doc: jsPDF): void {
     h - 10,
   );
   doc.text(
-    t("flow.report.footer.url", "www.migraine-aura-foundation.org"),
+    t("flow.report.footer.url", "migraine-aura-foundation.org"),
     150,
     h - 10,
     { align: "right" },
