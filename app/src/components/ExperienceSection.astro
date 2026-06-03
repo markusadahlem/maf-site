@@ -13,13 +13,11 @@ const T = isDe
       title: 'Vor der Leinwand: Wie Migränekunst eine Brücke zum klinischen Verständnis schlägt',
       p1: 'Aura ist real — und wie du sie beschreibst, ist wichtig. Migränekunst erfasst, was Worte oft nicht können: Bilder, die von Menschen mit Migräne geschaffen wurden, um eine Aura von innen zu zeigen. Unser Archiv umfasst über fünf Jahrzehnte.',
       p2: `Dieselbe Erfahrung lässt sich auch durch medizinische Kriterien strukturieren und in die klinische Sprache übersetzen. Unsere <a href="${p('/field-guide')}">Symptomkarte</a> gibt sie in ICHD-3-Begriffen wieder — wo positive und negative Merkmale nur eines von sechs Kriterien zur Diagnose der Aura sind. Beide Perspektiven schlagen eine Brücke von der gelebten Erfahrung zum klinischen Verständnis.`,
-      compCaption: 'Darstellung einer visuellen Migräneaura durch eine Teilnehmerin des National Migraine Art Wettbewerbs. Veröffentlichung mit Genehmigung. © 2007 Migraine Action Association und Boehringer Ingelheim',
     }
   : {
       title: 'Before the Canvas: How Migraine Art Bridges to Clinical Understanding',
       p1: "Aura is real — and how you describe it matters. Migraine art captures what words often can't: images created by people with migraine to show an aura from the inside. Our archive spans over five decades.",
       p2: `The same experience can also be structured by medical criteria and translated into clinical language. Our <a href="${p('/field-guide')}">symptom map</a> renders it in ICHD-3 terms — where positive and negative features are just one of six criteria for diagnosing aura. Both perspectives help bridge lived experience to clinical understanding.`,
-      compCaption: 'Illustration of visual migraine aura from a participant in the National Migraine Art competition. Published with permission. © 2007 Migraine Action Association and Boehringer Ingelheim',
     };
 ---
 
@@ -35,11 +33,6 @@ const T = isDe
   <img class="art-bridge__right" src="/img/art-clinical-criteria.png" alt="The same aura annotated with clinical diagnostic criteria." />
 </div>
 
-<figure class="framed-fig">
-  <img src="/images/art/Entry_to_Migraine_Art_competition_small_400_en.jpg" alt="Entry to the National Migraine Art Competition." />
-  <figcaption>{T.compCaption}</figcaption>
-</figure>
-
 <style>
   /* Two "before" images in a single row: right keeps its aspect, left is smaller. */
   .art-bridge { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; margin-top: 1.75rem; }
@@ -49,9 +42,4 @@ const T = isDe
   @media (max-width: 560px) {
     .art-bridge__left, .art-bridge__right { flex-basis: 100%; max-width: 100%; }
   }
-
-  /* Competition entry — a little frame + the original caption. */
-  .framed-fig { max-width: 420px; margin: 1.9rem 0 0; padding: 10px 10px 0; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); }
-  .framed-fig img { width: 100%; height: auto; display: block; border-radius: 6px; }
-  .framed-fig figcaption { font-size: 13px; color: var(--muted); line-height: 1.5; padding: 10px 4px 12px; }
 </style>
