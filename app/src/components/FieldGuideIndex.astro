@@ -41,6 +41,26 @@ const entries = await getCollection('symptoms', (e) =>
 interface Item { title: string; domain: string; href: string }
 interface Group { domain: string; items: Item[] }
 
+// Order domain groups by the clinical aura sequence (en + de labels), not
+// alphabetically: visual → sensory → speech → motor → brainstem → the rest.
+const DOMAIN_ORDER = [
+  /visuell|visual/,
+  /somatosens|sensor/,
+  /speech|sprache|language/,
+  /\bmotor/,
+  /brainstem|hirnstamm|basilar/,
+  /vestib/,
+  /audit/,
+  /olfact|gustat|olfak/,
+  /cognit|kognit/,
+  /sleep|schlaf/,
+];
+function domainRank(d: string): number {
+  const k = d.toLowerCase();
+  const i = DOMAIN_ORDER.findIndex((re) => re.test(k));
+  return i === -1 ? DOMAIN_ORDER.length : i;
+}
+
 function groupByDomain(list: Item[]): Group[] {
   const map = new Map<string, Item[]>();
   for (const it of list) {
@@ -49,7 +69,7 @@ function groupByDomain(list: Item[]): Group[] {
   }
   return [...map.entries()]
     .map(([domain, items]) => ({ domain, items: items.sort((a, b) => a.title.localeCompare(b.title)) }))
-    .sort((a, b) => a.domain.localeCompare(b.domain));
+    .sort((a, b) => domainRank(a.domain) - domainRank(b.domain) || a.domain.localeCompare(b.domain));
 }
 
 const items: { item: Item; persistence: string }[] = entries.map((e) => ({
