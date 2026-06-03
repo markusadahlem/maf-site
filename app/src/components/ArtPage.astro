@@ -5,6 +5,7 @@
 import { type CollectionEntry } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ExperienceSection from './ExperienceSection.astro';
+import ArtGallery from './ArtGallery.astro';
 import '../styles/guide.css';
 import '../styles/pages.css';
 
@@ -41,10 +42,11 @@ const crumbs = segs.slice(0, -1).map((s, i) => ({ label: tc(s), href: `${base}/$
 
   <div class="wrap">
     <article class="article mx-auto" style="padding-block: clamp(24px,3vw,40px);">
-      {/* The Migraine Art landing leads with the lived-experience section, at
-          the same width as the sections that follow. */}
+      {/* The landing leads with the lived-experience section; the curated
+          gallery sits at the very bottom so it doesn't distract. */}
       {segs.length === 0 && <ExperienceSection locale={locale} />}
       <div class="prose"><Content /></div>
+      {segs.length === 0 && <ArtGallery locale={locale} />}
     </article>
   </div>
 </BaseLayout>

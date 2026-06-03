@@ -1,0 +1,47 @@
+---
+// The curated Migraine Art gallery — rendered at the BOTTOM of the /art page
+// (below the sections) so it doesn't distract from the content. Locale-driven.
+import GalleryFigure from '../components/GalleryFigure.astro';
+import '../styles/pages.css';
+
+interface Props { locale: string }
+const { locale } = Astro.props;
+const isDe = locale === 'de';
+const p = (path: string) => (isDe ? `/de${path}` : path);
+
+const gallery = [
+  { img: '/img/art-genetics.jpg', alt: 'Painting of a dark bauble labelled Migraine held between hands.', en: { title: 'The Migraine', caption: 'Migraine passed between generations — patient painting.' }, de: { title: 'Die Migräne', caption: 'Über Generationen weitergegebene Migräne — Patientengemälde.' } },
+  { img: '/img/art-mosaic.jpg', alt: 'Mosaic-like fragmentation of vision.', en: { title: 'Mosaic vision', caption: 'The visual field fractured into tiles during aura.' }, de: { title: 'Mosaiksehen', caption: 'Das Gesichtsfeld zersplittert während der Aura in Kacheln.' } },
+  { img: '/img/art-corona.jpg', alt: 'Corona phenomenon artwork.', en: { title: 'Corona phenomenon', caption: 'Halos and coronas around points of light.' }, de: { title: 'Korona-Phänomen', caption: 'Höfe und Koronen um Lichtpunkte.' } },
+  { img: '/img/art-dugan.jpg', alt: 'Patrick Dugan — The Migraine.', en: { title: 'The Migraine — P. Dugan', caption: "An artist's depiction of an attack." }, de: { title: 'Die Migräne — P. Dugan', caption: 'Die Darstellung einer Attacke durch einen Künstler.' } },
+  { img: '/img/art-greene.jpg', alt: 'Sofia Greene — afterimage of a ship.', en: { title: 'Afterimage — S. Greene', caption: 'Visual perseveration: an image that lingers.' }, de: { title: 'Nachbild — S. Greene', caption: 'Visuelle Perseveration: ein Bild, das nachklingt.' } },
+  { img: '/img/art-alice.png', alt: 'Body-size distortion — Alice in Wonderland syndrome.', en: { title: 'Alice in Wonderland', caption: 'Body-image and size distortions during aura.' }, de: { title: 'Alice im Wunderland', caption: 'Körperbild- und Größenverzerrungen während der Aura.' } },
+  { img: '/img/art-heaton.jpg', alt: 'Roger Heaton — Migraine Images, 1992.', en: { title: 'Migraine Images — R. Heaton', caption: 'A series exploring the aura, 1992.' }, de: { title: 'Migräne-Bilder — R. Heaton', caption: 'Eine Serie über die Aura, 1992.' } },
+  { img: '/img/art-diggiemoon.jpg', alt: 'Diggiemoon migraine artwork.', en: { title: 'Untitled — Diggiemoon', caption: 'A contemporary rendering of visual disturbance.' }, de: { title: 'Ohne Titel — Diggiemoon', caption: 'Eine zeitgenössische Darstellung visueller Störung.' } },
+  { img: '/img/art-robinson.jpg', alt: 'Derek Robinson, 1984.', en: { title: 'Early work — D. Robinson', caption: 'From the pioneering archive begun in 1973.' }, de: { title: 'Frühes Werk — D. Robinson', caption: 'Aus dem 1973 begonnenen Pionierarchiv.' } },
+];
+
+const T = isDe
+  ? {
+      heading: 'Aus dem Archiv',
+      aside: 'Über 7.000 individuelle Patientenberichte aus der ursprünglichen Version dieser Website werden sorgfältig für die erneute Veröffentlichung aufbereitet — eine laufende Anstrengung, die Sponsoren beschleunigen könnten.',
+      asideLink: 'Nimm Kontakt auf.',
+    }
+  : {
+      heading: 'From the archive',
+      aside: 'Over 7,000 individual patient reports from the original version of this site are being carefully curated for re-publication here — an ongoing effort sponsors could help us accelerate.',
+      asideLink: 'Get in touch.',
+    };
+---
+
+<div class="prose" style="margin-top: 2.5rem;">
+  <h2 id="from-the-archive">{T.heading}</h2>
+</div>
+
+<div class="gallery" style="margin-top: 0.75rem;">
+  {gallery.map((g) => <GalleryFigure img={g.img} alt={g.alt} title={(isDe ? g.de : g.en).title} caption={(isDe ? g.de : g.en).caption} />)}
+</div>
+
+<aside style="margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--border); font-size: 14.5px; color: var(--muted);">
+  {T.aside} <a href={p('/contact')}>{T.asideLink}</a>
+</aside>
