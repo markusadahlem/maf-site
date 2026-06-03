@@ -62,6 +62,8 @@ export interface ModalityEntry {
   selected?: string[];
   symptoms?: string[];
   description?: string;
+  /** motor-aura only: the yes/no/unsure gate value */
+  hasWeakness?: string;
 }
 
 /** criterionBAnswers — keyed by modality (visual, retinal, sensory, …). */

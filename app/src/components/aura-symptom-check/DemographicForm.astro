@@ -1,0 +1,74 @@
+---
+// DemographicForm — name / gender / diagnosis year / headache days. Stores
+// userInfo = { name, gender, diagnosisYear, headacheDays } (matching the Hugo
+// demographic-information.js), then advances via flowRunner.goNext.
+interface Props {
+  stepId: string;
+  labels: { name: string; gender: string; diagnosisYear: string; headacheDays: string };
+  genderOptions: { value: string; label: string }[];
+  alerts: { fillAllFields: string; yearRange: string; daysRange: string };
+  continueLabel: string;
+}
+const { stepId, labels, genderOptions, alerts, continueLabel } = Astro.props;
+---
+<form id="demographic-form" class="qform demographic" data-step={stepId} data-alerts={JSON.stringify(alerts)}>
+  <div class="field">
+    <label for="name">{labels.name}</label>
+    <input type="text" id="name" name="name" required autocomplete="off" />
+  </div>
+
+  <div class="field">
+    <label for="gender">{labels.gender}</label>
+    <select id="gender" name="gender" required>
+      {genderOptions.map((g) => <option value={g.value} disabled={g.value === ''}>{g.label}</option>)}
+    </select>
+  </div>
+
+  <div class="field">
+    <label for="diagnosisYear">{labels.diagnosisYear}</label>
+    <input type="number" id="diagnosisYear" name="diagnosisYear" min="1900" max="2025" required />
+  </div>
+
+  <div class="field">
+    <label for="headacheDays">{labels.headacheDays}</label>
+    <input type="number" id="headacheDays" name="headacheDays" min="0" max="31" required />
+  </div>
+
+  <div class="qactions qactions--end">
+    <button type="submit" class="btn btn--primary" data-continue>{continueLabel} <span class="arr">→</span></button>
+  </div>
+</form>
+
+<script>
+  import { flowRunner, store, MODULE_ID } from '../../lib/aura-symptom-check';
+
+  const form = document.getElementById('demographic-form') as HTMLFormElement | null;
+  if (form) {
+    const alerts = JSON.parse(form.dataset.alerts || '{}');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = (form.querySelector('#name') as HTMLInputElement).value.trim();
+      const gender = (form.querySelector('#gender') as HTMLSelectElement).value;
+      const yearRaw = (form.querySelector('#diagnosisYear') as HTMLInputElement).value;
+      const daysRaw = (form.querySelector('#headacheDays') as HTMLInputElement).value;
+
+      if (!name || !gender || yearRaw === '' || daysRaw === '') {
+        alert(alerts.fillAllFields);
+        return;
+      }
+      const diagnosisYear = Number(yearRaw);
+      const headacheDays = Number(daysRaw);
+      if (!Number.isFinite(diagnosisYear) || diagnosisYear < 1900 || diagnosisYear > 2025) {
+        alert(alerts.yearRange);
+        return;
+      }
+      if (!Number.isFinite(headacheDays) || headacheDays < 0 || headacheDays > 31) {
+        alert(alerts.daysRange);
+        return;
+      }
+
+      store.set(MODULE_ID, 'userInfo', { name, gender, diagnosisYear, headacheDays });
+      window.location.assign(flowRunner.goNext(form.dataset.step!));
+    });
+  }
+</script>

@@ -10,12 +10,14 @@ interface Props {
   /** nav key to highlight */
   active?: string;
   showFooter?: boolean;
+  /** page locale — drives <html lang>, read client-side by the engine */
+  lang?: string;
 }
-const { title, description = site.description, active, showFooter = true } = Astro.props;
+const { title, description = site.description, active, showFooter = true, lang = 'en' } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang={lang} data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

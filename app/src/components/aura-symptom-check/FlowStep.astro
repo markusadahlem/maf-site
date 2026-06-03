@@ -1,0 +1,140 @@
+---
+// FlowStep — renders one questionnaire step from the registry, for one locale.
+// checkbox/radio steps use the shared OptionGroup + submit handler; motor and
+// demographic steps delegate to their own components (which own their submit).
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProgressSteps from '../ProgressSteps.astro';
+import OptionGroup from '../OptionGroup.astro';
+import MotorStep from './MotorStep.astro';
+import DemographicForm from './DemographicForm.astro';
+import type { StepDef } from '../../lib/rules/steps';
+import type { Option } from '../../config/types';
+import { getCatalog } from '../../lib/engine/catalogs';
+import { setCatalog, t } from '../../lib/engine/i18n';
+import '../../styles/questionnaire.css';
+
+interface Props {
+  def: StepDef;
+  locale: string;
+}
+const { def, locale } = Astro.props;
+setCatalog(getCatalog(locale));
+
+const prefix = locale === 'en' ? '' : `/${locale}`;
+const localize = (path: string) => `${prefix}/aura-symptom-check/${path}`;
+const localizeHref = (href: string) => (locale === 'en' ? href : `${prefix}${href}`);
+
+const heading = t(def.headingKey);
+const prompt = t(def.promptKey);
+const sectionLabels: [string, string, string] = [
+  t('flow.progress.section1'),
+  t('flow.progress.section2'),
+  t('flow.progress.section3'),
+];
+const substep = def.substep
+  ? { label: sectionLabels[def.section - 1], current: def.substep.current, total: def.substep.total }
+  : undefined;
+const backHref = def.backPath ? localize(def.backPath) : '#';
+
+const uiOptions: Option[] = (def.options ?? []).map((o) => ({
+  value: o.value,
+  label: t(o.labelKey),
+  title: o.titleKey ? t(o.titleKey) : undefined,
+  other: o.other,
+  info: o.infoKey
+    ? {
+        text: t(o.infoKey),
+        href: o.infoHref ? localizeHref(o.infoHref) : '#',
+        linkLabel: t('flow.common.info.readFullEntry'),
+      }
+    : undefined,
+}));
+---
+
+<BaseLayout title={`${heading} — Aura Check`} lang={locale} showFooter={false}>
+  <div class="flow">
+    <div class="flow-top">
+      <span class="beta">{t('flow.pages.common.betaVersion')}</span>
+      <a class="flow-exit" href={prefix || '/'}>{t('flow.exit.saveAndExit', 'Save & exit')}</a>
+    </div>
+
+    <ProgressSteps current={def.section} labels={sectionLabels} substep={substep} />
+
+    <section class="qcard">
+      <h1 class="qcard__heading">{heading}</h1>
+      <p class="qcard__prompt"><strong>{prompt}</strong></p>
+
+      {
+        (def.type === 'checkbox' || def.type === 'radio') && (
+          <OptionGroup
+            formId={`${def.stepId}-form`}
+            type={def.type}
+            name={def.name}
+            stepId={def.stepId}
+            options={uiOptions}
+            noneValue={def.noneValue}
+            noneLabel={def.noneLabelKey ? t(def.noneLabelKey) : undefined}
+            otherLabel={t('flow.common.label.otherDescribe')}
+            otherPlaceholder={t('flow.common.placeholder.maxChars200')}
+            continueLabel={t('flow.common.button.continue')}
+            backHref={backHref}
+            persist={JSON.stringify(def.persist)}
+          />
+        )
+      }
+
+      {
+        def.type === 'motor' && (
+          <MotorStep
+            stepId={def.stepId}
+            name={def.name}
+            options={uiOptions}
+            yesLabel={t('flow.common.option.yes')}
+            noLabel={t('flow.common.option.no')}
+            unsureLabel={t('flow.common.option.unsure')}
+            locationsPrompt={t('flow.modality.motor.locationsPrompt')}
+            otherLabel={t('flow.modality.motor.label.describeOther')}
+            otherPlaceholder={t('flow.common.placeholder.maxChars200')}
+            continueLabel={t('flow.common.button.continue')}
+            backHref={backHref}
+          />
+        )
+      }
+
+      {
+        def.type === 'demographic' && (
+          <DemographicForm
+            stepId={def.stepId}
+            labels={{
+              name: t('flow.demographic.label.name'),
+              gender: t('flow.demographic.label.gender'),
+              diagnosisYear: t('flow.demographic.label.diagnosisYear'),
+              headacheDays: t('flow.demographic.label.headacheDays'),
+            }}
+            genderOptions={[
+              { value: '', label: t('flow.demographic.gender.select') },
+              { value: 'female', label: t('flow.demographic.gender.female') },
+              { value: 'male', label: t('flow.demographic.gender.male') },
+              { value: 'diverse', label: t('flow.demographic.gender.diverse') },
+              { value: 'prefer_not_to_say', label: t('flow.demographic.gender.preferNotToSay') },
+            ]}
+            alerts={{
+              fillAllFields: t('flow.alerts.fillAllFields'),
+              yearRange: t('flow.alerts.yearRange'),
+              daysRange: t('flow.alerts.daysRange'),
+            }}
+            continueLabel={t('flow.common.button.continue')}
+          />
+        )
+      }
+    </section>
+  </div>
+</BaseLayout>
+
+<script>
+  import { submitStep } from '../../lib/aura-symptom-check/submit';
+  document.addEventListener('aura:continue', (e) => {
+    const form = (e as CustomEvent).detail?.form as HTMLFormElement | undefined;
+    if (form) submitStep(form);
+  });
+</script>

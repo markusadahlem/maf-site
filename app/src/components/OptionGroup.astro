@@ -21,6 +21,8 @@ interface Props {
   continueLabel?: string;
   hint?: string;
   backHref?: string;
+  /** JSON persist descriptor read by the flow route's submit handler */
+  persist?: string;
 }
 const {
   formId = 'stepForm',
@@ -35,11 +37,12 @@ const {
   continueLabel = 'Continue',
   hint = 'Select at least one option to continue.',
   backHref = '#',
+  persist,
 } = Astro.props;
 const hasOther = options.some((o) => o.other);
 const isRadio = type === 'radio';
 ---
-<form id={formId} class="qform" data-type={type} data-name={name} data-step={stepId} data-none={noneValue ?? ''}>
+<form id={formId} class="qform" data-type={type} data-name={name} data-step={stepId} data-none={noneValue ?? ''} data-persist={persist}>
   <div class="options">
     {
       options.map((o) => (
@@ -54,7 +57,10 @@ const isRadio = type === 'radio';
               </svg>
             )}
           </span>
-          <span class="option__label">{o.label}</span>
+          <span class="option__label">
+            {o.title && <span class="option__title">{o.title}</span>}
+            {o.label}
+          </span>
           {o.info ? (
             <span class="info">
               <button type="button" class="info__btn" aria-label="More information" data-info-btn>ⓘ</button>
@@ -157,10 +163,12 @@ const isRadio = type === 'radio';
     });
 
     cont?.addEventListener('click', () => {
-      // TODO(migration): call the typed engine here, e.g.
-      //   flowRunner.goNext(form.dataset.step!)
-      // after persisting the answer via the storage helpers.
-      console.log('continue', form.dataset.step, new FormData(form));
+      // Hand off to the page: the flow route listens for this, persists the
+      // answer via the storage helpers, and navigates via flowRunner.goNext.
+      // (Standalone/demo pages without a listener simply do nothing.)
+      form.dispatchEvent(
+        new CustomEvent('aura:continue', { detail: { form }, bubbles: true }),
+      );
     });
   });
 </script>

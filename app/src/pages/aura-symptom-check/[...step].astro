@@ -1,0 +1,13 @@
+---
+// English aura-symptom-check flow. One static page per registry step; the
+// engine drives navigation between them (flowRunner.goNext).
+import FlowStep from '../../components/aura-symptom-check/FlowStep.astro';
+import { flowSteps } from '../../lib/rules/steps';
+
+export function getStaticPaths() {
+  return flowSteps.map((def) => ({ params: { step: def.path }, props: { def } }));
+}
+
+const { def } = Astro.props;
+---
+<FlowStep def={def} locale="en" />
