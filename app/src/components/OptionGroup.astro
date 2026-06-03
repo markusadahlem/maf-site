@@ -42,7 +42,7 @@ const {
 const hasOther = options.some((o) => o.other);
 const isRadio = type === 'radio';
 ---
-<form id={formId} class="qform" data-type={type} data-name={name} data-step={stepId} data-none={noneValue ?? ''} data-persist={persist}>
+<form id={formId} class="qform" data-optgroup data-type={type} data-name={name} data-step={stepId} data-none={noneValue ?? ''} data-persist={persist}>
   <div class="options">
     {
       options.map((o) => (
@@ -113,22 +113,13 @@ const isRadio = type === 'radio';
 </form>
 
 <script>
-  // Info popovers (delegated, page-wide).
-  document.addEventListener('click', (e) => {
-    const t = e.target as HTMLElement;
-    const btn = t.closest('[data-info-btn]');
-    document.querySelectorAll('.info[data-open="true"]').forEach((i) => {
-      if (!btn || i !== btn.closest('.info')) i.setAttribute('data-open', 'false');
-    });
-    if (btn) {
-      const info = btn.closest('.info')!;
-      info.setAttribute('data-open', info.getAttribute('data-open') === 'true' ? 'false' : 'true');
-      e.preventDefault();
-    }
-  });
+  import { initInfoPopovers } from '../lib/aura-symptom-check/info-popovers';
+  initInfoPopovers();
 
-  // Per-form gating / exclusivity / counter.
-  document.querySelectorAll<HTMLFormElement>('form.qform').forEach((form) => {
+  // Per-form gating / exclusivity / counter. Scoped to OptionGroup's own forms
+  // (data-optgroup) so it never hijacks the motor/demographic forms, whose
+  // scripts also load on every flow page.
+  document.querySelectorAll<HTMLFormElement>('form[data-optgroup]').forEach((form) => {
     const type = form.dataset.type;
     const inputs = Array.from(form.querySelectorAll<HTMLInputElement>(`input[name="${form.dataset.name}"]`));
     const noneInput = form.querySelector<HTMLInputElement>('[data-none-input]');

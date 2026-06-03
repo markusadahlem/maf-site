@@ -96,19 +96,6 @@ const radios = [
   import { flowRunner } from '../../lib/aura-symptom-check';
   import { setModalityAnswer, addSelectedModality } from '../../lib/engine/storage';
 
-  // Info popovers (delegated; this page has no OptionGroup, so no double-toggle).
-  document.addEventListener('click', (e) => {
-    const btn = (e.target as HTMLElement).closest('[data-info-btn]');
-    document.querySelectorAll('.info[data-open="true"]').forEach((i) => {
-      if (!btn || i !== btn.closest('.info')) i.setAttribute('data-open', 'false');
-    });
-    if (btn) {
-      const info = btn.closest('.info')!;
-      info.setAttribute('data-open', info.getAttribute('data-open') === 'true' ? 'false' : 'true');
-      e.preventDefault();
-    }
-  });
-
   const form = document.getElementById('motor-form') as HTMLFormElement | null;
   if (form) {
     const radios = Array.from(form.querySelectorAll<HTMLInputElement>('[data-weakness]'));

@@ -133,6 +133,8 @@ const uiOptions: Option[] = (def.options ?? []).map((o) => ({
 
 <script>
   import { submitStep } from '../../lib/aura-symptom-check/submit';
+  import { initInfoPopovers } from '../../lib/aura-symptom-check/info-popovers';
+  initInfoPopovers();
   document.addEventListener('aura:continue', (e) => {
     const form = (e as CustomEvent).detail?.form as HTMLFormElement | undefined;
     if (form) submitStep(form);
