@@ -2,20 +2,6 @@
 title: Migräne und Kunst
 ---
 
-<div style="text-align: center;">
-  <figure style="display: inline-block; margin: 0 auto;">
-    <img
-      src="/images/art/Entry_to_Migraine_Art_competition_small_400_en.jpg"
-      class="img"
-      style="width:400px; height:auto;"
-      alt="Beitrag zum Migraine Art Wettbewerb" />
-    <figcaption style="font-size: 0.8em; margin-top: 0.5em;">
-      Darstellung einer visuellen Migräneaura durch eine Teilnehmerin des National Migraine Art Wettbewerbs.<br />  
-      Veröffentlichung mit Genehmigung. © 2007 Migraine Action Association und Boehringer Ingelheim
-    </figcaption>
-  </figure>
-</div>
-
 <figure style="max-width: 38rem; margin: 2rem auto; padding: 1.5rem 1.75rem; border-left: 4px solid #08768a; background: rgba(8, 118, 138, 0.05); border-radius: 0 8px 8px 0;">
   <blockquote style="margin: 0; font-style: italic; font-size: 1.1rem; line-height: 1.5; color: #1f2937;">
     „Endlich, nach nun mehr als 15 Jahren, kann ich mich outen. Ich bin ein Aurafreak. Aurakunst kannte ich bisher auch nicht. Schön das es sowas gibt, da kann man es allen anderen mal so richtig zeigen."

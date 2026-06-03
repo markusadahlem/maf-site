@@ -2,12 +2,12 @@
 interface Props {
   img: string;
   alt: string;
-  title: string;
-  caption: string;
+  title?: string;
+  caption?: string;
 }
-const { img, alt, title, caption } = Astro.props;
+const { img, alt, title = '', caption = '' } = Astro.props;
 ---
 <figure class="gfig">
   <img src={img} alt={alt} />
-  <figcaption><b>{title}</b>{caption}</figcaption>
+  {(title || caption) && <figcaption><b>{title}</b>{caption}</figcaption>}
 </figure>

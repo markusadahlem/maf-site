@@ -1,0 +1,45 @@
+---
+// The lived-experience lead-in to Migraine Art ("Before the Canvas…"): a prose
+// section styled like the other sections, the two "before" images (aura as art
+// vs. annotated into clinical criteria) side by side, and a framed competition
+// entry. The curated gallery itself lives at the bottom of the page (ArtGallery).
+interface Props { locale: string }
+const { locale } = Astro.props;
+const isDe = locale === 'de';
+const p = (path: string) => (isDe ? `/de${path}` : path);
+
+const T = isDe
+  ? {
+      title: 'Vor der Leinwand: Wie Migränekunst eine Brücke zum klinischen Verständnis schlägt',
+      p1: 'Aura ist real — und wie du sie beschreibst, ist wichtig. Migränekunst erfasst, was Worte oft nicht können: Bilder, die von Menschen mit Migräne geschaffen wurden, um eine Aura von innen zu zeigen. Unser Archiv umfasst über fünf Jahrzehnte.',
+      p2: `Dieselbe Erfahrung lässt sich auch durch medizinische Kriterien strukturieren und in die klinische Sprache übersetzen. Unsere <a href="${p('/field-guide')}">Symptomkarte</a> gibt sie in ICHD-3-Begriffen wieder — wo positive und negative Merkmale nur eines von sechs Kriterien zur Diagnose der Aura sind. Beide Perspektiven schlagen eine Brücke von der gelebten Erfahrung zum klinischen Verständnis.`,
+    }
+  : {
+      title: 'Before the Canvas: How Migraine Art Bridges to Clinical Understanding',
+      p1: "Aura is real — and how you describe it matters. Migraine art captures what words often can't: images created by people with migraine to show an aura from the inside. Our archive spans over five decades.",
+      p2: `The same experience can also be structured by medical criteria and translated into clinical language. Our <a href="${p('/field-guide')}">symptom map</a> renders it in ICHD-3 terms — where positive and negative features are just one of six criteria for diagnosing aura. Both perspectives help bridge lived experience to clinical understanding.`,
+    };
+---
+
+<div class="prose">
+  <h2 id="before-the-canvas">{T.title}</h2>
+  <p>{T.p1}</p>
+  <p set:html={T.p2} />
+</div>
+
+{/* The same aura — expressed in art, and annotated into clinical language. Bare, side by side. */}
+<div class="art-bridge">
+  <img class="art-bridge__left" src="/img/art-fortification.png" alt="A migraine visual aura rendered as art — a scintillating zigzag over a skyline." />
+  <img class="art-bridge__right" src="/img/art-clinical-criteria.png" alt="The same aura annotated with clinical diagnostic criteria." />
+</div>
+
+<style>
+  /* Two "before" images in a single row: right keeps its aspect, left is smaller. */
+  .art-bridge { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; margin-top: 1.75rem; }
+  .art-bridge img { height: auto; display: block; border-radius: 8px; }
+  .art-bridge__left { flex: 0 1 40%; max-width: 40%; }
+  .art-bridge__right { flex: 0 1 56%; max-width: 56%; }
+  @media (max-width: 560px) {
+    .art-bridge__left, .art-bridge__right { flex-basis: 100%; max-width: 100%; }
+  }
+</style>
