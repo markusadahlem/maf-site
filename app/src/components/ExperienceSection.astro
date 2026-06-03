@@ -12,6 +12,7 @@ const isDe = locale === 'de';
 const p = (path: string) => (isDe ? `/de${path}` : path);
 
 const gallery = [
+  { img: '/images/art/Entry_to_Migraine_Art_competition_small_400_en.jpg', alt: 'Entry to the National Migraine Art Competition.', en: { title: '', caption: '' }, de: { title: '', caption: '' } },
   { img: '/img/art-genetics.jpg', alt: 'Painting of a dark bauble labelled Migraine held between hands.', en: { title: 'The Migraine', caption: 'Migraine passed between generations — patient painting.' }, de: { title: 'Die Migräne', caption: 'Über Generationen weitergegebene Migräne — Patientengemälde.' } },
   { img: '/img/art-mosaic.jpg', alt: 'Mosaic-like fragmentation of vision.', en: { title: 'Mosaic vision', caption: 'The visual field fractured into tiles during aura.' }, de: { title: 'Mosaiksehen', caption: 'Das Gesichtsfeld zersplittert während der Aura in Kacheln.' } },
   { img: '/img/art-corona.jpg', alt: 'Corona phenomenon artwork.', en: { title: 'Corona phenomenon', caption: 'Halos and coronas around points of light.' }, de: { title: 'Korona-Phänomen', caption: 'Höfe und Koronen um Lichtpunkte.' } },
@@ -46,6 +47,12 @@ const T = isDe
   <p set:html={T.p2} />
 </div>
 
+{/* The same aura — expressed in art, and annotated into clinical language. Bare, side by side. */}
+<div class="art-bridge">
+  <img src="/img/art-fortification.png" alt="A migraine visual aura rendered as art — a scintillating zigzag over a skyline." />
+  <img src="/img/art-clinical-criteria.png" alt="The same aura annotated with clinical diagnostic criteria." />
+</div>
+
 <div class="gallery" style="margin-top: 1.75rem;">
   {gallery.map((g) => <GalleryFigure img={g.img} alt={g.alt} title={(isDe ? g.de : g.en).title} caption={(isDe ? g.de : g.en).caption} />)}
 </div>
@@ -53,3 +60,8 @@ const T = isDe
 <aside style="margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--border); font-size: 14.5px; color: var(--muted);">
   {T.aside} <a href={p('/contact')}>{T.asideLink}</a>
 </aside>
+
+<style>
+  .art-bridge { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 1.75rem; }
+  .art-bridge img { flex: 1 1 260px; min-width: 0; width: 100%; height: auto; display: block; }
+</style>

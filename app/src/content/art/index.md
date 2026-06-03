@@ -4,20 +4,6 @@ title: Migraine Art
 
 
 
-<div style="text-align: center;">
-  <figure style="display: inline-block; margin: 0 auto;">
-    <img
-      src="/images/art/Entry_to_Migraine_Art_competition_small_400_en.jpg"
-      class="img"
-      style="width:400px; height:auto;"
-      alt="Entry to Migraine Art Competition" />
-    <figcaption style="font-size: 0.8em; margin-top: 0.5em;">
-      Illustration of visual migraine aura from a participant in the National Migraine Art competition.  <br />  
-      Published with permission.  © 2007 Migraine Action Association and Boehringer Ingelheim
-    </figcaption>
-  </figure>
-</div>
-
 <figure style="max-width: 38rem; margin: 2rem auto; padding: 1.5rem 1.75rem; border-left: 4px solid #08768a; background: rgba(8, 118, 138, 0.05); border-radius: 0 8px 8px 0;">
   <blockquote style="margin: 0; font-style: italic; font-size: 1.1rem; line-height: 1.5; color: #1f2937;">
     “After more than 15 years, I can finally come out: I’m an aura freak. I didn’t even know aura art was a thing — and I’m so glad it is. Now there’s a way to really show everyone.”
