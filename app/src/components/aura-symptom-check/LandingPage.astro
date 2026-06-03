@@ -1,0 +1,46 @@
+---
+// LandingPage — the questionnaire entry screen. Sets expectations (beta, time,
+// privacy, not-a-diagnosis) and launches the flow at reason-for-visit. Replaces
+// the handoff's single-step demo at /aura-check.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCatalog } from '../../lib/engine/catalogs';
+import { setCatalog, t } from '../../lib/engine/i18n';
+import '../../styles/questionnaire.css';
+
+interface Props { locale: string }
+const { locale } = Astro.props;
+setCatalog(getCatalog(locale));
+
+const prefix = locale === 'en' ? '' : `/${locale}`;
+const beginHref = `${prefix}/aura-symptom-check/acute-chronic/reason-for-visit/`;
+const points = [t('flow.landing.point1'), t('flow.landing.point2'), t('flow.landing.point3')];
+const title = t('flow.landing.title');
+---
+
+<BaseLayout title={title} lang={locale} active="aura-check">
+  <div class="flow flow--landing">
+    <div class="flow-top">
+      <span class="beta">{t('flow.pages.common.betaVersion')}</span>
+    </div>
+
+    <section class="qcard">
+      <h1 class="qcard__heading">{title}</h1>
+      <p class="qcard__prompt">{t('flow.landing.lead')}</p>
+
+      <ul class="landing__points">
+        {points.map((p) => (
+          <li>
+            <span class="landing__check" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7" /></svg>
+            </span>
+            {p}
+          </li>
+        ))}
+      </ul>
+
+      <div class="qactions qactions--end">
+        <a class="btn btn--primary btn--lg" href={beginHref}>{t('flow.landing.begin')} <span class="arr">→</span></a>
+      </div>
+    </section>
+  </div>
+</BaseLayout>

@@ -408,3 +408,11 @@ passwordGate.incorrect: "Incorrect password. Please try again."
 passwordGate.hintLead: "Don't have a password yet?"
 passwordGate.hintLinkText: "Read about what the check covers"
 passwordGate.hintTail: "in the meantime."
+
+# ── aura-symptom-check landing (redesign) ───────────────────────────
+flow.landing.title: "Check your aura symptoms"
+flow.landing.lead: "A short, guided questionnaire that maps your migraine aura against the ICHD-3 clinical criteria and produces a report you can share with your doctor."
+flow.landing.point1: "Takes about 10 minutes"
+flow.landing.point2: "Your answers stay in your browser — nothing is sent to a server"
+flow.landing.point3: "This is a screening aid, not a diagnosis"
+flow.landing.begin: "Begin the check"
