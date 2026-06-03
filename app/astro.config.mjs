@@ -10,7 +10,7 @@ import remarkHeadingId from 'remark-heading-id';
 // Astro components built here. English stays at the root; German is served
 // under /de/ (prefixDefaultLocale: false), matching Hugo's langURL convention.
 export default defineConfig({
-  site: 'https://www.migraine-aura-foundation.org',
+  site: 'https://migraine-aura-foundation.org',
 
   i18n: {
     defaultLocale: 'en',
