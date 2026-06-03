@@ -1,0 +1,15 @@
+---
+import { getCollection } from 'astro:content';
+import ArtPage from '../../../components/ArtPage.astro';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('art', (e) => e.slug === 'de' || e.slug.startsWith('de/'));
+  return entries.map((entry) => {
+    const slug = entry.slug === 'de' ? undefined : entry.slug.replace(/^de\//, '');
+    return { params: { slug }, props: { entry } };
+  });
+}
+
+const { entry } = Astro.props;
+---
+<ArtPage entry={entry} locale="de" />

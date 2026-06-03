@@ -1,0 +1,54 @@
+---
+// "Explore Your Brain State" — the test-suit landing that embeds the pareidolia
+// test (one MigraineBrainRadar dimension). Locale-driven; shared by en + de.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Kicker from '../components/Kicker.astro';
+import PareidoliaTest from '../components/PareidoliaTest.astro';
+import '../styles/guide.css';
+
+interface Props { locale: string }
+const { locale } = Astro.props;
+const isDe = locale === 'de';
+const mbrHref = isDe ? '/de/test-suit/migrainebrainradar' : '/test-suit/migrainebrainradar';
+
+const T = isDe
+  ? {
+      title: 'Erkunde den Zustand deines Gehirns',
+      lead: 'Ein neuer Blick auf das Migräne-Gehirn',
+      intro: 'Wie leicht dein Gehirn in Zufälligem Muster erkennt, hängt davon ab, wie empfindlich es gerade auf Reize reagiert, und diese Empfindlichkeit verschiebt sich vor, nach und zwischen Migräneattacken. Dies ist eine von sieben Dimensionen des MigraineBrainRadar™ – jede muss ein solider, vollwertiger Test sein, und diese Dimension ist noch ein früher Prototyp.',
+      outro: 'Was du gerade erlebt hast, nennt man <strong>Pareidolie</strong> – dein Gehirn macht aus Rauschen Bedeutung. Unser Ziel ist es, diese kleinen Verschiebungen sichtbar zu machen, die in klassischen Checklisten oft fehlen.',
+      link: 'Zum MigraineBrainRadar™ →',
+    }
+  : {
+      title: 'Explore Your Brain State',
+      lead: 'A new way to understand the migraine brain',
+      intro: 'How easily your brain finds patterns in randomness depends on how sensitive it currently is to stimulation, and that sensitivity shifts before, after and between migraine attacks. This is one of seven dimensions in the MigraineBrainRadar™ — each needs to be a solid, proper test, and this dimension is still an early prototype.',
+      outro: 'What you just experienced is pareidolia — your brain making meaning out of noise. Our aim is to surface these small shifts that traditional checklists miss.',
+      link: 'Explore the MigraineBrainRadar™ →',
+    };
+---
+
+<BaseLayout title={`${T.title} — Migraine Aura Foundation`} lang={locale} active="brain-state">
+  <div class="page-head">
+    <div class="wrap">
+      <Kicker variant="warm">MigraineBrainRadar™</Kicker>
+      <h1 class="page-head__title">{T.title}</h1>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <article class="article mx-auto" style="padding-block: clamp(20px,3vw,36px);">
+      <div class="prose">
+        <p><strong>{T.lead}</strong></p>
+        <p>{T.intro}</p>
+      </div>
+
+      <PareidoliaTest lang={isDe ? 'de' : 'en'} ctaHref={mbrHref} />
+
+      <div class="prose" style="margin-top:2rem;">
+        <p set:html={T.outro} />
+        <p><a href={mbrHref}>{T.link}</a></p>
+      </div>
+    </article>
+  </div>
+</BaseLayout>

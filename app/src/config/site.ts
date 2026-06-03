@@ -19,6 +19,7 @@ export interface NavLink {
 export const navLinks: NavLink[] = [
   { label: 'Field Guide', href: '/field-guide', key: 'field-guide' },
   { label: 'Experiences', href: '/experiences', key: 'experiences' },
+  { label: 'Migraine Art', href: '/art', key: 'art' },
   { label: 'Blog', href: '/blog', key: 'blog' },
   { label: 'For Clinicians', href: '/next-gen-migraine-care', key: 'clinicians' },
 ];
@@ -31,8 +32,10 @@ export const footerCols = [
     links: [
       { label: 'Field Guide', href: '/field-guide' },
       { label: 'Experiences', href: '/experiences' },
+      { label: 'Migraine Art', href: '/art' },
       { label: 'Science Blog', href: '/blog' },
       { label: 'Aura Check', href: '/aura-check' },
+      { label: 'Explore Your Brain State', href: '/test-suit' },
     ],
   },
   {
