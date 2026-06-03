@@ -1,51 +1,12 @@
 ---
-import { getCollection, type CollectionEntry } from 'astro:content';
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import Tag from '../../components/Tag.astro';
-import Callout from '../../components/Callout.astro';
-import '../../styles/guide.css';
-import '../../styles/pages.css';
+import { getCollection } from 'astro:content';
+import BlogArticle from '../../components/BlogArticle.astro';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog');
+  const posts = await getCollection('blog', (e) => !e.slug.startsWith('de/'));
   return posts.map((post) => ({ params: { slug: post.slug }, props: { post } }));
 }
 
-interface Props { post: CollectionEntry<'blog'> }
 const { post } = Astro.props;
-const { Content } = await post.render();
-const fmt = (d: Date) => d.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
 ---
-
-<BaseLayout title={`${post.data.title} — Science Blog`} description={post.data.description} active="blog">
-  <div class="wrap">
-    <article class="article mx-auto" style="padding-block: clamp(32px,4vw,52px);">
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="/blog">Science Blog</a><span class="sep">/</span><span class="current">{post.data.tag}</span>
-      </nav>
-
-      {post.data.series && <div class="tags"><Tag variant="warm">Three-part series</Tag></div>}
-      <h1 class="article__title">{post.data.title}</h1>
-      <div class="post-meta" style="margin-top:18px">
-        <span>{fmt(post.data.date)}</span><span class="dot"></span>
-        <span>{post.data.author}</span>
-        {post.data.readingTime && <><span class="dot"></span><span>{post.data.readingTime}</span></>}
-      </div>
-
-      {post.data.description && <p class="article__lead">{post.data.description}</p>}
-      <hr class="article__divider" />
-
-      <div class="prose">
-        <Content />
-      </div>
-
-      <Callout>
-        <p>This article is a revised edition of a post originally published on <em>Gray Matters / Graue Substanz</em>, updated for clarity and today's context.</p>
-      </Callout>
-
-      <nav class="article-nav" aria-label="Series navigation">
-        <a href="/blog"><span class="arr" style="display:inline-block;transform:rotate(180deg)">→</span> All articles</a>
-      </nav>
-    </article>
-  </div>
-</BaseLayout>
+<BlogArticle post={post} locale="en" />

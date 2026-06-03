@@ -1,0 +1,48 @@
+---
+// Shared blog article renderer for both locales.
+import { type CollectionEntry } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Tag from '../components/Tag.astro';
+import Callout from '../components/Callout.astro';
+import '../styles/guide.css';
+import '../styles/pages.css';
+
+interface Props { post: CollectionEntry<'blog'>; locale: string }
+const { post, locale } = Astro.props;
+const isDe = locale === 'de';
+const { Content } = await post.render();
+const fmt = (d: Date) => d.toLocaleDateString(isDe ? 'de-DE' : 'en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+
+const UI = isDe
+  ? { crumb: 'Wissenschaftsblog', crumbHref: '/de/blog', series: 'Dreiteilige Serie', all: 'Alle Artikel', callout: 'Dieser Beitrag ist eine überarbeitete Ausgabe eines ursprünglich im Blog <em>Gray Matters / Graue Substanz</em> veröffentlichten Artikels.' }
+  : { crumb: 'Science Blog', crumbHref: '/blog', series: 'Three-part series', all: 'All articles', callout: "This article is a revised edition of a post originally published on <em>Gray Matters / Graue Substanz</em>, updated for clarity and today's context." };
+---
+
+<BaseLayout title={`${post.data.title} — ${UI.crumb}`} description={post.data.description} lang={locale} active="blog">
+  <div class="wrap">
+    <article class="article mx-auto" style="padding-block: clamp(32px,4vw,52px);">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href={UI.crumbHref}>{UI.crumb}</a><span class="sep">/</span><span class="current">{post.data.tag}</span>
+      </nav>
+
+      {post.data.series && <div class="tags"><Tag variant="warm">{UI.series}</Tag></div>}
+      <h1 class="article__title">{post.data.title}</h1>
+      <div class="post-meta" style="margin-top:18px">
+        <span>{fmt(post.data.date)}</span><span class="dot"></span>
+        <span>{post.data.author}</span>
+        {post.data.readingTime && <><span class="dot"></span><span>{post.data.readingTime}</span></>}
+      </div>
+
+      {post.data.description && <p class="article__lead">{post.data.description}</p>}
+      <hr class="article__divider" />
+
+      <div class="prose"><Content /></div>
+
+      <Callout><p set:html={UI.callout} /></Callout>
+
+      <nav class="article-nav" aria-label="Series navigation">
+        <a href={UI.crumbHref}><span class="arr" style="display:inline-block;transform:rotate(180deg)">→</span> {UI.all}</a>
+      </nav>
+    </article>
+  </div>
+</BaseLayout>
