@@ -1,0 +1,20 @@
+---
+interface Props {
+  title: string;
+  sub: string;
+  href: string;
+  linkLabel: string;
+  warm?: boolean;
+}
+const { title, sub, href, linkLabel, warm = false } = Astro.props;
+---
+<a class="card-link" href={href}>
+  <article class="card feature">
+    <div class:list={['feature__icon', { 'feature__icon--warm': warm }]} aria-hidden="true">
+      <slot name="icon" />
+    </div>
+    <h3 class="feature__title">{title}</h3>
+    <p class="feature__sub">{sub}</p>
+    <span class="feature__link">{linkLabel} <span class="arr">→</span></span>
+  </article>
+</a>

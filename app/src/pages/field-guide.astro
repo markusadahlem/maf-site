@@ -1,0 +1,88 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Kicker from '../components/Kicker.astro';
+import Callout from '../components/Callout.astro';
+import '../styles/guide.css';
+
+// In production these groups can be generated from getCollection('symptoms'),
+// grouped by `persistence` then `domain`. Shown here as a representative
+// structure; the Visual Snow link resolves to the real collection entry.
+const transitory = [
+  { title: 'Visual', blue: true, items: ['Visual Loss', 'Visual Hallucinations', 'Visual Illusions'] },
+  { title: 'Somatosensory', items: ['Tingling & Numbness'] },
+  { title: 'Speech & Language', items: ['Speech Symptoms', 'Language Symptoms'] },
+  { title: 'Motor', items: ['Weakness & Paralysis'] },
+  { title: 'Cognitive & Psychological', items: ['Depersonalization & Derealization', 'Body Image Disturbances', 'Time Perception', 'Paramnesias (Déjà Vu)', 'Synaesthesia'] },
+  { title: 'Smell, Taste & Sleep', items: ['Olfactory Symptoms', 'Gustatory Symptoms', 'Disturbances of Dreaming', 'Felt Presences'] },
+];
+const persistent = [
+  { title: 'Visual', blue: true, items: ['Visual Snow', 'Persistent Visual Loss', 'Visual Perseveration', 'Light Sensitivity', 'Night Vision & Reading'] },
+  { title: 'Auditory', items: ['Persistent Tinnitus', 'Hearing Changes'] },
+  { title: 'Vestibular & Other', items: ['Vertigo & Dizziness', 'Cognitive Problems', 'Derealization & Depersonalization'] },
+];
+const hrefFor = (item: string) =>
+  item === 'Visual Snow' ? '/symptom-guide/persistent-visual-snow' : '/symptom-guide/persistent-visual-snow';
+---
+
+<BaseLayout title="A Field Guide to Symptoms — Migraine Aura Foundation" active="field-guide">
+  <div class="page-head">
+    <div class="wrap">
+      <Kicker variant="blue">Field Guide</Kicker>
+      <h1 class="page-head__title">A Field Guide to Symptoms</h1>
+      <p class="page-head__lead">A complete catalogue of migraine <em>aura</em> symptoms — described in plain language, grouped by how long they last and the sense they affect.</p>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="docs">
+      <aside class="side" aria-label="Symptom categories">
+        <div class="side__group">
+          <div class="side__title">Transitory</div>
+          <ul class="side__list">
+            {transitory.map((g, i) => <li><a href={`#t-${i}`} class:list={[{ 'is-active': i === 0 }]}>{g.title}</a></li>)}
+          </ul>
+        </div>
+        <div class="side__group">
+          <div class="side__title">Persistent</div>
+          <ul class="side__list">
+            {persistent.map((g, i) => <li><a href={`#p-${i}`}>{g.title}</a></li>)}
+          </ul>
+        </div>
+      </aside>
+
+      <div>
+        <Callout>
+          <p>This guide focuses <strong>exclusively on migraine aura symptoms</strong>. Migraine can involve many other symptoms before, during, and after an attack — see the <a href="/symptoms">Migraine Symptoms Overview</a> for the full cycle.</p>
+        </Callout>
+
+        <section class="fg-section">
+          <div class="fg-section__head"><h2 class="fg-section__title">Transitory Aura Symptoms</h2><span class="fg-section__meta">Develop over 5–20 minutes and resolve within 60 minutes.</span></div>
+          <div class="fg-groups">
+            {transitory.map((g, i) => (
+              <div class="fg-group" id={`t-${i}`}>
+                <div class:list={['fg-group__title', { 'fg-group__title--blue': g.blue }]}>{g.title}</div>
+                <ul class="fg-list">
+                  {g.items.map((it) => <li><a href={hrefFor(it)}>{it}<span class="chev">→</span></a></li>)}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section class="fg-section">
+          <div class="fg-section__head"><h2 class="fg-section__title">Persistent Aura Symptoms</h2><span class="fg-section__meta">Last weeks, months, or years; rare but documented.</span></div>
+          <div class="fg-groups">
+            {persistent.map((g, i) => (
+              <div class="fg-group" id={`p-${i}`}>
+                <div class:list={['fg-group__title', { 'fg-group__title--blue': g.blue }]}>{g.title}</div>
+                <ul class="fg-list">
+                  {g.items.map((it) => <li><a href={hrefFor(it)}>{it}<span class="chev">→</span></a></li>)}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

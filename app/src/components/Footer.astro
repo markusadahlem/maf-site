@@ -1,0 +1,31 @@
+---
+import Brand from './Brand.astro';
+import { site, footerCols } from '../config/site';
+---
+
+<footer class="footer">
+  <div class="footer__cols">
+    <div class="footer__about">
+      <Brand href="/" />
+      <p>{site.description}</p>
+    </div>
+    {
+      footerCols.map((col) => (
+        <div class="footer__col">
+          <h4>{col.title}</h4>
+          <ul>
+            {col.links.map((l) => (
+              <li>
+                <a href={l.href}>{l.label}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))
+    }
+  </div>
+  <div class="footer__base">
+    <span>© 1998–2026 {site.name}. A non-profit knowledge resource.</span>
+    <span>Not a substitute for professional medical advice.</span>
+  </div>
+</footer>

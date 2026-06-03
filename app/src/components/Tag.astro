@@ -1,0 +1,9 @@
+---
+interface Props {
+  variant?: 'blue' | 'warm' | 'plain';
+}
+const { variant = 'blue' } = Astro.props;
+---
+<span class:list={['tag', { 'tag--warm': variant === 'warm', 'tag--plain': variant === 'plain' }]}>
+  <slot />
+</span>

@@ -1,0 +1,60 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Kicker from '../../components/Kicker.astro';
+import Button from '../../components/Button.astro';
+import Tag from '../../components/Tag.astro';
+import PostCard from '../../components/PostCard.astro';
+import '../../styles/pages.css';
+
+const fmt = (d: Date) => d.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+const tagVariant = (t: string): 'blue' | 'warm' | 'plain' =>
+  ['Neuroscience', 'Culture'].includes(t) ? 'warm' : 'blue';
+
+const posts = (await getCollection('blog')).sort((a, b) => +b.data.date - +a.data.date);
+const [featured, ...rest] = posts;
+---
+
+<BaseLayout title="Science Blog — Migraine Aura Foundation" active="blog">
+  <div class="page-head">
+    <div class="wrap">
+      <Kicker>Science blog</Kicker>
+      <h1 class="page-head__title">Gray Matters</h1>
+      <p class="page-head__lead">Revised editions of selected posts originally published on the science blogs <em>Gray Matters</em> and <em>Graue Substanz</em> — updated for clarity and today's context.</p>
+    </div>
+  </div>
+
+  <div class="wrap section--tight">
+    <!-- Featured -->
+    <article class="post-featured">
+      <div class="post-featured__media"><img src="/img/aura-o-mat.png" alt="The MigraineAuraScan tool interface." /></div>
+      <div>
+        <div class="post-meta">
+          <Tag variant={tagVariant(featured.data.tag)}>{featured.data.tag}</Tag>
+          <span class="dot"></span><span>{fmt(featured.data.date)}</span>
+          <span class="dot"></span><span>{featured.data.author}</span>
+        </div>
+        <h2 class="post-featured__title"><a href={`/blog/${featured.slug}`}>{featured.data.title}</a></h2>
+        <p class="post-featured__excerpt">{featured.data.description}</p>
+        <div style="margin-top:20px"><Button href={`/blog/${featured.slug}`} variant="ghost" arrow>Read article</Button></div>
+      </div>
+    </article>
+
+    <!-- Grid -->
+    <div class="posts">
+      {
+        rest.map((p) => (
+          <PostCard
+            title={p.data.title}
+            href={`/blog/${p.slug}`}
+            excerpt={p.data.description ?? ''}
+            tag={p.data.tag}
+            tagVariant={tagVariant(p.data.tag)}
+            date={fmt(p.data.date)}
+            author={p.data.author}
+          />
+        ))
+      }
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,12 @@
+---
+interface Props {
+  date: string;
+  title: string;
+}
+const { date, title } = Astro.props;
+---
+<div class="tl-item">
+  <div class="tl-date">{date}</div>
+  <h3 class="tl-title">{title}</h3>
+  <p class="tl-text"><slot /></p>
+</div>

@@ -1,0 +1,74 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProgressSteps from '../components/ProgressSteps.astro';
+import OptionGroup from '../components/OptionGroup.astro';
+import type { Option } from '../config/types';
+import '../styles/questionnaire.css';
+
+// In the full migration these strings come from src/i18n/en.yaml via t().
+const options: Option[] = [
+  {
+    value: 'tingling',
+    label: 'Pins-and-needles or tingling sensations',
+    info: {
+      text: "A tingling, prickling sensation — like a limb 'falling asleep' — that often starts in the fingers and gradually spreads up the arm. Clinically called paraesthesia.",
+      href: '/symptom-guide/persistent-visual-snow',
+      linkLabel: 'Read full entry',
+    },
+  },
+  {
+    value: 'numbness',
+    label: 'Numbness or "heavy" feeling in an arm, hand, face, or leg',
+    info: {
+      text: 'Loss or reduction of feeling, sometimes with a heavy or "dead" sensation. Typically affects one side of the body, face or limb (hemihypaesthesia) and resolves with the aura.',
+      href: '/symptom-guide/persistent-visual-snow',
+      linkLabel: 'Read full entry',
+    },
+  },
+  {
+    value: 'burning',
+    label: 'Burning or prickling sensations',
+    info: {
+      text: 'A warm, prickly or stinging surface sensation on the skin without an external cause. Often felt alongside tingling or numbness and follows the same aura time-course.',
+      href: '/symptom-guide/persistent-visual-snow',
+      linkLabel: 'Read full entry',
+    },
+  },
+  {
+    value: 'other',
+    label: 'Other sensory changes',
+    other: true,
+    info: {
+      text: 'Any other somatosensory change during your aura — for example, bilateral tingling, swapped or mirrored sensations between hands, or unusual feelings on the lips or tongue.',
+      href: '/field-guide',
+      linkLabel: 'Transitory somatosensory symptoms',
+    },
+  },
+];
+---
+
+<BaseLayout title="Sensory disturbances — Aura Check" showFooter={false}>
+  <div class="flow">
+    <div class="flow-top">
+      <span class="beta">Beta version</span>
+      <a class="flow-exit" href="/">Save &amp; exit</a>
+    </div>
+
+    <ProgressSteps current={2} substep={{ label: 'Symptoms', current: 2, total: 5 }} />
+
+    <section class="qcard">
+      <h1 class="qcard__heading">Sensory disturbances</h1>
+      <p class="qcard__prompt"><strong>Select any sensory (touch) disturbances you have experienced.</strong></p>
+
+      <OptionGroup
+        formId="sensoryAuraForm"
+        type="checkbox"
+        name="sensorySymptom"
+        stepId="sensory-aura"
+        options={options}
+        noneValue="none"
+        backHref="/aura-check"
+      />
+    </section>
+  </div>
+</BaseLayout>

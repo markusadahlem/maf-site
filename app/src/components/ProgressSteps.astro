@@ -1,0 +1,44 @@
+---
+// 3-section progress indicator. The 3-section model is fixed (per the
+// QUESTIONNAIRE-BRIEF); only the visual is the redesign's concern.
+interface Props {
+  /** active section, 1–3 */
+  current: 1 | 2 | 3;
+  labels?: [string, string, string];
+  /** optional sub-step within the section, e.g. { current: 2, total: 5 } */
+  substep?: { label: string; current: number; total: number };
+}
+const {
+  current,
+  labels = ['About your visit', 'Symptoms', 'Characteristics'],
+  substep,
+} = Astro.props;
+
+// Fill the connector up to the centre of the current step.
+const fillPct = ((current - 1) * 33.33).toFixed(2) + '%';
+const subPct = substep ? Math.round((substep.current / substep.total) * 100) + '%' : '0%';
+---
+<div class="progress">
+  <ol class="progress__steps" aria-label="Section progress" style={`--fill:${fillPct}`}>
+    {
+      labels.map((label, i) => {
+        const n = i + 1;
+        const state = n < current ? 'is-done' : n === current ? 'is-current' : '';
+        return (
+          <li class:list={['pstep', state]} aria-current={n === current ? 'step' : undefined}>
+            <span class="pstep__num"><span>{n}</span></span>
+            <span class="pstep__label">{label}</span>
+          </li>
+        );
+      })
+    }
+  </ol>
+  {
+    substep && (
+      <div class="substep">
+        <div class="substep__bar"><div class="substep__fill" style={`width:${subPct}`} /></div>
+        <span class="substep__txt">{substep.label} · {substep.current} of {substep.total}</span>
+      </div>
+    )
+  }
+</div>

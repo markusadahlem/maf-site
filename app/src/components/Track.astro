@@ -1,0 +1,22 @@
+---
+import Button from './Button.astro';
+interface Props {
+  img: string;
+  alt: string;
+  tag: string;
+  tagBlue?: boolean;
+  title: string;
+  href: string;
+  linkLabel: string;
+}
+const { img, alt, tag, tagBlue = false, title, href, linkLabel } = Astro.props;
+---
+<article class="track">
+  <div class="track__media"><img src={img} alt={alt} /></div>
+  <div class="track__body">
+    <div class:list={['track__tag', { 'track__tag--blue': tagBlue }]}>{tag}</div>
+    <h2 class="track__title">{title}</h2>
+    <p class="track__text"><slot /></p>
+    <a class="track__link" href={href}>{linkLabel} <span class="arr">→</span></a>
+  </div>
+</article>

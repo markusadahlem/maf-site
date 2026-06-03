@@ -1,0 +1,37 @@
+---
+// Button / link. Renders <a> when `href` is set, else <button>.
+interface Props {
+  href?: string;
+  variant?: 'primary' | 'ghost' | 'quiet';
+  size?: 'md' | 'lg';
+  arrow?: boolean;
+  type?: 'button' | 'submit';
+  id?: string;
+  disabled?: boolean;
+  class?: string;
+}
+const {
+  href,
+  variant = 'primary',
+  size = 'md',
+  arrow = false,
+  type = 'button',
+  id,
+  disabled = false,
+  class: cls = '',
+} = Astro.props;
+const classes = ['btn', `btn--${variant}`, { 'btn--lg': size === 'lg' }, cls];
+---
+{
+  href ? (
+    <a class:list={classes} href={href} id={id}>
+      <slot />
+      {arrow && <span class="arr">→</span>}
+    </a>
+  ) : (
+    <button class:list={classes} type={type} id={id} disabled={disabled}>
+      <slot />
+      {arrow && <span class="arr">→</span>}
+    </button>
+  )
+}

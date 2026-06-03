@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Kicker from '../components/Kicker.astro';
+import SectionHead from '../components/SectionHead.astro';
+import Track from '../components/Track.astro';
+import GalleryFigure from '../components/GalleryFigure.astro';
+import CtaBand from '../components/CtaBand.astro';
+import '../styles/pages.css';
+
+const gallery = [
+  { img: '/img/art-genetics.jpg', alt: 'Painting of a dark bauble labelled Migraine held between hands.', title: 'The Migraine', caption: 'Migraine passed between generations — patient painting.' },
+  { img: '/img/art-mosaic.jpg', alt: 'Mosaic-like fragmentation of vision.', title: 'Mosaic vision', caption: 'The visual field fractured into tiles during aura.' },
+  { img: '/img/art-corona.jpg', alt: 'Corona phenomenon artwork.', title: 'Corona phenomenon', caption: 'Halos and coronas around points of light.' },
+  { img: '/img/art-dugan.jpg', alt: 'Patrick Dugan — The Migraine.', title: 'The Migraine — P. Dugan', caption: "An artist's depiction of an attack." },
+  { img: '/img/art-greene.jpg', alt: 'Sofia Greene — afterimage of a ship.', title: 'Afterimage — S. Greene', caption: 'Visual perseveration: an image that lingers.' },
+  { img: '/img/art-alice.png', alt: 'Body-size distortion — Alice in Wonderland syndrome.', title: 'Alice in Wonderland', caption: 'Body-image and size distortions during aura.' },
+  { img: '/img/art-heaton.jpg', alt: 'Roger Heaton — Migraine Images, 1992.', title: 'Migraine Images — R. Heaton', caption: 'A series exploring the aura, 1992.' },
+  { img: '/img/art-diggiemoon.jpg', alt: 'Diggiemoon migraine artwork.', title: 'Untitled — Diggiemoon', caption: 'A contemporary rendering of visual disturbance.' },
+  { img: '/img/art-robinson.jpg', alt: 'Derek Robinson, 1984.', title: 'Early work — D. Robinson', caption: 'From the pioneering archive begun in 1973.' },
+];
+---
+
+<BaseLayout title="Revealing Experiences — Migraine Aura Foundation" active="experiences">
+  <div class="page-head">
+    <div class="wrap">
+      <Kicker>Revealing experiences</Kicker>
+      <h1 class="page-head__title">Making the invisible visible</h1>
+      <p class="page-head__lead">Aura is real — and how you describe it matters. Whether expressed in art or structured by clinical criteria, every perspective helps make the invisible more visible.</p>
+    </div>
+  </div>
+
+  <section class="section--tight">
+    <div class="wrap">
+      <div class="two-track">
+        <Track img="/img/art-fortification.png" alt="Visual aura as a zigzag over a city skyline." tag="Expressed in art" title="From the inside" href="#gallery" linkLabel="Browse the archive">
+          This digitally altered photograph was created by a person with migraine to show how she experienced a visual aura. Migraine art captures what words often can't — our archive spans over five decades.
+        </Track>
+        <Track img="/img/art-clinical-criteria.png" alt="The same aura annotated with clinical diagnostic criteria." tag="Structured by medical criteria" tagBlue title="Into clinical language" href="/field-guide" linkLabel="Explore the Field Guide">
+          Our symptom map translates experience into clinical terms — based on <strong>ICHD-3</strong> and aligned with the upcoming ICHD-4 beta. Positive and negative features are just one of six criteria for diagnosing aura.
+        </Track>
+      </div>
+    </div>
+  </section>
+
+  <section class="section--tight" id="gallery">
+    <div class="wrap">
+      <SectionHead kicker="The Migraine Art Archive" title="Five decades of seeing aura" sub="A selection from a collection built with patients since the 1970s — each piece an attempt to render an experience that resists description." />
+      <div class="gallery">
+        {gallery.map((g) => <GalleryFigure {...g} />)}
+      </div>
+      <aside style="margin-top:32px; padding-top:18px; border-top:1px solid var(--border); font-size:14.5px; color:var(--muted); max-width:70ch;">
+        Over 7,000 individual patient reports from the original version of this site are being carefully curated for re-publication here — an ongoing effort sponsors could help us accelerate. <a href="/contact">Get in touch.</a>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section--tight">
+    <div class="wrap">
+      <CtaBand
+        title="From experience to report"
+        text="Now that you've seen how others express their symptoms — and how medicine structures them — create your own report: a summary you can understand and share with your doctor."
+        ctaLabel="Try the Aura Check"
+        ctaHref="/aura-check"
+      />
+    </div>
+  </section>
+</BaseLayout>

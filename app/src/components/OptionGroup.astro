@@ -1,0 +1,166 @@
+---
+// Question option group (checkbox or radio) with Field Guide info popovers,
+// optional "Other" textarea, and an exclusive "None of the above".
+//
+// DOM contract preserved from the brief: real <input name=…> controls, an
+// id on the Continue button, exclusive-none + other-reveal behaviour. Wire
+// `flowRunner.goNext(stepId)` where the TODO marker is in the island below.
+
+import type { Option } from '../config/types';
+interface Props {
+  formId?: string;
+  type?: 'checkbox' | 'radio';
+  /** input name attribute — keep stable, the engine reads it */
+  name: string;
+  stepId: string;
+  options: Option[];
+  noneValue?: string; // adds an exclusive "None of the above"
+  noneLabel?: string;
+  otherLabel?: string;
+  otherPlaceholder?: string;
+  continueLabel?: string;
+  hint?: string;
+  backHref?: string;
+}
+const {
+  formId = 'stepForm',
+  type = 'checkbox',
+  name,
+  stepId,
+  options,
+  noneValue,
+  noneLabel = 'None of the above',
+  otherLabel = 'Other (please describe below):',
+  otherPlaceholder = 'Describe what you experienced (max 200 characters)',
+  continueLabel = 'Continue',
+  hint = 'Select at least one option to continue.',
+  backHref = '#',
+} = Astro.props;
+const hasOther = options.some((o) => o.other);
+const isRadio = type === 'radio';
+---
+<form id={formId} class="qform" data-type={type} data-name={name} data-step={stepId} data-none={noneValue ?? ''}>
+  <div class="options">
+    {
+      options.map((o) => (
+        <label class:list={['option', { 'option--radio': isRadio }]} data-opt>
+          <input type={type} name={name} value={o.value} data-other={o.other ? '' : undefined} />
+          <span class="option__box">
+            {isRadio ? (
+              <span class="dot" />
+            ) : (
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12.5l4.5 4.5L19 7" />
+              </svg>
+            )}
+          </span>
+          <span class="option__label">{o.label}</span>
+          {o.info ? (
+            <span class="info">
+              <button type="button" class="info__btn" aria-label="More information" data-info-btn>ⓘ</button>
+              <span class="info__pop" role="tooltip">
+                <p>{o.info.text}</p>
+                <a href={o.info.href} target="_blank" rel="noopener">{o.info.linkLabel} ↗</a>
+              </span>
+            </span>
+          ) : (
+            <span />
+          )}
+        </label>
+      ))
+    }
+
+    {
+      hasOther && (
+        <div class="other-field" data-other-field>
+          <label for={`${formId}-other`}>{otherLabel}</label>
+          <textarea id={`${formId}-other`} rows="2" maxlength="200" placeholder={otherPlaceholder} data-other-text />
+          <div class="char-counter" data-counter>200 characters remaining</div>
+        </div>
+      )
+    }
+
+    {
+      noneValue && (
+        <>
+          <div class="options-divider">or</div>
+          <label class="option" data-opt>
+            <input type={type} name={name} value={noneValue} data-none-input />
+            <span class="option__box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12.5l4.5 4.5L19 7" />
+              </svg>
+            </span>
+            <span class="option__label">{noneLabel}</span>
+            <span />
+          </label>
+        </>
+      )
+    }
+  </div>
+
+  <div class="qactions">
+    <a class="btn-back" href={backHref}><span class="arr" style="display:inline-block;transform:rotate(180deg)">→</span> Back</a>
+    <button type="button" class="btn btn--primary" data-continue disabled>{continueLabel} <span class="arr">→</span></button>
+  </div>
+  <p class="qhint" data-hint>{hint}</p>
+</form>
+
+<script>
+  // Info popovers (delegated, page-wide).
+  document.addEventListener('click', (e) => {
+    const t = e.target as HTMLElement;
+    const btn = t.closest('[data-info-btn]');
+    document.querySelectorAll('.info[data-open="true"]').forEach((i) => {
+      if (!btn || i !== btn.closest('.info')) i.setAttribute('data-open', 'false');
+    });
+    if (btn) {
+      const info = btn.closest('.info')!;
+      info.setAttribute('data-open', info.getAttribute('data-open') === 'true' ? 'false' : 'true');
+      e.preventDefault();
+    }
+  });
+
+  // Per-form gating / exclusivity / counter.
+  document.querySelectorAll<HTMLFormElement>('form.qform').forEach((form) => {
+    const type = form.dataset.type;
+    const inputs = Array.from(form.querySelectorAll<HTMLInputElement>(`input[name="${form.dataset.name}"]`));
+    const noneInput = form.querySelector<HTMLInputElement>('[data-none-input]');
+    const otherInput = form.querySelector<HTMLInputElement>('input[data-other]');
+    const otherField = form.querySelector<HTMLElement>('[data-other-field]');
+    const textarea = form.querySelector<HTMLTextAreaElement>('[data-other-text]');
+    const counter = form.querySelector<HTMLElement>('[data-counter]');
+    const cont = form.querySelector<HTMLButtonElement>('[data-continue]');
+    const hint = form.querySelector<HTMLElement>('[data-hint]');
+
+    function refresh() {
+      const any = inputs.some((i) => i.checked);
+      if (cont) cont.disabled = !any;
+      if (hint) hint.style.visibility = any ? 'hidden' : 'visible';
+    }
+    inputs.forEach((inp) => {
+      inp.addEventListener('change', () => {
+        if (type === 'checkbox') {
+          if (inp === noneInput && inp.checked) {
+            inputs.forEach((o) => o !== noneInput && (o.checked = false));
+            otherField?.classList.remove('is-shown');
+          } else if (inp !== noneInput && inp.checked && noneInput) {
+            noneInput.checked = false;
+          }
+          if (otherInput && otherField) otherField.classList.toggle('is-shown', otherInput.checked);
+        }
+        refresh();
+      });
+    });
+    textarea?.addEventListener('input', () => {
+      if (counter) counter.textContent = `${200 - textarea.value.length} characters remaining`;
+    });
+
+    cont?.addEventListener('click', () => {
+      // TODO(migration): call the typed engine here, e.g.
+      //   flowRunner.goNext(form.dataset.step!)
+      // after persisting the answer via the storage helpers.
+      console.log('continue', form.dataset.step, new FormData(form));
+    });
+  });
+</script>

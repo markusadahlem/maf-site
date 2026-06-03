@@ -1,5 +1,10 @@
-public/
+/public/
 .DS_Store
 .claude/
 *.old.*
 NEW-DESIGN/
+
+# Astro app (build phase lives in app/; flattens to root at cutover)
+app/node_modules/
+app/dist/
+app/.astro/
