@@ -4,6 +4,7 @@ description: How the MigraineAuraScan guides patients toward understanding, impr
 date: "2025-04-28T03:55:11+02:00"
 author: Markus A. Dahlem, PhD
 tag: Neuroscience
+revised: false
 ---
 
 <div class="hx-mb-12">
