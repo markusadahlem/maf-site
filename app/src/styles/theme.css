@@ -202,9 +202,11 @@ h1, h2, h3, h4 {
 .theme-toggle:hover { color: var(--ink); border-color: var(--border-strong); }
 .theme-toggle svg { width: 18px; height: 18px; }
 .nav__lang { width: auto; min-width: 38px; padding: 0 11px; font-size: 13px; font-weight: 600; letter-spacing: .02em; text-decoration: none; }
-.theme-toggle .icon-moon { display: none; }
-:root[data-theme="dark"] .theme-toggle .icon-sun { display: none; }
-:root[data-theme="dark"] .theme-toggle .icon-moon { display: block; }
+/* Toggle shows the TARGET state (the action), matching the language switch:
+   moon = "switch to dark" (shown in light mode), sun = "switch to light" (dark mode). */
+.theme-toggle .icon-sun { display: none; }
+:root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+:root[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
 
 .nav__menu-btn { display: none; }
 
