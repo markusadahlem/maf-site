@@ -25,6 +25,9 @@ const blog = defineCollection({
     tag: z.string().default('Neuroscience'),
     readingTime: z.string().optional(),
     series: z.boolean().default(false),
+    // true = revised edition of a Gray Matters / Graue Substanz post (the blog's
+    // default); set false for articles written originally for this site.
+    revised: z.boolean().default(true),
   }),
 });
 
