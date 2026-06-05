@@ -32,4 +32,4 @@ title: Alwa Glebe
 
 <h2 id="literatur">Literatur</h2>
 
-<ol class="refs"><li>Podoll K. Alwa Glebe’s <em>imitatio</em> Nietzsche: on elective affinities between migraine-inspired artists. In: Rose FC (Hrsg.) <em>The Neurology of Music</em>. Imperial College Press, London 2010.</li></ol>
+<ol class="refs"><li>Podoll K. Alwa Glebe’s <em>imitatio</em> Nietzsche: on elective affinities between migraine-inspired artists. In: Rose FC (Hrsg.) <em>The Neurology of Music</em>. Imperial College Press, London 2010.</li><li>Podoll K. <a href="https://www.worldscientific.com/doi/abs/10.1142/9781848162693_0013" target="_blank" rel="noopener">Migraine aura as source of artistic inspiration in the German ‘dark chanteuse’ Alwa Glebe</a>. In: Rose FC (Hrsg.) <em>The Neurology of Music</em>. Imperial College Press, London 2010: 203–219.</li></ol>
