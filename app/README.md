@@ -102,6 +102,29 @@ engine is marked `TODO(migration)` in the `<script>` block — persist the answe
 via the storage helpers, then call `flowRunner.goNext(stepId)`. The 3-section
 model in `ProgressSteps` is fixed, as the brief requires.
 
+## Dependency advisories (why most are dismissed)
+
+This app ships as a **fully static build** (`astro build` → `dist`, uploaded to
+GitHub Pages — see `.github/workflows/deploy.yml`). There is **no SSR adapter
+and no server runtime in production**. That makes the bulk of Dependabot's
+Astro/esbuild/vite alerts not applicable here:
+
+- **SSR-only** (X-Forwarded-Host reflection, middleware/auth-bypass, double-URL
+  encoding, server-island XSS/replay) — no server exists in production, so
+  there is no attack surface.
+- **Dev-server-only** (esbuild request leak, Astro dev-server file read, vite) —
+  only reachable while running `astro dev` locally *and* browsing a malicious
+  site at the same time. Local, low risk.
+- **Build-time `define:vars` `</script>` XSS** — the only `define:vars` use is
+  `components/Analytics.astro`, which injects hardcoded literals (PostHog
+  key/host), not user input.
+
+These are dismissed on GitHub as *"Vulnerable code is not actually used."* The
+real fix is `astro@6.x`, a two-major upgrade that also requires migrating
+content collections to the Content Layer API — deferred until a deliberate
+Astro upgrade. **If an SSR adapter or `output: 'server'` is ever added, revisit
+this** — the SSR advisories above become live at that point.
+
 ## Not yet ported (follow the plan)
 
 - `src/lib/engine/*`, `src/lib/rules/aura-symptom-check.ts` (Phase 1)
