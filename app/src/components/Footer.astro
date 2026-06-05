@@ -2,9 +2,12 @@
 import Brand from './Brand.astro';
 import { site, footerCols } from '../config/site';
 
-// In-memoriam dedication — shown on the home page only, in both locales.
+// In-memoriam dedication — shown on the home page, the About page, and the
+// whole Migraine Art section (landing + all sub-pages), in both locales.
 const seg = Astro.url.pathname.replace(/\/+$/, ''); // '' = en home, '/de' = de home
-const isHome = seg === '' || seg === '/de';
+const isArt = seg === '/art' || seg.startsWith('/art/') || seg === '/de/art' || seg.startsWith('/de/art/');
+const showMemoriam =
+  seg === '' || seg === '/de' || seg === '/about' || seg === '/de/about' || isArt;
 const isDe = seg === '/de' || seg.startsWith('/de/');
 const M = isDe
   ? {
@@ -44,7 +47,7 @@ const M = isDe
       ))
     }
   </div>
-  {isHome && (
+  {showMemoriam && (
     <aside class="memoriam" aria-label={M.aria}>
       <img class="memoriam__portrait" src="/img/klaus-podoll.png" alt={M.alt} loading="lazy" />
       <p class="memoriam__text">
