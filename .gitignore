@@ -3,6 +3,7 @@
 .claude/
 *.old.*
 NEW-DESIGN/
+handoff/
 
 # Astro app (build phase lives in app/; flattens to root at cutover)
 app/node_modules/

@@ -264,6 +264,29 @@ h1, h2, h3, h4 {
 .footer__base a { color: var(--muted); }
 .footer__base a:hover { color: var(--primary); }
 
+/* ---- IN MEMORIAM (footer dedication) ---- */
+.memoriam {
+  max-width: var(--maxw); margin: 40px auto 0;
+  padding-top: 24px; padding-inline: clamp(20px, 5vw, 48px);
+  border-top: 1px solid var(--border);
+  display: flex; align-items: center; gap: 16px;
+}
+.memoriam__portrait {
+  width: 48px; height: 48px; flex-shrink: 0;
+  border-radius: var(--r-pill); object-fit: cover; object-position: center 26%;
+  border: 1px solid var(--border); filter: grayscale(0.18);
+}
+.memoriam__text { font-size: 13.5px; color: var(--muted); line-height: 1.55; max-width: 84ch; }
+.memoriam__head { color: var(--ink); font-weight: 600; }
+.memoriam__years { color: var(--faint); font-weight: 500; font-variant-numeric: tabular-nums; }
+.memoriam__years::before {
+  content: "·"; color: var(--warm); font-weight: 600;
+  margin: 0 9px; opacity: .85;
+}
+@media (max-width: 560px) {
+  .memoriam { align-items: flex-start; }
+}
+
 /* ---- 8. TAGS / PILLS ---- */
 .tags { display: flex; flex-wrap: wrap; gap: 8px; }
 .tag {

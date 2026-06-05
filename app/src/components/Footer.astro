@@ -1,6 +1,26 @@
 ---
 import Brand from './Brand.astro';
 import { site, footerCols } from '../config/site';
+
+// In-memoriam dedication — shown on the home page only, in both locales.
+const seg = Astro.url.pathname.replace(/\/+$/, ''); // '' = en home, '/de' = de home
+const isHome = seg === '' || seg === '/de';
+const isDe = seg === '/de' || seg.startsWith('/de/');
+const M = isDe
+  ? {
+      aria: 'Im Gedenken an Klaus Podoll',
+      alt: 'Porträt von Dr. med. Klaus Podoll',
+      head: 'Im Gedenken an Dr. med. Klaus Podoll',
+      years: '1958–2019',
+      text: 'Neurologe und Mitbegründer. Ab 2003 entwickelte er unser Migränekunst-Archiv — aufbauend auf Derek Robinsons wegweisender Arbeit von 1973 — zu einer der weltweit bedeutendsten digitalen Sammlungen gelebter Aura-Erfahrung.',
+    }
+  : {
+      aria: 'In memory of Klaus Podoll',
+      alt: 'Portrait of Dr. med. Klaus Podoll',
+      head: 'In memory of Dr. med. Klaus Podoll',
+      years: '1958–2019',
+      text: "Neurologist and co-founder. From 2003 he grew our Migraine Art archive — building on Derek Robinson's pioneering 1973 work — into one of the world's most significant digital collections of lived aura experience.",
+    };
 ---
 
 <footer class="footer">
@@ -24,6 +44,15 @@ import { site, footerCols } from '../config/site';
       ))
     }
   </div>
+  {isHome && (
+    <aside class="memoriam" aria-label={M.aria}>
+      <img class="memoriam__portrait" src="/img/klaus-podoll.png" alt={M.alt} loading="lazy" />
+      <p class="memoriam__text">
+        <span class="memoriam__head">{M.head}<span class="memoriam__years">{M.years}</span></span>
+        {M.text}
+      </p>
+    </aside>
+  )}
   <div class="footer__base">
     <span>© 1998–2026 {site.name}. A non-profit knowledge resource.</span>
     <span>Not a substitute for professional medical advice.</span>
