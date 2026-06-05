@@ -77,6 +77,35 @@
 .article-nav { display: flex; justify-content: space-between; gap: 14px; margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--border); }
 .article-nav a { font-size: 15px; font-weight: 500; }
 
+/* Article-body widgets used by Migraine Art entries (e.g. /art/music/alwa-glebe).
+   Scoped under .prose so they win over the generic .prose a / .prose > * + *
+   rules regardless of stylesheet load order. */
+.prose .video {
+  margin: 1.8em 0 .4em;
+  border-radius: var(--r); overflow: hidden;
+  border: 1px solid var(--border); box-shadow: var(--shadow);
+  background: #000;
+}
+.prose .video__frame { position: relative; aspect-ratio: 16 / 9; }
+.prose .video__frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.prose .video__cap {
+  font-family: var(--serif); font-style: italic;
+  font-size: 14.5px; color: var(--muted); margin: 0 0 1.6em;
+}
+
+.prose .ext-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 6px 0 2em; }
+.prose .ext-links a {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 14px; font-weight: 600; color: var(--ink); text-decoration: none;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--r-pill); padding: 8px 15px;
+}
+.prose .ext-links a:hover { border-color: var(--primary-line); color: var(--primary); }
+.prose .ext-links svg { width: 15px; height: 15px; opacity: .7; }
+
+.prose .refs { font-size: 15px; line-height: 1.6; color: var(--text); }
+.prose .refs li { margin-top: .8em; }
+
 @media (max-width: 920px) {
   .docs, .docs--article { grid-template-columns: 1fr; }
   .side, .toc-side { display: none; }
