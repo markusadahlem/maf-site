@@ -1,16 +1,12 @@
 ---
 title: The Migraine Aura Scan in Brief
-description: A short introduction for those who don't yet have a password but want to know what the MigraineAuraScan — the Aura Anamnesis from the Migraine Aura Foundation — does.
+description: A short introduction for those who don't yet have a password but want to know what the MigraineAuraScan — the Aura Anamnesis from the Migraine Aura Foundation — does: we translate the narrative experience of people living with migraine into the formal language of diagnostics.
 date: "2026-05-30T00:00:00+02:00"
 author: Markus A. Dahlem, PhD
 tag: Neuroscience
 revised: false
 ---
 
-<div class="hx-mb-12">
-A short introduction for those who don't yet have a password but want to know what the MigraineAuraScan — the Aura Anamnesis from the Migraine Aura Foundation — does: we translate the narrative experience of people living with migraine into the formal language of diagnostics.
-    
-</div>
 
 Imagine a world where you no longer sit in the waiting room trying to compress months into five sentences — but instead walk into the consultation with an ordered report of your own symptoms in hand. The conversation begins where it usually ends.
 
