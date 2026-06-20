@@ -1,0 +1,28 @@
+#!/bin/sh
+# Pre-push hook: run the Astro app's vitest suite before allowing a push.
+# A failing suite blocks the push so a broken algorithm change never leaves the
+# machine. Skip in a pinch with:  SKIP_TESTS=1 git push
+#
+# Installed via core.hooksPath=.githooks (see README / repo setup).
+
+if [ "$SKIP_TESTS" = "1" ]; then
+  echo "pre-push: SKIP_TESTS=1 set — skipping tests."
+  exit 0
+fi
+
+repo_root=$(git rev-parse --show-toplevel)
+
+if [ ! -d "$repo_root/app/node_modules" ]; then
+  echo "pre-push: app/node_modules missing — run 'cd app && npm ci' first." >&2
+  echo "          (or push with SKIP_TESTS=1 to bypass)" >&2
+  exit 1
+fi
+
+echo "pre-push: running app test suite (npm test)…"
+if ! ( cd "$repo_root/app" && npm test --silent ); then
+  echo "pre-push: tests failed — push aborted. Fix the tests or use SKIP_TESTS=1 to bypass." >&2
+  exit 1
+fi
+
+echo "pre-push: tests passed."
+exit 0
